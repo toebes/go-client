@@ -15,6 +15,35 @@ Method | HTTP request | Description
 
 Get User companies.
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    uid := "uid_example" // string |  (optional)
+    activeOnly := true // bool |  (optional) (default to true)
+    includeAll := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.CompaniesApi.FindCompany(context.Background(), ).Uid(uid).ActiveOnly(activeOnly).IncludeAll(includeAll).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.FindCompany``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `FindCompany`: BTListResponseBTCompanyInfo
+    fmt.Fprintf(os.Stdout, "Response from `CompaniesApi.FindCompany`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -53,6 +82,33 @@ No authorization required
 > BTCompanyInfo GetCompany(ctx, cid).Execute()
 
 Get company.
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    cid := "cid_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.CompaniesApi.GetCompany(context.Background(), cid).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `CompaniesApi.GetCompany``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetCompany`: BTCompanyInfo
+    fmt.Fprintf(os.Stdout, "Response from `CompaniesApi.GetCompany`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 

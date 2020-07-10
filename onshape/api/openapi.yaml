@@ -18,6 +18,8 @@ servers:
 - description: Production
   url: https://cad.onshape.com
 tags:
+- description: Access to global tree information.
+  name: Global Tree Nodes
 - description: Manage application settings.
   name: Applications
 - description: Modify and access account information.
@@ -4904,6 +4906,87 @@ paths:
       summary: Unshare Folder
       tags:
       - Folders
+      x-BTVisibility: PRODUCTION
+  /api/globaltreenodes/:
+    get:
+      deprecated: false
+      operationId: globalTreeNodes
+      parameters: []
+      responses:
+        default:
+          content:
+            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1:
+              schema:
+                $ref: '#/components/schemas/BTGlobalTreeNodesInfo'
+          description: default response
+      summary: Get Searchable Trees
+      tags:
+      - Global Tree Nodes
+      x-BTVisibility: PRODUCTION
+  /api/globaltreenodes/magic/{mid}:
+    get:
+      deprecated: false
+      operationId: globalTreeNodesMagic
+      parameters:
+      - explode: false
+        in: path
+        name: mid
+        required: true
+        schema:
+          type: string
+        style: simple
+      - explode: true
+        in: query
+        name: getPathToRoot
+        required: false
+        schema:
+          default: false
+          type: boolean
+        style: form
+      - explode: true
+        in: query
+        name: offset
+        required: false
+        schema:
+          default: 0
+          format: int32
+          type: integer
+        style: form
+      - explode: true
+        in: query
+        name: limit
+        required: false
+        schema:
+          default: 20
+          format: int32
+          type: integer
+        style: form
+      - explode: true
+        in: query
+        name: sortColumn
+        required: false
+        schema:
+          default: modifiedAt
+          type: string
+        style: form
+      - explode: true
+        in: query
+        name: sortOrder
+        required: false
+        schema:
+          default: asc
+          type: string
+        style: form
+      responses:
+        default:
+          content:
+            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1:
+              schema:
+                $ref: '#/components/schemas/BTGlobalTreeNodesInfo'
+          description: default response
+      summary: Get Tree Node List
+      tags:
+      - Global Tree Nodes
       x-BTVisibility: PRODUCTION
   /api/insertables/d/{did}/latest:
     get:
@@ -19253,6 +19336,33 @@ components:
       allOf:
       - $ref: '#/components/schemas/BTQueryFilter-183'
       - $ref: '#/components/schemas/BTGeometryFilter_130_allOf'
+      type: object
+    BTGlobalTreeNodesInfo:
+      properties:
+        permissionSet:
+          items:
+            title: Permission Name
+            type: string
+          type: array
+        pathToRoot:
+          items:
+            $ref: '#/components/schemas/BTGlobalTreeNodeInfo'
+          properties:
+            empty:
+              type: boolean
+          type: array
+        next:
+          type: string
+        href:
+          format: uri
+          type: string
+        items:
+          items:
+            $ref: '#/components/schemas/BTGlobalTreeMagicNodeInfo'
+          properties:
+            empty:
+              type: boolean
+          type: array
       type: object
     BTGlobalTreeMagicNodeInfo:
       allOf:

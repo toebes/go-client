@@ -16,6 +16,33 @@ Method | HTTP request | Description
 
 Delete Application Settings
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    uid := "uid_example" // string | 
+    cid := "cid_example" // string | 
+    key := []string{"Inner_example"} // []string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApplicationsApi.DeleteAppSettings(context.Background(), uid, cid).Key(key).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApplicationsApi.DeleteAppSettings``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 
@@ -60,6 +87,35 @@ No authorization required
 
 Get User Application Settings
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    uid := "uid_example" // string | 
+    cid := "cid_example" // string | 
+    key := []string{"Inner_example"} // []string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApplicationsApi.GetUserAppSettings(context.Background(), uid, cid).Key(key).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApplicationsApi.GetUserAppSettings``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetUserAppSettings`: BTUserAppSettingsInfo
+    fmt.Fprintf(os.Stdout, "Response from `ApplicationsApi.GetUserAppSettings`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -103,6 +159,33 @@ No authorization required
 > UpdateAppSettings(ctx, uid, cid).BTUserAppSettingsParams(bTUserAppSettingsParams).Execute()
 
 Update Application Settings
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    uid := "uid_example" // string | 
+    cid := "cid_example" // string | 
+    bTUserAppSettingsParams := openapiclient.BTUserAppSettingsParams{Settings: []BTSettingParam{openapiclient.BTSettingParam{Key: "Key_example", Value: "TODO"})} // BTUserAppSettingsParams | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ApplicationsApi.UpdateAppSettings(context.Background(), uid, cid, bTUserAppSettingsParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ApplicationsApi.UpdateAppSettings``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 

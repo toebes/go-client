@@ -16,6 +16,34 @@ Method | HTTP request | Description
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    uid := "uid_example" // string | 
+    includematerials := true // bool |  (optional) (default to true)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.UsersApi.GetUserSettings(context.Background(), uid).Includematerials(includematerials).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `UsersApi.GetUserSettings``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetUserSettings`: BTUserSettingsInfo
+    fmt.Fprintf(os.Stdout, "Response from `UsersApi.GetUserSettings`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -58,6 +86,33 @@ No authorization required
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    includematerials := true // bool |  (optional) (default to true)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.UsersApi.GetUserSettingsCurrentLoggedInUser(context.Background(), ).Includematerials(includematerials).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `UsersApi.GetUserSettingsCurrentLoggedInUser``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetUserSettingsCurrentLoggedInUser`: BTUserSettingsInfo
+    fmt.Fprintf(os.Stdout, "Response from `UsersApi.GetUserSettingsCurrentLoggedInUser`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -94,6 +149,32 @@ No authorization required
 > BTUserOAuth2SummaryInfo SessionInfo(ctx).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.UsersApi.SessionInfo(context.Background(), ).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `UsersApi.SessionInfo``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `SessionInfo`: BTUserOAuth2SummaryInfo
+    fmt.Fprintf(os.Stdout, "Response from `UsersApi.SessionInfo`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 

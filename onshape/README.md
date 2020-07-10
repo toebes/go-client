@@ -178,6 +178,8 @@ Class | Method | HTTP request | Description
 *FoldersApi* | [**GetFolderAcl**](docs/FoldersApi.md#getfolderacl) | **Get** /api/folders/{fid}/acl | Get Access Control List
 *FoldersApi* | [**Share**](docs/FoldersApi.md#share) | **Post** /api/folders/{fid}/share | Share Folder
 *FoldersApi* | [**UnShare**](docs/FoldersApi.md#unshare) | **Delete** /api/folders/{fid}/share/{eid} | Unshare Folder
+*GlobalTreeNodesApi* | [**GlobalTreeNodes**](docs/GlobalTreeNodesApi.md#globaltreenodes) | **Get** /api/globaltreenodes/ | Get Searchable Trees
+*GlobalTreeNodesApi* | [**GlobalTreeNodesMagic**](docs/GlobalTreeNodesApi.md#globaltreenodesmagic) | **Get** /api/globaltreenodes/magic/{mid} | Get Tree Node List
 *MetadataApi* | [**GetVEOPStandardContentMetadata**](docs/MetadataApi.md#getveopstandardcontentmetadata) | **Get** /api/metadata/standardcontent/d/{did}/v/{vid}/e/{eid}/{otype}/{oid}/p/{pid} | 
 *MetadataApi* | [**GetWMVEMetadata**](docs/MetadataApi.md#getwmvemetadata) | **Get** /api/metadata/d/{did}/{wvm}/{wvmid}/e/{eid} | 
 *MetadataApi* | [**GetWMVEPMetadata**](docs/MetadataApi.md#getwmvepmetadata) | **Get** /api/metadata/d/{did}/{wvm}/{wvmid}/e/{eid}/p/{pid} | 
@@ -511,6 +513,7 @@ Class | Method | HTTP request | Description
  - [BTGlobalTreeNodeInfo](docs/BTGlobalTreeNodeInfo.md)
  - [BTGlobalTreeNodeListResponse](docs/BTGlobalTreeNodeListResponse.md)
  - [BTGlobalTreeNodeListResponseBTTeamInfo](docs/BTGlobalTreeNodeListResponseBTTeamInfo.md)
+ - [BTGlobalTreeNodesInfo](docs/BTGlobalTreeNodesInfo.md)
  - [BTGraphicsAppearance1152](docs/BTGraphicsAppearance1152.md)
  - [BTIdTranslationInfo](docs/BTIdTranslationInfo.md)
  - [BTIdTranslationParams](docs/BTIdTranslationParams.md)

@@ -26,6 +26,37 @@ Method | HTTP request | Description
 
 Commit Transaction
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wid := "wid_example" // string | 
+    tid := "tid_example" // string | 
+    bTAppElementCommitTransactionParams := openapiclient.BTAppElementCommitTransactionParams{Description: "Description_example", ReturnError: false, TransactionId: "TransactionId_example"} // BTAppElementCommitTransactionParams | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AppElementsApi.CommitTransaction(context.Background(), did, eid, wid, tid, bTAppElementCommitTransactionParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementsApi.CommitTransaction``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `CommitTransaction`: BTAppElementModifyInfo
+    fmt.Fprintf(os.Stdout, "Response from `AppElementsApi.CommitTransaction`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -74,6 +105,35 @@ Name | Type | Description  | Notes
 
 Create Element.
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wid := "wid_example" // string | 
+    bTAppElementParams := openapiclient.BTAppElementParams{Description: "Description_example", FormatId: "FormatId_example", Location: openapiclient.BTElementLocationParams{ElementId: "ElementId_example", GroupId: "GroupId_example", Position: 123}, Name: "Name_example", Subelements: []BTAppElementChangeParams{openapiclient.BTAppElementChangeParams{BaseContent: "BaseContent_example", Delta: "Delta_example", SubelementId: "SubelementId_example"})} // BTAppElementParams | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AppElementsApi.CreateElement(context.Background(), did, wid, bTAppElementParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementsApi.CreateElement``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `CreateElement`: BTAppElementModifyInfo
+    fmt.Fprintf(os.Stdout, "Response from `AppElementsApi.CreateElement`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -117,6 +177,37 @@ Name | Type | Description  | Notes
 > BTAppElementReferenceInfo CreateReference(ctx, did, eid, wvm, wvmid).BTAppElementReferenceParams(bTAppElementReferenceParams).Execute()
 
 Create Reference
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    bTAppElementReferenceParams := openapiclient.BTAppElementReferenceParams{HasDocumentMicroversions: false, IdTag: "IdTag_example", IdTagMicroversionId: "IdTagMicroversionId_example", IsSketchOnly: false, ParentChangeId: "ParentChangeId_example", PartNumber: "PartNumber_example", PureSketch: false, ReferenceType: 123, ReturnError: false, Revision: "Revision_example", SketchIds: []string{"SketchIds_example"), TargetConfiguration: "TargetConfiguration_example", TargetDocumentId: "TargetDocumentId_example", TargetElementId: "TargetElementId_example", TargetMicroversionId: "TargetMicroversionId_example", TargetVersionId: "TargetVersionId_example", TrackNewVersions: false, TransactionId: "TransactionId_example", UpdateSketchInfo: false} // BTAppElementReferenceParams | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AppElementsApi.CreateReference(context.Background(), did, eid, wvm, wvmid, bTAppElementReferenceParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementsApi.CreateReference``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `CreateReference`: BTAppElementReferenceInfo
+    fmt.Fprintf(os.Stdout, "Response from `AppElementsApi.CreateReference`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -165,6 +256,40 @@ Name | Type | Description  | Notes
 > BTAppElementModifyInfo DeleteAppElementContent(ctx, did, eid, wvm, wvmid, sid).TransactionId(transactionId).ParentChangeId(parentChangeId).Description(description).Execute()
 
 Delete a Sub-element
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    sid := "sid_example" // string | 
+    transactionId := "transactionId_example" // string |  (optional)
+    parentChangeId := "parentChangeId_example" // string |  (optional)
+    description := "description_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AppElementsApi.DeleteAppElementContent(context.Background(), did, eid, wvm, wvmid, sid).TransactionId(transactionId).ParentChangeId(parentChangeId).Description(description).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementsApi.DeleteAppElementContent``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `DeleteAppElementContent`: BTAppElementModifyInfo
+    fmt.Fprintf(os.Stdout, "Response from `AppElementsApi.DeleteAppElementContent`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -218,6 +343,40 @@ Name | Type | Description  | Notes
 
 Delete Reference
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    rid := "rid_example" // string | 
+    transactionId := "transactionId_example" // string |  (optional)
+    parentChangeId := "parentChangeId_example" // string |  (optional)
+    description := "description_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AppElementsApi.DeleteReference(context.Background(), did, eid, wvm, wvmid, rid).TransactionId(transactionId).ParentChangeId(parentChangeId).Description(description).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementsApi.DeleteReference``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `DeleteReference`: BTAppElementReferenceInfo
+    fmt.Fprintf(os.Stdout, "Response from `AppElementsApi.DeleteReference`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -270,6 +429,36 @@ Name | Type | Description  | Notes
 
 Get History
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AppElementsApi.GetAppElementHistory(context.Background(), did, eid, wvm, wvmid).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementsApi.GetAppElementHistory``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetAppElementHistory`: BTAppElementHistoryInfo
+    fmt.Fprintf(os.Stdout, "Response from `AppElementsApi.GetAppElementHistory`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -316,6 +505,41 @@ Name | Type | Description  | Notes
 > BTAppElementContentInfo GetSubElementContent(ctx, did, eid, wvm, wvmid).TransactionId(transactionId).ChangeId(changeId).BaseChangeId(baseChangeId).SubelementId(subelementId).LinkDocumentId(linkDocumentId).Execute()
 
 Get Content
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    transactionId := "transactionId_example" // string |  (optional)
+    changeId := "changeId_example" // string |  (optional)
+    baseChangeId := "baseChangeId_example" // string |  (optional)
+    subelementId := "subelementId_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AppElementsApi.GetSubElementContent(context.Background(), did, eid, wvm, wvmid).TransactionId(transactionId).ChangeId(changeId).BaseChangeId(baseChangeId).SubelementId(subelementId).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementsApi.GetSubElementContent``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetSubElementContent`: BTAppElementContentInfo
+    fmt.Fprintf(os.Stdout, "Response from `AppElementsApi.GetSubElementContent`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -369,6 +593,38 @@ Name | Type | Description  | Notes
 
 Get Sub-element IDs
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    transactionId := "transactionId_example" // string |  (optional)
+    changeId := "changeId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AppElementsApi.GetSubelementIds(context.Background(), did, eid, wvm, wvmid).TransactionId(transactionId).ChangeId(changeId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementsApi.GetSubelementIds``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetSubelementIds`: BTAppElementModifyInfo
+    fmt.Fprintf(os.Stdout, "Response from `AppElementsApi.GetSubelementIds`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -417,6 +673,41 @@ Name | Type | Description  | Notes
 > BTAppElementReferenceResolveInfo ResolveReference(ctx, did, eid, wvm, wvmid, rid).TransactionId(transactionId).ParentChangeId(parentChangeId).IncludeInternal(includeInternal).LinkDocumentId(linkDocumentId).Execute()
 
 Resolve Reference
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    rid := "rid_example" // string | 
+    transactionId := "transactionId_example" // string |  (optional)
+    parentChangeId := "parentChangeId_example" // string |  (optional)
+    includeInternal := true // bool |  (optional) (default to false)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AppElementsApi.ResolveReference(context.Background(), did, eid, wvm, wvmid, rid).TransactionId(transactionId).ParentChangeId(parentChangeId).IncludeInternal(includeInternal).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementsApi.ResolveReference``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ResolveReference`: BTAppElementReferenceResolveInfo
+    fmt.Fprintf(os.Stdout, "Response from `AppElementsApi.ResolveReference`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -471,6 +762,41 @@ Name | Type | Description  | Notes
 
 Resolve references.
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    transactionId := "transactionId_example" // string |  (optional)
+    parentChangeId := "parentChangeId_example" // string |  (optional)
+    includeInternal := true // bool |  (optional) (default to false)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+    referenceIds := "referenceIds_example" // string |  (optional) (default to "")
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AppElementsApi.ResolveReferences(context.Background(), did, eid, wvm, wvmid).TransactionId(transactionId).ParentChangeId(parentChangeId).IncludeInternal(includeInternal).LinkDocumentId(linkDocumentId).ReferenceIds(referenceIds).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementsApi.ResolveReferences``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ResolveReferences`: BTAppElementReferencesResolveInfo
+    fmt.Fprintf(os.Stdout, "Response from `AppElementsApi.ResolveReferences`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -523,6 +849,36 @@ Name | Type | Description  | Notes
 
 Start Transaction
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wid := "wid_example" // string | 
+    bTAppElementStartTransactionParams := openapiclient.BTAppElementStartTransactionParams{ParentChangeId: "ParentChangeId_example", ReturnError: false} // BTAppElementStartTransactionParams | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AppElementsApi.StartTransaction(context.Background(), did, eid, wid, bTAppElementStartTransactionParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementsApi.StartTransaction``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `StartTransaction`: BTAppElementModifyInfo
+    fmt.Fprintf(os.Stdout, "Response from `AppElementsApi.StartTransaction`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -568,6 +924,37 @@ Name | Type | Description  | Notes
 > BTAppElementModifyInfo UpdateAppElement(ctx, did, eid, wvm, wvmid).BTAppElementUpdateParams(bTAppElementUpdateParams).Execute()
 
 Update Element
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    bTAppElementUpdateParams := openapiclient.BTAppElementUpdateParams{Changes: []BTAppElementChangeParams{openapiclient.BTAppElementChangeParams{BaseContent: "BaseContent_example", Delta: "Delta_example", SubelementId: "SubelementId_example"}), Description: "Description_example", ParentChangeId: "ParentChangeId_example", ReturnError: false, TransactionId: "TransactionId_example"} // BTAppElementUpdateParams | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AppElementsApi.UpdateAppElement(context.Background(), did, eid, wvm, wvmid, bTAppElementUpdateParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementsApi.UpdateAppElement``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `UpdateAppElement`: BTAppElementModifyInfo
+    fmt.Fprintf(os.Stdout, "Response from `AppElementsApi.UpdateAppElement`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -616,6 +1003,38 @@ Name | Type | Description  | Notes
 > BTAppElementReferenceInfo UpdateReference(ctx, did, eid, wvm, wvmid, rid).BTAppElementReferenceParams(bTAppElementReferenceParams).Execute()
 
 Update Reference
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    rid := "rid_example" // string | 
+    bTAppElementReferenceParams := openapiclient.BTAppElementReferenceParams{HasDocumentMicroversions: false, IdTag: "IdTag_example", IdTagMicroversionId: "IdTagMicroversionId_example", IsSketchOnly: false, ParentChangeId: "ParentChangeId_example", PartNumber: "PartNumber_example", PureSketch: false, ReferenceType: 123, ReturnError: false, Revision: "Revision_example", SketchIds: []string{"SketchIds_example"), TargetConfiguration: "TargetConfiguration_example", TargetDocumentId: "TargetDocumentId_example", TargetElementId: "TargetElementId_example", TargetMicroversionId: "TargetMicroversionId_example", TargetVersionId: "TargetVersionId_example", TrackNewVersions: false, TransactionId: "TransactionId_example", UpdateSketchInfo: false} // BTAppElementReferenceParams | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AppElementsApi.UpdateReference(context.Background(), did, eid, wvm, wvmid, rid, bTAppElementReferenceParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementsApi.UpdateReference``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `UpdateReference`: BTAppElementReferenceInfo
+    fmt.Fprintf(os.Stdout, "Response from `AppElementsApi.UpdateReference`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 

@@ -17,6 +17,35 @@ Method | HTTP request | Description
 
 Create Feature Studio
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wid := "wid_example" // string | 
+    bTModelElementParams := openapiclient.BTModelElementParams{Name: "Name_example"} // BTModelElementParams | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.FeatureStudiosApi.CreateFeatureStudio(context.Background(), did, wid, bTModelElementParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `FeatureStudiosApi.CreateFeatureStudio``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `CreateFeatureStudio`: BTDocumentElementInfo
+    fmt.Fprintf(os.Stdout, "Response from `FeatureStudiosApi.CreateFeatureStudio`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -60,6 +89,36 @@ Name | Type | Description  | Notes
 > BTFeatureStudioContents2239 GetFeatureStudioContents(ctx, did, wvm, wvmid, eid).Execute()
 
 Get Feature Studio Contents.
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.FeatureStudiosApi.GetFeatureStudioContents(context.Background(), did, wvm, wvmid, eid).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `FeatureStudiosApi.GetFeatureStudioContents``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetFeatureStudioContents`: BTFeatureStudioContents2239
+    fmt.Fprintf(os.Stdout, "Response from `FeatureStudiosApi.GetFeatureStudioContents`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -108,6 +167,36 @@ Name | Type | Description  | Notes
 
 Get Feature Studio Specs
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.FeatureStudiosApi.GetFeatureStudioSpecs(context.Background(), did, wvm, wvmid, eid).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `FeatureStudiosApi.GetFeatureStudioSpecs``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetFeatureStudioSpecs`: BTFeatureSpecsResponse664
+    fmt.Fprintf(os.Stdout, "Response from `FeatureStudiosApi.GetFeatureStudioSpecs`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -154,6 +243,37 @@ Name | Type | Description  | Notes
 > BTFeatureStudioContents2239 UpdateFeatureStudioContents(ctx, did, wvm, wvmid, eid).Body(body).Execute()
 
 Update Feature Studio contents
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    body := "body_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.FeatureStudiosApi.UpdateFeatureStudioContents(context.Background(), did, wvm, wvmid, eid).Body(body).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `FeatureStudiosApi.UpdateFeatureStudioContents``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `UpdateFeatureStudioContents`: BTFeatureStudioContents2239
+    fmt.Fprintf(os.Stdout, "Response from `FeatureStudiosApi.UpdateFeatureStudioContents`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 

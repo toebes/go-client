@@ -14,6 +14,33 @@ Method | HTTP request | Description
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    documentId := "documentId_example" // string |  (optional) (default to "")
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.WorkflowApi.GetActiveWorkflows(context.Background(), ).DocumentId(documentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `WorkflowApi.GetActiveWorkflows``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetActiveWorkflows`: BTActiveWorkflowInfo
+    fmt.Fprintf(os.Stdout, "Response from `WorkflowApi.GetActiveWorkflows`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 

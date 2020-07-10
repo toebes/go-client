@@ -27,6 +27,40 @@ Method | HTTP request | Description
 
 Export Part to Parasolid.
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    partid := "partid_example" // string | 
+    version := "version_example" // string |  (optional) (default to "0")
+    configuration := "configuration_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.ExportPS(context.Background(), did, wvm, wvmid, eid, partid).Version(version).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.ExportPS``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ExportPS`: *os.File
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.ExportPS`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -79,6 +113,38 @@ Name | Type | Description  | Notes
 
 Get Sheet Metal Bend Table.
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    partid := "partid_example" // string | 
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.GetBendTable(context.Background(), did, wvm, wvmid, eid, partid).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.GetBendTable``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetBendTable`: BTTableResponse1546
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.GetBendTable`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -128,6 +194,39 @@ Name | Type | Description  | Notes
 > BTExportModelBodiesResponse734 GetBodyDetails(ctx, did, wvm, wvmid, eid, partid).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    partid := "partid_example" // string | 
+    configuration := "configuration_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.GetBodyDetails(context.Background(), did, wvm, wvmid, eid, partid).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.GetBodyDetails``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetBodyDetails`: BTExportModelBodiesResponse734
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.GetBodyDetails`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -180,6 +279,40 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    partid := "partid_example" // string | 
+    includeHidden := true // bool |  (optional) (default to false)
+    configuration := "configuration_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.GetBoundingBoxes(context.Background(), did, wvm, wvmid, eid, partid).IncludeHidden(includeHidden).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.GetBoundingBoxes``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetBoundingBoxes`: BTBoundingBoxInfo
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.GetBoundingBoxes`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -231,6 +364,43 @@ Name | Type | Description  | Notes
 > BTExportTessellatedEdgesResponse327 GetEdges(ctx, did, wvm, wvmid, eid, partid).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).EdgeId(edgeId).Configuration(configuration).LinkDocumentId(linkDocumentId).Body(body).Execute()
 
 Tessellated Edges
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    partid := "partid_example" // string | 
+    angleTolerance := 987 // float64 |  (optional)
+    chordTolerance := 987 // float64 |  (optional)
+    edgeId := []string{"Inner_example"} // []string |  (optional)
+    configuration := "configuration_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+    body := "body_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.GetEdges(context.Background(), did, wvm, wvmid, eid, partid).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).EdgeId(edgeId).Configuration(configuration).LinkDocumentId(linkDocumentId).Body(body).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.GetEdges``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetEdges`: BTExportTessellatedEdgesResponse327
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.GetEdges`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -286,6 +456,50 @@ Name | Type | Description  | Notes
 > BTExportTessellatedFacesResponse898 GetFaces1(ctx, did, wvm, wvmid, eid, partid).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).MaxFacetWidth(maxFacetWidth).OutputVertexNormals(outputVertexNormals).OutputFacetNormals(outputFacetNormals).OutputTextureCoordinates(outputTextureCoordinates).OutputFaceAppearances(outputFaceAppearances).OutputIndexTable(outputIndexTable).FaceId(faceId).Configuration(configuration).OutputErrorFaces(outputErrorFaces).LinkDocumentId(linkDocumentId).Body(body).Execute()
 
 Get Tessellated Faces
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    partid := "partid_example" // string | 
+    angleTolerance := 987 // float64 |  (optional)
+    chordTolerance := 987 // float64 |  (optional)
+    maxFacetWidth := 987 // float64 |  (optional)
+    outputVertexNormals := true // bool |  (optional) (default to false)
+    outputFacetNormals := true // bool |  (optional) (default to true)
+    outputTextureCoordinates := true // bool |  (optional) (default to false)
+    outputFaceAppearances := true // bool |  (optional) (default to false)
+    outputIndexTable := true // bool |  (optional) (default to false)
+    faceId := []string{"Inner_example"} // []string |  (optional)
+    configuration := "configuration_example" // string |  (optional)
+    outputErrorFaces := true // bool |  (optional) (default to false)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+    body := "body_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.GetFaces1(context.Background(), did, wvm, wvmid, eid, partid).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).MaxFacetWidth(maxFacetWidth).OutputVertexNormals(outputVertexNormals).OutputFacetNormals(outputFacetNormals).OutputTextureCoordinates(outputTextureCoordinates).OutputFaceAppearances(outputFaceAppearances).OutputIndexTable(outputIndexTable).FaceId(faceId).Configuration(configuration).OutputErrorFaces(outputErrorFaces).LinkDocumentId(linkDocumentId).Body(body).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.GetFaces1``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetFaces1`: BTExportTessellatedFacesResponse898
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.GetFaces1`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -349,6 +563,40 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    partid := "partid_example" // string | 
+    inferMetadataOwner := true // bool |  (optional) (default to true)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+    configuration := "configuration_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.GetMassProperties(context.Background(), did, wvm, wvmid, eid, partid).InferMetadataOwner(inferMetadataOwner).LinkDocumentId(linkDocumentId).Configuration(configuration).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.GetMassProperties``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetMassProperties`: BTMassPropertiesBulkInfo
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.GetMassProperties`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -400,6 +648,42 @@ Name | Type | Description  | Notes
 > BTPartMetadataInfo GetPartMetadata(ctx, did, wvm, wvmid, eid, partid).InferMetadataOwner(inferMetadataOwner).IncludePropertyDefaults(includePropertyDefaults).FriendlyUserIds(friendlyUserIds).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    partid := "partid_example" // string | 
+    inferMetadataOwner := true // bool |  (optional) (default to false)
+    includePropertyDefaults := true // bool |  (optional) (default to false)
+    friendlyUserIds := true // bool |  (optional) (default to false)
+    configuration := "configuration_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.GetPartMetadata(context.Background(), did, wvm, wvmid, eid, partid).InferMetadataOwner(inferMetadataOwner).IncludePropertyDefaults(includePropertyDefaults).FriendlyUserIds(friendlyUserIds).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.GetPartMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetPartMetadata`: BTPartMetadataInfo
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.GetPartMetadata`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -455,6 +739,40 @@ Name | Type | Description  | Notes
 
 Get list of parts
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | Document ID.
+    wvm := "wvm_example" // string | One of w or v or m corresponding to whether a workspace or version or microversion was entered.
+    wvmid := "wvmid_example" // string | Workspace (w), Version (v) or Microversion (m) ID.
+    elementId := "elementId_example" // string | Element ID (optional)
+    withThumbnails := true // bool | Whether or not to include thumbnails (not supported for microversion) (optional) (default to false)
+    includePropertyDefaults := true // bool | If true, include metadata schema property defaults in response (optional) (default to false)
+    linkDocumentId := "linkDocumentId_example" // string | Id of document that links to the document being accessed. This may provide additional access rights to the document. Allowed only with version (v) path parameter. (optional)
+    configuration := "configuration_example" // string | Configuration string. (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.GetPartsWMV(context.Background(), did, wvm, wvmid).ElementId(elementId).WithThumbnails(withThumbnails).IncludePropertyDefaults(includePropertyDefaults).LinkDocumentId(linkDocumentId).Configuration(configuration).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.GetPartsWMV``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetPartsWMV`: []BTPartMetadataInfo
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.GetPartsWMV`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -504,6 +822,40 @@ Name | Type | Description  | Notes
 > []BTPartMetadataInfo GetPartsWMVE(ctx, did, wvm, wvmid, eid).WithThumbnails(withThumbnails).IncludePropertyDefaults(includePropertyDefaults).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
 
 Get parts from an element.
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | Document ID.
+    wvm := "wvm_example" // string | One of w or v or m corresponding to whether a workspace or version or microversion was entered.
+    wvmid := "wvmid_example" // string | Workspace (w), Version (v) or Microversion (m) ID.
+    eid := "eid_example" // string | Element ID.
+    withThumbnails := true // bool | Whether or not to include thumbnails (not supported for microversion) (optional) (default to false)
+    includePropertyDefaults := true // bool | If true, include metadata schema property defaults in response (optional) (default to false)
+    configuration := "configuration_example" // string | Configuration string. (optional)
+    linkDocumentId := "linkDocumentId_example" // string | Id of document that links to the document being accessed. This may provide additional access rights to the document. Allowed only with version (v) path parameter. (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.GetPartsWMVE(context.Background(), did, wvm, wvmid, eid).WithThumbnails(withThumbnails).IncludePropertyDefaults(includePropertyDefaults).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.GetPartsWMVE``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetPartsWMVE`: []BTPartMetadataInfo
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.GetPartsWMVE`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -555,6 +907,45 @@ Name | Type | Description  | Notes
 > BTShadedViewsInfo GetShadedViews1(ctx, did, wvm, wvmid, eid, partid).ViewMatrix(viewMatrix).OutputHeight(outputHeight).OutputWidth(outputWidth).PixelSize(pixelSize).Edges(edges).UseAntiAliasing(useAntiAliasing).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    partid := "partid_example" // string | 
+    viewMatrix := "viewMatrix_example" // string |  (optional) (default to "front")
+    outputHeight := 987 // int32 |  (optional) (default to 500)
+    outputWidth := 987 // int32 |  (optional) (default to 500)
+    pixelSize := 987 // float64 |  (optional) (default to 0.003)
+    edges := "edges_example" // string |  (optional) (default to "show")
+    useAntiAliasing := true // bool |  (optional) (default to false)
+    configuration := "configuration_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.GetShadedViews1(context.Background(), did, wvm, wvmid, eid, partid).ViewMatrix(viewMatrix).OutputHeight(outputHeight).OutputWidth(outputWidth).PixelSize(pixelSize).Edges(edges).UseAntiAliasing(useAntiAliasing).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.GetShadedViews1``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetShadedViews1`: BTShadedViewsInfo
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.GetShadedViews1`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -613,6 +1004,41 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    vid := "vid_example" // string | 
+    eid := "eid_example" // string | 
+    otype := "otype_example" // string | 
+    oid := "oid_example" // string | 
+    partid := "partid_example" // string | 
+    includePropertyDefaults := true // bool |  (optional) (default to false)
+    configuration := "configuration_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.GetStandardContentPartMetadata(context.Background(), did, vid, eid, otype, oid, partid).IncludePropertyDefaults(includePropertyDefaults).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.GetStandardContentPartMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetStandardContentPartMetadata`: BTPartMetadataInfo
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.GetStandardContentPartMetadata`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -667,6 +1093,38 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    partid := "partid_example" // string | 
+    bTWorkspacePartParams := openapiclient.BTWorkspacePartParams{Appearance: openapiclient.BTPartAppearanceParams{Color: openapiclient.BTColorParams{Blue: 123, Green: 123, Red: 123}, Opacity: 123}, ApplyUpdateToAllConfigurations: false, Configuration: "Configuration_example", ConnectionId: "ConnectionId_example", CustomProperties: []BTNameValuePair{openapiclient.BTNameValuePair{Name: "Name_example", Value: "Value_example"}), CustomPropertyDefinitions: []BTCustomPropertyDefinitionParams{openapiclient.BTCustomPropertyDefinitionParams{Description: "Description_example", EnumDefinition: []string{"EnumDefinition_example"), Name: "Name_example", Template: "Template_example", Type: "Type_example"}), Description: "Description_example", ElementId: "ElementId_example", Material: openapiclient.BTMaterialParams{DisplayName: "DisplayName_example", Id: "Id_example", LibraryName: "LibraryName_example", LibraryReference: openapiclient.BTExternalElementReferenceInfo{DocumentId: "DocumentId_example", ElementId: "ElementId_example", ElementMicroversionId: "ElementMicroversionId_example", VersionId: "VersionId_example"}, Properties: []BTMaterialPropertyParams{openapiclient.BTMaterialPropertyParams{Category: "Category_example", Description: "Description_example", DisplayName: "DisplayName_example", Name: "Name_example", Type: "Type_example", Units: "Units_example", Value: "Value_example"})}, Name: "Name_example", PartId: "PartId_example", PartNumber: "PartNumber_example", ProductLine: "ProductLine_example", Project: "Project_example", Revision: "Revision_example", Title1: "Title1_example", Title2: "Title2_example", Title3: "Title3_example", Vendor: "Vendor_example"} // BTWorkspacePartParams |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.UpdatePartMetadata(context.Background(), did, wvm, wvmid, eid, partid).BTWorkspacePartParams(bTWorkspacePartParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.UpdatePartMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `UpdatePartMetadata`: BTPartMetadataInfo
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.UpdatePartMetadata`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -716,6 +1174,41 @@ Name | Type | Description  | Notes
 > BTPartMetadataInfo UpdateStandardContentPartMetadata(ctx, did, vid, eid, otype, oid, partid).LinkDocumentId(linkDocumentId).IncludePropertyDefaults(includePropertyDefaults).BTWorkspacePartParams(bTWorkspacePartParams).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    vid := "vid_example" // string | 
+    eid := "eid_example" // string | 
+    otype := "otype_example" // string | 
+    oid := "oid_example" // string | 
+    partid := "partid_example" // string | 
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+    includePropertyDefaults := true // bool |  (optional) (default to false)
+    bTWorkspacePartParams := openapiclient.BTWorkspacePartParams{Appearance: openapiclient.BTPartAppearanceParams{Color: openapiclient.BTColorParams{Blue: 123, Green: 123, Red: 123}, Opacity: 123}, ApplyUpdateToAllConfigurations: false, Configuration: "Configuration_example", ConnectionId: "ConnectionId_example", CustomProperties: []BTNameValuePair{openapiclient.BTNameValuePair{Name: "Name_example", Value: "Value_example"}), CustomPropertyDefinitions: []BTCustomPropertyDefinitionParams{openapiclient.BTCustomPropertyDefinitionParams{Description: "Description_example", EnumDefinition: []string{"EnumDefinition_example"), Name: "Name_example", Template: "Template_example", Type: "Type_example"}), Description: "Description_example", ElementId: "ElementId_example", Material: openapiclient.BTMaterialParams{DisplayName: "DisplayName_example", Id: "Id_example", LibraryName: "LibraryName_example", LibraryReference: openapiclient.BTExternalElementReferenceInfo{DocumentId: "DocumentId_example", ElementId: "ElementId_example", ElementMicroversionId: "ElementMicroversionId_example", VersionId: "VersionId_example"}, Properties: []BTMaterialPropertyParams{openapiclient.BTMaterialPropertyParams{Category: "Category_example", Description: "Description_example", DisplayName: "DisplayName_example", Name: "Name_example", Type: "Type_example", Units: "Units_example", Value: "Value_example"})}, Name: "Name_example", PartId: "PartId_example", PartNumber: "PartNumber_example", ProductLine: "ProductLine_example", Project: "Project_example", Revision: "Revision_example", Title1: "Title1_example", Title2: "Title2_example", Title3: "Title3_example", Vendor: "Vendor_example"} // BTWorkspacePartParams |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.PartsApi.UpdateStandardContentPartMetadata(context.Background(), did, vid, eid, otype, oid, partid).LinkDocumentId(linkDocumentId).IncludePropertyDefaults(includePropertyDefaults).BTWorkspacePartParams(bTWorkspacePartParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `PartsApi.UpdateStandardContentPartMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `UpdateStandardContentPartMetadata`: BTPartMetadataInfo
+    fmt.Fprintf(os.Stdout, "Response from `PartsApi.UpdateStandardContentPartMetadata`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 

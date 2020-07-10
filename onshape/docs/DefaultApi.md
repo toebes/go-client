@@ -28,6 +28,33 @@ Method | HTTP request | Description
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    wfid := "wfid_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.CreateWorkflowableTestObject(context.Background(), wfid).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.CreateWorkflowableTestObject``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `CreateWorkflowableTestObject`: BTWorkflowableTestObjectInfo
+    fmt.Fprintf(os.Stdout, "Response from `DefaultApi.CreateWorkflowableTestObject`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -68,6 +95,47 @@ Name | Type | Description  | Notes
 > BTAppElementBasicInfo DeleteAssociativeData(ctx, did, eid, wvm, wvmid).TransactionId(transactionId).ParentChangeId(parentChangeId).AssociativeDataId(associativeDataId).ElementId(elementId).ViewId(viewId).MicroversionId(microversionId).DocumentMicroversion(documentMicroversion).DeterministicId(deterministicId).FeatureId(featureId).EntityId(entityId).OccurrenceId(occurrenceId).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    transactionId := "transactionId_example" // string |  (optional) (default to "")
+    parentChangeId := "parentChangeId_example" // string |  (optional) (default to "")
+    associativeDataId := []string{"Inner_example"} // []string |  (optional)
+    elementId := "elementId_example" // string |  (optional) (default to "")
+    viewId := "viewId_example" // string |  (optional) (default to "")
+    microversionId := "microversionId_example" // string |  (optional) (default to "")
+    documentMicroversion := "documentMicroversion_example" // string |  (optional) (default to "")
+    deterministicId := "deterministicId_example" // string |  (optional) (default to "")
+    featureId := "featureId_example" // string |  (optional) (default to "")
+    entityId := "entityId_example" // string |  (optional) (default to "")
+    occurrenceId := "occurrenceId_example" // string |  (optional) (default to "")
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.DeleteAssociativeData(context.Background(), did, eid, wvm, wvmid).TransactionId(transactionId).ParentChangeId(parentChangeId).AssociativeDataId(associativeDataId).ElementId(elementId).ViewId(viewId).MicroversionId(microversionId).DocumentMicroversion(documentMicroversion).DeterministicId(deterministicId).FeatureId(featureId).EntityId(entityId).OccurrenceId(occurrenceId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.DeleteAssociativeData``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `DeleteAssociativeData`: BTAppElementBasicInfo
+    fmt.Fprintf(os.Stdout, "Response from `DefaultApi.DeleteAssociativeData`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -127,6 +195,48 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    transactionId := "transactionId_example" // string |  (optional) (default to "")
+    changeId := "changeId_example" // string |  (optional) (default to "")
+    associativeDataId := []string{"Inner_example"} // []string |  (optional)
+    elementId := "elementId_example" // string |  (optional) (default to "")
+    viewId := "viewId_example" // string |  (optional) (default to "")
+    microversionId := "microversionId_example" // string |  (optional) (default to "")
+    documentMicroversion := "documentMicroversion_example" // string |  (optional) (default to "")
+    deterministicId := "deterministicId_example" // string |  (optional) (default to "")
+    featureId := "featureId_example" // string |  (optional) (default to "")
+    entityId := "entityId_example" // string |  (optional) (default to "")
+    occurrenceId := "occurrenceId_example" // string |  (optional) (default to "")
+    returnIdTags := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.GetAssociativeData(context.Background(), did, wvm, wvmid, eid).TransactionId(transactionId).ChangeId(changeId).AssociativeDataId(associativeDataId).ElementId(elementId).ViewId(viewId).MicroversionId(microversionId).DocumentMicroversion(documentMicroversion).DeterministicId(deterministicId).FeatureId(featureId).EntityId(entityId).OccurrenceId(occurrenceId).ReturnIdTags(returnIdTags).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.GetAssociativeData``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetAssociativeData`: BTAppAssociativeDataInfoArray
+    fmt.Fprintf(os.Stdout, "Response from `DefaultApi.GetAssociativeData`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -185,6 +295,52 @@ Name | Type | Description  | Notes
 > BTListResponseBTInsertableInfo GetLatestInDocument(ctx, did).BetaCapabilityIds(betaCapabilityIds).IncludeParts(includeParts).IncludeSurfaces(includeSurfaces).IncludeWires(includeWires).IncludeSketches(includeSketches).IncludeReferenceFeatures(includeReferenceFeatures).IncludeAssemblies(includeAssemblies).IncludeFeatures(includeFeatures).IncludeFeatureStudios(includeFeatureStudios).IncludePartStudios(includePartStudios).IncludeBlobs(includeBlobs).IncludeMeshes(includeMeshes).IncludeFlattenedBodies(includeFlattenedBodies).AllowedBlobMimeTypes(allowedBlobMimeTypes).MaxFeatureScriptVersion(maxFeatureScriptVersion).IncludeApplications(includeApplications).AllowedApplicationMimeTypes(allowedApplicationMimeTypes).IncludeCompositeParts(includeCompositeParts).IncludeFSTables(includeFSTables).Execute()
 
 insertables for a document
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    betaCapabilityIds := []string{"Inner_example"} // []string |  (optional)
+    includeParts := true // bool |  (optional) (default to false)
+    includeSurfaces := true // bool |  (optional) (default to false)
+    includeWires := true // bool |  (optional) (default to false)
+    includeSketches := true // bool |  (optional) (default to false)
+    includeReferenceFeatures := true // bool |  (optional) (default to false)
+    includeAssemblies := true // bool |  (optional) (default to false)
+    includeFeatures := true // bool |  (optional) (default to false)
+    includeFeatureStudios := true // bool |  (optional) (default to false)
+    includePartStudios := true // bool |  (optional) (default to false)
+    includeBlobs := true // bool |  (optional) (default to false)
+    includeMeshes := true // bool |  (optional) (default to false)
+    includeFlattenedBodies := true // bool |  (optional) (default to false)
+    allowedBlobMimeTypes := "allowedBlobMimeTypes_example" // string |  (optional) (default to "")
+    maxFeatureScriptVersion := 987 // int32 |  (optional) (default to 0)
+    includeApplications := true // bool |  (optional) (default to false)
+    allowedApplicationMimeTypes := "allowedApplicationMimeTypes_example" // string |  (optional) (default to "")
+    includeCompositeParts := true // bool |  (optional) (default to false)
+    includeFSTables := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.GetLatestInDocument(context.Background(), did).BetaCapabilityIds(betaCapabilityIds).IncludeParts(includeParts).IncludeSurfaces(includeSurfaces).IncludeWires(includeWires).IncludeSketches(includeSketches).IncludeReferenceFeatures(includeReferenceFeatures).IncludeAssemblies(includeAssemblies).IncludeFeatures(includeFeatures).IncludeFeatureStudios(includeFeatureStudios).IncludePartStudios(includePartStudios).IncludeBlobs(includeBlobs).IncludeMeshes(includeMeshes).IncludeFlattenedBodies(includeFlattenedBodies).AllowedBlobMimeTypes(allowedBlobMimeTypes).MaxFeatureScriptVersion(maxFeatureScriptVersion).IncludeApplications(includeApplications).AllowedApplicationMimeTypes(allowedApplicationMimeTypes).IncludeCompositeParts(includeCompositeParts).IncludeFSTables(includeFSTables).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.GetLatestInDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetLatestInDocument`: BTListResponseBTInsertableInfo
+    fmt.Fprintf(os.Stdout, "Response from `DefaultApi.GetLatestInDocument`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -246,6 +402,36 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    objectType := 987 // int32 | 
+    ownerId := "ownerId_example" // string |  (optional)
+    documentId := "documentId_example" // string |  (optional)
+    ownerType := 987 // int32 |  (optional) (default to 1)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.GetMetadataSchema(context.Background(), objectType).OwnerId(ownerId).DocumentId(documentId).OwnerType(ownerType).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.GetMetadataSchema``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetMetadataSchema`: BTMetadataSchemaInfo
+    fmt.Fprintf(os.Stdout, "Response from `DefaultApi.GetMetadataSchema`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -285,6 +471,41 @@ Name | Type | Description  | Notes
 > BTListResponseBTMetadataPropertySummaryInfo GetProperties(ctx).SchemaId(schemaId).OwnerId(ownerId).DocumentId(documentId).OwnerType(ownerType).ObjectType(objectType).Strict(strict).ActiveOnly(activeOnly).Offset(offset).Limit(limit).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    schemaId := "schemaId_example" // string |  (optional)
+    ownerId := "ownerId_example" // string |  (optional)
+    documentId := "documentId_example" // string |  (optional)
+    ownerType := 987 // int32 |  (optional) (default to 1)
+    objectType := 987 // int32 |  (optional)
+    strict := true // bool |  (optional) (default to false)
+    activeOnly := true // bool |  (optional) (default to false)
+    offset := 987 // int32 |  (optional) (default to 0)
+    limit := 987 // int32 |  (optional) (default to 200)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.GetProperties(context.Background(), ).SchemaId(schemaId).OwnerId(ownerId).DocumentId(documentId).OwnerType(ownerType).ObjectType(objectType).Strict(strict).ActiveOnly(activeOnly).Offset(offset).Limit(limit).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.GetProperties``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetProperties`: BTListResponseBTMetadataPropertySummaryInfo
+    fmt.Fprintf(os.Stdout, "Response from `DefaultApi.GetProperties`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -330,6 +551,38 @@ Name | Type | Description  | Notes
 > BTMetadataPropertyInfo GetPropertyInfo(ctx, pid).DocumentId(documentId).SchemaId(schemaId).OwnerId(ownerId).OwnerType(ownerType).ObjectType(objectType).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    pid := "pid_example" // string | 
+    documentId := "documentId_example" // string |  (optional)
+    schemaId := "schemaId_example" // string |  (optional)
+    ownerId := "ownerId_example" // string |  (optional)
+    ownerType := 987 // int32 |  (optional) (default to 1)
+    objectType := 987 // int32 |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.GetPropertyInfo(context.Background(), pid).DocumentId(documentId).SchemaId(schemaId).OwnerId(ownerId).OwnerType(ownerType).ObjectType(objectType).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.GetPropertyInfo``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetPropertyInfo`: BTMetadataPropertyInfo
+    fmt.Fprintf(os.Stdout, "Response from `DefaultApi.GetPropertyInfo`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -377,6 +630,34 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    sid := "sid_example" // string | 
+    documentId := "documentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.GetSchema(context.Background(), sid).DocumentId(documentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.GetSchema``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetSchema`: BTMetadataSchemaInfo
+    fmt.Fprintf(os.Stdout, "Response from `DefaultApi.GetSchema`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -418,6 +699,39 @@ Name | Type | Description  | Notes
 > BTBoundingBoxInfo GetSketchBoundingBoxes(ctx, did, wvm, wvmid, eid, sid).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    sid := "sid_example" // string | 
+    configuration := "configuration_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.GetSketchBoundingBoxes(context.Background(), did, wvm, wvmid, eid, sid).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.GetSketchBoundingBoxes``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetSketchBoundingBoxes`: BTBoundingBoxInfo
+    fmt.Fprintf(os.Stdout, "Response from `DefaultApi.GetSketchBoundingBoxes`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -469,6 +783,40 @@ Name | Type | Description  | Notes
 > GetSketchInfo(ctx, did, wvm, wvmid, eid).Configuration(configuration).SketchId(sketchId).Output3D(output3D).CurvePoints(curvePoints).IncludeGeometry(includeGeometry).LinkDocumentId(linkDocumentId).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    configuration := "configuration_example" // string |  (optional)
+    sketchId := []string{"Inner_example"} // []string |  (optional)
+    output3D := true // bool |  (optional) (default to false)
+    curvePoints := true // bool |  (optional) (default to false)
+    includeGeometry := true // bool |  (optional) (default to true)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.GetSketchInfo(context.Background(), did, wvm, wvmid, eid).Configuration(configuration).SketchId(sketchId).Output3D(output3D).CurvePoints(curvePoints).IncludeGeometry(includeGeometry).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.GetSketchInfo``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 
@@ -522,6 +870,40 @@ Name | Type | Description  | Notes
 > GetTessellatedEntities(ctx, did, wvm, wvmid, eid, sid).Configuration(configuration).EntityId(entityId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).LinkDocumentId(linkDocumentId).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    sid := "sid_example" // string | 
+    configuration := "configuration_example" // string |  (optional)
+    entityId := []string{"Inner_example"} // []string |  (optional)
+    angleTolerance := 987 // float64 |  (optional)
+    chordTolerance := 987 // float64 |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.GetTessellatedEntities(context.Background(), did, wvm, wvmid, eid, sid).Configuration(configuration).EntityId(entityId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.GetTessellatedEntities``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 
@@ -577,6 +959,33 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    oid := "oid_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.GetWorkflowableTestObject(context.Background(), oid).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.GetWorkflowableTestObject``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetWorkflowableTestObject`: BTWorkflowableTestObjectInfo
+    fmt.Fprintf(os.Stdout, "Response from `DefaultApi.GetWorkflowableTestObject`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -617,6 +1026,37 @@ Name | Type | Description  | Notes
 > BTAppAssociativeDataInfoArray PostAssociativeData(ctx, did, eid, wvm, wvmid).Body(body).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    body := "body_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.PostAssociativeData(context.Background(), did, eid, wvm, wvmid, body).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.PostAssociativeData``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `PostAssociativeData`: BTAppAssociativeDataInfoArray
+    fmt.Fprintf(os.Stdout, "Response from `DefaultApi.PostAssociativeData`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -666,6 +1106,34 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    oid := "oid_example" // string | 
+    transition := "transition_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.TransitionWorkflowableTestObject(context.Background(), oid, transition).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.TransitionWorkflowableTestObject``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `TransitionWorkflowableTestObject`: BTWorkflowableTestObjectInfo
+    fmt.Fprintf(os.Stdout, "Response from `DefaultApi.TransitionWorkflowableTestObject`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -708,6 +1176,34 @@ Name | Type | Description  | Notes
 > BTWorkflowableTestObjectInfo UpdateWorkflowableTestObject(ctx, oid).BTUpdateWorkflowableTestObjectParams(bTUpdateWorkflowableTestObjectParams).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    oid := "oid_example" // string | 
+    bTUpdateWorkflowableTestObjectParams := openapiclient.BTUpdateWorkflowableTestObjectParams{Properties: []BTPropertyValueParam{openapiclient.BTPropertyValueParam{PropertyId: "PropertyId_example", Value: "TODO"})} // BTUpdateWorkflowableTestObjectParams | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.DefaultApi.UpdateWorkflowableTestObject(context.Background(), oid, bTUpdateWorkflowableTestObjectParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.UpdateWorkflowableTestObject``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `UpdateWorkflowableTestObject`: BTWorkflowableTestObjectInfo
+    fmt.Fprintf(os.Stdout, "Response from `DefaultApi.UpdateWorkflowableTestObject`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 

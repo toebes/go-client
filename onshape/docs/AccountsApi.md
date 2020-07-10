@@ -17,6 +17,33 @@ Method | HTTP request | Description
 
 Cancel Recurring Subscription
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    aid := "aid_example" // string | 
+    pid := "pid_example" // string | 
+    cancelImmediately := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AccountsApi.CancelPurchaseNew(context.Background(), aid, pid).CancelImmediately(cancelImmediately).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AccountsApi.CancelPurchaseNew``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 
@@ -61,6 +88,34 @@ Name | Type | Description  | Notes
 
 Mark Purchase Consumed For User
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    pid := "pid_example" // string | 
+    bTPurchaseUserParams := openapiclient.BTPurchaseUserParams{ConsumedQuantity: 123, PurchaseId: "PurchaseId_example", UserId: "UserId_example"} // BTPurchaseUserParams |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AccountsApi.ConsumePurchase(context.Background(), pid).BTPurchaseUserParams(bTPurchaseUserParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AccountsApi.ConsumePurchase``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ConsumePurchase`: BTPurchaseInfo
+    fmt.Fprintf(os.Stdout, "Response from `AccountsApi.ConsumePurchase`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -102,6 +157,35 @@ Name | Type | Description  | Notes
 > BTListResponseBTPurchaseInfo GetPlanPurchases(ctx, planId).Offset(offset).Limit(limit).Execute()
 
 Get Plan Purchases
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    planId := "planId_example" // string | 
+    offset := 987 // int32 |  (optional) (default to 0)
+    limit := 987 // int32 |  (optional) (default to 20)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AccountsApi.GetPlanPurchases(context.Background(), planId).Offset(offset).Limit(limit).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AccountsApi.GetPlanPurchases``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetPlanPurchases`: BTListResponseBTPurchaseInfo
+    fmt.Fprintf(os.Stdout, "Response from `AccountsApi.GetPlanPurchases`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -145,6 +229,34 @@ No authorization required
 > []BTPurchaseInfo GetPurchases(ctx).All(all).OwnPurchaseOnly(ownPurchaseOnly).Execute()
 
 Get User's Appstore Purchases.
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    all := true // bool |  (optional) (default to false)
+    ownPurchaseOnly := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.AccountsApi.GetPurchases(context.Background(), ).All(all).OwnPurchaseOnly(ownPurchaseOnly).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AccountsApi.GetPurchases``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetPurchases`: []BTPurchaseInfo
+    fmt.Fprintf(os.Stdout, "Response from `AccountsApi.GetPurchases`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 

@@ -14,6 +14,34 @@ Method | HTTP request | Description
 
 OpenAPI spec documentation for the Onshape REST API.
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    excludedTags := "excludedTags_example" // string | If an operation contains an excluded tag, it is not returned from this endpoint. (optional)
+    includedTags := "includedTags_example" // string | Return only operations with tags included in includedTags. (optional)
+    includeDeprecated := true // bool | Include deprecated endpoints. (optional)
+    documentationStatus := []string{"DocumentationStatus_example"} // []string | Only return endpoints that have the specified document status. Default is to return all the endpoints the user should have access to. (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.OpenAPIApi.GetOpenApi(context.Background(), ).ExcludedTags(excludedTags).IncludedTags(includedTags).IncludeDeprecated(includeDeprecated).DocumentationStatus(documentationStatus).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `OpenAPIApi.GetOpenApi``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 

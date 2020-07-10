@@ -23,6 +23,39 @@ Method | HTTP request | Description
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    vid := "vid_example" // string | 
+    eid := "eid_example" // string | 
+    otype := "otype_example" // string | 
+    oid := "oid_example" // string | 
+    pid := "pid_example" // string | 
+    configuration := "configuration_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+    thumbnail := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.MetadataApi.GetVEOPStandardContentMetadata(context.Background(), did, vid, eid, otype, oid, pid).Configuration(configuration).LinkDocumentId(linkDocumentId).Thumbnail(thumbnail).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetVEOPStandardContentMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 
@@ -77,6 +110,39 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    configuration := "configuration_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+    inferMetadataOwner := true // bool |  (optional) (default to false)
+    depth := "depth_example" // string |  (optional) (default to "1")
+    thumbnail := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.MetadataApi.GetWMVEMetadata(context.Background(), did, wvm, wvmid, eid).Configuration(configuration).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Depth(depth).Thumbnail(thumbnail).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWMVEMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 
@@ -128,6 +194,39 @@ Name | Type | Description  | Notes
 > GetWMVEPMetadata(ctx, did, wvm, wvmid, eid, pid).Configuration(configuration).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Thumbnail(thumbnail).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    pid := "pid_example" // string | 
+    configuration := "configuration_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+    inferMetadataOwner := true // bool |  (optional) (default to false)
+    thumbnail := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.MetadataApi.GetWMVEPMetadata(context.Background(), did, wvm, wvmid, eid, pid).Configuration(configuration).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Thumbnail(thumbnail).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWMVEPMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 
@@ -182,6 +281,38 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    configuration := "configuration_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+    inferMetadataOwner := true // bool |  (optional) (default to false)
+    thumbnail := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.MetadataApi.GetWMVEPsMetadata(context.Background(), did, wvm, wvmid, eid).Configuration(configuration).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Thumbnail(thumbnail).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWMVEPsMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 
@@ -233,6 +364,37 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+    inferMetadataOwner := true // bool |  (optional) (default to false)
+    depth := "depth_example" // string |  (optional) (default to "1")
+    thumbnail := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.MetadataApi.GetWMVEsMetadata(context.Background(), did, wvm, wvmid).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Depth(depth).Thumbnail(thumbnail).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWMVEsMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 
@@ -282,6 +444,37 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wv := "wv_example" // string | 
+    wvid := "wvid_example" // string | 
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+    inferMetadataOwner := true // bool |  (optional) (default to false)
+    depth := "depth_example" // string |  (optional) (default to "1")
+    thumbnail := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.MetadataApi.GetWVMetadata(context.Background(), did, wv, wvid).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Depth(depth).Thumbnail(thumbnail).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWVMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 
@@ -330,6 +523,38 @@ Name | Type | Description  | Notes
 > UpdateVEOPStandardContentPartMetadata(ctx, did, vid, eid, otype, oid, pid).Body(body).LinkDocumentId(linkDocumentId).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    vid := "vid_example" // string | 
+    eid := "eid_example" // string | 
+    otype := "otype_example" // string | 
+    oid := "oid_example" // string | 
+    pid := "pid_example" // string | 
+    body := "body_example" // string | 
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.MetadataApi.UpdateVEOPStandardContentPartMetadata(context.Background(), did, vid, eid, otype, oid, pid, body).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.UpdateVEOPStandardContentPartMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 
@@ -384,6 +609,36 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    body := "body_example" // string | 
+    configuration := "configuration_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.MetadataApi.UpdateWVEMetadata(context.Background(), did, wvm, wvmid, eid, body).Configuration(configuration).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.UpdateWVEMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 
@@ -432,6 +687,38 @@ Name | Type | Description  | Notes
 > UpdateWVEPMetadata(ctx, did, wvm, wvmid, eid, pid, subResource).Body(body).Configuration(configuration).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    pid := "pid_example" // string | 
+    subResource := "subResource_example" // string | 
+    body := "body_example" // string | 
+    configuration := "configuration_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.MetadataApi.UpdateWVEPMetadata(context.Background(), did, wvm, wvmid, eid, pid, subResource, body).Configuration(configuration).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.UpdateWVEPMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 
@@ -485,6 +772,34 @@ Name | Type | Description  | Notes
 > UpdateWVMetadata(ctx, did, wv, wvid).Body(body).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wv := "wv_example" // string | 
+    wvid := "wvid_example" // string | 
+    body := "body_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.MetadataApi.UpdateWVMetadata(context.Background(), did, wv, wvid, body).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.UpdateWVMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 

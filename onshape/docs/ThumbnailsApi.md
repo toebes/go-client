@@ -25,6 +25,34 @@ Method | HTTP request | Description
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wv := "wv_example" // string | 
+    wvid := "wvid_example" // string | 
+    eid := "eid_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ThumbnailsApi.DeleteApplicationThumbnails(context.Background(), did, wv, wvid, eid).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailsApi.DeleteApplicationThumbnails``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 
@@ -71,6 +99,37 @@ Name | Type | Description  | Notes
 > GetConfiguredElementThumbnailWithSize(ctx, did, wid, eid, cid, sz).T(t).RejectEmpty(rejectEmpty).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wid := "wid_example" // string | 
+    eid := "eid_example" // string | 
+    cid := "cid_example" // string | 
+    sz := "sz_example" // string | 
+    t := "t_example" // string |  (optional)
+    rejectEmpty := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ThumbnailsApi.GetConfiguredElementThumbnailWithSize(context.Background(), did, wid, eid, cid, sz).T(t).RejectEmpty(rejectEmpty).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailsApi.GetConfiguredElementThumbnailWithSize``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 
@@ -123,6 +182,34 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wid := "wid_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ThumbnailsApi.GetDocumentThumbnail(context.Background(), did, wid).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailsApi.GetDocumentThumbnail``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetDocumentThumbnail`: BTThumbnailInfo
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailsApi.GetDocumentThumbnail`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -165,6 +252,34 @@ Name | Type | Description  | Notes
 > GetDocumentThumbnailWithSize(ctx, did, wid, sz).T(t).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wid := "wid_example" // string | 
+    sz := "sz_example" // string | 
+    t := "t_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ThumbnailsApi.GetDocumentThumbnailWithSize(context.Background(), did, wid, sz).T(t).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailsApi.GetDocumentThumbnailWithSize``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 
@@ -211,6 +326,37 @@ Name | Type | Description  | Notes
 > BTThumbnailInfo GetElementThumbnail(ctx, did, wv, wvid, eid).LinkDocumentId(linkDocumentId).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wv := "wv_example" // string | 
+    wvid := "wvid_example" // string | 
+    eid := "eid_example" // string | 
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ThumbnailsApi.GetElementThumbnail(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailsApi.GetElementThumbnail``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetElementThumbnail`: BTThumbnailInfo
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailsApi.GetElementThumbnail`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -259,6 +405,37 @@ Name | Type | Description  | Notes
 > GetElementThumbnailWithApiConfiguration(ctx, did, wid, eid, cid, sz).T(t).RejectEmpty(rejectEmpty).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wid := "wid_example" // string | 
+    eid := "eid_example" // string | 
+    cid := "cid_example" // string | 
+    sz := "sz_example" // string | 
+    t := "t_example" // string |  (optional)
+    rejectEmpty := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ThumbnailsApi.GetElementThumbnailWithApiConfiguration(context.Background(), did, wid, eid, cid, sz).T(t).RejectEmpty(rejectEmpty).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailsApi.GetElementThumbnailWithApiConfiguration``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 
@@ -311,6 +488,36 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wid := "wid_example" // string | 
+    eid := "eid_example" // string | 
+    sz := "sz_example" // string | 
+    t := "t_example" // string |  (optional)
+    rejectEmpty := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ThumbnailsApi.GetElementThumbnailWithSize(context.Background(), did, wid, eid, sz).T(t).RejectEmpty(rejectEmpty).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailsApi.GetElementThumbnailWithSize``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 
@@ -360,6 +567,33 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ThumbnailsApi.GetThumbnailForDocument(context.Background(), did).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailsApi.GetThumbnailForDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetThumbnailForDocument`: BTThumbnailInfo
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailsApi.GetThumbnailForDocument`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -400,6 +634,33 @@ Name | Type | Description  | Notes
 > GetThumbnailForDocumentAndVersion(ctx, did, vid).LinkDocumentId(linkDocumentId).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    vid := "vid_example" // string | 
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ThumbnailsApi.GetThumbnailForDocumentAndVersion(context.Background(), did, vid).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailsApi.GetThumbnailForDocumentAndVersion``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 
@@ -445,6 +706,32 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    vid := "vid_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ThumbnailsApi.GetThumbnailForDocumentAndVersionOld(context.Background(), did, vid).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailsApi.GetThumbnailForDocumentAndVersionOld``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 
@@ -488,6 +775,33 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ThumbnailsApi.GetThumbnailForDocumentOld(context.Background(), did).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailsApi.GetThumbnailForDocumentOld``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetThumbnailForDocumentOld`: BTThumbnailInfo
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailsApi.GetThumbnailForDocumentOld`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -528,6 +842,36 @@ Name | Type | Description  | Notes
 > SetApplicationElementThumbnail(ctx, did, wv, wvid, eid).BTApplicationElementThumbnailParamsArray(bTApplicationElementThumbnailParamsArray).Overwrite(overwrite).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wv := "wv_example" // string | 
+    wvid := "wvid_example" // string | 
+    eid := "eid_example" // string | 
+    bTApplicationElementThumbnailParamsArray := openapiclient.BTApplicationElementThumbnailParamsArray{Thumbnails: []BTApplicationElementThumbnailParams{openapiclient.BTApplicationElementThumbnailParams{Base64EncodedImage: "Base64EncodedImage_example", Description: "Description_example", ImageHeight: 123, ImageWidth: 123, IsPrimary: false, UniqueId: "UniqueId_example"})} // BTApplicationElementThumbnailParamsArray | 
+    overwrite := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ThumbnailsApi.SetApplicationElementThumbnail(context.Background(), did, wv, wvid, eid, bTApplicationElementThumbnailParamsArray).Overwrite(overwrite).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailsApi.SetApplicationElementThumbnail``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 

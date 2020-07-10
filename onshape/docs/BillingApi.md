@@ -14,6 +14,31 @@ Method | HTTP request | Description
 
 Get billing plans for client.
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    cid := "cid_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.BillingApi.GetClientPlans(context.Background(), cid).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `BillingApi.GetClientPlans``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 

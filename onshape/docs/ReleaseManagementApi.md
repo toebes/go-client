@@ -18,6 +18,32 @@ Method | HTTP request | Description
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    wfid := "wfid_example" // string | 
+    revisionId := "revisionId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ReleaseManagementApi.CreateObsoletionPackage(context.Background(), wfid).RevisionId(revisionId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ReleaseManagementApi.CreateObsoletionPackage``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 
@@ -59,6 +85,32 @@ Name | Type | Description  | Notes
 > CreateReleasePackage(ctx, wfid).BTReleasePackageParams(bTReleasePackageParams).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    wfid := "wfid_example" // string | 
+    bTReleasePackageParams := openapiclient.BTReleasePackageParams{Items: []BTReleasePackageItemParams{openapiclient.BTReleasePackageItemParams{Configuration: "Configuration_example", DocumentId: "DocumentId_example", ElementId: "ElementId_example", Href: "Href_example", Id: "Id_example", IsIncluded: false, PartId: "PartId_example", PartNumber: "PartNumber_example", Properties: []BTPropertyValueParam{openapiclient.BTPropertyValueParam{PropertyId: "PropertyId_example", Value: "TODO"}), VersionId: "VersionId_example", WorkspaceId: "WorkspaceId_example"})} // BTReleasePackageParams | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ReleaseManagementApi.CreateReleasePackage(context.Background(), wfid, bTReleasePackageParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ReleaseManagementApi.CreateReleasePackage``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 
@@ -102,6 +154,33 @@ Name | Type | Description  | Notes
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    documentId := "documentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ReleaseManagementApi.GetCompanyReleaseWorkflow(context.Background(), ).DocumentId(documentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ReleaseManagementApi.GetCompanyReleaseWorkflow``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetCompanyReleaseWorkflow`: BTActiveWorkflowInfo
+    fmt.Fprintf(os.Stdout, "Response from `ReleaseManagementApi.GetCompanyReleaseWorkflow`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -138,6 +217,34 @@ Name | Type | Description  | Notes
 > BTReleasePackageInfo GetReleasePackage(ctx, rpid).Detailed(detailed).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    rpid := "rpid_example" // string | 
+    detailed := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ReleaseManagementApi.GetReleasePackage(context.Background(), rpid).Detailed(detailed).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ReleaseManagementApi.GetReleasePackage``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetReleasePackage`: BTReleasePackageInfo
+    fmt.Fprintf(os.Stdout, "Response from `ReleaseManagementApi.GetReleasePackage`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -180,6 +287,36 @@ Name | Type | Description  | Notes
 > BTReleasePackageInfo UpdateReleasePackage(ctx, rpid).BTUpdateReleasePackageParams(bTUpdateReleasePackageParams).Action(action).Wfaction(wfaction).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    rpid := "rpid_example" // string | 
+    bTUpdateReleasePackageParams := openapiclient.BTUpdateReleasePackageParams{Empty: false, ItemIds: []string{"ItemIds_example"), Items: []BTReleasePackageItemParams{openapiclient.BTReleasePackageItemParams{Configuration: "Configuration_example", DocumentId: "DocumentId_example", ElementId: "ElementId_example", Href: "Href_example", Id: "Id_example", IsIncluded: false, PartId: "PartId_example", PartNumber: "PartNumber_example", Properties: []BTPropertyValueParam{openapiclient.BTPropertyValueParam{PropertyId: "PropertyId_example", Value: "TODO"}), VersionId: "VersionId_example", WorkspaceId: "WorkspaceId_example"}), Properties: []BTPropertyValueParam{)} // BTUpdateReleasePackageParams | 
+    action := "action_example" // string |  (optional) (default to "UPDATE")
+    wfaction := "wfaction_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ReleaseManagementApi.UpdateReleasePackage(context.Background(), rpid, bTUpdateReleasePackageParams).Action(action).Wfaction(wfaction).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ReleaseManagementApi.UpdateReleasePackage``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `UpdateReleasePackage`: BTReleasePackageInfo
+    fmt.Fprintf(os.Stdout, "Response from `ReleaseManagementApi.UpdateReleasePackage`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 

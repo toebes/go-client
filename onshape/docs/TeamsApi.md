@@ -15,6 +15,36 @@ Method | HTTP request | Description
 
 
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    prefix := "prefix_example" // string |  (optional) (default to "")
+    uid := "uid_example" // string |  (optional)
+    companyId := "companyId_example" // string |  (optional)
+    includeCompanyOwnedTeams := true // bool |  (optional) (default to true)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.TeamsApi.Find(context.Background(), ).Prefix(prefix).Uid(uid).CompanyId(companyId).IncludeCompanyOwnedTeams(includeCompanyOwnedTeams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `TeamsApi.Find``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `Find`: BTGlobalTreeNodeListResponseBTTeamInfo
+    fmt.Fprintf(os.Stdout, "Response from `TeamsApi.Find`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -54,6 +84,33 @@ Name | Type | Description  | Notes
 > BTTeamInfo GetTeam(ctx, tid).Execute()
 
 
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    tid := "tid_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.TeamsApi.GetTeam(context.Background(), tid).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `TeamsApi.GetTeam``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetTeam`: BTTeamInfo
+    fmt.Fprintf(os.Stdout, "Response from `TeamsApi.GetTeam`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 

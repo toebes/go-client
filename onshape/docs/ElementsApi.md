@@ -21,6 +21,35 @@ Method | HTTP request | Description
 
 Copy Element
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wid := "wid_example" // string | 
+    bTCopyElementParams := openapiclient.BTCopyElementParams{AnchorElementId: "AnchorElementId_example", DocumentIdSource: "DocumentIdSource_example", ElementIdSource: "ElementIdSource_example", IsGroupAnchor: false, WorkspaceIdSource: "WorkspaceIdSource_example"} // BTCopyElementParams | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ElementsApi.CopyElementFromSourceDocument(context.Background(), did, wid, bTCopyElementParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementsApi.CopyElementFromSourceDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `CopyElementFromSourceDocument`: BTDocumentElementInfo
+    fmt.Fprintf(os.Stdout, "Response from `ElementsApi.CopyElementFromSourceDocument`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -64,6 +93,40 @@ Name | Type | Description  | Notes
 > BTConfigurationInfo DecodeConfiguration(ctx, did, wvm, wvmid, eid, cid).LinkDocumentId(linkDocumentId).IncludeDisplay(includeDisplay).ConfigurationIsId(configurationIsId).Execute()
 
 Decode Configuration String
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    cid := "cid_example" // string | 
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+    includeDisplay := true // bool |  (optional) (default to false)
+    configurationIsId := true // bool |  (optional) (default to false)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ElementsApi.DecodeConfiguration(context.Background(), did, wvm, wvmid, eid, cid).LinkDocumentId(linkDocumentId).IncludeDisplay(includeDisplay).ConfigurationIsId(configurationIsId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementsApi.DecodeConfiguration``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `DecodeConfiguration`: BTConfigurationInfo
+    fmt.Fprintf(os.Stdout, "Response from `ElementsApi.DecodeConfiguration`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -117,6 +180,33 @@ Name | Type | Description  | Notes
 
 Delete Element
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wid := "wid_example" // string | 
+    eid := "eid_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ElementsApi.DeleteElement(context.Background(), did, wid, eid).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementsApi.DeleteElement``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
 ### Path Parameters
 
 
@@ -161,6 +251,37 @@ Name | Type | Description  | Notes
 > BTEncodedConfigurationInfo EncodeConfigurationMap(ctx, did, eid).BTConfigurationParams(bTConfigurationParams).VersionId(versionId).LinkDocumentId(linkDocumentId).Execute()
 
 Encode Configuration
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    eid := "eid_example" // string | 
+    bTConfigurationParams := openapiclient.BTConfigurationParams{Parameters: []ConfigurationEntry{openapiclient.ConfigurationEntry{ParameterId: "ParameterId_example", ParameterValue: "ParameterValue_example"}), StandardContentParametersId: "StandardContentParametersId_example"} // BTConfigurationParams | 
+    versionId := "versionId_example" // string |  (optional)
+    linkDocumentId := "linkDocumentId_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ElementsApi.EncodeConfigurationMap(context.Background(), did, eid, bTConfigurationParams).VersionId(versionId).LinkDocumentId(linkDocumentId).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementsApi.EncodeConfigurationMap``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `EncodeConfigurationMap`: BTEncodedConfigurationInfo
+    fmt.Fprintf(os.Stdout, "Response from `ElementsApi.EncodeConfigurationMap`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -208,6 +329,36 @@ Name | Type | Description  | Notes
 
 Get Configuration
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ElementsApi.GetConfiguration(context.Background(), did, wvm, wvmid, eid).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementsApi.GetConfiguration``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetConfiguration`: BTConfigurationInfo
+    fmt.Fprintf(os.Stdout, "Response from `ElementsApi.GetConfiguration`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -254,6 +405,38 @@ Name | Type | Description  | Notes
 > []BTModelFormatInfo GetElementTranslatorFormatsByVersionOrWorkspace(ctx, did, wv, wvid, eid).CheckContent(checkContent).Configuration(configuration).Execute()
 
 Get Element Translator Formats
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wv := "wv_example" // string | 
+    wvid := "wvid_example" // string | 
+    eid := "eid_example" // string | 
+    checkContent := true // bool |  (optional) (default to true)
+    configuration := "configuration_example" // string |  (optional) (default to "")
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ElementsApi.GetElementTranslatorFormatsByVersionOrWorkspace(context.Background(), did, wv, wvid, eid).CheckContent(checkContent).Configuration(configuration).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementsApi.GetElementTranslatorFormatsByVersionOrWorkspace``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `GetElementTranslatorFormatsByVersionOrWorkspace`: []BTModelFormatInfo
+    fmt.Fprintf(os.Stdout, "Response from `ElementsApi.GetElementTranslatorFormatsByVersionOrWorkspace`: %v\n", resp)
+}
+```
 
 ### Path Parameters
 
@@ -304,6 +487,37 @@ No authorization required
 
 Update Configuration
 
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wvm := "wvm_example" // string | 
+    wvmid := "wvmid_example" // string | 
+    eid := "eid_example" // string | 
+    body := "body_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ElementsApi.UpdateConfiguration(context.Background(), did, wvm, wvmid, eid).Body(body).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementsApi.UpdateConfiguration``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `UpdateConfiguration`: BTConfigurationInfo
+    fmt.Fprintf(os.Stdout, "Response from `ElementsApi.UpdateConfiguration`: %v\n", resp)
+}
+```
+
 ### Path Parameters
 
 
@@ -351,6 +565,34 @@ Name | Type | Description  | Notes
 > UpdateReferences(ctx, did, wid, eid).BTUpdateReferenceParams(bTUpdateReferenceParams).Execute()
 
 Update or replace node references
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    did := "did_example" // string | 
+    wid := "wid_example" // string | 
+    eid := "eid_example" // string | 
+    bTUpdateReferenceParams := openapiclient.BTUpdateReferenceParams{ReferenceUpdates: []UpdateParams{openapiclient.UpdateParams{FromReference: openapiclient.BTUniqueDocumentItemParams{ApiConfiguration: "ApiConfiguration_example", DocumentId: "DocumentId_example", ElementId: "ElementId_example", ElementType: "ElementType_example", PartId: "PartId_example", PartNumber: "PartNumber_example", Revision: "Revision_example", VersionId: "VersionId_example", WorkspaceId: "WorkspaceId_example"}, IdsToUpdate: []string{"IdsToUpdate_example"), ToReference: openapiclient.BTUniqueDocumentItemParams{ApiConfiguration: "ApiConfiguration_example", DocumentId: "DocumentId_example", ElementId: "ElementId_example", ElementType: "ElementType_example", PartId: "PartId_example", PartNumber: "PartNumber_example", Revision: "Revision_example", VersionId: "VersionId_example", WorkspaceId: "WorkspaceId_example"}})} // BTUpdateReferenceParams | 
+
+    configuration := openapiclient.NewConfiguration()
+    api_client := openapiclient.NewAPIClient(configuration)
+    resp, r, err := api_client.ElementsApi.UpdateReferences(context.Background(), did, wid, eid, bTUpdateReferenceParams).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementsApi.UpdateReferences``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
 
 ### Path Parameters
 

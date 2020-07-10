@@ -194,6 +194,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
 **mid** | **string** | Magic ID of list to return. Known values include:
+
 | MAGIC ID | TITLE | USAGE |
 |-|-|-|
 | 0 | Recently Opened | Most recently opened documents |
@@ -210,7 +211,7 @@ Name | Type | Description  | Notes
 | 11 | Teams | Teams that the user is connected to |
 | 12 | Shared with me | Documents shared with the user |
 | 13 | Cloud Storage | Visual list of cloud accounts associated with the logged in user |
-| 14 | Custom table samples | Custom table samples (found when you select Other documents while adding a custom table) |  | 
+| 14 | Custom table samples | Custom table samples (found when you select Other documents while adding a custom table) | 
 
 ### Other Parameters
 

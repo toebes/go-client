@@ -179,6 +179,7 @@ Class | Method | HTTP request | Description
 *FoldersApi* | [**Share**](docs/FoldersApi.md#share) | **Post** /api/folders/{fid}/share | Share Folder
 *FoldersApi* | [**UnShare**](docs/FoldersApi.md#unshare) | **Delete** /api/folders/{fid}/share/{eid} | Unshare Folder
 *GlobalTreeNodesApi* | [**GlobalTreeNodes**](docs/GlobalTreeNodesApi.md#globaltreenodes) | **Get** /api/globaltreenodes/ | Get Searchable Trees
+*GlobalTreeNodesApi* | [**GlobalTreeNodesFolder**](docs/GlobalTreeNodesApi.md#globaltreenodesfolder) | **Get** /api/globaltreenodes/folder/{fid} | Get Tree Node List
 *GlobalTreeNodesApi* | [**GlobalTreeNodesMagic**](docs/GlobalTreeNodesApi.md#globaltreenodesmagic) | **Get** /api/globaltreenodes/magic/{mid} | Get Tree Node List
 *MetadataApi* | [**GetVEOPStandardContentMetadata**](docs/MetadataApi.md#getveopstandardcontentmetadata) | **Get** /api/metadata/standardcontent/d/{did}/v/{vid}/e/{eid}/{otype}/{oid}/p/{pid} | 
 *MetadataApi* | [**GetWMVEMetadata**](docs/MetadataApi.md#getwmvemetadata) | **Get** /api/metadata/d/{did}/{wvm}/{wvmid}/e/{eid} | 

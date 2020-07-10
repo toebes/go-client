@@ -4923,19 +4923,22 @@ paths:
       tags:
       - Global Tree Nodes
       x-BTVisibility: PRODUCTION
-  /api/globaltreenodes/magic/{mid}:
+  /api/globaltreenodes/folder/{fid}:
     get:
       deprecated: false
-      operationId: globalTreeNodesMagic
+      operationId: globalTreeNodesFolder
       parameters:
-      - explode: false
+      - description: ID of the folder to traverse.
+        explode: false
         in: path
-        name: mid
+        name: fid
         required: true
         schema:
           type: string
         style: simple
-      - explode: true
+      - description: When true, requests that the path of all nodes up to the root
+          are to be returned.
+        explode: true
         in: query
         name: getPathToRoot
         required: false
@@ -4943,7 +4946,8 @@ paths:
           default: false
           type: boolean
         style: form
-      - explode: true
+      - description: Starting offset in the sorted list of items to return.
+        explode: true
         in: query
         name: offset
         required: false
@@ -4952,7 +4956,8 @@ paths:
           format: int32
           type: integer
         style: form
-      - explode: true
+      - description: Maximum number of items in the list to return.
+        explode: true
         in: query
         name: limit
         required: false
@@ -4961,7 +4966,8 @@ paths:
           format: int32
           type: integer
         style: form
-      - explode: true
+      - description: Field to sort the items in the list by.
+        explode: true
         in: query
         name: sortColumn
         required: false
@@ -4969,7 +4975,100 @@ paths:
           default: modifiedAt
           type: string
         style: form
-      - explode: true
+      - description: Which way to sort the list (asc/desc).  Defaults to asc.
+        explode: true
+        in: query
+        name: sortOrder
+        required: false
+        schema:
+          default: asc
+          type: string
+        style: form
+      responses:
+        default:
+          content:
+            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1:
+              schema:
+                $ref: '#/components/schemas/BTGlobalTreeNodesInfo'
+          description: default response
+      summary: Get Tree Node List
+      tags:
+      - Global Tree Nodes
+      x-BTVisibility: PRODUCTION
+  /api/globaltreenodes/magic/{mid}:
+    get:
+      deprecated: false
+      description: Returns a list of all the elements in one of several globally defined
+        lists.
+      operationId: globalTreeNodesMagic
+      parameters:
+      - description: |
+          Magic ID of list to return. Known values include:
+          | MAGIC ID | TITLE | USAGE |
+          |-|-|-|
+          | 0 | Recently Opened | Most recently opened documents |
+          | 1 | My Onshape | Root folder and contents |
+          | 2 | Created by Me | Documents created by the logged in user |
+          | 3 | Public | All public documents (a very long list) |
+          | 4 | Trash | Trashcan for the logged in user |
+          | 5 | Tutorials & Samples | Desktop Tutorials |
+          | 6 | FeatureScript samples |  FeatureScript samples (found when you select Other documents while adding a custom feature) |
+          | 7 | Community spotlight | Community spotlight (found when you select Other documents while adding a custom feature) |
+          | 8 | Tutorials | IOS Tutorials |
+          | 9 | Tutorials | Android Tutorials |
+          | 10 | Labels | Labels created by the user  |
+          | 11 | Teams | Teams that the user is connected to |
+          | 12 | Shared with me | Documents shared with the user |
+          | 13 | Cloud Storage | Visual list of cloud accounts associated with the logged in user |
+          | 14 | Custom table samples | Custom table samples (found when you select Other documents while adding a custom table) |
+        explode: false
+        in: path
+        name: mid
+        required: true
+        schema:
+          type: string
+        style: simple
+      - description: When true, requests that the path of all nodes up to the root
+          are to be returned.
+        explode: true
+        in: query
+        name: getPathToRoot
+        required: false
+        schema:
+          default: false
+          type: boolean
+        style: form
+      - description: Starting offset in the sorted list of items to return.
+        explode: true
+        in: query
+        name: offset
+        required: false
+        schema:
+          default: 0
+          format: int32
+          type: integer
+        style: form
+      - description: Maximum number of items in the list to return.
+        explode: true
+        in: query
+        name: limit
+        required: false
+        schema:
+          default: 20
+          format: int32
+          type: integer
+        style: form
+      - description: Field to sort the items in the list by.
+        explode: true
+        in: query
+        name: sortColumn
+        required: false
+        schema:
+          default: modifiedAt
+          type: string
+        style: form
+      - description: Which way to sort the list (asc/desc).  Defaults to asc.
+        explode: true
         in: query
         name: sortOrder
         required: false

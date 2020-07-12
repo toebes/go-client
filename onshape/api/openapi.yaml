@@ -4998,29 +4998,28 @@ paths:
   /api/globaltreenodes/magic/{mid}:
     get:
       deprecated: false
-      description: Returns a list of all the elements in one of several globally defined
-        lists.
+      description: |
+        Returns a list of all the elements in one of several globally defined lists. Known values include:
+        | MAGIC ID | TITLE | USAGE |
+        |-|-|-|
+        | 0 | Recently Opened | Most recently opened documents |
+        | 1 | My Onshape | Root folder and contents |
+        | 2 | Created by Me | Documents created by the logged in user |
+        | 3 | Public | All public documents (a very long list) |
+        | 4 | Trash | Trashcan for the logged in user |
+        | 5 | Tutorials & Samples | Desktop Tutorials |
+        | 6 | FeatureScript samples |  FeatureScript samples (found when you select Other documents while adding a custom feature) |
+        | 7 | Community spotlight | Community spotlight (found when you select Other documents while adding a custom feature) |
+        | 8 | Tutorials | IOS Tutorials |
+        | 9 | Tutorials | Android Tutorials |
+        | 10 | Labels | Labels created by the user  |
+        | 11 | Teams | Teams that the user is connected to |
+        | 12 | Shared with me | Documents shared with the user |
+        | 13 | Cloud Storage | Visual list of cloud accounts associated with the logged in user |
+        | 14 | Custom table samples | Custom table samples (found when you select Other documents while adding a custom table) |
       operationId: globalTreeNodesMagic
       parameters:
-      - description: |
-          Magic ID of list to return. Known values include:
-          | MAGIC ID | TITLE | USAGE |
-          |-|-|-|
-          | 0 | Recently Opened | Most recently opened documents |
-          | 1 | My Onshape | Root folder and contents |
-          | 2 | Created by Me | Documents created by the logged in user |
-          | 3 | Public | All public documents (a very long list) |
-          | 4 | Trash | Trashcan for the logged in user |
-          | 5 | Tutorials & Samples | Desktop Tutorials |
-          | 6 | FeatureScript samples |  FeatureScript samples (found when you select Other documents while adding a custom feature) |
-          | 7 | Community spotlight | Community spotlight (found when you select Other documents while adding a custom feature) |
-          | 8 | Tutorials | IOS Tutorials |
-          | 9 | Tutorials | Android Tutorials |
-          | 10 | Labels | Labels created by the user  |
-          | 11 | Teams | Teams that the user is connected to |
-          | 12 | Shared with me | Documents shared with the user |
-          | 13 | Cloud Storage | Visual list of cloud accounts associated with the logged in user |
-          | 14 | Custom table samples | Custom table samples (found when you select Other documents while adding a custom table) |
+      - description: Magic ID of list to return.
         explode: false
         in: path
         name: mid
@@ -5326,7 +5325,9 @@ paths:
       responses:
         default:
           content:
-            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1: {}
+            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1:
+              schema:
+                $ref: '#/components/schemas/BTMetadataInfo'
           description: default response
       security:
       - OAuth2:
@@ -5408,7 +5409,9 @@ paths:
       responses:
         default:
           content:
-            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1: {}
+            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1:
+              schema:
+                $ref: '#/components/schemas/BTMetadataInfo'
           description: default response
       security:
       - OAuth2:
@@ -5538,7 +5541,9 @@ paths:
       responses:
         default:
           content:
-            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1: {}
+            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1:
+              schema:
+                $ref: '#/components/schemas/BTMetadataInfo'
           description: default response
       security:
       - OAuth2:
@@ -5619,7 +5624,9 @@ paths:
       responses:
         default:
           content:
-            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1: {}
+            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1:
+              schema:
+                $ref: '#/components/schemas/BTMetadataInfo'
           description: default response
       security:
       - OAuth2:
@@ -5689,7 +5696,9 @@ paths:
       responses:
         default:
           content:
-            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1: {}
+            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1:
+              schema:
+                $ref: '#/components/schemas/BTMetadataInfo'
           description: default response
       security:
       - OAuth2:
@@ -5757,7 +5766,9 @@ paths:
       responses:
         default:
           content:
-            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1: {}
+            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1:
+              schema:
+                $ref: '#/components/schemas/BTMetadataInfo'
           description: default response
       security:
       - OAuth2:
@@ -5799,7 +5810,9 @@ paths:
       responses:
         default:
           content:
-            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1: {}
+            application/vnd.onshape.v1+json;charset=UTF-8;qs=0.1:
+              schema:
+                $ref: '#/components/schemas/BTMetadataInfo'
           description: default response
       security:
       - OAuth2:
@@ -20101,6 +20114,118 @@ components:
         topLevel:
           type: string
         version:
+          type: string
+      type: object
+    BTMetadataInfo:
+      description: Metadata associated with a document or portion there of
+      properties:
+        next:
+          type: string
+        prev:
+          type: string
+        href:
+          format: uri
+          type: string
+        items:
+          items:
+            $ref: '#/components/schemas/BTMetadataInfoItems'
+          properties:
+            empty:
+              type: boolean
+          type: array
+      type: object
+    BTMetadataInfoItems:
+      description: Individual element description
+      properties:
+        elementId:
+          type: string
+        elementType:
+          description: 'Possible values: 0=PARTSTUDIO,1=ASSEMBLY,2=DRAWING,3=FEATURESTUDIO,4=BLOB,5=APPLICATION,6=TABLE,7=BILLOFMATERIALS'
+          format: int32
+          type: integer
+        mimeType:
+          type: string
+        href:
+          format: uri
+          type: string
+        '@properties':
+          items:
+            $ref: '#/components/schemas/BTMetadataItemsProperties'
+          type: array
+        parts:
+          items:
+            $ref: '#/components/schemas/BTMetadataParts'
+          type: array
+      type: object
+    BTMetadataParts:
+      description: Array of parts in a part studio
+      properties:
+        next:
+          type: string
+        prev:
+          type: string
+        href:
+          format: uri
+          type: string
+        items:
+          items:
+            $ref: '#/components/schemas/BTMetadataPartsItems'
+          type: array
+      type: object
+    BTMetadataPartsItems:
+      description: Individual part items metadata
+      properties:
+        partId:
+          type: string
+        isFlattenedBody:
+          type: boolean
+        isMesh:
+          type: boolean
+        partType:
+          type: string
+        href:
+          format: uri
+          type: string
+        properties:
+          items:
+            $ref: '#/components/schemas/BTMetadataItemsProperties'
+          type: array
+      type: object
+    BTMetadataItemsProperties:
+      description: This is the same as BTWorkflowPropertyInfo with the addition of
+        the multivalued field and dropping the dirty, initialValue, isApproverProperty
+        and is NotifierProperty fields
+      properties:
+        defaultValue:
+          type: object
+        editable:
+          type: boolean
+        editableInUi:
+          type: boolean
+        enumValues:
+          items:
+            $ref: '#/components/schemas/BTMetadataEnumValueInfo'
+          type: array
+        multivalued:
+          type: boolean
+        name:
+          type: string
+        propertyId:
+          type: string
+        propertySource:
+          format: int32
+          type: integer
+        required:
+          type: boolean
+        schemaId:
+          type: string
+        uiHints:
+          $ref: '#/components/schemas/BTMetadataPropertyUiHintsInfo'
+        validator:
+          $ref: '#/components/schemas/BTMetadataPropertyValidatorInfo'
+        value:
+          type: object
+        valueType:
           type: string
       type: object
     BTMArrayParameterItem-1843:

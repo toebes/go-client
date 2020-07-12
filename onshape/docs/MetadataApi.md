@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ## GetWMVEMetadata
 
-> GetWMVEMetadata(ctx, did, wvm, wvmid, eid).Configuration(configuration).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Depth(depth).Thumbnail(thumbnail).Execute()
+> BTMetadataInfo GetWMVEMetadata(ctx, did, wvm, wvmid, eid).Configuration(configuration).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Depth(depth).Thumbnail(thumbnail).Execute()
 
 
 
@@ -140,6 +140,8 @@ func main() {
         fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWMVEMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
+    // response from `GetWMVEMetadata`: BTMetadataInfo
+    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.GetWMVEMetadata`: %v\n", resp)
 }
 ```
 
@@ -173,7 +175,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
- (empty response body)
+[**BTMetadataInfo**](BTMetadataInfo.md)
 
 ### Authorization
 
@@ -191,7 +193,7 @@ Name | Type | Description  | Notes
 
 ## GetWMVEPMetadata
 
-> GetWMVEPMetadata(ctx, did, wvm, wvmid, eid, pid).Configuration(configuration).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Thumbnail(thumbnail).Execute()
+> BTMetadataInfo GetWMVEPMetadata(ctx, did, wvm, wvmid, eid, pid).Configuration(configuration).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Thumbnail(thumbnail).Execute()
 
 
 
@@ -225,6 +227,8 @@ func main() {
         fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWMVEPMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
+    // response from `GetWMVEPMetadata`: BTMetadataInfo
+    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.GetWMVEPMetadata`: %v\n", resp)
 }
 ```
 
@@ -259,7 +263,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
- (empty response body)
+[**BTMetadataInfo**](BTMetadataInfo.md)
 
 ### Authorization
 
@@ -277,7 +281,7 @@ Name | Type | Description  | Notes
 
 ## GetWMVEPsMetadata
 
-> GetWMVEPsMetadata(ctx, did, wvm, wvmid, eid).Configuration(configuration).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Thumbnail(thumbnail).Execute()
+> BTMetadataInfo GetWMVEPsMetadata(ctx, did, wvm, wvmid, eid).Configuration(configuration).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Thumbnail(thumbnail).Execute()
 
 
 
@@ -310,6 +314,8 @@ func main() {
         fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWMVEPsMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
+    // response from `GetWMVEPsMetadata`: BTMetadataInfo
+    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.GetWMVEPsMetadata`: %v\n", resp)
 }
 ```
 
@@ -342,7 +348,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
- (empty response body)
+[**BTMetadataInfo**](BTMetadataInfo.md)
 
 ### Authorization
 
@@ -360,7 +366,7 @@ Name | Type | Description  | Notes
 
 ## GetWMVEsMetadata
 
-> GetWMVEsMetadata(ctx, did, wvm, wvmid).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Depth(depth).Thumbnail(thumbnail).Execute()
+> BTMetadataInfo GetWMVEsMetadata(ctx, did, wvm, wvmid).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Depth(depth).Thumbnail(thumbnail).Execute()
 
 
 
@@ -392,6 +398,8 @@ func main() {
         fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWMVEsMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
+    // response from `GetWMVEsMetadata`: BTMetadataInfo
+    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.GetWMVEsMetadata`: %v\n", resp)
 }
 ```
 
@@ -422,7 +430,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
- (empty response body)
+[**BTMetadataInfo**](BTMetadataInfo.md)
 
 ### Authorization
 
@@ -440,7 +448,7 @@ Name | Type | Description  | Notes
 
 ## GetWVMetadata
 
-> GetWVMetadata(ctx, did, wv, wvid).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Depth(depth).Thumbnail(thumbnail).Execute()
+> BTMetadataInfo GetWVMetadata(ctx, did, wv, wvid).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Depth(depth).Thumbnail(thumbnail).Execute()
 
 
 
@@ -472,6 +480,8 @@ func main() {
         fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWVMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
+    // response from `GetWVMetadata`: BTMetadataInfo
+    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.GetWVMetadata`: %v\n", resp)
 }
 ```
 
@@ -502,7 +512,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
- (empty response body)
+[**BTMetadataInfo**](BTMetadataInfo.md)
 
 ### Authorization
 
@@ -684,7 +694,7 @@ Name | Type | Description  | Notes
 
 ## UpdateWVEPMetadata
 
-> UpdateWVEPMetadata(ctx, did, wvm, wvmid, eid, pid, subResource).Body(body).Configuration(configuration).Execute()
+> BTMetadataInfo UpdateWVEPMetadata(ctx, did, wvm, wvmid, eid, pid, subResource).Body(body).Configuration(configuration).Execute()
 
 
 
@@ -717,6 +727,8 @@ func main() {
         fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.UpdateWVEPMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
+    // response from `UpdateWVEPMetadata`: BTMetadataInfo
+    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.UpdateWVEPMetadata`: %v\n", resp)
 }
 ```
 
@@ -751,7 +763,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
- (empty response body)
+[**BTMetadataInfo**](BTMetadataInfo.md)
 
 ### Authorization
 
@@ -769,7 +781,7 @@ Name | Type | Description  | Notes
 
 ## UpdateWVMetadata
 
-> UpdateWVMetadata(ctx, did, wv, wvid).Body(body).Execute()
+> BTMetadataInfo UpdateWVMetadata(ctx, did, wv, wvid).Body(body).Execute()
 
 
 
@@ -798,6 +810,8 @@ func main() {
         fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.UpdateWVMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
+    // response from `UpdateWVMetadata`: BTMetadataInfo
+    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.UpdateWVMetadata`: %v\n", resp)
 }
 ```
 
@@ -825,7 +839,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
- (empty response body)
+[**BTMetadataInfo**](BTMetadataInfo.md)
 
 ### Authorization
 

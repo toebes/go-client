@@ -168,7 +168,7 @@ import (
 )
 
 func main() {
-    mid := "1" // string | Magic ID of list to return. 
+    mid := "mid_example" // string | Magic ID of list to return.
     getPathToRoot := true // bool | When true, requests that the path of all nodes up to the root are to be returned. (optional) (default to false)
     offset := 987 // int32 | Starting offset in the sorted list of items to return. (optional) (default to 0)
     limit := 987 // int32 | Maximum number of items in the list to return. (optional) (default to 20)
@@ -193,25 +193,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**mid** | **string** | Magic ID of list to return. Known values include:
-
-| MAGIC ID | TITLE | USAGE |
-|-|-|-|
-| 0 | Recently Opened | Most recently opened documents |
-| 1 | My Onshape | Root folder and contents |
-| 2 | Created by Me | Documents created by the logged in user |
-| 3 | Public | All public documents (a very long list) |
-| 4 | Trash | Trashcan for the logged in user |
-| 5 | Tutorials &amp; Samples | Desktop Tutorials |
-| 6 | FeatureScript samples |  FeatureScript samples (found when you select Other documents while adding a custom feature) |
-| 7 | Community spotlight | Community spotlight (found when you select Other documents while adding a custom feature) |
-| 8 | Tutorials | IOS Tutorials |
-| 9 | Tutorials | Android Tutorials |
-| 10 | Labels | Labels created by the user  |
-| 11 | Teams | Teams that the user is connected to |
-| 12 | Shared with me | Documents shared with the user |
-| 13 | Cloud Storage | Visual list of cloud accounts associated with the logged in user |
-| 14 | Custom table samples | Custom table samples (found when you select Other documents while adding a custom table) | 
+**mid** | **string** | Magic ID of list to return. | 
 
 ### Other Parameters
 

@@ -19500,6 +19500,8 @@ components:
           type: string
         createdBy:
           $ref: '#/components/schemas/BTUserBasicSummaryInfo'
+        defaultWorkspace:
+          $ref: '#/components/schemas/BTWorkspaceInfo'
         description:
           type: string
         href:

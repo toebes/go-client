@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **CanMove** | Pointer to **bool** |  | [optional] 
 **CreatedAt** | Pointer to [**JSONTime**](JSONTime.md) |  | [optional] 
 **CreatedBy** | Pointer to [**BTUserBasicSummaryInfo**](BTUserBasicSummaryInfo.md) |  | [optional] 
+**DefaultWorkspace** | Pointer to [**BTWorkspaceInfo**](BTWorkspaceInfo.md) |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Href** | Pointer to **string** |  | [optional] 
 **Id** | Pointer to **string** |  | [optional] 
@@ -116,6 +117,31 @@ SetCreatedBy sets CreatedBy field to given value.
 `func (o *BTGlobalTreeNodeInfo) HasCreatedBy() bool`
 
 HasCreatedBy returns a boolean if a field has been set.
+
+### GetDefaultWorkspace
+
+`func (o *BTGlobalTreeNodeInfo) GetDefaultWorkspace() BTWorkspaceInfo`
+
+GetDefaultWorkspace returns the DefaultWorkspace field if non-nil, zero value otherwise.
+
+### GetDefaultWorkspaceOk
+
+`func (o *BTGlobalTreeNodeInfo) GetDefaultWorkspaceOk() (*BTWorkspaceInfo, bool)`
+
+GetDefaultWorkspaceOk returns a tuple with the DefaultWorkspace field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDefaultWorkspace
+
+`func (o *BTGlobalTreeNodeInfo) SetDefaultWorkspace(v BTWorkspaceInfo)`
+
+SetDefaultWorkspace sets DefaultWorkspace field to given value.
+
+### HasDefaultWorkspace
+
+`func (o *BTGlobalTreeNodeInfo) HasDefaultWorkspace() bool`
+
+HasDefaultWorkspace returns a boolean if a field has been set.
 
 ### GetDescription
 

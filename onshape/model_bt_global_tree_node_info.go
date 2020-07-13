@@ -19,6 +19,7 @@ type BTGlobalTreeNodeInfo struct {
 	CanMove *bool `json:"canMove,omitempty"`
 	CreatedAt *JSONTime `json:"createdAt,omitempty"`
 	CreatedBy *BTUserBasicSummaryInfo `json:"createdBy,omitempty"`
+	DefaultWorkspace *BTWorkspaceInfo `json:"defaultWorkspace,omitempty"`
 	Description *string `json:"description,omitempty"`
 	Href *string `json:"href,omitempty"`
 	Id *string `json:"id,omitempty"`
@@ -147,6 +148,38 @@ func (o *BTGlobalTreeNodeInfo) HasCreatedBy() bool {
 // SetCreatedBy gets a reference to the given BTUserBasicSummaryInfo and assigns it to the CreatedBy field.
 func (o *BTGlobalTreeNodeInfo) SetCreatedBy(v BTUserBasicSummaryInfo) {
 	o.CreatedBy = &v
+}
+
+// GetDefaultWorkspace returns the DefaultWorkspace field value if set, zero value otherwise.
+func (o *BTGlobalTreeNodeInfo) GetDefaultWorkspace() BTWorkspaceInfo {
+	if o == nil || o.DefaultWorkspace == nil {
+		var ret BTWorkspaceInfo
+		return ret
+	}
+	return *o.DefaultWorkspace
+}
+
+// GetDefaultWorkspaceOk returns a tuple with the DefaultWorkspace field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *BTGlobalTreeNodeInfo) GetDefaultWorkspaceOk() (*BTWorkspaceInfo, bool) {
+	if o == nil || o.DefaultWorkspace == nil {
+		return nil, false
+	}
+	return o.DefaultWorkspace, true
+}
+
+// HasDefaultWorkspace returns a boolean if a field has been set.
+func (o *BTGlobalTreeNodeInfo) HasDefaultWorkspace() bool {
+	if o != nil && o.DefaultWorkspace != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetDefaultWorkspace gets a reference to the given BTWorkspaceInfo and assigns it to the DefaultWorkspace field.
+func (o *BTGlobalTreeNodeInfo) SetDefaultWorkspace(v BTWorkspaceInfo) {
+	o.DefaultWorkspace = &v
 }
 
 // GetDescription returns the Description field value if set, zero value otherwise.
@@ -639,6 +672,9 @@ func (o BTGlobalTreeNodeInfo) MarshalJSON() ([]byte, error) {
 	}
 	if o.CreatedBy != nil {
 		toSerialize["createdBy"] = o.CreatedBy
+	}
+	if o.DefaultWorkspace != nil {
+		toSerialize["defaultWorkspace"] = o.DefaultWorkspace
 	}
 	if o.Description != nil {
 		toSerialize["description"] = o.Description

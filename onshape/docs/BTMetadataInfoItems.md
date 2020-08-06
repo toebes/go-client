@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **MimeType** | Pointer to **string** |  | [optional] 
 **Href** | Pointer to **string** |  | [optional] 
 **Properties** | Pointer to [**[]BTMetadataItemsProperties**](BTMetadataItemsProperties.md) |  | [optional] 
-**Parts** | Pointer to [**[]BTMetadataParts**](BTMetadataParts.md) |  | [optional] 
+**Parts** | Pointer to [**BTMetadataParts**](BTMetadataParts.md) |  | [optional] 
 
 ## Methods
 
@@ -157,20 +157,20 @@ HasProperties returns a boolean if a field has been set.
 
 ### GetParts
 
-`func (o *BTMetadataInfoItems) GetParts() []BTMetadataParts`
+`func (o *BTMetadataInfoItems) GetParts() BTMetadataParts`
 
 GetParts returns the Parts field if non-nil, zero value otherwise.
 
 ### GetPartsOk
 
-`func (o *BTMetadataInfoItems) GetPartsOk() (*[]BTMetadataParts, bool)`
+`func (o *BTMetadataInfoItems) GetPartsOk() (*BTMetadataParts, bool)`
 
 GetPartsOk returns a tuple with the Parts field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParts
 
-`func (o *BTMetadataInfoItems) SetParts(v []BTMetadataParts)`
+`func (o *BTMetadataInfoItems) SetParts(v BTMetadataParts)`
 
 SetParts sets Parts field to given value.
 

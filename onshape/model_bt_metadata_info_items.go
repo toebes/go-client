@@ -21,8 +21,8 @@ type BTMetadataInfoItems struct {
 	ElementType *int32 `json:"elementType,omitempty"`
 	MimeType *string `json:"mimeType,omitempty"`
 	Href *string `json:"href,omitempty"`
-	Properties *[]BTMetadataItemsProperties `json:"@properties,omitempty"`
-	Parts *[]BTMetadataParts `json:"parts,omitempty"`
+	Properties *[]BTMetadataItemsProperties `json:"properties,omitempty"`
+	Parts *BTMetadataParts `json:"parts,omitempty"`
 }
 
 // NewBTMetadataInfoItems instantiates a new BTMetadataInfoItems object
@@ -203,9 +203,9 @@ func (o *BTMetadataInfoItems) SetProperties(v []BTMetadataItemsProperties) {
 }
 
 // GetParts returns the Parts field value if set, zero value otherwise.
-func (o *BTMetadataInfoItems) GetParts() []BTMetadataParts {
+func (o *BTMetadataInfoItems) GetParts() BTMetadataParts {
 	if o == nil || o.Parts == nil {
-		var ret []BTMetadataParts
+		var ret BTMetadataParts
 		return ret
 	}
 	return *o.Parts
@@ -213,7 +213,7 @@ func (o *BTMetadataInfoItems) GetParts() []BTMetadataParts {
 
 // GetPartsOk returns a tuple with the Parts field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *BTMetadataInfoItems) GetPartsOk() (*[]BTMetadataParts, bool) {
+func (o *BTMetadataInfoItems) GetPartsOk() (*BTMetadataParts, bool) {
 	if o == nil || o.Parts == nil {
 		return nil, false
 	}
@@ -229,8 +229,8 @@ func (o *BTMetadataInfoItems) HasParts() bool {
 	return false
 }
 
-// SetParts gets a reference to the given []BTMetadataParts and assigns it to the Parts field.
-func (o *BTMetadataInfoItems) SetParts(v []BTMetadataParts) {
+// SetParts gets a reference to the given BTMetadataParts and assigns it to the Parts field.
+func (o *BTMetadataInfoItems) SetParts(v BTMetadataParts) {
 	o.Parts = &v
 }
 
@@ -249,7 +249,7 @@ func (o BTMetadataInfoItems) MarshalJSON() ([]byte, error) {
 		toSerialize["href"] = o.Href
 	}
 	if o.Properties != nil {
-		toSerialize["@properties"] = o.Properties
+		toSerialize["properties"] = o.Properties
 	}
 	if o.Parts != nil {
 		toSerialize["parts"] = o.Parts

@@ -20150,14 +20150,12 @@ components:
         href:
           format: uri
           type: string
-        '@properties':
+        properties:
           items:
             $ref: '#/components/schemas/BTMetadataItemsProperties'
           type: array
         parts:
-          items:
-            $ref: '#/components/schemas/BTMetadataParts'
-          type: array
+          $ref: '#/components/schemas/BTMetadataParts'
       type: object
     BTMetadataParts:
       description: Array of parts in a part studio
@@ -20197,39 +20195,28 @@ components:
       description: This is the same as BTWorkflowPropertyInfo with the addition of
         the multivalued field and dropping the dirty, initialValue, isApproverProperty
         and is NotifierProperty fields
-      properties:
-        defaultValue:
-          type: object
-        editable:
-          type: boolean
-        editableInUi:
-          type: boolean
-        enumValues:
-          items:
-            $ref: '#/components/schemas/BTMetadataEnumValueInfo'
-          type: array
-        multivalued:
-          type: boolean
-        name:
-          type: string
-        propertyId:
-          type: string
-        propertySource:
-          format: int32
-          type: integer
-        required:
-          type: boolean
-        schemaId:
-          type: string
-        uiHints:
-          $ref: '#/components/schemas/BTMetadataPropertyUiHintsInfo'
-        validator:
-          $ref: '#/components/schemas/BTMetadataPropertyValidatorInfo'
-        value:
-          type: object
-        valueType:
-          type: string
+      discriminator:
+        mapping:
+          BOOL: '#/components/schemas/BTMetadataCommonBool'
+          CATEGORY: '#/components/schemas/BTMetadataCommonCategory'
+          COMPUTED: '#/components/schemas/BTMetadataCommonComputed'
+          DATE: '#/components/schemas/BTMetadataCommonDate'
+          ENUM: '#/components/schemas/BTMetadataCommonEnum'
+          OBJECT: '#/components/schemas/BTMetadataCommonObject'
+          STRING: '#/components/schemas/BTMetadataCommonString'
+          USER: '#/components/schemas/BTMetadataCommonUser'
+        propertyName: valueType
+      oneOf:
+      - $ref: '#/components/schemas/BTMetadataCommonBool'
+      - $ref: '#/components/schemas/BTMetadataCommonCategory'
+      - $ref: '#/components/schemas/BTMetadataCommonComputed'
+      - $ref: '#/components/schemas/BTMetadataCommonDate'
+      - $ref: '#/components/schemas/BTMetadataCommonEnum'
+      - $ref: '#/components/schemas/BTMetadataCommonObject'
+      - $ref: '#/components/schemas/BTMetadataCommonString'
+      - $ref: '#/components/schemas/BTMetadataCommonUser'
       type: object
+      x-one-of-name: BTMetadataItemsProperties
     BTMArrayParameterItem-1843:
       properties:
         btType:
@@ -21265,41 +21252,28 @@ components:
           type: string
       type: object
     BTMetadataPropertyInfo:
-      properties:
-        defaultValue:
-          type: object
-        dirty:
-          type: boolean
-        editable:
-          type: boolean
-        editableInUi:
-          type: boolean
-        enumValues:
-          items:
-            $ref: '#/components/schemas/BTMetadataEnumValueInfo'
-          type: array
-        initialValue:
-          type: object
-        name:
-          type: string
-        propertyId:
-          type: string
-        propertySource:
-          format: int32
-          type: integer
-        required:
-          type: boolean
-        schemaId:
-          type: string
-        uiHints:
-          $ref: '#/components/schemas/BTMetadataPropertyUiHintsInfo'
-        validator:
-          $ref: '#/components/schemas/BTMetadataPropertyValidatorInfo'
-        value:
-          type: object
-        valueType:
-          type: string
+      discriminator:
+        mapping:
+          BOOL: '#/components/schemas/BTMetadataCommonBool'
+          CATEGORY: '#/components/schemas/BTMetadataCommonCategory'
+          COMPUTED: '#/components/schemas/BTMetadataCommonComputed'
+          DATE: '#/components/schemas/BTMetadataCommonDate'
+          ENUM: '#/components/schemas/BTMetadataCommonEnum'
+          OBJECT: '#/components/schemas/BTMetadataCommonObject'
+          STRING: '#/components/schemas/BTMetadataCommonString'
+          USER: '#/components/schemas/BTMetadataCommonUser'
+        propertyName: valueType
+      oneOf:
+      - $ref: '#/components/schemas/BTMetadataCommonBool'
+      - $ref: '#/components/schemas/BTMetadataCommonCategory'
+      - $ref: '#/components/schemas/BTMetadataCommonComputed'
+      - $ref: '#/components/schemas/BTMetadataCommonDate'
+      - $ref: '#/components/schemas/BTMetadataCommonEnum'
+      - $ref: '#/components/schemas/BTMetadataCommonObject'
+      - $ref: '#/components/schemas/BTMetadataCommonString'
+      - $ref: '#/components/schemas/BTMetadataCommonUser'
       type: object
+      x-one-of-name: BTMetadataPropertyInfo
     BTMetadataPropertySummaryInfo:
       properties:
         description:
@@ -25718,10 +25692,55 @@ components:
         uiHint:
           type: string
       type: object
-    BTWorkflowPropertyInfo:
+    BTMetadataCommonBool:
       properties:
         defaultValue:
+          type: string
+        dirty:
+          type: boolean
+        editable:
+          type: boolean
+        editableInUi:
+          type: boolean
+        enumValues:
+          items:
+            $ref: '#/components/schemas/BTMetadataEnumValueInfo'
+          nullable: true
+          type: array
+        initialValue:
           type: object
+        isApproverProperty:
+          type: boolean
+        isNotifierProperty:
+          type: boolean
+        multivalued:
+          type: boolean
+        name:
+          type: string
+        propertyId:
+          type: string
+        propertySource:
+          format: int32
+          type: integer
+        required:
+          type: boolean
+        schemaId:
+          type: string
+        uiHints:
+          $ref: '#/components/schemas/BTMetadataPropertyUiHintsInfo'
+        validator:
+          $ref: '#/components/schemas/BTMetadataPropertyValidatorInfo'
+        value:
+          type: boolean
+        valueType:
+          type: string
+      required:
+      - valueType
+      type: object
+    BTMetadataCommonCategory:
+      properties:
+        defaultValue:
+          type: string
         dirty:
           type: boolean
         editable:
@@ -25737,6 +25756,54 @@ components:
         isApproverProperty:
           type: boolean
         isNotifierProperty:
+          type: boolean
+        multivalued:
+          type: boolean
+        name:
+          type: string
+        propertyId:
+          type: string
+        propertySource:
+          format: int32
+          type: integer
+        required:
+          type: boolean
+        schemaId:
+          type: string
+        uiHints:
+          $ref: '#/components/schemas/BTMetadataPropertyUiHintsInfo'
+        validator:
+          $ref: '#/components/schemas/BTMetadataPropertyValidatorInfo'
+        value:
+          items:
+            $ref: '#/components/schemas/BTMetadataCategoryIDs'
+          type: array
+        valueType:
+          type: string
+      required:
+      - valueType
+      type: object
+    BTMetadataCommonComputed:
+      properties:
+        defaultValue:
+          type: string
+        dirty:
+          type: boolean
+        editable:
+          type: boolean
+        editableInUi:
+          type: boolean
+        enumValues:
+          items:
+            $ref: '#/components/schemas/BTMetadataEnumValueInfo'
+          type: array
+        initialValue:
+          type: object
+        isApproverProperty:
+          type: boolean
+        isNotifierProperty:
+          type: boolean
+        multivalued:
           type: boolean
         name:
           type: string
@@ -25757,7 +25824,277 @@ components:
           type: object
         valueType:
           type: string
+      required:
+      - valueType
       type: object
+    BTMetadataCategoryIDs:
+      description: Category IDs returned as a metadata value
+      properties:
+        memberCategoryIds:
+          description: 'TODO: Not sure the type of this.'
+          type: object
+        memberCategories:
+          description: 'TODO: Not sure the type of this.'
+          type: object
+        description:
+          type: string
+        ownerType:
+          format: int32
+          type: integer
+        ownerId:
+          type: string
+        publishState:
+          format: int32
+          type: integer
+        objectTypes:
+          items:
+            type: integer
+          type: array
+        defaultObjectType:
+          format: int32
+          type: integer
+        name:
+          type: string
+        id:
+          type: string
+        href:
+          format: uri
+          type: string
+      type: object
+    BTMetadataCommonDate:
+      properties:
+        defaultValue:
+          type: string
+        dirty:
+          type: boolean
+        editable:
+          type: boolean
+        editableInUi:
+          type: boolean
+        initialValue:
+          type: object
+        isApproverProperty:
+          type: boolean
+        isNotifierProperty:
+          type: boolean
+        multivalued:
+          type: boolean
+        name:
+          type: string
+        propertyId:
+          type: string
+        propertySource:
+          format: int32
+          type: integer
+        required:
+          type: boolean
+        schemaId:
+          type: string
+        uiHints:
+          $ref: '#/components/schemas/BTMetadataPropertyUiHintsInfo'
+        validator:
+          $ref: '#/components/schemas/BTMetadataPropertyValidatorInfo'
+        value:
+          format: date-time
+          type: string
+        valueType:
+          type: string
+      required:
+      - valueType
+      type: object
+    BTMetadataCommonEnum:
+      properties:
+        defaultValue:
+          type: string
+        dirty:
+          type: boolean
+        editable:
+          type: boolean
+        editableInUi:
+          type: boolean
+        enumValues:
+          items:
+            $ref: '#/components/schemas/BTMetadataEnumValueInfo'
+          type: array
+        initialValue:
+          type: object
+        isApproverProperty:
+          type: boolean
+        isNotifierProperty:
+          type: boolean
+        multivalued:
+          type: boolean
+        name:
+          type: string
+        propertyId:
+          type: string
+        propertySource:
+          format: int32
+          type: integer
+        required:
+          type: boolean
+        schemaId:
+          type: string
+        uiHints:
+          $ref: '#/components/schemas/BTMetadataPropertyUiHintsInfo'
+        validator:
+          $ref: '#/components/schemas/BTMetadataPropertyValidatorInfo'
+        value:
+          type: string
+        valueType:
+          type: string
+      required:
+      - valueType
+      type: object
+    BTMetadataCommonObject:
+      properties:
+        defaultValue:
+          type: string
+        dirty:
+          type: boolean
+        editable:
+          type: boolean
+        editableInUi:
+          type: boolean
+        enumValues:
+          items:
+            $ref: '#/components/schemas/BTMetadataEnumValueInfo'
+          type: array
+        initialValue:
+          type: object
+        isApproverProperty:
+          type: boolean
+        isNotifierProperty:
+          type: boolean
+        multivalued:
+          type: boolean
+        name:
+          type: string
+        propertyId:
+          type: string
+        propertySource:
+          format: int32
+          type: integer
+        required:
+          type: boolean
+        schemaId:
+          type: string
+        uiHints:
+          $ref: '#/components/schemas/BTMetadataPropertyUiHintsInfo'
+        validator:
+          $ref: '#/components/schemas/BTMetadataPropertyValidatorInfo'
+        value:
+          type: object
+        valueType:
+          type: string
+      required:
+      - valueType
+      type: object
+    BTMetadataCommonString:
+      properties:
+        defaultValue:
+          type: string
+        dirty:
+          type: boolean
+        editable:
+          type: boolean
+        editableInUi:
+          type: boolean
+        initialValue:
+          type: object
+        isApproverProperty:
+          type: boolean
+        isNotifierProperty:
+          type: boolean
+        multivalued:
+          type: boolean
+        name:
+          type: string
+        propertyId:
+          type: string
+        propertySource:
+          format: int32
+          type: integer
+        required:
+          type: boolean
+        schemaId:
+          type: string
+        uiHints:
+          $ref: '#/components/schemas/BTMetadataPropertyUiHintsInfo'
+        validator:
+          $ref: '#/components/schemas/BTMetadataPropertyValidatorInfo'
+        value:
+          type: string
+        valueType:
+          type: string
+      required:
+      - valueType
+      type: object
+    BTMetadataCommonUser:
+      properties:
+        defaultValue:
+          type: string
+        dirty:
+          type: boolean
+        editable:
+          type: boolean
+        editableInUi:
+          type: boolean
+        initialValue:
+          type: object
+        isApproverProperty:
+          type: boolean
+        isNotifierProperty:
+          type: boolean
+        multivalued:
+          type: boolean
+        name:
+          type: string
+        propertyId:
+          type: string
+        propertySource:
+          format: int32
+          type: integer
+        required:
+          type: boolean
+        schemaId:
+          type: string
+        uiHints:
+          $ref: '#/components/schemas/BTMetadataPropertyUiHintsInfo'
+        validator:
+          $ref: '#/components/schemas/BTMetadataPropertyValidatorInfo'
+        value:
+          items:
+            $ref: '#/components/schemas/BTUserSummaryInfo'
+          type: array
+        valueType:
+          type: string
+      required:
+      - valueType
+      type: object
+    BTWorkflowPropertyInfo:
+      discriminator:
+        mapping:
+          BOOL: '#/components/schemas/BTMetadataCommonBool'
+          CATEGORY: '#/components/schemas/BTMetadataCommonCategory'
+          COMPUTED: '#/components/schemas/BTMetadataCommonComputed'
+          DATE: '#/components/schemas/BTMetadataCommonDate'
+          ENUM: '#/components/schemas/BTMetadataCommonEnum'
+          OBJECT: '#/components/schemas/BTMetadataCommonObject'
+          STRING: '#/components/schemas/BTMetadataCommonString'
+          USER: '#/components/schemas/BTMetadataCommonUser'
+        propertyName: valueType
+      oneOf:
+      - $ref: '#/components/schemas/BTMetadataCommonBool'
+      - $ref: '#/components/schemas/BTMetadataCommonCategory'
+      - $ref: '#/components/schemas/BTMetadataCommonComputed'
+      - $ref: '#/components/schemas/BTMetadataCommonDate'
+      - $ref: '#/components/schemas/BTMetadataCommonEnum'
+      - $ref: '#/components/schemas/BTMetadataCommonObject'
+      - $ref: '#/components/schemas/BTMetadataCommonString'
+      - $ref: '#/components/schemas/BTMetadataCommonUser'
+      type: object
+      x-one-of-name: BTWorkflowPropertyInfo
     BTWorkflowSnapshotInfo:
       properties:
         actions:

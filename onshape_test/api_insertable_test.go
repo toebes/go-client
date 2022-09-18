@@ -3,15 +3,15 @@ package onshape_test
 import (
 	"testing"
 
-	"github.com/onshape-public/go-client/onshape"
+	"github.com/toebes/go-client/onshape"
 )
 
 func TestInsertableAPI(t *testing.T) {
-    InitializeTester[*onshape.InsertableApiService](t)
+	InitializeTester[*onshape.InsertableApiService](t)
 
-    OpenAPITest{
-        Call: onshape.ApiGetLatestInDocumentRequest{},
-        Expect: Todo(),
-    }.Execute()
-    
+	OpenAPITest{
+		Call:   onshape.ApiGetLatestInDocumentRequest{},
+		Expect: Todo(),
+	}.Execute()
+
 }

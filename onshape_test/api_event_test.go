@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/onshape-public/go-client/onshape"
 	"github.com/stretchr/testify/require"
+	"github.com/toebes/go-client/onshape"
 )
 
 func TestEventAPI(t *testing.T) {

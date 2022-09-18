@@ -7,7 +7,7 @@ import (
 	h "net/http"
 	"reflect"
 
-	"github.com/onshape-public/go-client/onshape"
+	"github.com/toebes/go-client/onshape"
 )
 
 // SetupDocument creates an Onshape document

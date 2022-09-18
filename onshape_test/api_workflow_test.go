@@ -3,25 +3,25 @@ package onshape_test
 import (
 	"testing"
 
-	"github.com/onshape-public/go-client/onshape"
+	"github.com/toebes/go-client/onshape"
 )
 
 func TestWorkflowAPI(t *testing.T) {
-    InitializeTester[*onshape.WorkflowApiService](t)
+	InitializeTester[*onshape.WorkflowApiService](t)
 
-    OpenAPITest{
-        Call: onshape.ApiGetActiveWorkflowsRequest{},
-        Expect: Todo(),
-    }.Execute()
-    
-    OpenAPITest{
-        Call: onshape.ApiGetAllowedApproversRequest{},
-        Expect: Todo(),
-    }.Execute()
-    
-    OpenAPITest{
-        Call: onshape.ApiGetAuditLogRequest{},
-        Expect: Todo(),
-    }.Execute()
-    
+	OpenAPITest{
+		Call:   onshape.ApiGetActiveWorkflowsRequest{},
+		Expect: Todo(),
+	}.Execute()
+
+	OpenAPITest{
+		Call:   onshape.ApiGetAllowedApproversRequest{},
+		Expect: Todo(),
+	}.Execute()
+
+	OpenAPITest{
+		Call:   onshape.ApiGetAuditLogRequest{},
+		Expect: Todo(),
+	}.Execute()
+
 }

@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/onshape-public/go-client/onshape"
 	"github.com/stretchr/testify/require"
+	"github.com/toebes/go-client/onshape"
 )
 
 func TestAppElementAPI(t *testing.T) {

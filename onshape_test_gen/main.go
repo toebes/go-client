@@ -8,7 +8,7 @@ import (
 
 	"github.com/cbroglie/mustache"
 	"github.com/iancoleman/strcase"
-	"github.com/onshape-public/go-client/onshape"
+	"github.com/toebes/go-client/onshape"
 )
 
 func main() {

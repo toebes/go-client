@@ -1,6 +1,7 @@
 # Go Client for Onshape public API
 
 ## The simplest possible thing to try: Creating a document
+
 ```Go
 package main
 
@@ -8,7 +9,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/onshape-public/go-client/onshape"
+	"github.com/toebes/go-client/onshape"
 )
 
 func main() {
@@ -34,4 +35,5 @@ func main() {
 ```
 
 ## The Detailed API Documentation
+
 Could be found [here](./onshape/README.md)

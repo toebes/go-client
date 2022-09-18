@@ -8,8 +8,8 @@ import (
 	"unsafe"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/onshape-public/go-client/onshape"
 	"github.com/stretchr/testify/require"
+	"github.com/toebes/go-client/onshape"
 )
 
 var tester TestingInstance

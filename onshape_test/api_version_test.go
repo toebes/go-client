@@ -3,15 +3,15 @@ package onshape_test
 import (
 	"testing"
 
-	"github.com/onshape-public/go-client/onshape"
+	"github.com/toebes/go-client/onshape"
 )
 
 func TestVersionAPI(t *testing.T) {
-    InitializeTester[*onshape.VersionApiService](t)
+	InitializeTester[*onshape.VersionApiService](t)
 
-    OpenAPITest{
-        Call: onshape.ApiGetAllVersionsRequest{},
-        Expect: Todo(),
-    }.Execute()
-    
+	OpenAPITest{
+		Call:   onshape.ApiGetAllVersionsRequest{},
+		Expect: Todo(),
+	}.Execute()
+
 }

@@ -7,15 +7,15 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"github.com/onshape-public/go-client/onshape"
 	"github.com/stretchr/testify/require"
+	"github.com/toebes/go-client/onshape"
 )
 
 var propMap map[string]interface{}
 var client *onshape.APIClient
 var ctx context.Context
 
-//TestMain is a common method for all tests in package onshape_test
+// TestMain is a common method for all tests in package onshape_test
 func TestMain(m *testing.M) {
 	setup()
 	retCode := m.Run()
@@ -33,7 +33,7 @@ func setup() {
 	}
 }
 
-//TODO: check if default workspace is also created
+// TODO: check if default workspace is also created
 func TestCreateAndGetDocument(t *testing.T) {
 	uid := uuid.NewString()
 	document1Name := "Documents-testDoc-1-" + uid
@@ -94,7 +94,7 @@ func TestCreateAndGetDocument(t *testing.T) {
 
 }
 
-//TODO: check if default workspace is also created
+// TODO: check if default workspace is also created
 func TestGetDocument(t *testing.T) {
 	uid := uuid.NewString()
 	document1Name := "Documents-testDoc-1-" + uid

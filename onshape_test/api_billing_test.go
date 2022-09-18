@@ -3,15 +3,15 @@ package onshape_test
 import (
 	"testing"
 
-	"github.com/onshape-public/go-client/onshape"
+	"github.com/toebes/go-client/onshape"
 )
 
 func TestBillingAPI(t *testing.T) {
-    InitializeTester[*onshape.BillingApiService](t)
+	InitializeTester[*onshape.BillingApiService](t)
 
-    OpenAPITest{
-        Call: onshape.ApiGetClientPlansRequest{},
-        Expect: Todo(),
-    }.Execute()
-    
+	OpenAPITest{
+		Call:   onshape.ApiGetClientPlansRequest{},
+		Expect: Todo(),
+	}.Execute()
+
 }

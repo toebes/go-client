@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"github.com/onshape-public/go-client/onshape"
-	"github.com/onshape-public/go-client/onshape_test/testhelper"
+	"github.com/toebes/go-client/onshape"
+	"github.com/toebes/go-client/onshape_test/testhelper"
 
 	"github.com/stretchr/testify/require"
 )

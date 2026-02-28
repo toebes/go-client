@@ -20,10 +20,10 @@ type GBTRadiusDisplay string
 
 // List of GBTRadiusDisplay
 const (
-	GBTRadiusDisplayNone      GBTRadiusDisplay = "NONE"
-	GBTRadiusDisplayRadial    GBTRadiusDisplay = "RADIAL"
-	GBTRadiusDisplayDiametral GBTRadiusDisplay = "DIAMETRAL"
-	GBTRadiusDisplayUnknown   GBTRadiusDisplay = "UNKNOWN"
+	None      GBTRadiusDisplay = "NONE"
+	Radial    GBTRadiusDisplay = "RADIAL"
+	Diametral GBTRadiusDisplay = "DIAMETRAL"
+	Unknown   GBTRadiusDisplay = "UNKNOWN"
 )
 
 // All allowed values of GBTRadiusDisplay enum

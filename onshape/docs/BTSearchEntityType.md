@@ -3,51 +3,51 @@
 ## Enum
 
 
-* `BTSearchEntityTypeUnknown` (value: `"unknown"`)
+* `Unknown` (value: `"unknown"`)
 
-* `BTSearchEntityTypeCapability` (value: `"capability"`)
+* `Capability` (value: `"capability"`)
 
-* `BTSearchEntityTypeCompany` (value: `"company"`)
+* `Company` (value: `"company"`)
 
-* `BTSearchEntityTypeDocument` (value: `"document"`)
+* `Document` (value: `"document"`)
 
-* `BTSearchEntityTypeElement` (value: `"element"`)
+* `Element` (value: `"element"`)
 
-* `BTSearchEntityTypeFriend` (value: `"friend"`)
+* `Friend` (value: `"friend"`)
 
-* `BTSearchEntityTypeItem` (value: `"item"`)
+* `Item` (value: `"item"`)
 
-* `BTSearchEntityTypePart` (value: `"part"`)
+* `Part` (value: `"part"`)
 
-* `BTSearchEntityTypeTeam` (value: `"team"`)
+* `Team` (value: `"team"`)
 
-* `BTSearchEntityTypeUser` (value: `"user"`)
+* `User` (value: `"user"`)
 
-* `BTSearchEntityTypeVersion` (value: `"version"`)
+* `Version` (value: `"version"`)
 
-* `BTSearchEntityTypeWorkspace` (value: `"workspace"`)
+* `Workspace` (value: `"workspace"`)
 
-* `BTSearchEntityTypeProject` (value: `"project"`)
+* `Project` (value: `"project"`)
 
-* `BTSearchEntityTypePublication` (value: `"publication"`)
+* `Publication` (value: `"publication"`)
 
-* `BTSearchEntityTypeCommentTask` (value: `"comment_task"`)
+* `CommentTask` (value: `"comment_task"`)
 
-* `BTSearchEntityTypeGenericTask` (value: `"generic_task"`)
+* `GenericTask` (value: `"generic_task"`)
 
-* `BTSearchEntityTypeReleaseTask` (value: `"release_task"`)
+* `ReleaseTask` (value: `"release_task"`)
 
-* `BTSearchEntityTypeAppStoreEntry` (value: `"app_store_entry"`)
+* `AppStoreEntry` (value: `"app_store_entry"`)
 
-* `BTSearchEntityTypeFolder` (value: `"folder"`)
+* `Folder` (value: `"folder"`)
 
-* `BTSearchEntityTypeClassroomItem` (value: `"classroom_item"`)
+* `ClassroomItem` (value: `"classroom_item"`)
 
-* `BTSearchEntityTypeClassroom` (value: `"classroom"`)
+* `Classroom` (value: `"classroom"`)
 
-* `BTSearchEntityTypeAssignment` (value: `"assignment"`)
+* `Assignment` (value: `"assignment"`)
 
-* `BTSearchEntityTypeSubmission` (value: `"submission"`)
+* `Submission` (value: `"submission"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

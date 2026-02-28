@@ -11,7 +11,9 @@ Contact: api-support@onshape.zendesk.com
 package onshape
 
 import (
+	"bytes"
 	"encoding/json"
+	"fmt"
 )
 
 // BTJEditList2707 A list of edits that will be applied in order.

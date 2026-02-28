@@ -1,37 +1,37 @@
-# \PartStudioApi
+# \PartStudioAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AddPartStudioFeature**](PartStudioApi.md#AddPartStudioFeature) | **Post** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/features | Add a feature to the Part Studio&#39;s Feature List.
-[**ComparePartStudios**](PartStudioApi.md#ComparePartStudios) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/compare | Get the differences between two Part Studios in a single document.
-[**CreatePartStudio**](PartStudioApi.md#CreatePartStudio) | **Post** /partstudios/d/{did}/w/{wid} | Create a new Part Studio in a document.
-[**CreatePartStudioExportGltf**](PartStudioApi.md#CreatePartStudioExportGltf) | **Post** /partstudios/d/{did}/{wv}/{wvid}/e/{eid}/export/gltf | Asynchronously export a Part Studio to glTF.
-[**CreatePartStudioExportObj**](PartStudioApi.md#CreatePartStudioExportObj) | **Post** /partstudios/d/{did}/{wv}/{wvid}/e/{eid}/export/obj | Asynchronously export a Part Studio to OBJ.
-[**CreatePartStudioExportSolidworks**](PartStudioApi.md#CreatePartStudioExportSolidworks) | **Post** /partstudios/d/{did}/{wv}/{wvid}/e/{eid}/export/solidworks | Asynchronously export a Part Studio to Solidworks.
-[**CreatePartStudioExportStep**](PartStudioApi.md#CreatePartStudioExportStep) | **Post** /partstudios/d/{did}/{wv}/{wvid}/e/{eid}/export/step | Asynchronously export a Part Studio to STEP.
-[**CreatePartStudioTranslation**](PartStudioApi.md#CreatePartStudioTranslation) | **Post** /partstudios/d/{did}/{wv}/{wvid}/e/{eid}/translations | Asynchronously export a Part Studio to another format.
-[**DeletePartStudioFeature**](PartStudioApi.md#DeletePartStudioFeature) | **Delete** /partstudios/d/{did}/w/{wid}/e/{eid}/features/featureid/{fid} | Delete a Part Studio feature.
-[**EvalFeatureScript**](PartStudioApi.md#EvalFeatureScript) | **Post** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/featurescript | Evaluate the FeatureScript snippet for a Part Studio.
-[**ExportParasolid**](PartStudioApi.md#ExportParasolid) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/parasolid | Synchronously export a Part Studio to a Parasolid file.
-[**ExportPartStudioGltf**](PartStudioApi.md#ExportPartStudioGltf) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/gltf | Synchronously export a Part Studio to a glTF file.
-[**ExportPartStudioStl**](PartStudioApi.md#ExportPartStudioStl) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/stl | Synchronously export a Part Studio to an STL file.
-[**GetFeatureScriptRepresentation**](PartStudioApi.md#GetFeatureScriptRepresentation) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/featurescriptrepresentation | Get the FeatureScript representation of a Part Studio.
-[**GetFeatureScriptTable**](PartStudioApi.md#GetFeatureScriptTable) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/fstable | Compute and return a FeatureScript table for a Part Studio.
-[**GetPartStudioBodyDetails**](PartStudioApi.md#GetPartStudioBodyDetails) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/bodydetails | Get the body details for a Part Studio.
-[**GetPartStudioBoundingBoxes**](PartStudioApi.md#GetPartStudioBoundingBoxes) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/boundingboxes | Get the bounding boxes for a Part Studio.
-[**GetPartStudioEdges**](PartStudioApi.md#GetPartStudioEdges) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/tessellatededges | Get a list of all edges in a Part Studio.
-[**GetPartStudioFaces**](PartStudioApi.md#GetPartStudioFaces) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/tessellatedfaces | Get a list of all faces in a Part Studio.
-[**GetPartStudioFeatureSpecs**](PartStudioApi.md#GetPartStudioFeatureSpecs) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/featurespecs | Get the specs for a Part Studio feature.
-[**GetPartStudioFeatures**](PartStudioApi.md#GetPartStudioFeatures) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/features | Get a list of features instantiated in the Part Studio.
-[**GetPartStudioMassProperties**](PartStudioApi.md#GetPartStudioMassProperties) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/massproperties | Get the mass properties for a Part Studio.
-[**GetPartStudioNamedViews**](PartStudioApi.md#GetPartStudioNamedViews) | **Get** /partstudios/d/{did}/e/{eid}/namedViews | Get a list of all named views that exist in the Part Studio.
-[**GetPartStudioShadedViews**](PartStudioApi.md#GetPartStudioShadedViews) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/shadedviews | Get a list of shaded views for a Part Studio.
-[**TranslateIds**](PartStudioApi.md#TranslateIds) | **Post** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/idtranslations | Find corresponding deterministic IDs from a source document microversion at the target version.
-[**UpdateFeatures**](PartStudioApi.md#UpdateFeatures) | **Post** /partstudios/d/{did}/w/{wid}/e/{eid}/features/updates | Update multiple features in a Part Studio
-[**UpdatePartStudioFeature**](PartStudioApi.md#UpdatePartStudioFeature) | **Post** /partstudios/d/{did}/w/{wid}/e/{eid}/features/featureid/{fid} | Update the definition of a Part Studio feature.
-[**UpdateRollback**](PartStudioApi.md#UpdateRollback) | **Post** /partstudios/d/{did}/w/{wid}/e/{eid}/features/rollback | Move the Feature List rollback bar in the Part Studio.
+[**AddPartStudioFeature**](PartStudioAPI.md#AddPartStudioFeature) | **Post** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/features | Add a feature to the Part Studio&#39;s Feature List.
+[**ComparePartStudios**](PartStudioAPI.md#ComparePartStudios) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/compare | Get the differences between two Part Studios in a single document.
+[**CreatePartStudio**](PartStudioAPI.md#CreatePartStudio) | **Post** /partstudios/d/{did}/w/{wid} | Create a new Part Studio in a document.
+[**CreatePartStudioExportGltf**](PartStudioAPI.md#CreatePartStudioExportGltf) | **Post** /partstudios/d/{did}/{wv}/{wvid}/e/{eid}/export/gltf | Asynchronously export a Part Studio to glTF.
+[**CreatePartStudioExportObj**](PartStudioAPI.md#CreatePartStudioExportObj) | **Post** /partstudios/d/{did}/{wv}/{wvid}/e/{eid}/export/obj | Asynchronously export a Part Studio to OBJ.
+[**CreatePartStudioExportSolidworks**](PartStudioAPI.md#CreatePartStudioExportSolidworks) | **Post** /partstudios/d/{did}/{wv}/{wvid}/e/{eid}/export/solidworks | Asynchronously export a Part Studio to Solidworks.
+[**CreatePartStudioExportStep**](PartStudioAPI.md#CreatePartStudioExportStep) | **Post** /partstudios/d/{did}/{wv}/{wvid}/e/{eid}/export/step | Asynchronously export a Part Studio to STEP.
+[**CreatePartStudioTranslation**](PartStudioAPI.md#CreatePartStudioTranslation) | **Post** /partstudios/d/{did}/{wv}/{wvid}/e/{eid}/translations | Asynchronously export a Part Studio to another format.
+[**DeletePartStudioFeature**](PartStudioAPI.md#DeletePartStudioFeature) | **Delete** /partstudios/d/{did}/w/{wid}/e/{eid}/features/featureid/{fid} | Delete a Part Studio feature.
+[**EvalFeatureScript**](PartStudioAPI.md#EvalFeatureScript) | **Post** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/featurescript | Evaluate the FeatureScript snippet for a Part Studio.
+[**ExportParasolid**](PartStudioAPI.md#ExportParasolid) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/parasolid | Synchronously export a Part Studio to a Parasolid file.
+[**ExportPartStudioGltf**](PartStudioAPI.md#ExportPartStudioGltf) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/gltf | Synchronously export a Part Studio to a glTF file.
+[**ExportPartStudioStl**](PartStudioAPI.md#ExportPartStudioStl) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/stl | Synchronously export a Part Studio to an STL file.
+[**GetFeatureScriptRepresentation**](PartStudioAPI.md#GetFeatureScriptRepresentation) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/featurescriptrepresentation | Get the FeatureScript representation of a Part Studio.
+[**GetFeatureScriptTable**](PartStudioAPI.md#GetFeatureScriptTable) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/fstable | Compute and return a FeatureScript table for a Part Studio.
+[**GetPartStudioBodyDetails**](PartStudioAPI.md#GetPartStudioBodyDetails) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/bodydetails | Get the body details for a Part Studio.
+[**GetPartStudioBoundingBoxes**](PartStudioAPI.md#GetPartStudioBoundingBoxes) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/boundingboxes | Get the bounding boxes for a Part Studio.
+[**GetPartStudioEdges**](PartStudioAPI.md#GetPartStudioEdges) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/tessellatededges | Get a list of all edges in a Part Studio.
+[**GetPartStudioFaces**](PartStudioAPI.md#GetPartStudioFaces) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/tessellatedfaces | Get a list of all faces in a Part Studio.
+[**GetPartStudioFeatureSpecs**](PartStudioAPI.md#GetPartStudioFeatureSpecs) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/featurespecs | Get the specs for a Part Studio feature.
+[**GetPartStudioFeatures**](PartStudioAPI.md#GetPartStudioFeatures) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/features | Get a list of features instantiated in the Part Studio.
+[**GetPartStudioMassProperties**](PartStudioAPI.md#GetPartStudioMassProperties) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/massproperties | Get the mass properties for a Part Studio.
+[**GetPartStudioNamedViews**](PartStudioAPI.md#GetPartStudioNamedViews) | **Get** /partstudios/d/{did}/e/{eid}/namedViews | Get a list of all named views that exist in the Part Studio.
+[**GetPartStudioShadedViews**](PartStudioAPI.md#GetPartStudioShadedViews) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/shadedviews | Get a list of shaded views for a Part Studio.
+[**TranslateIds**](PartStudioAPI.md#TranslateIds) | **Post** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/idtranslations | Find corresponding deterministic IDs from a source document microversion at the target version.
+[**UpdateFeatures**](PartStudioAPI.md#UpdateFeatures) | **Post** /partstudios/d/{did}/w/{wid}/e/{eid}/features/updates | Update multiple features in a Part Studio
+[**UpdatePartStudioFeature**](PartStudioAPI.md#UpdatePartStudioFeature) | **Post** /partstudios/d/{did}/w/{wid}/e/{eid}/features/featureid/{fid} | Update the definition of a Part Studio feature.
+[**UpdateRollback**](PartStudioAPI.md#UpdateRollback) | **Post** /partstudios/d/{did}/w/{wid}/e/{eid}/features/rollback | Move the Feature List rollback bar in the Part Studio.
 
 
 
@@ -64,13 +64,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.AddPartStudioFeature(context.Background(), did, wvm, wvmid, eid).BTFeatureDefinitionCall1406(bTFeatureDefinitionCall1406).Execute()
+    resp, r, err := apiClient.PartStudioAPI.AddPartStudioFeature(context.Background(), did, wvm, wvmid, eid).BTFeatureDefinitionCall1406(bTFeatureDefinitionCall1406).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.AddPartStudioFeature``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.AddPartStudioFeature``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `AddPartStudioFeature`: BTFeatureDefinitionResponse1617
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.AddPartStudioFeature`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.AddPartStudioFeature`: %v\n", resp)
 }
 ```
 
@@ -148,13 +148,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.ComparePartStudios(context.Background(), did, wvm, wvmid, eid).WorkspaceId(workspaceId).VersionId(versionId).MicroversionId(microversionId).SourceConfiguration(sourceConfiguration).TargetConfiguration(targetConfiguration).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.PartStudioAPI.ComparePartStudios(context.Background(), did, wvm, wvmid, eid).WorkspaceId(workspaceId).VersionId(versionId).MicroversionId(microversionId).SourceConfiguration(sourceConfiguration).TargetConfiguration(targetConfiguration).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.ComparePartStudios``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.ComparePartStudios``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `ComparePartStudios`: BTRootDiffInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.ComparePartStudios`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.ComparePartStudios`: %v\n", resp)
 }
 ```
 
@@ -232,13 +232,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.CreatePartStudio(context.Background(), did, wid).BTModelElementParams(bTModelElementParams).Execute()
+    resp, r, err := apiClient.PartStudioAPI.CreatePartStudio(context.Background(), did, wid).BTModelElementParams(bTModelElementParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.CreatePartStudio``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.CreatePartStudio``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreatePartStudio`: BTDocumentElementInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.CreatePartStudio`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.CreatePartStudio`: %v\n", resp)
 }
 ```
 
@@ -309,13 +309,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.CreatePartStudioExportGltf(context.Background(), did, wv, wvid, eid).BTBGltfExportParams(bTBGltfExportParams).Execute()
+    resp, r, err := apiClient.PartStudioAPI.CreatePartStudioExportGltf(context.Background(), did, wv, wvid, eid).BTBGltfExportParams(bTBGltfExportParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.CreatePartStudioExportGltf``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.CreatePartStudioExportGltf``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreatePartStudioExportGltf`: BTTranslationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.CreatePartStudioExportGltf`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.CreatePartStudioExportGltf`: %v\n", resp)
 }
 ```
 
@@ -390,13 +390,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.CreatePartStudioExportObj(context.Background(), did, wv, wvid, eid).BTBObjExportParams(bTBObjExportParams).Execute()
+    resp, r, err := apiClient.PartStudioAPI.CreatePartStudioExportObj(context.Background(), did, wv, wvid, eid).BTBObjExportParams(bTBObjExportParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.CreatePartStudioExportObj``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.CreatePartStudioExportObj``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreatePartStudioExportObj`: BTTranslationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.CreatePartStudioExportObj`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.CreatePartStudioExportObj`: %v\n", resp)
 }
 ```
 
@@ -471,13 +471,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.CreatePartStudioExportSolidworks(context.Background(), did, wv, wvid, eid).BTBSolidworksExportParams(bTBSolidworksExportParams).Execute()
+    resp, r, err := apiClient.PartStudioAPI.CreatePartStudioExportSolidworks(context.Background(), did, wv, wvid, eid).BTBSolidworksExportParams(bTBSolidworksExportParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.CreatePartStudioExportSolidworks``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.CreatePartStudioExportSolidworks``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreatePartStudioExportSolidworks`: BTTranslationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.CreatePartStudioExportSolidworks`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.CreatePartStudioExportSolidworks`: %v\n", resp)
 }
 ```
 
@@ -552,13 +552,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.CreatePartStudioExportStep(context.Background(), did, wv, wvid, eid).BTBStepExportParams(bTBStepExportParams).Execute()
+    resp, r, err := apiClient.PartStudioAPI.CreatePartStudioExportStep(context.Background(), did, wv, wvid, eid).BTBStepExportParams(bTBStepExportParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.CreatePartStudioExportStep``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.CreatePartStudioExportStep``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreatePartStudioExportStep`: BTTranslationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.CreatePartStudioExportStep`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.CreatePartStudioExportStep`: %v\n", resp)
 }
 ```
 
@@ -633,13 +633,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.CreatePartStudioTranslation(context.Background(), did, wv, wvid, eid).BTTranslateFormatParams(bTTranslateFormatParams).Execute()
+    resp, r, err := apiClient.PartStudioAPI.CreatePartStudioTranslation(context.Background(), did, wv, wvid, eid).BTTranslateFormatParams(bTTranslateFormatParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.CreatePartStudioTranslation``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.CreatePartStudioTranslation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreatePartStudioTranslation`: BTTranslationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.CreatePartStudioTranslation`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.CreatePartStudioTranslation`: %v\n", resp)
 }
 ```
 
@@ -713,13 +713,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.DeletePartStudioFeature(context.Background(), did, wid, eid, fid).Execute()
+    resp, r, err := apiClient.PartStudioAPI.DeletePartStudioFeature(context.Background(), did, wid, eid, fid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.DeletePartStudioFeature``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.DeletePartStudioFeature``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeletePartStudioFeature`: BTFeatureApiBase1430
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.DeletePartStudioFeature`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.DeletePartStudioFeature`: %v\n", resp)
 }
 ```
 
@@ -797,13 +797,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.EvalFeatureScript(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).BTFeatureScriptEvalCall2377(bTFeatureScriptEvalCall2377).Execute()
+    resp, r, err := apiClient.PartStudioAPI.EvalFeatureScript(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).BTFeatureScriptEvalCall2377(bTFeatureScriptEvalCall2377).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.EvalFeatureScript``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.EvalFeatureScript``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `EvalFeatureScript`: BTFeatureScriptEvalResponse1859
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.EvalFeatureScript`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.EvalFeatureScript`: %v\n", resp)
 }
 ```
 
@@ -887,9 +887,9 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.ExportParasolid(context.Background(), did, wvm, wvmid, eid).PartIds(partIds).Version(version).IncludeExportIds(includeExportIds).Configuration(configuration).LinkDocumentId(linkDocumentId).BinaryExport(binaryExport).Execute()
+    resp, r, err := apiClient.PartStudioAPI.ExportParasolid(context.Background(), did, wvm, wvmid, eid).PartIds(partIds).Version(version).IncludeExportIds(includeExportIds).Configuration(configuration).LinkDocumentId(linkDocumentId).BinaryExport(binaryExport).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.ExportParasolid``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.ExportParasolid``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
 }
@@ -982,13 +982,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.ExportPartStudioGltf(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).PartId(partId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).PrecomputedLevelOfDetail(precomputedLevelOfDetail).OutputSeparateFaceNodes(outputSeparateFaceNodes).FaceId(faceId).OutputFaceAppearances(outputFaceAppearances).MaxFacetWidth(maxFacetWidth).Execute()
+    resp, r, err := apiClient.PartStudioAPI.ExportPartStudioGltf(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).PartId(partId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).PrecomputedLevelOfDetail(precomputedLevelOfDetail).OutputSeparateFaceNodes(outputSeparateFaceNodes).FaceId(faceId).OutputFaceAppearances(outputFaceAppearances).MaxFacetWidth(maxFacetWidth).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.ExportPartStudioGltf``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.ExportPartStudioGltf``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `ExportPartStudioGltf`: GlTF
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.ExportPartStudioGltf`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.ExportPartStudioGltf`: %v\n", resp)
 }
 ```
 
@@ -1084,9 +1084,9 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.ExportPartStudioStl(context.Background(), did, wvm, wvmid, eid).PartIds(partIds).Mode(mode).Grouping(grouping).Scale(scale).Units(units).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).MaxFacetWidth(maxFacetWidth).MinFacetWidth(minFacetWidth).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.PartStudioAPI.ExportPartStudioStl(context.Background(), did, wvm, wvmid, eid).PartIds(partIds).Mode(mode).Grouping(grouping).Scale(scale).Units(units).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).MaxFacetWidth(maxFacetWidth).MinFacetWidth(minFacetWidth).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.ExportPartStudioStl``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.ExportPartStudioStl``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
 }
@@ -1174,13 +1174,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.GetFeatureScriptRepresentation(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).Execute()
+    resp, r, err := apiClient.PartStudioAPI.GetFeatureScriptRepresentation(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.GetFeatureScriptRepresentation``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.GetFeatureScriptRepresentation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetFeatureScriptRepresentation`: BTPModule234
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.GetFeatureScriptRepresentation`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.GetFeatureScriptRepresentation`: %v\n", resp)
 }
 ```
 
@@ -1261,13 +1261,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.GetFeatureScriptTable(context.Background(), did, wvm, wvmid, eid).TableType(tableType).Configuration(configuration).TableNamespace(tableNamespace).TableParameters(tableParameters).PartId(partId).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.PartStudioAPI.GetFeatureScriptTable(context.Background(), did, wvm, wvmid, eid).TableType(tableType).Configuration(configuration).TableNamespace(tableNamespace).TableParameters(tableParameters).PartId(partId).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.GetFeatureScriptTable``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.GetFeatureScriptTable``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetFeatureScriptTable`: BTApiTableList1223
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.GetFeatureScriptTable`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.GetFeatureScriptTable`: %v\n", resp)
 }
 ```
 
@@ -1354,13 +1354,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.GetPartStudioBodyDetails(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).PartIds(partIds).IncludeSurfaces(includeSurfaces).IncludeCompositeParts(includeCompositeParts).IncludeGeometricData(includeGeometricData).Execute()
+    resp, r, err := apiClient.PartStudioAPI.GetPartStudioBodyDetails(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).PartIds(partIds).IncludeSurfaces(includeSurfaces).IncludeCompositeParts(includeCompositeParts).IncludeGeometricData(includeGeometricData).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.GetPartStudioBodyDetails``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.GetPartStudioBodyDetails``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPartStudioBodyDetails`: BTExportModelBodiesResponse734
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.GetPartStudioBodyDetails`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.GetPartStudioBodyDetails`: %v\n", resp)
 }
 ```
 
@@ -1445,13 +1445,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.GetPartStudioBoundingBoxes(context.Background(), did, wvm, wvmid, eid).IncludeHidden(includeHidden).IncludeWireBodies(includeWireBodies).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.PartStudioAPI.GetPartStudioBoundingBoxes(context.Background(), did, wvm, wvmid, eid).IncludeHidden(includeHidden).IncludeWireBodies(includeWireBodies).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.GetPartStudioBoundingBoxes``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.GetPartStudioBoundingBoxes``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPartStudioBoundingBoxes`: BTBoundingBoxInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.GetPartStudioBoundingBoxes`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.GetPartStudioBoundingBoxes`: %v\n", resp)
 }
 ```
 
@@ -1537,13 +1537,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.GetPartStudioEdges(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).PartId(partId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).PrecomputedLevelOfDetail(precomputedLevelOfDetail).EdgeId(edgeId).Execute()
+    resp, r, err := apiClient.PartStudioAPI.GetPartStudioEdges(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).PartId(partId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).PrecomputedLevelOfDetail(precomputedLevelOfDetail).EdgeId(edgeId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.GetPartStudioEdges``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.GetPartStudioEdges``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPartStudioEdges`: BTExportTessellatedEdgesResponse327
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.GetPartStudioEdges`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.GetPartStudioEdges`: %v\n", resp)
 }
 ```
 
@@ -1642,13 +1642,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.GetPartStudioFaces(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).PartId(partId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).PrecomputedLevelOfDetail(precomputedLevelOfDetail).FaceId(faceId).OutputFaceAppearances(outputFaceAppearances).MaxFacetWidth(maxFacetWidth).OutputVertexNormals(outputVertexNormals).OutputFacetNormals(outputFacetNormals).OutputTextureCoordinates(outputTextureCoordinates).OutputIndexTable(outputIndexTable).OutputErrorFaces(outputErrorFaces).CombineCompositePartConstituents(combineCompositePartConstituents).Execute()
+    resp, r, err := apiClient.PartStudioAPI.GetPartStudioFaces(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).PartId(partId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).PrecomputedLevelOfDetail(precomputedLevelOfDetail).FaceId(faceId).OutputFaceAppearances(outputFaceAppearances).MaxFacetWidth(maxFacetWidth).OutputVertexNormals(outputVertexNormals).OutputFacetNormals(outputFacetNormals).OutputTextureCoordinates(outputTextureCoordinates).OutputIndexTable(outputIndexTable).OutputErrorFaces(outputErrorFaces).CombineCompositePartConstituents(combineCompositePartConstituents).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.GetPartStudioFaces``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.GetPartStudioFaces``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPartStudioFaces`: BTExportTessellatedFacesResponse898
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.GetPartStudioFaces`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.GetPartStudioFaces`: %v\n", resp)
 }
 ```
 
@@ -1738,13 +1738,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.GetPartStudioFeatureSpecs(context.Background(), did, wvm, wvmid, eid).Execute()
+    resp, r, err := apiClient.PartStudioAPI.GetPartStudioFeatureSpecs(context.Background(), did, wvm, wvmid, eid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.GetPartStudioFeatureSpecs``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.GetPartStudioFeatureSpecs``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPartStudioFeatureSpecs`: BTFeatureSpecsResponse664
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.GetPartStudioFeatureSpecs`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.GetPartStudioFeatureSpecs`: %v\n", resp)
 }
 ```
 
@@ -1824,13 +1824,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.GetPartStudioFeatures(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).IncludeGeometryIds(includeGeometryIds).FeatureId(featureId).NoSketchGeometry(noSketchGeometry).Execute()
+    resp, r, err := apiClient.PartStudioAPI.GetPartStudioFeatures(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).IncludeGeometryIds(includeGeometryIds).FeatureId(featureId).NoSketchGeometry(noSketchGeometry).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.GetPartStudioFeatures``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.GetPartStudioFeatures``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPartStudioFeatures`: BTFeatureListResponse2457
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.GetPartStudioFeatures`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.GetPartStudioFeatures`: %v\n", resp)
 }
 ```
 
@@ -1917,13 +1917,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.GetPartStudioMassProperties(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).PartId(partId).MassAsGroup(massAsGroup).UseMassPropertyOverrides(useMassPropertyOverrides).Execute()
+    resp, r, err := apiClient.PartStudioAPI.GetPartStudioMassProperties(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).PartId(partId).MassAsGroup(massAsGroup).UseMassPropertyOverrides(useMassPropertyOverrides).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.GetPartStudioMassProperties``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.GetPartStudioMassProperties``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPartStudioMassProperties`: BTMassPropertiesBulkInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.GetPartStudioMassProperties`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.GetPartStudioMassProperties`: %v\n", resp)
 }
 ```
 
@@ -2004,13 +2004,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.GetPartStudioNamedViews(context.Background(), did, eid).LinkDocumentId(linkDocumentId).SkipPerspective(skipPerspective).IncludeSectionCutViews(includeSectionCutViews).Execute()
+    resp, r, err := apiClient.PartStudioAPI.GetPartStudioNamedViews(context.Background(), did, eid).LinkDocumentId(linkDocumentId).SkipPerspective(skipPerspective).IncludeSectionCutViews(includeSectionCutViews).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.GetPartStudioNamedViews``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.GetPartStudioNamedViews``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPartStudioNamedViews`: BTNamedViewsInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.GetPartStudioNamedViews`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.GetPartStudioNamedViews`: %v\n", resp)
 }
 ```
 
@@ -2091,13 +2091,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.GetPartStudioShadedViews(context.Background(), did, wvm, wvmid, eid).ViewMatrix(viewMatrix).OutputHeight(outputHeight).OutputWidth(outputWidth).PixelSize(pixelSize).Edges(edges).ShowAllParts(showAllParts).IncludeSurfaces(includeSurfaces).UseAntiAliasing(useAntiAliasing).IncludeWires(includeWires).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.PartStudioAPI.GetPartStudioShadedViews(context.Background(), did, wvm, wvmid, eid).ViewMatrix(viewMatrix).OutputHeight(outputHeight).OutputWidth(outputWidth).PixelSize(pixelSize).Edges(edges).ShowAllParts(showAllParts).IncludeSurfaces(includeSurfaces).UseAntiAliasing(useAntiAliasing).IncludeWires(includeWires).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.GetPartStudioShadedViews``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.GetPartStudioShadedViews``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPartStudioShadedViews`: BTShadedViewsInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.GetPartStudioShadedViews`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.GetPartStudioShadedViews`: %v\n", resp)
 }
 ```
 
@@ -2182,13 +2182,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.TranslateIds(context.Background(), did, wvm, wvmid, eid).BTIdTranslationParams(bTIdTranslationParams).Execute()
+    resp, r, err := apiClient.PartStudioAPI.TranslateIds(context.Background(), did, wvm, wvmid, eid).BTIdTranslationParams(bTIdTranslationParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.TranslateIds``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.TranslateIds``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `TranslateIds`: BTIdTranslationInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.TranslateIds`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.TranslateIds`: %v\n", resp)
 }
 ```
 
@@ -2262,13 +2262,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.UpdateFeatures(context.Background(), did, wid, eid).BTUpdateFeaturesCall1748(bTUpdateFeaturesCall1748).Execute()
+    resp, r, err := apiClient.PartStudioAPI.UpdateFeatures(context.Background(), did, wid, eid).BTUpdateFeaturesCall1748(bTUpdateFeaturesCall1748).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.UpdateFeatures``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.UpdateFeatures``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateFeatures`: BTUpdateFeaturesResponse1333
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.UpdateFeatures`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.UpdateFeatures`: %v\n", resp)
 }
 ```
 
@@ -2341,13 +2341,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.UpdatePartStudioFeature(context.Background(), did, wid, eid, fid).BTFeatureDefinitionCall1406(bTFeatureDefinitionCall1406).Execute()
+    resp, r, err := apiClient.PartStudioAPI.UpdatePartStudioFeature(context.Background(), did, wid, eid, fid).BTFeatureDefinitionCall1406(bTFeatureDefinitionCall1406).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.UpdatePartStudioFeature``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.UpdatePartStudioFeature``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdatePartStudioFeature`: BTFeatureDefinitionResponse1617
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.UpdatePartStudioFeature`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.UpdatePartStudioFeature`: %v\n", resp)
 }
 ```
 
@@ -2421,13 +2421,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartStudioApi.UpdateRollback(context.Background(), did, wid, eid).Body(body).Execute()
+    resp, r, err := apiClient.PartStudioAPI.UpdateRollback(context.Background(), did, wid, eid).Body(body).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioApi.UpdateRollback``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartStudioAPI.UpdateRollback``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateRollback`: BTSetFeatureRollbackResponse1042
-    fmt.Fprintf(os.Stdout, "Response from `PartStudioApi.UpdateRollback`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartStudioAPI.UpdateRollback`: %v\n", resp)
 }
 ```
 

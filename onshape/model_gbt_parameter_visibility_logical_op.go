@@ -20,10 +20,10 @@ type GBTParameterVisibilityLogicalOp string
 
 // List of GBTParameterVisibilityLogicalOp
 const (
-	GBTParameterVisibilityLogicalOpNot     GBTParameterVisibilityLogicalOp = "NOT"
-	GBTParameterVisibilityLogicalOpAnd     GBTParameterVisibilityLogicalOp = "AND"
-	GBTParameterVisibilityLogicalOpOr      GBTParameterVisibilityLogicalOp = "OR"
-	GBTParameterVisibilityLogicalOpUnknown GBTParameterVisibilityLogicalOp = "UNKNOWN"
+	Not     GBTParameterVisibilityLogicalOp = "NOT"
+	And     GBTParameterVisibilityLogicalOp = "AND"
+	Or      GBTParameterVisibilityLogicalOp = "OR"
+	Unknown GBTParameterVisibilityLogicalOp = "UNKNOWN"
 )
 
 // All allowed values of GBTParameterVisibilityLogicalOp enum

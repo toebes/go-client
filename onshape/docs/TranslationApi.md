@@ -1,20 +1,20 @@
-# \TranslationApi
+# \TranslationAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateTranslation**](TranslationApi.md#CreateTranslation) | **Post** /translations/d/{did}/w/{wid} | Import or upload a CAD file into Onshape, and translate the data into parts or assemblies.
-[**DeleteTranslation**](TranslationApi.md#DeleteTranslation) | **Delete** /translations/{tid} | Delete a translation request.
-[**GetAllTranslatorFormats**](TranslationApi.md#GetAllTranslatorFormats) | **Get** /translations/translationformats | Get a list of formats this translation can use.
-[**GetDocumentTranslations**](TranslationApi.md#GetDocumentTranslations) | **Get** /translations/d/{did} | Get information on an in-progress or completed translation by document ID.
-[**GetTranslation**](TranslationApi.md#GetTranslation) | **Get** /translations/{tid} | Get information on an in-progress or completed translation by translation ID.
+[**CreateTranslation**](TranslationAPI.md#CreateTranslation) | **Post** /translations/d/{did}/w/{wid} | Import or upload a CAD file into Onshape, and translate the data into parts or assemblies.
+[**DeleteTranslation**](TranslationAPI.md#DeleteTranslation) | **Delete** /translations/{tid} | Delete a translation request.
+[**GetAllTranslatorFormats**](TranslationAPI.md#GetAllTranslatorFormats) | **Get** /translations/translationformats | Get a list of formats this translation can use.
+[**GetDocumentTranslations**](TranslationAPI.md#GetDocumentTranslations) | **Get** /translations/d/{did} | Get information on an in-progress or completed translation by document ID.
+[**GetTranslation**](TranslationAPI.md#GetTranslation) | **Get** /translations/{tid} | Get information on an in-progress or completed translation by translation ID.
 
 
 
 ## CreateTranslation
 
-> BTTranslationRequestImportInfo CreateTranslation(ctx, did, wid).File(file).AllowFaultyParts(allowFaultyParts).CreateComposite(createComposite).CreateDrawingIfPossible(createDrawingIfPossible).EncodedFilename(encodedFilename).ExtractAssemblyHierarchy(extractAssemblyHierarchy).FlattenAssemblies(flattenAssemblies).FormatName(formatName).JoinAdjacentSurfaces(joinAdjacentSurfaces).LocationElementId(locationElementId).LocationGroupId(locationGroupId).LocationPosition(locationPosition).NotifyUser(notifyUser).OwnerId(ownerId).ParentId(parentId).ProjectId(projectId).Public(public).OnePartPerDoc(onePartPerDoc).SplitAssembliesIntoMultipleDocuments(splitAssembliesIntoMultipleDocuments).StoreInDocument(storeInDocument).Translate(translate).Unit(unit).UploadId(uploadId).VersionString(versionString).ImportAppearances(importAppearances).ImportMaterialDensity(importMaterialDensity).YAxisIsUp(yAxisIsUp).ImportWithinDocument(importWithinDocument).UseIGESImportPostProcessing(useIGESImportPostProcessing).UpgradeFeatureScriptVersion(upgradeFeatureScriptVersion).PreserveSourceIds(preserveSourceIds).DocumentId(documentId).VersionId(versionId).VersionName(versionName).VersionDescription(versionDescription).RepointAppElementVersionRefs(repointAppElementVersionRefs).Execute()
+> BTTranslationRequestImportInfo CreateTranslation(ctx, did, wid).AllowFaultyParts(allowFaultyParts).CreateComposite(createComposite).CreateDrawingIfPossible(createDrawingIfPossible).EncodedFilename(encodedFilename).ExtractAssemblyHierarchy(extractAssemblyHierarchy).File(file).FlattenAssemblies(flattenAssemblies).FormatName(formatName).ImportAppearances(importAppearances).ImportMaterialDensity(importMaterialDensity).ImportWithinDocument(importWithinDocument).JoinAdjacentSurfaces(joinAdjacentSurfaces).LocationElementId(locationElementId).LocationGroupId(locationGroupId).LocationPosition(locationPosition).MakePublic(makePublic).NotifyUser(notifyUser).OnePartPerDoc(onePartPerDoc).OwnerId(ownerId).ParentId(parentId).ProjectId(projectId).RepointAppElementVersionRefs(repointAppElementVersionRefs).SplitAssembliesIntoMultipleDocuments(splitAssembliesIntoMultipleDocuments).StoreInDocument(storeInDocument).Translate(translate).Unit(unit).UploadId(uploadId).UseIGESImportPostProcessing(useIGESImportPostProcessing).VersionString(versionString).YAxisIsUp(yAxisIsUp).Execute()
 
 Import or upload a CAD file into Onshape, and translate the data into parts or assemblies.
 
@@ -35,52 +35,46 @@ import (
 func main() {
     did := "did_example" // string | 
     wid := "wid_example" // string | 
-    file := map[string]interface{}{ ... } // map[string]interface{} | The file to upload. (optional)
-    allowFaultyParts := true // bool | If true, and a part doesn't pass Onshape validation, it will be imported with faults. (optional)
-    createComposite := true // bool | Not supported for importing into a single part studio. (optional)
+    allowFaultyParts := true // bool |  (optional)
+    createComposite := true // bool |  (optional)
     createDrawingIfPossible := true // bool |  (optional)
-    encodedFilename := "encodedFilename_example" // string | If the filename contains non-ASCII characters. Use this field to store the filename. (optional)
+    encodedFilename := "encodedFilename_example" // string |  (optional)
     extractAssemblyHierarchy := true // bool |  (optional)
-    flattenAssemblies := true // bool | If the file is an assembly, or contains an assembly, setting this to True will import it as a Part Studio. In this case the assembly will be flattened to a set of parts in a Part Studio. There will be duplicate parts created whenever a part is instanced more than once. If False, it will be imported as an Assembly. (optional)
+    file := os.NewFile(1234, "some_file") // HttpFile | The file to upload. (optional)
+    flattenAssemblies := true // bool |  (optional)
     formatName := "formatName_example" // string |  (optional)
+    importAppearances := true // bool |  (optional)
+    importMaterialDensity := true // bool |  (optional)
+    importWithinDocument := true // bool |  (optional)
     joinAdjacentSurfaces := true // bool |  (optional)
     locationElementId := "locationElementId_example" // string |  (optional)
     locationGroupId := "locationGroupId_example" // string |  (optional)
-    locationPosition := int32(56) // int32 |  (optional) (default to -1)
-    notifyUser := true // bool |  (optional) (default to true)
+    locationPosition := int32(56) // int32 |  (optional)
+    makePublic := true // bool |  (optional)
+    notifyUser := true // bool |  (optional)
+    onePartPerDoc := true // bool |  (optional)
     ownerId := "ownerId_example" // string |  (optional)
     parentId := "parentId_example" // string |  (optional)
     projectId := "projectId_example" // string |  (optional)
-    public := true // bool |  (optional)
-    onePartPerDoc := true // bool |  (optional) (default to false)
-    splitAssembliesIntoMultipleDocuments := true // bool |  (optional) (default to false)
-    storeInDocument := true // bool |  (optional) (default to true)
-    translate := true // bool |  (optional) (default to true)
-    unit := "unit_example" // string |  (optional) (default to "")
+    repointAppElementVersionRefs := true // bool |  (optional)
+    splitAssembliesIntoMultipleDocuments := true // bool |  (optional)
+    storeInDocument := true // bool |  (optional)
+    translate := true // bool |  (optional)
+    unit := "unit_example" // string |  (optional)
     uploadId := "uploadId_example" // string |  (optional)
+    useIGESImportPostProcessing := true // bool |  (optional)
     versionString := "versionString_example" // string |  (optional)
-    importAppearances := true // bool | Face appearances defined on models will be imported. (optional) (default to true)
-    importMaterialDensity := true // bool | Material density defined on models will be imported. (optional) (default to false)
-    yAxisIsUp := true // bool | If the file was created in a system that orients with Y Axis Up, the models would by default be brought into Onshape (a Z Axis Up system) with a flipped coordinate system. Toggle this value to reorient the axis system to match Onshape and display the model with the coordinates you expect. (optional)
-    importWithinDocument := true // bool |  (optional)
-    useIGESImportPostProcessing := true // bool | Try getting optimized topology from IGES model. (optional) (default to false)
-    upgradeFeatureScriptVersion := true // bool |  (optional) (default to false)
-    preserveSourceIds := true // bool |  (optional) (default to false)
-    documentId := "documentId_example" // string |  (optional)
-    versionId := "versionId_example" // string |  (optional)
-    versionName := "versionName_example" // string |  (optional)
-    versionDescription := "versionDescription_example" // string |  (optional)
-    repointAppElementVersionRefs := true // bool | Re-point the version references in APP elements to initial version in the new document (optional) (default to false)
+    yAxisIsUp := true // bool |  (optional)
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.TranslationApi.CreateTranslation(context.Background(), did, wid).File(file).AllowFaultyParts(allowFaultyParts).CreateComposite(createComposite).CreateDrawingIfPossible(createDrawingIfPossible).EncodedFilename(encodedFilename).ExtractAssemblyHierarchy(extractAssemblyHierarchy).FlattenAssemblies(flattenAssemblies).FormatName(formatName).JoinAdjacentSurfaces(joinAdjacentSurfaces).LocationElementId(locationElementId).LocationGroupId(locationGroupId).LocationPosition(locationPosition).NotifyUser(notifyUser).OwnerId(ownerId).ParentId(parentId).ProjectId(projectId).Public(public).OnePartPerDoc(onePartPerDoc).SplitAssembliesIntoMultipleDocuments(splitAssembliesIntoMultipleDocuments).StoreInDocument(storeInDocument).Translate(translate).Unit(unit).UploadId(uploadId).VersionString(versionString).ImportAppearances(importAppearances).ImportMaterialDensity(importMaterialDensity).YAxisIsUp(yAxisIsUp).ImportWithinDocument(importWithinDocument).UseIGESImportPostProcessing(useIGESImportPostProcessing).UpgradeFeatureScriptVersion(upgradeFeatureScriptVersion).PreserveSourceIds(preserveSourceIds).DocumentId(documentId).VersionId(versionId).VersionName(versionName).VersionDescription(versionDescription).RepointAppElementVersionRefs(repointAppElementVersionRefs).Execute()
+    resp, r, err := apiClient.TranslationAPI.CreateTranslation(context.Background(), did, wid).AllowFaultyParts(allowFaultyParts).CreateComposite(createComposite).CreateDrawingIfPossible(createDrawingIfPossible).EncodedFilename(encodedFilename).ExtractAssemblyHierarchy(extractAssemblyHierarchy).File(file).FlattenAssemblies(flattenAssemblies).FormatName(formatName).ImportAppearances(importAppearances).ImportMaterialDensity(importMaterialDensity).ImportWithinDocument(importWithinDocument).JoinAdjacentSurfaces(joinAdjacentSurfaces).LocationElementId(locationElementId).LocationGroupId(locationGroupId).LocationPosition(locationPosition).MakePublic(makePublic).NotifyUser(notifyUser).OnePartPerDoc(onePartPerDoc).OwnerId(ownerId).ParentId(parentId).ProjectId(projectId).RepointAppElementVersionRefs(repointAppElementVersionRefs).SplitAssembliesIntoMultipleDocuments(splitAssembliesIntoMultipleDocuments).StoreInDocument(storeInDocument).Translate(translate).Unit(unit).UploadId(uploadId).UseIGESImportPostProcessing(useIGESImportPostProcessing).VersionString(versionString).YAxisIsUp(yAxisIsUp).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `TranslationApi.CreateTranslation``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `TranslationAPI.CreateTranslation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateTranslation`: BTTranslationRequestImportInfo
-    fmt.Fprintf(os.Stdout, "Response from `TranslationApi.CreateTranslation`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `TranslationAPI.CreateTranslation`: %v\n", resp)
 }
 ```
 
@@ -102,42 +96,36 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **file** | [**map[string]interface{}**](map[string]interface{}.md) | The file to upload. | 
- **allowFaultyParts** | **bool** | If true, and a part doesn&#39;t pass Onshape validation, it will be imported with faults. | 
- **createComposite** | **bool** | Not supported for importing into a single part studio. | 
+ **allowFaultyParts** | **bool** |  | 
+ **createComposite** | **bool** |  | 
  **createDrawingIfPossible** | **bool** |  | 
- **encodedFilename** | **string** | If the filename contains non-ASCII characters. Use this field to store the filename. | 
+ **encodedFilename** | **string** |  | 
  **extractAssemblyHierarchy** | **bool** |  | 
- **flattenAssemblies** | **bool** | If the file is an assembly, or contains an assembly, setting this to True will import it as a Part Studio. In this case the assembly will be flattened to a set of parts in a Part Studio. There will be duplicate parts created whenever a part is instanced more than once. If False, it will be imported as an Assembly. | 
+ **file** | **HttpFile** | The file to upload. | 
+ **flattenAssemblies** | **bool** |  | 
  **formatName** | **string** |  | 
+ **importAppearances** | **bool** |  | 
+ **importMaterialDensity** | **bool** |  | 
+ **importWithinDocument** | **bool** |  | 
  **joinAdjacentSurfaces** | **bool** |  | 
  **locationElementId** | **string** |  | 
  **locationGroupId** | **string** |  | 
- **locationPosition** | **int32** |  | [default to -1]
- **notifyUser** | **bool** |  | [default to true]
+ **locationPosition** | **int32** |  | 
+ **makePublic** | **bool** |  | 
+ **notifyUser** | **bool** |  | 
+ **onePartPerDoc** | **bool** |  | 
  **ownerId** | **string** |  | 
  **parentId** | **string** |  | 
  **projectId** | **string** |  | 
- **public** | **bool** |  | 
- **onePartPerDoc** | **bool** |  | [default to false]
- **splitAssembliesIntoMultipleDocuments** | **bool** |  | [default to false]
- **storeInDocument** | **bool** |  | [default to true]
- **translate** | **bool** |  | [default to true]
- **unit** | **string** |  | [default to &quot;&quot;]
+ **repointAppElementVersionRefs** | **bool** |  | 
+ **splitAssembliesIntoMultipleDocuments** | **bool** |  | 
+ **storeInDocument** | **bool** |  | 
+ **translate** | **bool** |  | 
+ **unit** | **string** |  | 
  **uploadId** | **string** |  | 
+ **useIGESImportPostProcessing** | **bool** |  | 
  **versionString** | **string** |  | 
- **importAppearances** | **bool** | Face appearances defined on models will be imported. | [default to true]
- **importMaterialDensity** | **bool** | Material density defined on models will be imported. | [default to false]
- **yAxisIsUp** | **bool** | If the file was created in a system that orients with Y Axis Up, the models would by default be brought into Onshape (a Z Axis Up system) with a flipped coordinate system. Toggle this value to reorient the axis system to match Onshape and display the model with the coordinates you expect. | 
- **importWithinDocument** | **bool** |  | 
- **useIGESImportPostProcessing** | **bool** | Try getting optimized topology from IGES model. | [default to false]
- **upgradeFeatureScriptVersion** | **bool** |  | [default to false]
- **preserveSourceIds** | **bool** |  | [default to false]
- **documentId** | **string** |  | 
- **versionId** | **string** |  | 
- **versionName** | **string** |  | 
- **versionDescription** | **string** |  | 
- **repointAppElementVersionRefs** | **bool** | Re-point the version references in APP elements to initial version in the new document | [default to false]
+ **yAxisIsUp** | **bool** |  | 
 
 ### Return type
 
@@ -180,13 +168,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.TranslationApi.DeleteTranslation(context.Background(), tid).Execute()
+    resp, r, err := apiClient.TranslationAPI.DeleteTranslation(context.Background(), tid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `TranslationApi.DeleteTranslation``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `TranslationAPI.DeleteTranslation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteTranslation`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `TranslationApi.DeleteTranslation`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `TranslationAPI.DeleteTranslation`: %v\n", resp)
 }
 ```
 
@@ -249,13 +237,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.TranslationApi.GetAllTranslatorFormats(context.Background()).Execute()
+    resp, r, err := apiClient.TranslationAPI.GetAllTranslatorFormats(context.Background()).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `TranslationApi.GetAllTranslatorFormats``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `TranslationAPI.GetAllTranslatorFormats``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAllTranslatorFormats`: []BTModelFormatFullInfo
-    fmt.Fprintf(os.Stdout, "Response from `TranslationApi.GetAllTranslatorFormats`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `TranslationAPI.GetAllTranslatorFormats`: %v\n", resp)
 }
 ```
 
@@ -311,13 +299,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.TranslationApi.GetDocumentTranslations(context.Background(), did).Offset(offset).Limit(limit).Execute()
+    resp, r, err := apiClient.TranslationAPI.GetDocumentTranslations(context.Background(), did).Offset(offset).Limit(limit).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `TranslationApi.GetDocumentTranslations``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `TranslationAPI.GetDocumentTranslations``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDocumentTranslations`: BTListResponseBTTranslationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `TranslationApi.GetDocumentTranslations`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `TranslationAPI.GetDocumentTranslations`: %v\n", resp)
 }
 ```
 
@@ -383,13 +371,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.TranslationApi.GetTranslation(context.Background(), tid).Execute()
+    resp, r, err := apiClient.TranslationAPI.GetTranslation(context.Background(), tid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `TranslationApi.GetTranslation``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `TranslationAPI.GetTranslation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetTranslation`: BTTranslationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `TranslationApi.GetTranslation`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `TranslationAPI.GetTranslation`: %v\n", resp)
 }
 ```
 

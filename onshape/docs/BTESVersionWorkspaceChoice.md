@@ -3,11 +3,11 @@
 ## Enum
 
 
-* `BTESVersionWorkspaceChoiceAll` (value: `"ALL"`)
+* `All` (value: `"ALL"`)
 
-* `BTESVersionWorkspaceChoiceWorkspaces` (value: `"WORKSPACES"`)
+* `Workspaces` (value: `"WORKSPACES"`)
 
-* `BTESVersionWorkspaceChoiceVersions` (value: `"VERSIONS"`)
+* `Versions` (value: `"VERSIONS"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

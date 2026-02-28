@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `GBTTableColumnWidthUnitsPercent` (value: `"PERCENT"`)
+* `Percent` (value: `"PERCENT"`)
 
-* `GBTTableColumnWidthUnitsChars` (value: `"CHARS"`)
+* `Chars` (value: `"CHARS"`)
 
-* `GBTTableColumnWidthUnitsPixels` (value: `"PIXELS"`)
+* `Pixels` (value: `"PIXELS"`)
 
-* `GBTTableColumnWidthUnitsUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `GBTBSFeatureVisibilityUnset` (value: `"UNSET"`)
+* `Unset` (value: `"UNSET"`)
 
-* `GBTBSFeatureVisibilityHidden` (value: `"HIDDEN"`)
+* `Hidden` (value: `"HIDDEN"`)
 
-* `GBTBSFeatureVisibilityVisible` (value: `"VISIBLE"`)
+* `Visible` (value: `"VISIBLE"`)
 
-* `GBTBSFeatureVisibilityUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

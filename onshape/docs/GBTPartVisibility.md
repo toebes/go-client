@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `GBTPartVisibilityHidden` (value: `"HIDDEN"`)
+* `Hidden` (value: `"HIDDEN"`)
 
-* `GBTPartVisibilityVisible` (value: `"VISIBLE"`)
+* `Visible` (value: `"VISIBLE"`)
 
-* `GBTPartVisibilityUnspecified` (value: `"UNSPECIFIED"`)
+* `Unspecified` (value: `"UNSPECIFIED"`)
 
-* `GBTPartVisibilityUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -11,7 +11,9 @@ Contact: api-support@onshape.zendesk.com
 package onshape
 
 import (
+	"bytes"
 	"encoding/json"
+	"fmt"
 )
 
 // BTJEditMove3245 Move an existing node from one path to another.

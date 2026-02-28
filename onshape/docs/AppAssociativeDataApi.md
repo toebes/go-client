@@ -1,13 +1,13 @@
-# \AppAssociativeDataApi
+# \AppAssociativeDataAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CopyAssociativeData**](AppAssociativeDataApi.md#CopyAssociativeData) | **Post** /appelements/d/{did}/w/{wid}/e/{eid}/copyassociativedata | Copy associative data from one view to another.
-[**DeleteAssociativeData**](AppAssociativeDataApi.md#DeleteAssociativeData) | **Delete** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/associativedata | Delete the associative data from the specified app element.
-[**GetAssociativeData**](AppAssociativeDataApi.md#GetAssociativeData) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/associativedata | Get the associative data for the specified app element.
-[**PostAssociativeData**](AppAssociativeDataApi.md#PostAssociativeData) | **Post** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/associativedata | Set the associative data for the specified app element.
+[**CopyAssociativeData**](AppAssociativeDataAPI.md#CopyAssociativeData) | **Post** /appelements/d/{did}/w/{wid}/e/{eid}/copyassociativedata | Copy associative data from one view to another.
+[**DeleteAssociativeData**](AppAssociativeDataAPI.md#DeleteAssociativeData) | **Delete** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/associativedata | Delete the associative data from the specified app element.
+[**GetAssociativeData**](AppAssociativeDataAPI.md#GetAssociativeData) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/associativedata | Get the associative data for the specified app element.
+[**PostAssociativeData**](AppAssociativeDataAPI.md#PostAssociativeData) | **Post** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/associativedata | Set the associative data for the specified app element.
 
 
 
@@ -39,13 +39,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppAssociativeDataApi.CopyAssociativeData(context.Background(), did, wid, eid).BTAppElementParamsArrayBTCopyViewAssociativeDataParams(bTAppElementParamsArrayBTCopyViewAssociativeDataParams).Execute()
+    resp, r, err := apiClient.AppAssociativeDataAPI.CopyAssociativeData(context.Background(), did, wid, eid).BTAppElementParamsArrayBTCopyViewAssociativeDataParams(bTAppElementParamsArrayBTCopyViewAssociativeDataParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppAssociativeDataApi.CopyAssociativeData``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppAssociativeDataAPI.CopyAssociativeData``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CopyAssociativeData`: BTAppAssociativeDataArrayInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppAssociativeDataApi.CopyAssociativeData`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppAssociativeDataAPI.CopyAssociativeData`: %v\n", resp)
 }
 ```
 
@@ -130,13 +130,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppAssociativeDataApi.DeleteAssociativeData(context.Background(), did, eid, wvm, wvmid).TransactionId(transactionId).ParentChangeId(parentChangeId).AssociativeDataId(associativeDataId).ExternalDocumentId(externalDocumentId).ElementId(elementId).ViewId(viewId).MicroversionId(microversionId).DocumentMicroversion(documentMicroversion).DeterministicId(deterministicId).FeatureId(featureId).EntityId(entityId).OccurrenceId(occurrenceId).ReferenceId(referenceId).Execute()
+    resp, r, err := apiClient.AppAssociativeDataAPI.DeleteAssociativeData(context.Background(), did, eid, wvm, wvmid).TransactionId(transactionId).ParentChangeId(parentChangeId).AssociativeDataId(associativeDataId).ExternalDocumentId(externalDocumentId).ElementId(elementId).ViewId(viewId).MicroversionId(microversionId).DocumentMicroversion(documentMicroversion).DeterministicId(deterministicId).FeatureId(featureId).EntityId(entityId).OccurrenceId(occurrenceId).ReferenceId(referenceId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppAssociativeDataApi.DeleteAssociativeData``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppAssociativeDataAPI.DeleteAssociativeData``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteAssociativeData`: BTAppElementBasicInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppAssociativeDataApi.DeleteAssociativeData`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppAssociativeDataAPI.DeleteAssociativeData`: %v\n", resp)
 }
 ```
 
@@ -237,13 +237,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppAssociativeDataApi.GetAssociativeData(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).AssociativeDataId(associativeDataId).ExternalDocumentId(externalDocumentId).ElementId(elementId).ViewId(viewId).MicroversionId(microversionId).DocumentMicroversion(documentMicroversion).DeterministicId(deterministicId).FeatureId(featureId).EntityId(entityId).OccurrenceId(occurrenceId).ReturnIdTags(returnIdTags).ReferenceId(referenceId).Execute()
+    resp, r, err := apiClient.AppAssociativeDataAPI.GetAssociativeData(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).AssociativeDataId(associativeDataId).ExternalDocumentId(externalDocumentId).ElementId(elementId).ViewId(viewId).MicroversionId(microversionId).DocumentMicroversion(documentMicroversion).DeterministicId(deterministicId).FeatureId(featureId).EntityId(entityId).OccurrenceId(occurrenceId).ReturnIdTags(returnIdTags).ReferenceId(referenceId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppAssociativeDataApi.GetAssociativeData``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppAssociativeDataAPI.GetAssociativeData``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAssociativeData`: BTAppAssociativeDataArrayInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppAssociativeDataApi.GetAssociativeData`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppAssociativeDataAPI.GetAssociativeData`: %v\n", resp)
 }
 ```
 
@@ -332,13 +332,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppAssociativeDataApi.PostAssociativeData(context.Background(), did, eid, wvm, wvmid).Body(body).Execute()
+    resp, r, err := apiClient.AppAssociativeDataAPI.PostAssociativeData(context.Background(), did, eid, wvm, wvmid).Body(body).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppAssociativeDataApi.PostAssociativeData``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppAssociativeDataAPI.PostAssociativeData``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `PostAssociativeData`: BTAppAssociativeDataArrayInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppAssociativeDataApi.PostAssociativeData`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppAssociativeDataAPI.PostAssociativeData`: %v\n", resp)
 }
 ```
 

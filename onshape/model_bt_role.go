@@ -20,14 +20,14 @@ type BTRole string
 
 // List of BTRole
 const (
-	BTRoleAnonymous          BTRole = "ANONYMOUS"
-	BTRoleTotppendinguser    BTRole = "TOTPPENDINGUSER"
-	BTRoleUser               BTRole = "USER"
-	BTRoleDeveloper          BTRole = "DEVELOPER"
-	BTRolePartner            BTRole = "PARTNER"
-	BTRoleOnshapecompanyuser BTRole = "ONSHAPECOMPANYUSER"
-	BTRoleAdmin              BTRole = "ADMIN"
-	BTRoleService            BTRole = "SERVICE"
+	Anonymous          BTRole = "ANONYMOUS"
+	Totppendinguser    BTRole = "TOTPPENDINGUSER"
+	User               BTRole = "USER"
+	Developer          BTRole = "DEVELOPER"
+	Partner            BTRole = "PARTNER"
+	Onshapecompanyuser BTRole = "ONSHAPECOMPANYUSER"
+	Admin              BTRole = "ADMIN"
+	Service            BTRole = "SERVICE"
 )
 
 // All allowed values of BTRole enum

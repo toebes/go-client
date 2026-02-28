@@ -20,20 +20,20 @@ type BTMetadataValueType string
 
 // List of BTMetadataValueType
 const (
-	BTMetadataValueTypeString         BTMetadataValueType = "STRING"
-	BTMetadataValueTypeBool           BTMetadataValueType = "BOOL"
-	BTMetadataValueTypeInt            BTMetadataValueType = "INT"
-	BTMetadataValueTypeDouble         BTMetadataValueType = "DOUBLE"
-	BTMetadataValueTypeDate           BTMetadataValueType = "DATE"
-	BTMetadataValueTypeEnum           BTMetadataValueType = "ENUM"
-	BTMetadataValueTypeObject         BTMetadataValueType = "OBJECT"
-	BTMetadataValueTypeBlob           BTMetadataValueType = "BLOB"
-	BTMetadataValueTypeUser           BTMetadataValueType = "USER"
-	BTMetadataValueTypeList           BTMetadataValueType = "LIST"
-	BTMetadataValueTypeForeign        BTMetadataValueType = "FOREIGN"
-	BTMetadataValueTypeCategory       BTMetadataValueType = "CATEGORY"
-	BTMetadataValueTypeComputed       BTMetadataValueType = "COMPUTED"
-	BTMetadataValueTypeValueWithUnits BTMetadataValueType = "VALUE_WITH_UNITS"
+	String         BTMetadataValueType = "STRING"
+	Bool           BTMetadataValueType = "BOOL"
+	Int            BTMetadataValueType = "INT"
+	Double         BTMetadataValueType = "DOUBLE"
+	Date           BTMetadataValueType = "DATE"
+	Enum           BTMetadataValueType = "ENUM"
+	Object         BTMetadataValueType = "OBJECT"
+	Blob           BTMetadataValueType = "BLOB"
+	User           BTMetadataValueType = "USER"
+	List           BTMetadataValueType = "LIST"
+	Foreign        BTMetadataValueType = "FOREIGN"
+	Category       BTMetadataValueType = "CATEGORY"
+	Computed       BTMetadataValueType = "COMPUTED"
+	ValueWithUnits BTMetadataValueType = "VALUE_WITH_UNITS"
 )
 
 // All allowed values of BTMetadataValueType enum

@@ -20,13 +20,13 @@ type GBTExportUnit string
 
 // List of GBTExportUnit
 const (
-	GBTExportUnitMeter      GBTExportUnit = "METER"
-	GBTExportUnitCentimeter GBTExportUnit = "CENTIMETER"
-	GBTExportUnitMillimeter GBTExportUnit = "MILLIMETER"
-	GBTExportUnitInch       GBTExportUnit = "INCH"
-	GBTExportUnitFoot       GBTExportUnit = "FOOT"
-	GBTExportUnitYard       GBTExportUnit = "YARD"
-	GBTExportUnitUnknown    GBTExportUnit = "UNKNOWN"
+	Meter      GBTExportUnit = "METER"
+	Centimeter GBTExportUnit = "CENTIMETER"
+	Millimeter GBTExportUnit = "MILLIMETER"
+	Inch       GBTExportUnit = "INCH"
+	Foot       GBTExportUnit = "FOOT"
+	Yard       GBTExportUnit = "YARD"
+	Unknown    GBTExportUnit = "UNKNOWN"
 )
 
 // All allowed values of GBTExportUnit enum

@@ -20,10 +20,10 @@ type BTAssemblyInstanceType string
 
 // List of BTAssemblyInstanceType
 const (
-	BTAssemblyInstanceTypeAssembly BTAssemblyInstanceType = "Assembly"
-	BTAssemblyInstanceTypeFeature  BTAssemblyInstanceType = "Feature"
-	BTAssemblyInstanceTypePart     BTAssemblyInstanceType = "Part"
-	BTAssemblyInstanceTypeUnknown  BTAssemblyInstanceType = "Unknown"
+	Assembly BTAssemblyInstanceType = "Assembly"
+	Feature  BTAssemblyInstanceType = "Feature"
+	Part     BTAssemblyInstanceType = "Part"
+	Unknown  BTAssemblyInstanceType = "Unknown"
 )
 
 // All allowed values of BTAssemblyInstanceType enum

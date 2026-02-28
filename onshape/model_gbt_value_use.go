@@ -20,12 +20,12 @@ type GBTValueUse string
 
 // List of GBTValueUse
 const (
-	GBTValueUseString   GBTValueUse = "STRING"
-	GBTValueUseInteger  GBTValueUse = "INTEGER"
-	GBTValueUseUnits    GBTValueUse = "UNITS"
-	GBTValueUseType     GBTValueUse = "TYPE"
-	GBTValueUseLocalize GBTValueUse = "LOCALIZE"
-	GBTValueUseUnknown  GBTValueUse = "UNKNOWN"
+	String   GBTValueUse = "STRING"
+	Integer  GBTValueUse = "INTEGER"
+	Units    GBTValueUse = "UNITS"
+	Type     GBTValueUse = "TYPE"
+	Localize GBTValueUse = "LOCALIZE"
+	Unknown  GBTValueUse = "UNKNOWN"
 )
 
 // All allowed values of GBTValueUse enum

@@ -3,19 +3,19 @@
 ## Enum
 
 
-* `GBTComputeStatusComputed` (value: `"COMPUTED"`)
+* `Computed` (value: `"COMPUTED"`)
 
-* `GBTComputeStatusStale` (value: `"STALE"`)
+* `Stale` (value: `"STALE"`)
 
-* `GBTComputeStatusComputing` (value: `"COMPUTING"`)
+* `Computing` (value: `"COMPUTING"`)
 
-* `GBTComputeStatusError` (value: `"ERROR"`)
+* `Error` (value: `"ERROR"`)
 
-* `GBTComputeStatusUnderdefined` (value: `"UNDERDEFINED"`)
+* `Underdefined` (value: `"UNDERDEFINED"`)
 
-* `GBTComputeStatusPreparing` (value: `"PREPARING"`)
+* `Preparing` (value: `"PREPARING"`)
 
-* `GBTComputeStatusUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

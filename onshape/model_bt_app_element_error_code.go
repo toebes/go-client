@@ -20,10 +20,10 @@ type BTAppElementErrorCode string
 
 // List of BTAppElementErrorCode
 const (
-	BTAppElementErrorCodeOk                  BTAppElementErrorCode = "OK"
-	BTAppElementErrorCodeTransactionConflict BTAppElementErrorCode = "TRANSACTION_CONFLICT"
-	BTAppElementErrorCodeNotFound            BTAppElementErrorCode = "NOT_FOUND"
-	BTAppElementErrorCodeInconsistentChanges BTAppElementErrorCode = "INCONSISTENT_CHANGES"
+	Ok                  BTAppElementErrorCode = "OK"
+	TransactionConflict BTAppElementErrorCode = "TRANSACTION_CONFLICT"
+	NotFound            BTAppElementErrorCode = "NOT_FOUND"
+	InconsistentChanges BTAppElementErrorCode = "INCONSISTENT_CHANGES"
 )
 
 // All allowed values of BTAppElementErrorCode enum

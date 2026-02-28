@@ -3,83 +3,83 @@
 ## Enum
 
 
-* `GBTUIHintOppositeDirection` (value: `"OPPOSITE_DIRECTION"`)
+* `OppositeDirection` (value: `"OPPOSITE_DIRECTION"`)
 
-* `GBTUIHintAlwaysHidden` (value: `"ALWAYS_HIDDEN"`)
+* `AlwaysHidden` (value: `"ALWAYS_HIDDEN"`)
 
-* `GBTUIHintShowCreateSelection` (value: `"SHOW_CREATE_SELECTION"`)
+* `ShowCreateSelection` (value: `"SHOW_CREATE_SELECTION"`)
 
-* `GBTUIHintControlVisibility` (value: `"CONTROL_VISIBILITY"`)
+* `ControlVisibility` (value: `"CONTROL_VISIBILITY"`)
 
-* `GBTUIHintNoPreviewProvided` (value: `"NO_PREVIEW_PROVIDED"`)
+* `NoPreviewProvided` (value: `"NO_PREVIEW_PROVIDED"`)
 
-* `GBTUIHintRememberPreviousValue` (value: `"REMEMBER_PREVIOUS_VALUE"`)
+* `RememberPreviousValue` (value: `"REMEMBER_PREVIOUS_VALUE"`)
 
-* `GBTUIHintDisplayShort` (value: `"DISPLAY_SHORT"`)
+* `DisplayShort` (value: `"DISPLAY_SHORT"`)
 
-* `GBTUIHintAllowFeatureSelection` (value: `"ALLOW_FEATURE_SELECTION"`)
+* `AllowFeatureSelection` (value: `"ALLOW_FEATURE_SELECTION"`)
 
-* `GBTUIHintMateConnectorAxisType` (value: `"MATE_CONNECTOR_AXIS_TYPE"`)
+* `MateConnectorAxisType` (value: `"MATE_CONNECTOR_AXIS_TYPE"`)
 
-* `GBTUIHintPrimaryAxis` (value: `"PRIMARY_AXIS"`)
+* `PrimaryAxis` (value: `"PRIMARY_AXIS"`)
 
-* `GBTUIHintShowExpression` (value: `"SHOW_EXPRESSION"`)
+* `ShowExpression` (value: `"SHOW_EXPRESSION"`)
 
-* `GBTUIHintOppositeDirectionCircular` (value: `"OPPOSITE_DIRECTION_CIRCULAR"`)
+* `OppositeDirectionCircular` (value: `"OPPOSITE_DIRECTION_CIRCULAR"`)
 
-* `GBTUIHintShowLabel` (value: `"SHOW_LABEL"`)
+* `ShowLabel` (value: `"SHOW_LABEL"`)
 
-* `GBTUIHintHorizontalEnum` (value: `"HORIZONTAL_ENUM"`)
+* `HorizontalEnum` (value: `"HORIZONTAL_ENUM"`)
 
-* `GBTUIHintUnconfigurable` (value: `"UNCONFIGURABLE"`)
+* `Unconfigurable` (value: `"UNCONFIGURABLE"`)
 
-* `GBTUIHintMatchLastArrayItem` (value: `"MATCH_LAST_ARRAY_ITEM"`)
+* `MatchLastArrayItem` (value: `"MATCH_LAST_ARRAY_ITEM"`)
 
-* `GBTUIHintCollapseArrayItems` (value: `"COLLAPSE_ARRAY_ITEMS"`)
+* `CollapseArrayItems` (value: `"COLLAPSE_ARRAY_ITEMS"`)
 
-* `GBTUIHintInitialFocusOnEdit` (value: `"INITIAL_FOCUS_ON_EDIT"`)
+* `InitialFocusOnEdit` (value: `"INITIAL_FOCUS_ON_EDIT"`)
 
-* `GBTUIHintInitialFocus` (value: `"INITIAL_FOCUS"`)
+* `InitialFocus` (value: `"INITIAL_FOCUS"`)
 
-* `GBTUIHintDisplayCurrentValueOnly` (value: `"DISPLAY_CURRENT_VALUE_ONLY"`)
+* `DisplayCurrentValueOnly` (value: `"DISPLAY_CURRENT_VALUE_ONLY"`)
 
-* `GBTUIHintReadOnly` (value: `"READ_ONLY"`)
+* `ReadOnly` (value: `"READ_ONLY"`)
 
-* `GBTUIHintPreventCreatingNewMateConnectors` (value: `"PREVENT_CREATING_NEW_MATE_CONNECTORS"`)
+* `PreventCreatingNewMateConnectors` (value: `"PREVENT_CREATING_NEW_MATE_CONNECTORS"`)
 
-* `GBTUIHintFirstInRow` (value: `"FIRST_IN_ROW"`)
+* `FirstInRow` (value: `"FIRST_IN_ROW"`)
 
-* `GBTUIHintAllowQueryOrder` (value: `"ALLOW_QUERY_ORDER"`)
+* `AllowQueryOrder` (value: `"ALLOW_QUERY_ORDER"`)
 
-* `GBTUIHintPreventArrayReorder` (value: `"PREVENT_ARRAY_REORDER"`)
+* `PreventArrayReorder` (value: `"PREVENT_ARRAY_REORDER"`)
 
-* `GBTUIHintVariableName` (value: `"VARIABLE_NAME"`)
+* `VariableName` (value: `"VARIABLE_NAME"`)
 
-* `GBTUIHintFocusInnerQuery` (value: `"FOCUS_INNER_QUERY"`)
+* `FocusInnerQuery` (value: `"FOCUS_INNER_QUERY"`)
 
-* `GBTUIHintShowTolerance` (value: `"SHOW_TOLERANCE"`)
+* `ShowTolerance` (value: `"SHOW_TOLERANCE"`)
 
-* `GBTUIHintAllowArrayFocus` (value: `"ALLOW_ARRAY_FOCUS"`)
+* `AllowArrayFocus` (value: `"ALLOW_ARRAY_FOCUS"`)
 
-* `GBTUIHintShowInlineConfigInputs` (value: `"SHOW_INLINE_CONFIG_INPUTS"`)
+* `ShowInlineConfigInputs` (value: `"SHOW_INLINE_CONFIG_INPUTS"`)
 
-* `GBTUIHintFocusOnVisible` (value: `"FOCUS_ON_VISIBLE"`)
+* `FocusOnVisible` (value: `"FOCUS_ON_VISIBLE"`)
 
-* `GBTUIHintCanBeTolerant` (value: `"CAN_BE_TOLERANT"`)
+* `CanBeTolerant` (value: `"CAN_BE_TOLERANT"`)
 
-* `GBTUIHintCanBeTolerantDiameter` (value: `"CAN_BE_TOLERANT_DIAMETER"`)
+* `CanBeTolerantDiameter` (value: `"CAN_BE_TOLERANT_DIAMETER"`)
 
-* `GBTUIHintPlusMinus` (value: `"PLUS_MINUS"`)
+* `PlusMinus` (value: `"PLUS_MINUS"`)
 
-* `GBTUIHintAlwaysUseDependencies` (value: `"ALWAYS_USE_DEPENDENCIES"`)
+* `AlwaysUseDependencies` (value: `"ALWAYS_USE_DEPENDENCIES"`)
 
-* `GBTUIHintNoQueryVariable` (value: `"NO_QUERY_VARIABLE"`)
+* `NoQueryVariable` (value: `"NO_QUERY_VARIABLE"`)
 
-* `GBTUIHintAllowFlatSketchSelection` (value: `"ALLOW_FLAT_SKETCH_SELECTION"`)
+* `AllowFlatSketchSelection` (value: `"ALLOW_FLAT_SKETCH_SELECTION"`)
 
-* `GBTUIHintQueryVariableName` (value: `"QUERY_VARIABLE_NAME"`)
+* `QueryVariableName` (value: `"QUERY_VARIABLE_NAME"`)
 
-* `GBTUIHintUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

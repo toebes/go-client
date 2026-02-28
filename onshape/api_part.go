@@ -19,12 +19,12 @@ import (
 	"strings"
 )
 
-// PartApiService PartApi service
-type PartApiService service
+// PartAPIService PartAPI service
+type PartAPIService service
 
 type ApiExportPSRequest struct {
 	ctx            context.Context
-	ApiService     *PartApiService
+	ApiService     *PartAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -72,7 +72,7 @@ See [API Guide: Synchronous Exports](https://onshape-public.github.io/docs/api-a
 	@param partid
 	@return ApiExportPSRequest
 */
-func (a *PartApiService) ExportPS(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiExportPSRequest {
+func (a *PartAPIService) ExportPS(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiExportPSRequest {
 	return ApiExportPSRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -85,14 +85,14 @@ func (a *PartApiService) ExportPS(ctx context.Context, did string, wvm string, w
 }
 
 // Execute executes the request
-func (a *PartApiService) ExportPSExecute(r ApiExportPSRequest) (*http.Response, error) {
+func (a *PartAPIService) ExportPSExecute(r ApiExportPSRequest) (*http.Response, error) {
 	var (
 		localVarHTTPMethod = http.MethodGet
 		localVarPostBody   interface{}
 		formFiles          []formFile
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartApiService.ExportPS")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartAPIService.ExportPS")
 	if err != nil {
 		return nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -170,7 +170,7 @@ func (a *PartApiService) ExportPSExecute(r ApiExportPSRequest) (*http.Response, 
 
 type ApiExportPartGltfRequest struct {
 	ctx                      context.Context
-	ApiService               *PartApiService
+	ApiService               *PartAPIService
 	did                      string
 	wvm                      string
 	wvmid                    string
@@ -270,7 +270,7 @@ See [API Guide: Synchronous Exports](https://onshape-public.github.io/docs/api-a
 	@param partid
 	@return ApiExportPartGltfRequest
 */
-func (a *PartApiService) ExportPartGltf(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiExportPartGltfRequest {
+func (a *PartAPIService) ExportPartGltf(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiExportPartGltfRequest {
 	return ApiExportPartGltfRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -285,7 +285,7 @@ func (a *PartApiService) ExportPartGltf(ctx context.Context, did string, wvm str
 // Execute executes the request
 //
 //	@return GlTF
-func (a *PartApiService) ExportPartGltfExecute(r ApiExportPartGltfRequest) (*GlTF, *http.Response, error) {
+func (a *PartAPIService) ExportPartGltfExecute(r ApiExportPartGltfRequest) (*GlTF, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -293,7 +293,7 @@ func (a *PartApiService) ExportPartGltfExecute(r ApiExportPartGltfRequest) (*GlT
 		localVarReturnValue *GlTF
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartApiService.ExportPartGltf")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartAPIService.ExportPartGltf")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -406,7 +406,7 @@ func (a *PartApiService) ExportPartGltfExecute(r ApiExportPartGltfRequest) (*GlT
 
 type ApiExportStlRequest struct {
 	ctx            context.Context
-	ApiService     *PartApiService
+	ApiService     *PartAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -496,7 +496,7 @@ See [API Guide: Synchronous Exports](https://onshape-public.github.io/docs/api-a
 	@param partid
 	@return ApiExportStlRequest
 */
-func (a *PartApiService) ExportStl(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiExportStlRequest {
+func (a *PartAPIService) ExportStl(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiExportStlRequest {
 	return ApiExportStlRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -511,7 +511,7 @@ func (a *PartApiService) ExportStl(ctx context.Context, did string, wvm string, 
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *PartApiService) ExportStlExecute(r ApiExportStlRequest) (map[string]interface{}, *http.Response, error) {
+func (a *PartAPIService) ExportStlExecute(r ApiExportStlRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -519,7 +519,7 @@ func (a *PartApiService) ExportStlExecute(r ApiExportStlRequest) (map[string]int
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartApiService.ExportStl")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartAPIService.ExportStl")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -628,7 +628,7 @@ func (a *PartApiService) ExportStlExecute(r ApiExportStlRequest) (map[string]int
 
 type ApiGetBendTableRequest struct {
 	ctx            context.Context
-	ApiService     *PartApiService
+	ApiService     *PartAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -657,7 +657,7 @@ GetBendTable Get a part's sheet metal bend table.
 	@param partid
 	@return ApiGetBendTableRequest
 */
-func (a *PartApiService) GetBendTable(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetBendTableRequest {
+func (a *PartAPIService) GetBendTable(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetBendTableRequest {
 	return ApiGetBendTableRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -672,7 +672,7 @@ func (a *PartApiService) GetBendTable(ctx context.Context, did string, wvm strin
 // Execute executes the request
 //
 //	@return BTTableResponse1546
-func (a *PartApiService) GetBendTableExecute(r ApiGetBendTableRequest) (*BTTableResponse1546, *http.Response, error) {
+func (a *PartAPIService) GetBendTableExecute(r ApiGetBendTableRequest) (*BTTableResponse1546, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -680,7 +680,7 @@ func (a *PartApiService) GetBendTableExecute(r ApiGetBendTableRequest) (*BTTable
 		localVarReturnValue *BTTableResponse1546
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartApiService.GetBendTable")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartAPIService.GetBendTable")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -762,7 +762,7 @@ func (a *PartApiService) GetBendTableExecute(r ApiGetBendTableRequest) (*BTTable
 
 type ApiGetBodyDetailsRequest struct {
 	ctx                   context.Context
-	ApiService            *PartApiService
+	ApiService            *PartAPIService
 	did                   string
 	wvm                   string
 	wvmid                 string
@@ -822,7 +822,7 @@ All coordinates are in meters (m).
 	@param partid
 	@return ApiGetBodyDetailsRequest
 */
-func (a *PartApiService) GetBodyDetails(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetBodyDetailsRequest {
+func (a *PartAPIService) GetBodyDetails(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetBodyDetailsRequest {
 	return ApiGetBodyDetailsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -837,7 +837,7 @@ func (a *PartApiService) GetBodyDetails(ctx context.Context, did string, wvm str
 // Execute executes the request
 //
 //	@return BTExportModelBodiesResponse734
-func (a *PartApiService) GetBodyDetailsExecute(r ApiGetBodyDetailsRequest) (*BTExportModelBodiesResponse734, *http.Response, error) {
+func (a *PartAPIService) GetBodyDetailsExecute(r ApiGetBodyDetailsRequest) (*BTExportModelBodiesResponse734, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -845,7 +845,7 @@ func (a *PartApiService) GetBodyDetailsExecute(r ApiGetBodyDetailsRequest) (*BTE
 		localVarReturnValue *BTExportModelBodiesResponse734
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartApiService.GetBodyDetails")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartAPIService.GetBodyDetails")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -939,7 +939,7 @@ func (a *PartApiService) GetBodyDetailsExecute(r ApiGetBodyDetailsRequest) (*BTE
 
 type ApiGetBoundingBoxesRequest struct {
 	ctx            context.Context
-	ApiService     *PartApiService
+	ApiService     *PartAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -980,7 +980,7 @@ GetBoundingBoxes Get a part's bounding box details.
 	@param partid
 	@return ApiGetBoundingBoxesRequest
 */
-func (a *PartApiService) GetBoundingBoxes(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetBoundingBoxesRequest {
+func (a *PartAPIService) GetBoundingBoxes(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetBoundingBoxesRequest {
 	return ApiGetBoundingBoxesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -995,7 +995,7 @@ func (a *PartApiService) GetBoundingBoxes(ctx context.Context, did string, wvm s
 // Execute executes the request
 //
 //	@return BTBoundingBoxInfo
-func (a *PartApiService) GetBoundingBoxesExecute(r ApiGetBoundingBoxesRequest) (*BTBoundingBoxInfo, *http.Response, error) {
+func (a *PartAPIService) GetBoundingBoxesExecute(r ApiGetBoundingBoxesRequest) (*BTBoundingBoxInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1003,7 +1003,7 @@ func (a *PartApiService) GetBoundingBoxesExecute(r ApiGetBoundingBoxesRequest) (
 		localVarReturnValue *BTBoundingBoxInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartApiService.GetBoundingBoxes")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartAPIService.GetBoundingBoxes")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1091,7 +1091,7 @@ func (a *PartApiService) GetBoundingBoxesExecute(r ApiGetBoundingBoxesRequest) (
 
 type ApiGetEdgesRequest struct {
 	ctx                      context.Context
-	ApiService               *PartApiService
+	ApiService               *PartAPIService
 	did                      string
 	wvm                      string
 	wvmid                    string
@@ -1168,7 +1168,7 @@ Returns the coordinates (in meters) of each edge's endpoints.
 	@param partid
 	@return ApiGetEdgesRequest
 */
-func (a *PartApiService) GetEdges(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetEdgesRequest {
+func (a *PartAPIService) GetEdges(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetEdgesRequest {
 	return ApiGetEdgesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1183,7 +1183,7 @@ func (a *PartApiService) GetEdges(ctx context.Context, did string, wvm string, w
 // Execute executes the request
 //
 //	@return BTExportTessellatedEdgesResponse327
-func (a *PartApiService) GetEdgesExecute(r ApiGetEdgesRequest) (*BTExportTessellatedEdgesResponse327, *http.Response, error) {
+func (a *PartAPIService) GetEdgesExecute(r ApiGetEdgesRequest) (*BTExportTessellatedEdgesResponse327, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1191,7 +1191,7 @@ func (a *PartApiService) GetEdgesExecute(r ApiGetEdgesRequest) (*BTExportTessell
 		localVarReturnValue *BTExportTessellatedEdgesResponse327
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartApiService.GetEdges")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartAPIService.GetEdges")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1302,7 +1302,7 @@ func (a *PartApiService) GetEdgesExecute(r ApiGetEdgesRequest) (*BTExportTessell
 
 type ApiGetFaces1Request struct {
 	ctx                              context.Context
-	ApiService                       *PartApiService
+	ApiService                       *PartAPIService
 	did                              string
 	wvm                              string
 	wvmid                            string
@@ -1427,7 +1427,7 @@ Coordinates are in meters (m).
 	@param partid
 	@return ApiGetFaces1Request
 */
-func (a *PartApiService) GetFaces1(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetFaces1Request {
+func (a *PartAPIService) GetFaces1(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetFaces1Request {
 	return ApiGetFaces1Request{
 		ApiService: a,
 		ctx:        ctx,
@@ -1442,7 +1442,7 @@ func (a *PartApiService) GetFaces1(ctx context.Context, did string, wvm string, 
 // Execute executes the request
 //
 //	@return BTExportTessellatedFacesResponse898
-func (a *PartApiService) GetFaces1Execute(r ApiGetFaces1Request) (*BTExportTessellatedFacesResponse898, *http.Response, error) {
+func (a *PartAPIService) GetFaces1Execute(r ApiGetFaces1Request) (*BTExportTessellatedFacesResponse898, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1450,7 +1450,7 @@ func (a *PartApiService) GetFaces1Execute(r ApiGetFaces1Request) (*BTExportTesse
 		localVarReturnValue *BTExportTessellatedFacesResponse898
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartApiService.GetFaces1")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartAPIService.GetFaces1")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1585,7 +1585,7 @@ func (a *PartApiService) GetFaces1Execute(r ApiGetFaces1Request) (*BTExportTesse
 
 type ApiGetMassPropertiesRequest struct {
 	ctx                      context.Context
-	ApiService               *PartApiService
+	ApiService               *PartAPIService
 	did                      string
 	wvm                      string
 	wvmid                    string
@@ -1658,7 +1658,7 @@ When three values are returned:
     @param partid
     @return ApiGetMassPropertiesRequest
 */
-func (a *PartApiService) GetMassProperties(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetMassPropertiesRequest {
+func (a *PartAPIService) GetMassProperties(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetMassPropertiesRequest {
 	return ApiGetMassPropertiesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1673,7 +1673,7 @@ func (a *PartApiService) GetMassProperties(ctx context.Context, did string, wvm 
 // Execute executes the request
 //
 //	@return BTMassPropertiesBulkInfo
-func (a *PartApiService) GetMassPropertiesExecute(r ApiGetMassPropertiesRequest) (*BTMassPropertiesBulkInfo, *http.Response, error) {
+func (a *PartAPIService) GetMassPropertiesExecute(r ApiGetMassPropertiesRequest) (*BTMassPropertiesBulkInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1681,7 +1681,7 @@ func (a *PartApiService) GetMassPropertiesExecute(r ApiGetMassPropertiesRequest)
 		localVarReturnValue *BTMassPropertiesBulkInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartApiService.GetMassProperties")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartAPIService.GetMassProperties")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1778,7 +1778,7 @@ func (a *PartApiService) GetMassPropertiesExecute(r ApiGetMassPropertiesRequest)
 
 type ApiGetPartShadedViewsRequest struct {
 	ctx             context.Context
-	ApiService      *PartApiService
+	ApiService      *PartAPIService
 	did             string
 	wvm             string
 	wvmid           string
@@ -1849,7 +1849,7 @@ GetPartShadedViews Get a part's shaded views.
 	@param partid
 	@return ApiGetPartShadedViewsRequest
 */
-func (a *PartApiService) GetPartShadedViews(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetPartShadedViewsRequest {
+func (a *PartAPIService) GetPartShadedViews(ctx context.Context, did string, wvm string, wvmid string, eid string, partid string) ApiGetPartShadedViewsRequest {
 	return ApiGetPartShadedViewsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1864,7 +1864,7 @@ func (a *PartApiService) GetPartShadedViews(ctx context.Context, did string, wvm
 // Execute executes the request
 //
 //	@return BTShadedViewsInfo
-func (a *PartApiService) GetPartShadedViewsExecute(r ApiGetPartShadedViewsRequest) (*BTShadedViewsInfo, *http.Response, error) {
+func (a *PartAPIService) GetPartShadedViewsExecute(r ApiGetPartShadedViewsRequest) (*BTShadedViewsInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1872,7 +1872,7 @@ func (a *PartApiService) GetPartShadedViewsExecute(r ApiGetPartShadedViewsReques
 		localVarReturnValue *BTShadedViewsInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartApiService.GetPartShadedViews")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartAPIService.GetPartShadedViews")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1975,7 +1975,7 @@ func (a *PartApiService) GetPartShadedViewsExecute(r ApiGetPartShadedViewsReques
 
 type ApiGetPartsWMVRequest struct {
 	ctx                     context.Context
-	ApiService              *PartApiService
+	ApiService              *PartAPIService
 	did                     string
 	wvm                     string
 	wvmid                   string
@@ -2034,7 +2034,7 @@ GetPartsWMV Get all parts in a workspace, version, or microversion.
 	@param wvmid The id of the workspace, version or document microversion in which the operation should be performed.
 	@return ApiGetPartsWMVRequest
 */
-func (a *PartApiService) GetPartsWMV(ctx context.Context, did string, wvm string, wvmid string) ApiGetPartsWMVRequest {
+func (a *PartAPIService) GetPartsWMV(ctx context.Context, did string, wvm string, wvmid string) ApiGetPartsWMVRequest {
 	return ApiGetPartsWMVRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2047,7 +2047,7 @@ func (a *PartApiService) GetPartsWMV(ctx context.Context, did string, wvm string
 // Execute executes the request
 //
 //	@return []BTPartMetadataInfo
-func (a *PartApiService) GetPartsWMVExecute(r ApiGetPartsWMVRequest) ([]BTPartMetadataInfo, *http.Response, error) {
+func (a *PartAPIService) GetPartsWMVExecute(r ApiGetPartsWMVRequest) ([]BTPartMetadataInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2055,7 +2055,7 @@ func (a *PartApiService) GetPartsWMVExecute(r ApiGetPartsWMVRequest) ([]BTPartMe
 		localVarReturnValue []BTPartMetadataInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartApiService.GetPartsWMV")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartAPIService.GetPartsWMV")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2151,7 +2151,7 @@ func (a *PartApiService) GetPartsWMVExecute(r ApiGetPartsWMVRequest) ([]BTPartMe
 
 type ApiGetPartsWMVERequest struct {
 	ctx                     context.Context
-	ApiService              *PartApiService
+	ApiService              *PartAPIService
 	did                     string
 	wvm                     string
 	wvmid                   string
@@ -2206,7 +2206,7 @@ GetPartsWMVE Get all parts in an element.
 	@param eid Element ID.
 	@return ApiGetPartsWMVERequest
 */
-func (a *PartApiService) GetPartsWMVE(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartsWMVERequest {
+func (a *PartAPIService) GetPartsWMVE(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartsWMVERequest {
 	return ApiGetPartsWMVERequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2220,7 +2220,7 @@ func (a *PartApiService) GetPartsWMVE(ctx context.Context, did string, wvm strin
 // Execute executes the request
 //
 //	@return []BTPartMetadataInfo
-func (a *PartApiService) GetPartsWMVEExecute(r ApiGetPartsWMVERequest) ([]BTPartMetadataInfo, *http.Response, error) {
+func (a *PartAPIService) GetPartsWMVEExecute(r ApiGetPartsWMVERequest) ([]BTPartMetadataInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2228,7 +2228,7 @@ func (a *PartApiService) GetPartsWMVEExecute(r ApiGetPartsWMVERequest) ([]BTPart
 		localVarReturnValue []BTPartMetadataInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartApiService.GetPartsWMVE")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartAPIService.GetPartsWMVE")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}

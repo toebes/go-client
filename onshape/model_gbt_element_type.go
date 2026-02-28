@@ -20,17 +20,17 @@ type GBTElementType string
 
 // List of GBTElementType
 const (
-	GBTElementTypePartstudio      GBTElementType = "PARTSTUDIO"
-	GBTElementTypeAssembly        GBTElementType = "ASSEMBLY"
-	GBTElementTypeDrawing         GBTElementType = "DRAWING"
-	GBTElementTypeFeaturestudio   GBTElementType = "FEATURESTUDIO"
-	GBTElementTypeBlob            GBTElementType = "BLOB"
-	GBTElementTypeApplication     GBTElementType = "APPLICATION"
-	GBTElementTypeTable           GBTElementType = "TABLE"
-	GBTElementTypeBillofmaterials GBTElementType = "BILLOFMATERIALS"
-	GBTElementTypeVariablestudio  GBTElementType = "VARIABLESTUDIO"
-	GBTElementTypePublicationitem GBTElementType = "PUBLICATIONITEM"
-	GBTElementTypeUnknown         GBTElementType = "UNKNOWN"
+	Partstudio      GBTElementType = "PARTSTUDIO"
+	Assembly        GBTElementType = "ASSEMBLY"
+	Drawing         GBTElementType = "DRAWING"
+	Featurestudio   GBTElementType = "FEATURESTUDIO"
+	Blob            GBTElementType = "BLOB"
+	Application     GBTElementType = "APPLICATION"
+	Table           GBTElementType = "TABLE"
+	Billofmaterials GBTElementType = "BILLOFMATERIALS"
+	Variablestudio  GBTElementType = "VARIABLESTUDIO"
+	Publicationitem GBTElementType = "PUBLICATIONITEM"
+	Unknown         GBTElementType = "UNKNOWN"
 )
 
 // All allowed values of GBTElementType enum

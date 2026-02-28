@@ -3,11 +3,11 @@
 ## Enum
 
 
-* `BTUserAppSettingOperationTypeAdd` (value: `"ADD"`)
+* `Add` (value: `"ADD"`)
 
-* `BTUserAppSettingOperationTypeRemove` (value: `"REMOVE"`)
+* `Remove` (value: `"REMOVE"`)
 
-* `BTUserAppSettingOperationTypeUpdate` (value: `"UPDATE"`)
+* `Update` (value: `"UPDATE"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

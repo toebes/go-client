@@ -11,7 +11,9 @@ Contact: api-support@onshape.zendesk.com
 package onshape
 
 import (
+	"bytes"
 	"encoding/json"
+	"fmt"
 )
 
 // BTFSValueNumber772 struct for BTFSValueNumber772

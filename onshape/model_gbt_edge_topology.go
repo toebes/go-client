@@ -20,11 +20,11 @@ type GBTEdgeTopology string
 
 // List of GBTEdgeTopology
 const (
-	GBTEdgeTopologyWire     GBTEdgeTopology = "WIRE"
-	GBTEdgeTopologyOneSided GBTEdgeTopology = "ONE_SIDED"
-	GBTEdgeTopologyTwoSided GBTEdgeTopology = "TWO_SIDED"
-	GBTEdgeTopologyLaminar  GBTEdgeTopology = "LAMINAR"
-	GBTEdgeTopologyUnknown  GBTEdgeTopology = "UNKNOWN"
+	Wire     GBTEdgeTopology = "WIRE"
+	OneSided GBTEdgeTopology = "ONE_SIDED"
+	TwoSided GBTEdgeTopology = "TWO_SIDED"
+	Laminar  GBTEdgeTopology = "LAMINAR"
+	Unknown  GBTEdgeTopology = "UNKNOWN"
 )
 
 // All allowed values of GBTEdgeTopology enum

@@ -1,16 +1,16 @@
-# \DrawingApi
+# \DrawingAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateDrawingAppElement**](DrawingApi.md#CreateDrawingAppElement) | **Post** /drawings/d/{did}/w/{wid}/create | Create a new drawing in a document.
-[**CreateDrawingTranslation**](DrawingApi.md#CreateDrawingTranslation) | **Post** /drawings/d/{did}/{wv}/{wvid}/e/{eid}/translations | Translate (export) a drawing to a different format.
-[**GetDrawingTranslatorFormats**](DrawingApi.md#GetDrawingTranslatorFormats) | **Get** /drawings/d/{did}/w/{wid}/e/{eid}/translationformats | Get a list of all valid formats the drawing can be translated (exported) to.
-[**GetDrawingViewJsonGeometry1**](DrawingApi.md#GetDrawingViewJsonGeometry1) | **Get** /drawings/d/{did}/{wvm}/{wvmid}/e/{eid}/views/{viewid}/jsongeometry | Get view geometry of a drawing view in JSON format.
-[**GetDrawingViews1**](DrawingApi.md#GetDrawingViews1) | **Get** /drawings/d/{did}/{wvm}/{wvmid}/e/{eid}/views | Get details of all drawing views.
-[**GetModificationStatus**](DrawingApi.md#GetModificationStatus) | **Get** /drawings/modify/status/{mrid} | Get the status of a drawing modification operation.
-[**ModifyDrawing**](DrawingApi.md#ModifyDrawing) | **Post** /drawings/d/{did}/w/{wid}/e/{eid}/modify | Modify a drawing via JSON payload.
+[**CreateDrawingAppElement**](DrawingAPI.md#CreateDrawingAppElement) | **Post** /drawings/d/{did}/w/{wid}/create | Create a new drawing in a document.
+[**CreateDrawingTranslation**](DrawingAPI.md#CreateDrawingTranslation) | **Post** /drawings/d/{did}/{wv}/{wvid}/e/{eid}/translations | Translate (export) a drawing to a different format.
+[**GetDrawingTranslatorFormats**](DrawingAPI.md#GetDrawingTranslatorFormats) | **Get** /drawings/d/{did}/w/{wid}/e/{eid}/translationformats | Get a list of all valid formats the drawing can be translated (exported) to.
+[**GetDrawingViewJsonGeometry1**](DrawingAPI.md#GetDrawingViewJsonGeometry1) | **Get** /drawings/d/{did}/{wvm}/{wvmid}/e/{eid}/views/{viewid}/jsongeometry | Get view geometry of a drawing view in JSON format.
+[**GetDrawingViews1**](DrawingAPI.md#GetDrawingViews1) | **Get** /drawings/d/{did}/{wvm}/{wvmid}/e/{eid}/views | Get details of all drawing views.
+[**GetModificationStatus**](DrawingAPI.md#GetModificationStatus) | **Get** /drawings/modify/status/{mrid} | Get the status of a drawing modification operation.
+[**ModifyDrawing**](DrawingAPI.md#ModifyDrawing) | **Post** /drawings/d/{did}/w/{wid}/e/{eid}/modify | Modify a drawing via JSON payload.
 
 
 
@@ -41,13 +41,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DrawingApi.CreateDrawingAppElement(context.Background(), did, wid).BTDrawingParams(bTDrawingParams).Execute()
+    resp, r, err := apiClient.DrawingAPI.CreateDrawingAppElement(context.Background(), did, wid).BTDrawingParams(bTDrawingParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DrawingApi.CreateDrawingAppElement``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DrawingAPI.CreateDrawingAppElement``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateDrawingAppElement`: BTDocumentElementInfo
-    fmt.Fprintf(os.Stdout, "Response from `DrawingApi.CreateDrawingAppElement`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DrawingAPI.CreateDrawingAppElement`: %v\n", resp)
 }
 ```
 
@@ -118,13 +118,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DrawingApi.CreateDrawingTranslation(context.Background(), did, wv, wvid, eid).BTTranslateFormatParams(bTTranslateFormatParams).Execute()
+    resp, r, err := apiClient.DrawingAPI.CreateDrawingTranslation(context.Background(), did, wv, wvid, eid).BTTranslateFormatParams(bTTranslateFormatParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DrawingApi.CreateDrawingTranslation``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DrawingAPI.CreateDrawingTranslation``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateDrawingTranslation`: BTTranslationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `DrawingApi.CreateDrawingTranslation`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DrawingAPI.CreateDrawingTranslation`: %v\n", resp)
 }
 ```
 
@@ -197,13 +197,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DrawingApi.GetDrawingTranslatorFormats(context.Background(), did, wid, eid).Execute()
+    resp, r, err := apiClient.DrawingAPI.GetDrawingTranslatorFormats(context.Background(), did, wid, eid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DrawingApi.GetDrawingTranslatorFormats``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DrawingAPI.GetDrawingTranslatorFormats``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDrawingTranslatorFormats`: []BTModelFormatInfo
-    fmt.Fprintf(os.Stdout, "Response from `DrawingApi.GetDrawingTranslatorFormats`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DrawingAPI.GetDrawingTranslatorFormats`: %v\n", resp)
 }
 ```
 
@@ -277,13 +277,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DrawingApi.GetDrawingViewJsonGeometry1(context.Background(), did, wvm, wvmid, eid, viewid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).Scale(scale).Execute()
+    resp, r, err := apiClient.DrawingAPI.GetDrawingViewJsonGeometry1(context.Background(), did, wvm, wvmid, eid, viewid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).Scale(scale).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DrawingApi.GetDrawingViewJsonGeometry1``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DrawingAPI.GetDrawingViewJsonGeometry1``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDrawingViewJsonGeometry1`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `DrawingApi.GetDrawingViewJsonGeometry1`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DrawingAPI.GetDrawingViewJsonGeometry1`: %v\n", resp)
 }
 ```
 
@@ -363,13 +363,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DrawingApi.GetDrawingViews1(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).Execute()
+    resp, r, err := apiClient.DrawingAPI.GetDrawingViews1(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DrawingApi.GetDrawingViews1``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DrawingAPI.GetDrawingViews1``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDrawingViews1`: BTAppArrayInfoBTAppDrawingViewInfo
-    fmt.Fprintf(os.Stdout, "Response from `DrawingApi.GetDrawingViews1`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DrawingAPI.GetDrawingViews1`: %v\n", resp)
 }
 ```
 
@@ -440,13 +440,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DrawingApi.GetModificationStatus(context.Background(), mrid).Execute()
+    resp, r, err := apiClient.DrawingAPI.GetModificationStatus(context.Background(), mrid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DrawingApi.GetModificationStatus``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DrawingAPI.GetModificationStatus``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetModificationStatus`: BTAppModificationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `DrawingApi.GetModificationStatus`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DrawingAPI.GetModificationStatus`: %v\n", resp)
 }
 ```
 
@@ -514,13 +514,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DrawingApi.ModifyDrawing(context.Background(), did, wid, eid).BTDrawingModificationParams(bTDrawingModificationParams).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.DrawingAPI.ModifyDrawing(context.Background(), did, wid, eid).BTDrawingModificationParams(bTDrawingModificationParams).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DrawingApi.ModifyDrawing``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DrawingAPI.ModifyDrawing``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `ModifyDrawing`: BTAppModificationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `DrawingApi.ModifyDrawing`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DrawingAPI.ModifyDrawing`: %v\n", resp)
 }
 ```
 

@@ -20,9 +20,9 @@ type BTAppModificationRequestState string
 
 // List of BTAppModificationRequestState
 const (
-	BTAppModificationRequestStateActive BTAppModificationRequestState = "ACTIVE"
-	BTAppModificationRequestStateDone   BTAppModificationRequestState = "DONE"
-	BTAppModificationRequestStateFailed BTAppModificationRequestState = "FAILED"
+	Active BTAppModificationRequestState = "ACTIVE"
+	Done   BTAppModificationRequestState = "DONE"
+	Failed BTAppModificationRequestState = "FAILED"
 )
 
 // All allowed values of BTAppModificationRequestState enum

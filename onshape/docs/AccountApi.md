@@ -1,13 +1,13 @@
-# \AccountApi
+# \AccountAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CancelPurchaseNew**](AccountApi.md#CancelPurchaseNew) | **Delete** /accounts/{aid}/purchases/{pid} | Cancel a recurring subscription for the specified account ID and purchase ID.
-[**ConsumePurchase**](AccountApi.md#ConsumePurchase) | **Post** /accounts/purchases/{pid}/consume | Mark a purchase as consumed by the current user.
-[**GetPlanPurchases**](AccountApi.md#GetPlanPurchases) | **Get** /accounts/plans/{planId}/purchases | Get a list of all app purchases made for the specified plan.
-[**GetPurchases**](AccountApi.md#GetPurchases) | **Get** /accounts/purchases | Get a list of all app purchases made by the current user.
+[**CancelPurchaseNew**](AccountAPI.md#CancelPurchaseNew) | **Delete** /accounts/{aid}/purchases/{pid} | Cancel a recurring subscription for the specified account ID and purchase ID.
+[**ConsumePurchase**](AccountAPI.md#ConsumePurchase) | **Post** /accounts/purchases/{pid}/consume | Mark a purchase as consumed by the current user.
+[**GetPlanPurchases**](AccountAPI.md#GetPlanPurchases) | **Get** /accounts/plans/{planId}/purchases | Get a list of all app purchases made for the specified plan.
+[**GetPurchases**](AccountAPI.md#GetPurchases) | **Get** /accounts/purchases | Get a list of all app purchases made by the current user.
 
 
 
@@ -36,13 +36,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AccountApi.CancelPurchaseNew(context.Background(), aid, pid).CancelImmediately(cancelImmediately).Execute()
+    resp, r, err := apiClient.AccountAPI.CancelPurchaseNew(context.Background(), aid, pid).CancelImmediately(cancelImmediately).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AccountApi.CancelPurchaseNew``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AccountAPI.CancelPurchaseNew``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CancelPurchaseNew`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `AccountApi.CancelPurchaseNew`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AccountAPI.CancelPurchaseNew`: %v\n", resp)
 }
 ```
 
@@ -108,13 +108,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AccountApi.ConsumePurchase(context.Background(), pid).BTPurchaseIdentityParams(bTPurchaseIdentityParams).Execute()
+    resp, r, err := apiClient.AccountAPI.ConsumePurchase(context.Background(), pid).BTPurchaseIdentityParams(bTPurchaseIdentityParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AccountApi.ConsumePurchase``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AccountAPI.ConsumePurchase``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `ConsumePurchase`: BTPurchaseInfo
-    fmt.Fprintf(os.Stdout, "Response from `AccountApi.ConsumePurchase`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AccountAPI.ConsumePurchase`: %v\n", resp)
 }
 ```
 
@@ -179,13 +179,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AccountApi.GetPlanPurchases(context.Background(), planId).Offset(offset).Limit(limit).Execute()
+    resp, r, err := apiClient.AccountAPI.GetPlanPurchases(context.Background(), planId).Offset(offset).Limit(limit).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AccountApi.GetPlanPurchases``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AccountAPI.GetPlanPurchases``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPlanPurchases`: BTListResponseBTPurchaseInfo
-    fmt.Fprintf(os.Stdout, "Response from `AccountApi.GetPlanPurchases`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AccountAPI.GetPlanPurchases`: %v\n", resp)
 }
 ```
 
@@ -252,13 +252,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AccountApi.GetPurchases(context.Background()).All(all).OwnPurchaseOnly(ownPurchaseOnly).Execute()
+    resp, r, err := apiClient.AccountAPI.GetPurchases(context.Background()).All(all).OwnPurchaseOnly(ownPurchaseOnly).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AccountApi.GetPurchases``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AccountAPI.GetPurchases``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPurchases`: []BTPurchaseInfo
-    fmt.Fprintf(os.Stdout, "Response from `AccountApi.GetPurchases`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AccountAPI.GetPurchases`: %v\n", resp)
 }
 ```
 

@@ -3,19 +3,19 @@
 ## Enum
 
 
-* `GBTNodeChangeNone` (value: `"NONE"`)
+* `None` (value: `"NONE"`)
 
-* `GBTNodeChangeMoved` (value: `"MOVED"`)
+* `Moved` (value: `"MOVED"`)
 
-* `GBTNodeChangeModified` (value: `"MODIFIED"`)
+* `Modified` (value: `"MODIFIED"`)
 
-* `GBTNodeChangeMovedAndModified` (value: `"MOVED_AND_MODIFIED"`)
+* `MovedAndModified` (value: `"MOVED_AND_MODIFIED"`)
 
-* `GBTNodeChangeAdded` (value: `"ADDED"`)
+* `Added` (value: `"ADDED"`)
 
-* `GBTNodeChangeDeleted` (value: `"DELETED"`)
+* `Deleted` (value: `"DELETED"`)
 
-* `GBTNodeChangeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

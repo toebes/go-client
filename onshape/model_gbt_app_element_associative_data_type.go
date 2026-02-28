@@ -20,11 +20,11 @@ type GBTAppElementAssociativeDataType string
 
 // List of GBTAppElementAssociativeDataType
 const (
-	GBTAppElementAssociativeDataTypeOnshapeDrawingView     GBTAppElementAssociativeDataType = "ONSHAPE_DRAWING_VIEW"
-	GBTAppElementAssociativeDataTypeModelTopology          GBTAppElementAssociativeDataType = "MODEL_TOPOLOGY"
-	GBTAppElementAssociativeDataTypeModelDefinitionFeature GBTAppElementAssociativeDataType = "MODEL_DEFINITION_FEATURE"
-	GBTAppElementAssociativeDataTypeModelDefinitionEntity  GBTAppElementAssociativeDataType = "MODEL_DEFINITION_ENTITY"
-	GBTAppElementAssociativeDataTypeUnknown                GBTAppElementAssociativeDataType = "UNKNOWN"
+	OnshapeDrawingView     GBTAppElementAssociativeDataType = "ONSHAPE_DRAWING_VIEW"
+	ModelTopology          GBTAppElementAssociativeDataType = "MODEL_TOPOLOGY"
+	ModelDefinitionFeature GBTAppElementAssociativeDataType = "MODEL_DEFINITION_FEATURE"
+	ModelDefinitionEntity  GBTAppElementAssociativeDataType = "MODEL_DEFINITION_ENTITY"
+	Unknown                GBTAppElementAssociativeDataType = "UNKNOWN"
 )
 
 // All allowed values of GBTAppElementAssociativeDataType enum

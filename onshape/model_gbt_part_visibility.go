@@ -20,10 +20,10 @@ type GBTPartVisibility string
 
 // List of GBTPartVisibility
 const (
-	GBTPartVisibilityHidden      GBTPartVisibility = "HIDDEN"
-	GBTPartVisibilityVisible     GBTPartVisibility = "VISIBLE"
-	GBTPartVisibilityUnspecified GBTPartVisibility = "UNSPECIFIED"
-	GBTPartVisibilityUnknown     GBTPartVisibility = "UNKNOWN"
+	Hidden      GBTPartVisibility = "HIDDEN"
+	Visible     GBTPartVisibility = "VISIBLE"
+	Unspecified GBTPartVisibility = "UNSPECIFIED"
+	Unknown     GBTPartVisibility = "UNKNOWN"
 )
 
 // All allowed values of GBTPartVisibility enum

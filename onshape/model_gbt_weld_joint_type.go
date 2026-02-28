@@ -20,14 +20,14 @@ type GBTWeldJointType string
 
 // List of GBTWeldJointType
 const (
-	GBTWeldJointTypeNone              GBTWeldJointType = "NONE"
-	GBTWeldJointTypeDoubleVGroove     GBTWeldJointType = "DOUBLE_V_GROOVE"
-	GBTWeldJointTypeDoubleBevelGroove GBTWeldJointType = "DOUBLE_BEVEL_GROOVE"
-	GBTWeldJointTypeDoubleUGroove     GBTWeldJointType = "DOUBLE_U_GROOVE"
-	GBTWeldJointTypeDoubleJGroove     GBTWeldJointType = "DOUBLE_J_GROOVE"
-	GBTWeldJointTypeDoubleFlareV      GBTWeldJointType = "DOUBLE_FLARE_V"
-	GBTWeldJointTypeDoubleFlareBevel  GBTWeldJointType = "DOUBLE_FLARE_BEVEL"
-	GBTWeldJointTypeUnknown           GBTWeldJointType = "UNKNOWN"
+	None              GBTWeldJointType = "NONE"
+	DoubleVGroove     GBTWeldJointType = "DOUBLE_V_GROOVE"
+	DoubleBevelGroove GBTWeldJointType = "DOUBLE_BEVEL_GROOVE"
+	DoubleUGroove     GBTWeldJointType = "DOUBLE_U_GROOVE"
+	DoubleJGroove     GBTWeldJointType = "DOUBLE_J_GROOVE"
+	DoubleFlareV      GBTWeldJointType = "DOUBLE_FLARE_V"
+	DoubleFlareBevel  GBTWeldJointType = "DOUBLE_FLARE_BEVEL"
+	Unknown           GBTWeldJointType = "UNKNOWN"
 )
 
 // All allowed values of GBTWeldJointType enum

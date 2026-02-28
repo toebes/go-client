@@ -20,9 +20,9 @@ type GBTFeatureFilterExclusion string
 
 // List of GBTFeatureFilterExclusion
 const (
-	GBTFeatureFilterExclusionExcludeEverythingElse GBTFeatureFilterExclusion = "EXCLUDE_EVERYTHING_ELSE"
-	GBTFeatureFilterExclusionExcludeThis           GBTFeatureFilterExclusion = "EXCLUDE_THIS"
-	GBTFeatureFilterExclusionUnknown               GBTFeatureFilterExclusion = "UNKNOWN"
+	ExcludeEverythingElse GBTFeatureFilterExclusion = "EXCLUDE_EVERYTHING_ELSE"
+	ExcludeThis           GBTFeatureFilterExclusion = "EXCLUDE_THIS"
+	Unknown               GBTFeatureFilterExclusion = "UNKNOWN"
 )
 
 // All allowed values of GBTFeatureFilterExclusion enum

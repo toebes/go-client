@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `BTWorkflowObserverStateNone` (value: `"NONE"`)
+* `None` (value: `"NONE"`)
 
-* `BTWorkflowObserverStateApproved` (value: `"APPROVED"`)
+* `Approved` (value: `"APPROVED"`)
 
-* `BTWorkflowObserverStateRejected` (value: `"REJECTED"`)
+* `Rejected` (value: `"REJECTED"`)
 
-* `BTWorkflowObserverStateOverridden` (value: `"OVERRIDDEN"`)
+* `Overridden` (value: `"OVERRIDDEN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

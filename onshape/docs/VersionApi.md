@@ -1,10 +1,10 @@
-# \VersionApi
+# \VersionAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetAllVersions**](VersionApi.md#GetAllVersions) | **Get** /versions | Get all versions of the Onshape REST APIs.
+[**GetAllVersions**](VersionAPI.md#GetAllVersions) | **Get** /versions | Get all versions of the Onshape REST APIs.
 
 
 
@@ -30,13 +30,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.VersionApi.GetAllVersions(context.Background()).Execute()
+    resp, r, err := apiClient.VersionAPI.GetAllVersions(context.Background()).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `VersionApi.GetAllVersions``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `VersionAPI.GetAllVersions``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAllVersions`: Versions
-    fmt.Fprintf(os.Stdout, "Response from `VersionApi.GetAllVersions`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `VersionAPI.GetAllVersions`: %v\n", resp)
 }
 ```
 

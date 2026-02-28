@@ -20,10 +20,10 @@ type GBTAssemblyFeatureDisplayStatus string
 
 // List of GBTAssemblyFeatureDisplayStatus
 const (
-	GBTAssemblyFeatureDisplayStatusOk         GBTAssemblyFeatureDisplayStatus = "OK"
-	GBTAssemblyFeatureDisplayStatusError      GBTAssemblyFeatureDisplayStatus = "ERROR"
-	GBTAssemblyFeatureDisplayStatusSuppressed GBTAssemblyFeatureDisplayStatus = "SUPPRESSED"
-	GBTAssemblyFeatureDisplayStatusUnknown    GBTAssemblyFeatureDisplayStatus = "UNKNOWN"
+	Ok         GBTAssemblyFeatureDisplayStatus = "OK"
+	Error      GBTAssemblyFeatureDisplayStatus = "ERROR"
+	Suppressed GBTAssemblyFeatureDisplayStatus = "SUPPRESSED"
+	Unknown    GBTAssemblyFeatureDisplayStatus = "UNKNOWN"
 )
 
 // All allowed values of GBTAssemblyFeatureDisplayStatus enum

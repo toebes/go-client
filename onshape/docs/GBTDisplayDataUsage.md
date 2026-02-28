@@ -3,19 +3,19 @@
 ## Enum
 
 
-* `GBTDisplayDataUsageBase` (value: `"BASE"`)
+* `Base` (value: `"BASE"`)
 
-* `GBTDisplayDataUsagePreviewBefore` (value: `"PREVIEW_BEFORE"`)
+* `PreviewBefore` (value: `"PREVIEW_BEFORE"`)
 
-* `GBTDisplayDataUsagePreviewAfter` (value: `"PREVIEW_AFTER"`)
+* `PreviewAfter` (value: `"PREVIEW_AFTER"`)
 
-* `GBTDisplayDataUsagePreviewFinal` (value: `"PREVIEW_FINAL"`)
+* `PreviewFinal` (value: `"PREVIEW_FINAL"`)
 
-* `GBTDisplayDataUsageCompareTarget` (value: `"COMPARE_TARGET"`)
+* `CompareTarget` (value: `"COMPARE_TARGET"`)
 
-* `GBTDisplayDataUsageReferenceRepair` (value: `"REFERENCE_REPAIR"`)
+* `ReferenceRepair` (value: `"REFERENCE_REPAIR"`)
 
-* `GBTDisplayDataUsageUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

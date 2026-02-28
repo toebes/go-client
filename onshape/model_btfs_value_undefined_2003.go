@@ -11,7 +11,9 @@ Contact: api-support@onshape.zendesk.com
 package onshape
 
 import (
+	"bytes"
 	"encoding/json"
+	"fmt"
 )
 
 // BTFSValueUndefined2003 struct for BTFSValueUndefined2003

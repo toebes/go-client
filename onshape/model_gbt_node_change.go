@@ -20,13 +20,13 @@ type GBTNodeChange string
 
 // List of GBTNodeChange
 const (
-	GBTNodeChangeNone             GBTNodeChange = "NONE"
-	GBTNodeChangeMoved            GBTNodeChange = "MOVED"
-	GBTNodeChangeModified         GBTNodeChange = "MODIFIED"
-	GBTNodeChangeMovedAndModified GBTNodeChange = "MOVED_AND_MODIFIED"
-	GBTNodeChangeAdded            GBTNodeChange = "ADDED"
-	GBTNodeChangeDeleted          GBTNodeChange = "DELETED"
-	GBTNodeChangeUnknown          GBTNodeChange = "UNKNOWN"
+	None             GBTNodeChange = "NONE"
+	Moved            GBTNodeChange = "MOVED"
+	Modified         GBTNodeChange = "MODIFIED"
+	MovedAndModified GBTNodeChange = "MOVED_AND_MODIFIED"
+	Added            GBTNodeChange = "ADDED"
+	Deleted          GBTNodeChange = "DELETED"
+	Unknown          GBTNodeChange = "UNKNOWN"
 )
 
 // All allowed values of GBTNodeChange enum

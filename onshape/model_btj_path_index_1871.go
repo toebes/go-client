@@ -11,7 +11,9 @@ Contact: api-support@onshape.zendesk.com
 package onshape
 
 import (
+	"bytes"
 	"encoding/json"
+	"fmt"
 )
 
 // BTJPathIndex1871 Identifies a value in a json array. For insert and move edit destinations, -1 can be used to indicate 'end'.

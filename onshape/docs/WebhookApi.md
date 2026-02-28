@@ -1,15 +1,15 @@
-# \WebhookApi
+# \WebhookAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateWebhook**](WebhookApi.md#CreateWebhook) | **Post** /webhooks | Create a new webhook.
-[**GetWebhook**](WebhookApi.md#GetWebhook) | **Get** /webhooks/{webhookid} | Get webhook info by webhook ID.
-[**GetWebhooks**](WebhookApi.md#GetWebhooks) | **Get** /webhooks | Get a list of all webhooks registered by a user or company.
-[**PingWebhook**](WebhookApi.md#PingWebhook) | **Post** /webhooks/{webhookid}/ping | Ping a webhook.
-[**UnregisterWebhook**](WebhookApi.md#UnregisterWebhook) | **Delete** /webhooks/{webhookid} | Unregister a webhook.
-[**UpdateWebhook**](WebhookApi.md#UpdateWebhook) | **Post** /webhooks/{webhookid} | Update a webhook.
+[**CreateWebhook**](WebhookAPI.md#CreateWebhook) | **Post** /webhooks | Create a new webhook.
+[**GetWebhook**](WebhookAPI.md#GetWebhook) | **Get** /webhooks/{webhookid} | Get webhook info by webhook ID.
+[**GetWebhooks**](WebhookAPI.md#GetWebhooks) | **Get** /webhooks | Get a list of all webhooks registered by a user or company.
+[**PingWebhook**](WebhookAPI.md#PingWebhook) | **Post** /webhooks/{webhookid}/ping | Ping a webhook.
+[**UnregisterWebhook**](WebhookAPI.md#UnregisterWebhook) | **Delete** /webhooks/{webhookid} | Unregister a webhook.
+[**UpdateWebhook**](WebhookAPI.md#UpdateWebhook) | **Post** /webhooks/{webhookid} | Update a webhook.
 
 
 
@@ -38,13 +38,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.WebhookApi.CreateWebhook(context.Background()).BTWebhookParams(bTWebhookParams).Execute()
+    resp, r, err := apiClient.WebhookAPI.CreateWebhook(context.Background()).BTWebhookParams(bTWebhookParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `WebhookApi.CreateWebhook``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `WebhookAPI.CreateWebhook``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateWebhook`: BTWebhookInfo
-    fmt.Fprintf(os.Stdout, "Response from `WebhookApi.CreateWebhook`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `WebhookAPI.CreateWebhook`: %v\n", resp)
 }
 ```
 
@@ -104,13 +104,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.WebhookApi.GetWebhook(context.Background(), webhookid).Execute()
+    resp, r, err := apiClient.WebhookAPI.GetWebhook(context.Background(), webhookid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `WebhookApi.GetWebhook``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `WebhookAPI.GetWebhook``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetWebhook`: BTWebhookInfo
-    fmt.Fprintf(os.Stdout, "Response from `WebhookApi.GetWebhook`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `WebhookAPI.GetWebhook`: %v\n", resp)
 }
 ```
 
@@ -177,13 +177,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.WebhookApi.GetWebhooks(context.Background()).Company(company).User(user).Offset(offset).Limit(limit).Execute()
+    resp, r, err := apiClient.WebhookAPI.GetWebhooks(context.Background()).Company(company).User(user).Offset(offset).Limit(limit).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `WebhookApi.GetWebhooks``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `WebhookAPI.GetWebhooks``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetWebhooks`: BTListResponseBTWebhookInfo
-    fmt.Fprintf(os.Stdout, "Response from `WebhookApi.GetWebhooks`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `WebhookAPI.GetWebhooks`: %v\n", resp)
 }
 ```
 
@@ -246,13 +246,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.WebhookApi.PingWebhook(context.Background(), webhookid).Execute()
+    resp, r, err := apiClient.WebhookAPI.PingWebhook(context.Background(), webhookid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `WebhookApi.PingWebhook``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `WebhookAPI.PingWebhook``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `PingWebhook`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `WebhookApi.PingWebhook`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `WebhookAPI.PingWebhook`: %v\n", resp)
 }
 ```
 
@@ -317,13 +317,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.WebhookApi.UnregisterWebhook(context.Background(), webhookid).BlockNotification(blockNotification).Execute()
+    resp, r, err := apiClient.WebhookAPI.UnregisterWebhook(context.Background(), webhookid).BlockNotification(blockNotification).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `WebhookApi.UnregisterWebhook``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `WebhookAPI.UnregisterWebhook``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UnregisterWebhook`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `WebhookApi.UnregisterWebhook`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `WebhookAPI.UnregisterWebhook`: %v\n", resp)
 }
 ```
 
@@ -389,13 +389,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.WebhookApi.UpdateWebhook(context.Background(), webhookid).BTWebhookParams(bTWebhookParams).Execute()
+    resp, r, err := apiClient.WebhookAPI.UpdateWebhook(context.Background(), webhookid).BTWebhookParams(bTWebhookParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `WebhookApi.UpdateWebhook``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `WebhookAPI.UpdateWebhook``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateWebhook`: BTWebhookInfo
-    fmt.Fprintf(os.Stdout, "Response from `WebhookApi.UpdateWebhook`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `WebhookAPI.UpdateWebhook`: %v\n", resp)
 }
 ```
 

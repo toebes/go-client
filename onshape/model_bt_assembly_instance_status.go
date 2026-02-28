@@ -20,7 +20,7 @@ type BTAssemblyInstanceStatus string
 
 // List of BTAssemblyInstanceStatus
 const (
-	BTAssemblyInstanceStatusDeletedElement BTAssemblyInstanceStatus = "DeletedElement"
+	DeletedElement BTAssemblyInstanceStatus = "DeletedElement"
 )
 
 // All allowed values of BTAssemblyInstanceStatus enum

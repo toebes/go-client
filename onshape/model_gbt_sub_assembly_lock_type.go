@@ -20,10 +20,10 @@ type GBTSubAssemblyLockType string
 
 // List of GBTSubAssemblyLockType
 const (
-	GBTSubAssemblyLockTypeSubAssemblyPosition GBTSubAssemblyLockType = "SUB_ASSEMBLY_POSITION"
-	GBTSubAssemblyLockTypeCurrentPosition     GBTSubAssemblyLockType = "CURRENT_POSITION"
-	GBTSubAssemblyLockTypeNamedPosiition      GBTSubAssemblyLockType = "NAMED_POSIITION"
-	GBTSubAssemblyLockTypeUnknown             GBTSubAssemblyLockType = "UNKNOWN"
+	SubAssemblyPosition GBTSubAssemblyLockType = "SUB_ASSEMBLY_POSITION"
+	CurrentPosition     GBTSubAssemblyLockType = "CURRENT_POSITION"
+	NamedPosiition      GBTSubAssemblyLockType = "NAMED_POSIITION"
+	Unknown             GBTSubAssemblyLockType = "UNKNOWN"
 )
 
 // All allowed values of GBTSubAssemblyLockType enum

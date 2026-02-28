@@ -20,10 +20,10 @@ type GBTPartStudioDisplayDataVersion string
 
 // List of GBTPartStudioDisplayDataVersion
 const (
-	GBTPartStudioDisplayDataVersionV0OriginalVersion             GBTPartStudioDisplayDataVersion = "V0_ORIGINAL_VERSION"
-	GBTPartStudioDisplayDataVersionV1SmoothEdgesRenderingOptions GBTPartStudioDisplayDataVersion = "V1_SMOOTH_EDGES_RENDERING_OPTIONS"
-	GBTPartStudioDisplayDataVersionV2SmoothEdgesToleranceChanged GBTPartStudioDisplayDataVersion = "V2_SMOOTH_EDGES_TOLERANCE_CHANGED"
-	GBTPartStudioDisplayDataVersionUnknown                       GBTPartStudioDisplayDataVersion = "UNKNOWN"
+	V0OriginalVersion             GBTPartStudioDisplayDataVersion = "V0_ORIGINAL_VERSION"
+	V1SmoothEdgesRenderingOptions GBTPartStudioDisplayDataVersion = "V1_SMOOTH_EDGES_RENDERING_OPTIONS"
+	V2SmoothEdgesToleranceChanged GBTPartStudioDisplayDataVersion = "V2_SMOOTH_EDGES_TOLERANCE_CHANGED"
+	Unknown                       GBTPartStudioDisplayDataVersion = "UNKNOWN"
 )
 
 // All allowed values of GBTPartStudioDisplayDataVersion enum

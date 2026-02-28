@@ -20,16 +20,17 @@ type GBTAppElementReferenceType string
 
 // List of GBTAppElementReferenceType
 const (
-	GBTAppElementReferenceTypeUnknown       GBTAppElementReferenceType = "UNKNOWN"
-	GBTAppElementReferenceTypePartstudio    GBTAppElementReferenceType = "PARTSTUDIO"
-	GBTAppElementReferenceTypeAssembly      GBTAppElementReferenceType = "ASSEMBLY"
-	GBTAppElementReferenceTypePart          GBTAppElementReferenceType = "PART"
-	GBTAppElementReferenceTypeFlattenedPart GBTAppElementReferenceType = "FLATTENED_PART"
-	GBTAppElementReferenceTypeCompositePart GBTAppElementReferenceType = "COMPOSITE_PART"
-	GBTAppElementReferenceTypeMeshPart      GBTAppElementReferenceType = "MESH_PART"
-	GBTAppElementReferenceTypeSurface       GBTAppElementReferenceType = "SURFACE"
-	GBTAppElementReferenceTypeSketch        GBTAppElementReferenceType = "SKETCH"
-	GBTAppElementReferenceTypeCurve         GBTAppElementReferenceType = "CURVE"
+	Unknown         GBTAppElementReferenceType = "UNKNOWN"
+	Partstudio      GBTAppElementReferenceType = "PARTSTUDIO"
+	Assembly        GBTAppElementReferenceType = "ASSEMBLY"
+	Part            GBTAppElementReferenceType = "PART"
+	FlattenedPart   GBTAppElementReferenceType = "FLATTENED_PART"
+	CompositePart   GBTAppElementReferenceType = "COMPOSITE_PART"
+	MeshPart        GBTAppElementReferenceType = "MESH_PART"
+	Surface         GBTAppElementReferenceType = "SURFACE"
+	Sketch          GBTAppElementReferenceType = "SKETCH"
+	Curve           GBTAppElementReferenceType = "CURVE"
+	Billofmaterials GBTAppElementReferenceType = "BILLOFMATERIALS"
 )
 
 // All allowed values of GBTAppElementReferenceType enum
@@ -44,6 +45,7 @@ var AllowedGBTAppElementReferenceTypeEnumValues = []GBTAppElementReferenceType{
 	"SURFACE",
 	"SKETCH",
 	"CURVE",
+	"BILLOFMATERIALS",
 }
 
 func (v *GBTAppElementReferenceType) UnmarshalJSON(src []byte) error {

@@ -20,10 +20,10 @@ type GBTBillOfMaterialsSuppressionStatus string
 
 // List of GBTBillOfMaterialsSuppressionStatus
 const (
-	GBTBillOfMaterialsSuppressionStatusUnset        GBTBillOfMaterialsSuppressionStatus = "UNSET"
-	GBTBillOfMaterialsSuppressionStatusSuppressed   GBTBillOfMaterialsSuppressionStatus = "SUPPRESSED"
-	GBTBillOfMaterialsSuppressionStatusUnsuppressed GBTBillOfMaterialsSuppressionStatus = "UNSUPPRESSED"
-	GBTBillOfMaterialsSuppressionStatusUnknown      GBTBillOfMaterialsSuppressionStatus = "UNKNOWN"
+	Unset        GBTBillOfMaterialsSuppressionStatus = "UNSET"
+	Suppressed   GBTBillOfMaterialsSuppressionStatus = "SUPPRESSED"
+	Unsuppressed GBTBillOfMaterialsSuppressionStatus = "UNSUPPRESSED"
+	Unknown      GBTBillOfMaterialsSuppressionStatus = "UNKNOWN"
 )
 
 // All allowed values of GBTBillOfMaterialsSuppressionStatus enum

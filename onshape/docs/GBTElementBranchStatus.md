@@ -3,17 +3,17 @@
 ## Enum
 
 
-* `GBTElementBranchStatusCreated` (value: `"CREATED"`)
+* `Created` (value: `"CREATED"`)
 
-* `GBTElementBranchStatusDeleted` (value: `"DELETED"`)
+* `Deleted` (value: `"DELETED"`)
 
-* `GBTElementBranchStatusEdits` (value: `"EDITS"`)
+* `Edits` (value: `"EDITS"`)
 
-* `GBTElementBranchStatusNotOnThisBranch` (value: `"NOT_ON_THIS_BRANCH"`)
+* `NotOnThisBranch` (value: `"NOT_ON_THIS_BRANCH"`)
 
-* `GBTElementBranchStatusNoChanges` (value: `"NO_CHANGES"`)
+* `NoChanges` (value: `"NO_CHANGES"`)
 
-* `GBTElementBranchStatusUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

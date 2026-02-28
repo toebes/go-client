@@ -20,11 +20,11 @@ type GBTNoticeLevel string
 
 // List of GBTNoticeLevel
 const (
-	GBTNoticeLevelInternal GBTNoticeLevel = "INTERNAL"
-	GBTNoticeLevelError    GBTNoticeLevel = "ERROR"
-	GBTNoticeLevelWarning  GBTNoticeLevel = "WARNING"
-	GBTNoticeLevelInfo     GBTNoticeLevel = "INFO"
-	GBTNoticeLevelUnknown  GBTNoticeLevel = "UNKNOWN"
+	Internal GBTNoticeLevel = "INTERNAL"
+	Error    GBTNoticeLevel = "ERROR"
+	Warning  GBTNoticeLevel = "WARNING"
+	Info     GBTNoticeLevel = "INFO"
+	Unknown  GBTNoticeLevel = "UNKNOWN"
 )
 
 // All allowed values of GBTNoticeLevel enum

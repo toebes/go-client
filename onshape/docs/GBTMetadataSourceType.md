@@ -3,29 +3,29 @@
 ## Enum
 
 
-* `GBTMetadataSourceTypeAutomatic` (value: `"AUTOMATIC"`)
+* `Automatic` (value: `"AUTOMATIC"`)
 
-* `GBTMetadataSourceTypeMerged` (value: `"MERGED"`)
+* `Merged` (value: `"MERGED"`)
 
-* `GBTMetadataSourceTypeFeature` (value: `"FEATURE"`)
+* `Feature` (value: `"FEATURE"`)
 
-* `GBTMetadataSourceTypeUnconfigured` (value: `"UNCONFIGURED"`)
+* `Unconfigured` (value: `"UNCONFIGURED"`)
 
-* `GBTMetadataSourceTypeConfigured` (value: `"CONFIGURED"`)
+* `Configured` (value: `"CONFIGURED"`)
 
-* `GBTMetadataSourceTypeStandardContent` (value: `"STANDARD_CONTENT"`)
+* `StandardContent` (value: `"STANDARD_CONTENT"`)
 
-* `GBTMetadataSourceTypeDefault` (value: `"DEFAULT"`)
+* `Default` (value: `"DEFAULT"`)
 
-* `GBTMetadataSourceTypeComputed` (value: `"COMPUTED"`)
+* `Computed` (value: `"COMPUTED"`)
 
-* `GBTMetadataSourceTypeComputedConfigured` (value: `"COMPUTED_CONFIGURED"`)
+* `ComputedConfigured` (value: `"COMPUTED_CONFIGURED"`)
 
-* `GBTMetadataSourceTypeImport` (value: `"IMPORT"`)
+* `Import` (value: `"IMPORT"`)
 
-* `GBTMetadataSourceTypeOverriddenPublic` (value: `"OVERRIDDEN_PUBLIC"`)
+* `OverriddenPublic` (value: `"OVERRIDDEN_PUBLIC"`)
 
-* `GBTMetadataSourceTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

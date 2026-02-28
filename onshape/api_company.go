@@ -19,12 +19,12 @@ import (
 	"strings"
 )
 
-// CompanyApiService CompanyApi service
-type CompanyApiService service
+// CompanyAPIService CompanyAPI service
+type CompanyAPIService service
 
 type ApiAddGlobalPermissionsForIdentityRequest struct {
 	ctx         context.Context
-	ApiService  *CompanyApiService
+	ApiService  *CompanyAPIService
 	cid         string
 	type_       int32
 	id          string
@@ -95,7 +95,7 @@ List of global permissions to grant. See [Onshape Help: Global Permissions](http
     @param id User ID or Team ID, depending on `type`
     @return ApiAddGlobalPermissionsForIdentityRequest
 */
-func (a *CompanyApiService) AddGlobalPermissionsForIdentity(ctx context.Context, cid string, type_ int32, id string) ApiAddGlobalPermissionsForIdentityRequest {
+func (a *CompanyAPIService) AddGlobalPermissionsForIdentity(ctx context.Context, cid string, type_ int32, id string) ApiAddGlobalPermissionsForIdentityRequest {
 	return ApiAddGlobalPermissionsForIdentityRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -108,7 +108,7 @@ func (a *CompanyApiService) AddGlobalPermissionsForIdentity(ctx context.Context,
 // Execute executes the request
 //
 //	@return BTGlobalPermissionInfo
-func (a *CompanyApiService) AddGlobalPermissionsForIdentityExecute(r ApiAddGlobalPermissionsForIdentityRequest) (*BTGlobalPermissionInfo, *http.Response, error) {
+func (a *CompanyAPIService) AddGlobalPermissionsForIdentityExecute(r ApiAddGlobalPermissionsForIdentityRequest) (*BTGlobalPermissionInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -116,7 +116,7 @@ func (a *CompanyApiService) AddGlobalPermissionsForIdentityExecute(r ApiAddGloba
 		localVarReturnValue *BTGlobalPermissionInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyApiService.AddGlobalPermissionsForIdentity")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyAPIService.AddGlobalPermissionsForIdentity")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -198,7 +198,7 @@ func (a *CompanyApiService) AddGlobalPermissionsForIdentityExecute(r ApiAddGloba
 
 type ApiAddUserToCompanyRequest struct {
 	ctx                 context.Context
-	ApiService          *CompanyApiService
+	ApiService          *CompanyAPIService
 	cid                 string
 	bTCompanyUserParams *BTCompanyUserParams
 }
@@ -221,7 +221,7 @@ Returns the company user info.
 	@param cid
 	@return ApiAddUserToCompanyRequest
 */
-func (a *CompanyApiService) AddUserToCompany(ctx context.Context, cid string) ApiAddUserToCompanyRequest {
+func (a *CompanyAPIService) AddUserToCompany(ctx context.Context, cid string) ApiAddUserToCompanyRequest {
 	return ApiAddUserToCompanyRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -232,7 +232,7 @@ func (a *CompanyApiService) AddUserToCompany(ctx context.Context, cid string) Ap
 // Execute executes the request
 //
 //	@return BTCompanyUserInfo
-func (a *CompanyApiService) AddUserToCompanyExecute(r ApiAddUserToCompanyRequest) (*BTCompanyUserInfo, *http.Response, error) {
+func (a *CompanyAPIService) AddUserToCompanyExecute(r ApiAddUserToCompanyRequest) (*BTCompanyUserInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -240,7 +240,7 @@ func (a *CompanyApiService) AddUserToCompanyExecute(r ApiAddUserToCompanyRequest
 		localVarReturnValue *BTCompanyUserInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyApiService.AddUserToCompany")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyAPIService.AddUserToCompany")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -320,7 +320,7 @@ func (a *CompanyApiService) AddUserToCompanyExecute(r ApiAddUserToCompanyRequest
 
 type ApiClearGlobalPermissionsRequest struct {
 	ctx        context.Context
-	ApiService *CompanyApiService
+	ApiService *CompanyAPIService
 	cid        string
 	type_      int32
 	id         string
@@ -348,7 +348,7 @@ Clear all or some of a user's global permissions
 	@param id User ID or Team ID, depending on `type`
 	@return ApiClearGlobalPermissionsRequest
 */
-func (a *CompanyApiService) ClearGlobalPermissions(ctx context.Context, cid string, type_ int32, id string) ApiClearGlobalPermissionsRequest {
+func (a *CompanyAPIService) ClearGlobalPermissions(ctx context.Context, cid string, type_ int32, id string) ApiClearGlobalPermissionsRequest {
 	return ApiClearGlobalPermissionsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -361,7 +361,7 @@ func (a *CompanyApiService) ClearGlobalPermissions(ctx context.Context, cid stri
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *CompanyApiService) ClearGlobalPermissionsExecute(r ApiClearGlobalPermissionsRequest) (map[string]interface{}, *http.Response, error) {
+func (a *CompanyAPIService) ClearGlobalPermissionsExecute(r ApiClearGlobalPermissionsRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodDelete
 		localVarPostBody    interface{}
@@ -369,7 +369,7 @@ func (a *CompanyApiService) ClearGlobalPermissionsExecute(r ApiClearGlobalPermis
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyApiService.ClearGlobalPermissions")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyAPIService.ClearGlobalPermissions")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -457,7 +457,7 @@ func (a *CompanyApiService) ClearGlobalPermissionsExecute(r ApiClearGlobalPermis
 
 type ApiFindCompanyRequest struct {
 	ctx        context.Context
-	ApiService *CompanyApiService
+	ApiService *CompanyAPIService
 	uid        *string
 	activeOnly *bool
 	includeAll *bool
@@ -490,7 +490,7 @@ If no user is specified, will return all companies associated with the current u
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiFindCompanyRequest
 */
-func (a *CompanyApiService) FindCompany(ctx context.Context) ApiFindCompanyRequest {
+func (a *CompanyAPIService) FindCompany(ctx context.Context) ApiFindCompanyRequest {
 	return ApiFindCompanyRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -500,7 +500,7 @@ func (a *CompanyApiService) FindCompany(ctx context.Context) ApiFindCompanyReque
 // Execute executes the request
 //
 //	@return BTListResponseBTCompanyInfo
-func (a *CompanyApiService) FindCompanyExecute(r ApiFindCompanyRequest) (*BTListResponseBTCompanyInfo, *http.Response, error) {
+func (a *CompanyAPIService) FindCompanyExecute(r ApiFindCompanyRequest) (*BTListResponseBTCompanyInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -508,7 +508,7 @@ func (a *CompanyApiService) FindCompanyExecute(r ApiFindCompanyRequest) (*BTList
 		localVarReturnValue *BTListResponseBTCompanyInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyApiService.FindCompany")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyAPIService.FindCompany")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -591,7 +591,7 @@ func (a *CompanyApiService) FindCompanyExecute(r ApiFindCompanyRequest) (*BTList
 
 type ApiGetCompanyRequest struct {
 	ctx        context.Context
-	ApiService *CompanyApiService
+	ApiService *CompanyAPIService
 	cid        string
 }
 
@@ -606,7 +606,7 @@ GetCompany Get company information by company ID.
 	@param cid
 	@return ApiGetCompanyRequest
 */
-func (a *CompanyApiService) GetCompany(ctx context.Context, cid string) ApiGetCompanyRequest {
+func (a *CompanyAPIService) GetCompany(ctx context.Context, cid string) ApiGetCompanyRequest {
 	return ApiGetCompanyRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -617,7 +617,7 @@ func (a *CompanyApiService) GetCompany(ctx context.Context, cid string) ApiGetCo
 // Execute executes the request
 //
 //	@return BTCompanyInfo
-func (a *CompanyApiService) GetCompanyExecute(r ApiGetCompanyRequest) (*BTCompanyInfo, *http.Response, error) {
+func (a *CompanyAPIService) GetCompanyExecute(r ApiGetCompanyRequest) (*BTCompanyInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -625,7 +625,7 @@ func (a *CompanyApiService) GetCompanyExecute(r ApiGetCompanyRequest) (*BTCompan
 		localVarReturnValue *BTCompanyInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyApiService.GetCompany")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyAPIService.GetCompany")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -700,7 +700,7 @@ func (a *CompanyApiService) GetCompanyExecute(r ApiGetCompanyRequest) (*BTCompan
 
 type ApiGetDocumentsByNameRequest struct {
 	ctx        context.Context
-	ApiService *CompanyApiService
+	ApiService *CompanyAPIService
 	cid        string
 	name       *string
 }
@@ -723,7 +723,7 @@ This API can only be called by company admins. Use the `name` field for the exac
 	@param cid
 	@return ApiGetDocumentsByNameRequest
 */
-func (a *CompanyApiService) GetDocumentsByName(ctx context.Context, cid string) ApiGetDocumentsByNameRequest {
+func (a *CompanyAPIService) GetDocumentsByName(ctx context.Context, cid string) ApiGetDocumentsByNameRequest {
 	return ApiGetDocumentsByNameRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -734,7 +734,7 @@ func (a *CompanyApiService) GetDocumentsByName(ctx context.Context, cid string) 
 // Execute executes the request
 //
 //	@return []BTGlobalTreeNodeSummaryInfo
-func (a *CompanyApiService) GetDocumentsByNameExecute(r ApiGetDocumentsByNameRequest) ([]BTGlobalTreeNodeSummaryInfo, *http.Response, error) {
+func (a *CompanyAPIService) GetDocumentsByNameExecute(r ApiGetDocumentsByNameRequest) ([]BTGlobalTreeNodeSummaryInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -742,7 +742,7 @@ func (a *CompanyApiService) GetDocumentsByNameExecute(r ApiGetDocumentsByNameReq
 		localVarReturnValue []BTGlobalTreeNodeSummaryInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyApiService.GetDocumentsByName")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyAPIService.GetDocumentsByName")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -821,7 +821,7 @@ func (a *CompanyApiService) GetDocumentsByNameExecute(r ApiGetDocumentsByNameReq
 
 type ApiRemoveUserFromCompanyRequest struct {
 	ctx                context.Context
-	ApiService         *CompanyApiService
+	ApiService         *CompanyAPIService
 	cid                string
 	uid                string
 	removeFromTeams    *bool
@@ -850,7 +850,7 @@ RemoveUserFromCompany Remove a user from a company, company teams, and all the d
 	@param uid
 	@return ApiRemoveUserFromCompanyRequest
 */
-func (a *CompanyApiService) RemoveUserFromCompany(ctx context.Context, cid string, uid string) ApiRemoveUserFromCompanyRequest {
+func (a *CompanyAPIService) RemoveUserFromCompany(ctx context.Context, cid string, uid string) ApiRemoveUserFromCompanyRequest {
 	return ApiRemoveUserFromCompanyRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -862,7 +862,7 @@ func (a *CompanyApiService) RemoveUserFromCompany(ctx context.Context, cid strin
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *CompanyApiService) RemoveUserFromCompanyExecute(r ApiRemoveUserFromCompanyRequest) (map[string]interface{}, *http.Response, error) {
+func (a *CompanyAPIService) RemoveUserFromCompanyExecute(r ApiRemoveUserFromCompanyRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodDelete
 		localVarPostBody    interface{}
@@ -870,7 +870,7 @@ func (a *CompanyApiService) RemoveUserFromCompanyExecute(r ApiRemoveUserFromComp
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyApiService.RemoveUserFromCompany")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyAPIService.RemoveUserFromCompany")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -952,7 +952,7 @@ func (a *CompanyApiService) RemoveUserFromCompanyExecute(r ApiRemoveUserFromComp
 
 type ApiUpdateCompanyUserRequest struct {
 	ctx                 context.Context
-	ApiService          *CompanyApiService
+	ApiService          *CompanyAPIService
 	cid                 string
 	uid                 string
 	bTCompanyUserParams *BTCompanyUserParams
@@ -979,7 +979,7 @@ Returns updated company user info. `globalPermissions` field is deprecated. Plea
 	@param uid User ID
 	@return ApiUpdateCompanyUserRequest
 */
-func (a *CompanyApiService) UpdateCompanyUser(ctx context.Context, cid string, uid string) ApiUpdateCompanyUserRequest {
+func (a *CompanyAPIService) UpdateCompanyUser(ctx context.Context, cid string, uid string) ApiUpdateCompanyUserRequest {
 	return ApiUpdateCompanyUserRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -991,7 +991,7 @@ func (a *CompanyApiService) UpdateCompanyUser(ctx context.Context, cid string, u
 // Execute executes the request
 //
 //	@return BTCompanyUserInfo
-func (a *CompanyApiService) UpdateCompanyUserExecute(r ApiUpdateCompanyUserRequest) (*BTCompanyUserInfo, *http.Response, error) {
+func (a *CompanyAPIService) UpdateCompanyUserExecute(r ApiUpdateCompanyUserRequest) (*BTCompanyUserInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -999,7 +999,7 @@ func (a *CompanyApiService) UpdateCompanyUserExecute(r ApiUpdateCompanyUserReque
 		localVarReturnValue *BTCompanyUserInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyApiService.UpdateCompanyUser")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "CompanyAPIService.UpdateCompanyUser")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}

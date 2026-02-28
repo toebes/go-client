@@ -20,17 +20,17 @@ type GBTSketchEntityType string
 
 // List of GBTSketchEntityType
 const (
-	GBTSketchEntityTypeCurve       GBTSketchEntityType = "CURVE"
-	GBTSketchEntityTypeImageEntity GBTSketchEntityType = "IMAGE_ENTITY"
-	GBTSketchEntityTypePoint       GBTSketchEntityType = "POINT"
-	GBTSketchEntityTypeText        GBTSketchEntityType = "TEXT"
-	GBTSketchEntityTypeCircle      GBTSketchEntityType = "CIRCLE"
-	GBTSketchEntityTypeConic       GBTSketchEntityType = "CONIC"
-	GBTSketchEntityTypeSpline      GBTSketchEntityType = "SPLINE"
-	GBTSketchEntityTypeEllipse     GBTSketchEntityType = "ELLIPSE"
-	GBTSketchEntityTypeLine        GBTSketchEntityType = "LINE"
-	GBTSketchEntityTypeCurvedText  GBTSketchEntityType = "CURVED_TEXT"
-	GBTSketchEntityTypeUnknown     GBTSketchEntityType = "UNKNOWN"
+	Curve       GBTSketchEntityType = "CURVE"
+	ImageEntity GBTSketchEntityType = "IMAGE_ENTITY"
+	Point       GBTSketchEntityType = "POINT"
+	Text        GBTSketchEntityType = "TEXT"
+	Circle      GBTSketchEntityType = "CIRCLE"
+	Conic       GBTSketchEntityType = "CONIC"
+	Spline      GBTSketchEntityType = "SPLINE"
+	Ellipse     GBTSketchEntityType = "ELLIPSE"
+	Line        GBTSketchEntityType = "LINE"
+	CurvedText  GBTSketchEntityType = "CURVED_TEXT"
+	Unknown     GBTSketchEntityType = "UNKNOWN"
 )
 
 // All allowed values of GBTSketchEntityType enum

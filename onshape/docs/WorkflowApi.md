@@ -1,14 +1,14 @@
-# \WorkflowApi
+# \WorkflowAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**EnumerateObjectWorkflows**](WorkflowApi.md#EnumerateObjectWorkflows) | **Get** /workflow/companies/{cid}/objects | Enumerate all of a company&#39;s workflowable objects.
-[**GetActiveWorkflows**](WorkflowApi.md#GetActiveWorkflows) | **Get** /workflow/active | Get all active workflows for the currently logged in user&#39;s company.
-[**GetAllowedApprovers**](WorkflowApi.md#GetAllowedApprovers) | **Get** /workflow/c/{companyId}/approvers | Get all identities allowed to be approvers on a workflow object.
-[**GetAuditLog**](WorkflowApi.md#GetAuditLog) | **Get** /workflow/obj/{objectId}/auditlog | Get all audit log entries for a workflowable object.
-[**GetWorkflowById**](WorkflowApi.md#GetWorkflowById) | **Get** /workflow/obj/{objectId} | Lightweight information about the current state of a workflowable object like release package.
+[**EnumerateObjectWorkflows**](WorkflowAPI.md#EnumerateObjectWorkflows) | **Get** /workflow/companies/{cid}/objects | Enumerate all of a company&#39;s workflowable objects.
+[**GetActiveWorkflows**](WorkflowAPI.md#GetActiveWorkflows) | **Get** /workflow/active | Get all active workflows for the currently logged in user&#39;s company.
+[**GetAllowedApprovers**](WorkflowAPI.md#GetAllowedApprovers) | **Get** /workflow/c/{companyId}/approvers | Get all identities allowed to be approvers on a workflow object.
+[**GetAuditLog**](WorkflowAPI.md#GetAuditLog) | **Get** /workflow/obj/{objectId}/auditlog | Get all audit log entries for a workflowable object.
+[**GetWorkflowById**](WorkflowAPI.md#GetWorkflowById) | **Get** /workflow/obj/{objectId} | Lightweight information about the current state of a workflowable object like release package.
 
 
 
@@ -42,13 +42,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.WorkflowApi.EnumerateObjectWorkflows(context.Background(), cid).ObjectTypes(objectTypes).States(states).Limit(limit).ModifiedAfter(modifiedAfter).Execute()
+    resp, r, err := apiClient.WorkflowAPI.EnumerateObjectWorkflows(context.Background(), cid).ObjectTypes(objectTypes).States(states).Limit(limit).ModifiedAfter(modifiedAfter).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `WorkflowApi.EnumerateObjectWorkflows``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `WorkflowAPI.EnumerateObjectWorkflows``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `EnumerateObjectWorkflows`: BTListResponseBTObjectWorkflowInfo
-    fmt.Fprintf(os.Stdout, "Response from `WorkflowApi.EnumerateObjectWorkflows`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `WorkflowAPI.EnumerateObjectWorkflows`: %v\n", resp)
 }
 ```
 
@@ -116,13 +116,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.WorkflowApi.GetActiveWorkflows(context.Background()).DocumentId(documentId).Execute()
+    resp, r, err := apiClient.WorkflowAPI.GetActiveWorkflows(context.Background()).DocumentId(documentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `WorkflowApi.GetActiveWorkflows``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `WorkflowAPI.GetActiveWorkflows``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetActiveWorkflows`: BTActiveWorkflowInfo
-    fmt.Fprintf(os.Stdout, "Response from `WorkflowApi.GetActiveWorkflows`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `WorkflowAPI.GetActiveWorkflows`: %v\n", resp)
 }
 ```
 
@@ -186,13 +186,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.WorkflowApi.GetAllowedApprovers(context.Background(), companyId).Q(q).ExpandTeams(expandTeams).IncludeSelf(includeSelf).ExcludeConnections(excludeConnections).Execute()
+    resp, r, err := apiClient.WorkflowAPI.GetAllowedApprovers(context.Background(), companyId).Q(q).ExpandTeams(expandTeams).IncludeSelf(includeSelf).ExcludeConnections(excludeConnections).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `WorkflowApi.GetAllowedApprovers``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `WorkflowAPI.GetAllowedApprovers``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAllowedApprovers`: BTListResponseBTWorkflowObserverOptionInfo
-    fmt.Fprintf(os.Stdout, "Response from `WorkflowApi.GetAllowedApprovers`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `WorkflowAPI.GetAllowedApprovers`: %v\n", resp)
 }
 ```
 
@@ -258,13 +258,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.WorkflowApi.GetAuditLog(context.Background(), objectId).Execute()
+    resp, r, err := apiClient.WorkflowAPI.GetAuditLog(context.Background(), objectId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `WorkflowApi.GetAuditLog``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `WorkflowAPI.GetAuditLog``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAuditLog`: BTWorkflowAuditLogInfo
-    fmt.Fprintf(os.Stdout, "Response from `WorkflowApi.GetAuditLog`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `WorkflowAPI.GetAuditLog`: %v\n", resp)
 }
 ```
 
@@ -328,13 +328,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.WorkflowApi.GetWorkflowById(context.Background(), objectId).Execute()
+    resp, r, err := apiClient.WorkflowAPI.GetWorkflowById(context.Background(), objectId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `WorkflowApi.GetWorkflowById``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `WorkflowAPI.GetWorkflowById``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetWorkflowById`: BTObjectWorkflowInfo
-    fmt.Fprintf(os.Stdout, "Response from `WorkflowApi.GetWorkflowById`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `WorkflowAPI.GetWorkflowById`: %v\n", resp)
 }
 ```
 

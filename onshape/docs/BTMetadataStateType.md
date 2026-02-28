@@ -3,17 +3,17 @@
 ## Enum
 
 
-* `BTMetadataStateTypeInProgress` (value: `"IN_PROGRESS"`)
+* `InProgress` (value: `"IN_PROGRESS"`)
 
-* `BTMetadataStateTypePending` (value: `"PENDING"`)
+* `Pending` (value: `"PENDING"`)
 
-* `BTMetadataStateTypeReleased` (value: `"RELEASED"`)
+* `Released` (value: `"RELEASED"`)
 
-* `BTMetadataStateTypeObsolete` (value: `"OBSOLETE"`)
+* `Obsolete` (value: `"OBSOLETE"`)
 
-* `BTMetadataStateTypeRejected` (value: `"REJECTED"`)
+* `Rejected` (value: `"REJECTED"`)
 
-* `BTMetadataStateTypeDiscarded` (value: `"DISCARDED"`)
+* `Discarded` (value: `"DISCARDED"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

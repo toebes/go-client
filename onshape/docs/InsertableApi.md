@@ -1,10 +1,10 @@
-# \InsertableApi
+# \InsertableAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetLatestInDocument**](InsertableApi.md#GetLatestInDocument) | **Get** /insertables/d/{did}/latest | Get a list of things in this document that can be inserted elsewhere.
+[**GetLatestInDocument**](InsertableAPI.md#GetLatestInDocument) | **Get** /insertables/d/{did}/latest | Get a list of things in this document that can be inserted elsewhere.
 
 
 
@@ -57,13 +57,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.InsertableApi.GetLatestInDocument(context.Background(), did).IncludeParts(includeParts).IncludeSurfaces(includeSurfaces).IncludeSketches(includeSketches).IncludeReferenceFeatures(includeReferenceFeatures).IncludeAssemblies(includeAssemblies).IncludeFeatureStudios(includeFeatureStudios).IncludeBlobs(includeBlobs).AllowedBlobMimeTypes(allowedBlobMimeTypes).ExcludeNewerFSVersions(excludeNewerFSVersions).MaxFeatureScriptVersion(maxFeatureScriptVersion).IncludePartStudios(includePartStudios).IncludeFeatures(includeFeatures).IncludeMeshes(includeMeshes).IncludeWires(includeWires).IncludeFlattenedBodies(includeFlattenedBodies).IncludeApplications(includeApplications).AllowedApplicationMimeTypes(allowedApplicationMimeTypes).IncludeCompositeParts(includeCompositeParts).IncludeFSTables(includeFSTables).IncludeFSComputedPartPropertyFunctions(includeFSComputedPartPropertyFunctions).IncludeVariables(includeVariables).IncludeVariableStudios(includeVariableStudios).AllowedBlobExtensions(allowedBlobExtensions).IsObsoletion(isObsoletion).Execute()
+    resp, r, err := apiClient.InsertableAPI.GetLatestInDocument(context.Background(), did).IncludeParts(includeParts).IncludeSurfaces(includeSurfaces).IncludeSketches(includeSketches).IncludeReferenceFeatures(includeReferenceFeatures).IncludeAssemblies(includeAssemblies).IncludeFeatureStudios(includeFeatureStudios).IncludeBlobs(includeBlobs).AllowedBlobMimeTypes(allowedBlobMimeTypes).ExcludeNewerFSVersions(excludeNewerFSVersions).MaxFeatureScriptVersion(maxFeatureScriptVersion).IncludePartStudios(includePartStudios).IncludeFeatures(includeFeatures).IncludeMeshes(includeMeshes).IncludeWires(includeWires).IncludeFlattenedBodies(includeFlattenedBodies).IncludeApplications(includeApplications).AllowedApplicationMimeTypes(allowedApplicationMimeTypes).IncludeCompositeParts(includeCompositeParts).IncludeFSTables(includeFSTables).IncludeFSComputedPartPropertyFunctions(includeFSComputedPartPropertyFunctions).IncludeVariables(includeVariables).IncludeVariableStudios(includeVariableStudios).AllowedBlobExtensions(allowedBlobExtensions).IsObsoletion(isObsoletion).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `InsertableApi.GetLatestInDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `InsertableAPI.GetLatestInDocument``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetLatestInDocument`: BTListResponseBTInsertableInfo
-    fmt.Fprintf(os.Stdout, "Response from `InsertableApi.GetLatestInDocument`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `InsertableAPI.GetLatestInDocument`: %v\n", resp)
 }
 ```
 

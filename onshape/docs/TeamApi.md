@@ -1,12 +1,12 @@
-# \TeamApi
+# \TeamAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**Find**](TeamApi.md#Find) | **Get** /teams | Get a list of all teams the current user belongs to.
-[**GetMembers**](TeamApi.md#GetMembers) | **Get** /teams/{tid}/members | Get a list of a team&#39;s members.
-[**GetTeam**](TeamApi.md#GetTeam) | **Get** /teams/{tid} | Get team information by team ID.
+[**Find**](TeamAPI.md#Find) | **Get** /teams | Get a list of all teams the current user belongs to.
+[**GetMembers**](TeamAPI.md#GetMembers) | **Get** /teams/{tid}/members | Get a list of a team&#39;s members.
+[**GetTeam**](TeamAPI.md#GetTeam) | **Get** /teams/{tid} | Get team information by team ID.
 
 
 
@@ -41,13 +41,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.TeamApi.Find(context.Background()).Query(query).Filter(filter).Uid(uid).CompanyId(companyId).SortColumn(sortColumn).SortOrder(sortOrder).IncludeCompanyOwnedTeams(includeCompanyOwnedTeams).Offset(offset).Limit(limit).Execute()
+    resp, r, err := apiClient.TeamAPI.Find(context.Background()).Query(query).Filter(filter).Uid(uid).CompanyId(companyId).SortColumn(sortColumn).SortOrder(sortOrder).IncludeCompanyOwnedTeams(includeCompanyOwnedTeams).Offset(offset).Limit(limit).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `TeamApi.Find``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `TeamAPI.Find``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `Find`: BTGlobalTreeNodeListResponseBTTeamInfo
-    fmt.Fprintf(os.Stdout, "Response from `TeamApi.Find`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `TeamAPI.Find`: %v\n", resp)
 }
 ```
 
@@ -120,13 +120,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.TeamApi.GetMembers(context.Background(), tid).SortColumn(sortColumn).SortOrder(sortOrder).Q(q).Offset(offset).Limit(limit).Execute()
+    resp, r, err := apiClient.TeamAPI.GetMembers(context.Background(), tid).SortColumn(sortColumn).SortOrder(sortOrder).Q(q).Offset(offset).Limit(limit).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `TeamApi.GetMembers``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `TeamAPI.GetMembers``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetMembers`: BTListResponseBTTeamMemberInfo
-    fmt.Fprintf(os.Stdout, "Response from `TeamApi.GetMembers`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `TeamAPI.GetMembers`: %v\n", resp)
 }
 ```
 
@@ -193,13 +193,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.TeamApi.GetTeam(context.Background(), tid).Execute()
+    resp, r, err := apiClient.TeamAPI.GetTeam(context.Background(), tid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `TeamApi.GetTeam``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `TeamAPI.GetTeam``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetTeam`: BTTeamInfo
-    fmt.Fprintf(os.Stdout, "Response from `TeamApi.GetTeam`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `TeamAPI.GetTeam`: %v\n", resp)
 }
 ```
 

@@ -20,16 +20,16 @@ type GBTAnnotationType string
 
 // List of GBTAnnotationType
 const (
-	GBTAnnotationTypeDatum                  GBTAnnotationType = "DATUM"
-	GBTAnnotationTypeGtol                   GBTAnnotationType = "GTOL"
-	GBTAnnotationTypeDimensionPosition      GBTAnnotationType = "DIMENSION_POSITION"
-	GBTAnnotationTypeDimension              GBTAnnotationType = "DIMENSION"
-	GBTAnnotationTypeWeld                   GBTAnnotationType = "WELD"
-	GBTAnnotationTypeHoleCallout            GBTAnnotationType = "HOLE_CALLOUT"
-	GBTAnnotationTypeHoleCalloutPosition    GBTAnnotationType = "HOLE_CALLOUT_POSITION"
-	GBTAnnotationTypeChamferCallout         GBTAnnotationType = "CHAMFER_CALLOUT"
-	GBTAnnotationTypeChamferCalloutPosition GBTAnnotationType = "CHAMFER_CALLOUT_POSITION"
-	GBTAnnotationTypeUnknown                GBTAnnotationType = "UNKNOWN"
+	Datum                  GBTAnnotationType = "DATUM"
+	Gtol                   GBTAnnotationType = "GTOL"
+	DimensionPosition      GBTAnnotationType = "DIMENSION_POSITION"
+	Dimension              GBTAnnotationType = "DIMENSION"
+	Weld                   GBTAnnotationType = "WELD"
+	HoleCallout            GBTAnnotationType = "HOLE_CALLOUT"
+	HoleCalloutPosition    GBTAnnotationType = "HOLE_CALLOUT_POSITION"
+	ChamferCallout         GBTAnnotationType = "CHAMFER_CALLOUT"
+	ChamferCalloutPosition GBTAnnotationType = "CHAMFER_CALLOUT_POSITION"
+	Unknown                GBTAnnotationType = "UNKNOWN"
 )
 
 // All allowed values of GBTAnnotationType enum

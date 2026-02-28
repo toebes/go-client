@@ -3,15 +3,15 @@
 ## Enum
 
 
-* `GBTPartStudioInstanceTypePart` (value: `"PART"`)
+* `Part` (value: `"PART"`)
 
-* `GBTPartStudioInstanceTypeSketch` (value: `"SKETCH"`)
+* `Sketch` (value: `"SKETCH"`)
 
-* `GBTPartStudioInstanceTypeSurface` (value: `"SURFACE"`)
+* `Surface` (value: `"SURFACE"`)
 
-* `GBTPartStudioInstanceTypeComposite` (value: `"COMPOSITE"`)
+* `Composite` (value: `"COMPOSITE"`)
 
-* `GBTPartStudioInstanceTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

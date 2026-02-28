@@ -3,17 +3,17 @@
 ## Enum
 
 
-* `GBTValueUseString` (value: `"STRING"`)
+* `String` (value: `"STRING"`)
 
-* `GBTValueUseInteger` (value: `"INTEGER"`)
+* `Integer` (value: `"INTEGER"`)
 
-* `GBTValueUseUnits` (value: `"UNITS"`)
+* `Units` (value: `"UNITS"`)
 
-* `GBTValueUseType` (value: `"TYPE"`)
+* `Type` (value: `"TYPE"`)
 
-* `GBTValueUseLocalize` (value: `"LOCALIZE"`)
+* `Localize` (value: `"LOCALIZE"`)
 
-* `GBTValueUseUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -17,12 +17,12 @@ import (
 	"net/url"
 )
 
-// NumberingSchemeApiService NumberingSchemeApi service
-type NumberingSchemeApiService service
+// NumberingSchemeAPIService NumberingSchemeAPI service
+type NumberingSchemeAPIService service
 
 type ApiNextNumbersRequest struct {
 	ctx                    context.Context
-	ApiService             *NumberingSchemeApiService
+	ApiService             *NumberingSchemeAPIService
 	bTNextPartNumbersParam *BTNextPartNumbersParam
 	cid                    *string
 	did                    *string
@@ -55,7 +55,7 @@ Get the next available part number. See [API Guide: Release Management](https://
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiNextNumbersRequest
 */
-func (a *NumberingSchemeApiService) NextNumbers(ctx context.Context) ApiNextNumbersRequest {
+func (a *NumberingSchemeAPIService) NextNumbers(ctx context.Context) ApiNextNumbersRequest {
 	return ApiNextNumbersRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -65,7 +65,7 @@ func (a *NumberingSchemeApiService) NextNumbers(ctx context.Context) ApiNextNumb
 // Execute executes the request
 //
 //	@return map[string][]BTNextPartNumber
-func (a *NumberingSchemeApiService) NextNumbersExecute(r ApiNextNumbersRequest) (*map[string][]BTNextPartNumber, *http.Response, error) {
+func (a *NumberingSchemeAPIService) NextNumbersExecute(r ApiNextNumbersRequest) (*map[string][]BTNextPartNumber, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -73,7 +73,7 @@ func (a *NumberingSchemeApiService) NextNumbersExecute(r ApiNextNumbersRequest) 
 		localVarReturnValue *map[string][]BTNextPartNumber
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "NumberingSchemeApiService.NextNumbers")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "NumberingSchemeAPIService.NextNumbers")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}

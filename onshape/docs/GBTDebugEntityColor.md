@@ -3,45 +3,45 @@
 ## Enum
 
 
-* `GBTDebugEntityColorRed` (value: `"RED"`)
+* `Red` (value: `"RED"`)
 
-* `GBTDebugEntityColorGreen` (value: `"GREEN"`)
+* `Green` (value: `"GREEN"`)
 
-* `GBTDebugEntityColorBlue` (value: `"BLUE"`)
+* `Blue` (value: `"BLUE"`)
 
-* `GBTDebugEntityColorCyan` (value: `"CYAN"`)
+* `Cyan` (value: `"CYAN"`)
 
-* `GBTDebugEntityColorYellow` (value: `"YELLOW"`)
+* `Yellow` (value: `"YELLOW"`)
 
-* `GBTDebugEntityColorMagenta` (value: `"MAGENTA"`)
+* `Magenta` (value: `"MAGENTA"`)
 
-* `GBTDebugEntityColorBlack` (value: `"BLACK"`)
+* `Black` (value: `"BLACK"`)
 
-* `GBTDebugEntityColorTranslucentPurple` (value: `"TRANSLUCENT_PURPLE"`)
+* `TranslucentPurple` (value: `"TRANSLUCENT_PURPLE"`)
 
-* `GBTDebugEntityColorFeatureError` (value: `"FEATURE_ERROR"`)
+* `FeatureError` (value: `"FEATURE_ERROR"`)
 
-* `GBTDebugEntityColorFeatureDebug` (value: `"FEATURE_DEBUG"`)
+* `FeatureDebug` (value: `"FEATURE_DEBUG"`)
 
-* `GBTDebugEntityColorTranslucentGreen` (value: `"TRANSLUCENT_GREEN"`)
+* `TranslucentGreen` (value: `"TRANSLUCENT_GREEN"`)
 
-* `GBTDebugEntityColorTranslucentBlue` (value: `"TRANSLUCENT_BLUE"`)
+* `TranslucentBlue` (value: `"TRANSLUCENT_BLUE"`)
 
-* `GBTDebugEntityColorTranslucentCyan` (value: `"TRANSLUCENT_CYAN"`)
+* `TranslucentCyan` (value: `"TRANSLUCENT_CYAN"`)
 
-* `GBTDebugEntityColorTranslucentYellow` (value: `"TRANSLUCENT_YELLOW"`)
+* `TranslucentYellow` (value: `"TRANSLUCENT_YELLOW"`)
 
-* `GBTDebugEntityColorTranslucentBlack` (value: `"TRANSLUCENT_BLACK"`)
+* `TranslucentBlack` (value: `"TRANSLUCENT_BLACK"`)
 
-* `GBTDebugEntityColorTranslucentOrange` (value: `"TRANSLUCENT_ORANGE"`)
+* `TranslucentOrange` (value: `"TRANSLUCENT_ORANGE"`)
 
-* `GBTDebugEntityColorTranslucentRed` (value: `"TRANSLUCENT_RED"`)
+* `TranslucentRed` (value: `"TRANSLUCENT_RED"`)
 
-* `GBTDebugEntityColorTranslucentMagenta` (value: `"TRANSLUCENT_MAGENTA"`)
+* `TranslucentMagenta` (value: `"TRANSLUCENT_MAGENTA"`)
 
-* `GBTDebugEntityColorOrange` (value: `"ORANGE"`)
+* `Orange` (value: `"ORANGE"`)
 
-* `GBTDebugEntityColorUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

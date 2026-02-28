@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `InterpolationStep` (value: `"STEP"`)
+* `Step` (value: `"STEP"`)
 
-* `InterpolationLinear` (value: `"LINEAR"`)
+* `Linear` (value: `"LINEAR"`)
 
-* `InterpolationCatmullromspline` (value: `"CATMULLROMSPLINE"`)
+* `Catmullromspline` (value: `"CATMULLROMSPLINE"`)
 
-* `InterpolationCubicspline` (value: `"CUBICSPLINE"`)
+* `Cubicspline` (value: `"CUBICSPLINE"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

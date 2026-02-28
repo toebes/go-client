@@ -20,11 +20,11 @@ type GBTVariableType string
 
 // List of GBTVariableType
 const (
-	GBTVariableTypeLength  GBTVariableType = "LENGTH"
-	GBTVariableTypeAngle   GBTVariableType = "ANGLE"
-	GBTVariableTypeNumber  GBTVariableType = "NUMBER"
-	GBTVariableTypeAny     GBTVariableType = "ANY"
-	GBTVariableTypeUnknown GBTVariableType = "UNKNOWN"
+	Length  GBTVariableType = "LENGTH"
+	Angle   GBTVariableType = "ANGLE"
+	Number  GBTVariableType = "NUMBER"
+	Any     GBTVariableType = "ANY"
+	Unknown GBTVariableType = "UNKNOWN"
 )
 
 // All allowed values of GBTVariableType enum

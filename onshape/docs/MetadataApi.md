@@ -1,20 +1,20 @@
-# \MetadataApi
+# \MetadataAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetFullAssemblyMetadata**](MetadataApi.md#GetFullAssemblyMetadata) | **Get** /metadata/d/{did}/{wvm}/{wvmid}/e/{eid}/assembly-debug | Get the metadata for an assembly, including supporting metadata.
-[**GetVEOPStandardContentMetadata**](MetadataApi.md#GetVEOPStandardContentMetadata) | **Get** /metadata/standardcontent/d/{did}/v/{vid}/e/{eid}/p/{pid} | Get the metadata for a standard content part.
-[**GetWMVEMetadata**](MetadataApi.md#GetWMVEMetadata) | **Get** /metadata/d/{did}/{wvm}/{wvmid}/e/{eid} | Get the metadata for an element.
-[**GetWMVEPMetadata**](MetadataApi.md#GetWMVEPMetadata) | **Get** /metadata/d/{did}/{wvm}/{wvmid}/e/{eid}/{iden}/{pid} | Get the metadata for a part.
-[**GetWMVEPsMetadata**](MetadataApi.md#GetWMVEPsMetadata) | **Get** /metadata/d/{did}/{wvm}/{wvmid}/e/{eid}/p | Get the metadata for all parts in a document.
-[**GetWMVEsMetadata**](MetadataApi.md#GetWMVEsMetadata) | **Get** /metadata/d/{did}/{wvm}/{wvmid}/e | Get the metadata for all elements in a document.
-[**GetWVMetadata**](MetadataApi.md#GetWVMetadata) | **Get** /metadata/d/{did}/{wv}/{wvid} | Get the metadata for a workspace or version.
-[**UpdateVEOPStandardContentPartMetadata**](MetadataApi.md#UpdateVEOPStandardContentPartMetadata) | **Post** /metadata/standardcontent/d/{did} | Update the metadata for a standard content part.
-[**UpdateWVEMetadata**](MetadataApi.md#UpdateWVEMetadata) | **Post** /metadata/d/{did}/{wvm}/{wvmid}/e/{eid} | Update the metadata for an element.
-[**UpdateWVEPMetadata**](MetadataApi.md#UpdateWVEPMetadata) | **Post** /metadata/d/{did}/{wvm}/{wvmid}/e/{eid}/{iden}/{pid} | Update the metadata for a part.
-[**UpdateWVMetadata**](MetadataApi.md#UpdateWVMetadata) | **Post** /metadata/d/{did}/{wv}/{wvid} | Update the metadata for a workspace or version.
+[**GetFullAssemblyMetadata**](MetadataAPI.md#GetFullAssemblyMetadata) | **Get** /metadata/d/{did}/{wvm}/{wvmid}/e/{eid}/assembly-debug | Get the metadata for an assembly, including supporting metadata.
+[**GetVEOPStandardContentMetadata**](MetadataAPI.md#GetVEOPStandardContentMetadata) | **Get** /metadata/standardcontent/d/{did}/v/{vid}/e/{eid}/p/{pid} | Get the metadata for a standard content part.
+[**GetWMVEMetadata**](MetadataAPI.md#GetWMVEMetadata) | **Get** /metadata/d/{did}/{wvm}/{wvmid}/e/{eid} | Get the metadata for an element.
+[**GetWMVEPMetadata**](MetadataAPI.md#GetWMVEPMetadata) | **Get** /metadata/d/{did}/{wvm}/{wvmid}/e/{eid}/{iden}/{pid} | Get the metadata for a part.
+[**GetWMVEPsMetadata**](MetadataAPI.md#GetWMVEPsMetadata) | **Get** /metadata/d/{did}/{wvm}/{wvmid}/e/{eid}/p | Get the metadata for all parts in a document.
+[**GetWMVEsMetadata**](MetadataAPI.md#GetWMVEsMetadata) | **Get** /metadata/d/{did}/{wvm}/{wvmid}/e | Get the metadata for all elements in a document.
+[**GetWVMetadata**](MetadataAPI.md#GetWVMetadata) | **Get** /metadata/d/{did}/{wv}/{wvid} | Get the metadata for a workspace or version.
+[**UpdateVEOPStandardContentPartMetadata**](MetadataAPI.md#UpdateVEOPStandardContentPartMetadata) | **Post** /metadata/standardcontent/d/{did} | Update the metadata for a standard content part.
+[**UpdateWVEMetadata**](MetadataAPI.md#UpdateWVEMetadata) | **Post** /metadata/d/{did}/{wvm}/{wvmid}/e/{eid} | Update the metadata for an element.
+[**UpdateWVEPMetadata**](MetadataAPI.md#UpdateWVEPMetadata) | **Post** /metadata/d/{did}/{wvm}/{wvmid}/e/{eid}/{iden}/{pid} | Update the metadata for a part.
+[**UpdateWVMetadata**](MetadataAPI.md#UpdateWVMetadata) | **Post** /metadata/d/{did}/{wv}/{wvid} | Update the metadata for a workspace or version.
 
 
 
@@ -48,13 +48,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.MetadataApi.GetFullAssemblyMetadata(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).Execute()
+    resp, r, err := apiClient.MetadataAPI.GetFullAssemblyMetadata(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetFullAssemblyMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataAPI.GetFullAssemblyMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetFullAssemblyMetadata`: BTAssemblyItemMetadataInfo
-    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.GetFullAssemblyMetadata`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `MetadataAPI.GetFullAssemblyMetadata`: %v\n", resp)
 }
 ```
 
@@ -134,13 +134,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.MetadataApi.GetVEOPStandardContentMetadata(context.Background(), did, vid, eid, pid).Configuration(configuration).LinkDocumentId(linkDocumentId).IncludeComputedProperties(includeComputedProperties).IncludeComputedAssemblyProperties(includeComputedAssemblyProperties).Thumbnail(thumbnail).Execute()
+    resp, r, err := apiClient.MetadataAPI.GetVEOPStandardContentMetadata(context.Background(), did, vid, eid, pid).Configuration(configuration).LinkDocumentId(linkDocumentId).IncludeComputedProperties(includeComputedProperties).IncludeComputedAssemblyProperties(includeComputedAssemblyProperties).Thumbnail(thumbnail).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetVEOPStandardContentMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataAPI.GetVEOPStandardContentMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetVEOPStandardContentMetadata`: BTMetadataObjectInfo
-    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.GetVEOPStandardContentMetadata`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `MetadataAPI.GetVEOPStandardContentMetadata`: %v\n", resp)
 }
 ```
 
@@ -225,13 +225,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.MetadataApi.GetWMVEMetadata(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).InferMetadataOwner(inferMetadataOwner).Depth(depth).IncludeComputedProperties(includeComputedProperties).IncludeComputedAssemblyProperties(includeComputedAssemblyProperties).Thumbnail(thumbnail).Execute()
+    resp, r, err := apiClient.MetadataAPI.GetWMVEMetadata(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).InferMetadataOwner(inferMetadataOwner).Depth(depth).IncludeComputedProperties(includeComputedProperties).IncludeComputedAssemblyProperties(includeComputedAssemblyProperties).Thumbnail(thumbnail).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWMVEMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataAPI.GetWMVEMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetWMVEMetadata`: BTMetadataObjectInfo
-    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.GetWMVEMetadata`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `MetadataAPI.GetWMVEMetadata`: %v\n", resp)
 }
 ```
 
@@ -321,13 +321,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.MetadataApi.GetWMVEPMetadata(context.Background(), did, wvm, wvmid, eid, iden, pid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).InferMetadataOwner(inferMetadataOwner).IncludeComputedProperties(includeComputedProperties).IncludeComputedAssemblyProperties(includeComputedAssemblyProperties).Thumbnail(thumbnail).Execute()
+    resp, r, err := apiClient.MetadataAPI.GetWMVEPMetadata(context.Background(), did, wvm, wvmid, eid, iden, pid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).InferMetadataOwner(inferMetadataOwner).IncludeComputedProperties(includeComputedProperties).IncludeComputedAssemblyProperties(includeComputedAssemblyProperties).Thumbnail(thumbnail).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWMVEPMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataAPI.GetWMVEPMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetWMVEPMetadata`: BTMetadataObjectInfo
-    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.GetWMVEPMetadata`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `MetadataAPI.GetWMVEPMetadata`: %v\n", resp)
 }
 ```
 
@@ -418,13 +418,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.MetadataApi.GetWMVEPsMetadata(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).InferMetadataOwner(inferMetadataOwner).IncludeComputedProperties(includeComputedProperties).IncludeComputedAssemblyProperties(includeComputedAssemblyProperties).Thumbnail(thumbnail).Execute()
+    resp, r, err := apiClient.MetadataAPI.GetWMVEPsMetadata(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).InferMetadataOwner(inferMetadataOwner).IncludeComputedProperties(includeComputedProperties).IncludeComputedAssemblyProperties(includeComputedAssemblyProperties).Thumbnail(thumbnail).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWMVEPsMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataAPI.GetWMVEPsMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetWMVEPsMetadata`: BTMetadataObjectListInfoBTMetadataPartInfo
-    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.GetWMVEPsMetadata`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `MetadataAPI.GetWMVEPsMetadata`: %v\n", resp)
 }
 ```
 
@@ -508,13 +508,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.MetadataApi.GetWMVEsMetadata(context.Background(), did, wvm, wvmid).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Depth(depth).IncludeComputedProperties(includeComputedProperties).IncludeComputedAssemblyProperties(includeComputedAssemblyProperties).Thumbnail(thumbnail).Execute()
+    resp, r, err := apiClient.MetadataAPI.GetWMVEsMetadata(context.Background(), did, wvm, wvmid).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Depth(depth).IncludeComputedProperties(includeComputedProperties).IncludeComputedAssemblyProperties(includeComputedAssemblyProperties).Thumbnail(thumbnail).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWMVEsMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataAPI.GetWMVEsMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetWMVEsMetadata`: BTMetadataObjectListInfoBTMetadataElementInfo
-    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.GetWMVEsMetadata`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `MetadataAPI.GetWMVEsMetadata`: %v\n", resp)
 }
 ```
 
@@ -596,13 +596,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.MetadataApi.GetWVMetadata(context.Background(), did, wv, wvid).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Depth(depth).IncludeComputedProperties(includeComputedProperties).IncludeComputedAssemblyProperties(includeComputedAssemblyProperties).Thumbnail(thumbnail).Execute()
+    resp, r, err := apiClient.MetadataAPI.GetWVMetadata(context.Background(), did, wv, wvid).LinkDocumentId(linkDocumentId).InferMetadataOwner(inferMetadataOwner).Depth(depth).IncludeComputedProperties(includeComputedProperties).IncludeComputedAssemblyProperties(includeComputedAssemblyProperties).Thumbnail(thumbnail).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.GetWVMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataAPI.GetWVMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetWVMetadata`: BTMetadataObjectInfo
-    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.GetWVMetadata`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `MetadataAPI.GetWVMetadata`: %v\n", resp)
 }
 ```
 
@@ -678,13 +678,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.MetadataApi.UpdateVEOPStandardContentPartMetadata(context.Background(), did).LinkDocumentId(linkDocumentId).Body(body).Execute()
+    resp, r, err := apiClient.MetadataAPI.UpdateVEOPStandardContentPartMetadata(context.Background(), did).LinkDocumentId(linkDocumentId).Body(body).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.UpdateVEOPStandardContentPartMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataAPI.UpdateVEOPStandardContentPartMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateVEOPStandardContentPartMetadata`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.UpdateVEOPStandardContentPartMetadata`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `MetadataAPI.UpdateVEOPStandardContentPartMetadata`: %v\n", resp)
 }
 ```
 
@@ -755,13 +755,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.MetadataApi.UpdateWVEMetadata(context.Background(), did, wvm, wvmid, eid).Body(body).Configuration(configuration).Execute()
+    resp, r, err := apiClient.MetadataAPI.UpdateWVEMetadata(context.Background(), did, wvm, wvmid, eid).Body(body).Configuration(configuration).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.UpdateWVEMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataAPI.UpdateWVEMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateWVEMetadata`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.UpdateWVEMetadata`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `MetadataAPI.UpdateWVEMetadata`: %v\n", resp)
 }
 ```
 
@@ -843,13 +843,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.MetadataApi.UpdateWVEPMetadata(context.Background(), did, wvm, wvmid, eid, iden, pid).Body(body).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).Execute()
+    resp, r, err := apiClient.MetadataAPI.UpdateWVEPMetadata(context.Background(), did, wvm, wvmid, eid, iden, pid).Body(body).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.UpdateWVEPMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataAPI.UpdateWVEPMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateWVEPMetadata`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.UpdateWVEPMetadata`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `MetadataAPI.UpdateWVEPMetadata`: %v\n", resp)
 }
 ```
 
@@ -931,13 +931,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.MetadataApi.UpdateWVMetadata(context.Background(), did, wv, wvid).Body(body).Execute()
+    resp, r, err := apiClient.MetadataAPI.UpdateWVMetadata(context.Background(), did, wv, wvid).Body(body).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `MetadataApi.UpdateWVMetadata``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataAPI.UpdateWVMetadata``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateWVMetadata`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `MetadataApi.UpdateWVMetadata`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `MetadataAPI.UpdateWVMetadata`: %v\n", resp)
 }
 ```
 

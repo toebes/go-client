@@ -20,15 +20,15 @@ type GBTMateType string
 
 // List of GBTMateType
 const (
-	GBTMateTypeSlider      GBTMateType = "SLIDER"
-	GBTMateTypeCylindrical GBTMateType = "CYLINDRICAL"
-	GBTMateTypeRevolute    GBTMateType = "REVOLUTE"
-	GBTMateTypePinSlot     GBTMateType = "PIN_SLOT"
-	GBTMateTypePlanar      GBTMateType = "PLANAR"
-	GBTMateTypeBall        GBTMateType = "BALL"
-	GBTMateTypeFastened    GBTMateType = "FASTENED"
-	GBTMateTypeParallel    GBTMateType = "PARALLEL"
-	GBTMateTypeUnknown     GBTMateType = "UNKNOWN"
+	Slider      GBTMateType = "SLIDER"
+	Cylindrical GBTMateType = "CYLINDRICAL"
+	Revolute    GBTMateType = "REVOLUTE"
+	PinSlot     GBTMateType = "PIN_SLOT"
+	Planar      GBTMateType = "PLANAR"
+	Ball        GBTMateType = "BALL"
+	Fastened    GBTMateType = "FASTENED"
+	Parallel    GBTMateType = "PARALLEL"
+	Unknown     GBTMateType = "UNKNOWN"
 )
 
 // All allowed values of GBTMateType enum

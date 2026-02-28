@@ -20,9 +20,9 @@ type In string
 
 // List of In
 const (
-	InCookie In = "COOKIE"
-	InHeader In = "HEADER"
-	InQuery  In = "QUERY"
+	Cookie In = "COOKIE"
+	Header In = "HEADER"
+	Query  In = "QUERY"
 )
 
 // All allowed values of In enum

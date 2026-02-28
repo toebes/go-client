@@ -20,12 +20,12 @@ type GBTEntityType string
 
 // List of GBTEntityType
 const (
-	GBTEntityTypeVertex         GBTEntityType = "VERTEX"
-	GBTEntityTypeEdge           GBTEntityType = "EDGE"
-	GBTEntityTypeFace           GBTEntityType = "FACE"
-	GBTEntityTypeBody           GBTEntityType = "BODY"
-	GBTEntityTypeDegenerateEdge GBTEntityType = "DEGENERATE_EDGE"
-	GBTEntityTypeUnknown        GBTEntityType = "UNKNOWN"
+	Vertex         GBTEntityType = "VERTEX"
+	Edge           GBTEntityType = "EDGE"
+	Face           GBTEntityType = "FACE"
+	Body           GBTEntityType = "BODY"
+	DegenerateEdge GBTEntityType = "DEGENERATE_EDGE"
+	Unknown        GBTEntityType = "UNKNOWN"
 )
 
 // All allowed values of GBTEntityType enum

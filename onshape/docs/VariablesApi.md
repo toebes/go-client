@@ -1,16 +1,16 @@
-# \VariablesApi
+# \VariablesAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateVariableStudio**](VariablesApi.md#CreateVariableStudio) | **Post** /variables/d/{did}/w/{wid}/variablestudio | Create a new Variable Studio in a document and workspace.
-[**GetVariableStudioReferences**](VariablesApi.md#GetVariableStudioReferences) | **Get** /variables/d/{did}/{wv}/{wvid}/e/{eid}/variablestudioreferences | Get the Variable Studio references for an element.
-[**GetVariableStudioScope**](VariablesApi.md#GetVariableStudioScope) | **Get** /variables/d/{did}/{wv}/{wvid}/e/{eid}/variablestudioscope | Get the scope of a Variable Studio.
-[**GetVariables**](VariablesApi.md#GetVariables) | **Get** /variables/d/{did}/{wv}/{wvid}/e/{eid}/variables | Get the contents of all variable tables in an element.
-[**SetVariableStudioReferences**](VariablesApi.md#SetVariableStudioReferences) | **Post** /variables/d/{did}/w/{wid}/e/{eid}/variablestudioreferences | Set the Variable Studio references for an element.
-[**SetVariableStudioScope**](VariablesApi.md#SetVariableStudioScope) | **Post** /variables/d/{did}/w/{wid}/e/{eid}/variablestudioscope | Set the scope the Variable Studio.
-[**SetVariables**](VariablesApi.md#SetVariables) | **Post** /variables/d/{did}/w/{wid}/e/{eid}/variables | Assign variables to a Variable Studio
+[**CreateVariableStudio**](VariablesAPI.md#CreateVariableStudio) | **Post** /variables/d/{did}/w/{wid}/variablestudio | Create a new Variable Studio in a document and workspace.
+[**GetVariableStudioReferences**](VariablesAPI.md#GetVariableStudioReferences) | **Get** /variables/d/{did}/{wv}/{wvid}/e/{eid}/variablestudioreferences | Get the Variable Studio references for an element.
+[**GetVariableStudioScope**](VariablesAPI.md#GetVariableStudioScope) | **Get** /variables/d/{did}/{wv}/{wvid}/e/{eid}/variablestudioscope | Get the scope of a Variable Studio.
+[**GetVariables**](VariablesAPI.md#GetVariables) | **Get** /variables/d/{did}/{wv}/{wvid}/e/{eid}/variables | Get the contents of all variable tables in an element.
+[**SetVariableStudioReferences**](VariablesAPI.md#SetVariableStudioReferences) | **Post** /variables/d/{did}/w/{wid}/e/{eid}/variablestudioreferences | Set the Variable Studio references for an element.
+[**SetVariableStudioScope**](VariablesAPI.md#SetVariableStudioScope) | **Post** /variables/d/{did}/w/{wid}/e/{eid}/variablestudioscope | Set the scope the Variable Studio.
+[**SetVariables**](VariablesAPI.md#SetVariables) | **Post** /variables/d/{did}/w/{wid}/e/{eid}/variables | Assign variables to a Variable Studio
 
 
 
@@ -40,13 +40,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.VariablesApi.CreateVariableStudio(context.Background(), did, wid).BTModelElementParams(bTModelElementParams).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.VariablesAPI.CreateVariableStudio(context.Background(), did, wid).BTModelElementParams(bTModelElementParams).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `VariablesApi.CreateVariableStudio``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `VariablesAPI.CreateVariableStudio``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateVariableStudio`: BTDocumentElementInfo
-    fmt.Fprintf(os.Stdout, "Response from `VariablesApi.CreateVariableStudio`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `VariablesAPI.CreateVariableStudio`: %v\n", resp)
 }
 ```
 
@@ -116,13 +116,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.VariablesApi.GetVariableStudioReferences(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.VariablesAPI.GetVariableStudioReferences(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `VariablesApi.GetVariableStudioReferences``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `VariablesAPI.GetVariableStudioReferences``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetVariableStudioReferences`: BTVariableStudioReferenceListInfo
-    fmt.Fprintf(os.Stdout, "Response from `VariablesApi.GetVariableStudioReferences`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `VariablesAPI.GetVariableStudioReferences`: %v\n", resp)
 }
 ```
 
@@ -195,13 +195,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.VariablesApi.GetVariableStudioScope(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.VariablesAPI.GetVariableStudioScope(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `VariablesApi.GetVariableStudioScope``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `VariablesAPI.GetVariableStudioScope``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetVariableStudioScope`: BTVariableStudioScopeInfo
-    fmt.Fprintf(os.Stdout, "Response from `VariablesApi.GetVariableStudioScope`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `VariablesAPI.GetVariableStudioScope`: %v\n", resp)
 }
 ```
 
@@ -276,13 +276,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.VariablesApi.GetVariables(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).IncludeValuesAndReferencedVariables(includeValuesAndReferencedVariables).Execute()
+    resp, r, err := apiClient.VariablesAPI.GetVariables(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).IncludeValuesAndReferencedVariables(includeValuesAndReferencedVariables).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `VariablesApi.GetVariables``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `VariablesAPI.GetVariables``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetVariables`: []BTVariableTableInfo
-    fmt.Fprintf(os.Stdout, "Response from `VariablesApi.GetVariables`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `VariablesAPI.GetVariables`: %v\n", resp)
 }
 ```
 
@@ -357,13 +357,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.VariablesApi.SetVariableStudioReferences(context.Background(), did, wid, eid).BTVariableStudioReferenceListInfo(bTVariableStudioReferenceListInfo).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.VariablesAPI.SetVariableStudioReferences(context.Background(), did, wid, eid).BTVariableStudioReferenceListInfo(bTVariableStudioReferenceListInfo).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `VariablesApi.SetVariableStudioReferences``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `VariablesAPI.SetVariableStudioReferences``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `SetVariableStudioReferences`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `VariablesApi.SetVariableStudioReferences`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `VariablesAPI.SetVariableStudioReferences`: %v\n", resp)
 }
 ```
 
@@ -435,13 +435,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.VariablesApi.SetVariableStudioScope(context.Background(), did, wid, eid).BTVariableStudioScopeInfo(bTVariableStudioScopeInfo).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.VariablesAPI.SetVariableStudioScope(context.Background(), did, wid, eid).BTVariableStudioScopeInfo(bTVariableStudioScopeInfo).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `VariablesApi.SetVariableStudioScope``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `VariablesAPI.SetVariableStudioScope``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `SetVariableStudioScope`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `VariablesApi.SetVariableStudioScope`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `VariablesAPI.SetVariableStudioScope`: %v\n", resp)
 }
 ```
 
@@ -513,13 +513,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.VariablesApi.SetVariables(context.Background(), did, wid, eid).BTVariableParams(bTVariableParams).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.VariablesAPI.SetVariables(context.Background(), did, wid, eid).BTVariableParams(bTVariableParams).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `VariablesApi.SetVariables``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `VariablesAPI.SetVariables``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `SetVariables`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `VariablesApi.SetVariables`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `VariablesAPI.SetVariables`: %v\n", resp)
 }
 ```
 

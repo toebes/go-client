@@ -1,10 +1,10 @@
-# \PartNumberApi
+# \PartNumberAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**UpdateNextNumbers**](PartNumberApi.md#UpdateNextNumbers) | **Post** /partnumber/nextnumbers | Send the items to generate numbers for, and return the next valid available part numbers.
+[**UpdateNextNumbers**](PartNumberAPI.md#UpdateNextNumbers) | **Post** /partnumber/nextnumbers | Send the items to generate numbers for, and return the next valid available part numbers.
 
 
 
@@ -35,13 +35,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartNumberApi.UpdateNextNumbers(context.Background()).BTNextPartNumbersParam(bTNextPartNumbersParam).Cid(cid).Did(did).Execute()
+    resp, r, err := apiClient.PartNumberAPI.UpdateNextNumbers(context.Background()).BTNextPartNumbersParam(bTNextPartNumbersParam).Cid(cid).Did(did).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartNumberApi.UpdateNextNumbers``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartNumberAPI.UpdateNextNumbers``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateNextNumbers`: map[string][]BTNextPartNumber
-    fmt.Fprintf(os.Stdout, "Response from `PartNumberApi.UpdateNextNumbers`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartNumberAPI.UpdateNextNumbers`: %v\n", resp)
 }
 ```
 

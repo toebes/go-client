@@ -20,14 +20,14 @@ type GBTWeldFinishing string
 
 // List of GBTWeldFinishing
 const (
-	GBTWeldFinishingNone        GBTWeldFinishing = "NONE"
-	GBTWeldFinishingChipping    GBTWeldFinishing = "CHIPPING"
-	GBTWeldFinishingGrinding    GBTWeldFinishing = "GRINDING"
-	GBTWeldFinishingHammering   GBTWeldFinishing = "HAMMERING"
-	GBTWeldFinishingMachining   GBTWeldFinishing = "MACHINING"
-	GBTWeldFinishingRolling     GBTWeldFinishing = "ROLLING"
-	GBTWeldFinishingUnspecified GBTWeldFinishing = "UNSPECIFIED"
-	GBTWeldFinishingUnknown     GBTWeldFinishing = "UNKNOWN"
+	None        GBTWeldFinishing = "NONE"
+	Chipping    GBTWeldFinishing = "CHIPPING"
+	Grinding    GBTWeldFinishing = "GRINDING"
+	Hammering   GBTWeldFinishing = "HAMMERING"
+	Machining   GBTWeldFinishing = "MACHINING"
+	Rolling     GBTWeldFinishing = "ROLLING"
+	Unspecified GBTWeldFinishing = "UNSPECIFIED"
+	Unknown     GBTWeldFinishing = "UNKNOWN"
 )
 
 // All allowed values of GBTWeldFinishing enum

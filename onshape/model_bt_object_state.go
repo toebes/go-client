@@ -20,10 +20,10 @@ type BTObjectState string
 
 // List of BTObjectState
 const (
-	BTObjectStateDeleted  BTObjectState = "DELETED"
-	BTObjectStateTrash    BTObjectState = "TRASH"
-	BTObjectStateActive   BTObjectState = "ACTIVE"
-	BTObjectStateInactive BTObjectState = "INACTIVE"
+	Deleted  BTObjectState = "DELETED"
+	Trash    BTObjectState = "TRASH"
+	Active   BTObjectState = "ACTIVE"
+	Inactive BTObjectState = "INACTIVE"
 )
 
 // All allowed values of BTObjectState enum

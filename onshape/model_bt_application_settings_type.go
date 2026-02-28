@@ -20,9 +20,9 @@ type BTApplicationSettingsType string
 
 // List of BTApplicationSettingsType
 const (
-	BTApplicationSettingsTypeUser    BTApplicationSettingsType = "USER"
-	BTApplicationSettingsTypeCompany BTApplicationSettingsType = "COMPANY"
-	BTApplicationSettingsTypeTeam    BTApplicationSettingsType = "TEAM"
+	User    BTApplicationSettingsType = "USER"
+	Company BTApplicationSettingsType = "COMPANY"
+	Team    BTApplicationSettingsType = "TEAM"
 )
 
 // All allowed values of BTApplicationSettingsType enum

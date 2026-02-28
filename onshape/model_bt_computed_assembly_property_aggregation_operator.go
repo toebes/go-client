@@ -20,16 +20,16 @@ type BTComputedAssemblyPropertyAggregationOperator string
 
 // List of BTComputedAssemblyPropertyAggregationOperator
 const (
-	BTComputedAssemblyPropertyAggregationOperatorSum             BTComputedAssemblyPropertyAggregationOperator = "SUM"
-	BTComputedAssemblyPropertyAggregationOperatorMinimum         BTComputedAssemblyPropertyAggregationOperator = "MINIMUM"
-	BTComputedAssemblyPropertyAggregationOperatorMaximum         BTComputedAssemblyPropertyAggregationOperator = "MAXIMUM"
-	BTComputedAssemblyPropertyAggregationOperatorAverage         BTComputedAssemblyPropertyAggregationOperator = "AVERAGE"
-	BTComputedAssemblyPropertyAggregationOperatorWeightedSum     BTComputedAssemblyPropertyAggregationOperator = "WEIGHTED_SUM"
-	BTComputedAssemblyPropertyAggregationOperatorWeightedAverage BTComputedAssemblyPropertyAggregationOperator = "WEIGHTED_AVERAGE"
-	BTComputedAssemblyPropertyAggregationOperatorAny             BTComputedAssemblyPropertyAggregationOperator = "ANY"
-	BTComputedAssemblyPropertyAggregationOperatorAll             BTComputedAssemblyPropertyAggregationOperator = "ALL"
-	BTComputedAssemblyPropertyAggregationOperatorNotAny          BTComputedAssemblyPropertyAggregationOperator = "NOT_ANY"
-	BTComputedAssemblyPropertyAggregationOperatorNotAll          BTComputedAssemblyPropertyAggregationOperator = "NOT_ALL"
+	Sum             BTComputedAssemblyPropertyAggregationOperator = "SUM"
+	Minimum         BTComputedAssemblyPropertyAggregationOperator = "MINIMUM"
+	Maximum         BTComputedAssemblyPropertyAggregationOperator = "MAXIMUM"
+	Average         BTComputedAssemblyPropertyAggregationOperator = "AVERAGE"
+	WeightedSum     BTComputedAssemblyPropertyAggregationOperator = "WEIGHTED_SUM"
+	WeightedAverage BTComputedAssemblyPropertyAggregationOperator = "WEIGHTED_AVERAGE"
+	Any             BTComputedAssemblyPropertyAggregationOperator = "ANY"
+	All             BTComputedAssemblyPropertyAggregationOperator = "ALL"
+	NotAny          BTComputedAssemblyPropertyAggregationOperator = "NOT_ANY"
+	NotAll          BTComputedAssemblyPropertyAggregationOperator = "NOT_ALL"
 )
 
 // All allowed values of BTComputedAssemblyPropertyAggregationOperator enum

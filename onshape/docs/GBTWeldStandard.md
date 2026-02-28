@@ -3,11 +3,11 @@
 ## Enum
 
 
-* `GBTWeldStandardAnsi` (value: `"ANSI"`)
+* `Ansi` (value: `"ANSI"`)
 
-* `GBTWeldStandardIso` (value: `"ISO"`)
+* `Iso` (value: `"ISO"`)
 
-* `GBTWeldStandardUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

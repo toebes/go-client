@@ -20,9 +20,9 @@ type BTWorkspaceProtectionRuleOptions string
 
 // List of BTWorkspaceProtectionRuleOptions
 const (
-	BTWorkspaceProtectionRuleOptionsOpen             BTWorkspaceProtectionRuleOptions = "OPEN"
-	BTWorkspaceProtectionRuleOptionsMerge            BTWorkspaceProtectionRuleOptions = "MERGE"
-	BTWorkspaceProtectionRuleOptionsFastForwardMerge BTWorkspaceProtectionRuleOptions = "FAST_FORWARD_MERGE"
+	Open             BTWorkspaceProtectionRuleOptions = "OPEN"
+	Merge            BTWorkspaceProtectionRuleOptions = "MERGE"
+	FastForwardMerge BTWorkspaceProtectionRuleOptions = "FAST_FORWARD_MERGE"
 )
 
 // All allowed values of BTWorkspaceProtectionRuleOptions enum

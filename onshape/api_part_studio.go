@@ -19,12 +19,12 @@ import (
 	"strings"
 )
 
-// PartStudioApiService PartStudioApi service
-type PartStudioApiService service
+// PartStudioAPIService PartStudioAPI service
+type PartStudioAPIService service
 
 type ApiAddPartStudioFeatureRequest struct {
 	ctx                         context.Context
-	ApiService                  *PartStudioApiService
+	ApiService                  *PartStudioAPIService
 	did                         string
 	wvm                         string
 	wvmid                       string
@@ -55,7 +55,7 @@ See the [Features API Guide](https://onshape-public.github.io/docs/api-adv/featu
 	@param eid
 	@return ApiAddPartStudioFeatureRequest
 */
-func (a *PartStudioApiService) AddPartStudioFeature(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiAddPartStudioFeatureRequest {
+func (a *PartStudioAPIService) AddPartStudioFeature(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiAddPartStudioFeatureRequest {
 	return ApiAddPartStudioFeatureRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -69,7 +69,7 @@ func (a *PartStudioApiService) AddPartStudioFeature(ctx context.Context, did str
 // Execute executes the request
 //
 //	@return BTFeatureDefinitionResponse1617
-func (a *PartStudioApiService) AddPartStudioFeatureExecute(r ApiAddPartStudioFeatureRequest) (*BTFeatureDefinitionResponse1617, *http.Response, error) {
+func (a *PartStudioAPIService) AddPartStudioFeatureExecute(r ApiAddPartStudioFeatureRequest) (*BTFeatureDefinitionResponse1617, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -77,7 +77,7 @@ func (a *PartStudioApiService) AddPartStudioFeatureExecute(r ApiAddPartStudioFea
 		localVarReturnValue *BTFeatureDefinitionResponse1617
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.AddPartStudioFeature")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.AddPartStudioFeature")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -157,7 +157,7 @@ func (a *PartStudioApiService) AddPartStudioFeatureExecute(r ApiAddPartStudioFea
 
 type ApiComparePartStudiosRequest struct {
 	ctx                 context.Context
-	ApiService          *PartStudioApiService
+	ApiService          *PartStudioAPIService
 	did                 string
 	wvm                 string
 	wvmid               string
@@ -214,7 +214,7 @@ ComparePartStudios Get the differences between two Part Studios in a single docu
 	@param eid Element ID.
 	@return ApiComparePartStudiosRequest
 */
-func (a *PartStudioApiService) ComparePartStudios(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiComparePartStudiosRequest {
+func (a *PartStudioAPIService) ComparePartStudios(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiComparePartStudiosRequest {
 	return ApiComparePartStudiosRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -228,7 +228,7 @@ func (a *PartStudioApiService) ComparePartStudios(ctx context.Context, did strin
 // Execute executes the request
 //
 //	@return BTRootDiffInfo
-func (a *PartStudioApiService) ComparePartStudiosExecute(r ApiComparePartStudiosRequest) (*BTRootDiffInfo, *http.Response, error) {
+func (a *PartStudioAPIService) ComparePartStudiosExecute(r ApiComparePartStudiosRequest) (*BTRootDiffInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -236,7 +236,7 @@ func (a *PartStudioApiService) ComparePartStudiosExecute(r ApiComparePartStudios
 		localVarReturnValue *BTRootDiffInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.ComparePartStudios")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.ComparePartStudios")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -332,7 +332,7 @@ func (a *PartStudioApiService) ComparePartStudiosExecute(r ApiComparePartStudios
 
 type ApiCreatePartStudioRequest struct {
 	ctx                  context.Context
-	ApiService           *PartStudioApiService
+	ApiService           *PartStudioAPIService
 	did                  string
 	wid                  string
 	bTModelElementParams *BTModelElementParams
@@ -357,7 +357,7 @@ See the [Part Studios API Guide](https://onshape-public.github.io/docs/api-adv/p
 	@param wid Workspace ID.
 	@return ApiCreatePartStudioRequest
 */
-func (a *PartStudioApiService) CreatePartStudio(ctx context.Context, did string, wid string) ApiCreatePartStudioRequest {
+func (a *PartStudioAPIService) CreatePartStudio(ctx context.Context, did string, wid string) ApiCreatePartStudioRequest {
 	return ApiCreatePartStudioRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -369,7 +369,7 @@ func (a *PartStudioApiService) CreatePartStudio(ctx context.Context, did string,
 // Execute executes the request
 //
 //	@return BTDocumentElementInfo
-func (a *PartStudioApiService) CreatePartStudioExecute(r ApiCreatePartStudioRequest) (*BTDocumentElementInfo, *http.Response, error) {
+func (a *PartStudioAPIService) CreatePartStudioExecute(r ApiCreatePartStudioRequest) (*BTDocumentElementInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -377,7 +377,7 @@ func (a *PartStudioApiService) CreatePartStudioExecute(r ApiCreatePartStudioRequ
 		localVarReturnValue *BTDocumentElementInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.CreatePartStudio")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.CreatePartStudio")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -458,7 +458,7 @@ func (a *PartStudioApiService) CreatePartStudioExecute(r ApiCreatePartStudioRequ
 
 type ApiCreatePartStudioExportGltfRequest struct {
 	ctx                 context.Context
-	ApiService          *PartStudioApiService
+	ApiService          *PartStudioAPIService
 	did                 string
 	wv                  string
 	wvid                string
@@ -487,7 +487,7 @@ Creates an asynchronous export of a Part Studio to glTF. See [API Guide: Asynchr
 	@param eid Element ID.
 	@return ApiCreatePartStudioExportGltfRequest
 */
-func (a *PartStudioApiService) CreatePartStudioExportGltf(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreatePartStudioExportGltfRequest {
+func (a *PartStudioAPIService) CreatePartStudioExportGltf(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreatePartStudioExportGltfRequest {
 	return ApiCreatePartStudioExportGltfRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -501,7 +501,7 @@ func (a *PartStudioApiService) CreatePartStudioExportGltf(ctx context.Context, d
 // Execute executes the request
 //
 //	@return BTTranslationRequestInfo
-func (a *PartStudioApiService) CreatePartStudioExportGltfExecute(r ApiCreatePartStudioExportGltfRequest) (*BTTranslationRequestInfo, *http.Response, error) {
+func (a *PartStudioAPIService) CreatePartStudioExportGltfExecute(r ApiCreatePartStudioExportGltfRequest) (*BTTranslationRequestInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -509,7 +509,7 @@ func (a *PartStudioApiService) CreatePartStudioExportGltfExecute(r ApiCreatePart
 		localVarReturnValue *BTTranslationRequestInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.CreatePartStudioExportGltf")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.CreatePartStudioExportGltf")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -592,7 +592,7 @@ func (a *PartStudioApiService) CreatePartStudioExportGltfExecute(r ApiCreatePart
 
 type ApiCreatePartStudioExportObjRequest struct {
 	ctx                context.Context
-	ApiService         *PartStudioApiService
+	ApiService         *PartStudioAPIService
 	did                string
 	wv                 string
 	wvid               string
@@ -621,7 +621,7 @@ Creates an asynchronous export of a Part Studio to OBJ. See [API Guide: Asynchro
 	@param eid Element ID.
 	@return ApiCreatePartStudioExportObjRequest
 */
-func (a *PartStudioApiService) CreatePartStudioExportObj(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreatePartStudioExportObjRequest {
+func (a *PartStudioAPIService) CreatePartStudioExportObj(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreatePartStudioExportObjRequest {
 	return ApiCreatePartStudioExportObjRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -635,7 +635,7 @@ func (a *PartStudioApiService) CreatePartStudioExportObj(ctx context.Context, di
 // Execute executes the request
 //
 //	@return BTTranslationRequestInfo
-func (a *PartStudioApiService) CreatePartStudioExportObjExecute(r ApiCreatePartStudioExportObjRequest) (*BTTranslationRequestInfo, *http.Response, error) {
+func (a *PartStudioAPIService) CreatePartStudioExportObjExecute(r ApiCreatePartStudioExportObjRequest) (*BTTranslationRequestInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -643,7 +643,7 @@ func (a *PartStudioApiService) CreatePartStudioExportObjExecute(r ApiCreatePartS
 		localVarReturnValue *BTTranslationRequestInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.CreatePartStudioExportObj")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.CreatePartStudioExportObj")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -726,7 +726,7 @@ func (a *PartStudioApiService) CreatePartStudioExportObjExecute(r ApiCreatePartS
 
 type ApiCreatePartStudioExportSolidworksRequest struct {
 	ctx                       context.Context
-	ApiService                *PartStudioApiService
+	ApiService                *PartStudioAPIService
 	did                       string
 	wv                        string
 	wvid                      string
@@ -755,7 +755,7 @@ Creates an asynchronous export of a Part Studio to Solidworks. See [API Guide: A
 	@param eid Element ID.
 	@return ApiCreatePartStudioExportSolidworksRequest
 */
-func (a *PartStudioApiService) CreatePartStudioExportSolidworks(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreatePartStudioExportSolidworksRequest {
+func (a *PartStudioAPIService) CreatePartStudioExportSolidworks(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreatePartStudioExportSolidworksRequest {
 	return ApiCreatePartStudioExportSolidworksRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -769,7 +769,7 @@ func (a *PartStudioApiService) CreatePartStudioExportSolidworks(ctx context.Cont
 // Execute executes the request
 //
 //	@return BTTranslationRequestInfo
-func (a *PartStudioApiService) CreatePartStudioExportSolidworksExecute(r ApiCreatePartStudioExportSolidworksRequest) (*BTTranslationRequestInfo, *http.Response, error) {
+func (a *PartStudioAPIService) CreatePartStudioExportSolidworksExecute(r ApiCreatePartStudioExportSolidworksRequest) (*BTTranslationRequestInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -777,7 +777,7 @@ func (a *PartStudioApiService) CreatePartStudioExportSolidworksExecute(r ApiCrea
 		localVarReturnValue *BTTranslationRequestInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.CreatePartStudioExportSolidworks")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.CreatePartStudioExportSolidworks")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -860,7 +860,7 @@ func (a *PartStudioApiService) CreatePartStudioExportSolidworksExecute(r ApiCrea
 
 type ApiCreatePartStudioExportStepRequest struct {
 	ctx                 context.Context
-	ApiService          *PartStudioApiService
+	ApiService          *PartStudioAPIService
 	did                 string
 	wv                  string
 	wvid                string
@@ -889,7 +889,7 @@ Creates an asynchronous export of a Part Studio to STEP. See [API Guide: Asynchr
 	@param eid Element ID.
 	@return ApiCreatePartStudioExportStepRequest
 */
-func (a *PartStudioApiService) CreatePartStudioExportStep(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreatePartStudioExportStepRequest {
+func (a *PartStudioAPIService) CreatePartStudioExportStep(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreatePartStudioExportStepRequest {
 	return ApiCreatePartStudioExportStepRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -903,7 +903,7 @@ func (a *PartStudioApiService) CreatePartStudioExportStep(ctx context.Context, d
 // Execute executes the request
 //
 //	@return BTTranslationRequestInfo
-func (a *PartStudioApiService) CreatePartStudioExportStepExecute(r ApiCreatePartStudioExportStepRequest) (*BTTranslationRequestInfo, *http.Response, error) {
+func (a *PartStudioAPIService) CreatePartStudioExportStepExecute(r ApiCreatePartStudioExportStepRequest) (*BTTranslationRequestInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -911,7 +911,7 @@ func (a *PartStudioApiService) CreatePartStudioExportStepExecute(r ApiCreatePart
 		localVarReturnValue *BTTranslationRequestInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.CreatePartStudioExportStep")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.CreatePartStudioExportStep")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -994,7 +994,7 @@ func (a *PartStudioApiService) CreatePartStudioExportStepExecute(r ApiCreatePart
 
 type ApiCreatePartStudioTranslationRequest struct {
 	ctx                     context.Context
-	ApiService              *PartStudioApiService
+	ApiService              *PartStudioAPIService
 	did                     string
 	wv                      string
 	wvid                    string
@@ -1027,7 +1027,7 @@ Creates an asynchronous export of a Part Studio to another file format.
 	@param eid Element ID.
 	@return ApiCreatePartStudioTranslationRequest
 */
-func (a *PartStudioApiService) CreatePartStudioTranslation(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreatePartStudioTranslationRequest {
+func (a *PartStudioAPIService) CreatePartStudioTranslation(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreatePartStudioTranslationRequest {
 	return ApiCreatePartStudioTranslationRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1041,7 +1041,7 @@ func (a *PartStudioApiService) CreatePartStudioTranslation(ctx context.Context, 
 // Execute executes the request
 //
 //	@return BTTranslationRequestInfo
-func (a *PartStudioApiService) CreatePartStudioTranslationExecute(r ApiCreatePartStudioTranslationRequest) (*BTTranslationRequestInfo, *http.Response, error) {
+func (a *PartStudioAPIService) CreatePartStudioTranslationExecute(r ApiCreatePartStudioTranslationRequest) (*BTTranslationRequestInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -1049,7 +1049,7 @@ func (a *PartStudioApiService) CreatePartStudioTranslationExecute(r ApiCreatePar
 		localVarReturnValue *BTTranslationRequestInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.CreatePartStudioTranslation")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.CreatePartStudioTranslation")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1132,7 +1132,7 @@ func (a *PartStudioApiService) CreatePartStudioTranslationExecute(r ApiCreatePar
 
 type ApiDeletePartStudioFeatureRequest struct {
 	ctx        context.Context
-	ApiService *PartStudioApiService
+	ApiService *PartStudioAPIService
 	did        string
 	wid        string
 	eid        string
@@ -1155,7 +1155,7 @@ See the [Features API Guide](https://onshape-public.github.io/docs/api-adv/featu
 	@param fid The id of the feature being updated. This id should be URL encoded and must match the featureId found in the serialized structure
 	@return ApiDeletePartStudioFeatureRequest
 */
-func (a *PartStudioApiService) DeletePartStudioFeature(ctx context.Context, did string, wid string, eid string, fid string) ApiDeletePartStudioFeatureRequest {
+func (a *PartStudioAPIService) DeletePartStudioFeature(ctx context.Context, did string, wid string, eid string, fid string) ApiDeletePartStudioFeatureRequest {
 	return ApiDeletePartStudioFeatureRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1169,7 +1169,7 @@ func (a *PartStudioApiService) DeletePartStudioFeature(ctx context.Context, did 
 // Execute executes the request
 //
 //	@return BTFeatureApiBase1430
-func (a *PartStudioApiService) DeletePartStudioFeatureExecute(r ApiDeletePartStudioFeatureRequest) (*BTFeatureApiBase1430, *http.Response, error) {
+func (a *PartStudioAPIService) DeletePartStudioFeatureExecute(r ApiDeletePartStudioFeatureRequest) (*BTFeatureApiBase1430, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodDelete
 		localVarPostBody    interface{}
@@ -1177,7 +1177,7 @@ func (a *PartStudioApiService) DeletePartStudioFeatureExecute(r ApiDeletePartStu
 		localVarReturnValue *BTFeatureApiBase1430
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.DeletePartStudioFeature")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.DeletePartStudioFeature")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1255,7 +1255,7 @@ func (a *PartStudioApiService) DeletePartStudioFeatureExecute(r ApiDeletePartStu
 
 type ApiEvalFeatureScriptRequest struct {
 	ctx                         context.Context
-	ApiService                  *PartStudioApiService
+	ApiService                  *PartStudioAPIService
 	did                         string
 	wvm                         string
 	wvmid                       string
@@ -1314,7 +1314,7 @@ Note that only lambda expressions can be evaulated with this endpoint.
 	@param eid The id of the element in which to perform the operation.
 	@return ApiEvalFeatureScriptRequest
 */
-func (a *PartStudioApiService) EvalFeatureScript(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiEvalFeatureScriptRequest {
+func (a *PartStudioAPIService) EvalFeatureScript(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiEvalFeatureScriptRequest {
 	return ApiEvalFeatureScriptRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1328,7 +1328,7 @@ func (a *PartStudioApiService) EvalFeatureScript(ctx context.Context, did string
 // Execute executes the request
 //
 //	@return BTFeatureScriptEvalResponse1859
-func (a *PartStudioApiService) EvalFeatureScriptExecute(r ApiEvalFeatureScriptRequest) (*BTFeatureScriptEvalResponse1859, *http.Response, error) {
+func (a *PartStudioAPIService) EvalFeatureScriptExecute(r ApiEvalFeatureScriptRequest) (*BTFeatureScriptEvalResponse1859, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -1336,7 +1336,7 @@ func (a *PartStudioApiService) EvalFeatureScriptExecute(r ApiEvalFeatureScriptRe
 		localVarReturnValue *BTFeatureScriptEvalResponse1859
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.EvalFeatureScript")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.EvalFeatureScript")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1428,7 +1428,7 @@ func (a *PartStudioApiService) EvalFeatureScriptExecute(r ApiEvalFeatureScriptRe
 
 type ApiExportParasolidRequest struct {
 	ctx              context.Context
-	ApiService       *PartStudioApiService
+	ApiService       *PartStudioAPIService
 	did              string
 	wvm              string
 	wvmid            string
@@ -1498,7 +1498,7 @@ See [API Guide: Synchronous Exports](https://onshape-public.github.io/docs/api-a
 	@param eid Element ID.
 	@return ApiExportParasolidRequest
 */
-func (a *PartStudioApiService) ExportParasolid(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiExportParasolidRequest {
+func (a *PartStudioAPIService) ExportParasolid(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiExportParasolidRequest {
 	return ApiExportParasolidRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1510,14 +1510,14 @@ func (a *PartStudioApiService) ExportParasolid(ctx context.Context, did string, 
 }
 
 // Execute executes the request
-func (a *PartStudioApiService) ExportParasolidExecute(r ApiExportParasolidRequest) (*http.Response, error) {
+func (a *PartStudioAPIService) ExportParasolidExecute(r ApiExportParasolidRequest) (*http.Response, error) {
 	var (
 		localVarHTTPMethod = http.MethodGet
 		localVarPostBody   interface{}
 		formFiles          []formFile
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.ExportParasolid")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.ExportParasolid")
 	if err != nil {
 		return nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1594,7 +1594,7 @@ func (a *PartStudioApiService) ExportParasolidExecute(r ApiExportParasolidReques
 
 type ApiExportPartStudioGltfRequest struct {
 	ctx                      context.Context
-	ApiService               *PartStudioApiService
+	ApiService               *PartStudioAPIService
 	did                      string
 	wvm                      string
 	wvmid                    string
@@ -1698,7 +1698,7 @@ See [API Guide: Synchronous Exports](https://onshape-public.github.io/docs/api-a
 	@param eid The id of the element in which to perform the operation.
 	@return ApiExportPartStudioGltfRequest
 */
-func (a *PartStudioApiService) ExportPartStudioGltf(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiExportPartStudioGltfRequest {
+func (a *PartStudioAPIService) ExportPartStudioGltf(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiExportPartStudioGltfRequest {
 	return ApiExportPartStudioGltfRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1712,7 +1712,7 @@ func (a *PartStudioApiService) ExportPartStudioGltf(ctx context.Context, did str
 // Execute executes the request
 //
 //	@return GlTF
-func (a *PartStudioApiService) ExportPartStudioGltfExecute(r ApiExportPartStudioGltfRequest) (*GlTF, *http.Response, error) {
+func (a *PartStudioAPIService) ExportPartStudioGltfExecute(r ApiExportPartStudioGltfRequest) (*GlTF, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1720,7 +1720,7 @@ func (a *PartStudioApiService) ExportPartStudioGltfExecute(r ApiExportPartStudio
 		localVarReturnValue *GlTF
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.ExportPartStudioGltf")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.ExportPartStudioGltf")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1843,7 +1843,7 @@ func (a *PartStudioApiService) ExportPartStudioGltfExecute(r ApiExportPartStudio
 
 type ApiExportPartStudioStlRequest struct {
 	ctx            context.Context
-	ApiService     *PartStudioApiService
+	ApiService     *PartStudioAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -1948,7 +1948,7 @@ See [API Guide: Synchronous Exports](https://onshape-public.github.io/docs/api-a
 	@param eid Element ID.
 	@return ApiExportPartStudioStlRequest
 */
-func (a *PartStudioApiService) ExportPartStudioStl(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiExportPartStudioStlRequest {
+func (a *PartStudioAPIService) ExportPartStudioStl(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiExportPartStudioStlRequest {
 	return ApiExportPartStudioStlRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1960,14 +1960,14 @@ func (a *PartStudioApiService) ExportPartStudioStl(ctx context.Context, did stri
 }
 
 // Execute executes the request
-func (a *PartStudioApiService) ExportPartStudioStlExecute(r ApiExportPartStudioStlRequest) (*http.Response, error) {
+func (a *PartStudioAPIService) ExportPartStudioStlExecute(r ApiExportPartStudioStlRequest) (*http.Response, error) {
 	var (
 		localVarHTTPMethod = http.MethodGet
 		localVarPostBody   interface{}
 		formFiles          []formFile
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.ExportPartStudioStl")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.ExportPartStudioStl")
 	if err != nil {
 		return nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2059,7 +2059,7 @@ func (a *PartStudioApiService) ExportPartStudioStlExecute(r ApiExportPartStudioS
 
 type ApiGetFeatureScriptRepresentationRequest struct {
 	ctx                   context.Context
-	ApiService            *PartStudioApiService
+	ApiService            *PartStudioAPIService
 	did                   string
 	wvm                   string
 	wvmid                 string
@@ -2108,7 +2108,7 @@ GetFeatureScriptRepresentation Get the FeatureScript representation of a Part St
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetFeatureScriptRepresentationRequest
 */
-func (a *PartStudioApiService) GetFeatureScriptRepresentation(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetFeatureScriptRepresentationRequest {
+func (a *PartStudioAPIService) GetFeatureScriptRepresentation(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetFeatureScriptRepresentationRequest {
 	return ApiGetFeatureScriptRepresentationRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2122,7 +2122,7 @@ func (a *PartStudioApiService) GetFeatureScriptRepresentation(ctx context.Contex
 // Execute executes the request
 //
 //	@return BTPModule234
-func (a *PartStudioApiService) GetFeatureScriptRepresentationExecute(r ApiGetFeatureScriptRepresentationRequest) (*BTPModule234, *http.Response, error) {
+func (a *PartStudioAPIService) GetFeatureScriptRepresentationExecute(r ApiGetFeatureScriptRepresentationRequest) (*BTPModule234, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2130,7 +2130,7 @@ func (a *PartStudioApiService) GetFeatureScriptRepresentationExecute(r ApiGetFea
 		localVarReturnValue *BTPModule234
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.GetFeatureScriptRepresentation")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.GetFeatureScriptRepresentation")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2220,7 +2220,7 @@ func (a *PartStudioApiService) GetFeatureScriptRepresentationExecute(r ApiGetFea
 
 type ApiGetFeatureScriptTableRequest struct {
 	ctx             context.Context
-	ApiService      *PartStudioApiService
+	ApiService      *PartStudioAPIService
 	did             string
 	wvm             string
 	wvmid           string
@@ -2283,7 +2283,7 @@ GetFeatureScriptTable Compute and return a FeatureScript table for a Part Studio
 	@param eid Element ID.
 	@return ApiGetFeatureScriptTableRequest
 */
-func (a *PartStudioApiService) GetFeatureScriptTable(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetFeatureScriptTableRequest {
+func (a *PartStudioAPIService) GetFeatureScriptTable(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetFeatureScriptTableRequest {
 	return ApiGetFeatureScriptTableRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2297,7 +2297,7 @@ func (a *PartStudioApiService) GetFeatureScriptTable(ctx context.Context, did st
 // Execute executes the request
 //
 //	@return BTApiTableList1223
-func (a *PartStudioApiService) GetFeatureScriptTableExecute(r ApiGetFeatureScriptTableRequest) (*BTApiTableList1223, *http.Response, error) {
+func (a *PartStudioAPIService) GetFeatureScriptTableExecute(r ApiGetFeatureScriptTableRequest) (*BTApiTableList1223, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2305,7 +2305,7 @@ func (a *PartStudioApiService) GetFeatureScriptTableExecute(r ApiGetFeatureScrip
 		localVarReturnValue *BTApiTableList1223
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.GetFeatureScriptTable")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.GetFeatureScriptTable")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2402,7 +2402,7 @@ func (a *PartStudioApiService) GetFeatureScriptTableExecute(r ApiGetFeatureScrip
 
 type ApiGetPartStudioBodyDetailsRequest struct {
 	ctx                   context.Context
-	ApiService            *PartStudioApiService
+	ApiService            *PartStudioAPIService
 	did                   string
 	wvm                   string
 	wvmid                 string
@@ -2481,7 +2481,7 @@ See the [Part Studios API Guide](https://onshape-public.github.io/docs/api-adv/p
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetPartStudioBodyDetailsRequest
 */
-func (a *PartStudioApiService) GetPartStudioBodyDetails(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioBodyDetailsRequest {
+func (a *PartStudioAPIService) GetPartStudioBodyDetails(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioBodyDetailsRequest {
 	return ApiGetPartStudioBodyDetailsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2495,7 +2495,7 @@ func (a *PartStudioApiService) GetPartStudioBodyDetails(ctx context.Context, did
 // Execute executes the request
 //
 //	@return BTExportModelBodiesResponse734
-func (a *PartStudioApiService) GetPartStudioBodyDetailsExecute(r ApiGetPartStudioBodyDetailsRequest) (*BTExportModelBodiesResponse734, *http.Response, error) {
+func (a *PartStudioAPIService) GetPartStudioBodyDetailsExecute(r ApiGetPartStudioBodyDetailsRequest) (*BTExportModelBodiesResponse734, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2503,7 +2503,7 @@ func (a *PartStudioApiService) GetPartStudioBodyDetailsExecute(r ApiGetPartStudi
 		localVarReturnValue *BTExportModelBodiesResponse734
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.GetPartStudioBodyDetails")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.GetPartStudioBodyDetails")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2613,7 +2613,7 @@ func (a *PartStudioApiService) GetPartStudioBodyDetailsExecute(r ApiGetPartStudi
 
 type ApiGetPartStudioBoundingBoxesRequest struct {
 	ctx               context.Context
-	ApiService        *PartStudioApiService
+	ApiService        *PartStudioAPIService
 	did               string
 	wvm               string
 	wvmid             string
@@ -2665,7 +2665,7 @@ To calculate a tight bounding box, see the [FeatureScript API Guide](https://ons
 	@param eid Element ID.
 	@return ApiGetPartStudioBoundingBoxesRequest
 */
-func (a *PartStudioApiService) GetPartStudioBoundingBoxes(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioBoundingBoxesRequest {
+func (a *PartStudioAPIService) GetPartStudioBoundingBoxes(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioBoundingBoxesRequest {
 	return ApiGetPartStudioBoundingBoxesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2679,7 +2679,7 @@ func (a *PartStudioApiService) GetPartStudioBoundingBoxes(ctx context.Context, d
 // Execute executes the request
 //
 //	@return BTBoundingBoxInfo
-func (a *PartStudioApiService) GetPartStudioBoundingBoxesExecute(r ApiGetPartStudioBoundingBoxesRequest) (*BTBoundingBoxInfo, *http.Response, error) {
+func (a *PartStudioAPIService) GetPartStudioBoundingBoxesExecute(r ApiGetPartStudioBoundingBoxesRequest) (*BTBoundingBoxInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2687,7 +2687,7 @@ func (a *PartStudioApiService) GetPartStudioBoundingBoxesExecute(r ApiGetPartStu
 		localVarReturnValue *BTBoundingBoxInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.GetPartStudioBoundingBoxes")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.GetPartStudioBoundingBoxes")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2777,7 +2777,7 @@ func (a *PartStudioApiService) GetPartStudioBoundingBoxesExecute(r ApiGetPartStu
 
 type ApiGetPartStudioEdgesRequest struct {
 	ctx                      context.Context
-	ApiService               *PartStudioApiService
+	ApiService               *PartStudioAPIService
 	did                      string
 	wvm                      string
 	wvmid                    string
@@ -2859,7 +2859,7 @@ Coordinates are in meters (m).
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetPartStudioEdgesRequest
 */
-func (a *PartStudioApiService) GetPartStudioEdges(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioEdgesRequest {
+func (a *PartStudioAPIService) GetPartStudioEdges(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioEdgesRequest {
 	return ApiGetPartStudioEdgesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2873,7 +2873,7 @@ func (a *PartStudioApiService) GetPartStudioEdges(ctx context.Context, did strin
 // Execute executes the request
 //
 //	@return BTExportTessellatedEdgesResponse327
-func (a *PartStudioApiService) GetPartStudioEdgesExecute(r ApiGetPartStudioEdgesRequest) (*BTExportTessellatedEdgesResponse327, *http.Response, error) {
+func (a *PartStudioAPIService) GetPartStudioEdgesExecute(r ApiGetPartStudioEdgesRequest) (*BTExportTessellatedEdgesResponse327, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2881,7 +2881,7 @@ func (a *PartStudioApiService) GetPartStudioEdgesExecute(r ApiGetPartStudioEdges
 		localVarReturnValue *BTExportTessellatedEdgesResponse327
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.GetPartStudioEdges")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.GetPartStudioEdges")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3002,7 +3002,7 @@ func (a *PartStudioApiService) GetPartStudioEdgesExecute(r ApiGetPartStudioEdges
 
 type ApiGetPartStudioFacesRequest struct {
 	ctx                              context.Context
-	ApiService                       *PartStudioApiService
+	ApiService                       *PartStudioAPIService
 	did                              string
 	wvm                              string
 	wvmid                            string
@@ -3131,7 +3131,7 @@ Coordinates are in meters (m).
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetPartStudioFacesRequest
 */
-func (a *PartStudioApiService) GetPartStudioFaces(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioFacesRequest {
+func (a *PartStudioAPIService) GetPartStudioFaces(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioFacesRequest {
 	return ApiGetPartStudioFacesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3145,7 +3145,7 @@ func (a *PartStudioApiService) GetPartStudioFaces(ctx context.Context, did strin
 // Execute executes the request
 //
 //	@return BTExportTessellatedFacesResponse898
-func (a *PartStudioApiService) GetPartStudioFacesExecute(r ApiGetPartStudioFacesRequest) (*BTExportTessellatedFacesResponse898, *http.Response, error) {
+func (a *PartStudioAPIService) GetPartStudioFacesExecute(r ApiGetPartStudioFacesRequest) (*BTExportTessellatedFacesResponse898, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -3153,7 +3153,7 @@ func (a *PartStudioApiService) GetPartStudioFacesExecute(r ApiGetPartStudioFaces
 		localVarReturnValue *BTExportTessellatedFacesResponse898
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.GetPartStudioFaces")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.GetPartStudioFaces")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3298,7 +3298,7 @@ func (a *PartStudioApiService) GetPartStudioFacesExecute(r ApiGetPartStudioFaces
 
 type ApiGetPartStudioFeatureSpecsRequest struct {
 	ctx        context.Context
-	ApiService *PartStudioApiService
+	ApiService *PartStudioAPIService
 	did        string
 	wvm        string
 	wvmid      string
@@ -3321,7 +3321,7 @@ Returns a list of feature specs available within the Part Studio. A feature spec
 	@param eid Element ID.
 	@return ApiGetPartStudioFeatureSpecsRequest
 */
-func (a *PartStudioApiService) GetPartStudioFeatureSpecs(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioFeatureSpecsRequest {
+func (a *PartStudioAPIService) GetPartStudioFeatureSpecs(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioFeatureSpecsRequest {
 	return ApiGetPartStudioFeatureSpecsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3335,7 +3335,7 @@ func (a *PartStudioApiService) GetPartStudioFeatureSpecs(ctx context.Context, di
 // Execute executes the request
 //
 //	@return BTFeatureSpecsResponse664
-func (a *PartStudioApiService) GetPartStudioFeatureSpecsExecute(r ApiGetPartStudioFeatureSpecsRequest) (*BTFeatureSpecsResponse664, *http.Response, error) {
+func (a *PartStudioAPIService) GetPartStudioFeatureSpecsExecute(r ApiGetPartStudioFeatureSpecsRequest) (*BTFeatureSpecsResponse664, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -3343,7 +3343,7 @@ func (a *PartStudioApiService) GetPartStudioFeatureSpecsExecute(r ApiGetPartStud
 		localVarReturnValue *BTFeatureSpecsResponse664
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.GetPartStudioFeatureSpecs")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.GetPartStudioFeatureSpecs")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3421,7 +3421,7 @@ func (a *PartStudioApiService) GetPartStudioFeatureSpecsExecute(r ApiGetPartStud
 
 type ApiGetPartStudioFeaturesRequest struct {
 	ctx                   context.Context
-	ApiService            *PartStudioApiService
+	ApiService            *PartStudioAPIService
 	did                   string
 	wvm                   string
 	wvmid                 string
@@ -3493,7 +3493,7 @@ See the [Features API Guide](https://onshape-public.github.io/docs/api-adv/featu
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetPartStudioFeaturesRequest
 */
-func (a *PartStudioApiService) GetPartStudioFeatures(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioFeaturesRequest {
+func (a *PartStudioAPIService) GetPartStudioFeatures(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioFeaturesRequest {
 	return ApiGetPartStudioFeaturesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3507,7 +3507,7 @@ func (a *PartStudioApiService) GetPartStudioFeatures(ctx context.Context, did st
 // Execute executes the request
 //
 //	@return BTFeatureListResponse2457
-func (a *PartStudioApiService) GetPartStudioFeaturesExecute(r ApiGetPartStudioFeaturesRequest) (*BTFeatureListResponse2457, *http.Response, error) {
+func (a *PartStudioAPIService) GetPartStudioFeaturesExecute(r ApiGetPartStudioFeaturesRequest) (*BTFeatureListResponse2457, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -3515,7 +3515,7 @@ func (a *PartStudioApiService) GetPartStudioFeaturesExecute(r ApiGetPartStudioFe
 		localVarReturnValue *BTFeatureListResponse2457
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.GetPartStudioFeatures")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.GetPartStudioFeatures")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3622,7 +3622,7 @@ func (a *PartStudioApiService) GetPartStudioFeaturesExecute(r ApiGetPartStudioFe
 
 type ApiGetPartStudioMassPropertiesRequest struct {
 	ctx                      context.Context
-	ApiService               *PartStudioApiService
+	ApiService               *PartStudioAPIService
 	did                      string
 	wvm                      string
 	wvmid                    string
@@ -3703,7 +3703,7 @@ When three values are returned:
     @param eid The id of the element in which to perform the operation.
     @return ApiGetPartStudioMassPropertiesRequest
 */
-func (a *PartStudioApiService) GetPartStudioMassProperties(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioMassPropertiesRequest {
+func (a *PartStudioAPIService) GetPartStudioMassProperties(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioMassPropertiesRequest {
 	return ApiGetPartStudioMassPropertiesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3717,7 +3717,7 @@ func (a *PartStudioApiService) GetPartStudioMassProperties(ctx context.Context, 
 // Execute executes the request
 //
 //	@return BTMassPropertiesBulkInfo
-func (a *PartStudioApiService) GetPartStudioMassPropertiesExecute(r ApiGetPartStudioMassPropertiesRequest) (*BTMassPropertiesBulkInfo, *http.Response, error) {
+func (a *PartStudioAPIService) GetPartStudioMassPropertiesExecute(r ApiGetPartStudioMassPropertiesRequest) (*BTMassPropertiesBulkInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -3725,7 +3725,7 @@ func (a *PartStudioApiService) GetPartStudioMassPropertiesExecute(r ApiGetPartSt
 		localVarReturnValue *BTMassPropertiesBulkInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.GetPartStudioMassProperties")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.GetPartStudioMassProperties")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3832,7 +3832,7 @@ func (a *PartStudioApiService) GetPartStudioMassPropertiesExecute(r ApiGetPartSt
 
 type ApiGetPartStudioNamedViewsRequest struct {
 	ctx                    context.Context
-	ApiService             *PartStudioApiService
+	ApiService             *PartStudioAPIService
 	did                    string
 	eid                    string
 	linkDocumentId         *string
@@ -3870,7 +3870,7 @@ Returns a map from view name to view data for the given element. See the [Part S
 	@param eid
 	@return ApiGetPartStudioNamedViewsRequest
 */
-func (a *PartStudioApiService) GetPartStudioNamedViews(ctx context.Context, did string, eid string) ApiGetPartStudioNamedViewsRequest {
+func (a *PartStudioAPIService) GetPartStudioNamedViews(ctx context.Context, did string, eid string) ApiGetPartStudioNamedViewsRequest {
 	return ApiGetPartStudioNamedViewsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3882,7 +3882,7 @@ func (a *PartStudioApiService) GetPartStudioNamedViews(ctx context.Context, did 
 // Execute executes the request
 //
 //	@return BTNamedViewsInfo
-func (a *PartStudioApiService) GetPartStudioNamedViewsExecute(r ApiGetPartStudioNamedViewsRequest) (*BTNamedViewsInfo, *http.Response, error) {
+func (a *PartStudioAPIService) GetPartStudioNamedViewsExecute(r ApiGetPartStudioNamedViewsRequest) (*BTNamedViewsInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -3890,7 +3890,7 @@ func (a *PartStudioApiService) GetPartStudioNamedViewsExecute(r ApiGetPartStudio
 		localVarReturnValue *BTNamedViewsInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.GetPartStudioNamedViews")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.GetPartStudioNamedViews")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3975,7 +3975,7 @@ func (a *PartStudioApiService) GetPartStudioNamedViewsExecute(r ApiGetPartStudio
 
 type ApiGetPartStudioShadedViewsRequest struct {
 	ctx             context.Context
-	ApiService      *PartStudioApiService
+	ApiService      *PartStudioAPIService
 	did             string
 	wvm             string
 	wvmid           string
@@ -4072,7 +4072,7 @@ GetPartStudioShadedViews Get a list of shaded views for a Part Studio.
 	@param eid Element ID.
 	@return ApiGetPartStudioShadedViewsRequest
 */
-func (a *PartStudioApiService) GetPartStudioShadedViews(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioShadedViewsRequest {
+func (a *PartStudioAPIService) GetPartStudioShadedViews(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetPartStudioShadedViewsRequest {
 	return ApiGetPartStudioShadedViewsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -4086,7 +4086,7 @@ func (a *PartStudioApiService) GetPartStudioShadedViews(ctx context.Context, did
 // Execute executes the request
 //
 //	@return BTShadedViewsInfo
-func (a *PartStudioApiService) GetPartStudioShadedViewsExecute(r ApiGetPartStudioShadedViewsRequest) (*BTShadedViewsInfo, *http.Response, error) {
+func (a *PartStudioAPIService) GetPartStudioShadedViewsExecute(r ApiGetPartStudioShadedViewsRequest) (*BTShadedViewsInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -4094,7 +4094,7 @@ func (a *PartStudioApiService) GetPartStudioShadedViewsExecute(r ApiGetPartStudi
 		localVarReturnValue *BTShadedViewsInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.GetPartStudioShadedViews")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.GetPartStudioShadedViews")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -4205,7 +4205,7 @@ func (a *PartStudioApiService) GetPartStudioShadedViewsExecute(r ApiGetPartStudi
 
 type ApiTranslateIdsRequest struct {
 	ctx                   context.Context
-	ApiService            *PartStudioApiService
+	ApiService            *PartStudioAPIService
 	did                   string
 	wvm                   string
 	wvmid                 string
@@ -4235,7 +4235,7 @@ TranslateIds Find corresponding deterministic IDs from a source document microve
 	@param eid Element ID.
 	@return ApiTranslateIdsRequest
 */
-func (a *PartStudioApiService) TranslateIds(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiTranslateIdsRequest {
+func (a *PartStudioAPIService) TranslateIds(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiTranslateIdsRequest {
 	return ApiTranslateIdsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -4249,7 +4249,7 @@ func (a *PartStudioApiService) TranslateIds(ctx context.Context, did string, wvm
 // Execute executes the request
 //
 //	@return BTIdTranslationInfo
-func (a *PartStudioApiService) TranslateIdsExecute(r ApiTranslateIdsRequest) (*BTIdTranslationInfo, *http.Response, error) {
+func (a *PartStudioAPIService) TranslateIdsExecute(r ApiTranslateIdsRequest) (*BTIdTranslationInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -4257,7 +4257,7 @@ func (a *PartStudioApiService) TranslateIdsExecute(r ApiTranslateIdsRequest) (*B
 		localVarReturnValue *BTIdTranslationInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.TranslateIds")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.TranslateIds")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -4340,7 +4340,7 @@ func (a *PartStudioApiService) TranslateIdsExecute(r ApiTranslateIdsRequest) (*B
 
 type ApiUpdateFeaturesRequest struct {
 	ctx                      context.Context
-	ApiService               *PartStudioApiService
+	ApiService               *PartStudioAPIService
 	did                      string
 	wid                      string
 	eid                      string
@@ -4369,7 +4369,7 @@ See the [Features API Guide](https://onshape-public.github.io/docs/api-adv/featu
 	@param eid Element ID.
 	@return ApiUpdateFeaturesRequest
 */
-func (a *PartStudioApiService) UpdateFeatures(ctx context.Context, did string, wid string, eid string) ApiUpdateFeaturesRequest {
+func (a *PartStudioAPIService) UpdateFeatures(ctx context.Context, did string, wid string, eid string) ApiUpdateFeaturesRequest {
 	return ApiUpdateFeaturesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -4382,7 +4382,7 @@ func (a *PartStudioApiService) UpdateFeatures(ctx context.Context, did string, w
 // Execute executes the request
 //
 //	@return BTUpdateFeaturesResponse1333
-func (a *PartStudioApiService) UpdateFeaturesExecute(r ApiUpdateFeaturesRequest) (*BTUpdateFeaturesResponse1333, *http.Response, error) {
+func (a *PartStudioAPIService) UpdateFeaturesExecute(r ApiUpdateFeaturesRequest) (*BTUpdateFeaturesResponse1333, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -4390,7 +4390,7 @@ func (a *PartStudioApiService) UpdateFeaturesExecute(r ApiUpdateFeaturesRequest)
 		localVarReturnValue *BTUpdateFeaturesResponse1333
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.UpdateFeatures")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.UpdateFeatures")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -4469,7 +4469,7 @@ func (a *PartStudioApiService) UpdateFeaturesExecute(r ApiUpdateFeaturesRequest)
 
 type ApiUpdatePartStudioFeatureRequest struct {
 	ctx                         context.Context
-	ApiService                  *PartStudioApiService
+	ApiService                  *PartStudioAPIService
 	did                         string
 	wid                         string
 	eid                         string
@@ -4499,7 +4499,7 @@ Replaces an existing feature in the location of the existing feature. See the [F
 	@param fid The id of the feature being updated. This id should be URL encoded and must match the featureId found in the serialized structure
 	@return ApiUpdatePartStudioFeatureRequest
 */
-func (a *PartStudioApiService) UpdatePartStudioFeature(ctx context.Context, did string, wid string, eid string, fid string) ApiUpdatePartStudioFeatureRequest {
+func (a *PartStudioAPIService) UpdatePartStudioFeature(ctx context.Context, did string, wid string, eid string, fid string) ApiUpdatePartStudioFeatureRequest {
 	return ApiUpdatePartStudioFeatureRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -4513,7 +4513,7 @@ func (a *PartStudioApiService) UpdatePartStudioFeature(ctx context.Context, did 
 // Execute executes the request
 //
 //	@return BTFeatureDefinitionResponse1617
-func (a *PartStudioApiService) UpdatePartStudioFeatureExecute(r ApiUpdatePartStudioFeatureRequest) (*BTFeatureDefinitionResponse1617, *http.Response, error) {
+func (a *PartStudioAPIService) UpdatePartStudioFeatureExecute(r ApiUpdatePartStudioFeatureRequest) (*BTFeatureDefinitionResponse1617, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -4521,7 +4521,7 @@ func (a *PartStudioApiService) UpdatePartStudioFeatureExecute(r ApiUpdatePartStu
 		localVarReturnValue *BTFeatureDefinitionResponse1617
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.UpdatePartStudioFeature")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.UpdatePartStudioFeature")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -4601,7 +4601,7 @@ func (a *PartStudioApiService) UpdatePartStudioFeatureExecute(r ApiUpdatePartStu
 
 type ApiUpdateRollbackRequest struct {
 	ctx        context.Context
-	ApiService *PartStudioApiService
+	ApiService *PartStudioAPIService
 	did        string
 	wid        string
 	eid        string
@@ -4637,7 +4637,7 @@ See the [Part Studios API Guide](https://onshape-public.github.io/docs/api-adv/p
 	@param eid Element ID.
 	@return ApiUpdateRollbackRequest
 */
-func (a *PartStudioApiService) UpdateRollback(ctx context.Context, did string, wid string, eid string) ApiUpdateRollbackRequest {
+func (a *PartStudioAPIService) UpdateRollback(ctx context.Context, did string, wid string, eid string) ApiUpdateRollbackRequest {
 	return ApiUpdateRollbackRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -4650,7 +4650,7 @@ func (a *PartStudioApiService) UpdateRollback(ctx context.Context, did string, w
 // Execute executes the request
 //
 //	@return BTSetFeatureRollbackResponse1042
-func (a *PartStudioApiService) UpdateRollbackExecute(r ApiUpdateRollbackRequest) (*BTSetFeatureRollbackResponse1042, *http.Response, error) {
+func (a *PartStudioAPIService) UpdateRollbackExecute(r ApiUpdateRollbackRequest) (*BTSetFeatureRollbackResponse1042, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -4658,7 +4658,7 @@ func (a *PartStudioApiService) UpdateRollbackExecute(r ApiUpdateRollbackRequest)
 		localVarReturnValue *BTSetFeatureRollbackResponse1042
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioApiService.UpdateRollback")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "PartStudioAPIService.UpdateRollback")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}

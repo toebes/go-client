@@ -3,21 +3,21 @@
 ## Enum
 
 
-* `GBTWeldFinishingNone` (value: `"NONE"`)
+* `None` (value: `"NONE"`)
 
-* `GBTWeldFinishingChipping` (value: `"CHIPPING"`)
+* `Chipping` (value: `"CHIPPING"`)
 
-* `GBTWeldFinishingGrinding` (value: `"GRINDING"`)
+* `Grinding` (value: `"GRINDING"`)
 
-* `GBTWeldFinishingHammering` (value: `"HAMMERING"`)
+* `Hammering` (value: `"HAMMERING"`)
 
-* `GBTWeldFinishingMachining` (value: `"MACHINING"`)
+* `Machining` (value: `"MACHINING"`)
 
-* `GBTWeldFinishingRolling` (value: `"ROLLING"`)
+* `Rolling` (value: `"ROLLING"`)
 
-* `GBTWeldFinishingUnspecified` (value: `"UNSPECIFIED"`)
+* `Unspecified` (value: `"UNSPECIFIED"`)
 
-* `GBTWeldFinishingUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

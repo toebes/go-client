@@ -3,45 +3,45 @@
 ## Enum
 
 
-* `GBTPOperatorNone` (value: `"NONE"`)
+* `None` (value: `"NONE"`)
 
-* `GBTPOperatorPlus` (value: `"PLUS"`)
+* `Plus` (value: `"PLUS"`)
 
-* `GBTPOperatorMinus` (value: `"MINUS"`)
+* `Minus` (value: `"MINUS"`)
 
-* `GBTPOperatorTimes` (value: `"TIMES"`)
+* `Times` (value: `"TIMES"`)
 
-* `GBTPOperatorDivide` (value: `"DIVIDE"`)
+* `Divide` (value: `"DIVIDE"`)
 
-* `GBTPOperatorModulus` (value: `"MODULUS"`)
+* `Modulus` (value: `"MODULUS"`)
 
-* `GBTPOperatorPower` (value: `"POWER"`)
+* `Power` (value: `"POWER"`)
 
-* `GBTPOperatorNegate` (value: `"NEGATE"`)
+* `Negate` (value: `"NEGATE"`)
 
-* `GBTPOperatorOr` (value: `"OR"`)
+* `Or` (value: `"OR"`)
 
-* `GBTPOperatorAnd` (value: `"AND"`)
+* `And` (value: `"AND"`)
 
-* `GBTPOperatorNot` (value: `"NOT"`)
+* `Not` (value: `"NOT"`)
 
-* `GBTPOperatorEqualTo` (value: `"EQUAL_TO"`)
+* `EqualTo` (value: `"EQUAL_TO"`)
 
-* `GBTPOperatorNotEqualTo` (value: `"NOT_EQUAL_TO"`)
+* `NotEqualTo` (value: `"NOT_EQUAL_TO"`)
 
-* `GBTPOperatorGreater` (value: `"GREATER"`)
+* `Greater` (value: `"GREATER"`)
 
-* `GBTPOperatorLess` (value: `"LESS"`)
+* `Less` (value: `"LESS"`)
 
-* `GBTPOperatorGreaterOrEqual` (value: `"GREATER_OR_EQUAL"`)
+* `GreaterOrEqual` (value: `"GREATER_OR_EQUAL"`)
 
-* `GBTPOperatorLessOrEqual` (value: `"LESS_OR_EQUAL"`)
+* `LessOrEqual` (value: `"LESS_OR_EQUAL"`)
 
-* `GBTPOperatorConcatenate` (value: `"CONCATENATE"`)
+* `Concatenate` (value: `"CONCATENATE"`)
 
-* `GBTPOperatorConditional` (value: `"CONDITIONAL"`)
+* `Conditional` (value: `"CONDITIONAL"`)
 
-* `GBTPOperatorUndefinedCoalescing` (value: `"UNDEFINED_COALESCING"`)
+* `UndefinedCoalescing` (value: `"UNDEFINED_COALESCING"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

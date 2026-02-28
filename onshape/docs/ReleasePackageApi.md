@@ -1,13 +1,13 @@
-# \ReleasePackageApi
+# \ReleasePackageAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateObsoletionPackage**](ReleasePackageApi.md#CreateObsoletionPackage) | **Post** /releasepackages/obsoletion/{wfid} | Create an obsoletion package to make an existing revision obsolete.
-[**CreateReleasePackage**](ReleasePackageApi.md#CreateReleasePackage) | **Post** /releasepackages/release/{wfid} | Create a new release package for one or more items.
-[**GetReleasePackage**](ReleasePackageApi.md#GetReleasePackage) | **Get** /releasepackages/{rpid} | Get details about the specified release package.
-[**UpdateReleasePackage**](ReleasePackageApi.md#UpdateReleasePackage) | **Post** /releasepackages/{rpid} | Update the release/obsoletion package/item properties.
+[**CreateObsoletionPackage**](ReleasePackageAPI.md#CreateObsoletionPackage) | **Post** /releasepackages/obsoletion/{wfid} | Create an obsoletion package to make an existing revision obsolete.
+[**CreateReleasePackage**](ReleasePackageAPI.md#CreateReleasePackage) | **Post** /releasepackages/release/{wfid} | Create a new release package for one or more items.
+[**GetReleasePackage**](ReleasePackageAPI.md#GetReleasePackage) | **Get** /releasepackages/{rpid} | Get details about the specified release package.
+[**UpdateReleasePackage**](ReleasePackageAPI.md#UpdateReleasePackage) | **Post** /releasepackages/{rpid} | Update the release/obsoletion package/item properties.
 
 
 
@@ -36,13 +36,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ReleasePackageApi.CreateObsoletionPackage(context.Background(), wfid).RevisionId(revisionId).DebugMode(debugMode).Execute()
+    resp, r, err := apiClient.ReleasePackageAPI.CreateObsoletionPackage(context.Background(), wfid).RevisionId(revisionId).DebugMode(debugMode).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ReleasePackageApi.CreateObsoletionPackage``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ReleasePackageAPI.CreateObsoletionPackage``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateObsoletionPackage`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `ReleasePackageApi.CreateObsoletionPackage`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ReleasePackageAPI.CreateObsoletionPackage`: %v\n", resp)
 }
 ```
 
@@ -110,13 +110,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ReleasePackageApi.CreateReleasePackage(context.Background(), wfid).BTReleasePackageParams(bTReleasePackageParams).DebugMode(debugMode).Execute()
+    resp, r, err := apiClient.ReleasePackageAPI.CreateReleasePackage(context.Background(), wfid).BTReleasePackageParams(bTReleasePackageParams).DebugMode(debugMode).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ReleasePackageApi.CreateReleasePackage``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ReleasePackageAPI.CreateReleasePackage``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateReleasePackage`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `ReleasePackageApi.CreateReleasePackage`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ReleasePackageAPI.CreateReleasePackage`: %v\n", resp)
 }
 ```
 
@@ -181,13 +181,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ReleasePackageApi.GetReleasePackage(context.Background(), rpid).Detailed(detailed).Execute()
+    resp, r, err := apiClient.ReleasePackageAPI.GetReleasePackage(context.Background(), rpid).Detailed(detailed).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ReleasePackageApi.GetReleasePackage``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ReleasePackageAPI.GetReleasePackage``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetReleasePackage`: BTReleasePackageInfo
-    fmt.Fprintf(os.Stdout, "Response from `ReleasePackageApi.GetReleasePackage`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ReleasePackageAPI.GetReleasePackage`: %v\n", resp)
 }
 ```
 
@@ -255,13 +255,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ReleasePackageApi.UpdateReleasePackage(context.Background(), rpid).BTUpdateReleasePackageParams(bTUpdateReleasePackageParams).Action(action).Wfaction(wfaction).Execute()
+    resp, r, err := apiClient.ReleasePackageAPI.UpdateReleasePackage(context.Background(), rpid).BTUpdateReleasePackageParams(bTUpdateReleasePackageParams).Action(action).Wfaction(wfaction).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ReleasePackageApi.UpdateReleasePackage``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ReleasePackageAPI.UpdateReleasePackage``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateReleasePackage`: BTReleasePackageInfo
-    fmt.Fprintf(os.Stdout, "Response from `ReleasePackageApi.UpdateReleasePackage`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ReleasePackageAPI.UpdateReleasePackage`: %v\n", resp)
 }
 ```
 

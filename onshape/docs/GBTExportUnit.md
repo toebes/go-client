@@ -3,19 +3,19 @@
 ## Enum
 
 
-* `GBTExportUnitMeter` (value: `"METER"`)
+* `Meter` (value: `"METER"`)
 
-* `GBTExportUnitCentimeter` (value: `"CENTIMETER"`)
+* `Centimeter` (value: `"CENTIMETER"`)
 
-* `GBTExportUnitMillimeter` (value: `"MILLIMETER"`)
+* `Millimeter` (value: `"MILLIMETER"`)
 
-* `GBTExportUnitInch` (value: `"INCH"`)
+* `Inch` (value: `"INCH"`)
 
-* `GBTExportUnitFoot` (value: `"FOOT"`)
+* `Foot` (value: `"FOOT"`)
 
-* `GBTExportUnitYard` (value: `"YARD"`)
+* `Yard` (value: `"YARD"`)
 
-* `GBTExportUnitUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

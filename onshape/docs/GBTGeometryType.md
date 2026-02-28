@@ -3,45 +3,45 @@
 ## Enum
 
 
-* `GBTGeometryTypeLine` (value: `"LINE"`)
+* `Line` (value: `"LINE"`)
 
-* `GBTGeometryTypeCircle` (value: `"CIRCLE"`)
+* `Circle` (value: `"CIRCLE"`)
 
-* `GBTGeometryTypeArc` (value: `"ARC"`)
+* `Arc` (value: `"ARC"`)
 
-* `GBTGeometryTypePlane` (value: `"PLANE"`)
+* `Plane` (value: `"PLANE"`)
 
-* `GBTGeometryTypeCylinder` (value: `"CYLINDER"`)
+* `Cylinder` (value: `"CYLINDER"`)
 
-* `GBTGeometryTypeCone` (value: `"CONE"`)
+* `Cone` (value: `"CONE"`)
 
-* `GBTGeometryTypeSphere` (value: `"SPHERE"`)
+* `Sphere` (value: `"SPHERE"`)
 
-* `GBTGeometryTypeTorus` (value: `"TORUS"`)
+* `Torus` (value: `"TORUS"`)
 
-* `GBTGeometryTypeSpline` (value: `"SPLINE"`)
+* `Spline` (value: `"SPLINE"`)
 
-* `GBTGeometryTypeEllipse` (value: `"ELLIPSE"`)
+* `Ellipse` (value: `"ELLIPSE"`)
 
-* `GBTGeometryTypeMesh` (value: `"MESH"`)
+* `Mesh` (value: `"MESH"`)
 
-* `GBTGeometryTypeConic` (value: `"CONIC"`)
+* `Conic` (value: `"CONIC"`)
 
-* `GBTGeometryTypeRevolved` (value: `"REVOLVED"`)
+* `Revolved` (value: `"REVOLVED"`)
 
-* `GBTGeometryTypeExtruded` (value: `"EXTRUDED"`)
+* `Extruded` (value: `"EXTRUDED"`)
 
-* `GBTGeometryTypeAllMesh` (value: `"ALL_MESH"`)
+* `AllMesh` (value: `"ALL_MESH"`)
 
-* `GBTGeometryTypeMixedMesh` (value: `"MIXED_MESH"`)
+* `MixedMesh` (value: `"MIXED_MESH"`)
 
-* `GBTGeometryTypeSplineInternalPoint` (value: `"SPLINE_INTERNAL_POINT"`)
+* `SplineInternalPoint` (value: `"SPLINE_INTERNAL_POINT"`)
 
-* `GBTGeometryTypeSplineControlPolygon` (value: `"SPLINE_CONTROL_POLYGON"`)
+* `SplineControlPolygon` (value: `"SPLINE_CONTROL_POLYGON"`)
 
-* `GBTGeometryTypeEllipticalArc` (value: `"ELLIPTICAL_ARC"`)
+* `EllipticalArc` (value: `"ELLIPTICAL_ARC"`)
 
-* `GBTGeometryTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

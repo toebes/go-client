@@ -20,11 +20,11 @@ type GBTWeldContourType string
 
 // List of GBTWeldContourType
 const (
-	GBTWeldContourTypeNone    GBTWeldContourType = "NONE"
-	GBTWeldContourTypeFlat    GBTWeldContourType = "FLAT"
-	GBTWeldContourTypeConvex  GBTWeldContourType = "CONVEX"
-	GBTWeldContourTypeConcave GBTWeldContourType = "CONCAVE"
-	GBTWeldContourTypeUnknown GBTWeldContourType = "UNKNOWN"
+	None    GBTWeldContourType = "NONE"
+	Flat    GBTWeldContourType = "FLAT"
+	Convex  GBTWeldContourType = "CONVEX"
+	Concave GBTWeldContourType = "CONCAVE"
+	Unknown GBTWeldContourType = "UNKNOWN"
 )
 
 // All allowed values of GBTWeldContourType enum

@@ -20,9 +20,9 @@ type GBTWeldStandard string
 
 // List of GBTWeldStandard
 const (
-	GBTWeldStandardAnsi    GBTWeldStandard = "ANSI"
-	GBTWeldStandardIso     GBTWeldStandard = "ISO"
-	GBTWeldStandardUnknown GBTWeldStandard = "UNKNOWN"
+	Ansi    GBTWeldStandard = "ANSI"
+	Iso     GBTWeldStandard = "ISO"
+	Unknown GBTWeldStandard = "UNKNOWN"
 )
 
 // All allowed values of GBTWeldStandard enum

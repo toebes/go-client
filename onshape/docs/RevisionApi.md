@@ -1,18 +1,18 @@
-# \RevisionApi
+# \RevisionAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteRevisionHistory**](RevisionApi.md#DeleteRevisionHistory) | **Delete** /revisions/companies/{cid}/partnumber/{pnum}/elementType/{et} | Delete all revisions for a part number.
-[**EnumerateRevisions**](RevisionApi.md#EnumerateRevisions) | **Get** /revisions/companies/{cid} | Get all revisions for a company.
-[**GetAllInDocument**](RevisionApi.md#GetAllInDocument) | **Get** /revisions/d/{did} | Get all revisions for a document.
-[**GetAllInDocumentVersion**](RevisionApi.md#GetAllInDocumentVersion) | **Get** /revisions/d/{did}/v/{vid} | Get all revisions for a version.
-[**GetLatestInDocumentOrCompany**](RevisionApi.md#GetLatestInDocumentOrCompany) | **Get** /revisions/{cd}/{cdid}/p/{pnum}/latest | Get the latest revision information for a part.
-[**GetRevisionByPartNumber**](RevisionApi.md#GetRevisionByPartNumber) | **Get** /revisions/c/{cid}/partnumber/{pnum} | Get details for the specified revision.
-[**GetRevisionHistoryInCompanyByElementId**](RevisionApi.md#GetRevisionHistoryInCompanyByElementId) | **Get** /revisions/companies/{cid}/d/{did}/{wv}/{wvid}/e/{eid} | Get all revisions for an element (tab).
-[**GetRevisionHistoryInCompanyByPartId**](RevisionApi.md#GetRevisionHistoryInCompanyByPartId) | **Get** /revisions/companies/{cid}/d/{did}/{wv}/{wvid}/e/{eid}/p/{pid} | Get all revisions for a part ID.
-[**GetRevisionHistoryInCompanyByPartNumber**](RevisionApi.md#GetRevisionHistoryInCompanyByPartNumber) | **Get** /revisions/companies/{cid}/partnumber/{pnum} | Get all revisions for a part number.
+[**DeleteRevisionHistory**](RevisionAPI.md#DeleteRevisionHistory) | **Delete** /revisions/companies/{cid}/partnumber/{pnum}/elementType/{et} | Delete all revisions for a part number.
+[**EnumerateRevisions**](RevisionAPI.md#EnumerateRevisions) | **Get** /revisions/companies/{cid} | Get all revisions for a company.
+[**GetAllInDocument**](RevisionAPI.md#GetAllInDocument) | **Get** /revisions/d/{did} | Get all revisions for a document.
+[**GetAllInDocumentVersion**](RevisionAPI.md#GetAllInDocumentVersion) | **Get** /revisions/d/{did}/v/{vid} | Get all revisions for a version.
+[**GetLatestInDocumentOrCompany**](RevisionAPI.md#GetLatestInDocumentOrCompany) | **Get** /revisions/{cd}/{cdid}/p/{pnum}/latest | Get the latest revision information for a part.
+[**GetRevisionByPartNumber**](RevisionAPI.md#GetRevisionByPartNumber) | **Get** /revisions/c/{cid}/partnumber/{pnum} | Get details for the specified revision.
+[**GetRevisionHistoryInCompanyByElementId**](RevisionAPI.md#GetRevisionHistoryInCompanyByElementId) | **Get** /revisions/companies/{cid}/d/{did}/{wv}/{wvid}/e/{eid} | Get all revisions for an element (tab).
+[**GetRevisionHistoryInCompanyByPartId**](RevisionAPI.md#GetRevisionHistoryInCompanyByPartId) | **Get** /revisions/companies/{cid}/d/{did}/{wv}/{wvid}/e/{eid}/p/{pid} | Get all revisions for a part ID.
+[**GetRevisionHistoryInCompanyByPartNumber**](RevisionAPI.md#GetRevisionHistoryInCompanyByPartNumber) | **Get** /revisions/companies/{cid}/partnumber/{pnum} | Get all revisions for a part number.
 
 
 
@@ -44,13 +44,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.RevisionApi.DeleteRevisionHistory(context.Background(), cid, pnum, et).IgnoreLinkedDocuments(ignoreLinkedDocuments).Execute()
+    resp, r, err := apiClient.RevisionAPI.DeleteRevisionHistory(context.Background(), cid, pnum, et).IgnoreLinkedDocuments(ignoreLinkedDocuments).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `RevisionApi.DeleteRevisionHistory``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `RevisionAPI.DeleteRevisionHistory``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteRevisionHistory`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `RevisionApi.DeleteRevisionHistory`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `RevisionAPI.DeleteRevisionHistory`: %v\n", resp)
 }
 ```
 
@@ -124,13 +124,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.RevisionApi.EnumerateRevisions(context.Background(), cid).ElementType(elementType).Limit(limit).LatestOnly(latestOnly).After(after).Execute()
+    resp, r, err := apiClient.RevisionAPI.EnumerateRevisions(context.Background(), cid).ElementType(elementType).Limit(limit).LatestOnly(latestOnly).After(after).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `RevisionApi.EnumerateRevisions``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `RevisionAPI.EnumerateRevisions``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `EnumerateRevisions`: BTListResponseBTRevisionInfo
-    fmt.Fprintf(os.Stdout, "Response from `RevisionApi.EnumerateRevisions`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `RevisionAPI.EnumerateRevisions`: %v\n", resp)
 }
 ```
 
@@ -198,13 +198,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.RevisionApi.GetAllInDocument(context.Background(), did).Execute()
+    resp, r, err := apiClient.RevisionAPI.GetAllInDocument(context.Background(), did).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `RevisionApi.GetAllInDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `RevisionAPI.GetAllInDocument``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAllInDocument`: BTListResponseBTRevisionInfo
-    fmt.Fprintf(os.Stdout, "Response from `RevisionApi.GetAllInDocument`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `RevisionAPI.GetAllInDocument`: %v\n", resp)
 }
 ```
 
@@ -269,13 +269,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.RevisionApi.GetAllInDocumentVersion(context.Background(), did, vid).Execute()
+    resp, r, err := apiClient.RevisionAPI.GetAllInDocumentVersion(context.Background(), did, vid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `RevisionApi.GetAllInDocumentVersion``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `RevisionAPI.GetAllInDocumentVersion``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAllInDocumentVersion`: BTListResponseBTRevisionInfo
-    fmt.Fprintf(os.Stdout, "Response from `RevisionApi.GetAllInDocumentVersion`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `RevisionAPI.GetAllInDocumentVersion`: %v\n", resp)
 }
 ```
 
@@ -344,13 +344,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.RevisionApi.GetLatestInDocumentOrCompany(context.Background(), cd, cdid, pnum).Et(et).Execute()
+    resp, r, err := apiClient.RevisionAPI.GetLatestInDocumentOrCompany(context.Background(), cd, cdid, pnum).Et(et).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `RevisionApi.GetLatestInDocumentOrCompany``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `RevisionAPI.GetLatestInDocumentOrCompany``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetLatestInDocumentOrCompany`: BTRevisionInfo
-    fmt.Fprintf(os.Stdout, "Response from `RevisionApi.GetLatestInDocumentOrCompany`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `RevisionAPI.GetLatestInDocumentOrCompany`: %v\n", resp)
 }
 ```
 
@@ -422,13 +422,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.RevisionApi.GetRevisionByPartNumber(context.Background(), cid, pnum).Revision(revision).ElementType(elementType).Execute()
+    resp, r, err := apiClient.RevisionAPI.GetRevisionByPartNumber(context.Background(), cid, pnum).Revision(revision).ElementType(elementType).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `RevisionApi.GetRevisionByPartNumber``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `RevisionAPI.GetRevisionByPartNumber``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetRevisionByPartNumber`: BTRevisionInfo
-    fmt.Fprintf(os.Stdout, "Response from `RevisionApi.GetRevisionByPartNumber`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `RevisionAPI.GetRevisionByPartNumber`: %v\n", resp)
 }
 ```
 
@@ -506,13 +506,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.RevisionApi.GetRevisionHistoryInCompanyByElementId(context.Background(), cid, did, wv, wvid, eid).ElementType(elementType).LinkDocumentId(linkDocumentId).Configuration(configuration).FillApprovers(fillApprovers).FillExportPermission(fillExportPermission).SupportChangeType(supportChangeType).Execute()
+    resp, r, err := apiClient.RevisionAPI.GetRevisionHistoryInCompanyByElementId(context.Background(), cid, did, wv, wvid, eid).ElementType(elementType).LinkDocumentId(linkDocumentId).Configuration(configuration).FillApprovers(fillApprovers).FillExportPermission(fillExportPermission).SupportChangeType(supportChangeType).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `RevisionApi.GetRevisionHistoryInCompanyByElementId``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `RevisionAPI.GetRevisionHistoryInCompanyByElementId``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetRevisionHistoryInCompanyByElementId`: BTRevisionListResponse
-    fmt.Fprintf(os.Stdout, "Response from `RevisionApi.GetRevisionHistoryInCompanyByElementId`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `RevisionAPI.GetRevisionHistoryInCompanyByElementId`: %v\n", resp)
 }
 ```
 
@@ -600,13 +600,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.RevisionApi.GetRevisionHistoryInCompanyByPartId(context.Background(), cid, did, wv, wvid, eid, pid).Configuration(configuration).LinkDocumentId(linkDocumentId).FillApprovers(fillApprovers).FillExportPermission(fillExportPermission).SupportChangeType(supportChangeType).Execute()
+    resp, r, err := apiClient.RevisionAPI.GetRevisionHistoryInCompanyByPartId(context.Background(), cid, did, wv, wvid, eid, pid).Configuration(configuration).LinkDocumentId(linkDocumentId).FillApprovers(fillApprovers).FillExportPermission(fillExportPermission).SupportChangeType(supportChangeType).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `RevisionApi.GetRevisionHistoryInCompanyByPartId``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `RevisionAPI.GetRevisionHistoryInCompanyByPartId``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetRevisionHistoryInCompanyByPartId`: BTRevisionListResponse
-    fmt.Fprintf(os.Stdout, "Response from `RevisionApi.GetRevisionHistoryInCompanyByPartId`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `RevisionAPI.GetRevisionHistoryInCompanyByPartId`: %v\n", resp)
 }
 ```
 
@@ -690,13 +690,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.RevisionApi.GetRevisionHistoryInCompanyByPartNumber(context.Background(), cid, pnum).ElementType(elementType).FillApprovers(fillApprovers).FillExportPermission(fillExportPermission).SupportChangeType(supportChangeType).Execute()
+    resp, r, err := apiClient.RevisionAPI.GetRevisionHistoryInCompanyByPartNumber(context.Background(), cid, pnum).ElementType(elementType).FillApprovers(fillApprovers).FillExportPermission(fillExportPermission).SupportChangeType(supportChangeType).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `RevisionApi.GetRevisionHistoryInCompanyByPartNumber``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `RevisionAPI.GetRevisionHistoryInCompanyByPartNumber``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetRevisionHistoryInCompanyByPartNumber`: BTRevisionListResponse
-    fmt.Fprintf(os.Stdout, "Response from `RevisionApi.GetRevisionHistoryInCompanyByPartNumber`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `RevisionAPI.GetRevisionHistoryInCompanyByPartNumber`: %v\n", resp)
 }
 ```
 

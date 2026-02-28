@@ -3,29 +3,29 @@
 ## Enum
 
 
-* `GBTToleranceTypeNone` (value: `"NONE"`)
+* `None` (value: `"NONE"`)
 
-* `GBTToleranceTypeSymmetrical` (value: `"SYMMETRICAL"`)
+* `Symmetrical` (value: `"SYMMETRICAL"`)
 
-* `GBTToleranceTypeDeviation` (value: `"DEVIATION"`)
+* `Deviation` (value: `"DEVIATION"`)
 
-* `GBTToleranceTypeLimits` (value: `"LIMITS"`)
+* `Limits` (value: `"LIMITS"`)
 
-* `GBTToleranceTypeMin` (value: `"MIN"`)
+* `Min` (value: `"MIN"`)
 
-* `GBTToleranceTypeMax` (value: `"MAX"`)
+* `Max` (value: `"MAX"`)
 
-* `GBTToleranceTypeFit` (value: `"FIT"`)
+* `Fit` (value: `"FIT"`)
 
-* `GBTToleranceTypeFitWithTolerance` (value: `"FIT_WITH_TOLERANCE"`)
+* `FitWithTolerance` (value: `"FIT_WITH_TOLERANCE"`)
 
-* `GBTToleranceTypeFitToleranceOnly` (value: `"FIT_TOLERANCE_ONLY"`)
+* `FitToleranceOnly` (value: `"FIT_TOLERANCE_ONLY"`)
 
-* `GBTToleranceTypeDefault` (value: `"DEFAULT"`)
+* `Default` (value: `"DEFAULT"`)
 
-* `GBTToleranceTypeBasic` (value: `"BASIC"`)
+* `Basic` (value: `"BASIC"`)
 
-* `GBTToleranceTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

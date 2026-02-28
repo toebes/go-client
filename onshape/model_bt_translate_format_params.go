@@ -11,7 +11,9 @@ Contact: api-support@onshape.zendesk.com
 package onshape
 
 import (
+	"bytes"
 	"encoding/json"
+	"fmt"
 )
 
 // BTTranslateFormatParams struct for BTTranslateFormatParams
@@ -164,11 +166,11 @@ func NewBTTranslateFormatParams(formatName string) *BTTranslateFormatParams {
 	var evaluateExportRule bool = false
 	this.EvaluateExportRule = &evaluateExportRule
 	this.FormatName = formatName
-	var parasolidMode GBTParasolidEncodingType = GBTParasolidEncodingTypeText
+	var parasolidMode GBTParasolidEncodingType = TEXT
 	this.ParasolidMode = &parasolidMode
 	var stepVersionString string = "AP242"
 	this.StepVersionString = &stepVersionString
-	var stlMode GBTStlEncodingType = GBTStlEncodingTypeText
+	var stlMode GBTStlEncodingType = TEXT
 	this.StlMode = &stlMode
 	var versionString string = "0"
 	this.VersionString = &versionString
@@ -184,11 +186,11 @@ func NewBTTranslateFormatParamsWithDefaults() *BTTranslateFormatParams {
 	this.AllowFaultyParts = &allowFaultyParts
 	var evaluateExportRule bool = false
 	this.EvaluateExportRule = &evaluateExportRule
-	var parasolidMode GBTParasolidEncodingType = GBTParasolidEncodingTypeText
+	var parasolidMode GBTParasolidEncodingType = TEXT
 	this.ParasolidMode = &parasolidMode
 	var stepVersionString string = "AP242"
 	this.StepVersionString = &stepVersionString
-	var stlMode GBTStlEncodingType = GBTStlEncodingTypeText
+	var stlMode GBTStlEncodingType = TEXT
 	this.StlMode = &stlMode
 	var versionString string = "0"
 	this.VersionString = &versionString

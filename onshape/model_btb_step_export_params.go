@@ -59,7 +59,7 @@ func NewBTBStepExportParams() *BTBStepExportParams {
 	this.IsYAxisUp = &isYAxisUp
 	var notifyUser bool = true
 	this.NotifyUser = &notifyUser
-	var stepUnit GBTExportUnit = GBTExportUnitMeter
+	var stepUnit GBTExportUnit = METER
 	this.StepUnit = &stepUnit
 	var stepVersionString string = "AP242"
 	this.StepVersionString = &stepVersionString
@@ -87,7 +87,7 @@ func NewBTBStepExportParamsWithDefaults() *BTBStepExportParams {
 	this.IsYAxisUp = &isYAxisUp
 	var notifyUser bool = true
 	this.NotifyUser = &notifyUser
-	var stepUnit GBTExportUnit = GBTExportUnitMeter
+	var stepUnit GBTExportUnit = METER
 	this.StepUnit = &stepUnit
 	var stepVersionString string = "AP242"
 	this.StepVersionString = &stepVersionString

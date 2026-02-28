@@ -20,8 +20,8 @@ type GBTAppearanceType string
 
 // List of GBTAppearanceType
 const (
-	GBTAppearanceTypeUnknown GBTAppearanceType = "UNKNOWN"
-	GBTAppearanceTypeSketch  GBTAppearanceType = "SKETCH"
+	Unknown GBTAppearanceType = "UNKNOWN"
+	Sketch  GBTAppearanceType = "SKETCH"
 )
 
 // All allowed values of GBTAppearanceType enum

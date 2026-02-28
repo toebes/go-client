@@ -20,16 +20,16 @@ type GBTEdgeType string
 
 // List of GBTEdgeType
 const (
-	GBTEdgeTypeOther        GBTEdgeType = "OTHER"
-	GBTEdgeTypeLine         GBTEdgeType = "LINE"
-	GBTEdgeTypeSpline       GBTEdgeType = "SPLINE"
-	GBTEdgeTypeCircle       GBTEdgeType = "CIRCLE"
-	GBTEdgeTypeEllipse      GBTEdgeType = "ELLIPSE"
-	GBTEdgeTypeIntersection GBTEdgeType = "INTERSECTION"
-	GBTEdgeTypeSpcurve      GBTEdgeType = "SPCURVE"
-	GBTEdgeTypePolyline     GBTEdgeType = "POLYLINE"
-	GBTEdgeTypeConic        GBTEdgeType = "CONIC"
-	GBTEdgeTypeUnknown      GBTEdgeType = "UNKNOWN"
+	Other        GBTEdgeType = "OTHER"
+	Line         GBTEdgeType = "LINE"
+	Spline       GBTEdgeType = "SPLINE"
+	Circle       GBTEdgeType = "CIRCLE"
+	Ellipse      GBTEdgeType = "ELLIPSE"
+	Intersection GBTEdgeType = "INTERSECTION"
+	Spcurve      GBTEdgeType = "SPCURVE"
+	Polyline     GBTEdgeType = "POLYLINE"
+	Conic        GBTEdgeType = "CONIC"
+	Unknown      GBTEdgeType = "UNKNOWN"
 )
 
 // All allowed values of GBTEdgeType enum

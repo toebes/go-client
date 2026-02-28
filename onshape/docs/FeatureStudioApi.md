@@ -1,13 +1,13 @@
-# \FeatureStudioApi
+# \FeatureStudioAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateFeatureStudio**](FeatureStudioApi.md#CreateFeatureStudio) | **Post** /featurestudios/d/{did}/w/{wid} | Create a new Feature Studio tab in a document.
-[**GetFeatureStudioContents**](FeatureStudioApi.md#GetFeatureStudioContents) | **Get** /featurestudios/d/{did}/{wvm}/{wvmid}/e/{eid} | Get the text for a Feature Studio element.
-[**GetFeatureStudioSpecs**](FeatureStudioApi.md#GetFeatureStudioSpecs) | **Get** /featurestudios/d/{did}/{wvm}/{wvmid}/e/{eid}/featurespecs | Get the feature specs for a Feature Studio element.
-[**UpdateFeatureStudioContents**](FeatureStudioApi.md#UpdateFeatureStudioContents) | **Post** /featurestudios/d/{did}/{wvm}/{wvmid}/e/{eid} | Update the text for a Feature Studio element.
+[**CreateFeatureStudio**](FeatureStudioAPI.md#CreateFeatureStudio) | **Post** /featurestudios/d/{did}/w/{wid} | Create a new Feature Studio tab in a document.
+[**GetFeatureStudioContents**](FeatureStudioAPI.md#GetFeatureStudioContents) | **Get** /featurestudios/d/{did}/{wvm}/{wvmid}/e/{eid} | Get the text for a Feature Studio element.
+[**GetFeatureStudioSpecs**](FeatureStudioAPI.md#GetFeatureStudioSpecs) | **Get** /featurestudios/d/{did}/{wvm}/{wvmid}/e/{eid}/featurespecs | Get the feature specs for a Feature Studio element.
+[**UpdateFeatureStudioContents**](FeatureStudioAPI.md#UpdateFeatureStudioContents) | **Post** /featurestudios/d/{did}/{wvm}/{wvmid}/e/{eid} | Update the text for a Feature Studio element.
 
 
 
@@ -38,13 +38,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.FeatureStudioApi.CreateFeatureStudio(context.Background(), did, wid).BTModelElementParams(bTModelElementParams).Execute()
+    resp, r, err := apiClient.FeatureStudioAPI.CreateFeatureStudio(context.Background(), did, wid).BTModelElementParams(bTModelElementParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `FeatureStudioApi.CreateFeatureStudio``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `FeatureStudioAPI.CreateFeatureStudio``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateFeatureStudio`: BTDocumentElementInfo
-    fmt.Fprintf(os.Stdout, "Response from `FeatureStudioApi.CreateFeatureStudio`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `FeatureStudioAPI.CreateFeatureStudio`: %v\n", resp)
 }
 ```
 
@@ -112,13 +112,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.FeatureStudioApi.GetFeatureStudioContents(context.Background(), did, wvm, wvmid, eid).Execute()
+    resp, r, err := apiClient.FeatureStudioAPI.GetFeatureStudioContents(context.Background(), did, wvm, wvmid, eid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `FeatureStudioApi.GetFeatureStudioContents``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `FeatureStudioAPI.GetFeatureStudioContents``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetFeatureStudioContents`: BTFeatureStudioContents2239
-    fmt.Fprintf(os.Stdout, "Response from `FeatureStudioApi.GetFeatureStudioContents`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `FeatureStudioAPI.GetFeatureStudioContents`: %v\n", resp)
 }
 ```
 
@@ -189,13 +189,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.FeatureStudioApi.GetFeatureStudioSpecs(context.Background(), did, wvm, wvmid, eid).Execute()
+    resp, r, err := apiClient.FeatureStudioAPI.GetFeatureStudioSpecs(context.Background(), did, wvm, wvmid, eid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `FeatureStudioApi.GetFeatureStudioSpecs``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `FeatureStudioAPI.GetFeatureStudioSpecs``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetFeatureStudioSpecs`: BTFeatureSpecsResponse664
-    fmt.Fprintf(os.Stdout, "Response from `FeatureStudioApi.GetFeatureStudioSpecs`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `FeatureStudioAPI.GetFeatureStudioSpecs`: %v\n", resp)
 }
 ```
 
@@ -267,13 +267,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.FeatureStudioApi.UpdateFeatureStudioContents(context.Background(), did, wvm, wvmid, eid).BTFeatureStudioContents2239(bTFeatureStudioContents2239).Execute()
+    resp, r, err := apiClient.FeatureStudioAPI.UpdateFeatureStudioContents(context.Background(), did, wvm, wvmid, eid).BTFeatureStudioContents2239(bTFeatureStudioContents2239).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `FeatureStudioApi.UpdateFeatureStudioContents``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `FeatureStudioAPI.UpdateFeatureStudioContents``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateFeatureStudioContents`: BTFeatureStudioContents2239
-    fmt.Fprintf(os.Stdout, "Response from `FeatureStudioApi.UpdateFeatureStudioContents`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `FeatureStudioAPI.UpdateFeatureStudioContents`: %v\n", resp)
 }
 ```
 

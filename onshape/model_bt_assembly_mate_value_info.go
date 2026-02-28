@@ -11,7 +11,9 @@ Contact: api-support@onshape.zendesk.com
 package onshape
 
 import (
+	"bytes"
 	"encoding/json"
+	"fmt"
 )
 
 // BTAssemblyMateValueInfo Quantities for length are specified in meters, and quantities for angles are specified in radians.

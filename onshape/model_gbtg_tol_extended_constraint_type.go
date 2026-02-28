@@ -20,22 +20,22 @@ type GBTGTolExtendedConstraintType string
 
 // List of GBTGTolExtendedConstraintType
 const (
-	GBTGTolExtendedConstraintTypeCompositeFrame   GBTGTolExtendedConstraintType = "COMPOSITE_FRAME"
-	GBTGTolExtendedConstraintTypeTruePosition     GBTGTolExtendedConstraintType = "TRUE_POSITION"
-	GBTGTolExtendedConstraintTypeParallelism      GBTGTolExtendedConstraintType = "PARALLELISM"
-	GBTGTolExtendedConstraintTypePerpendicularity GBTGTolExtendedConstraintType = "PERPENDICULARITY"
-	GBTGTolExtendedConstraintTypeProfileSurface   GBTGTolExtendedConstraintType = "PROFILE_SURFACE"
-	GBTGTolExtendedConstraintTypeTotalRunout      GBTGTolExtendedConstraintType = "TOTAL_RUNOUT"
-	GBTGTolExtendedConstraintTypeConcentricity    GBTGTolExtendedConstraintType = "CONCENTRICITY"
-	GBTGTolExtendedConstraintTypeSymmetry         GBTGTolExtendedConstraintType = "SYMMETRY"
-	GBTGTolExtendedConstraintTypeAngularity       GBTGTolExtendedConstraintType = "ANGULARITY"
-	GBTGTolExtendedConstraintTypeCylindricity     GBTGTolExtendedConstraintType = "CYLINDRICITY"
-	GBTGTolExtendedConstraintTypeFlatness         GBTGTolExtendedConstraintType = "FLATNESS"
-	GBTGTolExtendedConstraintTypeRoundness        GBTGTolExtendedConstraintType = "ROUNDNESS"
-	GBTGTolExtendedConstraintTypeStraightness     GBTGTolExtendedConstraintType = "STRAIGHTNESS"
-	GBTGTolExtendedConstraintTypeProfileLine      GBTGTolExtendedConstraintType = "PROFILE_LINE"
-	GBTGTolExtendedConstraintTypeCircularRunout   GBTGTolExtendedConstraintType = "CIRCULAR_RUNOUT"
-	GBTGTolExtendedConstraintTypeUnknown          GBTGTolExtendedConstraintType = "UNKNOWN"
+	CompositeFrame   GBTGTolExtendedConstraintType = "COMPOSITE_FRAME"
+	TruePosition     GBTGTolExtendedConstraintType = "TRUE_POSITION"
+	Parallelism      GBTGTolExtendedConstraintType = "PARALLELISM"
+	Perpendicularity GBTGTolExtendedConstraintType = "PERPENDICULARITY"
+	ProfileSurface   GBTGTolExtendedConstraintType = "PROFILE_SURFACE"
+	TotalRunout      GBTGTolExtendedConstraintType = "TOTAL_RUNOUT"
+	Concentricity    GBTGTolExtendedConstraintType = "CONCENTRICITY"
+	Symmetry         GBTGTolExtendedConstraintType = "SYMMETRY"
+	Angularity       GBTGTolExtendedConstraintType = "ANGULARITY"
+	Cylindricity     GBTGTolExtendedConstraintType = "CYLINDRICITY"
+	Flatness         GBTGTolExtendedConstraintType = "FLATNESS"
+	Roundness        GBTGTolExtendedConstraintType = "ROUNDNESS"
+	Straightness     GBTGTolExtendedConstraintType = "STRAIGHTNESS"
+	ProfileLine      GBTGTolExtendedConstraintType = "PROFILE_LINE"
+	CircularRunout   GBTGTolExtendedConstraintType = "CIRCULAR_RUNOUT"
+	Unknown          GBTGTolExtendedConstraintType = "UNKNOWN"
 )
 
 // All allowed values of GBTGTolExtendedConstraintType enum

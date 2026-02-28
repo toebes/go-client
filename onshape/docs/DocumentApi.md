@@ -1,45 +1,45 @@
-# \DocumentApi
+# \DocumentAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CopyWorkspace**](DocumentApi.md#CopyWorkspace) | **Post** /documents/{did}/workspaces/{wid}/copy | Copy workspace by document ID and workspace ID.
-[**CreateDocument**](DocumentApi.md#CreateDocument) | **Post** /documents | Create and upload a document.
-[**CreateVersion**](DocumentApi.md#CreateVersion) | **Post** /documents/d/{did}/versions | Create version by document ID.
-[**CreateWorkspace**](DocumentApi.md#CreateWorkspace) | **Post** /documents/d/{did}/workspaces | Create workspace by document ID.
-[**DeleteDocument**](DocumentApi.md#DeleteDocument) | **Delete** /documents/{did} | Delete document by document ID.
-[**DeleteWorkspace**](DocumentApi.md#DeleteWorkspace) | **Delete** /documents/d/{did}/workspaces/{wid} | Delete workspace by document ID and workspace ID.
-[**DownloadExternalData**](DocumentApi.md#DownloadExternalData) | **Get** /documents/d/{did}/externaldata/{fid} | Download external data file(s) associated with the document.
-[**Export2Json**](DocumentApi.md#Export2Json) | **Post** /documents/d/{did}/{wv}/{wvid}/e/{eid}/export | Export document by document ID, workspace or version ID, and tab ID.
-[**GetCurrentMicroversion**](DocumentApi.md#GetCurrentMicroversion) | **Get** /documents/d/{did}/{wv}/{wvid}/currentmicroversion | Retrieve current microversion by document ID and workspace or version ID.
-[**GetDocument**](DocumentApi.md#GetDocument) | **Get** /documents/{did} | Retrieve document by document ID.
-[**GetDocumentAcl**](DocumentApi.md#GetDocumentAcl) | **Get** /documents/{did}/acl | Retrieve access control list by document ID.
-[**GetDocumentContents**](DocumentApi.md#GetDocumentContents) | **Get** /documents/d/{did}/{wvm}/{wvmid}/contents | Retrieve tabs and folders by document ID and workspace or version or microversion ID.
-[**GetDocumentHistory**](DocumentApi.md#GetDocumentHistory) | **Get** /documents/d/{did}/{wm}/{wmid}/documenthistory | Retrieve document history by document ID and workspace or microversion ID.
-[**GetDocumentPermissionSet**](DocumentApi.md#GetDocumentPermissionSet) | **Get** /documents/{did}/permissionset | Retrieve Document permissions by document ID.
-[**GetDocumentVersions**](DocumentApi.md#GetDocumentVersions) | **Get** /documents/d/{did}/versions | Retrieve versions by document ID.
-[**GetDocumentWorkspaces**](DocumentApi.md#GetDocumentWorkspaces) | **Get** /documents/d/{did}/workspaces | Retrieve workspaces by document ID.
-[**GetDocuments**](DocumentApi.md#GetDocuments) | **Get** /documents | Get a list of documents that meet the criteria you specify.
-[**GetElementsInDocument**](DocumentApi.md#GetElementsInDocument) | **Get** /documents/d/{did}/{wvm}/{wvmid}/elements | Retrieve tabs by document ID and workspace or version or microversion ID.
-[**GetInsertables**](DocumentApi.md#GetInsertables) | **Get** /documents/d/{did}/{wv}/{wvid}/insertables | Retrieve insertables by document ID and workspace or version ID.
-[**GetUnitInfo**](DocumentApi.md#GetUnitInfo) | **Get** /documents/d/{did}/{wvm}/{wvmid}/unitinfo | Get the selected units and precision by document ID and workspace or version or microversion ID.
-[**GetVersion**](DocumentApi.md#GetVersion) | **Get** /documents/d/{did}/versions/{vid} | Retrieve version by document ID and version ID.
-[**MergeIntoWorkspace**](DocumentApi.md#MergeIntoWorkspace) | **Post** /documents/{did}/workspaces/{wid}/merge | Merge into workspace by document ID and workspace ID.
-[**MergePreview**](DocumentApi.md#MergePreview) | **Get** /documents/{did}/w/{wid}/mergePreview | Merge preview of changes that will occur based on document ID, workspace ID and source workspace/version ID
-[**MoveElementsToDocument**](DocumentApi.md#MoveElementsToDocument) | **Post** /documents/d/{did}/w/{wid}/moveelement | Move tab by document ID and workspace ID.
-[**RestoreFromHistory**](DocumentApi.md#RestoreFromHistory) | **Post** /documents/{did}/w/{wid}/restore/{vm}/{vmid} | Restore version or microversion to workspace by document ID, workspace ID, and version or microversion ID.
-[**RevertUnchangedToRevisions**](DocumentApi.md#RevertUnchangedToRevisions) | **Post** /documents/d/{did}/w/{wid}/revertunchangedtorevisions | 
-[**Search**](DocumentApi.md#Search) | **Post** /documents/search | Search document.
-[**ShareDocument**](DocumentApi.md#ShareDocument) | **Post** /documents/{did}/share | Share document by document ID.
-[**ShareWithSupport**](DocumentApi.md#ShareWithSupport) | **Post** /documents/{did}/shareWithSupport | Share document by document ID with Onshape support.
-[**SyncAppElements**](DocumentApi.md#SyncAppElements) | **Post** /documents/d/{did}/w/{wid}/syncAppElements | 
-[**UnShareDocument**](DocumentApi.md#UnShareDocument) | **Delete** /documents/{did}/share/{eid} | Remove document View permissions from a user or other entity.
-[**UnshareFromSupport**](DocumentApi.md#UnshareFromSupport) | **Delete** /documents/{did}/shareWithSupport | Unshare document with support.
-[**UpdateAnonymousAccess**](DocumentApi.md#UpdateAnonymousAccess) | **Post** /documents/{did}/acl/anonymousAccess | Allow or deny anonymous access to a document or publication.
-[**UpdateDocumentAttributes**](DocumentApi.md#UpdateDocumentAttributes) | **Post** /documents/{did} | Update document attributes by document ID.
-[**UpdateExternalReferencesToLatestDocuments**](DocumentApi.md#UpdateExternalReferencesToLatestDocuments) | **Post** /documents/d/{did}/w/{wid}/e/{eid}/latestdocumentreferences | Update external references to latest by document ID, workspace ID, and tab ID.
-[**UpdatePublicAccess**](DocumentApi.md#UpdatePublicAccess) | **Post** /documents/{did}/acl/public | Make a document public or private.
+[**CopyWorkspace**](DocumentAPI.md#CopyWorkspace) | **Post** /documents/{did}/workspaces/{wid}/copy | Copy workspace by document ID and workspace ID.
+[**CreateDocument**](DocumentAPI.md#CreateDocument) | **Post** /documents | Create and upload a document.
+[**CreateVersion**](DocumentAPI.md#CreateVersion) | **Post** /documents/d/{did}/versions | Create version by document ID.
+[**CreateWorkspace**](DocumentAPI.md#CreateWorkspace) | **Post** /documents/d/{did}/workspaces | Create workspace by document ID.
+[**DeleteDocument**](DocumentAPI.md#DeleteDocument) | **Delete** /documents/{did} | Delete document by document ID.
+[**DeleteWorkspace**](DocumentAPI.md#DeleteWorkspace) | **Delete** /documents/d/{did}/workspaces/{wid} | Delete workspace by document ID and workspace ID.
+[**DownloadExternalData**](DocumentAPI.md#DownloadExternalData) | **Get** /documents/d/{did}/externaldata/{fid} | Download external data file(s) associated with the document.
+[**Export2Json**](DocumentAPI.md#Export2Json) | **Post** /documents/d/{did}/{wv}/{wvid}/e/{eid}/export | Export document by document ID, workspace or version ID, and tab ID.
+[**GetCurrentMicroversion**](DocumentAPI.md#GetCurrentMicroversion) | **Get** /documents/d/{did}/{wv}/{wvid}/currentmicroversion | Retrieve current microversion by document ID and workspace or version ID.
+[**GetDocument**](DocumentAPI.md#GetDocument) | **Get** /documents/{did} | Retrieve document by document ID.
+[**GetDocumentAcl**](DocumentAPI.md#GetDocumentAcl) | **Get** /documents/{did}/acl | Retrieve access control list by document ID.
+[**GetDocumentContents**](DocumentAPI.md#GetDocumentContents) | **Get** /documents/d/{did}/{wvm}/{wvmid}/contents | Retrieve tabs and folders by document ID and workspace or version or microversion ID.
+[**GetDocumentHistory**](DocumentAPI.md#GetDocumentHistory) | **Get** /documents/d/{did}/{wm}/{wmid}/documenthistory | Retrieve document history by document ID and workspace or microversion ID.
+[**GetDocumentPermissionSet**](DocumentAPI.md#GetDocumentPermissionSet) | **Get** /documents/{did}/permissionset | Retrieve Document permissions by document ID.
+[**GetDocumentVersions**](DocumentAPI.md#GetDocumentVersions) | **Get** /documents/d/{did}/versions | Retrieve versions by document ID.
+[**GetDocumentWorkspaces**](DocumentAPI.md#GetDocumentWorkspaces) | **Get** /documents/d/{did}/workspaces | Retrieve workspaces by document ID.
+[**GetDocuments**](DocumentAPI.md#GetDocuments) | **Get** /documents | Get a list of documents that meet the criteria you specify.
+[**GetElementsInDocument**](DocumentAPI.md#GetElementsInDocument) | **Get** /documents/d/{did}/{wvm}/{wvmid}/elements | Retrieve tabs by document ID and workspace or version or microversion ID.
+[**GetInsertables**](DocumentAPI.md#GetInsertables) | **Get** /documents/d/{did}/{wv}/{wvid}/insertables | Retrieve insertables by document ID and workspace or version ID.
+[**GetUnitInfo**](DocumentAPI.md#GetUnitInfo) | **Get** /documents/d/{did}/{wvm}/{wvmid}/unitinfo | Get the selected units and precision by document ID and workspace or version or microversion ID.
+[**GetVersion**](DocumentAPI.md#GetVersion) | **Get** /documents/d/{did}/versions/{vid} | Retrieve version by document ID and version ID.
+[**MergeIntoWorkspace**](DocumentAPI.md#MergeIntoWorkspace) | **Post** /documents/{did}/workspaces/{wid}/merge | Merge into workspace by document ID and workspace ID.
+[**MergePreview**](DocumentAPI.md#MergePreview) | **Get** /documents/{did}/w/{wid}/mergePreview | Merge preview of changes that will occur based on document ID, workspace ID and source workspace/version ID
+[**MoveElementsToDocument**](DocumentAPI.md#MoveElementsToDocument) | **Post** /documents/d/{did}/w/{wid}/moveelement | Move tab by document ID and workspace ID.
+[**RestoreFromHistory**](DocumentAPI.md#RestoreFromHistory) | **Post** /documents/{did}/w/{wid}/restore/{vm}/{vmid} | Restore version or microversion to workspace by document ID, workspace ID, and version or microversion ID.
+[**RevertUnchangedToRevisions**](DocumentAPI.md#RevertUnchangedToRevisions) | **Post** /documents/d/{did}/w/{wid}/revertunchangedtorevisions | 
+[**Search**](DocumentAPI.md#Search) | **Post** /documents/search | Search document.
+[**ShareDocument**](DocumentAPI.md#ShareDocument) | **Post** /documents/{did}/share | Share document by document ID.
+[**ShareWithSupport**](DocumentAPI.md#ShareWithSupport) | **Post** /documents/{did}/shareWithSupport | Share document by document ID with Onshape support.
+[**SyncAppElements**](DocumentAPI.md#SyncAppElements) | **Post** /documents/d/{did}/w/{wid}/syncAppElements | 
+[**UnShareDocument**](DocumentAPI.md#UnShareDocument) | **Delete** /documents/{did}/share/{eid} | Remove document View permissions from a user or other entity.
+[**UnshareFromSupport**](DocumentAPI.md#UnshareFromSupport) | **Delete** /documents/{did}/shareWithSupport | Unshare document with support.
+[**UpdateAnonymousAccess**](DocumentAPI.md#UpdateAnonymousAccess) | **Post** /documents/{did}/acl/anonymousAccess | Allow or deny anonymous access to a document or publication.
+[**UpdateDocumentAttributes**](DocumentAPI.md#UpdateDocumentAttributes) | **Post** /documents/{did} | Update document attributes by document ID.
+[**UpdateExternalReferencesToLatestDocuments**](DocumentAPI.md#UpdateExternalReferencesToLatestDocuments) | **Post** /documents/d/{did}/w/{wid}/e/{eid}/latestdocumentreferences | Update external references to latest by document ID, workspace ID, and tab ID.
+[**UpdatePublicAccess**](DocumentAPI.md#UpdatePublicAccess) | **Post** /documents/{did}/acl/public | Make a document public or private.
 
 
 
@@ -68,13 +68,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.CopyWorkspace(context.Background(), did, wid).BTCopyDocumentParams(bTCopyDocumentParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.CopyWorkspace(context.Background(), did, wid).BTCopyDocumentParams(bTCopyDocumentParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.CopyWorkspace``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.CopyWorkspace``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CopyWorkspace`: BTCopyDocumentInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.CopyWorkspace`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.CopyWorkspace`: %v\n", resp)
 }
 ```
 
@@ -141,13 +141,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.CreateDocument(context.Background()).BTDocumentParams(bTDocumentParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.CreateDocument(context.Background()).BTDocumentParams(bTDocumentParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.CreateDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.CreateDocument``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateDocument`: BTDocumentInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.CreateDocument`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.CreateDocument`: %v\n", resp)
 }
 ```
 
@@ -206,13 +206,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.CreateVersion(context.Background(), did).BTVersionOrWorkspaceParams(bTVersionOrWorkspaceParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.CreateVersion(context.Background(), did).BTVersionOrWorkspaceParams(bTVersionOrWorkspaceParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.CreateVersion``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.CreateVersion``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateVersion`: BTVersionInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.CreateVersion`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.CreateVersion`: %v\n", resp)
 }
 ```
 
@@ -276,13 +276,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.CreateWorkspace(context.Background(), did).BTVersionOrWorkspaceParams(bTVersionOrWorkspaceParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.CreateWorkspace(context.Background(), did).BTVersionOrWorkspaceParams(bTVersionOrWorkspaceParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.CreateWorkspace``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.CreateWorkspace``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateWorkspace`: BTWorkspaceInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.CreateWorkspace`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.CreateWorkspace`: %v\n", resp)
 }
 ```
 
@@ -346,13 +346,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.DeleteDocument(context.Background(), did).Forever(forever).Execute()
+    resp, r, err := apiClient.DocumentAPI.DeleteDocument(context.Background(), did).Forever(forever).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.DeleteDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.DeleteDocument``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteDocument`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.DeleteDocument`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.DeleteDocument`: %v\n", resp)
 }
 ```
 
@@ -416,13 +416,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.DeleteWorkspace(context.Background(), did, wid).Execute()
+    resp, r, err := apiClient.DocumentAPI.DeleteWorkspace(context.Background(), did, wid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.DeleteWorkspace``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.DeleteWorkspace``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteWorkspace`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.DeleteWorkspace`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.DeleteWorkspace`: %v\n", resp)
 }
 ```
 
@@ -490,13 +490,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.DownloadExternalData(context.Background(), did, fid).IfNoneMatch(ifNoneMatch).Execute()
+    resp, r, err := apiClient.DocumentAPI.DownloadExternalData(context.Background(), did, fid).IfNoneMatch(ifNoneMatch).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.DownloadExternalData``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.DownloadExternalData``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DownloadExternalData`: HttpFile
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.DownloadExternalData`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.DownloadExternalData`: %v\n", resp)
 }
 ```
 
@@ -566,13 +566,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.Export2Json(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).BTBExportModelParams(bTBExportModelParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.Export2Json(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).BTBExportModelParams(bTBExportModelParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.Export2Json``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.Export2Json``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `Export2Json`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.Export2Json`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.Export2Json`: %v\n", resp)
 }
 ```
 
@@ -644,13 +644,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.GetCurrentMicroversion(context.Background(), did, wv, wvid).Execute()
+    resp, r, err := apiClient.DocumentAPI.GetCurrentMicroversion(context.Background(), did, wv, wvid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.GetCurrentMicroversion``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.GetCurrentMicroversion``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetCurrentMicroversion`: BTMicroversionInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.GetCurrentMicroversion`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.GetCurrentMicroversion`: %v\n", resp)
 }
 ```
 
@@ -716,13 +716,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.GetDocument(context.Background(), did).Execute()
+    resp, r, err := apiClient.DocumentAPI.GetDocument(context.Background(), did).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.GetDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.GetDocument``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDocument`: BTDocumentInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.GetDocument`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.GetDocument`: %v\n", resp)
 }
 ```
 
@@ -784,13 +784,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.GetDocumentAcl(context.Background(), did).Execute()
+    resp, r, err := apiClient.DocumentAPI.GetDocumentAcl(context.Background(), did).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.GetDocumentAcl``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.GetDocumentAcl``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDocumentAcl`: BTAclInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.GetDocumentAcl`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.GetDocumentAcl`: %v\n", resp)
 }
 ```
 
@@ -860,13 +860,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.GetDocumentContents(context.Background(), did, wvm, wvmid).LinkDocumentId(linkDocumentId).ElementType(elementType).ElementId(elementId).WithZipContents(withZipContents).Execute()
+    resp, r, err := apiClient.DocumentAPI.GetDocumentContents(context.Background(), did, wvm, wvmid).LinkDocumentId(linkDocumentId).ElementType(elementType).ElementId(elementId).WithZipContents(withZipContents).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.GetDocumentContents``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.GetDocumentContents``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDocumentContents`: BTDocumentContentsInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.GetDocumentContents`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.GetDocumentContents`: %v\n", resp)
 }
 ```
 
@@ -938,13 +938,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.GetDocumentHistory(context.Background(), did, wm, wmid).Execute()
+    resp, r, err := apiClient.DocumentAPI.GetDocumentHistory(context.Background(), did, wm, wmid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.GetDocumentHistory``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.GetDocumentHistory``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDocumentHistory`: []BTDocumentHistoryInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.GetDocumentHistory`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.GetDocumentHistory`: %v\n", resp)
 }
 ```
 
@@ -1010,13 +1010,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.GetDocumentPermissionSet(context.Background(), did).Execute()
+    resp, r, err := apiClient.DocumentAPI.GetDocumentPermissionSet(context.Background(), did).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.GetDocumentPermissionSet``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.GetDocumentPermissionSet``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDocumentPermissionSet`: []string
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.GetDocumentPermissionSet`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.GetDocumentPermissionSet`: %v\n", resp)
 }
 ```
 
@@ -1080,13 +1080,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.GetDocumentVersions(context.Background(), did).Offset(offset).Limit(limit).Execute()
+    resp, r, err := apiClient.DocumentAPI.GetDocumentVersions(context.Background(), did).Offset(offset).Limit(limit).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.GetDocumentVersions``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.GetDocumentVersions``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDocumentVersions`: []BTVersionInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.GetDocumentVersions`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.GetDocumentVersions`: %v\n", resp)
 }
 ```
 
@@ -1150,13 +1150,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.GetDocumentWorkspaces(context.Background(), did).Execute()
+    resp, r, err := apiClient.DocumentAPI.GetDocumentWorkspaces(context.Background(), did).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.GetDocumentWorkspaces``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.GetDocumentWorkspaces``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDocumentWorkspaces`: []BTWorkspaceInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.GetDocumentWorkspaces`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.GetDocumentWorkspaces`: %v\n", resp)
 }
 ```
 
@@ -1228,13 +1228,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.GetDocuments(context.Background()).Q(q).Filter(filter).Owner(owner).OwnerType(ownerType).SortColumn(sortColumn).SortOrder(sortOrder).Label(label).Project(project).ParentId(parentId).Offset(offset).Limit(limit).Execute()
+    resp, r, err := apiClient.DocumentAPI.GetDocuments(context.Background()).Q(q).Filter(filter).Owner(owner).OwnerType(ownerType).SortColumn(sortColumn).SortOrder(sortOrder).Label(label).Project(project).ParentId(parentId).Offset(offset).Limit(limit).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.GetDocuments``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.GetDocuments``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDocuments`: BTGlobalTreeNodeListResponse
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.GetDocuments`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.GetDocuments`: %v\n", resp)
 }
 ```
 
@@ -1311,13 +1311,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.GetElementsInDocument(context.Background(), did, wvm, wvmid).LinkDocumentId(linkDocumentId).ElementType(elementType).ElementId(elementId).WithThumbnails(withThumbnails).WithZipContents(withZipContents).Execute()
+    resp, r, err := apiClient.DocumentAPI.GetElementsInDocument(context.Background(), did, wvm, wvmid).LinkDocumentId(linkDocumentId).ElementType(elementType).ElementId(elementId).WithThumbnails(withThumbnails).WithZipContents(withZipContents).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.GetElementsInDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.GetElementsInDocument``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetElementsInDocument`: []BTDocumentElementInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.GetElementsInDocument`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.GetElementsInDocument`: %v\n", resp)
 }
 ```
 
@@ -1417,13 +1417,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.GetInsertables(context.Background(), did, wv, wvid).ElementId(elementId).Configuration(configuration).LinkDocumentId(linkDocumentId).IncludeParts(includeParts).IncludeSurfaces(includeSurfaces).IncludeSketches(includeSketches).IncludeReferenceFeatures(includeReferenceFeatures).IncludeAssemblies(includeAssemblies).IncludeFeatureStudios(includeFeatureStudios).IncludeBlobs(includeBlobs).AllowedBlobMimeTypes(allowedBlobMimeTypes).ExcludeNewerFSVersions(excludeNewerFSVersions).MaxFeatureScriptVersion(maxFeatureScriptVersion).IncludePartStudios(includePartStudios).IncludeFeatures(includeFeatures).IncludeMeshes(includeMeshes).IncludeWires(includeWires).IncludeFlattenedBodies(includeFlattenedBodies).IncludeApplications(includeApplications).AllowedApplicationMimeTypes(allowedApplicationMimeTypes).IncludeCompositeParts(includeCompositeParts).IncludeFSTables(includeFSTables).IncludeFSComputedPartPropertyFunctions(includeFSComputedPartPropertyFunctions).IncludeVariables(includeVariables).IncludeVariableStudios(includeVariableStudios).AllowedBlobExtensions(allowedBlobExtensions).IsObsoletion(isObsoletion).Execute()
+    resp, r, err := apiClient.DocumentAPI.GetInsertables(context.Background(), did, wv, wvid).ElementId(elementId).Configuration(configuration).LinkDocumentId(linkDocumentId).IncludeParts(includeParts).IncludeSurfaces(includeSurfaces).IncludeSketches(includeSketches).IncludeReferenceFeatures(includeReferenceFeatures).IncludeAssemblies(includeAssemblies).IncludeFeatureStudios(includeFeatureStudios).IncludeBlobs(includeBlobs).AllowedBlobMimeTypes(allowedBlobMimeTypes).ExcludeNewerFSVersions(excludeNewerFSVersions).MaxFeatureScriptVersion(maxFeatureScriptVersion).IncludePartStudios(includePartStudios).IncludeFeatures(includeFeatures).IncludeMeshes(includeMeshes).IncludeWires(includeWires).IncludeFlattenedBodies(includeFlattenedBodies).IncludeApplications(includeApplications).AllowedApplicationMimeTypes(allowedApplicationMimeTypes).IncludeCompositeParts(includeCompositeParts).IncludeFSTables(includeFSTables).IncludeFSComputedPartPropertyFunctions(includeFSComputedPartPropertyFunctions).IncludeVariables(includeVariables).IncludeVariableStudios(includeVariableStudios).AllowedBlobExtensions(allowedBlobExtensions).IsObsoletion(isObsoletion).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.GetInsertables``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.GetInsertables``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetInsertables`: BTInsertablesListResponse
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.GetInsertables`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.GetInsertables`: %v\n", resp)
 }
 ```
 
@@ -1519,13 +1519,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.GetUnitInfo(context.Background(), did, wvm, wvmid).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.DocumentAPI.GetUnitInfo(context.Background(), did, wvm, wvmid).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.GetUnitInfo``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.GetUnitInfo``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetUnitInfo`: BTUnitInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.GetUnitInfo`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.GetUnitInfo`: %v\n", resp)
 }
 ```
 
@@ -1595,13 +1595,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.GetVersion(context.Background(), did, vid).Parents(parents).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.DocumentAPI.GetVersion(context.Background(), did, vid).Parents(parents).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.GetVersion``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.GetVersion``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetVersion`: BTVersionInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.GetVersion`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.GetVersion`: %v\n", resp)
 }
 ```
 
@@ -1669,13 +1669,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.MergeIntoWorkspace(context.Background(), did, wid).BTVersionOrWorkspaceMergeInfo(bTVersionOrWorkspaceMergeInfo).Execute()
+    resp, r, err := apiClient.DocumentAPI.MergeIntoWorkspace(context.Background(), did, wid).BTVersionOrWorkspaceMergeInfo(bTVersionOrWorkspaceMergeInfo).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.MergeIntoWorkspace``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.MergeIntoWorkspace``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `MergeIntoWorkspace`: BTDocumentMergeInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.MergeIntoWorkspace`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.MergeIntoWorkspace`: %v\n", resp)
 }
 ```
 
@@ -1744,13 +1744,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.MergePreview(context.Background(), did, wid).SourceType(sourceType).SourceId(sourceId).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.DocumentAPI.MergePreview(context.Background(), did, wid).SourceType(sourceType).SourceId(sourceId).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.MergePreview``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.MergePreview``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `MergePreview`: BTMergePreviewInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.MergePreview`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.MergePreview`: %v\n", resp)
 }
 ```
 
@@ -1819,13 +1819,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.MoveElementsToDocument(context.Background(), did, wid).BTMoveElementParams(bTMoveElementParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.MoveElementsToDocument(context.Background(), did, wid).BTMoveElementParams(bTMoveElementParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.MoveElementsToDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.MoveElementsToDocument``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `MoveElementsToDocument`: BTMoveElementInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.MoveElementsToDocument`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.MoveElementsToDocument`: %v\n", resp)
 }
 ```
 
@@ -1895,13 +1895,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.RestoreFromHistory(context.Background(), did, wid, vm, vmid).LinkDocumentId(linkDocumentId).BTRestoreInfo(bTRestoreInfo).Execute()
+    resp, r, err := apiClient.DocumentAPI.RestoreFromHistory(context.Background(), did, wid, vm, vmid).LinkDocumentId(linkDocumentId).BTRestoreInfo(bTRestoreInfo).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.RestoreFromHistory``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.RestoreFromHistory``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `RestoreFromHistory`: BTRestoreFromHistoryInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.RestoreFromHistory`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.RestoreFromHistory`: %v\n", resp)
 }
 ```
 
@@ -1973,13 +1973,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.RevertUnchangedToRevisions(context.Background(), did, wid).BTRevertUnchangedParams(bTRevertUnchangedParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.RevertUnchangedToRevisions(context.Background(), did, wid).BTRevertUnchangedParams(bTRevertUnchangedParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.RevertUnchangedToRevisions``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.RevertUnchangedToRevisions``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `RevertUnchangedToRevisions`: []BTUnchangedElementInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.RevertUnchangedToRevisions`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.RevertUnchangedToRevisions`: %v\n", resp)
 }
 ```
 
@@ -2046,13 +2046,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.Search(context.Background()).BTDocumentSearchParams(bTDocumentSearchParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.Search(context.Background()).BTDocumentSearchParams(bTDocumentSearchParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.Search``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.Search``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `Search`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.Search`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.Search`: %v\n", resp)
 }
 ```
 
@@ -2111,13 +2111,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.ShareDocument(context.Background(), did).BTShareParams(bTShareParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.ShareDocument(context.Background(), did).BTShareParams(bTShareParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.ShareDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.ShareDocument``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `ShareDocument`: BTAclInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.ShareDocument`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.ShareDocument`: %v\n", resp)
 }
 ```
 
@@ -2180,13 +2180,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.ShareWithSupport(context.Background(), did).Execute()
+    resp, r, err := apiClient.DocumentAPI.ShareWithSupport(context.Background(), did).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.ShareWithSupport``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.ShareWithSupport``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `ShareWithSupport`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.ShareWithSupport`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.ShareWithSupport`: %v\n", resp)
 }
 ```
 
@@ -2250,13 +2250,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.SyncAppElements(context.Background(), did, wid).BTSyncAppElementParams(bTSyncAppElementParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.SyncAppElements(context.Background(), did, wid).BTSyncAppElementParams(bTSyncAppElementParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.SyncAppElements``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.SyncAppElements``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `SyncAppElements`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.SyncAppElements`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.SyncAppElements`: %v\n", resp)
 }
 ```
 
@@ -2325,13 +2325,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.UnShareDocument(context.Background(), did, eid).EntryType(entryType).Execute()
+    resp, r, err := apiClient.DocumentAPI.UnShareDocument(context.Background(), did, eid).EntryType(entryType).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.UnShareDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.UnShareDocument``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UnShareDocument`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.UnShareDocument`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.UnShareDocument`: %v\n", resp)
 }
 ```
 
@@ -2396,13 +2396,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.UnshareFromSupport(context.Background(), did).Execute()
+    resp, r, err := apiClient.DocumentAPI.UnshareFromSupport(context.Background(), did).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.UnshareFromSupport``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.UnshareFromSupport``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UnshareFromSupport`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.UnshareFromSupport`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.UnshareFromSupport`: %v\n", resp)
 }
 ```
 
@@ -2467,13 +2467,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.UpdateAnonymousAccess(context.Background(), did).BTAclParams(bTAclParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.UpdateAnonymousAccess(context.Background(), did).BTAclParams(bTAclParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.UpdateAnonymousAccess``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.UpdateAnonymousAccess``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateAnonymousAccess`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.UpdateAnonymousAccess`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.UpdateAnonymousAccess`: %v\n", resp)
 }
 ```
 
@@ -2537,13 +2537,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.UpdateDocumentAttributes(context.Background(), did).BTDocumentParams(bTDocumentParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.UpdateDocumentAttributes(context.Background(), did).BTDocumentParams(bTDocumentParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.UpdateDocumentAttributes``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.UpdateDocumentAttributes``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateDocumentAttributes`: BTGlobalTreeNodeSummaryInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.UpdateDocumentAttributes`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.UpdateDocumentAttributes`: %v\n", resp)
 }
 ```
 
@@ -2609,13 +2609,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.UpdateExternalReferencesToLatestDocuments(context.Background(), did, wid, eid).BTLinkToLatestDocumentParams(bTLinkToLatestDocumentParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.UpdateExternalReferencesToLatestDocuments(context.Background(), did, wid, eid).BTLinkToLatestDocumentParams(bTLinkToLatestDocumentParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.UpdateExternalReferencesToLatestDocuments``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.UpdateExternalReferencesToLatestDocuments``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateExternalReferencesToLatestDocuments`: BTLinkToLatestDocumentInfo
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.UpdateExternalReferencesToLatestDocuments`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.UpdateExternalReferencesToLatestDocuments`: %v\n", resp)
 }
 ```
 
@@ -2685,13 +2685,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.DocumentApi.UpdatePublicAccess(context.Background(), did).BTAclParams(bTAclParams).Execute()
+    resp, r, err := apiClient.DocumentAPI.UpdatePublicAccess(context.Background(), did).BTAclParams(bTAclParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `DocumentApi.UpdatePublicAccess``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `DocumentAPI.UpdatePublicAccess``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdatePublicAccess`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `DocumentApi.UpdatePublicAccess`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `DocumentAPI.UpdatePublicAccess`: %v\n", resp)
 }
 ```
 

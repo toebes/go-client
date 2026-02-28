@@ -20,9 +20,9 @@ type BTDrawingHiddenLineOption string
 
 // List of BTDrawingHiddenLineOption
 const (
-	BTDrawingHiddenLineOptionDrafting BTDrawingHiddenLineOption = "drafting"
-	BTDrawingHiddenLineOptionExcluded BTDrawingHiddenLineOption = "excluded"
-	BTDrawingHiddenLineOptionMarked   BTDrawingHiddenLineOption = "marked"
+	Drafting BTDrawingHiddenLineOption = "drafting"
+	Excluded BTDrawingHiddenLineOption = "excluded"
+	Marked   BTDrawingHiddenLineOption = "marked"
 )
 
 // All allowed values of BTDrawingHiddenLineOption enum

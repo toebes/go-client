@@ -3,25 +3,25 @@
 ## Enum
 
 
-* `GBTPDefinitionTypeFunction` (value: `"FUNCTION"`)
+* `Function` (value: `"FUNCTION"`)
 
-* `GBTPDefinitionTypePredicate` (value: `"PREDICATE"`)
+* `Predicate` (value: `"PREDICATE"`)
 
-* `GBTPDefinitionTypeConstant` (value: `"CONSTANT"`)
+* `Constant` (value: `"CONSTANT"`)
 
-* `GBTPDefinitionTypeEnum` (value: `"ENUM"`)
+* `Enum` (value: `"ENUM"`)
 
-* `GBTPDefinitionTypeUserType` (value: `"USER_TYPE"`)
+* `UserType` (value: `"USER_TYPE"`)
 
-* `GBTPDefinitionTypeFeatureDefinition` (value: `"FEATURE_DEFINITION"`)
+* `FeatureDefinition` (value: `"FEATURE_DEFINITION"`)
 
-* `GBTPDefinitionTypeFileHeader` (value: `"FILE_HEADER"`)
+* `FileHeader` (value: `"FILE_HEADER"`)
 
-* `GBTPDefinitionTypeUndocumentable` (value: `"UNDOCUMENTABLE"`)
+* `Undocumentable` (value: `"UNDOCUMENTABLE"`)
 
-* `GBTPDefinitionTypeConstLambda` (value: `"CONST_LAMBDA"`)
+* `ConstLambda` (value: `"CONST_LAMBDA"`)
 
-* `GBTPDefinitionTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

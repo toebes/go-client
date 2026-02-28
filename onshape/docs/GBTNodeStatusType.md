@@ -3,15 +3,15 @@
 ## Enum
 
 
-* `GBTNodeStatusTypeOk` (value: `"OK"`)
+* `Ok` (value: `"OK"`)
 
-* `GBTNodeStatusTypeInfo` (value: `"INFO"`)
+* `Info` (value: `"INFO"`)
 
-* `GBTNodeStatusTypeWarning` (value: `"WARNING"`)
+* `Warning` (value: `"WARNING"`)
 
-* `GBTNodeStatusTypeError` (value: `"ERROR"`)
+* `Error` (value: `"ERROR"`)
 
-* `GBTNodeStatusTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

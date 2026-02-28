@@ -20,10 +20,10 @@ type GBTBSFeatureVisibility string
 
 // List of GBTBSFeatureVisibility
 const (
-	GBTBSFeatureVisibilityUnset   GBTBSFeatureVisibility = "UNSET"
-	GBTBSFeatureVisibilityHidden  GBTBSFeatureVisibility = "HIDDEN"
-	GBTBSFeatureVisibilityVisible GBTBSFeatureVisibility = "VISIBLE"
-	GBTBSFeatureVisibilityUnknown GBTBSFeatureVisibility = "UNKNOWN"
+	Unset   GBTBSFeatureVisibility = "UNSET"
+	Hidden  GBTBSFeatureVisibility = "HIDDEN"
+	Visible GBTBSFeatureVisibility = "VISIBLE"
+	Unknown GBTBSFeatureVisibility = "UNKNOWN"
 )
 
 // All allowed values of GBTBSFeatureVisibility enum

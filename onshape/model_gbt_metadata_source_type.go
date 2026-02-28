@@ -20,18 +20,18 @@ type GBTMetadataSourceType string
 
 // List of GBTMetadataSourceType
 const (
-	GBTMetadataSourceTypeAutomatic          GBTMetadataSourceType = "AUTOMATIC"
-	GBTMetadataSourceTypeMerged             GBTMetadataSourceType = "MERGED"
-	GBTMetadataSourceTypeFeature            GBTMetadataSourceType = "FEATURE"
-	GBTMetadataSourceTypeUnconfigured       GBTMetadataSourceType = "UNCONFIGURED"
-	GBTMetadataSourceTypeConfigured         GBTMetadataSourceType = "CONFIGURED"
-	GBTMetadataSourceTypeStandardContent    GBTMetadataSourceType = "STANDARD_CONTENT"
-	GBTMetadataSourceTypeDefault            GBTMetadataSourceType = "DEFAULT"
-	GBTMetadataSourceTypeComputed           GBTMetadataSourceType = "COMPUTED"
-	GBTMetadataSourceTypeComputedConfigured GBTMetadataSourceType = "COMPUTED_CONFIGURED"
-	GBTMetadataSourceTypeImport             GBTMetadataSourceType = "IMPORT"
-	GBTMetadataSourceTypeOverriddenPublic   GBTMetadataSourceType = "OVERRIDDEN_PUBLIC"
-	GBTMetadataSourceTypeUnknown            GBTMetadataSourceType = "UNKNOWN"
+	Automatic          GBTMetadataSourceType = "AUTOMATIC"
+	Merged             GBTMetadataSourceType = "MERGED"
+	Feature            GBTMetadataSourceType = "FEATURE"
+	Unconfigured       GBTMetadataSourceType = "UNCONFIGURED"
+	Configured         GBTMetadataSourceType = "CONFIGURED"
+	StandardContent    GBTMetadataSourceType = "STANDARD_CONTENT"
+	Default            GBTMetadataSourceType = "DEFAULT"
+	Computed           GBTMetadataSourceType = "COMPUTED"
+	ComputedConfigured GBTMetadataSourceType = "COMPUTED_CONFIGURED"
+	Import             GBTMetadataSourceType = "IMPORT"
+	OverriddenPublic   GBTMetadataSourceType = "OVERRIDDEN_PUBLIC"
+	Unknown            GBTMetadataSourceType = "UNKNOWN"
 )
 
 // All allowed values of GBTMetadataSourceType enum

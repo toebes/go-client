@@ -3,11 +3,11 @@
 ## Enum
 
 
-* `InCookie` (value: `"COOKIE"`)
+* `Cookie` (value: `"COOKIE"`)
 
-* `InHeader` (value: `"HEADER"`)
+* `Header` (value: `"HEADER"`)
 
-* `InQuery` (value: `"QUERY"`)
+* `Query` (value: `"QUERY"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

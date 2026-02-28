@@ -20,13 +20,13 @@ type GBTBodyType string
 
 // List of GBTBodyType
 const (
-	GBTBodyTypeSolid         GBTBodyType = "SOLID"
-	GBTBodyTypeSheet         GBTBodyType = "SHEET"
-	GBTBodyTypeWire          GBTBodyType = "WIRE"
-	GBTBodyTypePoint         GBTBodyType = "POINT"
-	GBTBodyTypeMateConnector GBTBodyType = "MATE_CONNECTOR"
-	GBTBodyTypeComposite     GBTBodyType = "COMPOSITE"
-	GBTBodyTypeUnknown       GBTBodyType = "UNKNOWN"
+	Solid         GBTBodyType = "SOLID"
+	Sheet         GBTBodyType = "SHEET"
+	Wire          GBTBodyType = "WIRE"
+	Point         GBTBodyType = "POINT"
+	MateConnector GBTBodyType = "MATE_CONNECTOR"
+	Composite     GBTBodyType = "COMPOSITE"
+	Unknown       GBTBodyType = "UNKNOWN"
 )
 
 // All allowed values of GBTBodyType enum

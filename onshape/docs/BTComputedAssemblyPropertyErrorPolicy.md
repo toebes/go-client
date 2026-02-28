@@ -3,15 +3,15 @@
 ## Enum
 
 
-* `BTComputedAssemblyPropertyErrorPolicyExcludeFromComputation` (value: `"ExcludeFromComputation"`)
+* `ExcludeFromComputation` (value: `"ExcludeFromComputation"`)
 
-* `BTComputedAssemblyPropertyErrorPolicyTreatAsZero` (value: `"TreatAsZero"`)
+* `TreatAsZero` (value: `"TreatAsZero"`)
 
-* `BTComputedAssemblyPropertyErrorPolicyTreatAsTrue` (value: `"TreatAsTrue"`)
+* `TreatAsTrue` (value: `"TreatAsTrue"`)
 
-* `BTComputedAssemblyPropertyErrorPolicyTreatAsFalse` (value: `"TreatAsFalse"`)
+* `TreatAsFalse` (value: `"TreatAsFalse"`)
 
-* `BTComputedAssemblyPropertyErrorPolicyPropagateError` (value: `"PropagateError"`)
+* `PropagateError` (value: `"PropagateError"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

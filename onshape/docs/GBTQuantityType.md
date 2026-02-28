@@ -3,49 +3,49 @@
 ## Enum
 
 
-* `GBTQuantityTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
-* `GBTQuantityTypeInteger` (value: `"INTEGER"`)
+* `Integer` (value: `"INTEGER"`)
 
-* `GBTQuantityTypeReal` (value: `"REAL"`)
+* `Real` (value: `"REAL"`)
 
-* `GBTQuantityTypeLength` (value: `"LENGTH"`)
+* `Length` (value: `"LENGTH"`)
 
-* `GBTQuantityTypeAngle` (value: `"ANGLE"`)
+* `Angle` (value: `"ANGLE"`)
 
-* `GBTQuantityTypeMass` (value: `"MASS"`)
+* `Mass` (value: `"MASS"`)
 
-* `GBTQuantityTypeTime` (value: `"TIME"`)
+* `Time` (value: `"TIME"`)
 
-* `GBTQuantityTypeTemperature` (value: `"TEMPERATURE"`)
+* `Temperature` (value: `"TEMPERATURE"`)
 
-* `GBTQuantityTypeCurrent` (value: `"CURRENT"`)
+* `Current` (value: `"CURRENT"`)
 
-* `GBTQuantityTypeAnything` (value: `"ANYTHING"`)
+* `Anything` (value: `"ANYTHING"`)
 
-* `GBTQuantityTypeAnythingWithUnits` (value: `"ANYTHING_WITH_UNITS"`)
+* `AnythingWithUnits` (value: `"ANYTHING_WITH_UNITS"`)
 
-* `GBTQuantityTypeForce` (value: `"FORCE"`)
+* `Force` (value: `"FORCE"`)
 
-* `GBTQuantityTypePressure` (value: `"PRESSURE"`)
+* `Pressure` (value: `"PRESSURE"`)
 
-* `GBTQuantityTypeMoment` (value: `"MOMENT"`)
+* `Moment` (value: `"MOMENT"`)
 
-* `GBTQuantityTypeAcceleration` (value: `"ACCELERATION"`)
+* `Acceleration` (value: `"ACCELERATION"`)
 
-* `GBTQuantityTypeAngularVelocity` (value: `"ANGULAR_VELOCITY"`)
+* `AngularVelocity` (value: `"ANGULAR_VELOCITY"`)
 
-* `GBTQuantityTypeEnergy` (value: `"ENERGY"`)
+* `Energy` (value: `"ENERGY"`)
 
-* `GBTQuantityTypeArea` (value: `"AREA"`)
+* `Area` (value: `"AREA"`)
 
-* `GBTQuantityTypeVolume` (value: `"VOLUME"`)
+* `Volume` (value: `"VOLUME"`)
 
-* `GBTQuantityTypeBoolean` (value: `"BOOLEAN"`)
+* `Boolean` (value: `"BOOLEAN"`)
 
-* `GBTQuantityTypeString` (value: `"STRING"`)
+* `String` (value: `"STRING"`)
 
-* `GBTQuantityTypeDensity` (value: `"DENSITY"`)
+* `Density` (value: `"DENSITY"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

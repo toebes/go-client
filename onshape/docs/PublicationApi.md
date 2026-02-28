@@ -1,16 +1,16 @@
-# \PublicationApi
+# \PublicationAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AddItemToPublication**](PublicationApi.md#AddItemToPublication) | **Post** /publications/{pid}/item | Add an item in a publication.
-[**AddItemsToPublication**](PublicationApi.md#AddItemsToPublication) | **Post** /publications/{pid}/items | Add publication items in bulk.
-[**CreatePublication**](PublicationApi.md#CreatePublication) | **Post** /publications | Create a new publication.
-[**DeletePublication**](PublicationApi.md#DeletePublication) | **Delete** /publications/{pid} | Delete a publication.
-[**DeletePublicationItem**](PublicationApi.md#DeletePublicationItem) | **Delete** /publications/{pid}/item/{iid} | Remove an item from a publication.
-[**GetPublicationItems**](PublicationApi.md#GetPublicationItems) | **Get** /publications/{pid}/items | Get all items in a publication.
-[**UpdatePublicationAttributes**](PublicationApi.md#UpdatePublicationAttributes) | **Post** /publications/{pid} | Update publication&#39;s attributes name, description, and notes.
+[**AddItemToPublication**](PublicationAPI.md#AddItemToPublication) | **Post** /publications/{pid}/item | Add an item in a publication.
+[**AddItemsToPublication**](PublicationAPI.md#AddItemsToPublication) | **Post** /publications/{pid}/items | Add publication items in bulk.
+[**CreatePublication**](PublicationAPI.md#CreatePublication) | **Post** /publications | Create a new publication.
+[**DeletePublication**](PublicationAPI.md#DeletePublication) | **Delete** /publications/{pid} | Delete a publication.
+[**DeletePublicationItem**](PublicationAPI.md#DeletePublicationItem) | **Delete** /publications/{pid}/item/{iid} | Remove an item from a publication.
+[**GetPublicationItems**](PublicationAPI.md#GetPublicationItems) | **Get** /publications/{pid}/items | Get all items in a publication.
+[**UpdatePublicationAttributes**](PublicationAPI.md#UpdatePublicationAttributes) | **Post** /publications/{pid} | Update publication&#39;s attributes name, description, and notes.
 
 
 
@@ -38,13 +38,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PublicationApi.AddItemToPublication(context.Background(), pid).BTPublicationItemParams(bTPublicationItemParams).Execute()
+    resp, r, err := apiClient.PublicationAPI.AddItemToPublication(context.Background(), pid).BTPublicationItemParams(bTPublicationItemParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PublicationApi.AddItemToPublication``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PublicationAPI.AddItemToPublication``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `AddItemToPublication`: BTPublicationInfo
-    fmt.Fprintf(os.Stdout, "Response from `PublicationApi.AddItemToPublication`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PublicationAPI.AddItemToPublication`: %v\n", resp)
 }
 ```
 
@@ -108,13 +108,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PublicationApi.AddItemsToPublication(context.Background(), pid).BTPublicationBulkItemParams(bTPublicationBulkItemParams).Execute()
+    resp, r, err := apiClient.PublicationAPI.AddItemsToPublication(context.Background(), pid).BTPublicationBulkItemParams(bTPublicationBulkItemParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PublicationApi.AddItemsToPublication``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PublicationAPI.AddItemsToPublication``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `AddItemsToPublication`: BTPublicationInfo
-    fmt.Fprintf(os.Stdout, "Response from `PublicationApi.AddItemsToPublication`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PublicationAPI.AddItemsToPublication`: %v\n", resp)
 }
 ```
 
@@ -177,13 +177,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PublicationApi.CreatePublication(context.Background()).BTPublicationParams(bTPublicationParams).Execute()
+    resp, r, err := apiClient.PublicationAPI.CreatePublication(context.Background()).BTPublicationParams(bTPublicationParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PublicationApi.CreatePublication``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PublicationAPI.CreatePublication``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreatePublication`: BTPublicationInfo
-    fmt.Fprintf(os.Stdout, "Response from `PublicationApi.CreatePublication`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PublicationAPI.CreatePublication`: %v\n", resp)
 }
 ```
 
@@ -242,13 +242,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PublicationApi.DeletePublication(context.Background(), pid).Forever(forever).Execute()
+    resp, r, err := apiClient.PublicationAPI.DeletePublication(context.Background(), pid).Forever(forever).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PublicationApi.DeletePublication``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PublicationAPI.DeletePublication``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeletePublication`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `PublicationApi.DeletePublication`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PublicationAPI.DeletePublication`: %v\n", resp)
 }
 ```
 
@@ -312,13 +312,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PublicationApi.DeletePublicationItem(context.Background(), pid, iid).Execute()
+    resp, r, err := apiClient.PublicationAPI.DeletePublicationItem(context.Background(), pid, iid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PublicationApi.DeletePublicationItem``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PublicationAPI.DeletePublicationItem``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeletePublicationItem`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `PublicationApi.DeletePublicationItem`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PublicationAPI.DeletePublicationItem`: %v\n", resp)
 }
 ```
 
@@ -382,13 +382,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PublicationApi.GetPublicationItems(context.Background(), pid).Execute()
+    resp, r, err := apiClient.PublicationAPI.GetPublicationItems(context.Background(), pid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PublicationApi.GetPublicationItems``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PublicationAPI.GetPublicationItems``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPublicationItems`: BTPublicationInfo
-    fmt.Fprintf(os.Stdout, "Response from `PublicationApi.GetPublicationItems`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PublicationAPI.GetPublicationItems`: %v\n", resp)
 }
 ```
 
@@ -451,13 +451,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PublicationApi.UpdatePublicationAttributes(context.Background(), pid).BTPublicationParams(bTPublicationParams).Execute()
+    resp, r, err := apiClient.PublicationAPI.UpdatePublicationAttributes(context.Background(), pid).BTPublicationParams(bTPublicationParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PublicationApi.UpdatePublicationAttributes``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PublicationAPI.UpdatePublicationAttributes``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdatePublicationAttributes`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `PublicationApi.UpdatePublicationAttributes`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PublicationAPI.UpdatePublicationAttributes`: %v\n", resp)
 }
 ```
 

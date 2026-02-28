@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **IsYAxisUp** | Pointer to **bool** | Rotate model from Z-axis-up orientation to Y-axis-up. | [optional] [default to false]
 **NotifyUser** | Pointer to **bool** | Send notification to the user client. | [optional] [default to true]
 **StepParasolidPreprocessingOption** | Pointer to [**GBTPreProcessParasolidOption**](GBTPreProcessParasolidOption.md) |  | [optional] 
-**StepUnit** | Pointer to [**GBTExportUnit**](GBTExportUnit.md) |  | [optional] [default to GBTExportUnitMeter]
+**StepUnit** | Pointer to [**GBTExportUnit**](GBTExportUnit.md) |  | [optional] [default to METER]
 **StepVersionString** | Pointer to **string** | Export STEP in version: &#x60;AP242&#x60; | &#x60;AP203&#x60; | &#x60;AP214&#x60; | [optional] [default to "AP242"]
 **StoreInDocument** | Pointer to **bool** | Create a blob with exported file in the source document. | [optional] [default to true]
 **TriggerAutoDownload** | Pointer to **bool** | Automatically download a translated file. | [optional] [default to false]

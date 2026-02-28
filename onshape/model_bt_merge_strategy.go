@@ -20,9 +20,9 @@ type BTMergeStrategy string
 
 // List of BTMergeStrategy
 const (
-	BTMergeStrategyMerge   BTMergeStrategy = "MERGE"
-	BTMergeStrategyKeep    BTMergeStrategy = "KEEP"
-	BTMergeStrategyReplace BTMergeStrategy = "REPLACE"
+	Merge   BTMergeStrategy = "MERGE"
+	Keep    BTMergeStrategy = "KEEP"
+	Replace BTMergeStrategy = "REPLACE"
 )
 
 // All allowed values of BTMergeStrategy enum

@@ -20,17 +20,17 @@ type GBTSurfaceType string
 
 // List of GBTSurfaceType
 const (
-	GBTSurfaceTypePlane    GBTSurfaceType = "PLANE"
-	GBTSurfaceTypeCylinder GBTSurfaceType = "CYLINDER"
-	GBTSurfaceTypeCone     GBTSurfaceType = "CONE"
-	GBTSurfaceTypeSphere   GBTSurfaceType = "SPHERE"
-	GBTSurfaceTypeTorus    GBTSurfaceType = "TORUS"
-	GBTSurfaceTypeOther    GBTSurfaceType = "OTHER"
-	GBTSurfaceTypeRevolved GBTSurfaceType = "REVOLVED"
-	GBTSurfaceTypeExtruded GBTSurfaceType = "EXTRUDED"
-	GBTSurfaceTypeMesh     GBTSurfaceType = "MESH"
-	GBTSurfaceTypeSpline   GBTSurfaceType = "SPLINE"
-	GBTSurfaceTypeUnknown  GBTSurfaceType = "UNKNOWN"
+	Plane    GBTSurfaceType = "PLANE"
+	Cylinder GBTSurfaceType = "CYLINDER"
+	Cone     GBTSurfaceType = "CONE"
+	Sphere   GBTSurfaceType = "SPHERE"
+	Torus    GBTSurfaceType = "TORUS"
+	Other    GBTSurfaceType = "OTHER"
+	Revolved GBTSurfaceType = "REVOLVED"
+	Extruded GBTSurfaceType = "EXTRUDED"
+	Mesh     GBTSurfaceType = "MESH"
+	Spline   GBTSurfaceType = "SPLINE"
+	Unknown  GBTSurfaceType = "UNKNOWN"
 )
 
 // All allowed values of GBTSurfaceType enum

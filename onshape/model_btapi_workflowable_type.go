@@ -20,10 +20,10 @@ type BTAPIWorkflowableType string
 
 // List of BTAPIWorkflowableType
 const (
-	BTAPIWorkflowableTypeRelease    BTAPIWorkflowableType = "RELEASE"
-	BTAPIWorkflowableTypeTask       BTAPIWorkflowableType = "TASK"
-	BTAPIWorkflowableTypeAssignment BTAPIWorkflowableType = "ASSIGNMENT"
-	BTAPIWorkflowableTypeObsoletion BTAPIWorkflowableType = "OBSOLETION"
+	Release    BTAPIWorkflowableType = "RELEASE"
+	Task       BTAPIWorkflowableType = "TASK"
+	Assignment BTAPIWorkflowableType = "ASSIGNMENT"
+	Obsoletion BTAPIWorkflowableType = "OBSOLETION"
 )
 
 // All allowed values of BTAPIWorkflowableType enum

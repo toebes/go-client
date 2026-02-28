@@ -1,17 +1,17 @@
-# \CompanyApi
+# \CompanyAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AddGlobalPermissionsForIdentity**](CompanyApi.md#AddGlobalPermissionsForIdentity) | **Post** /companies/{cid}/globalpermission/{type}/{id} | Add one or more global permissions to company user or team.
-[**AddUserToCompany**](CompanyApi.md#AddUserToCompany) | **Post** /companies/{cid}/users | Add a user to a company.
-[**ClearGlobalPermissions**](CompanyApi.md#ClearGlobalPermissions) | **Delete** /companies/{cid}/globalpermission/{type}/{id} | Remove global permissions for a company user or team.
-[**FindCompany**](CompanyApi.md#FindCompany) | **Get** /companies | Get all companies to which the specified user belongs.
-[**GetCompany**](CompanyApi.md#GetCompany) | **Get** /companies/{cid} | Get company information by company ID.
-[**GetDocumentsByName**](CompanyApi.md#GetDocumentsByName) | **Get** /companies/{cid}/documentsbyname | Get document by exact document name.
-[**RemoveUserFromCompany**](CompanyApi.md#RemoveUserFromCompany) | **Delete** /companies/{cid}/users/{uid} | Remove a user from a company, company teams, and all the direct shares.
-[**UpdateCompanyUser**](CompanyApi.md#UpdateCompanyUser) | **Post** /companies/{cid}/users/{uid} | Update the company&#39;s information for a user.
+[**AddGlobalPermissionsForIdentity**](CompanyAPI.md#AddGlobalPermissionsForIdentity) | **Post** /companies/{cid}/globalpermission/{type}/{id} | Add one or more global permissions to company user or team.
+[**AddUserToCompany**](CompanyAPI.md#AddUserToCompany) | **Post** /companies/{cid}/users | Add a user to a company.
+[**ClearGlobalPermissions**](CompanyAPI.md#ClearGlobalPermissions) | **Delete** /companies/{cid}/globalpermission/{type}/{id} | Remove global permissions for a company user or team.
+[**FindCompany**](CompanyAPI.md#FindCompany) | **Get** /companies | Get all companies to which the specified user belongs.
+[**GetCompany**](CompanyAPI.md#GetCompany) | **Get** /companies/{cid} | Get company information by company ID.
+[**GetDocumentsByName**](CompanyAPI.md#GetDocumentsByName) | **Get** /companies/{cid}/documentsbyname | Get document by exact document name.
+[**RemoveUserFromCompany**](CompanyAPI.md#RemoveUserFromCompany) | **Delete** /companies/{cid}/users/{uid} | Remove a user from a company, company teams, and all the direct shares.
+[**UpdateCompanyUser**](CompanyAPI.md#UpdateCompanyUser) | **Post** /companies/{cid}/users/{uid} | Update the company&#39;s information for a user.
 
 
 
@@ -43,13 +43,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CompanyApi.AddGlobalPermissionsForIdentity(context.Background(), cid, type_, id).RequestBody(requestBody).Execute()
+    resp, r, err := apiClient.CompanyAPI.AddGlobalPermissionsForIdentity(context.Background(), cid, type_, id).RequestBody(requestBody).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CompanyApi.AddGlobalPermissionsForIdentity``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CompanyAPI.AddGlobalPermissionsForIdentity``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `AddGlobalPermissionsForIdentity`: BTGlobalPermissionInfo
-    fmt.Fprintf(os.Stdout, "Response from `CompanyApi.AddGlobalPermissionsForIdentity`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CompanyAPI.AddGlobalPermissionsForIdentity`: %v\n", resp)
 }
 ```
 
@@ -119,13 +119,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CompanyApi.AddUserToCompany(context.Background(), cid).BTCompanyUserParams(bTCompanyUserParams).Execute()
+    resp, r, err := apiClient.CompanyAPI.AddUserToCompany(context.Background(), cid).BTCompanyUserParams(bTCompanyUserParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CompanyApi.AddUserToCompany``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CompanyAPI.AddUserToCompany``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `AddUserToCompany`: BTCompanyUserInfo
-    fmt.Fprintf(os.Stdout, "Response from `CompanyApi.AddUserToCompany`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CompanyAPI.AddUserToCompany`: %v\n", resp)
 }
 ```
 
@@ -193,13 +193,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CompanyApi.ClearGlobalPermissions(context.Background(), cid, type_, id).Permission(permission).Execute()
+    resp, r, err := apiClient.CompanyAPI.ClearGlobalPermissions(context.Background(), cid, type_, id).Permission(permission).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CompanyApi.ClearGlobalPermissions``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CompanyAPI.ClearGlobalPermissions``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `ClearGlobalPermissions`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `CompanyApi.ClearGlobalPermissions`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CompanyAPI.ClearGlobalPermissions`: %v\n", resp)
 }
 ```
 
@@ -270,13 +270,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CompanyApi.FindCompany(context.Background()).Uid(uid).ActiveOnly(activeOnly).IncludeAll(includeAll).Execute()
+    resp, r, err := apiClient.CompanyAPI.FindCompany(context.Background()).Uid(uid).ActiveOnly(activeOnly).IncludeAll(includeAll).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CompanyApi.FindCompany``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CompanyAPI.FindCompany``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `FindCompany`: BTListResponseBTCompanyInfo
-    fmt.Fprintf(os.Stdout, "Response from `CompanyApi.FindCompany`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CompanyAPI.FindCompany`: %v\n", resp)
 }
 ```
 
@@ -336,13 +336,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CompanyApi.GetCompany(context.Background(), cid).Execute()
+    resp, r, err := apiClient.CompanyAPI.GetCompany(context.Background(), cid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CompanyApi.GetCompany``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CompanyAPI.GetCompany``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetCompany`: BTCompanyInfo
-    fmt.Fprintf(os.Stdout, "Response from `CompanyApi.GetCompany`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CompanyAPI.GetCompany`: %v\n", resp)
 }
 ```
 
@@ -407,13 +407,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CompanyApi.GetDocumentsByName(context.Background(), cid).Name(name).Execute()
+    resp, r, err := apiClient.CompanyAPI.GetDocumentsByName(context.Background(), cid).Name(name).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CompanyApi.GetDocumentsByName``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CompanyAPI.GetDocumentsByName``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDocumentsByName`: []BTGlobalTreeNodeSummaryInfo
-    fmt.Fprintf(os.Stdout, "Response from `CompanyApi.GetDocumentsByName`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CompanyAPI.GetDocumentsByName`: %v\n", resp)
 }
 ```
 
@@ -479,13 +479,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CompanyApi.RemoveUserFromCompany(context.Background(), cid, uid).RemoveFromTeams(removeFromTeams).RemoveDirectShares(removeDirectShares).Execute()
+    resp, r, err := apiClient.CompanyAPI.RemoveUserFromCompany(context.Background(), cid, uid).RemoveFromTeams(removeFromTeams).RemoveDirectShares(removeDirectShares).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CompanyApi.RemoveUserFromCompany``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CompanyAPI.RemoveUserFromCompany``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `RemoveUserFromCompany`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `CompanyApi.RemoveUserFromCompany`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CompanyAPI.RemoveUserFromCompany`: %v\n", resp)
 }
 ```
 
@@ -555,13 +555,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CompanyApi.UpdateCompanyUser(context.Background(), cid, uid).BTCompanyUserParams(bTCompanyUserParams).Execute()
+    resp, r, err := apiClient.CompanyAPI.UpdateCompanyUser(context.Background(), cid, uid).BTCompanyUserParams(bTCompanyUserParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CompanyApi.UpdateCompanyUser``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CompanyAPI.UpdateCompanyUser``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateCompanyUser`: BTCompanyUserInfo
-    fmt.Fprintf(os.Stdout, "Response from `CompanyApi.UpdateCompanyUser`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CompanyAPI.UpdateCompanyUser`: %v\n", resp)
 }
 ```
 

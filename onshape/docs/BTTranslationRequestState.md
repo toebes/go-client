@@ -3,11 +3,11 @@
 ## Enum
 
 
-* `BTTranslationRequestStateActive` (value: `"ACTIVE"`)
+* `Active` (value: `"ACTIVE"`)
 
-* `BTTranslationRequestStateDone` (value: `"DONE"`)
+* `Done` (value: `"DONE"`)
 
-* `BTTranslationRequestStateFailed` (value: `"FAILED"`)
+* `Failed` (value: `"FAILED"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

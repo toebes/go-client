@@ -18,65 +18,51 @@ import (
 	"strings"
 )
 
-// TranslationApiService TranslationApi service
-type TranslationApiService service
+// TranslationAPIService TranslationAPI service
+type TranslationAPIService service
 
 type ApiCreateTranslationRequest struct {
 	ctx                                  context.Context
-	ApiService                           *TranslationApiService
+	ApiService                           *TranslationAPIService
 	did                                  string
 	wid                                  string
-	file                                 *map[string]interface{}
 	allowFaultyParts                     *bool
 	createComposite                      *bool
 	createDrawingIfPossible              *bool
 	encodedFilename                      *string
 	extractAssemblyHierarchy             *bool
+	file                                 *HttpFile
 	flattenAssemblies                    *bool
 	formatName                           *string
+	importAppearances                    *bool
+	importMaterialDensity                *bool
+	importWithinDocument                 *bool
 	joinAdjacentSurfaces                 *bool
 	locationElementId                    *string
 	locationGroupId                      *string
 	locationPosition                     *int32
+	makePublic                           *bool
 	notifyUser                           *bool
+	onePartPerDoc                        *bool
 	ownerId                              *string
 	parentId                             *string
 	projectId                            *string
-	public                               *bool
-	onePartPerDoc                        *bool
+	repointAppElementVersionRefs         *bool
 	splitAssembliesIntoMultipleDocuments *bool
 	storeInDocument                      *bool
 	translate                            *bool
 	unit                                 *string
 	uploadId                             *string
-	versionString                        *string
-	importAppearances                    *bool
-	importMaterialDensity                *bool
-	yAxisIsUp                            *bool
-	importWithinDocument                 *bool
 	useIGESImportPostProcessing          *bool
-	upgradeFeatureScriptVersion          *bool
-	preserveSourceIds                    *bool
-	documentId                           *string
-	versionId                            *string
-	versionName                          *string
-	versionDescription                   *string
-	repointAppElementVersionRefs         *bool
+	versionString                        *string
+	yAxisIsUp                            *bool
 }
 
-// The file to upload.
-func (r ApiCreateTranslationRequest) File(file map[string]interface{}) ApiCreateTranslationRequest {
-	r.file = &file
-	return r
-}
-
-// If true, and a part doesn&#39;t pass Onshape validation, it will be imported with faults.
 func (r ApiCreateTranslationRequest) AllowFaultyParts(allowFaultyParts bool) ApiCreateTranslationRequest {
 	r.allowFaultyParts = &allowFaultyParts
 	return r
 }
 
-// Not supported for importing into a single part studio.
 func (r ApiCreateTranslationRequest) CreateComposite(createComposite bool) ApiCreateTranslationRequest {
 	r.createComposite = &createComposite
 	return r
@@ -87,7 +73,6 @@ func (r ApiCreateTranslationRequest) CreateDrawingIfPossible(createDrawingIfPoss
 	return r
 }
 
-// If the filename contains non-ASCII characters. Use this field to store the filename.
 func (r ApiCreateTranslationRequest) EncodedFilename(encodedFilename string) ApiCreateTranslationRequest {
 	r.encodedFilename = &encodedFilename
 	return r
@@ -98,7 +83,12 @@ func (r ApiCreateTranslationRequest) ExtractAssemblyHierarchy(extractAssemblyHie
 	return r
 }
 
-// If the file is an assembly, or contains an assembly, setting this to True will import it as a Part Studio. In this case the assembly will be flattened to a set of parts in a Part Studio. There will be duplicate parts created whenever a part is instanced more than once. If False, it will be imported as an Assembly.
+// The file to upload.
+func (r ApiCreateTranslationRequest) File(file HttpFile) ApiCreateTranslationRequest {
+	r.file = &file
+	return r
+}
+
 func (r ApiCreateTranslationRequest) FlattenAssemblies(flattenAssemblies bool) ApiCreateTranslationRequest {
 	r.flattenAssemblies = &flattenAssemblies
 	return r
@@ -106,6 +96,21 @@ func (r ApiCreateTranslationRequest) FlattenAssemblies(flattenAssemblies bool) A
 
 func (r ApiCreateTranslationRequest) FormatName(formatName string) ApiCreateTranslationRequest {
 	r.formatName = &formatName
+	return r
+}
+
+func (r ApiCreateTranslationRequest) ImportAppearances(importAppearances bool) ApiCreateTranslationRequest {
+	r.importAppearances = &importAppearances
+	return r
+}
+
+func (r ApiCreateTranslationRequest) ImportMaterialDensity(importMaterialDensity bool) ApiCreateTranslationRequest {
+	r.importMaterialDensity = &importMaterialDensity
+	return r
+}
+
+func (r ApiCreateTranslationRequest) ImportWithinDocument(importWithinDocument bool) ApiCreateTranslationRequest {
+	r.importWithinDocument = &importWithinDocument
 	return r
 }
 
@@ -129,8 +134,18 @@ func (r ApiCreateTranslationRequest) LocationPosition(locationPosition int32) Ap
 	return r
 }
 
+func (r ApiCreateTranslationRequest) MakePublic(makePublic bool) ApiCreateTranslationRequest {
+	r.makePublic = &makePublic
+	return r
+}
+
 func (r ApiCreateTranslationRequest) NotifyUser(notifyUser bool) ApiCreateTranslationRequest {
 	r.notifyUser = &notifyUser
+	return r
+}
+
+func (r ApiCreateTranslationRequest) OnePartPerDoc(onePartPerDoc bool) ApiCreateTranslationRequest {
+	r.onePartPerDoc = &onePartPerDoc
 	return r
 }
 
@@ -149,13 +164,8 @@ func (r ApiCreateTranslationRequest) ProjectId(projectId string) ApiCreateTransl
 	return r
 }
 
-func (r ApiCreateTranslationRequest) Public(public bool) ApiCreateTranslationRequest {
-	r.public = &public
-	return r
-}
-
-func (r ApiCreateTranslationRequest) OnePartPerDoc(onePartPerDoc bool) ApiCreateTranslationRequest {
-	r.onePartPerDoc = &onePartPerDoc
+func (r ApiCreateTranslationRequest) RepointAppElementVersionRefs(repointAppElementVersionRefs bool) ApiCreateTranslationRequest {
+	r.repointAppElementVersionRefs = &repointAppElementVersionRefs
 	return r
 }
 
@@ -184,73 +194,18 @@ func (r ApiCreateTranslationRequest) UploadId(uploadId string) ApiCreateTranslat
 	return r
 }
 
-func (r ApiCreateTranslationRequest) VersionString(versionString string) ApiCreateTranslationRequest {
-	r.versionString = &versionString
-	return r
-}
-
-// Face appearances defined on models will be imported.
-func (r ApiCreateTranslationRequest) ImportAppearances(importAppearances bool) ApiCreateTranslationRequest {
-	r.importAppearances = &importAppearances
-	return r
-}
-
-// Material density defined on models will be imported.
-func (r ApiCreateTranslationRequest) ImportMaterialDensity(importMaterialDensity bool) ApiCreateTranslationRequest {
-	r.importMaterialDensity = &importMaterialDensity
-	return r
-}
-
-// If the file was created in a system that orients with Y Axis Up, the models would by default be brought into Onshape (a Z Axis Up system) with a flipped coordinate system. Toggle this value to reorient the axis system to match Onshape and display the model with the coordinates you expect.
-func (r ApiCreateTranslationRequest) YAxisIsUp(yAxisIsUp bool) ApiCreateTranslationRequest {
-	r.yAxisIsUp = &yAxisIsUp
-	return r
-}
-
-func (r ApiCreateTranslationRequest) ImportWithinDocument(importWithinDocument bool) ApiCreateTranslationRequest {
-	r.importWithinDocument = &importWithinDocument
-	return r
-}
-
-// Try getting optimized topology from IGES model.
 func (r ApiCreateTranslationRequest) UseIGESImportPostProcessing(useIGESImportPostProcessing bool) ApiCreateTranslationRequest {
 	r.useIGESImportPostProcessing = &useIGESImportPostProcessing
 	return r
 }
 
-func (r ApiCreateTranslationRequest) UpgradeFeatureScriptVersion(upgradeFeatureScriptVersion bool) ApiCreateTranslationRequest {
-	r.upgradeFeatureScriptVersion = &upgradeFeatureScriptVersion
+func (r ApiCreateTranslationRequest) VersionString(versionString string) ApiCreateTranslationRequest {
+	r.versionString = &versionString
 	return r
 }
 
-func (r ApiCreateTranslationRequest) PreserveSourceIds(preserveSourceIds bool) ApiCreateTranslationRequest {
-	r.preserveSourceIds = &preserveSourceIds
-	return r
-}
-
-func (r ApiCreateTranslationRequest) DocumentId(documentId string) ApiCreateTranslationRequest {
-	r.documentId = &documentId
-	return r
-}
-
-func (r ApiCreateTranslationRequest) VersionId(versionId string) ApiCreateTranslationRequest {
-	r.versionId = &versionId
-	return r
-}
-
-func (r ApiCreateTranslationRequest) VersionName(versionName string) ApiCreateTranslationRequest {
-	r.versionName = &versionName
-	return r
-}
-
-func (r ApiCreateTranslationRequest) VersionDescription(versionDescription string) ApiCreateTranslationRequest {
-	r.versionDescription = &versionDescription
-	return r
-}
-
-// Re-point the version references in APP elements to initial version in the new document
-func (r ApiCreateTranslationRequest) RepointAppElementVersionRefs(repointAppElementVersionRefs bool) ApiCreateTranslationRequest {
-	r.repointAppElementVersionRefs = &repointAppElementVersionRefs
+func (r ApiCreateTranslationRequest) YAxisIsUp(yAxisIsUp bool) ApiCreateTranslationRequest {
+	r.yAxisIsUp = &yAxisIsUp
 	return r
 }
 
@@ -270,7 +225,7 @@ See [API Guide: Import & Export](https://onshape-public.github.io/docs/api-adv/t
 	@param wid
 	@return ApiCreateTranslationRequest
 */
-func (a *TranslationApiService) CreateTranslation(ctx context.Context, did string, wid string) ApiCreateTranslationRequest {
+func (a *TranslationAPIService) CreateTranslation(ctx context.Context, did string, wid string) ApiCreateTranslationRequest {
 	return ApiCreateTranslationRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -282,7 +237,7 @@ func (a *TranslationApiService) CreateTranslation(ctx context.Context, did strin
 // Execute executes the request
 //
 //	@return BTTranslationRequestImportInfo
-func (a *TranslationApiService) CreateTranslationExecute(r ApiCreateTranslationRequest) (*BTTranslationRequestImportInfo, *http.Response, error) {
+func (a *TranslationAPIService) CreateTranslationExecute(r ApiCreateTranslationRequest) (*BTTranslationRequestImportInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -290,7 +245,7 @@ func (a *TranslationApiService) CreateTranslationExecute(r ApiCreateTranslationR
 		localVarReturnValue *BTTranslationRequestImportInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TranslationApiService.CreateTranslation")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TranslationAPIService.CreateTranslation")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -320,9 +275,6 @@ func (a *TranslationApiService) CreateTranslationExecute(r ApiCreateTranslationR
 	if localVarHTTPHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
-	if r.file != nil {
-		localVarFormParams.Add("file", parameterToString(*r.file, ""))
-	}
 	if r.allowFaultyParts != nil {
 		localVarFormParams.Add("allowFaultyParts", parameterToString(*r.allowFaultyParts, ""))
 	}
@@ -338,11 +290,32 @@ func (a *TranslationApiService) CreateTranslationExecute(r ApiCreateTranslationR
 	if r.extractAssemblyHierarchy != nil {
 		localVarFormParams.Add("extractAssemblyHierarchy", parameterToString(*r.extractAssemblyHierarchy, ""))
 	}
+	var fileLocalVarFormFileName string
+	var fileLocalVarFileName string
+	var fileLocalVarFileBytes io.Reader
+
+	fileLocalVarFormFileName = "file"
+
+	if r.file != nil {
+		fileLocalVarFile := *r.file
+		fileLocalVarFileBytes = fileLocalVarFile.Data
+		fileLocalVarFileName = fileLocalVarFile.Name
+		formFiles = append(formFiles, formFile{fileData: fileLocalVarFileBytes, fileName: fileLocalVarFileName, formFileName: fileLocalVarFormFileName})
+	}
 	if r.flattenAssemblies != nil {
 		localVarFormParams.Add("flattenAssemblies", parameterToString(*r.flattenAssemblies, ""))
 	}
 	if r.formatName != nil {
 		localVarFormParams.Add("formatName", parameterToString(*r.formatName, ""))
+	}
+	if r.importAppearances != nil {
+		localVarFormParams.Add("importAppearances", parameterToString(*r.importAppearances, ""))
+	}
+	if r.importMaterialDensity != nil {
+		localVarFormParams.Add("importMaterialDensity", parameterToString(*r.importMaterialDensity, ""))
+	}
+	if r.importWithinDocument != nil {
+		localVarFormParams.Add("importWithinDocument", parameterToString(*r.importWithinDocument, ""))
 	}
 	if r.joinAdjacentSurfaces != nil {
 		localVarFormParams.Add("joinAdjacentSurfaces", parameterToString(*r.joinAdjacentSurfaces, ""))
@@ -356,8 +329,14 @@ func (a *TranslationApiService) CreateTranslationExecute(r ApiCreateTranslationR
 	if r.locationPosition != nil {
 		localVarFormParams.Add("locationPosition", parameterToString(*r.locationPosition, ""))
 	}
+	if r.makePublic != nil {
+		localVarFormParams.Add("makePublic", parameterToString(*r.makePublic, ""))
+	}
 	if r.notifyUser != nil {
 		localVarFormParams.Add("notifyUser", parameterToString(*r.notifyUser, ""))
+	}
+	if r.onePartPerDoc != nil {
+		localVarFormParams.Add("onePartPerDoc", parameterToString(*r.onePartPerDoc, ""))
 	}
 	if r.ownerId != nil {
 		localVarFormParams.Add("ownerId", parameterToString(*r.ownerId, ""))
@@ -368,11 +347,8 @@ func (a *TranslationApiService) CreateTranslationExecute(r ApiCreateTranslationR
 	if r.projectId != nil {
 		localVarFormParams.Add("projectId", parameterToString(*r.projectId, ""))
 	}
-	if r.public != nil {
-		localVarFormParams.Add("public", parameterToString(*r.public, ""))
-	}
-	if r.onePartPerDoc != nil {
-		localVarFormParams.Add("onePartPerDoc", parameterToString(*r.onePartPerDoc, ""))
+	if r.repointAppElementVersionRefs != nil {
+		localVarFormParams.Add("repointAppElementVersionRefs", parameterToString(*r.repointAppElementVersionRefs, ""))
 	}
 	if r.splitAssembliesIntoMultipleDocuments != nil {
 		localVarFormParams.Add("splitAssembliesIntoMultipleDocuments", parameterToString(*r.splitAssembliesIntoMultipleDocuments, ""))
@@ -389,44 +365,14 @@ func (a *TranslationApiService) CreateTranslationExecute(r ApiCreateTranslationR
 	if r.uploadId != nil {
 		localVarFormParams.Add("uploadId", parameterToString(*r.uploadId, ""))
 	}
-	if r.versionString != nil {
-		localVarFormParams.Add("versionString", parameterToString(*r.versionString, ""))
-	}
-	if r.importAppearances != nil {
-		localVarFormParams.Add("importAppearances", parameterToString(*r.importAppearances, ""))
-	}
-	if r.importMaterialDensity != nil {
-		localVarFormParams.Add("importMaterialDensity", parameterToString(*r.importMaterialDensity, ""))
-	}
-	if r.yAxisIsUp != nil {
-		localVarFormParams.Add("yAxisIsUp", parameterToString(*r.yAxisIsUp, ""))
-	}
-	if r.importWithinDocument != nil {
-		localVarFormParams.Add("importWithinDocument", parameterToString(*r.importWithinDocument, ""))
-	}
 	if r.useIGESImportPostProcessing != nil {
 		localVarFormParams.Add("useIGESImportPostProcessing", parameterToString(*r.useIGESImportPostProcessing, ""))
 	}
-	if r.upgradeFeatureScriptVersion != nil {
-		localVarFormParams.Add("upgradeFeatureScriptVersion", parameterToString(*r.upgradeFeatureScriptVersion, ""))
+	if r.versionString != nil {
+		localVarFormParams.Add("versionString", parameterToString(*r.versionString, ""))
 	}
-	if r.preserveSourceIds != nil {
-		localVarFormParams.Add("preserveSourceIds", parameterToString(*r.preserveSourceIds, ""))
-	}
-	if r.documentId != nil {
-		localVarFormParams.Add("documentId", parameterToString(*r.documentId, ""))
-	}
-	if r.versionId != nil {
-		localVarFormParams.Add("versionId", parameterToString(*r.versionId, ""))
-	}
-	if r.versionName != nil {
-		localVarFormParams.Add("versionName", parameterToString(*r.versionName, ""))
-	}
-	if r.versionDescription != nil {
-		localVarFormParams.Add("versionDescription", parameterToString(*r.versionDescription, ""))
-	}
-	if r.repointAppElementVersionRefs != nil {
-		localVarFormParams.Add("repointAppElementVersionRefs", parameterToString(*r.repointAppElementVersionRefs, ""))
+	if r.yAxisIsUp != nil {
+		localVarFormParams.Add("yAxisIsUp", parameterToString(*r.yAxisIsUp, ""))
 	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, formFiles)
 	if err != nil {
@@ -474,7 +420,7 @@ func (a *TranslationApiService) CreateTranslationExecute(r ApiCreateTranslationR
 
 type ApiDeleteTranslationRequest struct {
 	ctx        context.Context
-	ApiService *TranslationApiService
+	ApiService *TranslationAPIService
 	tid        string
 }
 
@@ -489,7 +435,7 @@ DeleteTranslation Delete a translation request.
 	@param tid
 	@return ApiDeleteTranslationRequest
 */
-func (a *TranslationApiService) DeleteTranslation(ctx context.Context, tid string) ApiDeleteTranslationRequest {
+func (a *TranslationAPIService) DeleteTranslation(ctx context.Context, tid string) ApiDeleteTranslationRequest {
 	return ApiDeleteTranslationRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -500,7 +446,7 @@ func (a *TranslationApiService) DeleteTranslation(ctx context.Context, tid strin
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *TranslationApiService) DeleteTranslationExecute(r ApiDeleteTranslationRequest) (map[string]interface{}, *http.Response, error) {
+func (a *TranslationAPIService) DeleteTranslationExecute(r ApiDeleteTranslationRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodDelete
 		localVarPostBody    interface{}
@@ -508,7 +454,7 @@ func (a *TranslationApiService) DeleteTranslationExecute(r ApiDeleteTranslationR
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TranslationApiService.DeleteTranslation")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TranslationAPIService.DeleteTranslation")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -583,7 +529,7 @@ func (a *TranslationApiService) DeleteTranslationExecute(r ApiDeleteTranslationR
 
 type ApiGetAllTranslatorFormatsRequest struct {
 	ctx        context.Context
-	ApiService *TranslationApiService
+	ApiService *TranslationAPIService
 }
 
 func (r ApiGetAllTranslatorFormatsRequest) Execute() ([]BTModelFormatFullInfo, *http.Response, error) {
@@ -598,7 +544,7 @@ Note that we don't necessarily support both import and export for any given form
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiGetAllTranslatorFormatsRequest
 */
-func (a *TranslationApiService) GetAllTranslatorFormats(ctx context.Context) ApiGetAllTranslatorFormatsRequest {
+func (a *TranslationAPIService) GetAllTranslatorFormats(ctx context.Context) ApiGetAllTranslatorFormatsRequest {
 	return ApiGetAllTranslatorFormatsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -608,7 +554,7 @@ func (a *TranslationApiService) GetAllTranslatorFormats(ctx context.Context) Api
 // Execute executes the request
 //
 //	@return []BTModelFormatFullInfo
-func (a *TranslationApiService) GetAllTranslatorFormatsExecute(r ApiGetAllTranslatorFormatsRequest) ([]BTModelFormatFullInfo, *http.Response, error) {
+func (a *TranslationAPIService) GetAllTranslatorFormatsExecute(r ApiGetAllTranslatorFormatsRequest) ([]BTModelFormatFullInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -616,7 +562,7 @@ func (a *TranslationApiService) GetAllTranslatorFormatsExecute(r ApiGetAllTransl
 		localVarReturnValue []BTModelFormatFullInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TranslationApiService.GetAllTranslatorFormats")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TranslationAPIService.GetAllTranslatorFormats")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -690,7 +636,7 @@ func (a *TranslationApiService) GetAllTranslatorFormatsExecute(r ApiGetAllTransl
 
 type ApiGetDocumentTranslationsRequest struct {
 	ctx        context.Context
-	ApiService *TranslationApiService
+	ApiService *TranslationAPIService
 	did        string
 	offset     *int32
 	limit      *int32
@@ -717,7 +663,7 @@ GetDocumentTranslations Get information on an in-progress or completed translati
 	@param did
 	@return ApiGetDocumentTranslationsRequest
 */
-func (a *TranslationApiService) GetDocumentTranslations(ctx context.Context, did string) ApiGetDocumentTranslationsRequest {
+func (a *TranslationAPIService) GetDocumentTranslations(ctx context.Context, did string) ApiGetDocumentTranslationsRequest {
 	return ApiGetDocumentTranslationsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -728,7 +674,7 @@ func (a *TranslationApiService) GetDocumentTranslations(ctx context.Context, did
 // Execute executes the request
 //
 //	@return BTListResponseBTTranslationRequestInfo
-func (a *TranslationApiService) GetDocumentTranslationsExecute(r ApiGetDocumentTranslationsRequest) (*BTListResponseBTTranslationRequestInfo, *http.Response, error) {
+func (a *TranslationAPIService) GetDocumentTranslationsExecute(r ApiGetDocumentTranslationsRequest) (*BTListResponseBTTranslationRequestInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -736,7 +682,7 @@ func (a *TranslationApiService) GetDocumentTranslationsExecute(r ApiGetDocumentT
 		localVarReturnValue *BTListResponseBTTranslationRequestInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TranslationApiService.GetDocumentTranslations")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TranslationAPIService.GetDocumentTranslations")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -817,7 +763,7 @@ func (a *TranslationApiService) GetDocumentTranslationsExecute(r ApiGetDocumentT
 
 type ApiGetTranslationRequest struct {
 	ctx        context.Context
-	ApiService *TranslationApiService
+	ApiService *TranslationAPIService
 	tid        string
 }
 
@@ -836,7 +782,7 @@ When polling for translations to complete, use a reasonable interval (e.g., avoi
 	@param tid
 	@return ApiGetTranslationRequest
 */
-func (a *TranslationApiService) GetTranslation(ctx context.Context, tid string) ApiGetTranslationRequest {
+func (a *TranslationAPIService) GetTranslation(ctx context.Context, tid string) ApiGetTranslationRequest {
 	return ApiGetTranslationRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -847,7 +793,7 @@ func (a *TranslationApiService) GetTranslation(ctx context.Context, tid string) 
 // Execute executes the request
 //
 //	@return BTTranslationRequestInfo
-func (a *TranslationApiService) GetTranslationExecute(r ApiGetTranslationRequest) (*BTTranslationRequestInfo, *http.Response, error) {
+func (a *TranslationAPIService) GetTranslationExecute(r ApiGetTranslationRequest) (*BTTranslationRequestInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -855,7 +801,7 @@ func (a *TranslationApiService) GetTranslationExecute(r ApiGetTranslationRequest
 		localVarReturnValue *BTTranslationRequestInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TranslationApiService.GetTranslation")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TranslationAPIService.GetTranslation")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}

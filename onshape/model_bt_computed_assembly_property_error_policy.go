@@ -20,11 +20,11 @@ type BTComputedAssemblyPropertyErrorPolicy string
 
 // List of BTComputedAssemblyPropertyErrorPolicy
 const (
-	BTComputedAssemblyPropertyErrorPolicyExcludeFromComputation BTComputedAssemblyPropertyErrorPolicy = "ExcludeFromComputation"
-	BTComputedAssemblyPropertyErrorPolicyTreatAsZero            BTComputedAssemblyPropertyErrorPolicy = "TreatAsZero"
-	BTComputedAssemblyPropertyErrorPolicyTreatAsTrue            BTComputedAssemblyPropertyErrorPolicy = "TreatAsTrue"
-	BTComputedAssemblyPropertyErrorPolicyTreatAsFalse           BTComputedAssemblyPropertyErrorPolicy = "TreatAsFalse"
-	BTComputedAssemblyPropertyErrorPolicyPropagateError         BTComputedAssemblyPropertyErrorPolicy = "PropagateError"
+	ExcludeFromComputation BTComputedAssemblyPropertyErrorPolicy = "ExcludeFromComputation"
+	TreatAsZero            BTComputedAssemblyPropertyErrorPolicy = "TreatAsZero"
+	TreatAsTrue            BTComputedAssemblyPropertyErrorPolicy = "TreatAsTrue"
+	TreatAsFalse           BTComputedAssemblyPropertyErrorPolicy = "TreatAsFalse"
+	PropagateError         BTComputedAssemblyPropertyErrorPolicy = "PropagateError"
 )
 
 // All allowed values of BTComputedAssemblyPropertyErrorPolicy enum

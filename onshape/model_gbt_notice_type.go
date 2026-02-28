@@ -20,13 +20,13 @@ type GBTNoticeType string
 
 // List of GBTNoticeType
 const (
-	GBTNoticeTypeParse     GBTNoticeType = "PARSE"
-	GBTNoticeTypeSemantic  GBTNoticeType = "SEMANTIC"
-	GBTNoticeTypeExecution GBTNoticeType = "EXECUTION"
-	GBTNoticeTypeModeling  GBTNoticeType = "MODELING"
-	GBTNoticeTypeTest      GBTNoticeType = "TEST"
-	GBTNoticeTypeOther     GBTNoticeType = "OTHER"
-	GBTNoticeTypeUnknown   GBTNoticeType = "UNKNOWN"
+	Parse     GBTNoticeType = "PARSE"
+	Semantic  GBTNoticeType = "SEMANTIC"
+	Execution GBTNoticeType = "EXECUTION"
+	Modeling  GBTNoticeType = "MODELING"
+	Test      GBTNoticeType = "TEST"
+	Other     GBTNoticeType = "OTHER"
+	Unknown   GBTNoticeType = "UNKNOWN"
 )
 
 // All allowed values of GBTNoticeType enum

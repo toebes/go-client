@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `UserRolePriorityOwner` (value: `"OWNER"`)
+* `Owner` (value: `"OWNER"`)
 
-* `UserRolePriorityAdmin` (value: `"ADMIN"`)
+* `Admin` (value: `"ADMIN"`)
 
-* `UserRolePriorityMember` (value: `"MEMBER"`)
+* `Member` (value: `"MEMBER"`)
 
-* `UserRolePriorityGuest` (value: `"GUEST"`)
+* `Guest` (value: `"GUEST"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

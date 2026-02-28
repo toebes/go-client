@@ -20,9 +20,9 @@ type BTPropertiesTableTemplateType string
 
 // List of BTPropertiesTableTemplateType
 const (
-	BTPropertiesTableTemplateTypeBom             BTPropertiesTableTemplateType = "BOM"
-	BTPropertiesTableTemplateTypeRevisionTable   BTPropertiesTableTemplateType = "REVISION_TABLE"
-	BTPropertiesTableTemplateTypeInspectionTable BTPropertiesTableTemplateType = "INSPECTION_TABLE"
+	Bom             BTPropertiesTableTemplateType = "BOM"
+	RevisionTable   BTPropertiesTableTemplateType = "REVISION_TABLE"
+	InspectionTable BTPropertiesTableTemplateType = "INSPECTION_TABLE"
 )
 
 // All allowed values of BTPropertiesTableTemplateType enum

@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `GBTHoleTypeSimple` (value: `"SIMPLE"`)
+* `Simple` (value: `"SIMPLE"`)
 
-* `GBTHoleTypeCBore` (value: `"C_BORE"`)
+* `CBore` (value: `"C_BORE"`)
 
-* `GBTHoleTypeCSink` (value: `"C_SINK"`)
+* `CSink` (value: `"C_SINK"`)
 
-* `GBTHoleTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

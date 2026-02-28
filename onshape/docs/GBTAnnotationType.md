@@ -3,25 +3,25 @@
 ## Enum
 
 
-* `GBTAnnotationTypeDatum` (value: `"DATUM"`)
+* `Datum` (value: `"DATUM"`)
 
-* `GBTAnnotationTypeGtol` (value: `"GTOL"`)
+* `Gtol` (value: `"GTOL"`)
 
-* `GBTAnnotationTypeDimensionPosition` (value: `"DIMENSION_POSITION"`)
+* `DimensionPosition` (value: `"DIMENSION_POSITION"`)
 
-* `GBTAnnotationTypeDimension` (value: `"DIMENSION"`)
+* `Dimension` (value: `"DIMENSION"`)
 
-* `GBTAnnotationTypeWeld` (value: `"WELD"`)
+* `Weld` (value: `"WELD"`)
 
-* `GBTAnnotationTypeHoleCallout` (value: `"HOLE_CALLOUT"`)
+* `HoleCallout` (value: `"HOLE_CALLOUT"`)
 
-* `GBTAnnotationTypeHoleCalloutPosition` (value: `"HOLE_CALLOUT_POSITION"`)
+* `HoleCalloutPosition` (value: `"HOLE_CALLOUT_POSITION"`)
 
-* `GBTAnnotationTypeChamferCallout` (value: `"CHAMFER_CALLOUT"`)
+* `ChamferCallout` (value: `"CHAMFER_CALLOUT"`)
 
-* `GBTAnnotationTypeChamferCalloutPosition` (value: `"CHAMFER_CALLOUT_POSITION"`)
+* `ChamferCalloutPosition` (value: `"CHAMFER_CALLOUT_POSITION"`)
 
-* `GBTAnnotationTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

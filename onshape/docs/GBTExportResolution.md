@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `GBTExportResolutionFine` (value: `"FINE"`)
+* `Fine` (value: `"FINE"`)
 
-* `GBTExportResolutionMedium` (value: `"MEDIUM"`)
+* `Medium` (value: `"MEDIUM"`)
 
-* `GBTExportResolutionCoarse` (value: `"COARSE"`)
+* `Coarse` (value: `"COARSE"`)
 
-* `GBTExportResolutionUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

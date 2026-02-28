@@ -20,10 +20,10 @@ type GBTSimulationContactBehavior string
 
 // List of GBTSimulationContactBehavior
 const (
-	GBTSimulationContactBehaviorMatesOnly                GBTSimulationContactBehavior = "MATES_ONLY"
-	GBTSimulationContactBehaviorFuseInContact            GBTSimulationContactBehavior = "FUSE_IN_CONTACT"
-	GBTSimulationContactBehaviorFuseInContactAndUseMates GBTSimulationContactBehavior = "FUSE_IN_CONTACT_AND_USE_MATES"
-	GBTSimulationContactBehaviorUnknown                  GBTSimulationContactBehavior = "UNKNOWN"
+	MatesOnly                GBTSimulationContactBehavior = "MATES_ONLY"
+	FuseInContact            GBTSimulationContactBehavior = "FUSE_IN_CONTACT"
+	FuseInContactAndUseMates GBTSimulationContactBehavior = "FUSE_IN_CONTACT_AND_USE_MATES"
+	Unknown                  GBTSimulationContactBehavior = "UNKNOWN"
 )
 
 // All allowed values of GBTSimulationContactBehavior enum

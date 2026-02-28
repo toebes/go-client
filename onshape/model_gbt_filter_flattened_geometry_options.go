@@ -20,10 +20,10 @@ type GBTFilterFlattenedGeometryOptions string
 
 // List of GBTFilterFlattenedGeometryOptions
 const (
-	GBTFilterFlattenedGeometryOptionsModelOnly         GBTFilterFlattenedGeometryOptions = "MODEL_ONLY"
-	GBTFilterFlattenedGeometryOptionsFlattenedOnly     GBTFilterFlattenedGeometryOptions = "FLATTENED_ONLY"
-	GBTFilterFlattenedGeometryOptionsModelAndFlattened GBTFilterFlattenedGeometryOptions = "MODEL_AND_FLATTENED"
-	GBTFilterFlattenedGeometryOptionsUnknown           GBTFilterFlattenedGeometryOptions = "UNKNOWN"
+	ModelOnly         GBTFilterFlattenedGeometryOptions = "MODEL_ONLY"
+	FlattenedOnly     GBTFilterFlattenedGeometryOptions = "FLATTENED_ONLY"
+	ModelAndFlattened GBTFilterFlattenedGeometryOptions = "MODEL_AND_FLATTENED"
+	Unknown           GBTFilterFlattenedGeometryOptions = "UNKNOWN"
 )
 
 // All allowed values of GBTFilterFlattenedGeometryOptions enum

@@ -3,53 +3,53 @@
 ## Enum
 
 
-* `GBTUiSelectionTypeEntity` (value: `"ENTITY"`)
+* `Entity` (value: `"ENTITY"`)
 
-* `GBTUiSelectionTypeFeature` (value: `"FEATURE"`)
+* `Feature` (value: `"FEATURE"`)
 
-* `GBTUiSelectionTypeBody` (value: `"BODY"`)
+* `Body` (value: `"BODY"`)
 
-* `GBTUiSelectionTypeOccurrence` (value: `"OCCURRENCE"`)
+* `Occurrence` (value: `"OCCURRENCE"`)
 
-* `GBTUiSelectionTypeUsercode` (value: `"USERCODE"`)
+* `Usercode` (value: `"USERCODE"`)
 
-* `GBTUiSelectionTypeRollbackbar` (value: `"ROLLBACKBAR"`)
+* `Rollbackbar` (value: `"ROLLBACKBAR"`)
 
-* `GBTUiSelectionTypeElement` (value: `"ELEMENT"`)
+* `Element` (value: `"ELEMENT"`)
 
-* `GBTUiSelectionTypeMate` (value: `"MATE"`)
+* `Mate` (value: `"MATE"`)
 
-* `GBTUiSelectionTypeMateConnector` (value: `"MATE_CONNECTOR"`)
+* `MateConnector` (value: `"MATE_CONNECTOR"`)
 
-* `GBTUiSelectionTypeEdgePoint` (value: `"EDGE_POINT"`)
+* `EdgePoint` (value: `"EDGE_POINT"`)
 
-* `GBTUiSelectionTypeMeshPoint` (value: `"MESH_POINT"`)
+* `MeshPoint` (value: `"MESH_POINT"`)
 
-* `GBTUiSelectionTypeTableItem` (value: `"TABLE_ITEM"`)
+* `TableItem` (value: `"TABLE_ITEM"`)
 
-* `GBTUiSelectionTypeSketchGroup` (value: `"SKETCH_GROUP"`)
+* `SketchGroup` (value: `"SKETCH_GROUP"`)
 
-* `GBTUiSelectionTypeFolder` (value: `"FOLDER"`)
+* `Folder` (value: `"FOLDER"`)
 
-* `GBTUiSelectionTypeNonGeometricItem` (value: `"NON_GEOMETRIC_ITEM"`)
+* `NonGeometricItem` (value: `"NON_GEOMETRIC_ITEM"`)
 
-* `GBTUiSelectionTypeTemporaryGeometry` (value: `"TEMPORARY_GEOMETRY"`)
+* `TemporaryGeometry` (value: `"TEMPORARY_GEOMETRY"`)
 
-* `GBTUiSelectionTypeProperty` (value: `"PROPERTY"`)
+* `Property` (value: `"PROPERTY"`)
 
-* `GBTUiSelectionTypeSimulationLoad` (value: `"SIMULATION_LOAD"`)
+* `SimulationLoad` (value: `"SIMULATION_LOAD"`)
 
-* `GBTUiSelectionTypePersistentQueryString` (value: `"PERSISTENT_QUERY_STRING"`)
+* `PersistentQueryString` (value: `"PERSISTENT_QUERY_STRING"`)
 
-* `GBTUiSelectionTypeGenerativeDesignItem` (value: `"GENERATIVE_DESIGN_ITEM"`)
+* `GenerativeDesignItem` (value: `"GENERATIVE_DESIGN_ITEM"`)
 
-* `GBTUiSelectionTypeAnnotation` (value: `"ANNOTATION"`)
+* `Annotation` (value: `"ANNOTATION"`)
 
-* `GBTUiSelectionTypeDimension` (value: `"DIMENSION"`)
+* `Dimension` (value: `"DIMENSION"`)
 
-* `GBTUiSelectionTypeQueryVariable` (value: `"QUERY_VARIABLE"`)
+* `QueryVariable` (value: `"QUERY_VARIABLE"`)
 
-* `GBTUiSelectionTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

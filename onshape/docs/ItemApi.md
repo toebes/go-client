@@ -1,14 +1,14 @@
-# \ItemApi
+# \ItemAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateItem**](ItemApi.md#CreateItem) | **Post** /items | Create a new item.
-[**DeleteItem**](ItemApi.md#DeleteItem) | **Delete** /items/{iid} | Delete an item.
-[**GetItem**](ItemApi.md#GetItem) | **Get** /items/{iid} | Get item by ID.
-[**GetItems**](ItemApi.md#GetItems) | **Get** /items | Get all items owned by a company/classroom/enterprise.
-[**UpdateItem**](ItemApi.md#UpdateItem) | **Post** /items/{iid} | Update an item.
+[**CreateItem**](ItemAPI.md#CreateItem) | **Post** /items | Create a new item.
+[**DeleteItem**](ItemAPI.md#DeleteItem) | **Delete** /items/{iid} | Delete an item.
+[**GetItem**](ItemAPI.md#GetItem) | **Get** /items/{iid} | Get item by ID.
+[**GetItems**](ItemAPI.md#GetItems) | **Get** /items | Get all items owned by a company/classroom/enterprise.
+[**UpdateItem**](ItemAPI.md#UpdateItem) | **Post** /items/{iid} | Update an item.
 
 
 
@@ -35,13 +35,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ItemApi.CreateItem(context.Background()).BTItemParams(bTItemParams).Execute()
+    resp, r, err := apiClient.ItemAPI.CreateItem(context.Background()).BTItemParams(bTItemParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ItemApi.CreateItem``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ItemAPI.CreateItem``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateItem`: BTItemInfo
-    fmt.Fprintf(os.Stdout, "Response from `ItemApi.CreateItem`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ItemAPI.CreateItem`: %v\n", resp)
 }
 ```
 
@@ -101,13 +101,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ItemApi.DeleteItem(context.Background(), iid).Execute()
+    resp, r, err := apiClient.ItemAPI.DeleteItem(context.Background(), iid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ItemApi.DeleteItem``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ItemAPI.DeleteItem``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteItem`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `ItemApi.DeleteItem`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ItemAPI.DeleteItem`: %v\n", resp)
 }
 ```
 
@@ -173,13 +173,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ItemApi.GetItem(context.Background(), iid).DocumentId(documentId).CompanyId(companyId).Execute()
+    resp, r, err := apiClient.ItemAPI.GetItem(context.Background(), iid).DocumentId(documentId).CompanyId(companyId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ItemApi.GetItem``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ItemAPI.GetItem``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetItem`: BTItemInfo
-    fmt.Fprintf(os.Stdout, "Response from `ItemApi.GetItem`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ItemAPI.GetItem`: %v\n", resp)
 }
 ```
 
@@ -251,13 +251,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ItemApi.GetItems(context.Background()).DocumentId(documentId).CompanyId(companyId).Q(q).PublishStates(publishStates).Classification(classification).Offset(offset).Limit(limit).Execute()
+    resp, r, err := apiClient.ItemAPI.GetItems(context.Background()).DocumentId(documentId).CompanyId(companyId).Q(q).PublishStates(publishStates).Classification(classification).Offset(offset).Limit(limit).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ItemApi.GetItems``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ItemAPI.GetItems``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetItems`: BTListResponseBTItemInfo
-    fmt.Fprintf(os.Stdout, "Response from `ItemApi.GetItems`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ItemAPI.GetItems`: %v\n", resp)
 }
 ```
 
@@ -322,13 +322,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ItemApi.UpdateItem(context.Background(), iid).BTItemParams(bTItemParams).Execute()
+    resp, r, err := apiClient.ItemAPI.UpdateItem(context.Background(), iid).BTItemParams(bTItemParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ItemApi.UpdateItem``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ItemAPI.UpdateItem``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateItem`: BTItemInfo
-    fmt.Fprintf(os.Stdout, "Response from `ItemApi.UpdateItem`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ItemAPI.UpdateItem`: %v\n", resp)
 }
 ```
 

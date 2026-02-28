@@ -20,10 +20,10 @@ type GBTAssemblySimulationType string
 
 // List of GBTAssemblySimulationType
 const (
-	GBTAssemblySimulationTypeLinearStatic    GBTAssemblySimulationType = "LINEAR_STATIC"
-	GBTAssemblySimulationTypeModal           GBTAssemblySimulationType = "MODAL"
-	GBTAssemblySimulationTypeContactAnalysis GBTAssemblySimulationType = "CONTACT_ANALYSIS"
-	GBTAssemblySimulationTypeUnknown         GBTAssemblySimulationType = "UNKNOWN"
+	LinearStatic    GBTAssemblySimulationType = "LINEAR_STATIC"
+	Modal           GBTAssemblySimulationType = "MODAL"
+	ContactAnalysis GBTAssemblySimulationType = "CONTACT_ANALYSIS"
+	Unknown         GBTAssemblySimulationType = "UNKNOWN"
 )
 
 // All allowed values of GBTAssemblySimulationType enum

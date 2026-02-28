@@ -1,14 +1,14 @@
-# \TaskApi
+# \TaskAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateTask**](TaskApi.md#CreateTask) | **Post** /tasks | Create a new task in a draft state.
-[**GetActionItems**](TaskApi.md#GetActionItems) | **Get** /tasks | Lists tasks assigned to the specified user
-[**GetTask**](TaskApi.md#GetTask) | **Get** /tasks/{tid} | Get a task by id.
-[**TransitionTask**](TaskApi.md#TransitionTask) | **Post** /tasks/{tid}/{transition} | Execute a workflow transition.
-[**UpdateTask**](TaskApi.md#UpdateTask) | **Post** /tasks/{tid} | Update the task and its properties.
+[**CreateTask**](TaskAPI.md#CreateTask) | **Post** /tasks | Create a new task in a draft state.
+[**GetActionItems**](TaskAPI.md#GetActionItems) | **Get** /tasks | Lists tasks assigned to the specified user
+[**GetTask**](TaskAPI.md#GetTask) | **Get** /tasks/{tid} | Get a task by id.
+[**TransitionTask**](TaskAPI.md#TransitionTask) | **Post** /tasks/{tid}/{transition} | Execute a workflow transition.
+[**UpdateTask**](TaskAPI.md#UpdateTask) | **Post** /tasks/{tid} | Update the task and its properties.
 
 
 
@@ -35,13 +35,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.TaskApi.CreateTask(context.Background()).BTCreateTaskParams(bTCreateTaskParams).Execute()
+    resp, r, err := apiClient.TaskAPI.CreateTask(context.Background()).BTCreateTaskParams(bTCreateTaskParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `TaskApi.CreateTask``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `TaskAPI.CreateTask``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateTask`: BTTaskInfo
-    fmt.Fprintf(os.Stdout, "Response from `TaskApi.CreateTask`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `TaskAPI.CreateTask`: %v\n", resp)
 }
 ```
 
@@ -108,13 +108,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.TaskApi.GetActionItems(context.Background()).UserId(userId).Status(status).Role(role).Order(order).Type_(type_).DocumentId(documentId).Offset(offset).Limit(limit).Execute()
+    resp, r, err := apiClient.TaskAPI.GetActionItems(context.Background()).UserId(userId).Status(status).Role(role).Order(order).Type_(type_).DocumentId(documentId).Offset(offset).Limit(limit).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `TaskApi.GetActionItems``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `TaskAPI.GetActionItems``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetActionItems`: BTTaskListResponse
-    fmt.Fprintf(os.Stdout, "Response from `TaskApi.GetActionItems`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `TaskAPI.GetActionItems`: %v\n", resp)
 }
 ```
 
@@ -179,13 +179,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.TaskApi.GetTask(context.Background(), tid).Execute()
+    resp, r, err := apiClient.TaskAPI.GetTask(context.Background(), tid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `TaskApi.GetTask``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `TaskAPI.GetTask``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetTask`: BTTaskInfo
-    fmt.Fprintf(os.Stdout, "Response from `TaskApi.GetTask`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `TaskAPI.GetTask`: %v\n", resp)
 }
 ```
 
@@ -248,13 +248,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.TaskApi.TransitionTask(context.Background(), tid, transition).Execute()
+    resp, r, err := apiClient.TaskAPI.TransitionTask(context.Background(), tid, transition).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `TaskApi.TransitionTask``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `TaskAPI.TransitionTask``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `TransitionTask`: BTTaskInfo
-    fmt.Fprintf(os.Stdout, "Response from `TaskApi.TransitionTask`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `TaskAPI.TransitionTask`: %v\n", resp)
 }
 ```
 
@@ -319,13 +319,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.TaskApi.UpdateTask(context.Background(), tid).BTUpdateTaskParams(bTUpdateTaskParams).Execute()
+    resp, r, err := apiClient.TaskAPI.UpdateTask(context.Background(), tid).BTUpdateTaskParams(bTUpdateTaskParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `TaskApi.UpdateTask``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `TaskAPI.UpdateTask``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateTask`: BTTaskInfo
-    fmt.Fprintf(os.Stdout, "Response from `TaskApi.UpdateTask`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `TaskAPI.UpdateTask`: %v\n", resp)
 }
 ```
 

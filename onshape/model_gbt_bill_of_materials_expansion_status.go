@@ -20,10 +20,10 @@ type GBTBillOfMaterialsExpansionStatus string
 
 // List of GBTBillOfMaterialsExpansionStatus
 const (
-	GBTBillOfMaterialsExpansionStatusNotExpandable GBTBillOfMaterialsExpansionStatus = "NOT_EXPANDABLE"
-	GBTBillOfMaterialsExpansionStatusExpanded      GBTBillOfMaterialsExpansionStatus = "EXPANDED"
-	GBTBillOfMaterialsExpansionStatusCollapsed     GBTBillOfMaterialsExpansionStatus = "COLLAPSED"
-	GBTBillOfMaterialsExpansionStatusUnknown       GBTBillOfMaterialsExpansionStatus = "UNKNOWN"
+	NotExpandable GBTBillOfMaterialsExpansionStatus = "NOT_EXPANDABLE"
+	Expanded      GBTBillOfMaterialsExpansionStatus = "EXPANDED"
+	Collapsed     GBTBillOfMaterialsExpansionStatus = "COLLAPSED"
+	Unknown       GBTBillOfMaterialsExpansionStatus = "UNKNOWN"
 )
 
 // All allowed values of GBTBillOfMaterialsExpansionStatus enum

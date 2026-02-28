@@ -20,10 +20,10 @@ type GBTEntityEdgeSmoothnessStatus string
 
 // List of GBTEntityEdgeSmoothnessStatus
 const (
-	GBTEntityEdgeSmoothnessStatusUnknown   GBTEntityEdgeSmoothnessStatus = "UNKNOWN"
-	GBTEntityEdgeSmoothnessStatusSmooth    GBTEntityEdgeSmoothnessStatus = "SMOOTH"
-	GBTEntityEdgeSmoothnessStatusNotSmooth GBTEntityEdgeSmoothnessStatus = "NOT_SMOOTH"
-	GBTEntityEdgeSmoothnessStatusSmoothV2  GBTEntityEdgeSmoothnessStatus = "SMOOTH_V2"
+	Unknown   GBTEntityEdgeSmoothnessStatus = "UNKNOWN"
+	Smooth    GBTEntityEdgeSmoothnessStatus = "SMOOTH"
+	NotSmooth GBTEntityEdgeSmoothnessStatus = "NOT_SMOOTH"
+	SmoothV2  GBTEntityEdgeSmoothnessStatus = "SMOOTH_V2"
 )
 
 // All allowed values of GBTEntityEdgeSmoothnessStatus enum

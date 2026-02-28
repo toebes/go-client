@@ -1,11 +1,11 @@
-# \OpenApiApi
+# \OpenApiAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetOpenApi**](OpenApiApi.md#GetOpenApi) | **Get** /openapi | Get the OpenAPI specification for the Onshape REST API.
-[**GetTags**](OpenApiApi.md#GetTags) | **Get** /openapi/tags | Get the list of tags in the Onshape OpenAPI specification.
+[**GetOpenApi**](OpenApiAPI.md#GetOpenApi) | **Get** /openapi | Get the OpenAPI specification for the Onshape REST API.
+[**GetTags**](OpenApiAPI.md#GetTags) | **Get** /openapi/tags | Get the list of tags in the Onshape OpenAPI specification.
 
 
 
@@ -45,13 +45,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.OpenApiApi.GetOpenApi(context.Background()).ForceReload(forceReload).Version(version).VersionAlias(versionAlias).NoFilter(noFilter).IncludedTags(includedTags).ExcludedTags(excludedTags).IncludeDeprecated(includeDeprecated).OnlyDeprecated(onlyDeprecated).DocumentationStatuses(documentationStatuses).RestUserRole(restUserRole).OperationIds(operationIds).ExcludedOperationIds(excludedOperationIds).Execute()
+    resp, r, err := apiClient.OpenApiAPI.GetOpenApi(context.Background()).ForceReload(forceReload).Version(version).VersionAlias(versionAlias).NoFilter(noFilter).IncludedTags(includedTags).ExcludedTags(excludedTags).IncludeDeprecated(includeDeprecated).OnlyDeprecated(onlyDeprecated).DocumentationStatuses(documentationStatuses).RestUserRole(restUserRole).OperationIds(operationIds).ExcludedOperationIds(excludedOperationIds).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `OpenApiApi.GetOpenApi``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `OpenApiAPI.GetOpenApi``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetOpenApi`: OpenAPI
-    fmt.Fprintf(os.Stdout, "Response from `OpenApiApi.GetOpenApi`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `OpenApiAPI.GetOpenApi`: %v\n", resp)
 }
 ```
 
@@ -121,13 +121,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.OpenApiApi.GetTags(context.Background()).Execute()
+    resp, r, err := apiClient.OpenApiAPI.GetTags(context.Background()).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `OpenApiApi.GetTags``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `OpenApiAPI.GetTags``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetTags`: []Tag
-    fmt.Fprintf(os.Stdout, "Response from `OpenApiApi.GetTags`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `OpenApiAPI.GetTags`: %v\n", resp)
 }
 ```
 

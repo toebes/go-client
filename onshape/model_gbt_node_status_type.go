@@ -20,11 +20,11 @@ type GBTNodeStatusType string
 
 // List of GBTNodeStatusType
 const (
-	GBTNodeStatusTypeOk      GBTNodeStatusType = "OK"
-	GBTNodeStatusTypeInfo    GBTNodeStatusType = "INFO"
-	GBTNodeStatusTypeWarning GBTNodeStatusType = "WARNING"
-	GBTNodeStatusTypeError   GBTNodeStatusType = "ERROR"
-	GBTNodeStatusTypeUnknown GBTNodeStatusType = "UNKNOWN"
+	Ok      GBTNodeStatusType = "OK"
+	Info    GBTNodeStatusType = "INFO"
+	Warning GBTNodeStatusType = "WARNING"
+	Error   GBTNodeStatusType = "ERROR"
+	Unknown GBTNodeStatusType = "UNKNOWN"
 )
 
 // All allowed values of GBTNodeStatusType enum

@@ -20,16 +20,16 @@ type GBTDataItemFormat string
 
 // List of GBTDataItemFormat
 const (
-	GBTDataItemFormatXT        GBTDataItemFormat = "X_T"
-	GBTDataItemFormatXmm       GBTDataItemFormat = "XMM"
-	GBTDataItemFormatStl       GBTDataItemFormat = "STL"
-	GBTDataItemFormatOnshape   GBTDataItemFormat = "ONSHAPE"
-	GBTDataItemFormatZip       GBTDataItemFormat = "ZIP"
-	GBTDataItemFormatXTXmmZip  GBTDataItemFormat = "X_T_XMM_ZIP"
-	GBTDataItemFormatObjMtlZip GBTDataItemFormat = "OBJ_MTL_ZIP"
-	GBTDataItemFormatXB        GBTDataItemFormat = "X_B"
-	GBTDataItemFormatJson      GBTDataItemFormat = "JSON"
-	GBTDataItemFormatUnknown   GBTDataItemFormat = "UNKNOWN"
+	XT        GBTDataItemFormat = "X_T"
+	Xmm       GBTDataItemFormat = "XMM"
+	Stl       GBTDataItemFormat = "STL"
+	Onshape   GBTDataItemFormat = "ONSHAPE"
+	Zip       GBTDataItemFormat = "ZIP"
+	XTXmmZip  GBTDataItemFormat = "X_T_XMM_ZIP"
+	ObjMtlZip GBTDataItemFormat = "OBJ_MTL_ZIP"
+	XB        GBTDataItemFormat = "X_B"
+	Json      GBTDataItemFormat = "JSON"
+	Unknown   GBTDataItemFormat = "UNKNOWN"
 )
 
 // All allowed values of GBTDataItemFormat enum

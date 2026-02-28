@@ -20,12 +20,12 @@ type BTMetadataStateType string
 
 // List of BTMetadataStateType
 const (
-	BTMetadataStateTypeInProgress BTMetadataStateType = "IN_PROGRESS"
-	BTMetadataStateTypePending    BTMetadataStateType = "PENDING"
-	BTMetadataStateTypeReleased   BTMetadataStateType = "RELEASED"
-	BTMetadataStateTypeObsolete   BTMetadataStateType = "OBSOLETE"
-	BTMetadataStateTypeRejected   BTMetadataStateType = "REJECTED"
-	BTMetadataStateTypeDiscarded  BTMetadataStateType = "DISCARDED"
+	InProgress BTMetadataStateType = "IN_PROGRESS"
+	Pending    BTMetadataStateType = "PENDING"
+	Released   BTMetadataStateType = "RELEASED"
+	Obsolete   BTMetadataStateType = "OBSOLETE"
+	Rejected   BTMetadataStateType = "REJECTED"
+	Discarded  BTMetadataStateType = "DISCARDED"
 )
 
 // All allowed values of BTMetadataStateType enum

@@ -3,25 +3,25 @@
 ## Enum
 
 
-* `BTComputedAssemblyPropertyAggregationOperatorSum` (value: `"SUM"`)
+* `Sum` (value: `"SUM"`)
 
-* `BTComputedAssemblyPropertyAggregationOperatorMinimum` (value: `"MINIMUM"`)
+* `Minimum` (value: `"MINIMUM"`)
 
-* `BTComputedAssemblyPropertyAggregationOperatorMaximum` (value: `"MAXIMUM"`)
+* `Maximum` (value: `"MAXIMUM"`)
 
-* `BTComputedAssemblyPropertyAggregationOperatorAverage` (value: `"AVERAGE"`)
+* `Average` (value: `"AVERAGE"`)
 
-* `BTComputedAssemblyPropertyAggregationOperatorWeightedSum` (value: `"WEIGHTED_SUM"`)
+* `WeightedSum` (value: `"WEIGHTED_SUM"`)
 
-* `BTComputedAssemblyPropertyAggregationOperatorWeightedAverage` (value: `"WEIGHTED_AVERAGE"`)
+* `WeightedAverage` (value: `"WEIGHTED_AVERAGE"`)
 
-* `BTComputedAssemblyPropertyAggregationOperatorAny` (value: `"ANY"`)
+* `Any` (value: `"ANY"`)
 
-* `BTComputedAssemblyPropertyAggregationOperatorAll` (value: `"ALL"`)
+* `All` (value: `"ALL"`)
 
-* `BTComputedAssemblyPropertyAggregationOperatorNotAny` (value: `"NOT_ANY"`)
+* `NotAny` (value: `"NOT_ANY"`)
 
-* `BTComputedAssemblyPropertyAggregationOperatorNotAll` (value: `"NOT_ALL"`)
+* `NotAll` (value: `"NOT_ALL"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

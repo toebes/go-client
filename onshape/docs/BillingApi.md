@@ -1,10 +1,10 @@
-# \BillingApi
+# \BillingAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetClientPlans**](BillingApi.md#GetClientPlans) | **Get** /billing/plans/client/{cid} | Get all billing plans and their information for an application by client ID.
+[**GetClientPlans**](BillingAPI.md#GetClientPlans) | **Get** /billing/plans/client/{cid} | Get all billing plans and their information for an application by client ID.
 
 
 
@@ -33,9 +33,9 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.BillingApi.GetClientPlans(context.Background(), cid).Execute()
+    resp, r, err := apiClient.BillingAPI.GetClientPlans(context.Background(), cid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `BillingApi.GetClientPlans``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `BillingAPI.GetClientPlans``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
 }

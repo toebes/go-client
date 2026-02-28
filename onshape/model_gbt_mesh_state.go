@@ -20,10 +20,10 @@ type GBTMeshState string
 
 // List of GBTMeshState
 const (
-	GBTMeshStateNoMesh  GBTMeshState = "NO_MESH"
-	GBTMeshStateMixed   GBTMeshState = "MIXED"
-	GBTMeshStateAllMesh GBTMeshState = "ALL_MESH"
-	GBTMeshStateUnknown GBTMeshState = "UNKNOWN"
+	NoMesh  GBTMeshState = "NO_MESH"
+	Mixed   GBTMeshState = "MIXED"
+	AllMesh GBTMeshState = "ALL_MESH"
+	Unknown GBTMeshState = "UNKNOWN"
 )
 
 // All allowed values of GBTMeshState enum

@@ -3,21 +3,21 @@
 ## Enum
 
 
-* `BTTransitionTypeDefault` (value: `"DEFAULT"`)
+* `Default` (value: `"DEFAULT"`)
 
-* `BTTransitionTypeSubmit` (value: `"SUBMIT"`)
+* `Submit` (value: `"SUBMIT"`)
 
-* `BTTransitionTypeApprove` (value: `"APPROVE"`)
+* `Approve` (value: `"APPROVE"`)
 
-* `BTTransitionTypeApproveDirect` (value: `"APPROVE_DIRECT"`)
+* `ApproveDirect` (value: `"APPROVE_DIRECT"`)
 
-* `BTTransitionTypeReject` (value: `"REJECT"`)
+* `Reject` (value: `"REJECT"`)
 
-* `BTTransitionTypeDelete` (value: `"DELETE"`)
+* `Delete` (value: `"DELETE"`)
 
-* `BTTransitionTypeComment` (value: `"COMMENT"`)
+* `Comment` (value: `"COMMENT"`)
 
-* `BTTransitionTypeReassignTask` (value: `"REASSIGN_TASK"`)
+* `ReassignTask` (value: `"REASSIGN_TASK"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

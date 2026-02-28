@@ -20,10 +20,10 @@ type BTVersionGraphMode string
 
 // List of BTVersionGraphMode
 const (
-	BTVersionGraphModeAllBranches               BTVersionGraphMode = "ALL_BRANCHES"
-	BTVersionGraphModeActiveBranch              BTVersionGraphMode = "ACTIVE_BRANCH"
-	BTVersionGraphModeAllBranchesWithWorkspaces BTVersionGraphMode = "ALL_BRANCHES_WITH_WORKSPACES"
-	BTVersionGraphModeActiveBranchWithParents   BTVersionGraphMode = "ACTIVE_BRANCH_WITH_PARENTS"
+	AllBranches               BTVersionGraphMode = "ALL_BRANCHES"
+	ActiveBranch              BTVersionGraphMode = "ACTIVE_BRANCH"
+	AllBranchesWithWorkspaces BTVersionGraphMode = "ALL_BRANCHES_WITH_WORKSPACES"
+	ActiveBranchWithParents   BTVersionGraphMode = "ACTIVE_BRANCH_WITH_PARENTS"
 )
 
 // All allowed values of BTVersionGraphMode enum

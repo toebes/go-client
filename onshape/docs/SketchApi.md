@@ -1,12 +1,12 @@
-# \SketchApi
+# \SketchAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetSketchBoundingBoxes**](SketchApi.md#GetSketchBoundingBoxes) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/sketches/{sid}/boundingboxes | Get all bounding boxes for a sketch.
-[**GetSketchInfo**](SketchApi.md#GetSketchInfo) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/sketches | Get information for all sketches in Part Studio.
-[**GetTessellatedEntities**](SketchApi.md#GetTessellatedEntities) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/sketches/{sid}/tessellatedentities | Get the tessellations of a sketch in a Part Studio.
+[**GetSketchBoundingBoxes**](SketchAPI.md#GetSketchBoundingBoxes) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/sketches/{sid}/boundingboxes | Get all bounding boxes for a sketch.
+[**GetSketchInfo**](SketchAPI.md#GetSketchInfo) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/sketches | Get information for all sketches in Part Studio.
+[**GetTessellatedEntities**](SketchAPI.md#GetTessellatedEntities) | **Get** /partstudios/d/{did}/{wvm}/{wvmid}/e/{eid}/sketches/{sid}/tessellatedentities | Get the tessellations of a sketch in a Part Studio.
 
 
 
@@ -39,13 +39,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.SketchApi.GetSketchBoundingBoxes(context.Background(), did, wvm, wvmid, eid, sid).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.SketchAPI.GetSketchBoundingBoxes(context.Background(), did, wvm, wvmid, eid, sid).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `SketchApi.GetSketchBoundingBoxes``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `SketchAPI.GetSketchBoundingBoxes``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetSketchBoundingBoxes`: BTBoundingBoxInfo
-    fmt.Fprintf(os.Stdout, "Response from `SketchApi.GetSketchBoundingBoxes`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `SketchAPI.GetSketchBoundingBoxes`: %v\n", resp)
 }
 ```
 
@@ -126,13 +126,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.SketchApi.GetSketchInfo(context.Background(), did, wvm, wvmid, eid).Configuration(configuration).SketchId(sketchId).Output3D(output3D).CurvePoints(curvePoints).IncludeGeometry(includeGeometry).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.SketchAPI.GetSketchInfo(context.Background(), did, wvm, wvmid, eid).Configuration(configuration).SketchId(sketchId).Output3D(output3D).CurvePoints(curvePoints).IncludeGeometry(includeGeometry).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `SketchApi.GetSketchInfo``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `SketchAPI.GetSketchInfo``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetSketchInfo`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `SketchApi.GetSketchInfo`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `SketchAPI.GetSketchInfo`: %v\n", resp)
 }
 ```
 
@@ -217,13 +217,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.SketchApi.GetTessellatedEntities(context.Background(), did, wvm, wvmid, eid, sid).Configuration(configuration).EntityId(entityId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.SketchAPI.GetTessellatedEntities(context.Background(), did, wvm, wvmid, eid, sid).Configuration(configuration).EntityId(entityId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `SketchApi.GetTessellatedEntities``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `SketchAPI.GetTessellatedEntities``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetTessellatedEntities`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `SketchApi.GetTessellatedEntities`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `SketchAPI.GetTessellatedEntities`: %v\n", resp)
 }
 ```
 

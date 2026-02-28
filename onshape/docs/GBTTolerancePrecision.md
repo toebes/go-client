@@ -3,23 +3,23 @@
 ## Enum
 
 
-* `GBTTolerancePrecisionDefault` (value: `"DEFAULT"`)
+* `Default` (value: `"DEFAULT"`)
 
-* `GBTTolerancePrecisionOnes` (value: `"ONES"`)
+* `Ones` (value: `"ONES"`)
 
-* `GBTTolerancePrecisionTenths` (value: `"TENTHS"`)
+* `Tenths` (value: `"TENTHS"`)
 
-* `GBTTolerancePrecisionHundredths` (value: `"HUNDREDTHS"`)
+* `Hundredths` (value: `"HUNDREDTHS"`)
 
-* `GBTTolerancePrecisionThousandths` (value: `"THOUSANDTHS"`)
+* `Thousandths` (value: `"THOUSANDTHS"`)
 
-* `GBTTolerancePrecisionTenThousandths` (value: `"TEN_THOUSANDTHS"`)
+* `TenThousandths` (value: `"TEN_THOUSANDTHS"`)
 
-* `GBTTolerancePrecisionHundredThousandths` (value: `"HUNDRED_THOUSANDTHS"`)
+* `HundredThousandths` (value: `"HUNDRED_THOUSANDTHS"`)
 
-* `GBTTolerancePrecisionMillionths` (value: `"MILLIONTHS"`)
+* `Millionths` (value: `"MILLIONTHS"`)
 
-* `GBTTolerancePrecisionUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

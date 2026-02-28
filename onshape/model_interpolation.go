@@ -20,10 +20,10 @@ type Interpolation string
 
 // List of Interpolation
 const (
-	InterpolationStep             Interpolation = "STEP"
-	InterpolationLinear           Interpolation = "LINEAR"
-	InterpolationCatmullromspline Interpolation = "CATMULLROMSPLINE"
-	InterpolationCubicspline      Interpolation = "CUBICSPLINE"
+	Step             Interpolation = "STEP"
+	Linear           Interpolation = "LINEAR"
+	Catmullromspline Interpolation = "CATMULLROMSPLINE"
+	Cubicspline      Interpolation = "CUBICSPLINE"
 )
 
 // All allowed values of Interpolation enum

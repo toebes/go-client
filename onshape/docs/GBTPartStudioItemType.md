@@ -3,25 +3,25 @@
 ## Enum
 
 
-* `GBTPartStudioItemTypeSolid` (value: `"SOLID"`)
+* `Solid` (value: `"SOLID"`)
 
-* `GBTPartStudioItemTypeSurface` (value: `"SURFACE"`)
+* `Surface` (value: `"SURFACE"`)
 
-* `GBTPartStudioItemTypeWire` (value: `"WIRE"`)
+* `Wire` (value: `"WIRE"`)
 
-* `GBTPartStudioItemTypeMesh` (value: `"MESH"`)
+* `Mesh` (value: `"MESH"`)
 
-* `GBTPartStudioItemTypeSketch` (value: `"SKETCH"`)
+* `Sketch` (value: `"SKETCH"`)
 
-* `GBTPartStudioItemTypeFlattenedSheetMetal` (value: `"FLATTENED_SHEET_METAL"`)
+* `FlattenedSheetMetal` (value: `"FLATTENED_SHEET_METAL"`)
 
-* `GBTPartStudioItemTypeEntirePartStudio` (value: `"ENTIRE_PART_STUDIO"`)
+* `EntirePartStudio` (value: `"ENTIRE_PART_STUDIO"`)
 
-* `GBTPartStudioItemTypeConstructionPlane` (value: `"CONSTRUCTION_PLANE"`)
+* `ConstructionPlane` (value: `"CONSTRUCTION_PLANE"`)
 
-* `GBTPartStudioItemTypeCompositePart` (value: `"COMPOSITE_PART"`)
+* `CompositePart` (value: `"COMPOSITE_PART"`)
 
-* `GBTPartStudioItemTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

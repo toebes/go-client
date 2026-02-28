@@ -3,21 +3,21 @@
 ## Enum
 
 
-* `EditTypeNothing` (value: `"NOTHING"`)
+* `Nothing` (value: `"NOTHING"`)
 
-* `EditTypeNewRoot` (value: `"NEW_ROOT"`)
+* `NewRoot` (value: `"NEW_ROOT"`)
 
-* `EditTypeMove` (value: `"MOVE"`)
+* `Move` (value: `"MOVE"`)
 
-* `EditTypeChange` (value: `"CHANGE"`)
+* `Change` (value: `"CHANGE"`)
 
-* `EditTypeChangeField` (value: `"CHANGE_FIELD"`)
+* `ChangeField` (value: `"CHANGE_FIELD"`)
 
-* `EditTypeInsertion` (value: `"INSERTION"`)
+* `Insertion` (value: `"INSERTION"`)
 
-* `EditTypeDeletion` (value: `"DELETION"`)
+* `Deletion` (value: `"DELETION"`)
 
-* `EditTypeList` (value: `"LIST"`)
+* `List` (value: `"LIST"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

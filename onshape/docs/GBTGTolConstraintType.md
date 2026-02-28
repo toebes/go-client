@@ -3,35 +3,35 @@
 ## Enum
 
 
-* `GBTGTolConstraintTypeTruePosition` (value: `"TRUE_POSITION"`)
+* `TruePosition` (value: `"TRUE_POSITION"`)
 
-* `GBTGTolConstraintTypeParallelism` (value: `"PARALLELISM"`)
+* `Parallelism` (value: `"PARALLELISM"`)
 
-* `GBTGTolConstraintTypePerpendicularity` (value: `"PERPENDICULARITY"`)
+* `Perpendicularity` (value: `"PERPENDICULARITY"`)
 
-* `GBTGTolConstraintTypeProfileSurface` (value: `"PROFILE_SURFACE"`)
+* `ProfileSurface` (value: `"PROFILE_SURFACE"`)
 
-* `GBTGTolConstraintTypeTotalRunout` (value: `"TOTAL_RUNOUT"`)
+* `TotalRunout` (value: `"TOTAL_RUNOUT"`)
 
-* `GBTGTolConstraintTypeConcentricity` (value: `"CONCENTRICITY"`)
+* `Concentricity` (value: `"CONCENTRICITY"`)
 
-* `GBTGTolConstraintTypeSymmetry` (value: `"SYMMETRY"`)
+* `Symmetry` (value: `"SYMMETRY"`)
 
-* `GBTGTolConstraintTypeAngularity` (value: `"ANGULARITY"`)
+* `Angularity` (value: `"ANGULARITY"`)
 
-* `GBTGTolConstraintTypeCylindricity` (value: `"CYLINDRICITY"`)
+* `Cylindricity` (value: `"CYLINDRICITY"`)
 
-* `GBTGTolConstraintTypeFlatness` (value: `"FLATNESS"`)
+* `Flatness` (value: `"FLATNESS"`)
 
-* `GBTGTolConstraintTypeRoundness` (value: `"ROUNDNESS"`)
+* `Roundness` (value: `"ROUNDNESS"`)
 
-* `GBTGTolConstraintTypeStraightness` (value: `"STRAIGHTNESS"`)
+* `Straightness` (value: `"STRAIGHTNESS"`)
 
-* `GBTGTolConstraintTypeProfileLine` (value: `"PROFILE_LINE"`)
+* `ProfileLine` (value: `"PROFILE_LINE"`)
 
-* `GBTGTolConstraintTypeCircularRunout` (value: `"CIRCULAR_RUNOUT"`)
+* `CircularRunout` (value: `"CIRCULAR_RUNOUT"`)
 
-* `GBTGTolConstraintTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

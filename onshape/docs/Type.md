@@ -3,15 +3,15 @@
 ## Enum
 
 
-* `TypeApikey` (value: `"APIKEY"`)
+* `Apikey` (value: `"APIKEY"`)
 
-* `TypeHttp` (value: `"HTTP"`)
+* `Http` (value: `"HTTP"`)
 
-* `TypeOauth2` (value: `"OAUTH2"`)
+* `Oauth2` (value: `"OAUTH2"`)
 
-* `TypeOpenidconnect` (value: `"OPENIDCONNECT"`)
+* `Openidconnect` (value: `"OPENIDCONNECT"`)
 
-* `TypeMutualtls` (value: `"MUTUALTLS"`)
+* `Mutualtls` (value: `"MUTUALTLS"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

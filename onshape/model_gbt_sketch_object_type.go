@@ -20,11 +20,11 @@ type GBTSketchObjectType string
 
 // List of GBTSketchObjectType
 const (
-	GBTSketchObjectTypeNotSketchObject GBTSketchObjectType = "NOT_SKETCH_OBJECT"
-	GBTSketchObjectTypeAnySketchObject GBTSketchObjectType = "ANY_SKETCH_OBJECT"
-	GBTSketchObjectTypeUserEntity      GBTSketchObjectType = "USER_ENTITY"
-	GBTSketchObjectTypeWholeSketch     GBTSketchObjectType = "WHOLE_SKETCH"
-	GBTSketchObjectTypeUnknown         GBTSketchObjectType = "UNKNOWN"
+	NotSketchObject GBTSketchObjectType = "NOT_SKETCH_OBJECT"
+	AnySketchObject GBTSketchObjectType = "ANY_SKETCH_OBJECT"
+	UserEntity      GBTSketchObjectType = "USER_ENTITY"
+	WholeSketch     GBTSketchObjectType = "WHOLE_SKETCH"
+	Unknown         GBTSketchObjectType = "UNKNOWN"
 )
 
 // All allowed values of GBTSketchObjectType enum

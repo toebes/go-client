@@ -38,9 +38,9 @@ func NewBTBExportMeshParams() *BTBExportMeshParams {
 	this.DistanceTolerance = &distanceTolerance
 	var maximumChordLength float64 = 0.01
 	this.MaximumChordLength = &maximumChordLength
-	var resolution GBTExportResolution = GBTExportResolutionFine
+	var resolution GBTExportResolution = FINE
 	this.Resolution = &resolution
-	var unit GBTExportUnit = GBTExportUnitMeter
+	var unit GBTExportUnit = METER
 	this.Unit = &unit
 	return &this
 }
@@ -56,9 +56,9 @@ func NewBTBExportMeshParamsWithDefaults() *BTBExportMeshParams {
 	this.DistanceTolerance = &distanceTolerance
 	var maximumChordLength float64 = 0.01
 	this.MaximumChordLength = &maximumChordLength
-	var resolution GBTExportResolution = GBTExportResolutionFine
+	var resolution GBTExportResolution = FINE
 	this.Resolution = &resolution
-	var unit GBTExportUnit = GBTExportUnitMeter
+	var unit GBTExportUnit = METER
 	this.Unit = &unit
 	return &this
 }

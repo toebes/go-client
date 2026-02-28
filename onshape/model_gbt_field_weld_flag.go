@@ -20,10 +20,10 @@ type GBTFieldWeldFlag string
 
 // List of GBTFieldWeldFlag
 const (
-	GBTFieldWeldFlagNone    GBTFieldWeldFlag = "NONE"
-	GBTFieldWeldFlagUpper   GBTFieldWeldFlag = "UPPER"
-	GBTFieldWeldFlagLower   GBTFieldWeldFlag = "LOWER"
-	GBTFieldWeldFlagUnknown GBTFieldWeldFlag = "UNKNOWN"
+	None    GBTFieldWeldFlag = "NONE"
+	Upper   GBTFieldWeldFlag = "UPPER"
+	Lower   GBTFieldWeldFlag = "LOWER"
+	Unknown GBTFieldWeldFlag = "UNKNOWN"
 )
 
 // All allowed values of GBTFieldWeldFlag enum

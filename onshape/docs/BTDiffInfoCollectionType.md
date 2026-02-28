@@ -3,19 +3,19 @@
 ## Enum
 
 
-* `BTDiffInfoCollectionTypeParts` (value: `"parts"`)
+* `Parts` (value: `"parts"`)
 
-* `BTDiffInfoCollectionTypeSketches` (value: `"sketches"`)
+* `Sketches` (value: `"sketches"`)
 
-* `BTDiffInfoCollectionTypePoints` (value: `"points"`)
+* `Points` (value: `"points"`)
 
-* `BTDiffInfoCollectionTypeMateConnectors` (value: `"mateConnectors"`)
+* `MateConnectors` (value: `"mateConnectors"`)
 
-* `BTDiffInfoCollectionTypePlanes` (value: `"planes"`)
+* `Planes` (value: `"planes"`)
 
-* `BTDiffInfoCollectionTypeCurves` (value: `"curves"`)
+* `Curves` (value: `"curves"`)
 
-* `BTDiffInfoCollectionTypeSurfaces` (value: `"surfaces"`)
+* `Surfaces` (value: `"surfaces"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

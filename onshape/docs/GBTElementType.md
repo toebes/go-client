@@ -3,27 +3,27 @@
 ## Enum
 
 
-* `GBTElementTypePartstudio` (value: `"PARTSTUDIO"`)
+* `Partstudio` (value: `"PARTSTUDIO"`)
 
-* `GBTElementTypeAssembly` (value: `"ASSEMBLY"`)
+* `Assembly` (value: `"ASSEMBLY"`)
 
-* `GBTElementTypeDrawing` (value: `"DRAWING"`)
+* `Drawing` (value: `"DRAWING"`)
 
-* `GBTElementTypeFeaturestudio` (value: `"FEATURESTUDIO"`)
+* `Featurestudio` (value: `"FEATURESTUDIO"`)
 
-* `GBTElementTypeBlob` (value: `"BLOB"`)
+* `Blob` (value: `"BLOB"`)
 
-* `GBTElementTypeApplication` (value: `"APPLICATION"`)
+* `Application` (value: `"APPLICATION"`)
 
-* `GBTElementTypeTable` (value: `"TABLE"`)
+* `Table` (value: `"TABLE"`)
 
-* `GBTElementTypeBillofmaterials` (value: `"BILLOFMATERIALS"`)
+* `Billofmaterials` (value: `"BILLOFMATERIALS"`)
 
-* `GBTElementTypeVariablestudio` (value: `"VARIABLESTUDIO"`)
+* `Variablestudio` (value: `"VARIABLESTUDIO"`)
 
-* `GBTElementTypePublicationitem` (value: `"PUBLICATIONITEM"`)
+* `Publicationitem` (value: `"PUBLICATIONITEM"`)
 
-* `GBTElementTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

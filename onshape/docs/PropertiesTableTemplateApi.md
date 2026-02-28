@@ -1,14 +1,14 @@
-# \PropertiesTableTemplateApi
+# \PropertiesTableTemplateAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateTableTemplate**](PropertiesTableTemplateApi.md#CreateTableTemplate) | **Post** /tabletemplates | Create a new properties table template.
-[**DeleteTableTemplate**](PropertiesTableTemplateApi.md#DeleteTableTemplate) | **Delete** /tabletemplates/{tid} | Delete a properties table template.
-[**GetByCompanyId**](PropertiesTableTemplateApi.md#GetByCompanyId) | **Get** /tabletemplates/companies/{cid} | Get all properties table templates available for a company.
-[**GetByDocumentId**](PropertiesTableTemplateApi.md#GetByDocumentId) | **Get** /tabletemplates/d/{did} | Get all table templates that are available to use on the provided document.
-[**GetTableTemplate**](PropertiesTableTemplateApi.md#GetTableTemplate) | **Get** /tabletemplates/{tid} | Get a properties table template by template ID.
+[**CreateTableTemplate**](PropertiesTableTemplateAPI.md#CreateTableTemplate) | **Post** /tabletemplates | Create a new properties table template.
+[**DeleteTableTemplate**](PropertiesTableTemplateAPI.md#DeleteTableTemplate) | **Delete** /tabletemplates/{tid} | Delete a properties table template.
+[**GetByCompanyId**](PropertiesTableTemplateAPI.md#GetByCompanyId) | **Get** /tabletemplates/companies/{cid} | Get all properties table templates available for a company.
+[**GetByDocumentId**](PropertiesTableTemplateAPI.md#GetByDocumentId) | **Get** /tabletemplates/d/{did} | Get all table templates that are available to use on the provided document.
+[**GetTableTemplate**](PropertiesTableTemplateAPI.md#GetTableTemplate) | **Get** /tabletemplates/{tid} | Get a properties table template by template ID.
 
 
 
@@ -36,13 +36,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PropertiesTableTemplateApi.CreateTableTemplate(context.Background()).BTPropertiesTableTemplateParams(bTPropertiesTableTemplateParams).TemplateGroupId(templateGroupId).Execute()
+    resp, r, err := apiClient.PropertiesTableTemplateAPI.CreateTableTemplate(context.Background()).BTPropertiesTableTemplateParams(bTPropertiesTableTemplateParams).TemplateGroupId(templateGroupId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PropertiesTableTemplateApi.CreateTableTemplate``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PropertiesTableTemplateAPI.CreateTableTemplate``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateTableTemplate`: BTPropertiesTableTemplateInfo
-    fmt.Fprintf(os.Stdout, "Response from `PropertiesTableTemplateApi.CreateTableTemplate`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PropertiesTableTemplateAPI.CreateTableTemplate`: %v\n", resp)
 }
 ```
 
@@ -101,13 +101,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PropertiesTableTemplateApi.DeleteTableTemplate(context.Background(), tid).Execute()
+    resp, r, err := apiClient.PropertiesTableTemplateAPI.DeleteTableTemplate(context.Background(), tid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PropertiesTableTemplateApi.DeleteTableTemplate``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PropertiesTableTemplateAPI.DeleteTableTemplate``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteTableTemplate`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `PropertiesTableTemplateApi.DeleteTableTemplate`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PropertiesTableTemplateAPI.DeleteTableTemplate`: %v\n", resp)
 }
 ```
 
@@ -172,13 +172,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PropertiesTableTemplateApi.GetByCompanyId(context.Background(), cid).TemplateType(templateType).OnlyActive(onlyActive).IncludeDefaults(includeDefaults).Execute()
+    resp, r, err := apiClient.PropertiesTableTemplateAPI.GetByCompanyId(context.Background(), cid).TemplateType(templateType).OnlyActive(onlyActive).IncludeDefaults(includeDefaults).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PropertiesTableTemplateApi.GetByCompanyId``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PropertiesTableTemplateAPI.GetByCompanyId``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetByCompanyId`: []BTPropertiesTableTemplateInfo
-    fmt.Fprintf(os.Stdout, "Response from `PropertiesTableTemplateApi.GetByCompanyId`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PropertiesTableTemplateAPI.GetByCompanyId`: %v\n", resp)
 }
 ```
 
@@ -246,13 +246,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PropertiesTableTemplateApi.GetByDocumentId(context.Background(), did).TemplateType(templateType).OnlyActive(onlyActive).IncludeDefaults(includeDefaults).Execute()
+    resp, r, err := apiClient.PropertiesTableTemplateAPI.GetByDocumentId(context.Background(), did).TemplateType(templateType).OnlyActive(onlyActive).IncludeDefaults(includeDefaults).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PropertiesTableTemplateApi.GetByDocumentId``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PropertiesTableTemplateAPI.GetByDocumentId``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetByDocumentId`: []BTPropertiesTableTemplateInfo
-    fmt.Fprintf(os.Stdout, "Response from `PropertiesTableTemplateApi.GetByDocumentId`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PropertiesTableTemplateAPI.GetByDocumentId`: %v\n", resp)
 }
 ```
 
@@ -317,13 +317,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PropertiesTableTemplateApi.GetTableTemplate(context.Background(), tid).Execute()
+    resp, r, err := apiClient.PropertiesTableTemplateAPI.GetTableTemplate(context.Background(), tid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PropertiesTableTemplateApi.GetTableTemplate``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PropertiesTableTemplateAPI.GetTableTemplate``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetTableTemplate`: BTPropertiesTableTemplateInfo
-    fmt.Fprintf(os.Stdout, "Response from `PropertiesTableTemplateApi.GetTableTemplate`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PropertiesTableTemplateAPI.GetTableTemplate`: %v\n", resp)
 }
 ```
 

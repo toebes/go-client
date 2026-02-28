@@ -20,9 +20,9 @@ type GBTPatternType string
 
 // List of GBTPatternType
 const (
-	GBTPatternTypeLinear   GBTPatternType = "LINEAR"
-	GBTPatternTypeCircular GBTPatternType = "CIRCULAR"
-	GBTPatternTypeUnknown  GBTPatternType = "UNKNOWN"
+	Linear   GBTPatternType = "LINEAR"
+	Circular GBTPatternType = "CIRCULAR"
+	Unknown  GBTPatternType = "UNKNOWN"
 )
 
 // All allowed values of GBTPatternType enum

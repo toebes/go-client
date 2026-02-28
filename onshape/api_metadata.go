@@ -18,12 +18,12 @@ import (
 	"strings"
 )
 
-// MetadataApiService MetadataApi service
-type MetadataApiService service
+// MetadataAPIService MetadataAPI service
+type MetadataAPIService service
 
 type ApiGetFullAssemblyMetadataRequest struct {
 	ctx            context.Context
-	ApiService     *MetadataApiService
+	ApiService     *MetadataAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -64,7 +64,7 @@ See [API Guide: Metadata](https://onshape-public.github.io/docs/api-adv/metadata
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetFullAssemblyMetadataRequest
 */
-func (a *MetadataApiService) GetFullAssemblyMetadata(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetFullAssemblyMetadataRequest {
+func (a *MetadataAPIService) GetFullAssemblyMetadata(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetFullAssemblyMetadataRequest {
 	return ApiGetFullAssemblyMetadataRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -78,7 +78,7 @@ func (a *MetadataApiService) GetFullAssemblyMetadata(ctx context.Context, did st
 // Execute executes the request
 //
 //	@return BTAssemblyItemMetadataInfo
-func (a *MetadataApiService) GetFullAssemblyMetadataExecute(r ApiGetFullAssemblyMetadataRequest) (*BTAssemblyItemMetadataInfo, *http.Response, error) {
+func (a *MetadataAPIService) GetFullAssemblyMetadataExecute(r ApiGetFullAssemblyMetadataRequest) (*BTAssemblyItemMetadataInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -86,7 +86,7 @@ func (a *MetadataApiService) GetFullAssemblyMetadataExecute(r ApiGetFullAssembly
 		localVarReturnValue *BTAssemblyItemMetadataInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataApiService.GetFullAssemblyMetadata")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataAPIService.GetFullAssemblyMetadata")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -170,7 +170,7 @@ func (a *MetadataApiService) GetFullAssemblyMetadataExecute(r ApiGetFullAssembly
 
 type ApiGetVEOPStandardContentMetadataRequest struct {
 	ctx                               context.Context
-	ApiService                        *MetadataApiService
+	ApiService                        *MetadataAPIService
 	did                               string
 	vid                               string
 	eid                               string
@@ -228,7 +228,7 @@ See [API Guide: Metadata](https://onshape-public.github.io/docs/api-adv/metadata
 	@param pid
 	@return ApiGetVEOPStandardContentMetadataRequest
 */
-func (a *MetadataApiService) GetVEOPStandardContentMetadata(ctx context.Context, did string, vid string, eid string, pid string) ApiGetVEOPStandardContentMetadataRequest {
+func (a *MetadataAPIService) GetVEOPStandardContentMetadata(ctx context.Context, did string, vid string, eid string, pid string) ApiGetVEOPStandardContentMetadataRequest {
 	return ApiGetVEOPStandardContentMetadataRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -242,7 +242,7 @@ func (a *MetadataApiService) GetVEOPStandardContentMetadata(ctx context.Context,
 // Execute executes the request
 //
 //	@return BTMetadataObjectInfo
-func (a *MetadataApiService) GetVEOPStandardContentMetadataExecute(r ApiGetVEOPStandardContentMetadataRequest) (*BTMetadataObjectInfo, *http.Response, error) {
+func (a *MetadataAPIService) GetVEOPStandardContentMetadataExecute(r ApiGetVEOPStandardContentMetadataRequest) (*BTMetadataObjectInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -250,7 +250,7 @@ func (a *MetadataApiService) GetVEOPStandardContentMetadataExecute(r ApiGetVEOPS
 		localVarReturnValue *BTMetadataObjectInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataApiService.GetVEOPStandardContentMetadata")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataAPIService.GetVEOPStandardContentMetadata")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -343,7 +343,7 @@ func (a *MetadataApiService) GetVEOPStandardContentMetadataExecute(r ApiGetVEOPS
 
 type ApiGetWMVEMetadataRequest struct {
 	ctx                               context.Context
-	ApiService                        *MetadataApiService
+	ApiService                        *MetadataAPIService
 	did                               string
 	wvm                               string
 	wvmid                             string
@@ -415,7 +415,7 @@ See [API Guide: Metadata](https://onshape-public.github.io/docs/api-adv/metadata
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetWMVEMetadataRequest
 */
-func (a *MetadataApiService) GetWMVEMetadata(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetWMVEMetadataRequest {
+func (a *MetadataAPIService) GetWMVEMetadata(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetWMVEMetadataRequest {
 	return ApiGetWMVEMetadataRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -429,7 +429,7 @@ func (a *MetadataApiService) GetWMVEMetadata(ctx context.Context, did string, wv
 // Execute executes the request
 //
 //	@return BTMetadataObjectInfo
-func (a *MetadataApiService) GetWMVEMetadataExecute(r ApiGetWMVEMetadataRequest) (*BTMetadataObjectInfo, *http.Response, error) {
+func (a *MetadataAPIService) GetWMVEMetadataExecute(r ApiGetWMVEMetadataRequest) (*BTMetadataObjectInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -437,7 +437,7 @@ func (a *MetadataApiService) GetWMVEMetadataExecute(r ApiGetWMVEMetadataRequest)
 		localVarReturnValue *BTMetadataObjectInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataApiService.GetWMVEMetadata")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataAPIService.GetWMVEMetadata")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -536,7 +536,7 @@ func (a *MetadataApiService) GetWMVEMetadataExecute(r ApiGetWMVEMetadataRequest)
 
 type ApiGetWMVEPMetadataRequest struct {
 	ctx                               context.Context
-	ApiService                        *MetadataApiService
+	ApiService                        *MetadataAPIService
 	did                               string
 	wvm                               string
 	wvmid                             string
@@ -621,7 +621,7 @@ See [API Guide: Metadata](https://onshape-public.github.io/docs/api-adv/metadata
 	@param pid
 	@return ApiGetWMVEPMetadataRequest
 */
-func (a *MetadataApiService) GetWMVEPMetadata(ctx context.Context, did string, wvm string, wvmid string, eid string, iden string, pid string) ApiGetWMVEPMetadataRequest {
+func (a *MetadataAPIService) GetWMVEPMetadata(ctx context.Context, did string, wvm string, wvmid string, eid string, iden string, pid string) ApiGetWMVEPMetadataRequest {
 	return ApiGetWMVEPMetadataRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -637,7 +637,7 @@ func (a *MetadataApiService) GetWMVEPMetadata(ctx context.Context, did string, w
 // Execute executes the request
 //
 //	@return BTMetadataObjectInfo
-func (a *MetadataApiService) GetWMVEPMetadataExecute(r ApiGetWMVEPMetadataRequest) (*BTMetadataObjectInfo, *http.Response, error) {
+func (a *MetadataAPIService) GetWMVEPMetadataExecute(r ApiGetWMVEPMetadataRequest) (*BTMetadataObjectInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -645,7 +645,7 @@ func (a *MetadataApiService) GetWMVEPMetadataExecute(r ApiGetWMVEPMetadataReques
 		localVarReturnValue *BTMetadataObjectInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataApiService.GetWMVEPMetadata")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataAPIService.GetWMVEPMetadata")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -749,7 +749,7 @@ func (a *MetadataApiService) GetWMVEPMetadataExecute(r ApiGetWMVEPMetadataReques
 
 type ApiGetWMVEPsMetadataRequest struct {
 	ctx                               context.Context
-	ApiService                        *MetadataApiService
+	ApiService                        *MetadataAPIService
 	did                               string
 	wvm                               string
 	wvmid                             string
@@ -816,7 +816,7 @@ See [API Guide: Metadata](https://onshape-public.github.io/docs/api-adv/metadata
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetWMVEPsMetadataRequest
 */
-func (a *MetadataApiService) GetWMVEPsMetadata(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetWMVEPsMetadataRequest {
+func (a *MetadataAPIService) GetWMVEPsMetadata(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetWMVEPsMetadataRequest {
 	return ApiGetWMVEPsMetadataRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -830,7 +830,7 @@ func (a *MetadataApiService) GetWMVEPsMetadata(ctx context.Context, did string, 
 // Execute executes the request
 //
 //	@return BTMetadataObjectListInfoBTMetadataPartInfo
-func (a *MetadataApiService) GetWMVEPsMetadataExecute(r ApiGetWMVEPsMetadataRequest) (*BTMetadataObjectListInfoBTMetadataPartInfo, *http.Response, error) {
+func (a *MetadataAPIService) GetWMVEPsMetadataExecute(r ApiGetWMVEPsMetadataRequest) (*BTMetadataObjectListInfoBTMetadataPartInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -838,7 +838,7 @@ func (a *MetadataApiService) GetWMVEPsMetadataExecute(r ApiGetWMVEPsMetadataRequ
 		localVarReturnValue *BTMetadataObjectListInfoBTMetadataPartInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataApiService.GetWMVEPsMetadata")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataAPIService.GetWMVEPsMetadata")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -934,7 +934,7 @@ func (a *MetadataApiService) GetWMVEPsMetadataExecute(r ApiGetWMVEPsMetadataRequ
 
 type ApiGetWMVEsMetadataRequest struct {
 	ctx                               context.Context
-	ApiService                        *MetadataApiService
+	ApiService                        *MetadataAPIService
 	did                               string
 	wvm                               string
 	wvmid                             string
@@ -996,7 +996,7 @@ See [API Guide: Metadata](https://onshape-public.github.io/docs/api-adv/metadata
 	@param wvmid
 	@return ApiGetWMVEsMetadataRequest
 */
-func (a *MetadataApiService) GetWMVEsMetadata(ctx context.Context, did string, wvm string, wvmid string) ApiGetWMVEsMetadataRequest {
+func (a *MetadataAPIService) GetWMVEsMetadata(ctx context.Context, did string, wvm string, wvmid string) ApiGetWMVEsMetadataRequest {
 	return ApiGetWMVEsMetadataRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1009,7 +1009,7 @@ func (a *MetadataApiService) GetWMVEsMetadata(ctx context.Context, did string, w
 // Execute executes the request
 //
 //	@return BTMetadataObjectListInfoBTMetadataElementInfo
-func (a *MetadataApiService) GetWMVEsMetadataExecute(r ApiGetWMVEsMetadataRequest) (*BTMetadataObjectListInfoBTMetadataElementInfo, *http.Response, error) {
+func (a *MetadataAPIService) GetWMVEsMetadataExecute(r ApiGetWMVEsMetadataRequest) (*BTMetadataObjectListInfoBTMetadataElementInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1017,7 +1017,7 @@ func (a *MetadataApiService) GetWMVEsMetadataExecute(r ApiGetWMVEsMetadataReques
 		localVarReturnValue *BTMetadataObjectListInfoBTMetadataElementInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataApiService.GetWMVEsMetadata")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataAPIService.GetWMVEsMetadata")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1112,7 +1112,7 @@ func (a *MetadataApiService) GetWMVEsMetadataExecute(r ApiGetWMVEsMetadataReques
 
 type ApiGetWVMetadataRequest struct {
 	ctx                               context.Context
-	ApiService                        *MetadataApiService
+	ApiService                        *MetadataAPIService
 	did                               string
 	wv                                string
 	wvid                              string
@@ -1174,7 +1174,7 @@ See [API Guide: Metadata](https://onshape-public.github.io/docs/api-adv/metadata
 	@param wvid
 	@return ApiGetWVMetadataRequest
 */
-func (a *MetadataApiService) GetWVMetadata(ctx context.Context, did string, wv string, wvid string) ApiGetWVMetadataRequest {
+func (a *MetadataAPIService) GetWVMetadata(ctx context.Context, did string, wv string, wvid string) ApiGetWVMetadataRequest {
 	return ApiGetWVMetadataRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1187,7 +1187,7 @@ func (a *MetadataApiService) GetWVMetadata(ctx context.Context, did string, wv s
 // Execute executes the request
 //
 //	@return BTMetadataObjectInfo
-func (a *MetadataApiService) GetWVMetadataExecute(r ApiGetWVMetadataRequest) (*BTMetadataObjectInfo, *http.Response, error) {
+func (a *MetadataAPIService) GetWVMetadataExecute(r ApiGetWVMetadataRequest) (*BTMetadataObjectInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1195,7 +1195,7 @@ func (a *MetadataApiService) GetWVMetadataExecute(r ApiGetWVMetadataRequest) (*B
 		localVarReturnValue *BTMetadataObjectInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataApiService.GetWVMetadata")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataAPIService.GetWVMetadata")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1290,7 +1290,7 @@ func (a *MetadataApiService) GetWVMetadataExecute(r ApiGetWVMetadataRequest) (*B
 
 type ApiUpdateVEOPStandardContentPartMetadataRequest struct {
 	ctx            context.Context
-	ApiService     *MetadataApiService
+	ApiService     *MetadataAPIService
 	did            string
 	linkDocumentId *string
 	body           *string
@@ -1320,7 +1320,7 @@ Specify the property metadata to update in the Request body. See [API Guide: Met
 	@param did The ID of the document that owns the standard content part.
 	@return ApiUpdateVEOPStandardContentPartMetadataRequest
 */
-func (a *MetadataApiService) UpdateVEOPStandardContentPartMetadata(ctx context.Context, did string) ApiUpdateVEOPStandardContentPartMetadataRequest {
+func (a *MetadataAPIService) UpdateVEOPStandardContentPartMetadata(ctx context.Context, did string) ApiUpdateVEOPStandardContentPartMetadataRequest {
 	return ApiUpdateVEOPStandardContentPartMetadataRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1331,7 +1331,7 @@ func (a *MetadataApiService) UpdateVEOPStandardContentPartMetadata(ctx context.C
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *MetadataApiService) UpdateVEOPStandardContentPartMetadataExecute(r ApiUpdateVEOPStandardContentPartMetadataRequest) (map[string]interface{}, *http.Response, error) {
+func (a *MetadataAPIService) UpdateVEOPStandardContentPartMetadataExecute(r ApiUpdateVEOPStandardContentPartMetadataRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -1339,7 +1339,7 @@ func (a *MetadataApiService) UpdateVEOPStandardContentPartMetadataExecute(r ApiU
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataApiService.UpdateVEOPStandardContentPartMetadata")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataAPIService.UpdateVEOPStandardContentPartMetadata")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1423,7 +1423,7 @@ func (a *MetadataApiService) UpdateVEOPStandardContentPartMetadataExecute(r ApiU
 
 type ApiUpdateWVEMetadataRequest struct {
 	ctx           context.Context
-	ApiService    *MetadataApiService
+	ApiService    *MetadataAPIService
 	did           string
 	wvm           string
 	wvmid         string
@@ -1460,7 +1460,7 @@ See [API Guide: Metadata](https://onshape-public.github.io/docs/api-adv/metadata
 	@param eid
 	@return ApiUpdateWVEMetadataRequest
 */
-func (a *MetadataApiService) UpdateWVEMetadata(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiUpdateWVEMetadataRequest {
+func (a *MetadataAPIService) UpdateWVEMetadata(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiUpdateWVEMetadataRequest {
 	return ApiUpdateWVEMetadataRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1474,7 +1474,7 @@ func (a *MetadataApiService) UpdateWVEMetadata(ctx context.Context, did string, 
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *MetadataApiService) UpdateWVEMetadataExecute(r ApiUpdateWVEMetadataRequest) (map[string]interface{}, *http.Response, error) {
+func (a *MetadataAPIService) UpdateWVEMetadataExecute(r ApiUpdateWVEMetadataRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -1482,7 +1482,7 @@ func (a *MetadataApiService) UpdateWVEMetadataExecute(r ApiUpdateWVEMetadataRequ
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataApiService.UpdateWVEMetadata")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataAPIService.UpdateWVEMetadata")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1568,7 +1568,7 @@ func (a *MetadataApiService) UpdateWVEMetadataExecute(r ApiUpdateWVEMetadataRequ
 
 type ApiUpdateWVEPMetadataRequest struct {
 	ctx                   context.Context
-	ApiService            *MetadataApiService
+	ApiService            *MetadataAPIService
 	did                   string
 	wvm                   string
 	wvmid                 string
@@ -1633,7 +1633,7 @@ See [API Guide: Metadata](https://onshape-public.github.io/docs/api-adv/metadata
 	@param pid
 	@return ApiUpdateWVEPMetadataRequest
 */
-func (a *MetadataApiService) UpdateWVEPMetadata(ctx context.Context, did string, wvm string, wvmid string, eid string, iden string, pid string) ApiUpdateWVEPMetadataRequest {
+func (a *MetadataAPIService) UpdateWVEPMetadata(ctx context.Context, did string, wvm string, wvmid string, eid string, iden string, pid string) ApiUpdateWVEPMetadataRequest {
 	return ApiUpdateWVEPMetadataRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1649,7 +1649,7 @@ func (a *MetadataApiService) UpdateWVEPMetadata(ctx context.Context, did string,
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *MetadataApiService) UpdateWVEPMetadataExecute(r ApiUpdateWVEPMetadataRequest) (map[string]interface{}, *http.Response, error) {
+func (a *MetadataAPIService) UpdateWVEPMetadataExecute(r ApiUpdateWVEPMetadataRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -1657,7 +1657,7 @@ func (a *MetadataApiService) UpdateWVEPMetadataExecute(r ApiUpdateWVEPMetadataRe
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataApiService.UpdateWVEPMetadata")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataAPIService.UpdateWVEPMetadata")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1754,7 +1754,7 @@ func (a *MetadataApiService) UpdateWVEPMetadataExecute(r ApiUpdateWVEPMetadataRe
 
 type ApiUpdateWVMetadataRequest struct {
 	ctx        context.Context
-	ApiService *MetadataApiService
+	ApiService *MetadataAPIService
 	did        string
 	wv         string
 	wvid       string
@@ -1781,7 +1781,7 @@ See [API Guide: Metadata](https://onshape-public.github.io/docs/api-adv/metadata
 	@param wvid
 	@return ApiUpdateWVMetadataRequest
 */
-func (a *MetadataApiService) UpdateWVMetadata(ctx context.Context, did string, wv string, wvid string) ApiUpdateWVMetadataRequest {
+func (a *MetadataAPIService) UpdateWVMetadata(ctx context.Context, did string, wv string, wvid string) ApiUpdateWVMetadataRequest {
 	return ApiUpdateWVMetadataRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1794,7 +1794,7 @@ func (a *MetadataApiService) UpdateWVMetadata(ctx context.Context, did string, w
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *MetadataApiService) UpdateWVMetadataExecute(r ApiUpdateWVMetadataRequest) (map[string]interface{}, *http.Response, error) {
+func (a *MetadataAPIService) UpdateWVMetadataExecute(r ApiUpdateWVMetadataRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -1802,7 +1802,7 @@ func (a *MetadataApiService) UpdateWVMetadataExecute(r ApiUpdateWVMetadataReques
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataApiService.UpdateWVMetadata")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "MetadataAPIService.UpdateWVMetadata")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}

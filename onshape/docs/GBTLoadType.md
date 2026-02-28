@@ -3,19 +3,19 @@
 ## Enum
 
 
-* `GBTLoadTypeForce` (value: `"FORCE"`)
+* `Force` (value: `"FORCE"`)
 
-* `GBTLoadTypeMoment` (value: `"MOMENT"`)
+* `Moment` (value: `"MOMENT"`)
 
-* `GBTLoadTypeBearingLoad` (value: `"BEARING_LOAD"`)
+* `BearingLoad` (value: `"BEARING_LOAD"`)
 
-* `GBTLoadTypeAcceleration` (value: `"ACCELERATION"`)
+* `Acceleration` (value: `"ACCELERATION"`)
 
-* `GBTLoadTypePressure` (value: `"PRESSURE"`)
+* `Pressure` (value: `"PRESSURE"`)
 
-* `GBTLoadTypeAngularVelocity` (value: `"ANGULAR_VELOCITY"`)
+* `AngularVelocity` (value: `"ANGULAR_VELOCITY"`)
 
-* `GBTLoadTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

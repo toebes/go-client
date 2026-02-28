@@ -3,15 +3,15 @@
 ## Enum
 
 
-* `GBTAppElementAssociativeDataTypeOnshapeDrawingView` (value: `"ONSHAPE_DRAWING_VIEW"`)
+* `OnshapeDrawingView` (value: `"ONSHAPE_DRAWING_VIEW"`)
 
-* `GBTAppElementAssociativeDataTypeModelTopology` (value: `"MODEL_TOPOLOGY"`)
+* `ModelTopology` (value: `"MODEL_TOPOLOGY"`)
 
-* `GBTAppElementAssociativeDataTypeModelDefinitionFeature` (value: `"MODEL_DEFINITION_FEATURE"`)
+* `ModelDefinitionFeature` (value: `"MODEL_DEFINITION_FEATURE"`)
 
-* `GBTAppElementAssociativeDataTypeModelDefinitionEntity` (value: `"MODEL_DEFINITION_ENTITY"`)
+* `ModelDefinitionEntity` (value: `"MODEL_DEFINITION_ENTITY"`)
 
-* `GBTAppElementAssociativeDataTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

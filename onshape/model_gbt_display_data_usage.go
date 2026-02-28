@@ -20,13 +20,13 @@ type GBTDisplayDataUsage string
 
 // List of GBTDisplayDataUsage
 const (
-	GBTDisplayDataUsageBase            GBTDisplayDataUsage = "BASE"
-	GBTDisplayDataUsagePreviewBefore   GBTDisplayDataUsage = "PREVIEW_BEFORE"
-	GBTDisplayDataUsagePreviewAfter    GBTDisplayDataUsage = "PREVIEW_AFTER"
-	GBTDisplayDataUsagePreviewFinal    GBTDisplayDataUsage = "PREVIEW_FINAL"
-	GBTDisplayDataUsageCompareTarget   GBTDisplayDataUsage = "COMPARE_TARGET"
-	GBTDisplayDataUsageReferenceRepair GBTDisplayDataUsage = "REFERENCE_REPAIR"
-	GBTDisplayDataUsageUnknown         GBTDisplayDataUsage = "UNKNOWN"
+	Base            GBTDisplayDataUsage = "BASE"
+	PreviewBefore   GBTDisplayDataUsage = "PREVIEW_BEFORE"
+	PreviewAfter    GBTDisplayDataUsage = "PREVIEW_AFTER"
+	PreviewFinal    GBTDisplayDataUsage = "PREVIEW_FINAL"
+	CompareTarget   GBTDisplayDataUsage = "COMPARE_TARGET"
+	ReferenceRepair GBTDisplayDataUsage = "REFERENCE_REPAIR"
+	Unknown         GBTDisplayDataUsage = "UNKNOWN"
 )
 
 // All allowed values of GBTDisplayDataUsage enum

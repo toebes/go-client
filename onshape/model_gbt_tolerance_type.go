@@ -20,18 +20,18 @@ type GBTToleranceType string
 
 // List of GBTToleranceType
 const (
-	GBTToleranceTypeNone             GBTToleranceType = "NONE"
-	GBTToleranceTypeSymmetrical      GBTToleranceType = "SYMMETRICAL"
-	GBTToleranceTypeDeviation        GBTToleranceType = "DEVIATION"
-	GBTToleranceTypeLimits           GBTToleranceType = "LIMITS"
-	GBTToleranceTypeMin              GBTToleranceType = "MIN"
-	GBTToleranceTypeMax              GBTToleranceType = "MAX"
-	GBTToleranceTypeFit              GBTToleranceType = "FIT"
-	GBTToleranceTypeFitWithTolerance GBTToleranceType = "FIT_WITH_TOLERANCE"
-	GBTToleranceTypeFitToleranceOnly GBTToleranceType = "FIT_TOLERANCE_ONLY"
-	GBTToleranceTypeDefault          GBTToleranceType = "DEFAULT"
-	GBTToleranceTypeBasic            GBTToleranceType = "BASIC"
-	GBTToleranceTypeUnknown          GBTToleranceType = "UNKNOWN"
+	None             GBTToleranceType = "NONE"
+	Symmetrical      GBTToleranceType = "SYMMETRICAL"
+	Deviation        GBTToleranceType = "DEVIATION"
+	Limits           GBTToleranceType = "LIMITS"
+	Min              GBTToleranceType = "MIN"
+	Max              GBTToleranceType = "MAX"
+	Fit              GBTToleranceType = "FIT"
+	FitWithTolerance GBTToleranceType = "FIT_WITH_TOLERANCE"
+	FitToleranceOnly GBTToleranceType = "FIT_TOLERANCE_ONLY"
+	Default          GBTToleranceType = "DEFAULT"
+	Basic            GBTToleranceType = "BASIC"
+	Unknown          GBTToleranceType = "UNKNOWN"
 )
 
 // All allowed values of GBTToleranceType enum

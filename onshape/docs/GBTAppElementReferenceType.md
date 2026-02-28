@@ -3,25 +3,27 @@
 ## Enum
 
 
-* `GBTAppElementReferenceTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
-* `GBTAppElementReferenceTypePartstudio` (value: `"PARTSTUDIO"`)
+* `Partstudio` (value: `"PARTSTUDIO"`)
 
-* `GBTAppElementReferenceTypeAssembly` (value: `"ASSEMBLY"`)
+* `Assembly` (value: `"ASSEMBLY"`)
 
-* `GBTAppElementReferenceTypePart` (value: `"PART"`)
+* `Part` (value: `"PART"`)
 
-* `GBTAppElementReferenceTypeFlattenedPart` (value: `"FLATTENED_PART"`)
+* `FlattenedPart` (value: `"FLATTENED_PART"`)
 
-* `GBTAppElementReferenceTypeCompositePart` (value: `"COMPOSITE_PART"`)
+* `CompositePart` (value: `"COMPOSITE_PART"`)
 
-* `GBTAppElementReferenceTypeMeshPart` (value: `"MESH_PART"`)
+* `MeshPart` (value: `"MESH_PART"`)
 
-* `GBTAppElementReferenceTypeSurface` (value: `"SURFACE"`)
+* `Surface` (value: `"SURFACE"`)
 
-* `GBTAppElementReferenceTypeSketch` (value: `"SKETCH"`)
+* `Sketch` (value: `"SKETCH"`)
 
-* `GBTAppElementReferenceTypeCurve` (value: `"CURVE"`)
+* `Curve` (value: `"CURVE"`)
+
+* `Billofmaterials` (value: `"BILLOFMATERIALS"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

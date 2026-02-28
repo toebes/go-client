@@ -20,11 +20,11 @@ type GBTPartStudioInstanceType string
 
 // List of GBTPartStudioInstanceType
 const (
-	GBTPartStudioInstanceTypePart      GBTPartStudioInstanceType = "PART"
-	GBTPartStudioInstanceTypeSketch    GBTPartStudioInstanceType = "SKETCH"
-	GBTPartStudioInstanceTypeSurface   GBTPartStudioInstanceType = "SURFACE"
-	GBTPartStudioInstanceTypeComposite GBTPartStudioInstanceType = "COMPOSITE"
-	GBTPartStudioInstanceTypeUnknown   GBTPartStudioInstanceType = "UNKNOWN"
+	Part      GBTPartStudioInstanceType = "PART"
+	Sketch    GBTPartStudioInstanceType = "SKETCH"
+	Surface   GBTPartStudioInstanceType = "SURFACE"
+	Composite GBTPartStudioInstanceType = "COMPOSITE"
+	Unknown   GBTPartStudioInstanceType = "UNKNOWN"
 )
 
 // All allowed values of GBTPartStudioInstanceType enum

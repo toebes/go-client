@@ -3,33 +3,33 @@
 ## Enum
 
 
-* `BTMetadataValueTypeString` (value: `"STRING"`)
+* `String` (value: `"STRING"`)
 
-* `BTMetadataValueTypeBool` (value: `"BOOL"`)
+* `Bool` (value: `"BOOL"`)
 
-* `BTMetadataValueTypeInt` (value: `"INT"`)
+* `Int` (value: `"INT"`)
 
-* `BTMetadataValueTypeDouble` (value: `"DOUBLE"`)
+* `Double` (value: `"DOUBLE"`)
 
-* `BTMetadataValueTypeDate` (value: `"DATE"`)
+* `Date` (value: `"DATE"`)
 
-* `BTMetadataValueTypeEnum` (value: `"ENUM"`)
+* `Enum` (value: `"ENUM"`)
 
-* `BTMetadataValueTypeObject` (value: `"OBJECT"`)
+* `Object` (value: `"OBJECT"`)
 
-* `BTMetadataValueTypeBlob` (value: `"BLOB"`)
+* `Blob` (value: `"BLOB"`)
 
-* `BTMetadataValueTypeUser` (value: `"USER"`)
+* `User` (value: `"USER"`)
 
-* `BTMetadataValueTypeList` (value: `"LIST"`)
+* `List` (value: `"LIST"`)
 
-* `BTMetadataValueTypeForeign` (value: `"FOREIGN"`)
+* `Foreign` (value: `"FOREIGN"`)
 
-* `BTMetadataValueTypeCategory` (value: `"CATEGORY"`)
+* `Category` (value: `"CATEGORY"`)
 
-* `BTMetadataValueTypeComputed` (value: `"COMPUTED"`)
+* `Computed` (value: `"COMPUTED"`)
 
-* `BTMetadataValueTypeValueWithUnits` (value: `"VALUE_WITH_UNITS"`)
+* `ValueWithUnits` (value: `"VALUE_WITH_UNITS"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

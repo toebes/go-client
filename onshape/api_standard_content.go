@@ -18,12 +18,12 @@ import (
 	"strings"
 )
 
-// StandardContentApiService StandardContentApi service
-type StandardContentApiService service
+// StandardContentAPIService StandardContentAPI service
+type StandardContentAPIService service
 
 type ApiGetParameterValuesForIdRequest struct {
 	ctx        context.Context
-	ApiService *StandardContentApiService
+	ApiService *StandardContentAPIService
 	did        string
 }
 
@@ -38,7 +38,7 @@ GetParameterValuesForId Gets all possible values for each of the standard conten
 	@param did Document ID.
 	@return ApiGetParameterValuesForIdRequest
 */
-func (a *StandardContentApiService) GetParameterValuesForId(ctx context.Context, did string) ApiGetParameterValuesForIdRequest {
+func (a *StandardContentAPIService) GetParameterValuesForId(ctx context.Context, did string) ApiGetParameterValuesForIdRequest {
 	return ApiGetParameterValuesForIdRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -49,7 +49,7 @@ func (a *StandardContentApiService) GetParameterValuesForId(ctx context.Context,
 // Execute executes the request
 //
 //	@return []BTStandardContentParameterDescriptor
-func (a *StandardContentApiService) GetParameterValuesForIdExecute(r ApiGetParameterValuesForIdRequest) ([]BTStandardContentParameterDescriptor, *http.Response, error) {
+func (a *StandardContentAPIService) GetParameterValuesForIdExecute(r ApiGetParameterValuesForIdRequest) ([]BTStandardContentParameterDescriptor, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -57,7 +57,7 @@ func (a *StandardContentApiService) GetParameterValuesForIdExecute(r ApiGetParam
 		localVarReturnValue []BTStandardContentParameterDescriptor
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "StandardContentApiService.GetParameterValuesForId")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "StandardContentAPIService.GetParameterValuesForId")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -132,7 +132,7 @@ func (a *StandardContentApiService) GetParameterValuesForIdExecute(r ApiGetParam
 
 type ApiGetStandardContentListRequest struct {
 	ctx        context.Context
-	ApiService *StandardContentApiService
+	ApiService *StandardContentAPIService
 	standard   *string
 }
 
@@ -152,7 +152,7 @@ GetStandardContentList List all standard content.
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiGetStandardContentListRequest
 */
-func (a *StandardContentApiService) GetStandardContentList(ctx context.Context) ApiGetStandardContentListRequest {
+func (a *StandardContentAPIService) GetStandardContentList(ctx context.Context) ApiGetStandardContentListRequest {
 	return ApiGetStandardContentListRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -162,7 +162,7 @@ func (a *StandardContentApiService) GetStandardContentList(ctx context.Context) 
 // Execute executes the request
 //
 //	@return []BTStandardContentHierarchyItem
-func (a *StandardContentApiService) GetStandardContentListExecute(r ApiGetStandardContentListRequest) ([]BTStandardContentHierarchyItem, *http.Response, error) {
+func (a *StandardContentAPIService) GetStandardContentListExecute(r ApiGetStandardContentListRequest) ([]BTStandardContentHierarchyItem, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -170,7 +170,7 @@ func (a *StandardContentApiService) GetStandardContentListExecute(r ApiGetStanda
 		localVarReturnValue []BTStandardContentHierarchyItem
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "StandardContentApiService.GetStandardContentList")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "StandardContentAPIService.GetStandardContentList")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -247,7 +247,7 @@ func (a *StandardContentApiService) GetStandardContentListExecute(r ApiGetStanda
 
 type ApiSetCustomParametersRequest struct {
 	ctx                                              context.Context
-	ApiService                                       *StandardContentApiService
+	ApiService                                       *StandardContentAPIService
 	did                                              string
 	companyId                                        *string
 	bTStandardContentSetCustomParametersBatchRequest *BTStandardContentSetCustomParametersBatchRequest
@@ -275,7 +275,7 @@ SetCustomParameters Sets the part number and description for a standard content 
 	@param did Document ID.
 	@return ApiSetCustomParametersRequest
 */
-func (a *StandardContentApiService) SetCustomParameters(ctx context.Context, did string) ApiSetCustomParametersRequest {
+func (a *StandardContentAPIService) SetCustomParameters(ctx context.Context, did string) ApiSetCustomParametersRequest {
 	return ApiSetCustomParametersRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -286,7 +286,7 @@ func (a *StandardContentApiService) SetCustomParameters(ctx context.Context, did
 // Execute executes the request
 //
 //	@return BTStandardContentSetCustomParametersBatchResponse
-func (a *StandardContentApiService) SetCustomParametersExecute(r ApiSetCustomParametersRequest) (*BTStandardContentSetCustomParametersBatchResponse, *http.Response, error) {
+func (a *StandardContentAPIService) SetCustomParametersExecute(r ApiSetCustomParametersRequest) (*BTStandardContentSetCustomParametersBatchResponse, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -294,7 +294,7 @@ func (a *StandardContentApiService) SetCustomParametersExecute(r ApiSetCustomPar
 		localVarReturnValue *BTStandardContentSetCustomParametersBatchResponse
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "StandardContentApiService.SetCustomParameters")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "StandardContentAPIService.SetCustomParameters")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}

@@ -3,27 +3,27 @@
 ## Enum
 
 
-* `GBTSketchEntityTypeCurve` (value: `"CURVE"`)
+* `Curve` (value: `"CURVE"`)
 
-* `GBTSketchEntityTypeImageEntity` (value: `"IMAGE_ENTITY"`)
+* `ImageEntity` (value: `"IMAGE_ENTITY"`)
 
-* `GBTSketchEntityTypePoint` (value: `"POINT"`)
+* `Point` (value: `"POINT"`)
 
-* `GBTSketchEntityTypeText` (value: `"TEXT"`)
+* `Text` (value: `"TEXT"`)
 
-* `GBTSketchEntityTypeCircle` (value: `"CIRCLE"`)
+* `Circle` (value: `"CIRCLE"`)
 
-* `GBTSketchEntityTypeConic` (value: `"CONIC"`)
+* `Conic` (value: `"CONIC"`)
 
-* `GBTSketchEntityTypeSpline` (value: `"SPLINE"`)
+* `Spline` (value: `"SPLINE"`)
 
-* `GBTSketchEntityTypeEllipse` (value: `"ELLIPSE"`)
+* `Ellipse` (value: `"ELLIPSE"`)
 
-* `GBTSketchEntityTypeLine` (value: `"LINE"`)
+* `Line` (value: `"LINE"`)
 
-* `GBTSketchEntityTypeCurvedText` (value: `"CURVED_TEXT"`)
+* `CurvedText` (value: `"CURVED_TEXT"`)
 
-* `GBTSketchEntityTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

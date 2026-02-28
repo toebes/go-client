@@ -18,12 +18,12 @@ import (
 	"strings"
 )
 
-// TeamApiService TeamApi service
-type TeamApiService service
+// TeamAPIService TeamAPI service
+type TeamAPIService service
 
 type ApiFindRequest struct {
 	ctx                      context.Context
-	ApiService               *TeamApiService
+	ApiService               *TeamAPIService
 	query                    *string
 	filter                   *int32
 	uid                      *string
@@ -90,7 +90,7 @@ Find Get a list of all teams the current user belongs to.
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiFindRequest
 */
-func (a *TeamApiService) Find(ctx context.Context) ApiFindRequest {
+func (a *TeamAPIService) Find(ctx context.Context) ApiFindRequest {
 	return ApiFindRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -100,7 +100,7 @@ func (a *TeamApiService) Find(ctx context.Context) ApiFindRequest {
 // Execute executes the request
 //
 //	@return BTGlobalTreeNodeListResponseBTTeamInfo
-func (a *TeamApiService) FindExecute(r ApiFindRequest) (*BTGlobalTreeNodeListResponseBTTeamInfo, *http.Response, error) {
+func (a *TeamAPIService) FindExecute(r ApiFindRequest) (*BTGlobalTreeNodeListResponseBTTeamInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -108,7 +108,7 @@ func (a *TeamApiService) FindExecute(r ApiFindRequest) (*BTGlobalTreeNodeListRes
 		localVarReturnValue *BTGlobalTreeNodeListResponseBTTeamInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TeamApiService.Find")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TeamAPIService.Find")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -209,7 +209,7 @@ func (a *TeamApiService) FindExecute(r ApiFindRequest) (*BTGlobalTreeNodeListRes
 
 type ApiGetMembersRequest struct {
 	ctx        context.Context
-	ApiService *TeamApiService
+	ApiService *TeamAPIService
 	tid        string
 	sortColumn *string
 	sortOrder  *string
@@ -256,7 +256,7 @@ Returns a maximum of 20 per page.
 	@param tid
 	@return ApiGetMembersRequest
 */
-func (a *TeamApiService) GetMembers(ctx context.Context, tid string) ApiGetMembersRequest {
+func (a *TeamAPIService) GetMembers(ctx context.Context, tid string) ApiGetMembersRequest {
 	return ApiGetMembersRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -267,7 +267,7 @@ func (a *TeamApiService) GetMembers(ctx context.Context, tid string) ApiGetMembe
 // Execute executes the request
 //
 //	@return BTListResponseBTTeamMemberInfo
-func (a *TeamApiService) GetMembersExecute(r ApiGetMembersRequest) (*BTListResponseBTTeamMemberInfo, *http.Response, error) {
+func (a *TeamAPIService) GetMembersExecute(r ApiGetMembersRequest) (*BTListResponseBTTeamMemberInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -275,7 +275,7 @@ func (a *TeamApiService) GetMembersExecute(r ApiGetMembersRequest) (*BTListRespo
 		localVarReturnValue *BTListResponseBTTeamMemberInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TeamApiService.GetMembers")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TeamAPIService.GetMembers")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -365,7 +365,7 @@ func (a *TeamApiService) GetMembersExecute(r ApiGetMembersRequest) (*BTListRespo
 
 type ApiGetTeamRequest struct {
 	ctx        context.Context
-	ApiService *TeamApiService
+	ApiService *TeamAPIService
 	tid        string
 }
 
@@ -380,7 +380,7 @@ GetTeam Get team information by team ID.
 	@param tid
 	@return ApiGetTeamRequest
 */
-func (a *TeamApiService) GetTeam(ctx context.Context, tid string) ApiGetTeamRequest {
+func (a *TeamAPIService) GetTeam(ctx context.Context, tid string) ApiGetTeamRequest {
 	return ApiGetTeamRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -391,7 +391,7 @@ func (a *TeamApiService) GetTeam(ctx context.Context, tid string) ApiGetTeamRequ
 // Execute executes the request
 //
 //	@return BTTeamInfo
-func (a *TeamApiService) GetTeamExecute(r ApiGetTeamRequest) (*BTTeamInfo, *http.Response, error) {
+func (a *TeamAPIService) GetTeamExecute(r ApiGetTeamRequest) (*BTTeamInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -399,7 +399,7 @@ func (a *TeamApiService) GetTeamExecute(r ApiGetTeamRequest) (*BTTeamInfo, *http
 		localVarReturnValue *BTTeamInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TeamApiService.GetTeam")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "TeamAPIService.GetTeam")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}

@@ -20,16 +20,16 @@ type GBTPartStudioItemType string
 
 // List of GBTPartStudioItemType
 const (
-	GBTPartStudioItemTypeSolid               GBTPartStudioItemType = "SOLID"
-	GBTPartStudioItemTypeSurface             GBTPartStudioItemType = "SURFACE"
-	GBTPartStudioItemTypeWire                GBTPartStudioItemType = "WIRE"
-	GBTPartStudioItemTypeMesh                GBTPartStudioItemType = "MESH"
-	GBTPartStudioItemTypeSketch              GBTPartStudioItemType = "SKETCH"
-	GBTPartStudioItemTypeFlattenedSheetMetal GBTPartStudioItemType = "FLATTENED_SHEET_METAL"
-	GBTPartStudioItemTypeEntirePartStudio    GBTPartStudioItemType = "ENTIRE_PART_STUDIO"
-	GBTPartStudioItemTypeConstructionPlane   GBTPartStudioItemType = "CONSTRUCTION_PLANE"
-	GBTPartStudioItemTypeCompositePart       GBTPartStudioItemType = "COMPOSITE_PART"
-	GBTPartStudioItemTypeUnknown             GBTPartStudioItemType = "UNKNOWN"
+	Solid               GBTPartStudioItemType = "SOLID"
+	Surface             GBTPartStudioItemType = "SURFACE"
+	Wire                GBTPartStudioItemType = "WIRE"
+	Mesh                GBTPartStudioItemType = "MESH"
+	Sketch              GBTPartStudioItemType = "SKETCH"
+	FlattenedSheetMetal GBTPartStudioItemType = "FLATTENED_SHEET_METAL"
+	EntirePartStudio    GBTPartStudioItemType = "ENTIRE_PART_STUDIO"
+	ConstructionPlane   GBTPartStudioItemType = "CONSTRUCTION_PLANE"
+	CompositePart       GBTPartStudioItemType = "COMPOSITE_PART"
+	Unknown             GBTPartStudioItemType = "UNKNOWN"
 )
 
 // All allowed values of GBTPartStudioItemType enum

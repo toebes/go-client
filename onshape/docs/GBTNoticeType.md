@@ -3,19 +3,19 @@
 ## Enum
 
 
-* `GBTNoticeTypeParse` (value: `"PARSE"`)
+* `Parse` (value: `"PARSE"`)
 
-* `GBTNoticeTypeSemantic` (value: `"SEMANTIC"`)
+* `Semantic` (value: `"SEMANTIC"`)
 
-* `GBTNoticeTypeExecution` (value: `"EXECUTION"`)
+* `Execution` (value: `"EXECUTION"`)
 
-* `GBTNoticeTypeModeling` (value: `"MODELING"`)
+* `Modeling` (value: `"MODELING"`)
 
-* `GBTNoticeTypeTest` (value: `"TEST"`)
+* `Test` (value: `"TEST"`)
 
-* `GBTNoticeTypeOther` (value: `"OTHER"`)
+* `Other` (value: `"OTHER"`)
 
-* `GBTNoticeTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

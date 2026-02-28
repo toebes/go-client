@@ -1,36 +1,36 @@
-# \AppElementApi
+# \AppElementAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AbortTransaction**](AppElementApi.md#AbortTransaction) | **Delete** /appelements/d/{did}/w/{wid}/e/{eid}/transactions/{tid} | Abort a transaction.
-[**BulkCreateElement**](AppElementApi.md#BulkCreateElement) | **Post** /appelements/d/{did}/w/{wid}/bulkcreate | Create multiple empty application elements at once.
-[**CommitTransactions**](AppElementApi.md#CommitTransactions) | **Post** /appelements/d/{did}/w/{wid}/transactions | Merge multiple transactions into one microversion.
-[**CompareAppElementJson**](AppElementApi.md#CompareAppElementJson) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/compare | Compare app element JSON trees between workspaces/versions/microversions in a document.
-[**CreateElement**](AppElementApi.md#CreateElement) | **Post** /appelements/d/{did}/w/{wid} | Create a new application element.
-[**CreateReference**](AppElementApi.md#CreateReference) | **Post** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/references | Creates a reference to an app element.
-[**DeleteAppElementContent**](AppElementApi.md#DeleteAppElementContent) | **Delete** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/subelements/{sid} | Deletes the content from the specified app element.
-[**DeleteAppElementContentBatch**](AppElementApi.md#DeleteAppElementContentBatch) | **Delete** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/subelements | Delete multiple subelements array by document ID, workspace or version or microversion ID, tab ID, and subelement IDs.
-[**DeleteBlobSubelement**](AppElementApi.md#DeleteBlobSubelement) | **Delete** /appelements/d/{did}/w/{wid}/e/{eid}/blob/{bid} | Delete a blob subelement from an app element.
-[**DeleteReference**](AppElementApi.md#DeleteReference) | **Delete** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/references/{rid} | Delete an app element reference.
-[**DownloadBlobSubelement**](AppElementApi.md#DownloadBlobSubelement) | **Get** /appelements/d/{did}/{vm}/{vmid}/e/{eid}/blob/{bid} | Download a blob subelement from the specified app element.
-[**DownloadBlobSubelementWorkspace**](AppElementApi.md#DownloadBlobSubelementWorkspace) | **Get** /appelements/d/{did}/w/{wid}/e/{eid}/blob/{bid} | Download the blob element (i.e., a file) stored in an app element in a document&#39;s workspace.
-[**GetAppElementHistory**](AppElementApi.md#GetAppElementHistory) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/history | Get the history of the specified all element.
-[**GetBlobSubelementIds**](AppElementApi.md#GetBlobSubelementIds) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/blob | Get a list of all blob subelement IDs for the specified workspace, version, or microversion.
-[**GetElementTransactions**](AppElementApi.md#GetElementTransactions) | **Get** /appelements/d/{did}/w/{wid}/e/{eid}/transactions | Get a list of all transactions performed on an element.
-[**GetJson**](AppElementApi.md#GetJson) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/json | Get the full JSON tree for the specified workspace/version/microversion.
-[**GetJsonPaths**](AppElementApi.md#GetJsonPaths) | **Post** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/jsonpaths | Get the JSON at specified paths for an element.
-[**GetSubElementContent**](AppElementApi.md#GetSubElementContent) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content | Get a list of all subelement IDs in a specified workspace/version/microversion.
-[**GetSubElementContentBatch**](AppElementApi.md#GetSubElementContentBatch) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/subelements | Get a list of multiple subelements by document ID, workspace or version or microversion ID, tab ID, and subelement IDs.
-[**GetSubelementIds**](AppElementApi.md#GetSubelementIds) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/ids | Get a list of all subelement IDs in a specified workspace/version/microversion.
-[**ResolveAllElementReferences**](AppElementApi.md#ResolveAllElementReferences) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/resolvereferences | Resolves bulk app element references.
-[**ResolveReference**](AppElementApi.md#ResolveReference) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/references/{rid} | Resolves a single reference to an app element.
-[**ResolveReferences**](AppElementApi.md#ResolveReferences) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/resolvereferences | Resolves bulk app element references.
-[**StartTransaction**](AppElementApi.md#StartTransaction) | **Post** /appelements/d/{did}/w/{wid}/e/{eid}/transactions | Start a transaction
-[**UpdateAppElement**](AppElementApi.md#UpdateAppElement) | **Post** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content | Update the content for the specified app element.
-[**UpdateReference**](AppElementApi.md#UpdateReference) | **Post** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/references/{rid} | Update an app element reference.
-[**UploadBlobSubelement**](AppElementApi.md#UploadBlobSubelement) | **Post** /appelements/d/{did}/w/{wid}/e/{eid}/blob/{bid} | Create a new blob subelement from an uploaded file.
+[**AbortTransaction**](AppElementAPI.md#AbortTransaction) | **Delete** /appelements/d/{did}/w/{wid}/e/{eid}/transactions/{tid} | Abort a transaction.
+[**BulkCreateElement**](AppElementAPI.md#BulkCreateElement) | **Post** /appelements/d/{did}/w/{wid}/bulkcreate | Create multiple empty application elements at once.
+[**CommitTransactions**](AppElementAPI.md#CommitTransactions) | **Post** /appelements/d/{did}/w/{wid}/transactions | Merge multiple transactions into one microversion.
+[**CompareAppElementJson**](AppElementAPI.md#CompareAppElementJson) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/compare | Compare app element JSON trees between workspaces/versions/microversions in a document.
+[**CreateElement**](AppElementAPI.md#CreateElement) | **Post** /appelements/d/{did}/w/{wid} | Create a new application element.
+[**CreateReference**](AppElementAPI.md#CreateReference) | **Post** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/references | Creates a reference to an app element.
+[**DeleteAppElementContent**](AppElementAPI.md#DeleteAppElementContent) | **Delete** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/subelements/{sid} | Deletes the content from the specified app element.
+[**DeleteAppElementContentBatch**](AppElementAPI.md#DeleteAppElementContentBatch) | **Delete** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/subelements | Delete multiple subelements array by document ID, workspace or version or microversion ID, tab ID, and subelement IDs.
+[**DeleteBlobSubelement**](AppElementAPI.md#DeleteBlobSubelement) | **Delete** /appelements/d/{did}/w/{wid}/e/{eid}/blob/{bid} | Delete a blob subelement from an app element.
+[**DeleteReference**](AppElementAPI.md#DeleteReference) | **Delete** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/references/{rid} | Delete an app element reference.
+[**DownloadBlobSubelement**](AppElementAPI.md#DownloadBlobSubelement) | **Get** /appelements/d/{did}/{vm}/{vmid}/e/{eid}/blob/{bid} | Download a blob subelement from the specified app element.
+[**DownloadBlobSubelementWorkspace**](AppElementAPI.md#DownloadBlobSubelementWorkspace) | **Get** /appelements/d/{did}/w/{wid}/e/{eid}/blob/{bid} | Download the blob element (i.e., a file) stored in an app element in a document&#39;s workspace.
+[**GetAppElementHistory**](AppElementAPI.md#GetAppElementHistory) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/history | Get the history of the specified all element.
+[**GetBlobSubelementIds**](AppElementAPI.md#GetBlobSubelementIds) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/blob | Get a list of all blob subelement IDs for the specified workspace, version, or microversion.
+[**GetElementTransactions**](AppElementAPI.md#GetElementTransactions) | **Get** /appelements/d/{did}/w/{wid}/e/{eid}/transactions | Get a list of all transactions performed on an element.
+[**GetJson**](AppElementAPI.md#GetJson) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/json | Get the full JSON tree for the specified workspace/version/microversion.
+[**GetJsonPaths**](AppElementAPI.md#GetJsonPaths) | **Post** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/jsonpaths | Get the JSON at specified paths for an element.
+[**GetSubElementContent**](AppElementAPI.md#GetSubElementContent) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content | Get a list of all subelement IDs in a specified workspace/version/microversion.
+[**GetSubElementContentBatch**](AppElementAPI.md#GetSubElementContentBatch) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/subelements | Get a list of multiple subelements by document ID, workspace or version or microversion ID, tab ID, and subelement IDs.
+[**GetSubelementIds**](AppElementAPI.md#GetSubelementIds) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content/ids | Get a list of all subelement IDs in a specified workspace/version/microversion.
+[**ResolveAllElementReferences**](AppElementAPI.md#ResolveAllElementReferences) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/resolvereferences | Resolves bulk app element references.
+[**ResolveReference**](AppElementAPI.md#ResolveReference) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/references/{rid} | Resolves a single reference to an app element.
+[**ResolveReferences**](AppElementAPI.md#ResolveReferences) | **Get** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/resolvereferences | Resolves bulk app element references.
+[**StartTransaction**](AppElementAPI.md#StartTransaction) | **Post** /appelements/d/{did}/w/{wid}/e/{eid}/transactions | Start a transaction
+[**UpdateAppElement**](AppElementAPI.md#UpdateAppElement) | **Post** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/content | Update the content for the specified app element.
+[**UpdateReference**](AppElementAPI.md#UpdateReference) | **Post** /appelements/d/{did}/{wvm}/{wvmid}/e/{eid}/references/{rid} | Update an app element reference.
+[**UploadBlobSubelement**](AppElementAPI.md#UploadBlobSubelement) | **Post** /appelements/d/{did}/w/{wid}/e/{eid}/blob/{bid} | Create a new blob subelement from an uploaded file.
 
 
 
@@ -63,13 +63,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.AbortTransaction(context.Background(), did, eid, wid, tid).ReturnError(returnError).Execute()
+    resp, r, err := apiClient.AppElementAPI.AbortTransaction(context.Background(), did, eid, wid, tid).ReturnError(returnError).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.AbortTransaction``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.AbortTransaction``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `AbortTransaction`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.AbortTransaction`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.AbortTransaction`: %v\n", resp)
 }
 ```
 
@@ -143,13 +143,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.BulkCreateElement(context.Background(), did, wid).BTAppElementBulkCreateParams(bTAppElementBulkCreateParams).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.AppElementAPI.BulkCreateElement(context.Background(), did, wid).BTAppElementBulkCreateParams(bTAppElementBulkCreateParams).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.BulkCreateElement``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.BulkCreateElement``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `BulkCreateElement`: BTAppElementBulkCreateInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.BulkCreateElement`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.BulkCreateElement`: %v\n", resp)
 }
 ```
 
@@ -220,13 +220,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.CommitTransactions(context.Background(), did, wid).BTAppElementCommitTransactionParams(bTAppElementCommitTransactionParams).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.AppElementAPI.CommitTransactions(context.Background(), did, wid).BTAppElementCommitTransactionParams(bTAppElementCommitTransactionParams).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.CommitTransactions``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.CommitTransactions``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CommitTransactions`: BTAppElementBulkModifyInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.CommitTransactions`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.CommitTransactions`: %v\n", resp)
 }
 ```
 
@@ -302,13 +302,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.CompareAppElementJson(context.Background(), did, wvm, wvmid, eid).WorkspaceId(workspaceId).VersionId(versionId).MicroversionId(microversionId).LinkDocumentId(linkDocumentId).JsonDifferenceFormat(jsonDifferenceFormat).Execute()
+    resp, r, err := apiClient.AppElementAPI.CompareAppElementJson(context.Background(), did, wvm, wvmid, eid).WorkspaceId(workspaceId).VersionId(versionId).MicroversionId(microversionId).LinkDocumentId(linkDocumentId).JsonDifferenceFormat(jsonDifferenceFormat).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.CompareAppElementJson``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.CompareAppElementJson``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CompareAppElementJson`: BTDiffJsonResponse2725
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.CompareAppElementJson`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.CompareAppElementJson`: %v\n", resp)
 }
 ```
 
@@ -386,13 +386,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.CreateElement(context.Background(), did, wid).BTAppElementParams(bTAppElementParams).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.AppElementAPI.CreateElement(context.Background(), did, wid).BTAppElementParams(bTAppElementParams).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.CreateElement``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.CreateElement``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateElement`: BTAppElementModifyInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.CreateElement`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.CreateElement`: %v\n", resp)
 }
 ```
 
@@ -462,13 +462,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.CreateReference(context.Background(), did, eid, wvm, wvmid).BTAppElementReferenceParams(bTAppElementReferenceParams).Execute()
+    resp, r, err := apiClient.AppElementAPI.CreateReference(context.Background(), did, eid, wvm, wvmid).BTAppElementReferenceParams(bTAppElementReferenceParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.CreateReference``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.CreateReference``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateReference`: BTAppElementReferenceInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.CreateReference`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.CreateReference`: %v\n", resp)
 }
 ```
 
@@ -544,13 +544,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.DeleteAppElementContent(context.Background(), did, eid, wvm, wvmid, sid).TransactionId(transactionId).ParentChangeId(parentChangeId).Description(description).Execute()
+    resp, r, err := apiClient.AppElementAPI.DeleteAppElementContent(context.Background(), did, eid, wvm, wvmid, sid).TransactionId(transactionId).ParentChangeId(parentChangeId).Description(description).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.DeleteAppElementContent``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.DeleteAppElementContent``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteAppElementContent`: BTAppElementModifyInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.DeleteAppElementContent`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.DeleteAppElementContent`: %v\n", resp)
 }
 ```
 
@@ -630,13 +630,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.DeleteAppElementContentBatch(context.Background(), did, eid, wvm, wvmid).SubelementIds(subelementIds).TransactionId(transactionId).ParentChangeId(parentChangeId).Description(description).Execute()
+    resp, r, err := apiClient.AppElementAPI.DeleteAppElementContentBatch(context.Background(), did, eid, wvm, wvmid).SubelementIds(subelementIds).TransactionId(transactionId).ParentChangeId(parentChangeId).Description(description).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.DeleteAppElementContentBatch``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.DeleteAppElementContentBatch``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteAppElementContentBatch`: BTAppElementModifyInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.DeleteAppElementContentBatch`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.DeleteAppElementContentBatch`: %v\n", resp)
 }
 ```
 
@@ -713,13 +713,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.DeleteBlobSubelement(context.Background(), did, wid, eid, bid).TransactionId(transactionId).ChangeId(changeId).Execute()
+    resp, r, err := apiClient.AppElementAPI.DeleteBlobSubelement(context.Background(), did, wid, eid, bid).TransactionId(transactionId).ChangeId(changeId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.DeleteBlobSubelement``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.DeleteBlobSubelement``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteBlobSubelement`: BTAppElementModifyInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.DeleteBlobSubelement`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.DeleteBlobSubelement`: %v\n", resp)
 }
 ```
 
@@ -796,13 +796,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.DeleteReference(context.Background(), did, eid, wvm, wvmid, rid).TransactionId(transactionId).ParentChangeId(parentChangeId).Description(description).Execute()
+    resp, r, err := apiClient.AppElementAPI.DeleteReference(context.Background(), did, eid, wvm, wvmid, rid).TransactionId(transactionId).ParentChangeId(parentChangeId).Description(description).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.DeleteReference``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.DeleteReference``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteReference`: BTAppElementReferenceInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.DeleteReference`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.DeleteReference`: %v\n", resp)
 }
 ```
 
@@ -886,13 +886,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.DownloadBlobSubelement(context.Background(), did, vm, vmid, eid, bid).ContentDisposition(contentDisposition).IfNoneMatch(ifNoneMatch).TransactionId(transactionId).ChangeId(changeId).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.AppElementAPI.DownloadBlobSubelement(context.Background(), did, vm, vmid, eid, bid).ContentDisposition(contentDisposition).IfNoneMatch(ifNoneMatch).TransactionId(transactionId).ChangeId(changeId).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.DownloadBlobSubelement``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.DownloadBlobSubelement``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DownloadBlobSubelement`: HttpFile
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.DownloadBlobSubelement`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.DownloadBlobSubelement`: %v\n", resp)
 }
 ```
 
@@ -976,13 +976,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.DownloadBlobSubelementWorkspace(context.Background(), did, wid, eid, bid).ContentDisposition(contentDisposition).IfNoneMatch(ifNoneMatch).TransactionId(transactionId).ChangeId(changeId).Execute()
+    resp, r, err := apiClient.AppElementAPI.DownloadBlobSubelementWorkspace(context.Background(), did, wid, eid, bid).ContentDisposition(contentDisposition).IfNoneMatch(ifNoneMatch).TransactionId(transactionId).ChangeId(changeId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.DownloadBlobSubelementWorkspace``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.DownloadBlobSubelementWorkspace``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DownloadBlobSubelementWorkspace`: HttpFile
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.DownloadBlobSubelementWorkspace`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.DownloadBlobSubelementWorkspace`: %v\n", resp)
 }
 ```
 
@@ -1057,13 +1057,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.GetAppElementHistory(context.Background(), did, eid, wvm, wvmid).Execute()
+    resp, r, err := apiClient.AppElementAPI.GetAppElementHistory(context.Background(), did, eid, wvm, wvmid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.GetAppElementHistory``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.GetAppElementHistory``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAppElementHistory`: BTAppElementHistoryInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.GetAppElementHistory`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.GetAppElementHistory`: %v\n", resp)
 }
 ```
 
@@ -1136,13 +1136,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.GetBlobSubelementIds(context.Background(), did, eid, wvm, wvmid).TransactionId(transactionId).ChangeId(changeId).Execute()
+    resp, r, err := apiClient.AppElementAPI.GetBlobSubelementIds(context.Background(), did, eid, wvm, wvmid).TransactionId(transactionId).ChangeId(changeId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.GetBlobSubelementIds``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.GetBlobSubelementIds``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetBlobSubelementIds`: BTAppElementIdsInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.GetBlobSubelementIds`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.GetBlobSubelementIds`: %v\n", resp)
 }
 ```
 
@@ -1214,13 +1214,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.GetElementTransactions(context.Background(), did, eid, wid).Execute()
+    resp, r, err := apiClient.AppElementAPI.GetElementTransactions(context.Background(), did, eid, wid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.GetElementTransactions``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.GetElementTransactions``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetElementTransactions`: BTAppElementTransactionsInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.GetElementTransactions`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.GetElementTransactions`: %v\n", resp)
 }
 ```
 
@@ -1292,13 +1292,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.GetJson(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).Execute()
+    resp, r, err := apiClient.AppElementAPI.GetJson(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.GetJson``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.GetJson``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetJson`: BTGetJsonResponse2137
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.GetJson`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.GetJson`: %v\n", resp)
 }
 ```
 
@@ -1378,13 +1378,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.GetJsonPaths(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).BTGetJsonPaths1697(bTGetJsonPaths1697).Execute()
+    resp, r, err := apiClient.AppElementAPI.GetJsonPaths(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).BTGetJsonPaths1697(bTGetJsonPaths1697).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.GetJsonPaths``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.GetJsonPaths``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetJsonPaths`: BTGetJsonPathsResponse1544
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.GetJsonPaths`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.GetJsonPaths`: %v\n", resp)
 }
 ```
 
@@ -1464,13 +1464,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.GetSubElementContent(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).BaseChangeId(baseChangeId).SubelementId(subelementId).Execute()
+    resp, r, err := apiClient.AppElementAPI.GetSubElementContent(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).BaseChangeId(baseChangeId).SubelementId(subelementId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.GetSubElementContent``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.GetSubElementContent``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetSubElementContent`: BTAppElementContentInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.GetSubElementContent`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.GetSubElementContent`: %v\n", resp)
 }
 ```
 
@@ -1551,13 +1551,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.GetSubElementContentBatch(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).BaseChangeId(baseChangeId).SubelementIds(subelementIds).Execute()
+    resp, r, err := apiClient.AppElementAPI.GetSubElementContentBatch(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ChangeId(changeId).BaseChangeId(baseChangeId).SubelementIds(subelementIds).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.GetSubElementContentBatch``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.GetSubElementContentBatch``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetSubElementContentBatch`: BTAppElementContentInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.GetSubElementContentBatch`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.GetSubElementContentBatch`: %v\n", resp)
 }
 ```
 
@@ -1635,13 +1635,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.GetSubelementIds(context.Background(), did, eid, wvm, wvmid).TransactionId(transactionId).ChangeId(changeId).Execute()
+    resp, r, err := apiClient.AppElementAPI.GetSubelementIds(context.Background(), did, eid, wvm, wvmid).TransactionId(transactionId).ChangeId(changeId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.GetSubelementIds``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.GetSubelementIds``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetSubelementIds`: BTAppElementIdsInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.GetSubelementIds`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.GetSubelementIds`: %v\n", resp)
 }
 ```
 
@@ -1722,13 +1722,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.ResolveAllElementReferences(context.Background(), did, wvm, wvmid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ParentChangeId(parentChangeId).IncludeInternal(includeInternal).ReferenceIds(referenceIds).ElementIds(elementIds).DrawingsOnly(drawingsOnly).Execute()
+    resp, r, err := apiClient.AppElementAPI.ResolveAllElementReferences(context.Background(), did, wvm, wvmid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ParentChangeId(parentChangeId).IncludeInternal(includeInternal).ReferenceIds(referenceIds).ElementIds(elementIds).DrawingsOnly(drawingsOnly).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.ResolveAllElementReferences``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.ResolveAllElementReferences``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `ResolveAllElementReferences`: map[string]BTAppElementReferencesResolveInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.ResolveAllElementReferences`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.ResolveAllElementReferences`: %v\n", resp)
 }
 ```
 
@@ -1811,13 +1811,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.ResolveReference(context.Background(), did, eid, wvm, wvmid, rid).TransactionId(transactionId).ParentChangeId(parentChangeId).IncludeInternal(includeInternal).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.AppElementAPI.ResolveReference(context.Background(), did, eid, wvm, wvmid, rid).TransactionId(transactionId).ParentChangeId(parentChangeId).IncludeInternal(includeInternal).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.ResolveReference``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.ResolveReference``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `ResolveReference`: BTAppElementReferenceResolveInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.ResolveReference`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.ResolveReference`: %v\n", resp)
 }
 ```
 
@@ -1901,13 +1901,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.ResolveReferences(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ParentChangeId(parentChangeId).IncludeInternal(includeInternal).ReferenceIds(referenceIds).Execute()
+    resp, r, err := apiClient.AppElementAPI.ResolveReferences(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).TransactionId(transactionId).ParentChangeId(parentChangeId).IncludeInternal(includeInternal).ReferenceIds(referenceIds).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.ResolveReferences``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.ResolveReferences``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `ResolveReferences`: BTAppElementReferencesResolveInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.ResolveReferences`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.ResolveReferences`: %v\n", resp)
 }
 ```
 
@@ -1985,13 +1985,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.StartTransaction(context.Background(), did, eid, wid).BTAppElementStartTransactionParams(bTAppElementStartTransactionParams).Execute()
+    resp, r, err := apiClient.AppElementAPI.StartTransaction(context.Background(), did, eid, wid).BTAppElementStartTransactionParams(bTAppElementStartTransactionParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.StartTransaction``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.StartTransaction``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `StartTransaction`: BTAppElementModifyInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.StartTransaction`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.StartTransaction`: %v\n", resp)
 }
 ```
 
@@ -2064,13 +2064,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.UpdateAppElement(context.Background(), did, eid, wvm, wvmid).BTAppElementUpdateParams(bTAppElementUpdateParams).Execute()
+    resp, r, err := apiClient.AppElementAPI.UpdateAppElement(context.Background(), did, eid, wvm, wvmid).BTAppElementUpdateParams(bTAppElementUpdateParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.UpdateAppElement``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.UpdateAppElement``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateAppElement`: BTAppElementModifyInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.UpdateAppElement`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.UpdateAppElement`: %v\n", resp)
 }
 ```
 
@@ -2144,13 +2144,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.UpdateReference(context.Background(), did, eid, wvm, wvmid, rid).BTAppElementReferenceParams(bTAppElementReferenceParams).Execute()
+    resp, r, err := apiClient.AppElementAPI.UpdateReference(context.Background(), did, eid, wvm, wvmid, rid).BTAppElementReferenceParams(bTAppElementReferenceParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.UpdateReference``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.UpdateReference``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateReference`: BTAppElementReferenceInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.UpdateReference`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.UpdateReference`: %v\n", resp)
 }
 ```
 
@@ -2200,7 +2200,7 @@ Name | Type | Description  | Notes
 
 ## UploadBlobSubelement
 
-> BTAppElementModifyInfo UploadBlobSubelement(ctx, did, wid, eid, bid).TransactionId(transactionId).ParentChangeId(parentChangeId).Description(description).File(file).FileContentLength(fileContentLength).Execute()
+> BTAppElementModifyInfo UploadBlobSubelement(ctx, did, wid, eid, bid).Description(description).File(file).FileContentLength(fileContentLength).ParentChangeId(parentChangeId).TransactionId(transactionId).Execute()
 
 Create a new blob subelement from an uploaded file.
 
@@ -2223,21 +2223,21 @@ func main() {
     wid := "wid_example" // string | 
     eid := "eid_example" // string | 
     bid := "bid_example" // string | 
-    transactionId := "transactionId_example" // string |  (optional)
-    parentChangeId := "parentChangeId_example" // string |  (optional)
     description := "description_example" // string |  (optional)
     file := os.NewFile(1234, "some_file") // HttpFile | File to upload. (optional)
-    fileContentLength := int64(789) // int64 |  (optional) (default to -1)
+    fileContentLength := int64(789) // int64 |  (optional)
+    parentChangeId := "parentChangeId_example" // string |  (optional)
+    transactionId := "transactionId_example" // string |  (optional)
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AppElementApi.UploadBlobSubelement(context.Background(), did, wid, eid, bid).TransactionId(transactionId).ParentChangeId(parentChangeId).Description(description).File(file).FileContentLength(fileContentLength).Execute()
+    resp, r, err := apiClient.AppElementAPI.UploadBlobSubelement(context.Background(), did, wid, eid, bid).Description(description).File(file).FileContentLength(fileContentLength).ParentChangeId(parentChangeId).TransactionId(transactionId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AppElementApi.UploadBlobSubelement``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AppElementAPI.UploadBlobSubelement``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UploadBlobSubelement`: BTAppElementModifyInfo
-    fmt.Fprintf(os.Stdout, "Response from `AppElementApi.UploadBlobSubelement`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AppElementAPI.UploadBlobSubelement`: %v\n", resp)
 }
 ```
 
@@ -2263,11 +2263,11 @@ Name | Type | Description  | Notes
 
 
 
- **transactionId** | **string** |  | 
- **parentChangeId** | **string** |  | 
  **description** | **string** |  | 
  **file** | **HttpFile** | File to upload. | 
- **fileContentLength** | **int64** |  | [default to -1]
+ **fileContentLength** | **int64** |  | 
+ **parentChangeId** | **string** |  | 
+ **transactionId** | **string** |  | 
 
 ### Return type
 

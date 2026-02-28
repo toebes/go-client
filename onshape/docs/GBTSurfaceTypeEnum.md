@@ -3,29 +3,29 @@
 ## Enum
 
 
-* `GBTSurfaceTypeEnumPlane` (value: `"PLANE"`)
+* `Plane` (value: `"PLANE"`)
 
-* `GBTSurfaceTypeEnumCylinder` (value: `"CYLINDER"`)
+* `Cylinder` (value: `"CYLINDER"`)
 
-* `GBTSurfaceTypeEnumCone` (value: `"CONE"`)
+* `Cone` (value: `"CONE"`)
 
-* `GBTSurfaceTypeEnumSphere` (value: `"SPHERE"`)
+* `Sphere` (value: `"SPHERE"`)
 
-* `GBTSurfaceTypeEnumTorus` (value: `"TORUS"`)
+* `Torus` (value: `"TORUS"`)
 
-* `GBTSurfaceTypeEnumSpun` (value: `"SPUN"`)
+* `Spun` (value: `"SPUN"`)
 
-* `GBTSurfaceTypeEnumSweep` (value: `"SWEEP"`)
+* `Sweep` (value: `"SWEEP"`)
 
-* `GBTSurfaceTypeEnumOffset` (value: `"OFFSET"`)
+* `Offset` (value: `"OFFSET"`)
 
-* `GBTSurfaceTypeEnumBlend` (value: `"BLEND"`)
+* `Blend` (value: `"BLEND"`)
 
-* `GBTSurfaceTypeEnumBsurface` (value: `"BSURFACE"`)
+* `Bsurface` (value: `"BSURFACE"`)
 
-* `GBTSurfaceTypeEnumOther` (value: `"OTHER"`)
+* `Other` (value: `"OTHER"`)
 
-* `GBTSurfaceTypeEnumUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

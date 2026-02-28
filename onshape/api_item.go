@@ -18,12 +18,12 @@ import (
 	"strings"
 )
 
-// ItemApiService ItemApi service
-type ItemApiService service
+// ItemAPIService ItemAPI service
+type ItemAPIService service
 
 type ApiCreateItemRequest struct {
 	ctx          context.Context
-	ApiService   *ItemApiService
+	ApiService   *ItemAPIService
 	bTItemParams *BTItemParams
 }
 
@@ -42,7 +42,7 @@ CreateItem Create a new item.
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiCreateItemRequest
 */
-func (a *ItemApiService) CreateItem(ctx context.Context) ApiCreateItemRequest {
+func (a *ItemAPIService) CreateItem(ctx context.Context) ApiCreateItemRequest {
 	return ApiCreateItemRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -52,7 +52,7 @@ func (a *ItemApiService) CreateItem(ctx context.Context) ApiCreateItemRequest {
 // Execute executes the request
 //
 //	@return BTItemInfo
-func (a *ItemApiService) CreateItemExecute(r ApiCreateItemRequest) (*BTItemInfo, *http.Response, error) {
+func (a *ItemAPIService) CreateItemExecute(r ApiCreateItemRequest) (*BTItemInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -60,7 +60,7 @@ func (a *ItemApiService) CreateItemExecute(r ApiCreateItemRequest) (*BTItemInfo,
 		localVarReturnValue *BTItemInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "ItemApiService.CreateItem")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "ItemAPIService.CreateItem")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -139,7 +139,7 @@ func (a *ItemApiService) CreateItemExecute(r ApiCreateItemRequest) (*BTItemInfo,
 
 type ApiDeleteItemRequest struct {
 	ctx        context.Context
-	ApiService *ItemApiService
+	ApiService *ItemAPIService
 	iid        string
 }
 
@@ -156,7 +156,7 @@ Items can only be deleted if `publishState = 0` (`PENDING`). [`GET /items/{iid}`
 	@param iid ID of the item to delete.
 	@return ApiDeleteItemRequest
 */
-func (a *ItemApiService) DeleteItem(ctx context.Context, iid string) ApiDeleteItemRequest {
+func (a *ItemAPIService) DeleteItem(ctx context.Context, iid string) ApiDeleteItemRequest {
 	return ApiDeleteItemRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -167,7 +167,7 @@ func (a *ItemApiService) DeleteItem(ctx context.Context, iid string) ApiDeleteIt
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *ItemApiService) DeleteItemExecute(r ApiDeleteItemRequest) (map[string]interface{}, *http.Response, error) {
+func (a *ItemAPIService) DeleteItemExecute(r ApiDeleteItemRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodDelete
 		localVarPostBody    interface{}
@@ -175,7 +175,7 @@ func (a *ItemApiService) DeleteItemExecute(r ApiDeleteItemRequest) (map[string]i
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "ItemApiService.DeleteItem")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "ItemAPIService.DeleteItem")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -250,7 +250,7 @@ func (a *ItemApiService) DeleteItemExecute(r ApiDeleteItemRequest) (map[string]i
 
 type ApiGetItemRequest struct {
 	ctx        context.Context
-	ApiService *ItemApiService
+	ApiService *ItemAPIService
 	iid        string
 	documentId *string
 	companyId  *string
@@ -281,7 +281,7 @@ Either `documentId` or `companyId` must be provided, in addition to the item ID.
 	@param iid Item ID.
 	@return ApiGetItemRequest
 */
-func (a *ItemApiService) GetItem(ctx context.Context, iid string) ApiGetItemRequest {
+func (a *ItemAPIService) GetItem(ctx context.Context, iid string) ApiGetItemRequest {
 	return ApiGetItemRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -292,7 +292,7 @@ func (a *ItemApiService) GetItem(ctx context.Context, iid string) ApiGetItemRequ
 // Execute executes the request
 //
 //	@return BTItemInfo
-func (a *ItemApiService) GetItemExecute(r ApiGetItemRequest) (*BTItemInfo, *http.Response, error) {
+func (a *ItemAPIService) GetItemExecute(r ApiGetItemRequest) (*BTItemInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -300,7 +300,7 @@ func (a *ItemApiService) GetItemExecute(r ApiGetItemRequest) (*BTItemInfo, *http
 		localVarReturnValue *BTItemInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "ItemApiService.GetItem")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "ItemAPIService.GetItem")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -381,7 +381,7 @@ func (a *ItemApiService) GetItemExecute(r ApiGetItemRequest) (*BTItemInfo, *http
 
 type ApiGetItemsRequest struct {
 	ctx            context.Context
-	ApiService     *ItemApiService
+	ApiService     *ItemAPIService
 	documentId     *string
 	companyId      *string
 	q              *string
@@ -447,7 +447,7 @@ Either `documentId` or `companyId` must be provided.
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiGetItemsRequest
 */
-func (a *ItemApiService) GetItems(ctx context.Context) ApiGetItemsRequest {
+func (a *ItemAPIService) GetItems(ctx context.Context) ApiGetItemsRequest {
 	return ApiGetItemsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -457,7 +457,7 @@ func (a *ItemApiService) GetItems(ctx context.Context) ApiGetItemsRequest {
 // Execute executes the request
 //
 //	@return BTListResponseBTItemInfo
-func (a *ItemApiService) GetItemsExecute(r ApiGetItemsRequest) (*BTListResponseBTItemInfo, *http.Response, error) {
+func (a *ItemAPIService) GetItemsExecute(r ApiGetItemsRequest) (*BTListResponseBTItemInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -465,7 +465,7 @@ func (a *ItemApiService) GetItemsExecute(r ApiGetItemsRequest) (*BTListResponseB
 		localVarReturnValue *BTListResponseBTItemInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "ItemApiService.GetItems")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "ItemAPIService.GetItems")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -560,7 +560,7 @@ func (a *ItemApiService) GetItemsExecute(r ApiGetItemsRequest) (*BTListResponseB
 
 type ApiUpdateItemRequest struct {
 	ctx          context.Context
-	ApiService   *ItemApiService
+	ApiService   *ItemAPIService
 	iid          string
 	bTItemParams *BTItemParams
 }
@@ -581,7 +581,7 @@ UpdateItem Update an item.
 	@param iid ID of the item to update.
 	@return ApiUpdateItemRequest
 */
-func (a *ItemApiService) UpdateItem(ctx context.Context, iid string) ApiUpdateItemRequest {
+func (a *ItemAPIService) UpdateItem(ctx context.Context, iid string) ApiUpdateItemRequest {
 	return ApiUpdateItemRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -592,7 +592,7 @@ func (a *ItemApiService) UpdateItem(ctx context.Context, iid string) ApiUpdateIt
 // Execute executes the request
 //
 //	@return BTItemInfo
-func (a *ItemApiService) UpdateItemExecute(r ApiUpdateItemRequest) (*BTItemInfo, *http.Response, error) {
+func (a *ItemAPIService) UpdateItemExecute(r ApiUpdateItemRequest) (*BTItemInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -600,7 +600,7 @@ func (a *ItemApiService) UpdateItemExecute(r ApiUpdateItemRequest) (*BTItemInfo,
 		localVarReturnValue *BTItemInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "ItemApiService.UpdateItem")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "ItemAPIService.UpdateItem")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}

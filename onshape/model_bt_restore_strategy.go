@@ -20,8 +20,8 @@ type BTRestoreStrategy string
 
 // List of BTRestoreStrategy
 const (
-	BTRestoreStrategyKeep    BTRestoreStrategy = "KEEP"
-	BTRestoreStrategyReplace BTRestoreStrategy = "REPLACE"
+	Keep    BTRestoreStrategy = "KEEP"
+	Replace BTRestoreStrategy = "REPLACE"
 )
 
 // All allowed values of BTRestoreStrategy enum

@@ -1,16 +1,16 @@
-# \APIApplicationApi
+# \APIApplicationAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteAppSettings**](APIApplicationApi.md#DeleteAppSettings) | **Delete** /applications/clients/{cid}/settings/users/{uid} | Delete a user&#39;s application preference settings.
-[**DeleteCompanyAppSettings**](APIApplicationApi.md#DeleteCompanyAppSettings) | **Delete** /applications/clients/{cid}/settings/companies/{cpid} | Delete a company&#39;s application preference settings.
-[**GetApplicableExtensionsForClient**](APIApplicationApi.md#GetApplicableExtensionsForClient) | **Get** /applications/extensions/user/{uid}/client/{cid} | Get a list of the client extensions the specified user has granted/accepted terms for.
-[**GetCompanyAppSettings**](APIApplicationApi.md#GetCompanyAppSettings) | **Get** /applications/clients/{cid}/settings/companies/{cpid} | Get company-level preference settings for an application.
-[**GetUserAppSettings**](APIApplicationApi.md#GetUserAppSettings) | **Get** /applications/clients/{cid}/settings/users/{uid} | Get user-level preference settings for an application.
-[**UpdateAppCompanySettings**](APIApplicationApi.md#UpdateAppCompanySettings) | **Post** /applications/clients/{cid}/settings/companies/{cpid} | Update company preference settings for an application.
-[**UpdateAppSettings**](APIApplicationApi.md#UpdateAppSettings) | **Post** /applications/clients/{cid}/settings/users/{uid} | Update a user&#39;s application preference settings.
+[**DeleteAppSettings**](APIApplicationAPI.md#DeleteAppSettings) | **Delete** /applications/clients/{cid}/settings/users/{uid} | Delete a user&#39;s application preference settings.
+[**DeleteCompanyAppSettings**](APIApplicationAPI.md#DeleteCompanyAppSettings) | **Delete** /applications/clients/{cid}/settings/companies/{cpid} | Delete a company&#39;s application preference settings.
+[**GetApplicableExtensionsForClient**](APIApplicationAPI.md#GetApplicableExtensionsForClient) | **Get** /applications/extensions/user/{uid}/client/{cid} | Get a list of the client extensions the specified user has granted/accepted terms for.
+[**GetCompanyAppSettings**](APIApplicationAPI.md#GetCompanyAppSettings) | **Get** /applications/clients/{cid}/settings/companies/{cpid} | Get company-level preference settings for an application.
+[**GetUserAppSettings**](APIApplicationAPI.md#GetUserAppSettings) | **Get** /applications/clients/{cid}/settings/users/{uid} | Get user-level preference settings for an application.
+[**UpdateAppCompanySettings**](APIApplicationAPI.md#UpdateAppCompanySettings) | **Post** /applications/clients/{cid}/settings/companies/{cpid} | Update company preference settings for an application.
+[**UpdateAppSettings**](APIApplicationAPI.md#UpdateAppSettings) | **Post** /applications/clients/{cid}/settings/users/{uid} | Update a user&#39;s application preference settings.
 
 
 
@@ -41,9 +41,9 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.APIApplicationApi.DeleteAppSettings(context.Background(), uid, cid).Key(key).Execute()
+    resp, r, err := apiClient.APIApplicationAPI.DeleteAppSettings(context.Background(), uid, cid).Key(key).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationApi.DeleteAppSettings``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationAPI.DeleteAppSettings``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
 }
@@ -114,13 +114,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.APIApplicationApi.DeleteCompanyAppSettings(context.Background(), cpid, cid).Key(key).Execute()
+    resp, r, err := apiClient.APIApplicationAPI.DeleteCompanyAppSettings(context.Background(), cpid, cid).Key(key).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationApi.DeleteCompanyAppSettings``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationAPI.DeleteCompanyAppSettings``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteCompanyAppSettings`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `APIApplicationApi.DeleteCompanyAppSettings`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `APIApplicationAPI.DeleteCompanyAppSettings`: %v\n", resp)
 }
 ```
 
@@ -187,13 +187,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.APIApplicationApi.GetApplicableExtensionsForClient(context.Background(), uid, cid).ValidPurchases(validPurchases).Execute()
+    resp, r, err := apiClient.APIApplicationAPI.GetApplicableExtensionsForClient(context.Background(), uid, cid).ValidPurchases(validPurchases).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationApi.GetApplicableExtensionsForClient``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationAPI.GetApplicableExtensionsForClient``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetApplicableExtensionsForClient`: []BTAPIApplicationExtensionInfo
-    fmt.Fprintf(os.Stdout, "Response from `APIApplicationApi.GetApplicableExtensionsForClient`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `APIApplicationAPI.GetApplicableExtensionsForClient`: %v\n", resp)
 }
 ```
 
@@ -263,13 +263,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.APIApplicationApi.GetCompanyAppSettings(context.Background(), cpid, cid).DocumentId(documentId).Key(key).Execute()
+    resp, r, err := apiClient.APIApplicationAPI.GetCompanyAppSettings(context.Background(), cpid, cid).DocumentId(documentId).Key(key).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationApi.GetCompanyAppSettings``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationAPI.GetCompanyAppSettings``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetCompanyAppSettings`: BTUserAppSettingsInfo
-    fmt.Fprintf(os.Stdout, "Response from `APIApplicationApi.GetCompanyAppSettings`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `APIApplicationAPI.GetCompanyAppSettings`: %v\n", resp)
 }
 ```
 
@@ -339,13 +339,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.APIApplicationApi.GetUserAppSettings(context.Background(), uid, cid).Key(key).Execute()
+    resp, r, err := apiClient.APIApplicationAPI.GetUserAppSettings(context.Background(), uid, cid).Key(key).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationApi.GetUserAppSettings``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationAPI.GetUserAppSettings``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetUserAppSettings`: BTUserAppSettingsInfo
-    fmt.Fprintf(os.Stdout, "Response from `APIApplicationApi.GetUserAppSettings`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `APIApplicationAPI.GetUserAppSettings`: %v\n", resp)
 }
 ```
 
@@ -414,13 +414,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.APIApplicationApi.UpdateAppCompanySettings(context.Background(), cpid, cid).BTUserAppSettingsParams(bTUserAppSettingsParams).Execute()
+    resp, r, err := apiClient.APIApplicationAPI.UpdateAppCompanySettings(context.Background(), cpid, cid).BTUserAppSettingsParams(bTUserAppSettingsParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationApi.UpdateAppCompanySettings``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationAPI.UpdateAppCompanySettings``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateAppCompanySettings`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `APIApplicationApi.UpdateAppCompanySettings`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `APIApplicationAPI.UpdateAppCompanySettings`: %v\n", resp)
 }
 ```
 
@@ -489,13 +489,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.APIApplicationApi.UpdateAppSettings(context.Background(), uid, cid).BTUserAppSettingsParams(bTUserAppSettingsParams).Execute()
+    resp, r, err := apiClient.APIApplicationAPI.UpdateAppSettings(context.Background(), uid, cid).BTUserAppSettingsParams(bTUserAppSettingsParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationApi.UpdateAppSettings``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `APIApplicationAPI.UpdateAppSettings``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateAppSettings`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `APIApplicationApi.UpdateAppSettings`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `APIApplicationAPI.UpdateAppSettings`: %v\n", resp)
 }
 ```
 

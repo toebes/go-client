@@ -3,21 +3,21 @@
 ## Enum
 
 
-* `BTUserStateDeleted` (value: `"DELETED"`)
+* `Deleted` (value: `"DELETED"`)
 
-* `BTUserStateActive` (value: `"ACTIVE"`)
+* `Active` (value: `"ACTIVE"`)
 
-* `BTUserStateInactive` (value: `"INACTIVE"`)
+* `Inactive` (value: `"INACTIVE"`)
 
-* `BTUserStateRequested` (value: `"REQUESTED"`)
+* `Requested` (value: `"REQUESTED"`)
 
-* `BTUserStateApproved` (value: `"APPROVED"`)
+* `Approved` (value: `"APPROVED"`)
 
-* `BTUserStateRequestExpired` (value: `"REQUEST_EXPIRED"`)
+* `RequestExpired` (value: `"REQUEST_EXPIRED"`)
 
-* `BTUserStateAll` (value: `"ALL"`)
+* `All` (value: `"ALL"`)
 
-* `BTUserStateMarkedForDeletion` (value: `"MARKED_FOR_DELETION"`)
+* `MarkedForDeletion` (value: `"MARKED_FOR_DELETION"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

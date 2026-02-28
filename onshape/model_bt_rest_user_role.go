@@ -20,8 +20,8 @@ type BTRestUserRole string
 
 // List of BTRestUserRole
 const (
-	BTRestUserRolePublic   BTRestUserRole = "PUBLIC"
-	BTRestUserRoleInternal BTRestUserRole = "INTERNAL"
+	Public   BTRestUserRole = "PUBLIC"
+	Internal BTRestUserRole = "INTERNAL"
 )
 
 // All allowed values of BTRestUserRole enum

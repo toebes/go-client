@@ -20,10 +20,10 @@ type GBTTableTextAlignment string
 
 // List of GBTTableTextAlignment
 const (
-	GBTTableTextAlignmentLeft    GBTTableTextAlignment = "LEFT"
-	GBTTableTextAlignmentCenter  GBTTableTextAlignment = "CENTER"
-	GBTTableTextAlignmentRight   GBTTableTextAlignment = "RIGHT"
-	GBTTableTextAlignmentUnknown GBTTableTextAlignment = "UNKNOWN"
+	Left    GBTTableTextAlignment = "LEFT"
+	Center  GBTTableTextAlignment = "CENTER"
+	Right   GBTTableTextAlignment = "RIGHT"
+	Unknown GBTTableTextAlignment = "UNKNOWN"
 )
 
 // All allowed values of GBTTableTextAlignment enum

@@ -20,18 +20,18 @@ type GBTSurfaceTypeEnum string
 
 // List of GBTSurfaceTypeEnum
 const (
-	GBTSurfaceTypeEnumPlane    GBTSurfaceTypeEnum = "PLANE"
-	GBTSurfaceTypeEnumCylinder GBTSurfaceTypeEnum = "CYLINDER"
-	GBTSurfaceTypeEnumCone     GBTSurfaceTypeEnum = "CONE"
-	GBTSurfaceTypeEnumSphere   GBTSurfaceTypeEnum = "SPHERE"
-	GBTSurfaceTypeEnumTorus    GBTSurfaceTypeEnum = "TORUS"
-	GBTSurfaceTypeEnumSpun     GBTSurfaceTypeEnum = "SPUN"
-	GBTSurfaceTypeEnumSweep    GBTSurfaceTypeEnum = "SWEEP"
-	GBTSurfaceTypeEnumOffset   GBTSurfaceTypeEnum = "OFFSET"
-	GBTSurfaceTypeEnumBlend    GBTSurfaceTypeEnum = "BLEND"
-	GBTSurfaceTypeEnumBsurface GBTSurfaceTypeEnum = "BSURFACE"
-	GBTSurfaceTypeEnumOther    GBTSurfaceTypeEnum = "OTHER"
-	GBTSurfaceTypeEnumUnknown  GBTSurfaceTypeEnum = "UNKNOWN"
+	Plane    GBTSurfaceTypeEnum = "PLANE"
+	Cylinder GBTSurfaceTypeEnum = "CYLINDER"
+	Cone     GBTSurfaceTypeEnum = "CONE"
+	Sphere   GBTSurfaceTypeEnum = "SPHERE"
+	Torus    GBTSurfaceTypeEnum = "TORUS"
+	Spun     GBTSurfaceTypeEnum = "SPUN"
+	Sweep    GBTSurfaceTypeEnum = "SWEEP"
+	Offset   GBTSurfaceTypeEnum = "OFFSET"
+	Blend    GBTSurfaceTypeEnum = "BLEND"
+	Bsurface GBTSurfaceTypeEnum = "BSURFACE"
+	Other    GBTSurfaceTypeEnum = "OTHER"
+	Unknown  GBTSurfaceTypeEnum = "UNKNOWN"
 )
 
 // All allowed values of GBTSurfaceTypeEnum enum

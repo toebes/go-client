@@ -20,10 +20,10 @@ type UserRolePriority string
 
 // List of UserRolePriority
 const (
-	UserRolePriorityOwner  UserRolePriority = "OWNER"
-	UserRolePriorityAdmin  UserRolePriority = "ADMIN"
-	UserRolePriorityMember UserRolePriority = "MEMBER"
-	UserRolePriorityGuest  UserRolePriority = "GUEST"
+	Owner  UserRolePriority = "OWNER"
+	Admin  UserRolePriority = "ADMIN"
+	Member UserRolePriority = "MEMBER"
+	Guest  UserRolePriority = "GUEST"
 )
 
 // All allowed values of UserRolePriority enum

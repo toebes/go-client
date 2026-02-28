@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `GBTRadiusDisplayNone` (value: `"NONE"`)
+* `None` (value: `"NONE"`)
 
-* `GBTRadiusDisplayRadial` (value: `"RADIAL"`)
+* `Radial` (value: `"RADIAL"`)
 
-* `GBTRadiusDisplayDiametral` (value: `"DIAMETRAL"`)
+* `Diametral` (value: `"DIAMETRAL"`)
 
-* `GBTRadiusDisplayUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

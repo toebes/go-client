@@ -20,9 +20,9 @@ type GBTStlEncodingType string
 
 // List of GBTStlEncodingType
 const (
-	GBTStlEncodingTypeText    GBTStlEncodingType = "TEXT"
-	GBTStlEncodingTypeBinary  GBTStlEncodingType = "BINARY"
-	GBTStlEncodingTypeUnknown GBTStlEncodingType = "UNKNOWN"
+	Text    GBTStlEncodingType = "TEXT"
+	Binary  GBTStlEncodingType = "BINARY"
+	Unknown GBTStlEncodingType = "UNKNOWN"
 )
 
 // All allowed values of GBTStlEncodingType enum

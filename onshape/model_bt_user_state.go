@@ -20,14 +20,14 @@ type BTUserState string
 
 // List of BTUserState
 const (
-	BTUserStateDeleted           BTUserState = "DELETED"
-	BTUserStateActive            BTUserState = "ACTIVE"
-	BTUserStateInactive          BTUserState = "INACTIVE"
-	BTUserStateRequested         BTUserState = "REQUESTED"
-	BTUserStateApproved          BTUserState = "APPROVED"
-	BTUserStateRequestExpired    BTUserState = "REQUEST_EXPIRED"
-	BTUserStateAll               BTUserState = "ALL"
-	BTUserStateMarkedForDeletion BTUserState = "MARKED_FOR_DELETION"
+	Deleted           BTUserState = "DELETED"
+	Active            BTUserState = "ACTIVE"
+	Inactive          BTUserState = "INACTIVE"
+	Requested         BTUserState = "REQUESTED"
+	Approved          BTUserState = "APPROVED"
+	RequestExpired    BTUserState = "REQUEST_EXPIRED"
+	All               BTUserState = "ALL"
+	MarkedForDeletion BTUserState = "MARKED_FOR_DELETION"
 )
 
 // All allowed values of BTUserState enum

@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `GBTSimulationContactBehaviorMatesOnly` (value: `"MATES_ONLY"`)
+* `MatesOnly` (value: `"MATES_ONLY"`)
 
-* `GBTSimulationContactBehaviorFuseInContact` (value: `"FUSE_IN_CONTACT"`)
+* `FuseInContact` (value: `"FUSE_IN_CONTACT"`)
 
-* `GBTSimulationContactBehaviorFuseInContactAndUseMates` (value: `"FUSE_IN_CONTACT_AND_USE_MATES"`)
+* `FuseInContactAndUseMates` (value: `"FUSE_IN_CONTACT_AND_USE_MATES"`)
 
-* `GBTSimulationContactBehaviorUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

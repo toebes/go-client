@@ -1,17 +1,17 @@
-# \ElementApi
+# \ElementAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CopyElementFromSourceDocument**](ElementApi.md#CopyElementFromSourceDocument) | **Post** /elements/copyelement/{did}/workspace/{wid} | Copy an element from a source document.
-[**DecodeConfiguration**](ElementApi.md#DecodeConfiguration) | **Get** /elements/d/{did}/{wvm}/{wvmid}/e/{eid}/configurationencodings/{cid} | Decode a configuration string.
-[**DeleteElement**](ElementApi.md#DeleteElement) | **Delete** /elements/d/{did}/w/{wid}/e/{eid} | Delete an element from a document.
-[**EncodeConfigurationMap**](ElementApi.md#EncodeConfigurationMap) | **Post** /elements/d/{did}/e/{eid}/configurationencodings | Encode a configuration option for use in other API calls.
-[**GetConfiguration**](ElementApi.md#GetConfiguration) | **Get** /elements/d/{did}/{wvm}/{wvmid}/e/{eid}/configuration | Get the configuration definition for a Part Studio, Variable Studio, or Assembly.
-[**GetElementTranslatorFormatsByVersionOrWorkspace**](ElementApi.md#GetElementTranslatorFormatsByVersionOrWorkspace) | **Get** /elements/translatorFormats/{did}/{wv}/{wvid}/{eid} | Gets the list of formats an element can be translated to or from.
-[**UpdateConfiguration**](ElementApi.md#UpdateConfiguration) | **Post** /elements/d/{did}/{wvm}/{wvmid}/e/{eid}/configuration | Update the configuration definition for a Part Studio, Variable Studio, or Assembly.
-[**UpdateReferences**](ElementApi.md#UpdateReferences) | **Post** /elements/d/{did}/w/{wid}/e/{eid}/updatereferences | Update or replace references in an element.
+[**CopyElementFromSourceDocument**](ElementAPI.md#CopyElementFromSourceDocument) | **Post** /elements/copyelement/{did}/workspace/{wid} | Copy an element from a source document.
+[**DecodeConfiguration**](ElementAPI.md#DecodeConfiguration) | **Get** /elements/d/{did}/{wvm}/{wvmid}/e/{eid}/configurationencodings/{cid} | Decode a configuration string.
+[**DeleteElement**](ElementAPI.md#DeleteElement) | **Delete** /elements/d/{did}/w/{wid}/e/{eid} | Delete an element from a document.
+[**EncodeConfigurationMap**](ElementAPI.md#EncodeConfigurationMap) | **Post** /elements/d/{did}/e/{eid}/configurationencodings | Encode a configuration option for use in other API calls.
+[**GetConfiguration**](ElementAPI.md#GetConfiguration) | **Get** /elements/d/{did}/{wvm}/{wvmid}/e/{eid}/configuration | Get the configuration definition for a Part Studio, Variable Studio, or Assembly.
+[**GetElementTranslatorFormatsByVersionOrWorkspace**](ElementAPI.md#GetElementTranslatorFormatsByVersionOrWorkspace) | **Get** /elements/translatorFormats/{did}/{wv}/{wvid}/{eid} | Gets the list of formats an element can be translated to or from.
+[**UpdateConfiguration**](ElementAPI.md#UpdateConfiguration) | **Post** /elements/d/{did}/{wvm}/{wvmid}/e/{eid}/configuration | Update the configuration definition for a Part Studio, Variable Studio, or Assembly.
+[**UpdateReferences**](ElementAPI.md#UpdateReferences) | **Post** /elements/d/{did}/w/{wid}/e/{eid}/updatereferences | Update or replace references in an element.
 
 
 
@@ -42,13 +42,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ElementApi.CopyElementFromSourceDocument(context.Background(), did, wid).BTCopyElementParams(bTCopyElementParams).Execute()
+    resp, r, err := apiClient.ElementAPI.CopyElementFromSourceDocument(context.Background(), did, wid).BTCopyElementParams(bTCopyElementParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ElementApi.CopyElementFromSourceDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementAPI.CopyElementFromSourceDocument``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CopyElementFromSourceDocument`: BTDocumentElementInfo
-    fmt.Fprintf(os.Stdout, "Response from `ElementApi.CopyElementFromSourceDocument`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ElementAPI.CopyElementFromSourceDocument`: %v\n", resp)
 }
 ```
 
@@ -122,13 +122,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ElementApi.DecodeConfiguration(context.Background(), did, wvm, wvmid, eid, cid).LinkDocumentId(linkDocumentId).IncludeDisplay(includeDisplay).ConfigurationIsId(configurationIsId).Execute()
+    resp, r, err := apiClient.ElementAPI.DecodeConfiguration(context.Background(), did, wvm, wvmid, eid, cid).LinkDocumentId(linkDocumentId).IncludeDisplay(includeDisplay).ConfigurationIsId(configurationIsId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ElementApi.DecodeConfiguration``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementAPI.DecodeConfiguration``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DecodeConfiguration`: BTConfigurationInfo
-    fmt.Fprintf(os.Stdout, "Response from `ElementApi.DecodeConfiguration`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ElementAPI.DecodeConfiguration`: %v\n", resp)
 }
 ```
 
@@ -205,13 +205,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ElementApi.DeleteElement(context.Background(), did, wid, eid).Execute()
+    resp, r, err := apiClient.ElementAPI.DeleteElement(context.Background(), did, wid, eid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ElementApi.DeleteElement``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementAPI.DeleteElement``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteElement`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `ElementApi.DeleteElement`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ElementAPI.DeleteElement`: %v\n", resp)
 }
 ```
 
@@ -283,13 +283,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ElementApi.EncodeConfigurationMap(context.Background(), did, eid).BTConfigurationParams(bTConfigurationParams).VersionId(versionId).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.ElementAPI.EncodeConfigurationMap(context.Background(), did, eid).BTConfigurationParams(bTConfigurationParams).VersionId(versionId).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ElementApi.EncodeConfigurationMap``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementAPI.EncodeConfigurationMap``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `EncodeConfigurationMap`: BTEncodedConfigurationInfo
-    fmt.Fprintf(os.Stdout, "Response from `ElementApi.EncodeConfigurationMap`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ElementAPI.EncodeConfigurationMap`: %v\n", resp)
 }
 ```
 
@@ -362,13 +362,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ElementApi.GetConfiguration(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.ElementAPI.GetConfiguration(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ElementApi.GetConfiguration``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementAPI.GetConfiguration``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetConfiguration`: BTConfigurationResponse2019
-    fmt.Fprintf(os.Stdout, "Response from `ElementApi.GetConfiguration`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ElementAPI.GetConfiguration`: %v\n", resp)
 }
 ```
 
@@ -445,13 +445,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ElementApi.GetElementTranslatorFormatsByVersionOrWorkspace(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).CheckContent(checkContent).Configuration(configuration).Execute()
+    resp, r, err := apiClient.ElementAPI.GetElementTranslatorFormatsByVersionOrWorkspace(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).CheckContent(checkContent).Configuration(configuration).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ElementApi.GetElementTranslatorFormatsByVersionOrWorkspace``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementAPI.GetElementTranslatorFormatsByVersionOrWorkspace``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetElementTranslatorFormatsByVersionOrWorkspace`: []BTModelFormatInfo
-    fmt.Fprintf(os.Stdout, "Response from `ElementApi.GetElementTranslatorFormatsByVersionOrWorkspace`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ElementAPI.GetElementTranslatorFormatsByVersionOrWorkspace`: %v\n", resp)
 }
 ```
 
@@ -528,13 +528,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ElementApi.UpdateConfiguration(context.Background(), did, wvm, wvmid, eid).BTConfigurationUpdateCall2933(bTConfigurationUpdateCall2933).Execute()
+    resp, r, err := apiClient.ElementAPI.UpdateConfiguration(context.Background(), did, wvm, wvmid, eid).BTConfigurationUpdateCall2933(bTConfigurationUpdateCall2933).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ElementApi.UpdateConfiguration``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementAPI.UpdateConfiguration``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateConfiguration`: BTConfigurationResponse2019
-    fmt.Fprintf(os.Stdout, "Response from `ElementApi.UpdateConfiguration`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ElementAPI.UpdateConfiguration`: %v\n", resp)
 }
 ```
 
@@ -606,13 +606,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ElementApi.UpdateReferences(context.Background(), did, wid, eid).BTUpdateReferenceParams(bTUpdateReferenceParams).Execute()
+    resp, r, err := apiClient.ElementAPI.UpdateReferences(context.Background(), did, wid, eid).BTUpdateReferenceParams(bTUpdateReferenceParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ElementApi.UpdateReferences``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ElementAPI.UpdateReferences``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateReferences`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `ElementApi.UpdateReferences`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ElementAPI.UpdateReferences`: %v\n", resp)
 }
 ```
 

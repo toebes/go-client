@@ -20,10 +20,10 @@ type GBTExportResolution string
 
 // List of GBTExportResolution
 const (
-	GBTExportResolutionFine    GBTExportResolution = "FINE"
-	GBTExportResolutionMedium  GBTExportResolution = "MEDIUM"
-	GBTExportResolutionCoarse  GBTExportResolution = "COARSE"
-	GBTExportResolutionUnknown GBTExportResolution = "UNKNOWN"
+	Fine    GBTExportResolution = "FINE"
+	Medium  GBTExportResolution = "MEDIUM"
+	Coarse  GBTExportResolution = "COARSE"
+	Unknown GBTExportResolution = "UNKNOWN"
 )
 
 // All allowed values of GBTExportResolution enum

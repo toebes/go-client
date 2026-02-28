@@ -3,17 +3,17 @@
 ## Enum
 
 
-* `GBTEntityTypeVertex` (value: `"VERTEX"`)
+* `Vertex` (value: `"VERTEX"`)
 
-* `GBTEntityTypeEdge` (value: `"EDGE"`)
+* `Edge` (value: `"EDGE"`)
 
-* `GBTEntityTypeFace` (value: `"FACE"`)
+* `Face` (value: `"FACE"`)
 
-* `GBTEntityTypeBody` (value: `"BODY"`)
+* `Body` (value: `"BODY"`)
 
-* `GBTEntityTypeDegenerateEdge` (value: `"DEGENERATE_EDGE"`)
+* `DegenerateEdge` (value: `"DEGENERATE_EDGE"`)
 
-* `GBTEntityTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

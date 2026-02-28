@@ -20,15 +20,15 @@ type GBTInsertableType string
 
 // List of GBTInsertableType
 const (
-	GBTInsertableTypeParts                 GBTInsertableType = "PARTS"
-	GBTInsertableTypeSketches              GBTInsertableType = "SKETCHES"
-	GBTInsertableTypeSurfaces              GBTInsertableType = "SURFACES"
-	GBTInsertableTypeFlattenedParts        GBTInsertableType = "FLATTENED_PARTS"
-	GBTInsertableTypeCompositeParts        GBTInsertableType = "COMPOSITE_PARTS"
-	GBTInsertableTypePartStudios           GBTInsertableType = "PART_STUDIOS"
-	GBTInsertableTypeWires                 GBTInsertableType = "WIRES"
-	GBTInsertableTypeParametricPartStudios GBTInsertableType = "PARAMETRIC_PART_STUDIOS"
-	GBTInsertableTypeUnknown               GBTInsertableType = "UNKNOWN"
+	Parts                 GBTInsertableType = "PARTS"
+	Sketches              GBTInsertableType = "SKETCHES"
+	Surfaces              GBTInsertableType = "SURFACES"
+	FlattenedParts        GBTInsertableType = "FLATTENED_PARTS"
+	CompositeParts        GBTInsertableType = "COMPOSITE_PARTS"
+	PartStudios           GBTInsertableType = "PART_STUDIOS"
+	Wires                 GBTInsertableType = "WIRES"
+	ParametricPartStudios GBTInsertableType = "PARAMETRIC_PART_STUDIOS"
+	Unknown               GBTInsertableType = "UNKNOWN"
 )
 
 // All allowed values of GBTInsertableType enum

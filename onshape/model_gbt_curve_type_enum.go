@@ -20,13 +20,13 @@ type GBTCurveTypeEnum string
 
 // List of GBTCurveTypeEnum
 const (
-	GBTCurveTypeEnumOther   GBTCurveTypeEnum = "OTHER"
-	GBTCurveTypeEnumLine    GBTCurveTypeEnum = "LINE"
-	GBTCurveTypeEnumCircle  GBTCurveTypeEnum = "CIRCLE"
-	GBTCurveTypeEnumEllipse GBTCurveTypeEnum = "ELLIPSE"
-	GBTCurveTypeEnumBcurve  GBTCurveTypeEnum = "BCURVE"
-	GBTCurveTypeEnumIcurve  GBTCurveTypeEnum = "ICURVE"
-	GBTCurveTypeEnumUnknown GBTCurveTypeEnum = "UNKNOWN"
+	Other   GBTCurveTypeEnum = "OTHER"
+	Line    GBTCurveTypeEnum = "LINE"
+	Circle  GBTCurveTypeEnum = "CIRCLE"
+	Ellipse GBTCurveTypeEnum = "ELLIPSE"
+	Bcurve  GBTCurveTypeEnum = "BCURVE"
+	Icurve  GBTCurveTypeEnum = "ICURVE"
+	Unknown GBTCurveTypeEnum = "UNKNOWN"
 )
 
 // All allowed values of GBTCurveTypeEnum enum

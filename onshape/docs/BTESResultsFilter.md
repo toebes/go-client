@@ -3,11 +3,11 @@
 ## Enum
 
 
-* `BTESResultsFilterAll` (value: `"ALL"`)
+* `All` (value: `"ALL"`)
 
-* `BTESResultsFilterLatest` (value: `"LATEST"`)
+* `Latest` (value: `"LATEST"`)
 
-* `BTESResultsFilterLatestPerHit` (value: `"LATEST_PER_HIT"`)
+* `LatestPerHit` (value: `"LATEST_PER_HIT"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

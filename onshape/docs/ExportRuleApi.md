@@ -1,10 +1,10 @@
-# \ExportRuleApi
+# \ExportRuleAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetValidRuleOptions**](ExportRuleApi.md#GetValidRuleOptions) | **Get** /exportrules/options/{cu}/{cuid} |  Get a list of valid export rule options for the user or company.
+[**GetValidRuleOptions**](ExportRuleAPI.md#GetValidRuleOptions) | **Get** /exportrules/options/{cu}/{cuid} |  Get a list of valid export rule options for the user or company.
 
 
 
@@ -34,13 +34,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ExportRuleApi.GetValidRuleOptions(context.Background(), cu, cuid).Execute()
+    resp, r, err := apiClient.ExportRuleAPI.GetValidRuleOptions(context.Background(), cu, cuid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ExportRuleApi.GetValidRuleOptions``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ExportRuleAPI.GetValidRuleOptions``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetValidRuleOptions`: BTExportRuleValidOptionsInfo
-    fmt.Fprintf(os.Stdout, "Response from `ExportRuleApi.GetValidRuleOptions`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ExportRuleAPI.GetValidRuleOptions`: %v\n", resp)
 }
 ```
 

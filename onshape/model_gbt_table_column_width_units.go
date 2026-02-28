@@ -20,10 +20,10 @@ type GBTTableColumnWidthUnits string
 
 // List of GBTTableColumnWidthUnits
 const (
-	GBTTableColumnWidthUnitsPercent GBTTableColumnWidthUnits = "PERCENT"
-	GBTTableColumnWidthUnitsChars   GBTTableColumnWidthUnits = "CHARS"
-	GBTTableColumnWidthUnitsPixels  GBTTableColumnWidthUnits = "PIXELS"
-	GBTTableColumnWidthUnitsUnknown GBTTableColumnWidthUnits = "UNKNOWN"
+	Percent GBTTableColumnWidthUnits = "PERCENT"
+	Chars   GBTTableColumnWidthUnits = "CHARS"
+	Pixels  GBTTableColumnWidthUnits = "PIXELS"
+	Unknown GBTTableColumnWidthUnits = "UNKNOWN"
 )
 
 // All allowed values of GBTTableColumnWidthUnits enum

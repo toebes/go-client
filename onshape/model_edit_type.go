@@ -20,14 +20,14 @@ type EditType string
 
 // List of EditType
 const (
-	EditTypeNothing     EditType = "NOTHING"
-	EditTypeNewRoot     EditType = "NEW_ROOT"
-	EditTypeMove        EditType = "MOVE"
-	EditTypeChange      EditType = "CHANGE"
-	EditTypeChangeField EditType = "CHANGE_FIELD"
-	EditTypeInsertion   EditType = "INSERTION"
-	EditTypeDeletion    EditType = "DELETION"
-	EditTypeList        EditType = "LIST"
+	Nothing     EditType = "NOTHING"
+	NewRoot     EditType = "NEW_ROOT"
+	Move        EditType = "MOVE"
+	Change      EditType = "CHANGE"
+	ChangeField EditType = "CHANGE_FIELD"
+	Insertion   EditType = "INSERTION"
+	Deletion    EditType = "DELETION"
+	List        EditType = "LIST"
 )
 
 // All allowed values of EditType enum

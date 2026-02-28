@@ -3,23 +3,23 @@
 ## Enum
 
 
-* `BTOldPermissionNoaccess` (value: `"NOACCESS"`)
+* `Noaccess` (value: `"NOACCESS"`)
 
-* `BTOldPermissionAnonymousAccess` (value: `"ANONYMOUS_ACCESS"`)
+* `AnonymousAccess` (value: `"ANONYMOUS_ACCESS"`)
 
-* `BTOldPermissionRead` (value: `"READ"`)
+* `Read` (value: `"READ"`)
 
-* `BTOldPermissionReadCopyExport` (value: `"READ_COPY_EXPORT"`)
+* `ReadCopyExport` (value: `"READ_COPY_EXPORT"`)
 
-* `BTOldPermissionComment` (value: `"COMMENT"`)
+* `Comment` (value: `"COMMENT"`)
 
-* `BTOldPermissionWrite` (value: `"WRITE"`)
+* `Write` (value: `"WRITE"`)
 
-* `BTOldPermissionReshare` (value: `"RESHARE"`)
+* `Reshare` (value: `"RESHARE"`)
 
-* `BTOldPermissionFull` (value: `"FULL"`)
+* `Full` (value: `"FULL"`)
 
-* `BTOldPermissionOwner` (value: `"OWNER"`)
+* `Owner` (value: `"OWNER"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

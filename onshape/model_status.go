@@ -20,8 +20,8 @@ type Status string
 
 // List of Status
 const (
-	StatusDbTimeout                Status = "DB_TIMEOUT"
-	StatusDbMaxNumberItemsExceeded Status = "DB_MAX_NUMBER_ITEMS_EXCEEDED"
+	DbTimeout                Status = "DB_TIMEOUT"
+	DbMaxNumberItemsExceeded Status = "DB_MAX_NUMBER_ITEMS_EXCEEDED"
 )
 
 // All allowed values of Status enum

@@ -1,12 +1,12 @@
-# \FolderApi
+# \FolderAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetFolderAcl**](FolderApi.md#GetFolderAcl) | **Get** /folders/{fid}/acl | Get the Access Control List (ACL) for a folder to view permissions.
-[**Share**](FolderApi.md#Share) | **Post** /folders/{fid}/share | Share folder with an entity.
-[**UnShare**](FolderApi.md#UnShare) | **Delete** /folders/{fid}/share/{eid} | Remove permissions from the folder for the specified Access Control List (ACL) entry.
+[**GetFolderAcl**](FolderAPI.md#GetFolderAcl) | **Get** /folders/{fid}/acl | Get the Access Control List (ACL) for a folder to view permissions.
+[**Share**](FolderAPI.md#Share) | **Post** /folders/{fid}/share | Share folder with an entity.
+[**UnShare**](FolderAPI.md#UnShare) | **Delete** /folders/{fid}/share/{eid} | Remove permissions from the folder for the specified Access Control List (ACL) entry.
 
 
 
@@ -35,13 +35,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.FolderApi.GetFolderAcl(context.Background(), fid).Execute()
+    resp, r, err := apiClient.FolderAPI.GetFolderAcl(context.Background(), fid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `FolderApi.GetFolderAcl``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `FolderAPI.GetFolderAcl``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetFolderAcl`: BTAclInfo
-    fmt.Fprintf(os.Stdout, "Response from `FolderApi.GetFolderAcl`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `FolderAPI.GetFolderAcl`: %v\n", resp)
 }
 ```
 
@@ -106,13 +106,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.FolderApi.Share(context.Background(), fid).BTShareParams(bTShareParams).Execute()
+    resp, r, err := apiClient.FolderAPI.Share(context.Background(), fid).BTShareParams(bTShareParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `FolderApi.Share``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `FolderAPI.Share``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `Share`: BTAclInfo
-    fmt.Fprintf(os.Stdout, "Response from `FolderApi.Share`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `FolderAPI.Share`: %v\n", resp)
 }
 ```
 
@@ -179,13 +179,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.FolderApi.UnShare(context.Background(), fid, eid).EntryType(entryType).Execute()
+    resp, r, err := apiClient.FolderAPI.UnShare(context.Background(), fid, eid).EntryType(entryType).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `FolderApi.UnShare``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `FolderAPI.UnShare``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UnShare`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `FolderApi.UnShare`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `FolderAPI.UnShare`: %v\n", resp)
 }
 ```
 

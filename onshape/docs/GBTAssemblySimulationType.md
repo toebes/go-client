@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `GBTAssemblySimulationTypeLinearStatic` (value: `"LINEAR_STATIC"`)
+* `LinearStatic` (value: `"LINEAR_STATIC"`)
 
-* `GBTAssemblySimulationTypeModal` (value: `"MODAL"`)
+* `Modal` (value: `"MODAL"`)
 
-* `GBTAssemblySimulationTypeContactAnalysis` (value: `"CONTACT_ANALYSIS"`)
+* `ContactAnalysis` (value: `"CONTACT_ANALYSIS"`)
 
-* `GBTAssemblySimulationTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

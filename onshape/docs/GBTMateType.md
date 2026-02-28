@@ -3,23 +3,23 @@
 ## Enum
 
 
-* `GBTMateTypeSlider` (value: `"SLIDER"`)
+* `Slider` (value: `"SLIDER"`)
 
-* `GBTMateTypeCylindrical` (value: `"CYLINDRICAL"`)
+* `Cylindrical` (value: `"CYLINDRICAL"`)
 
-* `GBTMateTypeRevolute` (value: `"REVOLUTE"`)
+* `Revolute` (value: `"REVOLUTE"`)
 
-* `GBTMateTypePinSlot` (value: `"PIN_SLOT"`)
+* `PinSlot` (value: `"PIN_SLOT"`)
 
-* `GBTMateTypePlanar` (value: `"PLANAR"`)
+* `Planar` (value: `"PLANAR"`)
 
-* `GBTMateTypeBall` (value: `"BALL"`)
+* `Ball` (value: `"BALL"`)
 
-* `GBTMateTypeFastened` (value: `"FASTENED"`)
+* `Fastened` (value: `"FASTENED"`)
 
-* `GBTMateTypeParallel` (value: `"PARALLEL"`)
+* `Parallel` (value: `"PARALLEL"`)
 
-* `GBTMateTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

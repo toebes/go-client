@@ -3,37 +3,37 @@
 ## Enum
 
 
-* `GBTGTolExtendedConstraintTypeCompositeFrame` (value: `"COMPOSITE_FRAME"`)
+* `CompositeFrame` (value: `"COMPOSITE_FRAME"`)
 
-* `GBTGTolExtendedConstraintTypeTruePosition` (value: `"TRUE_POSITION"`)
+* `TruePosition` (value: `"TRUE_POSITION"`)
 
-* `GBTGTolExtendedConstraintTypeParallelism` (value: `"PARALLELISM"`)
+* `Parallelism` (value: `"PARALLELISM"`)
 
-* `GBTGTolExtendedConstraintTypePerpendicularity` (value: `"PERPENDICULARITY"`)
+* `Perpendicularity` (value: `"PERPENDICULARITY"`)
 
-* `GBTGTolExtendedConstraintTypeProfileSurface` (value: `"PROFILE_SURFACE"`)
+* `ProfileSurface` (value: `"PROFILE_SURFACE"`)
 
-* `GBTGTolExtendedConstraintTypeTotalRunout` (value: `"TOTAL_RUNOUT"`)
+* `TotalRunout` (value: `"TOTAL_RUNOUT"`)
 
-* `GBTGTolExtendedConstraintTypeConcentricity` (value: `"CONCENTRICITY"`)
+* `Concentricity` (value: `"CONCENTRICITY"`)
 
-* `GBTGTolExtendedConstraintTypeSymmetry` (value: `"SYMMETRY"`)
+* `Symmetry` (value: `"SYMMETRY"`)
 
-* `GBTGTolExtendedConstraintTypeAngularity` (value: `"ANGULARITY"`)
+* `Angularity` (value: `"ANGULARITY"`)
 
-* `GBTGTolExtendedConstraintTypeCylindricity` (value: `"CYLINDRICITY"`)
+* `Cylindricity` (value: `"CYLINDRICITY"`)
 
-* `GBTGTolExtendedConstraintTypeFlatness` (value: `"FLATNESS"`)
+* `Flatness` (value: `"FLATNESS"`)
 
-* `GBTGTolExtendedConstraintTypeRoundness` (value: `"ROUNDNESS"`)
+* `Roundness` (value: `"ROUNDNESS"`)
 
-* `GBTGTolExtendedConstraintTypeStraightness` (value: `"STRAIGHTNESS"`)
+* `Straightness` (value: `"STRAIGHTNESS"`)
 
-* `GBTGTolExtendedConstraintTypeProfileLine` (value: `"PROFILE_LINE"`)
+* `ProfileLine` (value: `"PROFILE_LINE"`)
 
-* `GBTGTolExtendedConstraintTypeCircularRunout` (value: `"CIRCULAR_RUNOUT"`)
+* `CircularRunout` (value: `"CIRCULAR_RUNOUT"`)
 
-* `GBTGTolExtendedConstraintTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

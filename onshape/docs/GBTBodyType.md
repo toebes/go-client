@@ -3,19 +3,19 @@
 ## Enum
 
 
-* `GBTBodyTypeSolid` (value: `"SOLID"`)
+* `Solid` (value: `"SOLID"`)
 
-* `GBTBodyTypeSheet` (value: `"SHEET"`)
+* `Sheet` (value: `"SHEET"`)
 
-* `GBTBodyTypeWire` (value: `"WIRE"`)
+* `Wire` (value: `"WIRE"`)
 
-* `GBTBodyTypePoint` (value: `"POINT"`)
+* `Point` (value: `"POINT"`)
 
-* `GBTBodyTypeMateConnector` (value: `"MATE_CONNECTOR"`)
+* `MateConnector` (value: `"MATE_CONNECTOR"`)
 
-* `GBTBodyTypeComposite` (value: `"COMPOSITE"`)
+* `Composite` (value: `"COMPOSITE"`)
 
-* `GBTBodyTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -3,25 +3,25 @@
 ## Enum
 
 
-* `GBTEdgeTypeOther` (value: `"OTHER"`)
+* `Other` (value: `"OTHER"`)
 
-* `GBTEdgeTypeLine` (value: `"LINE"`)
+* `Line` (value: `"LINE"`)
 
-* `GBTEdgeTypeSpline` (value: `"SPLINE"`)
+* `Spline` (value: `"SPLINE"`)
 
-* `GBTEdgeTypeCircle` (value: `"CIRCLE"`)
+* `Circle` (value: `"CIRCLE"`)
 
-* `GBTEdgeTypeEllipse` (value: `"ELLIPSE"`)
+* `Ellipse` (value: `"ELLIPSE"`)
 
-* `GBTEdgeTypeIntersection` (value: `"INTERSECTION"`)
+* `Intersection` (value: `"INTERSECTION"`)
 
-* `GBTEdgeTypeSpcurve` (value: `"SPCURVE"`)
+* `Spcurve` (value: `"SPCURVE"`)
 
-* `GBTEdgeTypePolyline` (value: `"POLYLINE"`)
+* `Polyline` (value: `"POLYLINE"`)
 
-* `GBTEdgeTypeConic` (value: `"CONIC"`)
+* `Conic` (value: `"CONIC"`)
 
-* `GBTEdgeTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

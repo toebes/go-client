@@ -3,25 +3,25 @@
 ## Enum
 
 
-* `GBTDataItemFormatXT` (value: `"X_T"`)
+* `XT` (value: `"X_T"`)
 
-* `GBTDataItemFormatXmm` (value: `"XMM"`)
+* `Xmm` (value: `"XMM"`)
 
-* `GBTDataItemFormatStl` (value: `"STL"`)
+* `Stl` (value: `"STL"`)
 
-* `GBTDataItemFormatOnshape` (value: `"ONSHAPE"`)
+* `Onshape` (value: `"ONSHAPE"`)
 
-* `GBTDataItemFormatZip` (value: `"ZIP"`)
+* `Zip` (value: `"ZIP"`)
 
-* `GBTDataItemFormatXTXmmZip` (value: `"X_T_XMM_ZIP"`)
+* `XTXmmZip` (value: `"X_T_XMM_ZIP"`)
 
-* `GBTDataItemFormatObjMtlZip` (value: `"OBJ_MTL_ZIP"`)
+* `ObjMtlZip` (value: `"OBJ_MTL_ZIP"`)
 
-* `GBTDataItemFormatXB` (value: `"X_B"`)
+* `XB` (value: `"X_B"`)
 
-* `GBTDataItemFormatJson` (value: `"JSON"`)
+* `Json` (value: `"JSON"`)
 
-* `GBTDataItemFormatUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -20,11 +20,11 @@ type Type string
 
 // List of Type
 const (
-	TypeApikey        Type = "APIKEY"
-	TypeHttp          Type = "HTTP"
-	TypeOauth2        Type = "OAUTH2"
-	TypeOpenidconnect Type = "OPENIDCONNECT"
-	TypeMutualtls     Type = "MUTUALTLS"
+	Apikey        Type = "APIKEY"
+	Http          Type = "HTTP"
+	Oauth2        Type = "OAUTH2"
+	Openidconnect Type = "OPENIDCONNECT"
+	Mutualtls     Type = "MUTUALTLS"
 )
 
 // All allowed values of Type enum

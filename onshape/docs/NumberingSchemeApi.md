@@ -1,10 +1,10 @@
-# \NumberingSchemeApi
+# \NumberingSchemeAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**NextNumbers**](NumberingSchemeApi.md#NextNumbers) | **Post** /numberingscheme/nextnumbers | Send the items to generate numbers for, and return the next valid available part numbers.
+[**NextNumbers**](NumberingSchemeAPI.md#NextNumbers) | **Post** /numberingscheme/nextnumbers | Send the items to generate numbers for, and return the next valid available part numbers.
 
 
 
@@ -35,13 +35,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.NumberingSchemeApi.NextNumbers(context.Background()).BTNextPartNumbersParam(bTNextPartNumbersParam).Cid(cid).Did(did).Execute()
+    resp, r, err := apiClient.NumberingSchemeAPI.NextNumbers(context.Background()).BTNextPartNumbersParam(bTNextPartNumbersParam).Cid(cid).Did(did).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `NumberingSchemeApi.NextNumbers``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `NumberingSchemeAPI.NextNumbers``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `NextNumbers`: map[string][]BTNextPartNumber
-    fmt.Fprintf(os.Stdout, "Response from `NumberingSchemeApi.NextNumbers`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `NumberingSchemeAPI.NextNumbers`: %v\n", resp)
 }
 ```
 

@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `BTAPIWorkflowableTypeRelease` (value: `"RELEASE"`)
+* `Release` (value: `"RELEASE"`)
 
-* `BTAPIWorkflowableTypeTask` (value: `"TASK"`)
+* `Task` (value: `"TASK"`)
 
-* `BTAPIWorkflowableTypeAssignment` (value: `"ASSIGNMENT"`)
+* `Assignment` (value: `"ASSIGNMENT"`)
 
-* `BTAPIWorkflowableTypeObsoletion` (value: `"OBSOLETION"`)
+* `Obsoletion` (value: `"OBSOLETION"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

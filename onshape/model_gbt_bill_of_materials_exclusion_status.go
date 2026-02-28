@@ -20,10 +20,10 @@ type GBTBillOfMaterialsExclusionStatus string
 
 // List of GBTBillOfMaterialsExclusionStatus
 const (
-	GBTBillOfMaterialsExclusionStatusNotExcluded    GBTBillOfMaterialsExclusionStatus = "NOT_EXCLUDED"
-	GBTBillOfMaterialsExclusionStatusParentExcluded GBTBillOfMaterialsExclusionStatus = "PARENT_EXCLUDED"
-	GBTBillOfMaterialsExclusionStatusExcluded       GBTBillOfMaterialsExclusionStatus = "EXCLUDED"
-	GBTBillOfMaterialsExclusionStatusUnknown        GBTBillOfMaterialsExclusionStatus = "UNKNOWN"
+	NotExcluded    GBTBillOfMaterialsExclusionStatus = "NOT_EXCLUDED"
+	ParentExcluded GBTBillOfMaterialsExclusionStatus = "PARENT_EXCLUDED"
+	Excluded       GBTBillOfMaterialsExclusionStatus = "EXCLUDED"
+	Unknown        GBTBillOfMaterialsExclusionStatus = "UNKNOWN"
 )
 
 // All allowed values of GBTBillOfMaterialsExclusionStatus enum

@@ -20,10 +20,10 @@ type GBTConfigurationParameterType string
 
 // List of GBTConfigurationParameterType
 const (
-	GBTConfigurationParameterTypeEnum     GBTConfigurationParameterType = "ENUM"
-	GBTConfigurationParameterTypeBoolean  GBTConfigurationParameterType = "BOOLEAN"
-	GBTConfigurationParameterTypeString   GBTConfigurationParameterType = "STRING"
-	GBTConfigurationParameterTypeQuantity GBTConfigurationParameterType = "QUANTITY"
+	Enum     GBTConfigurationParameterType = "ENUM"
+	Boolean  GBTConfigurationParameterType = "BOOLEAN"
+	String   GBTConfigurationParameterType = "STRING"
+	Quantity GBTConfigurationParameterType = "QUANTITY"
 )
 
 // All allowed values of GBTConfigurationParameterType enum

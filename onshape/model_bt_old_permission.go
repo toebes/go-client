@@ -20,15 +20,15 @@ type BTOldPermission string
 
 // List of BTOldPermission
 const (
-	BTOldPermissionNoaccess        BTOldPermission = "NOACCESS"
-	BTOldPermissionAnonymousAccess BTOldPermission = "ANONYMOUS_ACCESS"
-	BTOldPermissionRead            BTOldPermission = "READ"
-	BTOldPermissionReadCopyExport  BTOldPermission = "READ_COPY_EXPORT"
-	BTOldPermissionComment         BTOldPermission = "COMMENT"
-	BTOldPermissionWrite           BTOldPermission = "WRITE"
-	BTOldPermissionReshare         BTOldPermission = "RESHARE"
-	BTOldPermissionFull            BTOldPermission = "FULL"
-	BTOldPermissionOwner           BTOldPermission = "OWNER"
+	Noaccess        BTOldPermission = "NOACCESS"
+	AnonymousAccess BTOldPermission = "ANONYMOUS_ACCESS"
+	Read            BTOldPermission = "READ"
+	ReadCopyExport  BTOldPermission = "READ_COPY_EXPORT"
+	Comment         BTOldPermission = "COMMENT"
+	Write           BTOldPermission = "WRITE"
+	Reshare         BTOldPermission = "RESHARE"
+	Full            BTOldPermission = "FULL"
+	Owner           BTOldPermission = "OWNER"
 )
 
 // All allowed values of BTOldPermission enum

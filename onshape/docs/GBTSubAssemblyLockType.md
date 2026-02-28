@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `GBTSubAssemblyLockTypeSubAssemblyPosition` (value: `"SUB_ASSEMBLY_POSITION"`)
+* `SubAssemblyPosition` (value: `"SUB_ASSEMBLY_POSITION"`)
 
-* `GBTSubAssemblyLockTypeCurrentPosition` (value: `"CURRENT_POSITION"`)
+* `CurrentPosition` (value: `"CURRENT_POSITION"`)
 
-* `GBTSubAssemblyLockTypeNamedPosiition` (value: `"NAMED_POSIITION"`)
+* `NamedPosiition` (value: `"NAMED_POSIITION"`)
 
-* `GBTSubAssemblyLockTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

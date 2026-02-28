@@ -3,11 +3,11 @@
 ## Enum
 
 
-* `BTDrawingHiddenLineOptionDrafting` (value: `"drafting"`)
+* `Drafting` (value: `"drafting"`)
 
-* `BTDrawingHiddenLineOptionExcluded` (value: `"excluded"`)
+* `Excluded` (value: `"excluded"`)
 
-* `BTDrawingHiddenLineOptionMarked` (value: `"marked"`)
+* `Marked` (value: `"marked"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

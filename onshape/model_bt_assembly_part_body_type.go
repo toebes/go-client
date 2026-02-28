@@ -20,9 +20,9 @@ type BTAssemblyPartBodyType string
 
 // List of BTAssemblyPartBodyType
 const (
-	BTAssemblyPartBodyTypeSolid     BTAssemblyPartBodyType = "solid"
-	BTAssemblyPartBodyTypeSheet     BTAssemblyPartBodyType = "sheet"
-	BTAssemblyPartBodyTypeComposite BTAssemblyPartBodyType = "composite"
+	Solid     BTAssemblyPartBodyType = "solid"
+	Sheet     BTAssemblyPartBodyType = "sheet"
+	Composite BTAssemblyPartBodyType = "composite"
 )
 
 // All allowed values of BTAssemblyPartBodyType enum

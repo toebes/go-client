@@ -20,9 +20,9 @@ type BTUserAppSettingOperationType string
 
 // List of BTUserAppSettingOperationType
 const (
-	BTUserAppSettingOperationTypeAdd    BTUserAppSettingOperationType = "ADD"
-	BTUserAppSettingOperationTypeRemove BTUserAppSettingOperationType = "REMOVE"
-	BTUserAppSettingOperationTypeUpdate BTUserAppSettingOperationType = "UPDATE"
+	Add    BTUserAppSettingOperationType = "ADD"
+	Remove BTUserAppSettingOperationType = "REMOVE"
+	Update BTUserAppSettingOperationType = "UPDATE"
 )
 
 // All allowed values of BTUserAppSettingOperationType enum

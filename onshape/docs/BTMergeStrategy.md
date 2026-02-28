@@ -3,11 +3,11 @@
 ## Enum
 
 
-* `BTMergeStrategyMerge` (value: `"MERGE"`)
+* `Merge` (value: `"MERGE"`)
 
-* `BTMergeStrategyKeep` (value: `"KEEP"`)
+* `Keep` (value: `"KEEP"`)
 
-* `BTMergeStrategyReplace` (value: `"REPLACE"`)
+* `Replace` (value: `"REPLACE"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

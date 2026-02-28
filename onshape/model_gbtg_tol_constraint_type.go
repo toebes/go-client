@@ -20,21 +20,21 @@ type GBTGTolConstraintType string
 
 // List of GBTGTolConstraintType
 const (
-	GBTGTolConstraintTypeTruePosition     GBTGTolConstraintType = "TRUE_POSITION"
-	GBTGTolConstraintTypeParallelism      GBTGTolConstraintType = "PARALLELISM"
-	GBTGTolConstraintTypePerpendicularity GBTGTolConstraintType = "PERPENDICULARITY"
-	GBTGTolConstraintTypeProfileSurface   GBTGTolConstraintType = "PROFILE_SURFACE"
-	GBTGTolConstraintTypeTotalRunout      GBTGTolConstraintType = "TOTAL_RUNOUT"
-	GBTGTolConstraintTypeConcentricity    GBTGTolConstraintType = "CONCENTRICITY"
-	GBTGTolConstraintTypeSymmetry         GBTGTolConstraintType = "SYMMETRY"
-	GBTGTolConstraintTypeAngularity       GBTGTolConstraintType = "ANGULARITY"
-	GBTGTolConstraintTypeCylindricity     GBTGTolConstraintType = "CYLINDRICITY"
-	GBTGTolConstraintTypeFlatness         GBTGTolConstraintType = "FLATNESS"
-	GBTGTolConstraintTypeRoundness        GBTGTolConstraintType = "ROUNDNESS"
-	GBTGTolConstraintTypeStraightness     GBTGTolConstraintType = "STRAIGHTNESS"
-	GBTGTolConstraintTypeProfileLine      GBTGTolConstraintType = "PROFILE_LINE"
-	GBTGTolConstraintTypeCircularRunout   GBTGTolConstraintType = "CIRCULAR_RUNOUT"
-	GBTGTolConstraintTypeUnknown          GBTGTolConstraintType = "UNKNOWN"
+	TruePosition     GBTGTolConstraintType = "TRUE_POSITION"
+	Parallelism      GBTGTolConstraintType = "PARALLELISM"
+	Perpendicularity GBTGTolConstraintType = "PERPENDICULARITY"
+	ProfileSurface   GBTGTolConstraintType = "PROFILE_SURFACE"
+	TotalRunout      GBTGTolConstraintType = "TOTAL_RUNOUT"
+	Concentricity    GBTGTolConstraintType = "CONCENTRICITY"
+	Symmetry         GBTGTolConstraintType = "SYMMETRY"
+	Angularity       GBTGTolConstraintType = "ANGULARITY"
+	Cylindricity     GBTGTolConstraintType = "CYLINDRICITY"
+	Flatness         GBTGTolConstraintType = "FLATNESS"
+	Roundness        GBTGTolConstraintType = "ROUNDNESS"
+	Straightness     GBTGTolConstraintType = "STRAIGHTNESS"
+	ProfileLine      GBTGTolConstraintType = "PROFILE_LINE"
+	CircularRunout   GBTGTolConstraintType = "CIRCULAR_RUNOUT"
+	Unknown          GBTGTolConstraintType = "UNKNOWN"
 )
 
 // All allowed values of GBTGTolConstraintType enum

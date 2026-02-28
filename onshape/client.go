@@ -40,7 +40,7 @@ var (
 	xmlCheck  = regexp.MustCompile(`(?i:(?:application|text)/xml)`)
 )
 
-// APIClient manages communication with the Onshape REST API API v1.210.72563-e5afb839879b
+// APIClient manages communication with the Onshape REST API API v1.211.73690-7b0848c0600d
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	cfg    *APIConfiguration
@@ -48,87 +48,87 @@ type APIClient struct {
 
 	// API Services
 
-	APIApplicationApi *APIApplicationApiService
+	APIApplicationAPI *APIApplicationAPIService
 
-	AccountApi *AccountApiService
+	AccountAPI *AccountAPIService
 
-	AliasApi *AliasApiService
+	AliasAPI *AliasAPIService
 
-	AppAssociativeDataApi *AppAssociativeDataApiService
+	AppAssociativeDataAPI *AppAssociativeDataAPIService
 
-	AppElementApi *AppElementApiService
+	AppElementAPI *AppElementAPIService
 
-	AssemblyApi *AssemblyApiService
+	AssemblyAPI *AssemblyAPIService
 
-	BillingApi *BillingApiService
+	BillingAPI *BillingAPIService
 
-	BlobElementApi *BlobElementApiService
+	BlobElementAPI *BlobElementAPIService
 
-	CommentApi *CommentApiService
+	CommentAPI *CommentAPIService
 
-	CompanyApi *CompanyApiService
+	CompanyAPI *CompanyAPIService
 
-	DocumentApi *DocumentApiService
+	DocumentAPI *DocumentAPIService
 
-	DrawingApi *DrawingApiService
+	DrawingAPI *DrawingAPIService
 
-	ElementApi *ElementApiService
+	ElementAPI *ElementAPIService
 
-	EventApi *EventApiService
+	EventAPI *EventAPIService
 
-	ExportRuleApi *ExportRuleApiService
+	ExportRuleAPI *ExportRuleAPIService
 
-	FeatureStudioApi *FeatureStudioApiService
+	FeatureStudioAPI *FeatureStudioAPIService
 
-	FolderApi *FolderApiService
+	FolderAPI *FolderAPIService
 
-	InsertableApi *InsertableApiService
+	InsertableAPI *InsertableAPIService
 
-	ItemApi *ItemApiService
+	ItemAPI *ItemAPIService
 
-	MetadataApi *MetadataApiService
+	MetadataAPI *MetadataAPIService
 
-	MetadataCategoryApi *MetadataCategoryApiService
+	MetadataCategoryAPI *MetadataCategoryAPIService
 
-	NumberingSchemeApi *NumberingSchemeApiService
+	NumberingSchemeAPI *NumberingSchemeAPIService
 
-	OpenApiApi *OpenApiApiService
+	OpenApiAPI *OpenApiAPIService
 
-	PartApi *PartApiService
+	PartAPI *PartAPIService
 
-	PartNumberApi *PartNumberApiService
+	PartNumberAPI *PartNumberAPIService
 
-	PartStudioApi *PartStudioApiService
+	PartStudioAPI *PartStudioAPIService
 
-	PropertiesTableTemplateApi *PropertiesTableTemplateApiService
+	PropertiesTableTemplateAPI *PropertiesTableTemplateAPIService
 
-	PublicationApi *PublicationApiService
+	PublicationAPI *PublicationAPIService
 
-	ReleasePackageApi *ReleasePackageApiService
+	ReleasePackageAPI *ReleasePackageAPIService
 
-	RevisionApi *RevisionApiService
+	RevisionAPI *RevisionAPIService
 
-	SketchApi *SketchApiService
+	SketchAPI *SketchAPIService
 
-	StandardContentApi *StandardContentApiService
+	StandardContentAPI *StandardContentAPIService
 
-	TaskApi *TaskApiService
+	TaskAPI *TaskAPIService
 
-	TeamApi *TeamApiService
+	TeamAPI *TeamAPIService
 
-	ThumbnailApi *ThumbnailApiService
+	ThumbnailAPI *ThumbnailAPIService
 
-	TranslationApi *TranslationApiService
+	TranslationAPI *TranslationAPIService
 
-	UserApi *UserApiService
+	UserAPI *UserAPIService
 
-	VariablesApi *VariablesApiService
+	VariablesAPI *VariablesAPIService
 
-	VersionApi *VersionApiService
+	VersionAPI *VersionAPIService
 
-	WebhookApi *WebhookApiService
+	WebhookAPI *WebhookAPIService
 
-	WorkflowApi *WorkflowApiService
+	WorkflowAPI *WorkflowAPIService
 }
 
 type service struct {
@@ -147,47 +147,47 @@ func NewAPIClient(cfg *APIConfiguration) *APIClient {
 	c.common.client = c
 
 	// API Services
-	c.APIApplicationApi = (*APIApplicationApiService)(&c.common)
-	c.AccountApi = (*AccountApiService)(&c.common)
-	c.AliasApi = (*AliasApiService)(&c.common)
-	c.AppAssociativeDataApi = (*AppAssociativeDataApiService)(&c.common)
-	c.AppElementApi = (*AppElementApiService)(&c.common)
-	c.AssemblyApi = (*AssemblyApiService)(&c.common)
-	c.BillingApi = (*BillingApiService)(&c.common)
-	c.BlobElementApi = (*BlobElementApiService)(&c.common)
-	c.CommentApi = (*CommentApiService)(&c.common)
-	c.CompanyApi = (*CompanyApiService)(&c.common)
-	c.DocumentApi = (*DocumentApiService)(&c.common)
-	c.DrawingApi = (*DrawingApiService)(&c.common)
-	c.ElementApi = (*ElementApiService)(&c.common)
-	c.EventApi = (*EventApiService)(&c.common)
-	c.ExportRuleApi = (*ExportRuleApiService)(&c.common)
-	c.FeatureStudioApi = (*FeatureStudioApiService)(&c.common)
-	c.FolderApi = (*FolderApiService)(&c.common)
-	c.InsertableApi = (*InsertableApiService)(&c.common)
-	c.ItemApi = (*ItemApiService)(&c.common)
-	c.MetadataApi = (*MetadataApiService)(&c.common)
-	c.MetadataCategoryApi = (*MetadataCategoryApiService)(&c.common)
-	c.NumberingSchemeApi = (*NumberingSchemeApiService)(&c.common)
-	c.OpenApiApi = (*OpenApiApiService)(&c.common)
-	c.PartApi = (*PartApiService)(&c.common)
-	c.PartNumberApi = (*PartNumberApiService)(&c.common)
-	c.PartStudioApi = (*PartStudioApiService)(&c.common)
-	c.PropertiesTableTemplateApi = (*PropertiesTableTemplateApiService)(&c.common)
-	c.PublicationApi = (*PublicationApiService)(&c.common)
-	c.ReleasePackageApi = (*ReleasePackageApiService)(&c.common)
-	c.RevisionApi = (*RevisionApiService)(&c.common)
-	c.SketchApi = (*SketchApiService)(&c.common)
-	c.StandardContentApi = (*StandardContentApiService)(&c.common)
-	c.TaskApi = (*TaskApiService)(&c.common)
-	c.TeamApi = (*TeamApiService)(&c.common)
-	c.ThumbnailApi = (*ThumbnailApiService)(&c.common)
-	c.TranslationApi = (*TranslationApiService)(&c.common)
-	c.UserApi = (*UserApiService)(&c.common)
-	c.VariablesApi = (*VariablesApiService)(&c.common)
-	c.VersionApi = (*VersionApiService)(&c.common)
-	c.WebhookApi = (*WebhookApiService)(&c.common)
-	c.WorkflowApi = (*WorkflowApiService)(&c.common)
+	c.APIApplicationAPI = (*APIApplicationAPIService)(&c.common)
+	c.AccountAPI = (*AccountAPIService)(&c.common)
+	c.AliasAPI = (*AliasAPIService)(&c.common)
+	c.AppAssociativeDataAPI = (*AppAssociativeDataAPIService)(&c.common)
+	c.AppElementAPI = (*AppElementAPIService)(&c.common)
+	c.AssemblyAPI = (*AssemblyAPIService)(&c.common)
+	c.BillingAPI = (*BillingAPIService)(&c.common)
+	c.BlobElementAPI = (*BlobElementAPIService)(&c.common)
+	c.CommentAPI = (*CommentAPIService)(&c.common)
+	c.CompanyAPI = (*CompanyAPIService)(&c.common)
+	c.DocumentAPI = (*DocumentAPIService)(&c.common)
+	c.DrawingAPI = (*DrawingAPIService)(&c.common)
+	c.ElementAPI = (*ElementAPIService)(&c.common)
+	c.EventAPI = (*EventAPIService)(&c.common)
+	c.ExportRuleAPI = (*ExportRuleAPIService)(&c.common)
+	c.FeatureStudioAPI = (*FeatureStudioAPIService)(&c.common)
+	c.FolderAPI = (*FolderAPIService)(&c.common)
+	c.InsertableAPI = (*InsertableAPIService)(&c.common)
+	c.ItemAPI = (*ItemAPIService)(&c.common)
+	c.MetadataAPI = (*MetadataAPIService)(&c.common)
+	c.MetadataCategoryAPI = (*MetadataCategoryAPIService)(&c.common)
+	c.NumberingSchemeAPI = (*NumberingSchemeAPIService)(&c.common)
+	c.OpenApiAPI = (*OpenApiAPIService)(&c.common)
+	c.PartAPI = (*PartAPIService)(&c.common)
+	c.PartNumberAPI = (*PartNumberAPIService)(&c.common)
+	c.PartStudioAPI = (*PartStudioAPIService)(&c.common)
+	c.PropertiesTableTemplateAPI = (*PropertiesTableTemplateAPIService)(&c.common)
+	c.PublicationAPI = (*PublicationAPIService)(&c.common)
+	c.ReleasePackageAPI = (*ReleasePackageAPIService)(&c.common)
+	c.RevisionAPI = (*RevisionAPIService)(&c.common)
+	c.SketchAPI = (*SketchAPIService)(&c.common)
+	c.StandardContentAPI = (*StandardContentAPIService)(&c.common)
+	c.TaskAPI = (*TaskAPIService)(&c.common)
+	c.TeamAPI = (*TeamAPIService)(&c.common)
+	c.ThumbnailAPI = (*ThumbnailAPIService)(&c.common)
+	c.TranslationAPI = (*TranslationAPIService)(&c.common)
+	c.UserAPI = (*UserAPIService)(&c.common)
+	c.VariablesAPI = (*VariablesAPIService)(&c.common)
+	c.VersionAPI = (*VersionAPIService)(&c.common)
+	c.WebhookAPI = (*WebhookAPIService)(&c.common)
+	c.WorkflowAPI = (*WorkflowAPIService)(&c.common)
 
 	return c
 }

@@ -1,37 +1,37 @@
-# \AssemblyApi
+# \AssemblyAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AddFeature**](AssemblyApi.md#AddFeature) | **Post** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/features | Add a feature to the assembly feature list.
-[**CreateAssembly**](AssemblyApi.md#CreateAssembly) | **Post** /assemblies/d/{did}/w/{wid} | Create a new assembly tab in the document.
-[**CreateAssemblyExportGltf**](AssemblyApi.md#CreateAssemblyExportGltf) | **Post** /assemblies/d/{did}/{wv}/{wvid}/e/{eid}/export/gltf | Export the assembly to glTF.
-[**CreateAssemblyExportObj**](AssemblyApi.md#CreateAssemblyExportObj) | **Post** /assemblies/d/{did}/{wv}/{wvid}/e/{eid}/export/obj | Export the assembly to OBJ.
-[**CreateAssemblyExportSolidworks**](AssemblyApi.md#CreateAssemblyExportSolidworks) | **Post** /assemblies/d/{did}/{wv}/{wvid}/e/{eid}/export/solidworks | Export the assembly to Solidworks.
-[**CreateAssemblyExportStep**](AssemblyApi.md#CreateAssemblyExportStep) | **Post** /assemblies/d/{did}/{wv}/{wvid}/e/{eid}/export/step | Export the assembly to STEP.
-[**CreateInstance**](AssemblyApi.md#CreateInstance) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/instances | Insert an instance of a part, sketch, assembly, or Part Studio into an assembly.
-[**DeleteFeature**](AssemblyApi.md#DeleteFeature) | **Delete** /assemblies/d/{did}/w/{wid}/e/{eid}/features/featureid/{fid} | Delete a feature from an assembly.
-[**DeleteInstance**](AssemblyApi.md#DeleteInstance) | **Delete** /assemblies/d/{did}/w/{wid}/e/{eid}/instance/nodeid/{nid} | Delete an instance of an assembly.
-[**GetAssemblyBoundingBoxes**](AssemblyApi.md#GetAssemblyBoundingBoxes) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/boundingboxes | Get bounding box information for the specified assembly.
-[**GetAssemblyDefinition**](AssemblyApi.md#GetAssemblyDefinition) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid} | Get definition information for the specified assembly.
-[**GetAssemblyMassProperties**](AssemblyApi.md#GetAssemblyMassProperties) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/massproperties | Get the mass properties for the assembly.
-[**GetAssemblyShadedViews**](AssemblyApi.md#GetAssemblyShadedViews) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/shadedviews | Get an array of shaded view images for the document.
-[**GetBillOfMaterials**](AssemblyApi.md#GetBillOfMaterials) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/bom | Get the Bill Of Materials (BOM) content for the specified assembly.
-[**GetDisplayStates**](AssemblyApi.md#GetDisplayStates) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/displaystates | Get a list of display states for the specified assembly.
-[**GetExplodedViews**](AssemblyApi.md#GetExplodedViews) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/explodedviews | Get a list of exploded views for the specified assembly.
-[**GetFeatureSpecs**](AssemblyApi.md#GetFeatureSpecs) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/featurespecs | Get the feature spec definitions for an assembly.
-[**GetFeatures**](AssemblyApi.md#GetFeatures) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/features | Get the definitions of the specified features in an assembly.
-[**GetMateValues**](AssemblyApi.md#GetMateValues) | **Get** /assemblies/d/{did}/{wv}/{wvid}/e/{eid}/matevalues | Get a list of mate values in the specified assembly.
-[**GetNamedPositions**](AssemblyApi.md#GetNamedPositions) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/namedpositions | Get a list of all named positions for the assembly.
-[**GetNamedViews**](AssemblyApi.md#GetNamedViews) | **Get** /assemblies/d/{did}/e/{eid}/namedViews | Get the view data for all named views for the specified element.
-[**GetOrCreateBillOfMaterialsElement**](AssemblyApi.md#GetOrCreateBillOfMaterialsElement) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/bomelement | Gets the Bill Of Materials (BOM) for the specified assembly, or creates a BOM if none exist.
-[**InsertTransformedInstances**](AssemblyApi.md#InsertTransformedInstances) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/transformedinstances | Create new instances with transformation.
-[**Modify**](AssemblyApi.md#Modify) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/modify | Modify an assembly.
-[**TransformOccurrences**](AssemblyApi.md#TransformOccurrences) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/occurrencetransforms | Transform a list of assembly occurrences.
-[**TranslateFormat**](AssemblyApi.md#TranslateFormat) | **Post** /assemblies/d/{did}/{wv}/{wvid}/e/{eid}/translations | Export the assembly to another format.
-[**UpdateFeature**](AssemblyApi.md#UpdateFeature) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/features/featureid/{fid} | Update an existing feature for an Assembly.
-[**UpdateMateValues**](AssemblyApi.md#UpdateMateValues) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/matevalues | Update mate values for the given mates in the specified assembly.
+[**AddFeature**](AssemblyAPI.md#AddFeature) | **Post** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/features | Add a feature to the assembly feature list.
+[**CreateAssembly**](AssemblyAPI.md#CreateAssembly) | **Post** /assemblies/d/{did}/w/{wid} | Create a new assembly tab in the document.
+[**CreateAssemblyExportGltf**](AssemblyAPI.md#CreateAssemblyExportGltf) | **Post** /assemblies/d/{did}/{wv}/{wvid}/e/{eid}/export/gltf | Export the assembly to glTF.
+[**CreateAssemblyExportObj**](AssemblyAPI.md#CreateAssemblyExportObj) | **Post** /assemblies/d/{did}/{wv}/{wvid}/e/{eid}/export/obj | Export the assembly to OBJ.
+[**CreateAssemblyExportSolidworks**](AssemblyAPI.md#CreateAssemblyExportSolidworks) | **Post** /assemblies/d/{did}/{wv}/{wvid}/e/{eid}/export/solidworks | Export the assembly to Solidworks.
+[**CreateAssemblyExportStep**](AssemblyAPI.md#CreateAssemblyExportStep) | **Post** /assemblies/d/{did}/{wv}/{wvid}/e/{eid}/export/step | Export the assembly to STEP.
+[**CreateInstance**](AssemblyAPI.md#CreateInstance) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/instances | Insert an instance of a part, sketch, assembly, or Part Studio into an assembly.
+[**DeleteFeature**](AssemblyAPI.md#DeleteFeature) | **Delete** /assemblies/d/{did}/w/{wid}/e/{eid}/features/featureid/{fid} | Delete a feature from an assembly.
+[**DeleteInstance**](AssemblyAPI.md#DeleteInstance) | **Delete** /assemblies/d/{did}/w/{wid}/e/{eid}/instance/nodeid/{nid} | Delete an instance of an assembly.
+[**GetAssemblyBoundingBoxes**](AssemblyAPI.md#GetAssemblyBoundingBoxes) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/boundingboxes | Get bounding box information for the specified assembly.
+[**GetAssemblyDefinition**](AssemblyAPI.md#GetAssemblyDefinition) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid} | Get definition information for the specified assembly.
+[**GetAssemblyMassProperties**](AssemblyAPI.md#GetAssemblyMassProperties) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/massproperties | Get the mass properties for the assembly.
+[**GetAssemblyShadedViews**](AssemblyAPI.md#GetAssemblyShadedViews) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/shadedviews | Get an array of shaded view images for the document.
+[**GetBillOfMaterials**](AssemblyAPI.md#GetBillOfMaterials) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/bom | Get the Bill Of Materials (BOM) content for the specified assembly.
+[**GetDisplayStates**](AssemblyAPI.md#GetDisplayStates) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/displaystates | Get a list of display states for the specified assembly.
+[**GetExplodedViews**](AssemblyAPI.md#GetExplodedViews) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/explodedviews | Get a list of exploded views for the specified assembly.
+[**GetFeatureSpecs**](AssemblyAPI.md#GetFeatureSpecs) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/featurespecs | Get the feature spec definitions for an assembly.
+[**GetFeatures**](AssemblyAPI.md#GetFeatures) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/features | Get the definitions of the specified features in an assembly.
+[**GetMateValues**](AssemblyAPI.md#GetMateValues) | **Get** /assemblies/d/{did}/{wv}/{wvid}/e/{eid}/matevalues | Get a list of mate values in the specified assembly.
+[**GetNamedPositions**](AssemblyAPI.md#GetNamedPositions) | **Get** /assemblies/d/{did}/{wvm}/{wvmid}/e/{eid}/namedpositions | Get a list of all named positions for the assembly.
+[**GetNamedViews**](AssemblyAPI.md#GetNamedViews) | **Get** /assemblies/d/{did}/e/{eid}/namedViews | Get the view data for all named views for the specified element.
+[**GetOrCreateBillOfMaterialsElement**](AssemblyAPI.md#GetOrCreateBillOfMaterialsElement) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/bomelement | Gets the Bill Of Materials (BOM) for the specified assembly, or creates a BOM if none exist.
+[**InsertTransformedInstances**](AssemblyAPI.md#InsertTransformedInstances) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/transformedinstances | Create new instances with transformation.
+[**Modify**](AssemblyAPI.md#Modify) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/modify | Modify an assembly.
+[**TransformOccurrences**](AssemblyAPI.md#TransformOccurrences) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/occurrencetransforms | Transform a list of assembly occurrences.
+[**TranslateFormat**](AssemblyAPI.md#TranslateFormat) | **Post** /assemblies/d/{did}/{wv}/{wvid}/e/{eid}/translations | Export the assembly to another format.
+[**UpdateFeature**](AssemblyAPI.md#UpdateFeature) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/features/featureid/{fid} | Update an existing feature for an Assembly.
+[**UpdateMateValues**](AssemblyAPI.md#UpdateMateValues) | **Post** /assemblies/d/{did}/w/{wid}/e/{eid}/matevalues | Update mate values for the given mates in the specified assembly.
 
 
 
@@ -62,13 +62,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.AddFeature(context.Background(), did, wvm, wvmid, eid).BTFeatureDefinitionCall1406(bTFeatureDefinitionCall1406).Execute()
+    resp, r, err := apiClient.AssemblyAPI.AddFeature(context.Background(), did, wvm, wvmid, eid).BTFeatureDefinitionCall1406(bTFeatureDefinitionCall1406).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.AddFeature``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.AddFeature``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `AddFeature`: BTFeatureDefinitionResponse1617
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.AddFeature`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.AddFeature`: %v\n", resp)
 }
 ```
 
@@ -139,13 +139,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.CreateAssembly(context.Background(), did, wid).BTModelElementParams(bTModelElementParams).Execute()
+    resp, r, err := apiClient.AssemblyAPI.CreateAssembly(context.Background(), did, wid).BTModelElementParams(bTModelElementParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.CreateAssembly``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.CreateAssembly``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateAssembly`: BTDocumentElementInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.CreateAssembly`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.CreateAssembly`: %v\n", resp)
 }
 ```
 
@@ -216,13 +216,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.CreateAssemblyExportGltf(context.Background(), did, wv, wvid, eid).BTBGltfExportParams(bTBGltfExportParams).Execute()
+    resp, r, err := apiClient.AssemblyAPI.CreateAssemblyExportGltf(context.Background(), did, wv, wvid, eid).BTBGltfExportParams(bTBGltfExportParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.CreateAssemblyExportGltf``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.CreateAssemblyExportGltf``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateAssemblyExportGltf`: BTTranslationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.CreateAssemblyExportGltf`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.CreateAssemblyExportGltf`: %v\n", resp)
 }
 ```
 
@@ -297,13 +297,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.CreateAssemblyExportObj(context.Background(), did, wv, wvid, eid).BTBObjExportParams(bTBObjExportParams).Execute()
+    resp, r, err := apiClient.AssemblyAPI.CreateAssemblyExportObj(context.Background(), did, wv, wvid, eid).BTBObjExportParams(bTBObjExportParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.CreateAssemblyExportObj``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.CreateAssemblyExportObj``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateAssemblyExportObj`: BTTranslationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.CreateAssemblyExportObj`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.CreateAssemblyExportObj`: %v\n", resp)
 }
 ```
 
@@ -378,13 +378,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.CreateAssemblyExportSolidworks(context.Background(), did, wv, wvid, eid).BTBSolidworksExportParams(bTBSolidworksExportParams).Execute()
+    resp, r, err := apiClient.AssemblyAPI.CreateAssemblyExportSolidworks(context.Background(), did, wv, wvid, eid).BTBSolidworksExportParams(bTBSolidworksExportParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.CreateAssemblyExportSolidworks``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.CreateAssemblyExportSolidworks``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateAssemblyExportSolidworks`: BTTranslationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.CreateAssemblyExportSolidworks`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.CreateAssemblyExportSolidworks`: %v\n", resp)
 }
 ```
 
@@ -459,13 +459,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.CreateAssemblyExportStep(context.Background(), did, wv, wvid, eid).BTBStepExportParams(bTBStepExportParams).Execute()
+    resp, r, err := apiClient.AssemblyAPI.CreateAssemblyExportStep(context.Background(), did, wv, wvid, eid).BTBStepExportParams(bTBStepExportParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.CreateAssemblyExportStep``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.CreateAssemblyExportStep``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateAssemblyExportStep`: BTTranslationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.CreateAssemblyExportStep`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.CreateAssemblyExportStep`: %v\n", resp)
 }
 ```
 
@@ -539,13 +539,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.CreateInstance(context.Background(), did, wid, eid).BTAssemblyInstanceDefinitionParams(bTAssemblyInstanceDefinitionParams).Execute()
+    resp, r, err := apiClient.AssemblyAPI.CreateInstance(context.Background(), did, wid, eid).BTAssemblyInstanceDefinitionParams(bTAssemblyInstanceDefinitionParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.CreateInstance``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.CreateInstance``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateInstance`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.CreateInstance`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.CreateInstance`: %v\n", resp)
 }
 ```
 
@@ -615,13 +615,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.DeleteFeature(context.Background(), did, wid, eid, fid).Execute()
+    resp, r, err := apiClient.AssemblyAPI.DeleteFeature(context.Background(), did, wid, eid, fid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.DeleteFeature``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.DeleteFeature``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteFeature`: BTFeatureApiBase1430
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.DeleteFeature`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.DeleteFeature`: %v\n", resp)
 }
 ```
 
@@ -692,13 +692,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.DeleteInstance(context.Background(), did, eid, wid, nid).Execute()
+    resp, r, err := apiClient.AssemblyAPI.DeleteInstance(context.Background(), did, eid, wid, nid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.DeleteInstance``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.DeleteInstance``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteInstance`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.DeleteInstance`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.DeleteInstance`: %v\n", resp)
 }
 ```
 
@@ -776,13 +776,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.GetAssemblyBoundingBoxes(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).ExplodedViewId(explodedViewId).IncludeHidden(includeHidden).DisplayStateId(displayStateId).NamedPositionId(namedPositionId).IncludeSketches(includeSketches).Execute()
+    resp, r, err := apiClient.AssemblyAPI.GetAssemblyBoundingBoxes(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).ExplodedViewId(explodedViewId).IncludeHidden(includeHidden).DisplayStateId(displayStateId).NamedPositionId(namedPositionId).IncludeSketches(includeSketches).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.GetAssemblyBoundingBoxes``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.GetAssemblyBoundingBoxes``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAssemblyBoundingBoxes`: BTBoundingBoxInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.GetAssemblyBoundingBoxes`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.GetAssemblyBoundingBoxes`: %v\n", resp)
 }
 ```
 
@@ -869,13 +869,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.GetAssemblyDefinition(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).ExplodedViewId(explodedViewId).IncludeMateFeatures(includeMateFeatures).IncludeNonSolids(includeNonSolids).IncludeMateConnectors(includeMateConnectors).ExcludeSuppressed(excludeSuppressed).Execute()
+    resp, r, err := apiClient.AssemblyAPI.GetAssemblyDefinition(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).ExplodedViewId(explodedViewId).IncludeMateFeatures(includeMateFeatures).IncludeNonSolids(includeNonSolids).IncludeMateConnectors(includeMateConnectors).ExcludeSuppressed(excludeSuppressed).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.GetAssemblyDefinition``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.GetAssemblyDefinition``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAssemblyDefinition`: BTAssemblyDefinitionInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.GetAssemblyDefinition`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.GetAssemblyDefinition`: %v\n", resp)
 }
 ```
 
@@ -957,13 +957,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.GetAssemblyMassProperties(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).Execute()
+    resp, r, err := apiClient.AssemblyAPI.GetAssemblyMassProperties(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.GetAssemblyMassProperties``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.GetAssemblyMassProperties``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAssemblyMassProperties`: BTMassPropertiesInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.GetAssemblyMassProperties`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.GetAssemblyMassProperties`: %v\n", resp)
 }
 ```
 
@@ -1050,13 +1050,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.GetAssemblyShadedViews(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).ExplodedViewId(explodedViewId).ViewMatrix(viewMatrix).OutputHeight(outputHeight).OutputWidth(outputWidth).PixelSize(pixelSize).Edges(edges).ShowAllParts(showAllParts).IncludeSurfaces(includeSurfaces).UseAntiAliasing(useAntiAliasing).IncludeWires(includeWires).DisplayStateId(displayStateId).NamedPositionId(namedPositionId).Execute()
+    resp, r, err := apiClient.AssemblyAPI.GetAssemblyShadedViews(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).ExplodedViewId(explodedViewId).ViewMatrix(viewMatrix).OutputHeight(outputHeight).OutputWidth(outputWidth).PixelSize(pixelSize).Edges(edges).ShowAllParts(showAllParts).IncludeSurfaces(includeSurfaces).UseAntiAliasing(useAntiAliasing).IncludeWires(includeWires).DisplayStateId(displayStateId).NamedPositionId(namedPositionId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.GetAssemblyShadedViews``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.GetAssemblyShadedViews``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAssemblyShadedViews`: BTShadedViewsInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.GetAssemblyShadedViews`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.GetAssemblyShadedViews`: %v\n", resp)
 }
 ```
 
@@ -1157,13 +1157,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.GetBillOfMaterials(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).BomColumnIds(bomColumnIds).Indented(indented).MultiLevel(multiLevel).GenerateIfAbsent(generateIfAbsent).TemplateId(templateId).IncludeExcluded(includeExcluded).OnlyVisibleColumns(onlyVisibleColumns).IgnoreSubassemblyBomBehavior(ignoreSubassemblyBomBehavior).IncludeItemMicroversions(includeItemMicroversions).IncludeTopLevelAssemblyRow(includeTopLevelAssemblyRow).Thumbnail(thumbnail).RespectSubassemblyBomBehavior(respectSubassemblyBomBehavior).Execute()
+    resp, r, err := apiClient.AssemblyAPI.GetBillOfMaterials(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).BomColumnIds(bomColumnIds).Indented(indented).MultiLevel(multiLevel).GenerateIfAbsent(generateIfAbsent).TemplateId(templateId).IncludeExcluded(includeExcluded).OnlyVisibleColumns(onlyVisibleColumns).IgnoreSubassemblyBomBehavior(ignoreSubassemblyBomBehavior).IncludeItemMicroversions(includeItemMicroversions).IncludeTopLevelAssemblyRow(includeTopLevelAssemblyRow).Thumbnail(thumbnail).RespectSubassemblyBomBehavior(respectSubassemblyBomBehavior).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.GetBillOfMaterials``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.GetBillOfMaterials``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetBillOfMaterials`: BTBillOfMaterialsInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.GetBillOfMaterials`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.GetBillOfMaterials`: %v\n", resp)
 }
 ```
 
@@ -1249,13 +1249,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.GetDisplayStates(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.AssemblyAPI.GetDisplayStates(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.GetDisplayStates``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.GetDisplayStates``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDisplayStates`: []BTDisplayStateInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.GetDisplayStates`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.GetDisplayStates`: %v\n", resp)
 }
 ```
 
@@ -1330,13 +1330,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.GetExplodedViews(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).ExplodedViewId(explodedViewId).Execute()
+    resp, r, err := apiClient.AssemblyAPI.GetExplodedViews(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).ExplodedViewId(explodedViewId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.GetExplodedViews``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.GetExplodedViews``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetExplodedViews`: []BTViewFeatureBaseInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.GetExplodedViews`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.GetExplodedViews`: %v\n", resp)
 }
 ```
 
@@ -1410,13 +1410,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.GetFeatureSpecs(context.Background(), did, wvm, wvmid, eid).Execute()
+    resp, r, err := apiClient.AssemblyAPI.GetFeatureSpecs(context.Background(), did, wvm, wvmid, eid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.GetFeatureSpecs``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.GetFeatureSpecs``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetFeatureSpecs`: BTFeatureSpecsResponse664
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.GetFeatureSpecs`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.GetFeatureSpecs`: %v\n", resp)
 }
 ```
 
@@ -1491,13 +1491,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.GetFeatures(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).ExplodedViewId(explodedViewId).FeatureId(featureId).Execute()
+    resp, r, err := apiClient.AssemblyAPI.GetFeatures(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).ExplodedViewId(explodedViewId).FeatureId(featureId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.GetFeatures``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.GetFeatures``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetFeatures`: BTAssemblyFeatureListResponse1174
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.GetFeatures`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.GetFeatures`: %v\n", resp)
 }
 ```
 
@@ -1574,13 +1574,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.GetMateValues(context.Background(), did, wv, wvid, eid).Execute()
+    resp, r, err := apiClient.AssemblyAPI.GetMateValues(context.Background(), did, wv, wvid, eid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.GetMateValues``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.GetMateValues``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetMateValues`: BTAssemblyMateValuesInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.GetMateValues`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.GetMateValues`: %v\n", resp)
 }
 ```
 
@@ -1654,13 +1654,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.GetNamedPositions(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).ExplodedViewId(explodedViewId).Execute()
+    resp, r, err := apiClient.AssemblyAPI.GetNamedPositions(context.Background(), did, wvm, wvmid, eid).LinkDocumentId(linkDocumentId).Configuration(configuration).ExplodedViewId(explodedViewId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.GetNamedPositions``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.GetNamedPositions``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetNamedPositions`: []BTViewFeatureBaseInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.GetNamedPositions`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.GetNamedPositions`: %v\n", resp)
 }
 ```
 
@@ -1735,13 +1735,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.GetNamedViews(context.Background(), did, eid).LinkDocumentId(linkDocumentId).SkipPerspective(skipPerspective).IncludeSectionCutViews(includeSectionCutViews).Execute()
+    resp, r, err := apiClient.AssemblyAPI.GetNamedViews(context.Background(), did, eid).LinkDocumentId(linkDocumentId).SkipPerspective(skipPerspective).IncludeSectionCutViews(includeSectionCutViews).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.GetNamedViews``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.GetNamedViews``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetNamedViews`: BTNamedViewsInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.GetNamedViews`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.GetNamedViews`: %v\n", resp)
 }
 ```
 
@@ -1810,13 +1810,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.GetOrCreateBillOfMaterialsElement(context.Background(), did, wid, eid).Execute()
+    resp, r, err := apiClient.AssemblyAPI.GetOrCreateBillOfMaterialsElement(context.Background(), did, wid, eid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.GetOrCreateBillOfMaterialsElement``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.GetOrCreateBillOfMaterialsElement``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetOrCreateBillOfMaterialsElement`: BTDocumentElementInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.GetOrCreateBillOfMaterialsElement`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.GetOrCreateBillOfMaterialsElement`: %v\n", resp)
 }
 ```
 
@@ -1885,13 +1885,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.InsertTransformedInstances(context.Background(), did, eid, wid).BTAssemblyTransformedInstancesDefinitionParams(bTAssemblyTransformedInstancesDefinitionParams).Execute()
+    resp, r, err := apiClient.AssemblyAPI.InsertTransformedInstances(context.Background(), did, eid, wid).BTAssemblyTransformedInstancesDefinitionParams(bTAssemblyTransformedInstancesDefinitionParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.InsertTransformedInstances``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.InsertTransformedInstances``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `InsertTransformedInstances`: BTAssemblyInsertTransformedInstancesResponse
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.InsertTransformedInstances`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.InsertTransformedInstances`: %v\n", resp)
 }
 ```
 
@@ -1964,13 +1964,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.Modify(context.Background(), did, wid, eid).LinkDocumentId(linkDocumentId).BTAssemblyModificationParams(bTAssemblyModificationParams).Execute()
+    resp, r, err := apiClient.AssemblyAPI.Modify(context.Background(), did, wid, eid).LinkDocumentId(linkDocumentId).BTAssemblyModificationParams(bTAssemblyModificationParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.Modify``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.Modify``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `Modify`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.Modify`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.Modify`: %v\n", resp)
 }
 ```
 
@@ -2041,13 +2041,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.TransformOccurrences(context.Background(), did, eid, wid).BTAssemblyTransformDefinitionParams(bTAssemblyTransformDefinitionParams).Execute()
+    resp, r, err := apiClient.AssemblyAPI.TransformOccurrences(context.Background(), did, eid, wid).BTAssemblyTransformDefinitionParams(bTAssemblyTransformDefinitionParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.TransformOccurrences``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.TransformOccurrences``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `TransformOccurrences`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.TransformOccurrences`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.TransformOccurrences`: %v\n", resp)
 }
 ```
 
@@ -2120,13 +2120,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.TranslateFormat(context.Background(), did, wv, wvid, eid).BTTranslateFormatParams(bTTranslateFormatParams).Execute()
+    resp, r, err := apiClient.AssemblyAPI.TranslateFormat(context.Background(), did, wv, wvid, eid).BTTranslateFormatParams(bTTranslateFormatParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.TranslateFormat``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.TranslateFormat``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `TranslateFormat`: BTTranslationRequestInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.TranslateFormat`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.TranslateFormat`: %v\n", resp)
 }
 ```
 
@@ -2199,13 +2199,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.UpdateFeature(context.Background(), did, wid, eid, fid).BTFeatureDefinitionCall1406(bTFeatureDefinitionCall1406).Execute()
+    resp, r, err := apiClient.AssemblyAPI.UpdateFeature(context.Background(), did, wid, eid, fid).BTFeatureDefinitionCall1406(bTFeatureDefinitionCall1406).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.UpdateFeature``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.UpdateFeature``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateFeature`: BTFeatureDefinitionResponse1617
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.UpdateFeature`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.UpdateFeature`: %v\n", resp)
 }
 ```
 
@@ -2279,13 +2279,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AssemblyApi.UpdateMateValues(context.Background(), did, wid, eid).BTAssemblyMateValuesInfo(bTAssemblyMateValuesInfo).Execute()
+    resp, r, err := apiClient.AssemblyAPI.UpdateMateValues(context.Background(), did, wid, eid).BTAssemblyMateValuesInfo(bTAssemblyMateValuesInfo).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyApi.UpdateMateValues``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AssemblyAPI.UpdateMateValues``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateMateValues`: BTAssemblyMateValuesInfo
-    fmt.Fprintf(os.Stdout, "Response from `AssemblyApi.UpdateMateValues`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AssemblyAPI.UpdateMateValues`: %v\n", resp)
 }
 ```
 

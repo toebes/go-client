@@ -20,16 +20,16 @@ type GBTPDefinitionType string
 
 // List of GBTPDefinitionType
 const (
-	GBTPDefinitionTypeFunction          GBTPDefinitionType = "FUNCTION"
-	GBTPDefinitionTypePredicate         GBTPDefinitionType = "PREDICATE"
-	GBTPDefinitionTypeConstant          GBTPDefinitionType = "CONSTANT"
-	GBTPDefinitionTypeEnum              GBTPDefinitionType = "ENUM"
-	GBTPDefinitionTypeUserType          GBTPDefinitionType = "USER_TYPE"
-	GBTPDefinitionTypeFeatureDefinition GBTPDefinitionType = "FEATURE_DEFINITION"
-	GBTPDefinitionTypeFileHeader        GBTPDefinitionType = "FILE_HEADER"
-	GBTPDefinitionTypeUndocumentable    GBTPDefinitionType = "UNDOCUMENTABLE"
-	GBTPDefinitionTypeConstLambda       GBTPDefinitionType = "CONST_LAMBDA"
-	GBTPDefinitionTypeUnknown           GBTPDefinitionType = "UNKNOWN"
+	Function          GBTPDefinitionType = "FUNCTION"
+	Predicate         GBTPDefinitionType = "PREDICATE"
+	Constant          GBTPDefinitionType = "CONSTANT"
+	Enum              GBTPDefinitionType = "ENUM"
+	UserType          GBTPDefinitionType = "USER_TYPE"
+	FeatureDefinition GBTPDefinitionType = "FEATURE_DEFINITION"
+	FileHeader        GBTPDefinitionType = "FILE_HEADER"
+	Undocumentable    GBTPDefinitionType = "UNDOCUMENTABLE"
+	ConstLambda       GBTPDefinitionType = "CONST_LAMBDA"
+	Unknown           GBTPDefinitionType = "UNKNOWN"
 )
 
 // All allowed values of GBTPDefinitionType enum

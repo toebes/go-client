@@ -3,11 +3,11 @@
 ## Enum
 
 
-* `BTApplicationSettingsTypeUser` (value: `"USER"`)
+* `User` (value: `"USER"`)
 
-* `BTApplicationSettingsTypeCompany` (value: `"COMPANY"`)
+* `Company` (value: `"COMPANY"`)
 
-* `BTApplicationSettingsTypeTeam` (value: `"TEAM"`)
+* `Team` (value: `"TEAM"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

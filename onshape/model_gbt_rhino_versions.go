@@ -20,14 +20,14 @@ type GBTRhinoVersions string
 
 // List of GBTRhinoVersions
 const (
-	GBTRhinoVersionsV2      GBTRhinoVersions = "V2"
-	GBTRhinoVersionsV3      GBTRhinoVersions = "V3"
-	GBTRhinoVersionsV4      GBTRhinoVersions = "V4"
-	GBTRhinoVersionsV5      GBTRhinoVersions = "V5"
-	GBTRhinoVersionsV6      GBTRhinoVersions = "V6"
-	GBTRhinoVersionsV7      GBTRhinoVersions = "V7"
-	GBTRhinoVersionsV8      GBTRhinoVersions = "V8"
-	GBTRhinoVersionsUnknown GBTRhinoVersions = "UNKNOWN"
+	V2      GBTRhinoVersions = "V2"
+	V3      GBTRhinoVersions = "V3"
+	V4      GBTRhinoVersions = "V4"
+	V5      GBTRhinoVersions = "V5"
+	V6      GBTRhinoVersions = "V6"
+	V7      GBTRhinoVersions = "V7"
+	V8      GBTRhinoVersions = "V8"
+	Unknown GBTRhinoVersions = "UNKNOWN"
 )
 
 // All allowed values of GBTRhinoVersions enum

@@ -3,15 +3,15 @@
 ## Enum
 
 
-* `GBTVariableTypeLength` (value: `"LENGTH"`)
+* `Length` (value: `"LENGTH"`)
 
-* `GBTVariableTypeAngle` (value: `"ANGLE"`)
+* `Angle` (value: `"ANGLE"`)
 
-* `GBTVariableTypeNumber` (value: `"NUMBER"`)
+* `Number` (value: `"NUMBER"`)
 
-* `GBTVariableTypeAny` (value: `"ANY"`)
+* `Any` (value: `"ANY"`)
 
-* `GBTVariableTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

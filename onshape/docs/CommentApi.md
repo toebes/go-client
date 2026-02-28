@@ -1,25 +1,25 @@
-# \CommentApi
+# \CommentAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AddAttachment**](CommentApi.md#AddAttachment) | **Post** /comments/{cid}/attachment | Add an attachment to a comment.
-[**CreateComment**](CommentApi.md#CreateComment) | **Post** /comments | Update a document with a new comment.
-[**DeleteAttachments**](CommentApi.md#DeleteAttachments) | **Delete** /comments/{cid}/attachment | Delete all attachments from a comment.
-[**DeleteComment**](CommentApi.md#DeleteComment) | **Delete** /comments/{cid} | Delete a comment from a document.
-[**GetAttachment**](CommentApi.md#GetAttachment) | **Get** /comments/{cid}/attachment/{fdid}.{ext} | Get the attachment with the specified file extension that is associated with the specified comment.
-[**GetComment**](CommentApi.md#GetComment) | **Get** /comments/{cid} | Get details for a comment.
-[**GetComments**](CommentApi.md#GetComments) | **Get** /comments | Get a list of comments in a document.
-[**Reopen**](CommentApi.md#Reopen) | **Post** /comments/{cid}/reopen | Reopen a resolved comment.
-[**Resolve**](CommentApi.md#Resolve) | **Post** /comments/{cid}/resolve | Resolve a comment.
-[**UpdateComment**](CommentApi.md#UpdateComment) | **Post** /comments/{cid} | Update the content of an existing comment.
+[**AddAttachment**](CommentAPI.md#AddAttachment) | **Post** /comments/{cid}/attachment | Add an attachment to a comment.
+[**CreateComment**](CommentAPI.md#CreateComment) | **Post** /comments | Update a document with a new comment.
+[**DeleteAttachments**](CommentAPI.md#DeleteAttachments) | **Delete** /comments/{cid}/attachment | Delete all attachments from a comment.
+[**DeleteComment**](CommentAPI.md#DeleteComment) | **Delete** /comments/{cid} | Delete a comment from a document.
+[**GetAttachment**](CommentAPI.md#GetAttachment) | **Get** /comments/{cid}/attachment/{fdid}.{ext} | Get the attachment with the specified file extension that is associated with the specified comment.
+[**GetComment**](CommentAPI.md#GetComment) | **Get** /comments/{cid} | Get details for a comment.
+[**GetComments**](CommentAPI.md#GetComments) | **Get** /comments | Get a list of comments in a document.
+[**Reopen**](CommentAPI.md#Reopen) | **Post** /comments/{cid}/reopen | Reopen a resolved comment.
+[**Resolve**](CommentAPI.md#Resolve) | **Post** /comments/{cid}/resolve | Resolve a comment.
+[**UpdateComment**](CommentAPI.md#UpdateComment) | **Post** /comments/{cid} | Update the content of an existing comment.
 
 
 
 ## AddAttachment
 
-> BTCommentInfo AddAttachment(ctx, cid).File(file).FileContentLength(fileContentLength).Execute()
+> BTCommentInfo AddAttachment(ctx, cid).File(file).Execute()
 
 Add an attachment to a comment.
 
@@ -37,18 +37,17 @@ import (
 
 func main() {
     cid := "cid_example" // string | 
-    file := os.NewFile(1234, "some_file") // HttpFile | The file to upload.
-    fileContentLength := int32(56) // int32 |  (optional)
+    file := os.NewFile(1234, "some_file") // HttpFile | The file to upload. (optional)
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CommentApi.AddAttachment(context.Background(), cid).File(file).FileContentLength(fileContentLength).Execute()
+    resp, r, err := apiClient.CommentAPI.AddAttachment(context.Background(), cid).File(file).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CommentApi.AddAttachment``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CommentAPI.AddAttachment``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `AddAttachment`: BTCommentInfo
-    fmt.Fprintf(os.Stdout, "Response from `CommentApi.AddAttachment`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CommentAPI.AddAttachment`: %v\n", resp)
 }
 ```
 
@@ -69,7 +68,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
  **file** | **HttpFile** | The file to upload. | 
- **fileContentLength** | **int32** |  | 
 
 ### Return type
 
@@ -112,13 +110,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CommentApi.CreateComment(context.Background()).BTCommentParams(bTCommentParams).Execute()
+    resp, r, err := apiClient.CommentAPI.CreateComment(context.Background()).BTCommentParams(bTCommentParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CommentApi.CreateComment``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CommentAPI.CreateComment``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateComment`: BTCommentInfo
-    fmt.Fprintf(os.Stdout, "Response from `CommentApi.CreateComment`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CommentAPI.CreateComment`: %v\n", resp)
 }
 ```
 
@@ -176,13 +174,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CommentApi.DeleteAttachments(context.Background(), cid).Execute()
+    resp, r, err := apiClient.CommentAPI.DeleteAttachments(context.Background(), cid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CommentApi.DeleteAttachments``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CommentAPI.DeleteAttachments``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteAttachments`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `CommentApi.DeleteAttachments`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CommentAPI.DeleteAttachments`: %v\n", resp)
 }
 ```
 
@@ -244,13 +242,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CommentApi.DeleteComment(context.Background(), cid).Execute()
+    resp, r, err := apiClient.CommentAPI.DeleteComment(context.Background(), cid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CommentApi.DeleteComment``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CommentAPI.DeleteComment``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteComment`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `CommentApi.DeleteComment`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CommentAPI.DeleteComment`: %v\n", resp)
 }
 ```
 
@@ -316,13 +314,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CommentApi.GetAttachment(context.Background(), cid, fdid, ext).Execute()
+    resp, r, err := apiClient.CommentAPI.GetAttachment(context.Background(), cid, fdid, ext).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CommentApi.GetAttachment``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CommentAPI.GetAttachment``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAttachment`: HttpFile
-    fmt.Fprintf(os.Stdout, "Response from `CommentApi.GetAttachment`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CommentAPI.GetAttachment`: %v\n", resp)
 }
 ```
 
@@ -388,13 +386,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CommentApi.GetComment(context.Background(), cid).Execute()
+    resp, r, err := apiClient.CommentAPI.GetComment(context.Background(), cid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CommentApi.GetComment``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CommentAPI.GetComment``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetComment`: BTCommentInfo
-    fmt.Fprintf(os.Stdout, "Response from `CommentApi.GetComment`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CommentAPI.GetComment`: %v\n", resp)
 }
 ```
 
@@ -465,13 +463,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CommentApi.GetComments(context.Background()).Did(did).ObjectType(objectType).Pid(pid).Eid(eid).Filter(filter).Resolved(resolved).SortColumn(sortColumn).SortOrder(sortOrder).Offset(offset).Limit(limit).Execute()
+    resp, r, err := apiClient.CommentAPI.GetComments(context.Background()).Did(did).ObjectType(objectType).Pid(pid).Eid(eid).Filter(filter).Resolved(resolved).SortColumn(sortColumn).SortOrder(sortOrder).Offset(offset).Limit(limit).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CommentApi.GetComments``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CommentAPI.GetComments``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetComments`: BTListResponseBTCommentInfo
-    fmt.Fprintf(os.Stdout, "Response from `CommentApi.GetComments`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CommentAPI.GetComments`: %v\n", resp)
 }
 ```
 
@@ -538,13 +536,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CommentApi.Reopen(context.Background(), cid).Execute()
+    resp, r, err := apiClient.CommentAPI.Reopen(context.Background(), cid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CommentApi.Reopen``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CommentAPI.Reopen``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `Reopen`: BTCommentInfo
-    fmt.Fprintf(os.Stdout, "Response from `CommentApi.Reopen`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CommentAPI.Reopen`: %v\n", resp)
 }
 ```
 
@@ -606,13 +604,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CommentApi.Resolve(context.Background(), cid).Execute()
+    resp, r, err := apiClient.CommentAPI.Resolve(context.Background(), cid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CommentApi.Resolve``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CommentAPI.Resolve``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `Resolve`: BTCommentInfo
-    fmt.Fprintf(os.Stdout, "Response from `CommentApi.Resolve`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CommentAPI.Resolve`: %v\n", resp)
 }
 ```
 
@@ -675,13 +673,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.CommentApi.UpdateComment(context.Background(), cid).BTCommentParams(bTCommentParams).Execute()
+    resp, r, err := apiClient.CommentAPI.UpdateComment(context.Background(), cid).BTCommentParams(bTCommentParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `CommentApi.UpdateComment``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `CommentAPI.UpdateComment``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateComment`: BTCommentInfo
-    fmt.Fprintf(os.Stdout, "Response from `CommentApi.UpdateComment`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `CommentAPI.UpdateComment`: %v\n", resp)
 }
 ```
 

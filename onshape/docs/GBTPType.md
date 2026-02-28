@@ -3,25 +3,25 @@
 ## Enum
 
 
-* `GBTPTypeUndefined` (value: `"UNDEFINED"`)
+* `Undefined` (value: `"UNDEFINED"`)
 
-* `GBTPTypeBoolean` (value: `"BOOLEAN"`)
+* `Boolean` (value: `"BOOLEAN"`)
 
-* `GBTPTypeNumber` (value: `"NUMBER"`)
+* `Number` (value: `"NUMBER"`)
 
-* `GBTPTypeString` (value: `"STRING"`)
+* `String` (value: `"STRING"`)
 
-* `GBTPTypeArray` (value: `"ARRAY"`)
+* `Array` (value: `"ARRAY"`)
 
-* `GBTPTypeMap` (value: `"MAP"`)
+* `Map` (value: `"MAP"`)
 
-* `GBTPTypeBox` (value: `"BOX"`)
+* `Box` (value: `"BOX"`)
 
-* `GBTPTypeBuiltin` (value: `"BUILTIN"`)
+* `Builtin` (value: `"BUILTIN"`)
 
-* `GBTPTypeFunction` (value: `"FUNCTION"`)
+* `Function` (value: `"FUNCTION"`)
 
-* `GBTPTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

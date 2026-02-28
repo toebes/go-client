@@ -3,21 +3,21 @@
 ## Enum
 
 
-* `BTRoleAnonymous` (value: `"ANONYMOUS"`)
+* `Anonymous` (value: `"ANONYMOUS"`)
 
-* `BTRoleTotppendinguser` (value: `"TOTPPENDINGUSER"`)
+* `Totppendinguser` (value: `"TOTPPENDINGUSER"`)
 
-* `BTRoleUser` (value: `"USER"`)
+* `User` (value: `"USER"`)
 
-* `BTRoleDeveloper` (value: `"DEVELOPER"`)
+* `Developer` (value: `"DEVELOPER"`)
 
-* `BTRolePartner` (value: `"PARTNER"`)
+* `Partner` (value: `"PARTNER"`)
 
-* `BTRoleOnshapecompanyuser` (value: `"ONSHAPECOMPANYUSER"`)
+* `Onshapecompanyuser` (value: `"ONSHAPECOMPANYUSER"`)
 
-* `BTRoleAdmin` (value: `"ADMIN"`)
+* `Admin` (value: `"ADMIN"`)
 
-* `BTRoleService` (value: `"SERVICE"`)
+* `Service` (value: `"SERVICE"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

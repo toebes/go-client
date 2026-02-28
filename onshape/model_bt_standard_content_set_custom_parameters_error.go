@@ -20,10 +20,10 @@ type BTStandardContentSetCustomParametersError string
 
 // List of BTStandardContentSetCustomParametersError
 const (
-	BTStandardContentSetCustomParametersErrorNone                             BTStandardContentSetCustomParametersError = "NONE"
-	BTStandardContentSetCustomParametersErrorInvalidParameterValue            BTStandardContentSetCustomParametersError = "INVALID_PARAMETER_VALUE"
-	BTStandardContentSetCustomParametersErrorFailedToSpecifyRequiredParameter BTStandardContentSetCustomParametersError = "FAILED_TO_SPECIFY_REQUIRED_PARAMETER"
-	BTStandardContentSetCustomParametersErrorInvalidParameterId               BTStandardContentSetCustomParametersError = "INVALID_PARAMETER_ID"
+	None                             BTStandardContentSetCustomParametersError = "NONE"
+	InvalidParameterValue            BTStandardContentSetCustomParametersError = "INVALID_PARAMETER_VALUE"
+	FailedToSpecifyRequiredParameter BTStandardContentSetCustomParametersError = "FAILED_TO_SPECIFY_REQUIRED_PARAMETER"
+	InvalidParameterId               BTStandardContentSetCustomParametersError = "INVALID_PARAMETER_ID"
 )
 
 // All allowed values of BTStandardContentSetCustomParametersError enum

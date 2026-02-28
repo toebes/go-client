@@ -3,33 +3,33 @@
 ## Enum
 
 
-* `GBTEntityInferenceTypePartOrigin` (value: `"PART_ORIGIN"`)
+* `PartOrigin` (value: `"PART_ORIGIN"`)
 
-* `GBTEntityInferenceTypePoint` (value: `"POINT"`)
+* `Point` (value: `"POINT"`)
 
-* `GBTEntityInferenceTypeCentroid` (value: `"CENTROID"`)
+* `Centroid` (value: `"CENTROID"`)
 
-* `GBTEntityInferenceTypeCenter` (value: `"CENTER"`)
+* `Center` (value: `"CENTER"`)
 
-* `GBTEntityInferenceTypeMidPoint` (value: `"MID_POINT"`)
+* `MidPoint` (value: `"MID_POINT"`)
 
-* `GBTEntityInferenceTypeTopAxisPoint` (value: `"TOP_AXIS_POINT"`)
+* `TopAxisPoint` (value: `"TOP_AXIS_POINT"`)
 
-* `GBTEntityInferenceTypeMidAxisPoint` (value: `"MID_AXIS_POINT"`)
+* `MidAxisPoint` (value: `"MID_AXIS_POINT"`)
 
-* `GBTEntityInferenceTypeBottomAxisPoint` (value: `"BOTTOM_AXIS_POINT"`)
+* `BottomAxisPoint` (value: `"BOTTOM_AXIS_POINT"`)
 
-* `GBTEntityInferenceTypeOriginX` (value: `"ORIGIN_X"`)
+* `OriginX` (value: `"ORIGIN_X"`)
 
-* `GBTEntityInferenceTypeOriginY` (value: `"ORIGIN_Y"`)
+* `OriginY` (value: `"ORIGIN_Y"`)
 
-* `GBTEntityInferenceTypeOriginZ` (value: `"ORIGIN_Z"`)
+* `OriginZ` (value: `"ORIGIN_Z"`)
 
-* `GBTEntityInferenceTypeLoopCenter` (value: `"LOOP_CENTER"`)
+* `LoopCenter` (value: `"LOOP_CENTER"`)
 
-* `GBTEntityInferenceTypeVirtualSharp` (value: `"VIRTUAL_SHARP"`)
+* `VirtualSharp` (value: `"VIRTUAL_SHARP"`)
 
-* `GBTEntityInferenceTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -20,11 +20,11 @@ type GBTDebugEntityStyle string
 
 // List of GBTDebugEntityStyle
 const (
-	GBTDebugEntityStyleDefault   GBTDebugEntityStyle = "DEFAULT"
-	GBTDebugEntityStyleStar      GBTDebugEntityStyle = "STAR"
-	GBTDebugEntityStyleWithStart GBTDebugEntityStyle = "WITH_START"
-	GBTDebugEntityStyleError     GBTDebugEntityStyle = "ERROR"
-	GBTDebugEntityStyleUnknown   GBTDebugEntityStyle = "UNKNOWN"
+	Default   GBTDebugEntityStyle = "DEFAULT"
+	Star      GBTDebugEntityStyle = "STAR"
+	WithStart GBTDebugEntityStyle = "WITH_START"
+	Error     GBTDebugEntityStyle = "ERROR"
+	Unknown   GBTDebugEntityStyle = "UNKNOWN"
 )
 
 // All allowed values of GBTDebugEntityStyle enum

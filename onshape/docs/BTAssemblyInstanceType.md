@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `BTAssemblyInstanceTypeAssembly` (value: `"Assembly"`)
+* `Assembly` (value: `"Assembly"`)
 
-* `BTAssemblyInstanceTypeFeature` (value: `"Feature"`)
+* `Feature` (value: `"Feature"`)
 
-* `BTAssemblyInstanceTypePart` (value: `"Part"`)
+* `Part` (value: `"Part"`)
 
-* `BTAssemblyInstanceTypeUnknown` (value: `"Unknown"`)
+* `Unknown` (value: `"Unknown"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

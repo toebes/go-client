@@ -20,12 +20,12 @@ type GBTElementBranchStatus string
 
 // List of GBTElementBranchStatus
 const (
-	GBTElementBranchStatusCreated         GBTElementBranchStatus = "CREATED"
-	GBTElementBranchStatusDeleted         GBTElementBranchStatus = "DELETED"
-	GBTElementBranchStatusEdits           GBTElementBranchStatus = "EDITS"
-	GBTElementBranchStatusNotOnThisBranch GBTElementBranchStatus = "NOT_ON_THIS_BRANCH"
-	GBTElementBranchStatusNoChanges       GBTElementBranchStatus = "NO_CHANGES"
-	GBTElementBranchStatusUnknown         GBTElementBranchStatus = "UNKNOWN"
+	Created         GBTElementBranchStatus = "CREATED"
+	Deleted         GBTElementBranchStatus = "DELETED"
+	Edits           GBTElementBranchStatus = "EDITS"
+	NotOnThisBranch GBTElementBranchStatus = "NOT_ON_THIS_BRANCH"
+	NoChanges       GBTElementBranchStatus = "NO_CHANGES"
+	Unknown         GBTElementBranchStatus = "UNKNOWN"
 )
 
 // All allowed values of GBTElementBranchStatus enum

@@ -19,12 +19,12 @@ import (
 	"strings"
 )
 
-// AppElementApiService AppElementApi service
-type AppElementApiService service
+// AppElementAPIService AppElementAPI service
+type AppElementAPIService service
 
 type ApiAbortTransactionRequest struct {
 	ctx         context.Context
-	ApiService  *AppElementApiService
+	ApiService  *AppElementAPIService
 	did         string
 	eid         string
 	wid         string
@@ -53,7 +53,7 @@ Deletes a microbranch (i.e., the branch with the microversion for the transactio
 	@param tid
 	@return ApiAbortTransactionRequest
 */
-func (a *AppElementApiService) AbortTransaction(ctx context.Context, did string, eid string, wid string, tid string) ApiAbortTransactionRequest {
+func (a *AppElementAPIService) AbortTransaction(ctx context.Context, did string, eid string, wid string, tid string) ApiAbortTransactionRequest {
 	return ApiAbortTransactionRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -67,7 +67,7 @@ func (a *AppElementApiService) AbortTransaction(ctx context.Context, did string,
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *AppElementApiService) AbortTransactionExecute(r ApiAbortTransactionRequest) (map[string]interface{}, *http.Response, error) {
+func (a *AppElementAPIService) AbortTransactionExecute(r ApiAbortTransactionRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodDelete
 		localVarPostBody    interface{}
@@ -75,7 +75,7 @@ func (a *AppElementApiService) AbortTransactionExecute(r ApiAbortTransactionRequ
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.AbortTransaction")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.AbortTransaction")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -156,7 +156,7 @@ func (a *AppElementApiService) AbortTransactionExecute(r ApiAbortTransactionRequ
 
 type ApiBulkCreateElementRequest struct {
 	ctx                          context.Context
-	ApiService                   *AppElementApiService
+	ApiService                   *AppElementAPIService
 	did                          string
 	wid                          string
 	bTAppElementBulkCreateParams *BTAppElementBulkCreateParams
@@ -188,7 +188,7 @@ Call this faster API instead of creating multiple app elements one at a time or 
 	@param wid The id of the workspace in which to perform the operation.
 	@return ApiBulkCreateElementRequest
 */
-func (a *AppElementApiService) BulkCreateElement(ctx context.Context, did string, wid string) ApiBulkCreateElementRequest {
+func (a *AppElementAPIService) BulkCreateElement(ctx context.Context, did string, wid string) ApiBulkCreateElementRequest {
 	return ApiBulkCreateElementRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -200,7 +200,7 @@ func (a *AppElementApiService) BulkCreateElement(ctx context.Context, did string
 // Execute executes the request
 //
 //	@return BTAppElementBulkCreateInfo
-func (a *AppElementApiService) BulkCreateElementExecute(r ApiBulkCreateElementRequest) (*BTAppElementBulkCreateInfo, *http.Response, error) {
+func (a *AppElementAPIService) BulkCreateElementExecute(r ApiBulkCreateElementRequest) (*BTAppElementBulkCreateInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -208,7 +208,7 @@ func (a *AppElementApiService) BulkCreateElementExecute(r ApiBulkCreateElementRe
 		localVarReturnValue *BTAppElementBulkCreateInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.BulkCreateElement")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.BulkCreateElement")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -292,7 +292,7 @@ func (a *AppElementApiService) BulkCreateElementExecute(r ApiBulkCreateElementRe
 
 type ApiCommitTransactionsRequest struct {
 	ctx                                 context.Context
-	ApiService                          *AppElementApiService
+	ApiService                          *AppElementAPIService
 	did                                 string
 	wid                                 string
 	bTAppElementCommitTransactionParams *BTAppElementCommitTransactionParams
@@ -324,7 +324,7 @@ If successful, all transactions will be committed to a single microversion. If t
 	@param wid The id of the workspace in which to perform the operation.
 	@return ApiCommitTransactionsRequest
 */
-func (a *AppElementApiService) CommitTransactions(ctx context.Context, did string, wid string) ApiCommitTransactionsRequest {
+func (a *AppElementAPIService) CommitTransactions(ctx context.Context, did string, wid string) ApiCommitTransactionsRequest {
 	return ApiCommitTransactionsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -336,7 +336,7 @@ func (a *AppElementApiService) CommitTransactions(ctx context.Context, did strin
 // Execute executes the request
 //
 //	@return BTAppElementBulkModifyInfo
-func (a *AppElementApiService) CommitTransactionsExecute(r ApiCommitTransactionsRequest) (*BTAppElementBulkModifyInfo, *http.Response, error) {
+func (a *AppElementAPIService) CommitTransactionsExecute(r ApiCommitTransactionsRequest) (*BTAppElementBulkModifyInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -344,7 +344,7 @@ func (a *AppElementApiService) CommitTransactionsExecute(r ApiCommitTransactions
 		localVarReturnValue *BTAppElementBulkModifyInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.CommitTransactions")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.CommitTransactions")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -428,7 +428,7 @@ func (a *AppElementApiService) CommitTransactionsExecute(r ApiCommitTransactions
 
 type ApiCompareAppElementJsonRequest struct {
 	ctx                  context.Context
-	ApiService           *AppElementApiService
+	ApiService           *AppElementAPIService
 	did                  string
 	wvm                  string
 	wvmid                string
@@ -481,7 +481,7 @@ Specify the source workspace/version/microversion in the URL and specify the tar
 	@param eid
 	@return ApiCompareAppElementJsonRequest
 */
-func (a *AppElementApiService) CompareAppElementJson(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiCompareAppElementJsonRequest {
+func (a *AppElementAPIService) CompareAppElementJson(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiCompareAppElementJsonRequest {
 	return ApiCompareAppElementJsonRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -495,7 +495,7 @@ func (a *AppElementApiService) CompareAppElementJson(ctx context.Context, did st
 // Execute executes the request
 //
 //	@return BTDiffJsonResponse2725
-func (a *AppElementApiService) CompareAppElementJsonExecute(r ApiCompareAppElementJsonRequest) (*BTDiffJsonResponse2725, *http.Response, error) {
+func (a *AppElementAPIService) CompareAppElementJsonExecute(r ApiCompareAppElementJsonRequest) (*BTDiffJsonResponse2725, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -503,7 +503,7 @@ func (a *AppElementApiService) CompareAppElementJsonExecute(r ApiCompareAppEleme
 		localVarReturnValue *BTDiffJsonResponse2725
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.CompareAppElementJson")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.CompareAppElementJson")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -596,7 +596,7 @@ func (a *AppElementApiService) CompareAppElementJsonExecute(r ApiCompareAppEleme
 
 type ApiCreateElementRequest struct {
 	ctx                context.Context
-	ApiService         *AppElementApiService
+	ApiService         *AppElementAPIService
 	did                string
 	wid                string
 	bTAppElementParams *BTAppElementParams
@@ -628,7 +628,7 @@ See [API Guide: Structured Storage](https://onshape-public.github.io/docs/app-de
 	@param wid The id of the workspace in which to perform the operation.
 	@return ApiCreateElementRequest
 */
-func (a *AppElementApiService) CreateElement(ctx context.Context, did string, wid string) ApiCreateElementRequest {
+func (a *AppElementAPIService) CreateElement(ctx context.Context, did string, wid string) ApiCreateElementRequest {
 	return ApiCreateElementRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -640,7 +640,7 @@ func (a *AppElementApiService) CreateElement(ctx context.Context, did string, wi
 // Execute executes the request
 //
 //	@return BTAppElementModifyInfo
-func (a *AppElementApiService) CreateElementExecute(r ApiCreateElementRequest) (*BTAppElementModifyInfo, *http.Response, error) {
+func (a *AppElementAPIService) CreateElementExecute(r ApiCreateElementRequest) (*BTAppElementModifyInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -648,7 +648,7 @@ func (a *AppElementApiService) CreateElementExecute(r ApiCreateElementRequest) (
 		localVarReturnValue *BTAppElementModifyInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.CreateElement")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.CreateElement")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -732,7 +732,7 @@ func (a *AppElementApiService) CreateElementExecute(r ApiCreateElementRequest) (
 
 type ApiCreateReferenceRequest struct {
 	ctx                         context.Context
-	ApiService                  *AppElementApiService
+	ApiService                  *AppElementAPIService
 	did                         string
 	eid                         string
 	wvm                         string
@@ -759,7 +759,7 @@ CreateReference Creates a reference to an app element.
 	@param wvmid
 	@return ApiCreateReferenceRequest
 */
-func (a *AppElementApiService) CreateReference(ctx context.Context, did string, eid string, wvm string, wvmid string) ApiCreateReferenceRequest {
+func (a *AppElementAPIService) CreateReference(ctx context.Context, did string, eid string, wvm string, wvmid string) ApiCreateReferenceRequest {
 	return ApiCreateReferenceRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -773,7 +773,7 @@ func (a *AppElementApiService) CreateReference(ctx context.Context, did string, 
 // Execute executes the request
 //
 //	@return BTAppElementReferenceInfo
-func (a *AppElementApiService) CreateReferenceExecute(r ApiCreateReferenceRequest) (*BTAppElementReferenceInfo, *http.Response, error) {
+func (a *AppElementAPIService) CreateReferenceExecute(r ApiCreateReferenceRequest) (*BTAppElementReferenceInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -781,7 +781,7 @@ func (a *AppElementApiService) CreateReferenceExecute(r ApiCreateReferenceReques
 		localVarReturnValue *BTAppElementReferenceInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.CreateReference")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.CreateReference")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -864,7 +864,7 @@ func (a *AppElementApiService) CreateReferenceExecute(r ApiCreateReferenceReques
 
 type ApiDeleteAppElementContentRequest struct {
 	ctx            context.Context
-	ApiService     *AppElementApiService
+	ApiService     *AppElementAPIService
 	did            string
 	eid            string
 	wvm            string
@@ -905,7 +905,7 @@ DeleteAppElementContent Deletes the content from the specified app element.
 	@param sid
 	@return ApiDeleteAppElementContentRequest
 */
-func (a *AppElementApiService) DeleteAppElementContent(ctx context.Context, did string, eid string, wvm string, wvmid string, sid string) ApiDeleteAppElementContentRequest {
+func (a *AppElementAPIService) DeleteAppElementContent(ctx context.Context, did string, eid string, wvm string, wvmid string, sid string) ApiDeleteAppElementContentRequest {
 	return ApiDeleteAppElementContentRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -920,7 +920,7 @@ func (a *AppElementApiService) DeleteAppElementContent(ctx context.Context, did 
 // Execute executes the request
 //
 //	@return BTAppElementModifyInfo
-func (a *AppElementApiService) DeleteAppElementContentExecute(r ApiDeleteAppElementContentRequest) (*BTAppElementModifyInfo, *http.Response, error) {
+func (a *AppElementAPIService) DeleteAppElementContentExecute(r ApiDeleteAppElementContentRequest) (*BTAppElementModifyInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodDelete
 		localVarPostBody    interface{}
@@ -928,7 +928,7 @@ func (a *AppElementApiService) DeleteAppElementContentExecute(r ApiDeleteAppElem
 		localVarReturnValue *BTAppElementModifyInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.DeleteAppElementContent")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.DeleteAppElementContent")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1016,7 +1016,7 @@ func (a *AppElementApiService) DeleteAppElementContentExecute(r ApiDeleteAppElem
 
 type ApiDeleteAppElementContentBatchRequest struct {
 	ctx            context.Context
-	ApiService     *AppElementApiService
+	ApiService     *AppElementAPIService
 	did            string
 	eid            string
 	wvm            string
@@ -1061,7 +1061,7 @@ DeleteAppElementContentBatch Delete multiple subelements array by document ID, w
 	@param wvmid
 	@return ApiDeleteAppElementContentBatchRequest
 */
-func (a *AppElementApiService) DeleteAppElementContentBatch(ctx context.Context, did string, eid string, wvm string, wvmid string) ApiDeleteAppElementContentBatchRequest {
+func (a *AppElementAPIService) DeleteAppElementContentBatch(ctx context.Context, did string, eid string, wvm string, wvmid string) ApiDeleteAppElementContentBatchRequest {
 	return ApiDeleteAppElementContentBatchRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1075,7 +1075,7 @@ func (a *AppElementApiService) DeleteAppElementContentBatch(ctx context.Context,
 // Execute executes the request
 //
 //	@return BTAppElementModifyInfo
-func (a *AppElementApiService) DeleteAppElementContentBatchExecute(r ApiDeleteAppElementContentBatchRequest) (*BTAppElementModifyInfo, *http.Response, error) {
+func (a *AppElementAPIService) DeleteAppElementContentBatchExecute(r ApiDeleteAppElementContentBatchRequest) (*BTAppElementModifyInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodDelete
 		localVarPostBody    interface{}
@@ -1083,7 +1083,7 @@ func (a *AppElementApiService) DeleteAppElementContentBatchExecute(r ApiDeleteAp
 		localVarReturnValue *BTAppElementModifyInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.DeleteAppElementContentBatch")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.DeleteAppElementContentBatch")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1181,7 +1181,7 @@ func (a *AppElementApiService) DeleteAppElementContentBatchExecute(r ApiDeleteAp
 
 type ApiDeleteBlobSubelementRequest struct {
 	ctx           context.Context
-	ApiService    *AppElementApiService
+	ApiService    *AppElementAPIService
 	did           string
 	wid           string
 	eid           string
@@ -1214,7 +1214,7 @@ DeleteBlobSubelement Delete a blob subelement from an app element.
 	@param bid
 	@return ApiDeleteBlobSubelementRequest
 */
-func (a *AppElementApiService) DeleteBlobSubelement(ctx context.Context, did string, wid string, eid string, bid string) ApiDeleteBlobSubelementRequest {
+func (a *AppElementAPIService) DeleteBlobSubelement(ctx context.Context, did string, wid string, eid string, bid string) ApiDeleteBlobSubelementRequest {
 	return ApiDeleteBlobSubelementRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1228,7 +1228,7 @@ func (a *AppElementApiService) DeleteBlobSubelement(ctx context.Context, did str
 // Execute executes the request
 //
 //	@return BTAppElementModifyInfo
-func (a *AppElementApiService) DeleteBlobSubelementExecute(r ApiDeleteBlobSubelementRequest) (*BTAppElementModifyInfo, *http.Response, error) {
+func (a *AppElementAPIService) DeleteBlobSubelementExecute(r ApiDeleteBlobSubelementRequest) (*BTAppElementModifyInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodDelete
 		localVarPostBody    interface{}
@@ -1236,7 +1236,7 @@ func (a *AppElementApiService) DeleteBlobSubelementExecute(r ApiDeleteBlobSubele
 		localVarReturnValue *BTAppElementModifyInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.DeleteBlobSubelement")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.DeleteBlobSubelement")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1320,7 +1320,7 @@ func (a *AppElementApiService) DeleteBlobSubelementExecute(r ApiDeleteBlobSubele
 
 type ApiDeleteReferenceRequest struct {
 	ctx            context.Context
-	ApiService     *AppElementApiService
+	ApiService     *AppElementAPIService
 	did            string
 	eid            string
 	wvm            string
@@ -1361,7 +1361,7 @@ DeleteReference Delete an app element reference.
 	@param rid
 	@return ApiDeleteReferenceRequest
 */
-func (a *AppElementApiService) DeleteReference(ctx context.Context, did string, eid string, wvm string, wvmid string, rid string) ApiDeleteReferenceRequest {
+func (a *AppElementAPIService) DeleteReference(ctx context.Context, did string, eid string, wvm string, wvmid string, rid string) ApiDeleteReferenceRequest {
 	return ApiDeleteReferenceRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1376,7 +1376,7 @@ func (a *AppElementApiService) DeleteReference(ctx context.Context, did string, 
 // Execute executes the request
 //
 //	@return BTAppElementReferenceInfo
-func (a *AppElementApiService) DeleteReferenceExecute(r ApiDeleteReferenceRequest) (*BTAppElementReferenceInfo, *http.Response, error) {
+func (a *AppElementAPIService) DeleteReferenceExecute(r ApiDeleteReferenceRequest) (*BTAppElementReferenceInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodDelete
 		localVarPostBody    interface{}
@@ -1384,7 +1384,7 @@ func (a *AppElementApiService) DeleteReferenceExecute(r ApiDeleteReferenceReques
 		localVarReturnValue *BTAppElementReferenceInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.DeleteReference")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.DeleteReference")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1472,7 +1472,7 @@ func (a *AppElementApiService) DeleteReferenceExecute(r ApiDeleteReferenceReques
 
 type ApiDownloadBlobSubelementRequest struct {
 	ctx                context.Context
-	ApiService         *AppElementApiService
+	ApiService         *AppElementAPIService
 	did                string
 	vm                 string
 	vmid               string
@@ -1527,7 +1527,7 @@ Download a blob subelement as a file.
 	@param bid
 	@return ApiDownloadBlobSubelementRequest
 */
-func (a *AppElementApiService) DownloadBlobSubelement(ctx context.Context, did string, vm string, vmid string, eid string, bid string) ApiDownloadBlobSubelementRequest {
+func (a *AppElementAPIService) DownloadBlobSubelement(ctx context.Context, did string, vm string, vmid string, eid string, bid string) ApiDownloadBlobSubelementRequest {
 	return ApiDownloadBlobSubelementRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1542,7 +1542,7 @@ func (a *AppElementApiService) DownloadBlobSubelement(ctx context.Context, did s
 // Execute executes the request
 //
 //	@return HttpFile
-func (a *AppElementApiService) DownloadBlobSubelementExecute(r ApiDownloadBlobSubelementRequest) (*HttpFile, *http.Response, error) {
+func (a *AppElementAPIService) DownloadBlobSubelementExecute(r ApiDownloadBlobSubelementRequest) (*HttpFile, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1550,7 +1550,7 @@ func (a *AppElementApiService) DownloadBlobSubelementExecute(r ApiDownloadBlobSu
 		localVarReturnValue *HttpFile
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.DownloadBlobSubelement")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.DownloadBlobSubelement")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1644,7 +1644,7 @@ func (a *AppElementApiService) DownloadBlobSubelementExecute(r ApiDownloadBlobSu
 
 type ApiDownloadBlobSubelementWorkspaceRequest struct {
 	ctx                context.Context
-	ApiService         *AppElementApiService
+	ApiService         *AppElementAPIService
 	did                string
 	wid                string
 	eid                string
@@ -1691,7 +1691,7 @@ The downloaded file can be used to retrieve stored subelements.
 	@param bid
 	@return ApiDownloadBlobSubelementWorkspaceRequest
 */
-func (a *AppElementApiService) DownloadBlobSubelementWorkspace(ctx context.Context, did string, wid string, eid string, bid string) ApiDownloadBlobSubelementWorkspaceRequest {
+func (a *AppElementAPIService) DownloadBlobSubelementWorkspace(ctx context.Context, did string, wid string, eid string, bid string) ApiDownloadBlobSubelementWorkspaceRequest {
 	return ApiDownloadBlobSubelementWorkspaceRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1705,7 +1705,7 @@ func (a *AppElementApiService) DownloadBlobSubelementWorkspace(ctx context.Conte
 // Execute executes the request
 //
 //	@return HttpFile
-func (a *AppElementApiService) DownloadBlobSubelementWorkspaceExecute(r ApiDownloadBlobSubelementWorkspaceRequest) (*HttpFile, *http.Response, error) {
+func (a *AppElementAPIService) DownloadBlobSubelementWorkspaceExecute(r ApiDownloadBlobSubelementWorkspaceRequest) (*HttpFile, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1713,7 +1713,7 @@ func (a *AppElementApiService) DownloadBlobSubelementWorkspaceExecute(r ApiDownl
 		localVarReturnValue *HttpFile
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.DownloadBlobSubelementWorkspace")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.DownloadBlobSubelementWorkspace")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1803,7 +1803,7 @@ func (a *AppElementApiService) DownloadBlobSubelementWorkspaceExecute(r ApiDownl
 
 type ApiGetAppElementHistoryRequest struct {
 	ctx        context.Context
-	ApiService *AppElementApiService
+	ApiService *AppElementAPIService
 	did        string
 	eid        string
 	wvm        string
@@ -1824,7 +1824,7 @@ GetAppElementHistory Get the history of the specified all element.
 	@param wvmid
 	@return ApiGetAppElementHistoryRequest
 */
-func (a *AppElementApiService) GetAppElementHistory(ctx context.Context, did string, eid string, wvm string, wvmid string) ApiGetAppElementHistoryRequest {
+func (a *AppElementAPIService) GetAppElementHistory(ctx context.Context, did string, eid string, wvm string, wvmid string) ApiGetAppElementHistoryRequest {
 	return ApiGetAppElementHistoryRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1838,7 +1838,7 @@ func (a *AppElementApiService) GetAppElementHistory(ctx context.Context, did str
 // Execute executes the request
 //
 //	@return BTAppElementHistoryInfo
-func (a *AppElementApiService) GetAppElementHistoryExecute(r ApiGetAppElementHistoryRequest) (*BTAppElementHistoryInfo, *http.Response, error) {
+func (a *AppElementAPIService) GetAppElementHistoryExecute(r ApiGetAppElementHistoryRequest) (*BTAppElementHistoryInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1846,7 +1846,7 @@ func (a *AppElementApiService) GetAppElementHistoryExecute(r ApiGetAppElementHis
 		localVarReturnValue *BTAppElementHistoryInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.GetAppElementHistory")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.GetAppElementHistory")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1924,7 +1924,7 @@ func (a *AppElementApiService) GetAppElementHistoryExecute(r ApiGetAppElementHis
 
 type ApiGetBlobSubelementIdsRequest struct {
 	ctx           context.Context
-	ApiService    *AppElementApiService
+	ApiService    *AppElementAPIService
 	did           string
 	eid           string
 	wvm           string
@@ -1957,7 +1957,7 @@ GetBlobSubelementIds Get a list of all blob subelement IDs for the specified wor
 	@param wvmid
 	@return ApiGetBlobSubelementIdsRequest
 */
-func (a *AppElementApiService) GetBlobSubelementIds(ctx context.Context, did string, eid string, wvm string, wvmid string) ApiGetBlobSubelementIdsRequest {
+func (a *AppElementAPIService) GetBlobSubelementIds(ctx context.Context, did string, eid string, wvm string, wvmid string) ApiGetBlobSubelementIdsRequest {
 	return ApiGetBlobSubelementIdsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1971,7 +1971,7 @@ func (a *AppElementApiService) GetBlobSubelementIds(ctx context.Context, did str
 // Execute executes the request
 //
 //	@return BTAppElementIdsInfo
-func (a *AppElementApiService) GetBlobSubelementIdsExecute(r ApiGetBlobSubelementIdsRequest) (*BTAppElementIdsInfo, *http.Response, error) {
+func (a *AppElementAPIService) GetBlobSubelementIdsExecute(r ApiGetBlobSubelementIdsRequest) (*BTAppElementIdsInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1979,7 +1979,7 @@ func (a *AppElementApiService) GetBlobSubelementIdsExecute(r ApiGetBlobSubelemen
 		localVarReturnValue *BTAppElementIdsInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.GetBlobSubelementIds")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.GetBlobSubelementIds")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2063,7 +2063,7 @@ func (a *AppElementApiService) GetBlobSubelementIdsExecute(r ApiGetBlobSubelemen
 
 type ApiGetElementTransactionsRequest struct {
 	ctx        context.Context
-	ApiService *AppElementApiService
+	ApiService *AppElementAPIService
 	did        string
 	eid        string
 	wid        string
@@ -2082,7 +2082,7 @@ GetElementTransactions Get a list of all transactions performed on an element.
 	@param wid
 	@return ApiGetElementTransactionsRequest
 */
-func (a *AppElementApiService) GetElementTransactions(ctx context.Context, did string, eid string, wid string) ApiGetElementTransactionsRequest {
+func (a *AppElementAPIService) GetElementTransactions(ctx context.Context, did string, eid string, wid string) ApiGetElementTransactionsRequest {
 	return ApiGetElementTransactionsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2095,7 +2095,7 @@ func (a *AppElementApiService) GetElementTransactions(ctx context.Context, did s
 // Execute executes the request
 //
 //	@return BTAppElementTransactionsInfo
-func (a *AppElementApiService) GetElementTransactionsExecute(r ApiGetElementTransactionsRequest) (*BTAppElementTransactionsInfo, *http.Response, error) {
+func (a *AppElementAPIService) GetElementTransactionsExecute(r ApiGetElementTransactionsRequest) (*BTAppElementTransactionsInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2103,7 +2103,7 @@ func (a *AppElementApiService) GetElementTransactionsExecute(r ApiGetElementTran
 		localVarReturnValue *BTAppElementTransactionsInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.GetElementTransactions")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.GetElementTransactions")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2180,7 +2180,7 @@ func (a *AppElementApiService) GetElementTransactionsExecute(r ApiGetElementTran
 
 type ApiGetJsonRequest struct {
 	ctx            context.Context
-	ApiService     *AppElementApiService
+	ApiService     *AppElementAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -2222,7 +2222,7 @@ GetJson Get the full JSON tree for the specified workspace/version/microversion.
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetJsonRequest
 */
-func (a *AppElementApiService) GetJson(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetJsonRequest {
+func (a *AppElementAPIService) GetJson(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetJsonRequest {
 	return ApiGetJsonRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2236,7 +2236,7 @@ func (a *AppElementApiService) GetJson(ctx context.Context, did string, wvm stri
 // Execute executes the request
 //
 //	@return BTGetJsonResponse2137
-func (a *AppElementApiService) GetJsonExecute(r ApiGetJsonRequest) (*BTGetJsonResponse2137, *http.Response, error) {
+func (a *AppElementAPIService) GetJsonExecute(r ApiGetJsonRequest) (*BTGetJsonResponse2137, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2244,7 +2244,7 @@ func (a *AppElementApiService) GetJsonExecute(r ApiGetJsonRequest) (*BTGetJsonRe
 		localVarReturnValue *BTGetJsonResponse2137
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.GetJson")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.GetJson")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2331,7 +2331,7 @@ func (a *AppElementApiService) GetJsonExecute(r ApiGetJsonRequest) (*BTGetJsonRe
 
 type ApiGetJsonPathsRequest struct {
 	ctx                context.Context
-	ApiService         *AppElementApiService
+	ApiService         *AppElementAPIService
 	did                string
 	wvm                string
 	wvmid              string
@@ -2379,7 +2379,7 @@ Use this endpoint to return the JSON at the specified path instead of returning 
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetJsonPathsRequest
 */
-func (a *AppElementApiService) GetJsonPaths(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetJsonPathsRequest {
+func (a *AppElementAPIService) GetJsonPaths(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetJsonPathsRequest {
 	return ApiGetJsonPathsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2393,7 +2393,7 @@ func (a *AppElementApiService) GetJsonPaths(ctx context.Context, did string, wvm
 // Execute executes the request
 //
 //	@return BTGetJsonPathsResponse1544
-func (a *AppElementApiService) GetJsonPathsExecute(r ApiGetJsonPathsRequest) (*BTGetJsonPathsResponse1544, *http.Response, error) {
+func (a *AppElementAPIService) GetJsonPathsExecute(r ApiGetJsonPathsRequest) (*BTGetJsonPathsResponse1544, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -2401,7 +2401,7 @@ func (a *AppElementApiService) GetJsonPathsExecute(r ApiGetJsonPathsRequest) (*B
 		localVarReturnValue *BTGetJsonPathsResponse1544
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.GetJsonPaths")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.GetJsonPaths")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2490,7 +2490,7 @@ func (a *AppElementApiService) GetJsonPathsExecute(r ApiGetJsonPathsRequest) (*B
 
 type ApiGetSubElementContentRequest struct {
 	ctx            context.Context
-	ApiService     *AppElementApiService
+	ApiService     *AppElementAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -2542,7 +2542,7 @@ GetSubElementContent Get a list of all subelement IDs in a specified workspace/v
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetSubElementContentRequest
 */
-func (a *AppElementApiService) GetSubElementContent(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetSubElementContentRequest {
+func (a *AppElementAPIService) GetSubElementContent(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetSubElementContentRequest {
 	return ApiGetSubElementContentRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2556,7 +2556,7 @@ func (a *AppElementApiService) GetSubElementContent(ctx context.Context, did str
 // Execute executes the request
 //
 //	@return BTAppElementContentInfo
-func (a *AppElementApiService) GetSubElementContentExecute(r ApiGetSubElementContentRequest) (*BTAppElementContentInfo, *http.Response, error) {
+func (a *AppElementAPIService) GetSubElementContentExecute(r ApiGetSubElementContentRequest) (*BTAppElementContentInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2564,7 +2564,7 @@ func (a *AppElementApiService) GetSubElementContentExecute(r ApiGetSubElementCon
 		localVarReturnValue *BTAppElementContentInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.GetSubElementContent")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.GetSubElementContent")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2657,7 +2657,7 @@ func (a *AppElementApiService) GetSubElementContentExecute(r ApiGetSubElementCon
 
 type ApiGetSubElementContentBatchRequest struct {
 	ctx            context.Context
-	ApiService     *AppElementApiService
+	ApiService     *AppElementAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -2713,7 +2713,7 @@ GetSubElementContentBatch Get a list of multiple subelements by document ID, wor
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetSubElementContentBatchRequest
 */
-func (a *AppElementApiService) GetSubElementContentBatch(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetSubElementContentBatchRequest {
+func (a *AppElementAPIService) GetSubElementContentBatch(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetSubElementContentBatchRequest {
 	return ApiGetSubElementContentBatchRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2727,7 +2727,7 @@ func (a *AppElementApiService) GetSubElementContentBatch(ctx context.Context, di
 // Execute executes the request
 //
 //	@return BTAppElementContentInfo
-func (a *AppElementApiService) GetSubElementContentBatchExecute(r ApiGetSubElementContentBatchRequest) (*BTAppElementContentInfo, *http.Response, error) {
+func (a *AppElementAPIService) GetSubElementContentBatchExecute(r ApiGetSubElementContentBatchRequest) (*BTAppElementContentInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2735,7 +2735,7 @@ func (a *AppElementApiService) GetSubElementContentBatchExecute(r ApiGetSubEleme
 		localVarReturnValue *BTAppElementContentInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.GetSubElementContentBatch")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.GetSubElementContentBatch")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2836,7 +2836,7 @@ func (a *AppElementApiService) GetSubElementContentBatchExecute(r ApiGetSubEleme
 
 type ApiGetSubelementIdsRequest struct {
 	ctx           context.Context
-	ApiService    *AppElementApiService
+	ApiService    *AppElementAPIService
 	did           string
 	eid           string
 	wvm           string
@@ -2869,7 +2869,7 @@ GetSubelementIds Get a list of all subelement IDs in a specified workspace/versi
 	@param wvmid
 	@return ApiGetSubelementIdsRequest
 */
-func (a *AppElementApiService) GetSubelementIds(ctx context.Context, did string, eid string, wvm string, wvmid string) ApiGetSubelementIdsRequest {
+func (a *AppElementAPIService) GetSubelementIds(ctx context.Context, did string, eid string, wvm string, wvmid string) ApiGetSubelementIdsRequest {
 	return ApiGetSubelementIdsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2883,7 +2883,7 @@ func (a *AppElementApiService) GetSubelementIds(ctx context.Context, did string,
 // Execute executes the request
 //
 //	@return BTAppElementIdsInfo
-func (a *AppElementApiService) GetSubelementIdsExecute(r ApiGetSubelementIdsRequest) (*BTAppElementIdsInfo, *http.Response, error) {
+func (a *AppElementAPIService) GetSubelementIdsExecute(r ApiGetSubelementIdsRequest) (*BTAppElementIdsInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2891,7 +2891,7 @@ func (a *AppElementApiService) GetSubelementIdsExecute(r ApiGetSubelementIdsRequ
 		localVarReturnValue *BTAppElementIdsInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.GetSubelementIds")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.GetSubelementIds")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2975,7 +2975,7 @@ func (a *AppElementApiService) GetSubelementIdsExecute(r ApiGetSubelementIdsRequ
 
 type ApiResolveAllElementReferencesRequest struct {
 	ctx             context.Context
-	ApiService      *AppElementApiService
+	ApiService      *AppElementAPIService
 	did             string
 	wvm             string
 	wvmid           string
@@ -3045,7 +3045,7 @@ Resolve all references for all workspace elements. For bulk operations  only. Us
 	@param wvmid The id of the workspace, version or document microversion in which the operation should be performed.
 	@return ApiResolveAllElementReferencesRequest
 */
-func (a *AppElementApiService) ResolveAllElementReferences(ctx context.Context, did string, wvm string, wvmid string) ApiResolveAllElementReferencesRequest {
+func (a *AppElementAPIService) ResolveAllElementReferences(ctx context.Context, did string, wvm string, wvmid string) ApiResolveAllElementReferencesRequest {
 	return ApiResolveAllElementReferencesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3058,7 +3058,7 @@ func (a *AppElementApiService) ResolveAllElementReferences(ctx context.Context, 
 // Execute executes the request
 //
 //	@return map[string]BTAppElementReferencesResolveInfo
-func (a *AppElementApiService) ResolveAllElementReferencesExecute(r ApiResolveAllElementReferencesRequest) (*map[string]BTAppElementReferencesResolveInfo, *http.Response, error) {
+func (a *AppElementAPIService) ResolveAllElementReferencesExecute(r ApiResolveAllElementReferencesRequest) (*map[string]BTAppElementReferencesResolveInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -3066,7 +3066,7 @@ func (a *AppElementApiService) ResolveAllElementReferencesExecute(r ApiResolveAl
 		localVarReturnValue *map[string]BTAppElementReferencesResolveInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.ResolveAllElementReferences")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.ResolveAllElementReferences")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3164,7 +3164,7 @@ func (a *AppElementApiService) ResolveAllElementReferencesExecute(r ApiResolveAl
 
 type ApiResolveReferenceRequest struct {
 	ctx             context.Context
-	ApiService      *AppElementApiService
+	ApiService      *AppElementAPIService
 	did             string
 	eid             string
 	wvm             string
@@ -3213,7 +3213,7 @@ For single operations only. Use `resolveReferences` for bulk operations.
 	@param rid
 	@return ApiResolveReferenceRequest
 */
-func (a *AppElementApiService) ResolveReference(ctx context.Context, did string, eid string, wvm string, wvmid string, rid string) ApiResolveReferenceRequest {
+func (a *AppElementAPIService) ResolveReference(ctx context.Context, did string, eid string, wvm string, wvmid string, rid string) ApiResolveReferenceRequest {
 	return ApiResolveReferenceRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3228,7 +3228,7 @@ func (a *AppElementApiService) ResolveReference(ctx context.Context, did string,
 // Execute executes the request
 //
 //	@return BTAppElementReferenceResolveInfo
-func (a *AppElementApiService) ResolveReferenceExecute(r ApiResolveReferenceRequest) (*BTAppElementReferenceResolveInfo, *http.Response, error) {
+func (a *AppElementAPIService) ResolveReferenceExecute(r ApiResolveReferenceRequest) (*BTAppElementReferenceResolveInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -3236,7 +3236,7 @@ func (a *AppElementApiService) ResolveReferenceExecute(r ApiResolveReferenceRequ
 		localVarReturnValue *BTAppElementReferenceResolveInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.ResolveReference")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.ResolveReference")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3327,7 +3327,7 @@ func (a *AppElementApiService) ResolveReferenceExecute(r ApiResolveReferenceRequ
 
 type ApiResolveReferencesRequest struct {
 	ctx             context.Context
-	ApiService      *AppElementApiService
+	ApiService      *AppElementAPIService
 	did             string
 	wvm             string
 	wvmid           string
@@ -3381,7 +3381,7 @@ For bulk operations only. Use `resolveReference` for a single operation.
 	@param eid The id of the element in which to perform the operation.
 	@return ApiResolveReferencesRequest
 */
-func (a *AppElementApiService) ResolveReferences(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiResolveReferencesRequest {
+func (a *AppElementAPIService) ResolveReferences(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiResolveReferencesRequest {
 	return ApiResolveReferencesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3395,7 +3395,7 @@ func (a *AppElementApiService) ResolveReferences(ctx context.Context, did string
 // Execute executes the request
 //
 //	@return BTAppElementReferencesResolveInfo
-func (a *AppElementApiService) ResolveReferencesExecute(r ApiResolveReferencesRequest) (*BTAppElementReferencesResolveInfo, *http.Response, error) {
+func (a *AppElementAPIService) ResolveReferencesExecute(r ApiResolveReferencesRequest) (*BTAppElementReferencesResolveInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -3403,7 +3403,7 @@ func (a *AppElementApiService) ResolveReferencesExecute(r ApiResolveReferencesRe
 		localVarReturnValue *BTAppElementReferencesResolveInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.ResolveReferences")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.ResolveReferences")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3496,7 +3496,7 @@ func (a *AppElementApiService) ResolveReferencesExecute(r ApiResolveReferencesRe
 
 type ApiStartTransactionRequest struct {
 	ctx                                context.Context
-	ApiService                         *AppElementApiService
+	ApiService                         *AppElementAPIService
 	did                                string
 	eid                                string
 	wid                                string
@@ -3523,7 +3523,7 @@ Creates a microbranch (i.e., a branch for a new microversion).
 	@param wid
 	@return ApiStartTransactionRequest
 */
-func (a *AppElementApiService) StartTransaction(ctx context.Context, did string, eid string, wid string) ApiStartTransactionRequest {
+func (a *AppElementAPIService) StartTransaction(ctx context.Context, did string, eid string, wid string) ApiStartTransactionRequest {
 	return ApiStartTransactionRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3536,7 +3536,7 @@ func (a *AppElementApiService) StartTransaction(ctx context.Context, did string,
 // Execute executes the request
 //
 //	@return BTAppElementModifyInfo
-func (a *AppElementApiService) StartTransactionExecute(r ApiStartTransactionRequest) (*BTAppElementModifyInfo, *http.Response, error) {
+func (a *AppElementAPIService) StartTransactionExecute(r ApiStartTransactionRequest) (*BTAppElementModifyInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -3544,7 +3544,7 @@ func (a *AppElementApiService) StartTransactionExecute(r ApiStartTransactionRequ
 		localVarReturnValue *BTAppElementModifyInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.StartTransaction")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.StartTransaction")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3626,7 +3626,7 @@ func (a *AppElementApiService) StartTransactionExecute(r ApiStartTransactionRequ
 
 type ApiUpdateAppElementRequest struct {
 	ctx                      context.Context
-	ApiService               *AppElementApiService
+	ApiService               *AppElementAPIService
 	did                      string
 	eid                      string
 	wvm                      string
@@ -3655,7 +3655,7 @@ See [API Guide: Structured Storage](https://onshape-public.github.io/docs/app-de
 	@param wvmid
 	@return ApiUpdateAppElementRequest
 */
-func (a *AppElementApiService) UpdateAppElement(ctx context.Context, did string, eid string, wvm string, wvmid string) ApiUpdateAppElementRequest {
+func (a *AppElementAPIService) UpdateAppElement(ctx context.Context, did string, eid string, wvm string, wvmid string) ApiUpdateAppElementRequest {
 	return ApiUpdateAppElementRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3669,7 +3669,7 @@ func (a *AppElementApiService) UpdateAppElement(ctx context.Context, did string,
 // Execute executes the request
 //
 //	@return BTAppElementModifyInfo
-func (a *AppElementApiService) UpdateAppElementExecute(r ApiUpdateAppElementRequest) (*BTAppElementModifyInfo, *http.Response, error) {
+func (a *AppElementAPIService) UpdateAppElementExecute(r ApiUpdateAppElementRequest) (*BTAppElementModifyInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -3677,7 +3677,7 @@ func (a *AppElementApiService) UpdateAppElementExecute(r ApiUpdateAppElementRequ
 		localVarReturnValue *BTAppElementModifyInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.UpdateAppElement")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.UpdateAppElement")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3757,7 +3757,7 @@ func (a *AppElementApiService) UpdateAppElementExecute(r ApiUpdateAppElementRequ
 
 type ApiUpdateReferenceRequest struct {
 	ctx                         context.Context
-	ApiService                  *AppElementApiService
+	ApiService                  *AppElementAPIService
 	did                         string
 	eid                         string
 	wvm                         string
@@ -3786,7 +3786,7 @@ UpdateReference Update an app element reference.
 	@param rid
 	@return ApiUpdateReferenceRequest
 */
-func (a *AppElementApiService) UpdateReference(ctx context.Context, did string, eid string, wvm string, wvmid string, rid string) ApiUpdateReferenceRequest {
+func (a *AppElementAPIService) UpdateReference(ctx context.Context, did string, eid string, wvm string, wvmid string, rid string) ApiUpdateReferenceRequest {
 	return ApiUpdateReferenceRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3801,7 +3801,7 @@ func (a *AppElementApiService) UpdateReference(ctx context.Context, did string, 
 // Execute executes the request
 //
 //	@return BTAppElementReferenceInfo
-func (a *AppElementApiService) UpdateReferenceExecute(r ApiUpdateReferenceRequest) (*BTAppElementReferenceInfo, *http.Response, error) {
+func (a *AppElementAPIService) UpdateReferenceExecute(r ApiUpdateReferenceRequest) (*BTAppElementReferenceInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -3809,7 +3809,7 @@ func (a *AppElementApiService) UpdateReferenceExecute(r ApiUpdateReferenceReques
 		localVarReturnValue *BTAppElementReferenceInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.UpdateReference")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.UpdateReference")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3893,26 +3893,16 @@ func (a *AppElementApiService) UpdateReferenceExecute(r ApiUpdateReferenceReques
 
 type ApiUploadBlobSubelementRequest struct {
 	ctx               context.Context
-	ApiService        *AppElementApiService
+	ApiService        *AppElementAPIService
 	did               string
 	wid               string
 	eid               string
 	bid               string
-	transactionId     *string
-	parentChangeId    *string
 	description       *string
 	file              *HttpFile
 	fileContentLength *int64
-}
-
-func (r ApiUploadBlobSubelementRequest) TransactionId(transactionId string) ApiUploadBlobSubelementRequest {
-	r.transactionId = &transactionId
-	return r
-}
-
-func (r ApiUploadBlobSubelementRequest) ParentChangeId(parentChangeId string) ApiUploadBlobSubelementRequest {
-	r.parentChangeId = &parentChangeId
-	return r
+	parentChangeId    *string
+	transactionId     *string
 }
 
 func (r ApiUploadBlobSubelementRequest) Description(description string) ApiUploadBlobSubelementRequest {
@@ -3928,6 +3918,16 @@ func (r ApiUploadBlobSubelementRequest) File(file HttpFile) ApiUploadBlobSubelem
 
 func (r ApiUploadBlobSubelementRequest) FileContentLength(fileContentLength int64) ApiUploadBlobSubelementRequest {
 	r.fileContentLength = &fileContentLength
+	return r
+}
+
+func (r ApiUploadBlobSubelementRequest) ParentChangeId(parentChangeId string) ApiUploadBlobSubelementRequest {
+	r.parentChangeId = &parentChangeId
+	return r
+}
+
+func (r ApiUploadBlobSubelementRequest) TransactionId(transactionId string) ApiUploadBlobSubelementRequest {
+	r.transactionId = &transactionId
 	return r
 }
 
@@ -3947,7 +3947,7 @@ Request body parameters are multipart fields, so you must use `"Content-Type":"m
 	@param bid
 	@return ApiUploadBlobSubelementRequest
 */
-func (a *AppElementApiService) UploadBlobSubelement(ctx context.Context, did string, wid string, eid string, bid string) ApiUploadBlobSubelementRequest {
+func (a *AppElementAPIService) UploadBlobSubelement(ctx context.Context, did string, wid string, eid string, bid string) ApiUploadBlobSubelementRequest {
 	return ApiUploadBlobSubelementRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3961,7 +3961,7 @@ func (a *AppElementApiService) UploadBlobSubelement(ctx context.Context, did str
 // Execute executes the request
 //
 //	@return BTAppElementModifyInfo
-func (a *AppElementApiService) UploadBlobSubelementExecute(r ApiUploadBlobSubelementRequest) (*BTAppElementModifyInfo, *http.Response, error) {
+func (a *AppElementAPIService) UploadBlobSubelementExecute(r ApiUploadBlobSubelementRequest) (*BTAppElementModifyInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -3969,7 +3969,7 @@ func (a *AppElementApiService) UploadBlobSubelementExecute(r ApiUploadBlobSubele
 		localVarReturnValue *BTAppElementModifyInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementApiService.UploadBlobSubelement")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AppElementAPIService.UploadBlobSubelement")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -4001,12 +4001,6 @@ func (a *AppElementApiService) UploadBlobSubelementExecute(r ApiUploadBlobSubele
 	if localVarHTTPHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
-	if r.transactionId != nil {
-		localVarFormParams.Add("transactionId", parameterToString(*r.transactionId, ""))
-	}
-	if r.parentChangeId != nil {
-		localVarFormParams.Add("parentChangeId", parameterToString(*r.parentChangeId, ""))
-	}
 	if r.description != nil {
 		localVarFormParams.Add("description", parameterToString(*r.description, ""))
 	}
@@ -4024,6 +4018,12 @@ func (a *AppElementApiService) UploadBlobSubelementExecute(r ApiUploadBlobSubele
 	}
 	if r.fileContentLength != nil {
 		localVarFormParams.Add("fileContentLength", parameterToString(*r.fileContentLength, ""))
+	}
+	if r.parentChangeId != nil {
+		localVarFormParams.Add("parentChangeId", parameterToString(*r.parentChangeId, ""))
+	}
+	if r.transactionId != nil {
+		localVarFormParams.Add("transactionId", parameterToString(*r.transactionId, ""))
 	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, formFiles)
 	if err != nil {

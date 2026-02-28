@@ -3,35 +3,35 @@
 ## Enum
 
 
-* `GBTWeldTypeNone` (value: `"NONE"`)
+* `None` (value: `"NONE"`)
 
-* `GBTWeldTypeSquareGroove` (value: `"SQUARE_GROOVE"`)
+* `SquareGroove` (value: `"SQUARE_GROOVE"`)
 
-* `GBTWeldTypeVGroove` (value: `"V_GROOVE"`)
+* `VGroove` (value: `"V_GROOVE"`)
 
-* `GBTWeldTypeUGroove` (value: `"U_GROOVE"`)
+* `UGroove` (value: `"U_GROOVE"`)
 
-* `GBTWeldTypeJGroove` (value: `"J_GROOVE"`)
+* `JGroove` (value: `"J_GROOVE"`)
 
-* `GBTWeldTypeBevelGroove` (value: `"BEVEL_GROOVE"`)
+* `BevelGroove` (value: `"BEVEL_GROOVE"`)
 
-* `GBTWeldTypeSingleBevelButtBroadRoot` (value: `"SINGLE_BEVEL_BUTT_BROAD_ROOT"`)
+* `SingleBevelButtBroadRoot` (value: `"SINGLE_BEVEL_BUTT_BROAD_ROOT"`)
 
-* `GBTWeldTypeVFlareGroove` (value: `"V_FLARE_GROOVE"`)
+* `VFlareGroove` (value: `"V_FLARE_GROOVE"`)
 
-* `GBTWeldTypeBevelFlareGroove` (value: `"BEVEL_FLARE_GROOVE"`)
+* `BevelFlareGroove` (value: `"BEVEL_FLARE_GROOVE"`)
 
-* `GBTWeldTypeBeadJoint` (value: `"BEAD_JOINT"`)
+* `BeadJoint` (value: `"BEAD_JOINT"`)
 
-* `GBTWeldTypeFilletJoint` (value: `"FILLET_JOINT"`)
+* `FilletJoint` (value: `"FILLET_JOINT"`)
 
-* `GBTWeldTypePlugOrSlotJoint` (value: `"PLUG_OR_SLOT_JOINT"`)
+* `PlugOrSlotJoint` (value: `"PLUG_OR_SLOT_JOINT"`)
 
-* `GBTWeldTypeSeamJoint` (value: `"SEAM_JOINT"`)
+* `SeamJoint` (value: `"SEAM_JOINT"`)
 
-* `GBTWeldTypeSpotJoint` (value: `"SPOT_JOINT"`)
+* `SpotJoint` (value: `"SPOT_JOINT"`)
 
-* `GBTWeldTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

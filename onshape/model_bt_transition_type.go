@@ -20,14 +20,14 @@ type BTTransitionType string
 
 // List of BTTransitionType
 const (
-	BTTransitionTypeDefault       BTTransitionType = "DEFAULT"
-	BTTransitionTypeSubmit        BTTransitionType = "SUBMIT"
-	BTTransitionTypeApprove       BTTransitionType = "APPROVE"
-	BTTransitionTypeApproveDirect BTTransitionType = "APPROVE_DIRECT"
-	BTTransitionTypeReject        BTTransitionType = "REJECT"
-	BTTransitionTypeDelete        BTTransitionType = "DELETE"
-	BTTransitionTypeComment       BTTransitionType = "COMMENT"
-	BTTransitionTypeReassignTask  BTTransitionType = "REASSIGN_TASK"
+	Default       BTTransitionType = "DEFAULT"
+	Submit        BTTransitionType = "SUBMIT"
+	Approve       BTTransitionType = "APPROVE"
+	ApproveDirect BTTransitionType = "APPROVE_DIRECT"
+	Reject        BTTransitionType = "REJECT"
+	Delete        BTTransitionType = "DELETE"
+	Comment       BTTransitionType = "COMMENT"
+	ReassignTask  BTTransitionType = "REASSIGN_TASK"
 )
 
 // All allowed values of BTTransitionType enum

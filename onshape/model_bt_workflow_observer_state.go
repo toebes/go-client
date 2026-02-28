@@ -20,10 +20,10 @@ type BTWorkflowObserverState string
 
 // List of BTWorkflowObserverState
 const (
-	BTWorkflowObserverStateNone       BTWorkflowObserverState = "NONE"
-	BTWorkflowObserverStateApproved   BTWorkflowObserverState = "APPROVED"
-	BTWorkflowObserverStateRejected   BTWorkflowObserverState = "REJECTED"
-	BTWorkflowObserverStateOverridden BTWorkflowObserverState = "OVERRIDDEN"
+	None       BTWorkflowObserverState = "NONE"
+	Approved   BTWorkflowObserverState = "APPROVED"
+	Rejected   BTWorkflowObserverState = "REJECTED"
+	Overridden BTWorkflowObserverState = "OVERRIDDEN"
 )
 
 // All allowed values of BTWorkflowObserverState enum

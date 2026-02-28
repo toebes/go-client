@@ -20,9 +20,9 @@ type BTESResultsFilter string
 
 // List of BTESResultsFilter
 const (
-	BTESResultsFilterAll          BTESResultsFilter = "ALL"
-	BTESResultsFilterLatest       BTESResultsFilter = "LATEST"
-	BTESResultsFilterLatestPerHit BTESResultsFilter = "LATEST_PER_HIT"
+	All          BTESResultsFilter = "ALL"
+	Latest       BTESResultsFilter = "LATEST"
+	LatestPerHit BTESResultsFilter = "LATEST_PER_HIT"
 )
 
 // All allowed values of BTESResultsFilter enum

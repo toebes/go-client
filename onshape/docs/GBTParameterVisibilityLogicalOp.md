@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `GBTParameterVisibilityLogicalOpNot` (value: `"NOT"`)
+* `Not` (value: `"NOT"`)
 
-* `GBTParameterVisibilityLogicalOpAnd` (value: `"AND"`)
+* `And` (value: `"AND"`)
 
-* `GBTParameterVisibilityLogicalOpOr` (value: `"OR"`)
+* `Or` (value: `"OR"`)
 
-* `GBTParameterVisibilityLogicalOpUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

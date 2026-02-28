@@ -20,20 +20,21 @@ type BTApiVersion string
 
 // List of BTApiVersion
 const (
-	BTApiVersionUndefined                                       BTApiVersion = "UNDEFINED"
-	BTApiVersionV1Start                                         BTApiVersion = "V1_START"
-	BTApiVersionV2SerializationUnification                      BTApiVersion = "V2_SERIALIZATION_UNIFICATION"
-	BTApiVersionV3NewBomFormat                                  BTApiVersion = "V3_NEW_BOM_FORMAT"
-	BTApiVersionV4TransactionsNoNew                             BTApiVersion = "V4_TRANSACTIONS_NO_NEW"
-	BTApiVersionV5BodyDetailsCompositeReference                 BTApiVersion = "V5_BODY_DETAILS_COMPOSITE_REFERENCE"
-	BTApiVersionV6JsonEditResponseBugfix                        BTApiVersion = "V6_JSON_EDIT_RESPONSE_BUGFIX"
-	BTApiVersionV7SketchEndpointIncludesSolveStatus             BTApiVersion = "V7_SKETCH_ENDPOINT_INCLUDES_SOLVE_STATUS"
-	BTApiVersionV8RestoreNoopNoNewMicroversion                  BTApiVersion = "V8_RESTORE_NOOP_NO_NEW_MICROVERSION"
-	BTApiVersionV9IncludeDeterministicIdsToQueryResponses       BTApiVersion = "V9_INCLUDE_DETERMINISTIC_IDS_TO_QUERY_RESPONSES"
-	BTApiVersionV10ValidateVisibiltyConditionsForPsConfigParams BTApiVersion = "V10_VALIDATE_VISIBILTY_CONDITIONS_FOR_PS_CONFIG_PARAMS"
-	BTApiVersionV11ExcludeZipContentsByDefault                  BTApiVersion = "V11_EXCLUDE_ZIP_CONTENTS_BY_DEFAULT"
-	BTApiVersionV12ValidateElementTypeForTranslations           BTApiVersion = "V12_VALIDATE_ELEMENT_TYPE_FOR_TRANSLATIONS"
-	BTApiVersionV13SourceTargetDocumentVersionsToMove           BTApiVersion = "V13_SOURCE_TARGET_DOCUMENT_VERSIONS_TO_MOVE"
+	Undefined                                       BTApiVersion = "UNDEFINED"
+	V1Start                                         BTApiVersion = "V1_START"
+	V2SerializationUnification                      BTApiVersion = "V2_SERIALIZATION_UNIFICATION"
+	V3NewBomFormat                                  BTApiVersion = "V3_NEW_BOM_FORMAT"
+	V4TransactionsNoNew                             BTApiVersion = "V4_TRANSACTIONS_NO_NEW"
+	V5BodyDetailsCompositeReference                 BTApiVersion = "V5_BODY_DETAILS_COMPOSITE_REFERENCE"
+	V6JsonEditResponseBugfix                        BTApiVersion = "V6_JSON_EDIT_RESPONSE_BUGFIX"
+	V7SketchEndpointIncludesSolveStatus             BTApiVersion = "V7_SKETCH_ENDPOINT_INCLUDES_SOLVE_STATUS"
+	V8RestoreNoopNoNewMicroversion                  BTApiVersion = "V8_RESTORE_NOOP_NO_NEW_MICROVERSION"
+	V9IncludeDeterministicIdsToQueryResponses       BTApiVersion = "V9_INCLUDE_DETERMINISTIC_IDS_TO_QUERY_RESPONSES"
+	V10ValidateVisibiltyConditionsForPsConfigParams BTApiVersion = "V10_VALIDATE_VISIBILTY_CONDITIONS_FOR_PS_CONFIG_PARAMS"
+	V11ExcludeZipContentsByDefault                  BTApiVersion = "V11_EXCLUDE_ZIP_CONTENTS_BY_DEFAULT"
+	V12ValidateElementTypeForTranslations           BTApiVersion = "V12_VALIDATE_ELEMENT_TYPE_FOR_TRANSLATIONS"
+	V13SourceTargetDocumentVersionsToMove           BTApiVersion = "V13_SOURCE_TARGET_DOCUMENT_VERSIONS_TO_MOVE"
+	V14FixReferenceType                             BTApiVersion = "V14_FIX_REFERENCE_TYPE"
 )
 
 // All allowed values of BTApiVersion enum
@@ -52,6 +53,7 @@ var AllowedBTApiVersionEnumValues = []BTApiVersion{
 	"V11_EXCLUDE_ZIP_CONTENTS_BY_DEFAULT",
 	"V12_VALIDATE_ELEMENT_TYPE_FOR_TRANSLATIONS",
 	"V13_SOURCE_TARGET_DOCUMENT_VERSIONS_TO_MOVE",
+	"V14_FIX_REFERENCE_TYPE",
 }
 
 func (v *BTApiVersion) UnmarshalJSON(src []byte) error {

@@ -20,13 +20,13 @@ type GBTComputeStatus string
 
 // List of GBTComputeStatus
 const (
-	GBTComputeStatusComputed     GBTComputeStatus = "COMPUTED"
-	GBTComputeStatusStale        GBTComputeStatus = "STALE"
-	GBTComputeStatusComputing    GBTComputeStatus = "COMPUTING"
-	GBTComputeStatusError        GBTComputeStatus = "ERROR"
-	GBTComputeStatusUnderdefined GBTComputeStatus = "UNDERDEFINED"
-	GBTComputeStatusPreparing    GBTComputeStatus = "PREPARING"
-	GBTComputeStatusUnknown      GBTComputeStatus = "UNKNOWN"
+	Computed     GBTComputeStatus = "COMPUTED"
+	Stale        GBTComputeStatus = "STALE"
+	Computing    GBTComputeStatus = "COMPUTING"
+	Error        GBTComputeStatus = "ERROR"
+	Underdefined GBTComputeStatus = "UNDERDEFINED"
+	Preparing    GBTComputeStatus = "PREPARING"
+	Unknown      GBTComputeStatus = "UNKNOWN"
 )
 
 // All allowed values of GBTComputeStatus enum

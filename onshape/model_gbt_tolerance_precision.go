@@ -20,15 +20,15 @@ type GBTTolerancePrecision string
 
 // List of GBTTolerancePrecision
 const (
-	GBTTolerancePrecisionDefault            GBTTolerancePrecision = "DEFAULT"
-	GBTTolerancePrecisionOnes               GBTTolerancePrecision = "ONES"
-	GBTTolerancePrecisionTenths             GBTTolerancePrecision = "TENTHS"
-	GBTTolerancePrecisionHundredths         GBTTolerancePrecision = "HUNDREDTHS"
-	GBTTolerancePrecisionThousandths        GBTTolerancePrecision = "THOUSANDTHS"
-	GBTTolerancePrecisionTenThousandths     GBTTolerancePrecision = "TEN_THOUSANDTHS"
-	GBTTolerancePrecisionHundredThousandths GBTTolerancePrecision = "HUNDRED_THOUSANDTHS"
-	GBTTolerancePrecisionMillionths         GBTTolerancePrecision = "MILLIONTHS"
-	GBTTolerancePrecisionUnknown            GBTTolerancePrecision = "UNKNOWN"
+	Default            GBTTolerancePrecision = "DEFAULT"
+	Ones               GBTTolerancePrecision = "ONES"
+	Tenths             GBTTolerancePrecision = "TENTHS"
+	Hundredths         GBTTolerancePrecision = "HUNDREDTHS"
+	Thousandths        GBTTolerancePrecision = "THOUSANDTHS"
+	TenThousandths     GBTTolerancePrecision = "TEN_THOUSANDTHS"
+	HundredThousandths GBTTolerancePrecision = "HUNDRED_THOUSANDTHS"
+	Millionths         GBTTolerancePrecision = "MILLIONTHS"
+	Unknown            GBTTolerancePrecision = "UNKNOWN"
 )
 
 // All allowed values of GBTTolerancePrecision enum

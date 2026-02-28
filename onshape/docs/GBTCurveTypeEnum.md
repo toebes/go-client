@@ -3,19 +3,19 @@
 ## Enum
 
 
-* `GBTCurveTypeEnumOther` (value: `"OTHER"`)
+* `Other` (value: `"OTHER"`)
 
-* `GBTCurveTypeEnumLine` (value: `"LINE"`)
+* `Line` (value: `"LINE"`)
 
-* `GBTCurveTypeEnumCircle` (value: `"CIRCLE"`)
+* `Circle` (value: `"CIRCLE"`)
 
-* `GBTCurveTypeEnumEllipse` (value: `"ELLIPSE"`)
+* `Ellipse` (value: `"ELLIPSE"`)
 
-* `GBTCurveTypeEnumBcurve` (value: `"BCURVE"`)
+* `Bcurve` (value: `"BCURVE"`)
 
-* `GBTCurveTypeEnumIcurve` (value: `"ICURVE"`)
+* `Icurve` (value: `"ICURVE"`)
 
-* `GBTCurveTypeEnumUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `GBTConfigurationParameterTypeEnum` (value: `"ENUM"`)
+* `Enum` (value: `"ENUM"`)
 
-* `GBTConfigurationParameterTypeBoolean` (value: `"BOOLEAN"`)
+* `Boolean` (value: `"BOOLEAN"`)
 
-* `GBTConfigurationParameterTypeString` (value: `"STRING"`)
+* `String` (value: `"STRING"`)
 
-* `GBTConfigurationParameterTypeQuantity` (value: `"QUANTITY"`)
+* `Quantity` (value: `"QUANTITY"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

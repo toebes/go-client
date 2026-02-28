@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `GBTFieldWeldFlagNone` (value: `"NONE"`)
+* `None` (value: `"NONE"`)
 
-* `GBTFieldWeldFlagUpper` (value: `"UPPER"`)
+* `Upper` (value: `"UPPER"`)
 
-* `GBTFieldWeldFlagLower` (value: `"LOWER"`)
+* `Lower` (value: `"LOWER"`)
 
-* `GBTFieldWeldFlagUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

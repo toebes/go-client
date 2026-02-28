@@ -20,11 +20,11 @@ type GBTConfiguredParentType string
 
 // List of GBTConfiguredParentType
 const (
-	GBTConfiguredParentTypeFeature       GBTConfiguredParentType = "FEATURE"
-	GBTConfiguredParentTypeInstance      GBTConfiguredParentType = "INSTANCE"
-	GBTConfiguredParentTypeMate          GBTConfiguredParentType = "MATE"
-	GBTConfiguredParentTypeMateConnector GBTConfiguredParentType = "MATE_CONNECTOR"
-	GBTConfiguredParentTypeUnknown       GBTConfiguredParentType = "UNKNOWN"
+	Feature       GBTConfiguredParentType = "FEATURE"
+	Instance      GBTConfiguredParentType = "INSTANCE"
+	Mate          GBTConfiguredParentType = "MATE"
+	MateConnector GBTConfiguredParentType = "MATE_CONNECTOR"
+	Unknown       GBTConfiguredParentType = "UNKNOWN"
 )
 
 // All allowed values of GBTConfiguredParentType enum

@@ -20,10 +20,10 @@ type BTWorkflowObserverEntryType string
 
 // List of BTWorkflowObserverEntryType
 const (
-	BTWorkflowObserverEntryTypeUser  BTWorkflowObserverEntryType = "USER"
-	BTWorkflowObserverEntryTypeTeam  BTWorkflowObserverEntryType = "TEAM"
-	BTWorkflowObserverEntryTypeRole  BTWorkflowObserverEntryType = "ROLE"
-	BTWorkflowObserverEntryTypeAlias BTWorkflowObserverEntryType = "ALIAS"
+	User  BTWorkflowObserverEntryType = "USER"
+	Team  BTWorkflowObserverEntryType = "TEAM"
+	Role  BTWorkflowObserverEntryType = "ROLE"
+	Alias BTWorkflowObserverEntryType = "ALIAS"
 )
 
 // All allowed values of BTWorkflowObserverEntryType enum

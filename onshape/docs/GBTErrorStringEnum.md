@@ -3,3457 +3,3475 @@
 ## Enum
 
 
-* `GBTErrorStringEnumNoError` (value: `"NO_ERROR"`)
+* `NoError` (value: `"NO_ERROR"`)
 
-* `GBTErrorStringEnumUnknownOperation` (value: `"UNKNOWN_OPERATION"`)
+* `UnknownOperation` (value: `"UNKNOWN_OPERATION"`)
 
-* `GBTErrorStringEnumTooManyEntitiesSelected` (value: `"TOO_MANY_ENTITIES_SELECTED"`)
+* `TooManyEntitiesSelected` (value: `"TOO_MANY_ENTITIES_SELECTED"`)
 
-* `GBTErrorStringEnumPointsCoincident` (value: `"POINTS_COINCIDENT"`)
+* `PointsCoincident` (value: `"POINTS_COINCIDENT"`)
 
-* `GBTErrorStringEnumNoTranslationDirection` (value: `"NO_TRANSLATION_DIRECTION"`)
+* `NoTranslationDirection` (value: `"NO_TRANSLATION_DIRECTION"`)
 
-* `GBTErrorStringEnumNoRotationAxis` (value: `"NO_ROTATION_AXIS"`)
+* `NoRotationAxis` (value: `"NO_ROTATION_AXIS"`)
 
-* `GBTErrorStringEnumNoTangentPlane` (value: `"NO_TANGENT_PLANE"`)
+* `NoTangentPlane` (value: `"NO_TANGENT_PLANE"`)
 
-* `GBTErrorStringEnumNoTangentLine` (value: `"NO_TANGENT_LINE"`)
+* `NoTangentLine` (value: `"NO_TANGENT_LINE"`)
 
-* `GBTErrorStringEnumInvalidInput` (value: `"INVALID_INPUT"`)
+* `InvalidInput` (value: `"INVALID_INPUT"`)
 
-* `GBTErrorStringEnumCannotResolveEntities` (value: `"CANNOT_RESOLVE_ENTITIES"`)
+* `CannotResolveEntities` (value: `"CANNOT_RESOLVE_ENTITIES"`)
 
-* `GBTErrorStringEnumCannotEvaluateVertex` (value: `"CANNOT_EVALUATE_VERTEX"`)
+* `CannotEvaluateVertex` (value: `"CANNOT_EVALUATE_VERTEX"`)
 
-* `GBTErrorStringEnumCannotResolvePlane` (value: `"CANNOT_RESOLVE_PLANE"`)
+* `CannotResolvePlane` (value: `"CANNOT_RESOLVE_PLANE"`)
 
-* `GBTErrorStringEnumCannotComputeBbox` (value: `"CANNOT_COMPUTE_BBOX"`)
+* `CannotComputeBbox` (value: `"CANNOT_COMPUTE_BBOX"`)
 
-* `GBTErrorStringEnumCannotBeEmpty` (value: `"CANNOT_BE_EMPTY"`)
+* `CannotBeEmpty` (value: `"CANNOT_BE_EMPTY"`)
 
-* `GBTErrorStringEnumCacheWriteFailed` (value: `"CACHE_WRITE_FAILED"`)
+* `CacheWriteFailed` (value: `"CACHE_WRITE_FAILED"`)
 
-* `GBTErrorStringEnumCacheReadFailed` (value: `"CACHE_READ_FAILED"`)
+* `CacheReadFailed` (value: `"CACHE_READ_FAILED"`)
 
-* `GBTErrorStringEnumHlrFailed` (value: `"HLR_FAILED"`)
+* `HlrFailed` (value: `"HLR_FAILED"`)
 
-* `GBTErrorStringEnumBadGeometry` (value: `"BAD_GEOMETRY"`)
+* `BadGeometry` (value: `"BAD_GEOMETRY"`)
 
-* `GBTErrorStringEnumInvalidResult` (value: `"INVALID_RESULT"`)
+* `InvalidResult` (value: `"INVALID_RESULT"`)
 
-* `GBTErrorStringEnumMissingExtRef` (value: `"MISSING_EXT_REF"`)
+* `MissingExtRef` (value: `"MISSING_EXT_REF"`)
 
-* `GBTErrorStringEnumReadFailed` (value: `"READ_FAILED"`)
+* `ReadFailed` (value: `"READ_FAILED"`)
 
-* `GBTErrorStringEnumWriteFailed` (value: `"WRITE_FAILED"`)
+* `WriteFailed` (value: `"WRITE_FAILED"`)
 
-* `GBTErrorStringEnumWrongType` (value: `"WRONG_TYPE"`)
+* `WrongType` (value: `"WRONG_TYPE"`)
 
-* `GBTErrorStringEnumTangentPropagationFailed` (value: `"TANGENT_PROPAGATION_FAILED"`)
+* `TangentPropagationFailed` (value: `"TANGENT_PROPAGATION_FAILED"`)
 
-* `GBTErrorStringEnumRegenError` (value: `"REGEN_ERROR"`)
+* `RegenError` (value: `"REGEN_ERROR"`)
 
-* `GBTErrorStringEnumCouldNotComputeTransform` (value: `"COULD_NOT_COMPUTE_TRANSFORM"`)
+* `CouldNotComputeTransform` (value: `"COULD_NOT_COMPUTE_TRANSFORM"`)
 
-* `GBTErrorStringEnumMateInvalidMate` (value: `"MATE_INVALID_MATE"`)
+* `MateInvalidMate` (value: `"MATE_INVALID_MATE"`)
 
-* `GBTErrorStringEnumMateconnectorInvalidMate` (value: `"MATECONNECTOR_INVALID_MATE"`)
+* `MateconnectorInvalidMate` (value: `"MATECONNECTOR_INVALID_MATE"`)
 
-* `GBTErrorStringEnumMateTwoMateconnectorsNeeded` (value: `"MATE_TWO_MATECONNECTORS_NEEDED"`)
+* `MateTwoMateconnectorsNeeded` (value: `"MATE_TWO_MATECONNECTORS_NEEDED"`)
 
-* `GBTErrorStringEnumMateconnectorsOnSameOccurrence` (value: `"MATECONNECTORS_ON_SAME_OCCURRENCE"`)
+* `MateconnectorsOnSameOccurrence` (value: `"MATECONNECTORS_ON_SAME_OCCURRENCE"`)
 
-* `GBTErrorStringEnumMateOverdefined` (value: `"MATE_OVERDEFINED"`)
+* `MateOverdefined` (value: `"MATE_OVERDEFINED"`)
 
-* `GBTErrorStringEnumMateInconsistent` (value: `"MATE_INCONSISTENT"`)
+* `MateInconsistent` (value: `"MATE_INCONSISTENT"`)
 
-* `GBTErrorStringEnumBooleanNeedOneSolid` (value: `"BOOLEAN_NEED_ONE_SOLID"`)
+* `BooleanNeedOneSolid` (value: `"BOOLEAN_NEED_ONE_SOLID"`)
 
-* `GBTErrorStringEnumBooleanInvalid` (value: `"BOOLEAN_INVALID"`)
+* `BooleanInvalid` (value: `"BOOLEAN_INVALID"`)
 
-* `GBTErrorStringEnumBooleanIntersectFail` (value: `"BOOLEAN_INTERSECT_FAIL"`)
+* `BooleanIntersectFail` (value: `"BOOLEAN_INTERSECT_FAIL"`)
 
-* `GBTErrorStringEnumBooleanSameInput` (value: `"BOOLEAN_SAME_INPUT"`)
+* `BooleanSameInput` (value: `"BOOLEAN_SAME_INPUT"`)
 
-* `GBTErrorStringEnumBooleanBadInput` (value: `"BOOLEAN_BAD_INPUT"`)
+* `BooleanBadInput` (value: `"BOOLEAN_BAD_INPUT"`)
 
-* `GBTErrorStringEnumBooleanUnionNoOp` (value: `"BOOLEAN_UNION_NO_OP"`)
+* `BooleanUnionNoOp` (value: `"BOOLEAN_UNION_NO_OP"`)
 
-* `GBTErrorStringEnumBooleanIntersectNoOp` (value: `"BOOLEAN_INTERSECT_NO_OP"`)
+* `BooleanIntersectNoOp` (value: `"BOOLEAN_INTERSECT_NO_OP"`)
 
-* `GBTErrorStringEnumBooleanSubtractNoOp` (value: `"BOOLEAN_SUBTRACT_NO_OP"`)
+* `BooleanSubtractNoOp` (value: `"BOOLEAN_SUBTRACT_NO_OP"`)
 
-* `GBTErrorStringEnumCplaneInputMidplane` (value: `"CPLANE_INPUT_MIDPLANE"`)
+* `CplaneInputMidplane` (value: `"CPLANE_INPUT_MIDPLANE"`)
 
-* `GBTErrorStringEnumCplaneInputOffsetPlane` (value: `"CPLANE_INPUT_OFFSET_PLANE"`)
+* `CplaneInputOffsetPlane` (value: `"CPLANE_INPUT_OFFSET_PLANE"`)
 
-* `GBTErrorStringEnumCplaneInputPointPlane` (value: `"CPLANE_INPUT_POINT_PLANE"`)
+* `CplaneInputPointPlane` (value: `"CPLANE_INPUT_POINT_PLANE"`)
 
-* `GBTErrorStringEnumCplaneInputLineAngle` (value: `"CPLANE_INPUT_LINE_ANGLE"`)
+* `CplaneInputLineAngle` (value: `"CPLANE_INPUT_LINE_ANGLE"`)
 
-* `GBTErrorStringEnumCplaneInputPointLine` (value: `"CPLANE_INPUT_POINT_LINE"`)
+* `CplaneInputPointLine` (value: `"CPLANE_INPUT_POINT_LINE"`)
 
-* `GBTErrorStringEnumCplaneInputThreePoint` (value: `"CPLANE_INPUT_THREE_POINT"`)
+* `CplaneInputThreePoint` (value: `"CPLANE_INPUT_THREE_POINT"`)
 
-* `GBTErrorStringEnumCplaneFailed` (value: `"CPLANE_FAILED"`)
+* `CplaneFailed` (value: `"CPLANE_FAILED"`)
 
-* `GBTErrorStringEnumDraftNoNeutralPlane` (value: `"DRAFT_NO_NEUTRAL_PLANE"`)
+* `DraftNoNeutralPlane` (value: `"DRAFT_NO_NEUTRAL_PLANE"`)
 
-* `GBTErrorStringEnumDraftNoDraftFace` (value: `"DRAFT_NO_DRAFT_FACE"`)
+* `DraftNoDraftFace` (value: `"DRAFT_NO_DRAFT_FACE"`)
 
-* `GBTErrorStringEnumDraftFailed` (value: `"DRAFT_FAILED"`)
+* `DraftFailed` (value: `"DRAFT_FAILED"`)
 
-* `GBTErrorStringEnumExtrudeInvalidRefFace` (value: `"EXTRUDE_INVALID_REF_FACE"`)
+* `ExtrudeInvalidRefFace` (value: `"EXTRUDE_INVALID_REF_FACE"`)
 
-* `GBTErrorStringEnumExtrudeInvalidRefSurface` (value: `"EXTRUDE_INVALID_REF_SURFACE"`)
+* `ExtrudeInvalidRefSurface` (value: `"EXTRUDE_INVALID_REF_SURFACE"`)
 
-* `GBTErrorStringEnumExtrudeFailed` (value: `"EXTRUDE_FAILED"`)
+* `ExtrudeFailed` (value: `"EXTRUDE_FAILED"`)
 
-* `GBTErrorStringEnumExtrudeNoDirection` (value: `"EXTRUDE_NO_DIRECTION"`)
+* `ExtrudeNoDirection` (value: `"EXTRUDE_NO_DIRECTION"`)
 
-* `GBTErrorStringEnumExtrudeInvalidEntities` (value: `"EXTRUDE_INVALID_ENTITIES"`)
+* `ExtrudeInvalidEntities` (value: `"EXTRUDE_INVALID_ENTITIES"`)
 
-* `GBTErrorStringEnumPatternInputTooManyInstances` (value: `"PATTERN_INPUT_TOO_MANY_INSTANCES"`)
+* `PatternInputTooManyInstances` (value: `"PATTERN_INPUT_TOO_MANY_INSTANCES"`)
 
-* `GBTErrorStringEnumPatternInputTooFewInstances` (value: `"PATTERN_INPUT_TOO_FEW_INSTANCES"`)
+* `PatternInputTooFewInstances` (value: `"PATTERN_INPUT_TOO_FEW_INSTANCES"`)
 
-* `GBTErrorStringEnumPatternFaceFailed` (value: `"PATTERN_FACE_FAILED"`)
+* `PatternFaceFailed` (value: `"PATTERN_FACE_FAILED"`)
 
-* `GBTErrorStringEnumPatternNotOnBody` (value: `"PATTERN_NOT_ON_BODY"`)
+* `PatternNotOnBody` (value: `"PATTERN_NOT_ON_BODY"`)
 
-* `GBTErrorStringEnumPatternBodyFailed` (value: `"PATTERN_BODY_FAILED"`)
+* `PatternBodyFailed` (value: `"PATTERN_BODY_FAILED"`)
 
-* `GBTErrorStringEnumTransformTranslateInput` (value: `"TRANSFORM_TRANSLATE_INPUT"`)
+* `TransformTranslateInput` (value: `"TRANSFORM_TRANSLATE_INPUT"`)
 
-* `GBTErrorStringEnumTransformTranslateByDistanceInput` (value: `"TRANSFORM_TRANSLATE_BY_DISTANCE_INPUT"`)
+* `TransformTranslateByDistanceInput` (value: `"TRANSFORM_TRANSLATE_BY_DISTANCE_INPUT"`)
 
-* `GBTErrorStringEnumTransformFailed` (value: `"TRANSFORM_FAILED"`)
+* `TransformFailed` (value: `"TRANSFORM_FAILED"`)
 
-* `GBTErrorStringEnumShellFailed` (value: `"SHELL_FAILED"`)
+* `ShellFailed` (value: `"SHELL_FAILED"`)
 
-* `GBTErrorStringEnumEdgeblendSmooth` (value: `"EDGEBLEND_SMOOTH"`)
+* `EdgeblendSmooth` (value: `"EDGEBLEND_SMOOTH"`)
 
-* `GBTErrorStringEnumEdgeblendFailed` (value: `"EDGEBLEND_FAILED"`)
+* `EdgeblendFailed` (value: `"EDGEBLEND_FAILED"`)
 
-* `GBTErrorStringEnumDirectEditWrongConcentric` (value: `"DIRECT_EDIT_WRONG_CONCENTRIC"`)
+* `DirectEditWrongConcentric` (value: `"DIRECT_EDIT_WRONG_CONCENTRIC"`)
 
-* `GBTErrorStringEnumDirectEditWrongEqRadius` (value: `"DIRECT_EDIT_WRONG_EQ_RADIUS"`)
+* `DirectEditWrongEqRadius` (value: `"DIRECT_EDIT_WRONG_EQ_RADIUS"`)
 
-* `GBTErrorStringEnumDirectEditNoFilletFaces` (value: `"DIRECT_EDIT_NO_FILLET_FACES"`)
+* `DirectEditNoFilletFaces` (value: `"DIRECT_EDIT_NO_FILLET_FACES"`)
 
-* `GBTErrorStringEnumDirectEditNoOffset` (value: `"DIRECT_EDIT_NO_OFFSET"`)
+* `DirectEditNoOffset` (value: `"DIRECT_EDIT_NO_OFFSET"`)
 
-* `GBTErrorStringEnumDirectEditConstrainFaceFailed` (value: `"DIRECT_EDIT_CONSTRAIN_FACE_FAILED"`)
+* `DirectEditConstrainFaceFailed` (value: `"DIRECT_EDIT_CONSTRAIN_FACE_FAILED"`)
 
-* `GBTErrorStringEnumDirectEditReplaceFaceFailed` (value: `"DIRECT_EDIT_REPLACE_FACE_FAILED"`)
+* `DirectEditReplaceFaceFailed` (value: `"DIRECT_EDIT_REPLACE_FACE_FAILED"`)
 
-* `GBTErrorStringEnumDirectEditDeleteFaceFailed` (value: `"DIRECT_EDIT_DELETE_FACE_FAILED"`)
+* `DirectEditDeleteFaceFailed` (value: `"DIRECT_EDIT_DELETE_FACE_FAILED"`)
 
-* `GBTErrorStringEnumDirectEditModifyFilletFailed` (value: `"DIRECT_EDIT_MODIFY_FILLET_FAILED"`)
+* `DirectEditModifyFilletFailed` (value: `"DIRECT_EDIT_MODIFY_FILLET_FAILED"`)
 
-* `GBTErrorStringEnumDirectEditModifyFaceFailed` (value: `"DIRECT_EDIT_MODIFY_FACE_FAILED"`)
+* `DirectEditModifyFaceFailed` (value: `"DIRECT_EDIT_MODIFY_FACE_FAILED"`)
 
-* `GBTErrorStringEnumDirectEditMoveFaceFailed` (value: `"DIRECT_EDIT_MOVE_FACE_FAILED"`)
+* `DirectEditMoveFaceFailed` (value: `"DIRECT_EDIT_MOVE_FACE_FAILED"`)
 
-* `GBTErrorStringEnumDirectEditOffsetFaceFailed` (value: `"DIRECT_EDIT_OFFSET_FACE_FAILED"`)
+* `DirectEditOffsetFaceFailed` (value: `"DIRECT_EDIT_OFFSET_FACE_FAILED"`)
 
-* `GBTErrorStringEnumImportPartFailed` (value: `"IMPORT_PART_FAILED"`)
+* `ImportPartFailed` (value: `"IMPORT_PART_FAILED"`)
 
-* `GBTErrorStringEnumImportAssemblyFailed` (value: `"IMPORT_ASSEMBLY_FAILED"`)
+* `ImportAssemblyFailed` (value: `"IMPORT_ASSEMBLY_FAILED"`)
 
-* `GBTErrorStringEnumImprintFailed` (value: `"IMPRINT_FAILED"`)
+* `ImprintFailed` (value: `"IMPRINT_FAILED"`)
 
-* `GBTErrorStringEnumRevolveFailed` (value: `"REVOLVE_FAILED"`)
+* `RevolveFailed` (value: `"REVOLVE_FAILED"`)
 
-* `GBTErrorStringEnumRevolve2NdDirFailed` (value: `"REVOLVE_2ND_DIR_FAILED"`)
+* `Revolve2NdDirFailed` (value: `"REVOLVE_2ND_DIR_FAILED"`)
 
-* `GBTErrorStringEnumRevolveNotPlanar` (value: `"REVOLVE_NOT_PLANAR"`)
+* `RevolveNotPlanar` (value: `"REVOLVE_NOT_PLANAR"`)
 
-* `GBTErrorStringEnumRevolvePerpendicular` (value: `"REVOLVE_PERPENDICULAR"`)
+* `RevolvePerpendicular` (value: `"REVOLVE_PERPENDICULAR"`)
 
-* `GBTErrorStringEnumRevolveInvalidEntities` (value: `"REVOLVE_INVALID_ENTITIES"`)
+* `RevolveInvalidEntities` (value: `"REVOLVE_INVALID_ENTITIES"`)
 
-* `GBTErrorStringEnumSplitFailed` (value: `"SPLIT_FAILED"`)
+* `SplitFailed` (value: `"SPLIT_FAILED"`)
 
-* `GBTErrorStringEnumSplitInvalidInput` (value: `"SPLIT_INVALID_INPUT"`)
+* `SplitInvalidInput` (value: `"SPLIT_INVALID_INPUT"`)
 
-* `GBTErrorStringEnumSweepInvalidPath` (value: `"SWEEP_INVALID_PATH"`)
+* `SweepInvalidPath` (value: `"SWEEP_INVALID_PATH"`)
 
-* `GBTErrorStringEnumSweepFailed` (value: `"SWEEP_FAILED"`)
+* `SweepFailed` (value: `"SWEEP_FAILED"`)
 
-* `GBTErrorStringEnumSweepPathFailed` (value: `"SWEEP_PATH_FAILED"`)
+* `SweepPathFailed` (value: `"SWEEP_PATH_FAILED"`)
 
-* `GBTErrorStringEnumSweepProfileFailed` (value: `"SWEEP_PROFILE_FAILED"`)
+* `SweepProfileFailed` (value: `"SWEEP_PROFILE_FAILED"`)
 
-* `GBTErrorStringEnumWireCreationFailed` (value: `"WIRE_CREATION_FAILED"`)
+* `WireCreationFailed` (value: `"WIRE_CREATION_FAILED"`)
 
-* `GBTErrorStringEnumSketchNoPlane` (value: `"SKETCH_NO_PLANE"`)
+* `SketchNoPlane` (value: `"SKETCH_NO_PLANE"`)
 
-* `GBTErrorStringEnumSketchInputInvalid` (value: `"SKETCH_INPUT_INVALID"`)
+* `SketchInputInvalid` (value: `"SKETCH_INPUT_INVALID"`)
 
-* `GBTErrorStringEnumSketchNotActive` (value: `"SKETCH_NOT_ACTIVE"`)
+* `SketchNotActive` (value: `"SKETCH_NOT_ACTIVE"`)
 
-* `GBTErrorStringEnumSketchSolverNotInitialized` (value: `"SKETCH_SOLVER_NOT_INITIALIZED"`)
+* `SketchSolverNotInitialized` (value: `"SKETCH_SOLVER_NOT_INITIALIZED"`)
 
-* `GBTErrorStringEnumSketchEvaluationFailed` (value: `"SKETCH_EVALUATION_FAILED"`)
+* `SketchEvaluationFailed` (value: `"SKETCH_EVALUATION_FAILED"`)
 
-* `GBTErrorStringEnumSketchModificationFailed` (value: `"SKETCH_MODIFICATION_FAILED"`)
+* `SketchModificationFailed` (value: `"SKETCH_MODIFICATION_FAILED"`)
 
-* `GBTErrorStringEnumSketchUpdateFailed` (value: `"SKETCH_UPDATE_FAILED"`)
+* `SketchUpdateFailed` (value: `"SKETCH_UPDATE_FAILED"`)
 
-* `GBTErrorStringEnumSketchSolveFailed` (value: `"SKETCH_SOLVE_FAILED"`)
+* `SketchSolveFailed` (value: `"SKETCH_SOLVE_FAILED"`)
 
-* `GBTErrorStringEnumSketchAddConstraintFailed` (value: `"SKETCH_ADD_CONSTRAINT_FAILED"`)
+* `SketchAddConstraintFailed` (value: `"SKETCH_ADD_CONSTRAINT_FAILED"`)
 
-* `GBTErrorStringEnumSketchAddDimensionFailed` (value: `"SKETCH_ADD_DIMENSION_FAILED"`)
+* `SketchAddDimensionFailed` (value: `"SKETCH_ADD_DIMENSION_FAILED"`)
 
-* `GBTErrorStringEnumSketchPositionDimensionFailed` (value: `"SKETCH_POSITION_DIMENSION_FAILED"`)
+* `SketchPositionDimensionFailed` (value: `"SKETCH_POSITION_DIMENSION_FAILED"`)
 
-* `GBTErrorStringEnumSketchConstraintNeedsSketchEntity` (value: `"SKETCH_CONSTRAINT_NEEDS_SKETCH_ENTITY"`)
+* `SketchConstraintNeedsSketchEntity` (value: `"SKETCH_CONSTRAINT_NEEDS_SKETCH_ENTITY"`)
 
-* `GBTErrorStringEnumSketchConstraintUnknown` (value: `"SKETCH_CONSTRAINT_UNKNOWN"`)
+* `SketchConstraintUnknown` (value: `"SKETCH_CONSTRAINT_UNKNOWN"`)
 
-* `GBTErrorStringEnumSketchMissingEntity` (value: `"SKETCH_MISSING_ENTITY"`)
+* `SketchMissingEntity` (value: `"SKETCH_MISSING_ENTITY"`)
 
-* `GBTErrorStringEnumSketchFilletInvalidPoint` (value: `"SKETCH_FILLET_INVALID_POINT"`)
+* `SketchFilletInvalidPoint` (value: `"SKETCH_FILLET_INVALID_POINT"`)
 
-* `GBTErrorStringEnumSketchFilletParallel` (value: `"SKETCH_FILLET_PARALLEL"`)
+* `SketchFilletParallel` (value: `"SKETCH_FILLET_PARALLEL"`)
 
-* `GBTErrorStringEnumSketchFilletFail` (value: `"SKETCH_FILLET_FAIL"`)
+* `SketchFilletFail` (value: `"SKETCH_FILLET_FAIL"`)
 
-* `GBTErrorStringEnumSketchUseFailed` (value: `"SKETCH_USE_FAILED"`)
+* `SketchUseFailed` (value: `"SKETCH_USE_FAILED"`)
 
-* `GBTErrorStringEnumSketchUsePartial` (value: `"SKETCH_USE_PARTIAL"`)
+* `SketchUsePartial` (value: `"SKETCH_USE_PARTIAL"`)
 
-* `GBTErrorStringEnumSketchSplineFailed` (value: `"SKETCH_SPLINE_FAILED"`)
+* `SketchSplineFailed` (value: `"SKETCH_SPLINE_FAILED"`)
 
-* `GBTErrorStringEnumSketchBadSpline` (value: `"SKETCH_BAD_SPLINE"`)
+* `SketchBadSpline` (value: `"SKETCH_BAD_SPLINE"`)
 
-* `GBTErrorStringEnumSketchDragError` (value: `"SKETCH_DRAG_ERROR"`)
+* `SketchDragError` (value: `"SKETCH_DRAG_ERROR"`)
 
-* `GBTErrorStringEnumSketchProjFailed` (value: `"SKETCH_PROJ_FAILED"`)
+* `SketchProjFailed` (value: `"SKETCH_PROJ_FAILED"`)
 
-* `GBTErrorStringEnumSketchProjPartial` (value: `"SKETCH_PROJ_PARTIAL"`)
+* `SketchProjPartial` (value: `"SKETCH_PROJ_PARTIAL"`)
 
-* `GBTErrorStringEnumSketchTangentArcFailed` (value: `"SKETCH_TANGENT_ARC_FAILED"`)
+* `SketchTangentArcFailed` (value: `"SKETCH_TANGENT_ARC_FAILED"`)
 
-* `GBTErrorStringEnumSketchTangentNotFound` (value: `"SKETCH_TANGENT_NOT_FOUND"`)
+* `SketchTangentNotFound` (value: `"SKETCH_TANGENT_NOT_FOUND"`)
 
-* `GBTErrorStringEnumSketchOffsetFailed` (value: `"SKETCH_OFFSET_FAILED"`)
+* `SketchOffsetFailed` (value: `"SKETCH_OFFSET_FAILED"`)
 
-* `GBTErrorStringEnumSketchOffsetDistance` (value: `"SKETCH_OFFSET_DISTANCE"`)
+* `SketchOffsetDistance` (value: `"SKETCH_OFFSET_DISTANCE"`)
 
-* `GBTErrorStringEnumSketchTrimFailed` (value: `"SKETCH_TRIM_FAILED"`)
+* `SketchTrimFailed` (value: `"SKETCH_TRIM_FAILED"`)
 
-* `GBTErrorStringEnumSketchInferenceFailed` (value: `"SKETCH_INFERENCE_FAILED"`)
+* `SketchInferenceFailed` (value: `"SKETCH_INFERENCE_FAILED"`)
 
-* `GBTErrorStringEnumSketchModifyDimFailed` (value: `"SKETCH_MODIFY_DIM_FAILED"`)
+* `SketchModifyDimFailed` (value: `"SKETCH_MODIFY_DIM_FAILED"`)
 
-* `GBTErrorStringEnumSketchDragNoSketch` (value: `"SKETCH_DRAG_NO_SKETCH"`)
+* `SketchDragNoSketch` (value: `"SKETCH_DRAG_NO_SKETCH"`)
 
-* `GBTErrorStringEnumSketchInferDimFailed` (value: `"SKETCH_INFER_DIM_FAILED"`)
+* `SketchInferDimFailed` (value: `"SKETCH_INFER_DIM_FAILED"`)
 
-* `GBTErrorStringEnumSketchDeletePtsFailed` (value: `"SKETCH_DELETE_PTS_FAILED"`)
+* `SketchDeletePtsFailed` (value: `"SKETCH_DELETE_PTS_FAILED"`)
 
-* `GBTErrorStringEnumSketchDeleteFailed` (value: `"SKETCH_DELETE_FAILED"`)
+* `SketchDeleteFailed` (value: `"SKETCH_DELETE_FAILED"`)
 
-* `GBTErrorStringEnumSketchArcFailed` (value: `"SKETCH_ARC_FAILED"`)
+* `SketchArcFailed` (value: `"SKETCH_ARC_FAILED"`)
 
-* `GBTErrorStringEnumSketchLineFailed` (value: `"SKETCH_LINE_FAILED"`)
+* `SketchLineFailed` (value: `"SKETCH_LINE_FAILED"`)
 
-* `GBTErrorStringEnumSketchCircleFailed` (value: `"SKETCH_CIRCLE_FAILED"`)
+* `SketchCircleFailed` (value: `"SKETCH_CIRCLE_FAILED"`)
 
-* `GBTErrorStringEnumSketchRectangleFailed` (value: `"SKETCH_RECTANGLE_FAILED"`)
+* `SketchRectangleFailed` (value: `"SKETCH_RECTANGLE_FAILED"`)
 
-* `GBTErrorStringEnumSketchTangentArcInvalidStart` (value: `"SKETCH_TANGENT_ARC_INVALID_START"`)
+* `SketchTangentArcInvalidStart` (value: `"SKETCH_TANGENT_ARC_INVALID_START"`)
 
-* `GBTErrorStringEnumSketchConstructionPointFailed` (value: `"SKETCH_CONSTRUCTION_POINT_FAILED"`)
+* `SketchConstructionPointFailed` (value: `"SKETCH_CONSTRUCTION_POINT_FAILED"`)
 
-* `GBTErrorStringEnumSysInternalDeserialization` (value: `"SYS_INTERNAL_DESERIALIZATION"`)
+* `SysInternalDeserialization` (value: `"SYS_INTERNAL_DESERIALIZATION"`)
 
-* `GBTErrorStringEnumSysServerException` (value: `"SYS_SERVER_EXCEPTION"`)
+* `SysServerException` (value: `"SYS_SERVER_EXCEPTION"`)
 
-* `GBTErrorStringEnumSysErrorRegen` (value: `"SYS_ERROR_REGEN"`)
+* `SysErrorRegen` (value: `"SYS_ERROR_REGEN"`)
 
-* `GBTErrorStringEnumSysErrorMessaging` (value: `"SYS_ERROR_MESSAGING"`)
+* `SysErrorMessaging` (value: `"SYS_ERROR_MESSAGING"`)
 
-* `GBTErrorStringEnumCannotResolveElement` (value: `"CANNOT_RESOLVE_ELEMENT"`)
+* `CannotResolveElement` (value: `"CANNOT_RESOLVE_ELEMENT"`)
 
-* `GBTErrorStringEnumNothingSelected` (value: `"NOTHING_SELECTED"`)
+* `NothingSelected` (value: `"NOTHING_SELECTED"`)
 
-* `GBTErrorStringEnumSketchAngleTwoLines` (value: `"SKETCH_ANGLE_TWO_LINES"`)
+* `SketchAngleTwoLines` (value: `"SKETCH_ANGLE_TWO_LINES"`)
 
-* `GBTErrorStringEnumSketchDimensionDiffEntities` (value: `"SKETCH_DIMENSION_DIFF_ENTITIES"`)
+* `SketchDimensionDiffEntities` (value: `"SKETCH_DIMENSION_DIFF_ENTITIES"`)
 
-* `GBTErrorStringEnumSketchConstraintDiffEntities` (value: `"SKETCH_CONSTRAINT_DIFF_ENTITIES"`)
+* `SketchConstraintDiffEntities` (value: `"SKETCH_CONSTRAINT_DIFF_ENTITIES"`)
 
-* `GBTErrorStringEnumSketchConstraintTwoEntities` (value: `"SKETCH_CONSTRAINT_TWO_ENTITIES"`)
+* `SketchConstraintTwoEntities` (value: `"SKETCH_CONSTRAINT_TWO_ENTITIES"`)
 
-* `GBTErrorStringEnumSketchDimensionTwoEntities` (value: `"SKETCH_DIMENSION_TWO_ENTITIES"`)
+* `SketchDimensionTwoEntities` (value: `"SKETCH_DIMENSION_TWO_ENTITIES"`)
 
-* `GBTErrorStringEnumSketchCoincidentFailed` (value: `"SKETCH_COINCIDENT_FAILED"`)
+* `SketchCoincidentFailed` (value: `"SKETCH_COINCIDENT_FAILED"`)
 
-* `GBTErrorStringEnumSketchCoincidentInputError` (value: `"SKETCH_COINCIDENT_INPUT_ERROR"`)
+* `SketchCoincidentInputError` (value: `"SKETCH_COINCIDENT_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumSketchCoincidentDiffPoints` (value: `"SKETCH_COINCIDENT_DIFF_POINTS"`)
+* `SketchCoincidentDiffPoints` (value: `"SKETCH_COINCIDENT_DIFF_POINTS"`)
 
-* `GBTErrorStringEnumSketchConcentricInputError` (value: `"SKETCH_CONCENTRIC_INPUT_ERROR"`)
+* `SketchConcentricInputError` (value: `"SKETCH_CONCENTRIC_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumSketchConcentricFailed` (value: `"SKETCH_CONCENTRIC_FAILED"`)
+* `SketchConcentricFailed` (value: `"SKETCH_CONCENTRIC_FAILED"`)
 
-* `GBTErrorStringEnumSketchEqualInputError` (value: `"SKETCH_EQUAL_INPUT_ERROR"`)
+* `SketchEqualInputError` (value: `"SKETCH_EQUAL_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumSketchEqualNoEnds` (value: `"SKETCH_EQUAL_NO_ENDS"`)
+* `SketchEqualNoEnds` (value: `"SKETCH_EQUAL_NO_ENDS"`)
 
-* `GBTErrorStringEnumSketchEqualFailed` (value: `"SKETCH_EQUAL_FAILED"`)
+* `SketchEqualFailed` (value: `"SKETCH_EQUAL_FAILED"`)
 
-* `GBTErrorStringEnumSketchFixOneEnt` (value: `"SKETCH_FIX_ONE_ENT"`)
+* `SketchFixOneEnt` (value: `"SKETCH_FIX_ONE_ENT"`)
 
-* `GBTErrorStringEnumSketchFixFailed` (value: `"SKETCH_FIX_FAILED"`)
+* `SketchFixFailed` (value: `"SKETCH_FIX_FAILED"`)
 
-* `GBTErrorStringEnumSketchDirInternal` (value: `"SKETCH_DIR_INTERNAL"`)
+* `SketchDirInternal` (value: `"SKETCH_DIR_INTERNAL"`)
 
-* `GBTErrorStringEnumSketchDirInput` (value: `"SKETCH_DIR_INPUT"`)
+* `SketchDirInput` (value: `"SKETCH_DIR_INPUT"`)
 
-* `GBTErrorStringEnumSketchHorizontalFailed` (value: `"SKETCH_HORIZONTAL_FAILED"`)
+* `SketchHorizontalFailed` (value: `"SKETCH_HORIZONTAL_FAILED"`)
 
-* `GBTErrorStringEnumSketchVerticalFailed` (value: `"SKETCH_VERTICAL_FAILED"`)
+* `SketchVerticalFailed` (value: `"SKETCH_VERTICAL_FAILED"`)
 
-* `GBTErrorStringEnumSketchOffsetConstraintFailed` (value: `"SKETCH_OFFSET_CONSTRAINT_FAILED"`)
+* `SketchOffsetConstraintFailed` (value: `"SKETCH_OFFSET_CONSTRAINT_FAILED"`)
 
-* `GBTErrorStringEnumSketchParallelConstraintFailed` (value: `"SKETCH_PARALLEL_CONSTRAINT_FAILED"`)
+* `SketchParallelConstraintFailed` (value: `"SKETCH_PARALLEL_CONSTRAINT_FAILED"`)
 
-* `GBTErrorStringEnumSketchParallelInputError` (value: `"SKETCH_PARALLEL_INPUT_ERROR"`)
+* `SketchParallelInputError` (value: `"SKETCH_PARALLEL_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumSketchDimensionInputError` (value: `"SKETCH_DIMENSION_INPUT_ERROR"`)
+* `SketchDimensionInputError` (value: `"SKETCH_DIMENSION_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumSketchDimensionDistError` (value: `"SKETCH_DIMENSION_DIST_ERROR"`)
+* `SketchDimensionDistError` (value: `"SKETCH_DIMENSION_DIST_ERROR"`)
 
-* `GBTErrorStringEnumSketchDimensionFailed` (value: `"SKETCH_DIMENSION_FAILED"`)
+* `SketchDimensionFailed` (value: `"SKETCH_DIMENSION_FAILED"`)
 
-* `GBTErrorStringEnumSketchNormalNeedLine` (value: `"SKETCH_NORMAL_NEED_LINE"`)
+* `SketchNormalNeedLine` (value: `"SKETCH_NORMAL_NEED_LINE"`)
 
-* `GBTErrorStringEnumSketchNormalInputError` (value: `"SKETCH_NORMAL_INPUT_ERROR"`)
+* `SketchNormalInputError` (value: `"SKETCH_NORMAL_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumSketchNormalInputNeeded` (value: `"SKETCH_NORMAL_INPUT_NEEDED"`)
+* `SketchNormalInputNeeded` (value: `"SKETCH_NORMAL_INPUT_NEEDED"`)
 
-* `GBTErrorStringEnumSketchCannotSplitIntoGroups` (value: `"SKETCH_CANNOT_SPLIT_INTO_GROUPS"`)
+* `SketchCannotSplitIntoGroups` (value: `"SKETCH_CANNOT_SPLIT_INTO_GROUPS"`)
 
-* `GBTErrorStringEnumSketchOffsetBadPair` (value: `"SKETCH_OFFSET_BAD_PAIR"`)
+* `SketchOffsetBadPair` (value: `"SKETCH_OFFSET_BAD_PAIR"`)
 
-* `GBTErrorStringEnumSketchOffsetInputError` (value: `"SKETCH_OFFSET_INPUT_ERROR"`)
+* `SketchOffsetInputError` (value: `"SKETCH_OFFSET_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumSketchMidpointInputError` (value: `"SKETCH_MIDPOINT_INPUT_ERROR"`)
+* `SketchMidpointInputError` (value: `"SKETCH_MIDPOINT_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumSketchMidpointNeedPoint` (value: `"SKETCH_MIDPOINT_NEED_POINT"`)
+* `SketchMidpointNeedPoint` (value: `"SKETCH_MIDPOINT_NEED_POINT"`)
 
-* `GBTErrorStringEnumSketchMidpointNeedDiffPoint` (value: `"SKETCH_MIDPOINT_NEED_DIFF_POINT"`)
+* `SketchMidpointNeedDiffPoint` (value: `"SKETCH_MIDPOINT_NEED_DIFF_POINT"`)
 
-* `GBTErrorStringEnumSketchMidpointMissingEnds` (value: `"SKETCH_MIDPOINT_MISSING_ENDS"`)
+* `SketchMidpointMissingEnds` (value: `"SKETCH_MIDPOINT_MISSING_ENDS"`)
 
-* `GBTErrorStringEnumSketchMidpointMissingPts` (value: `"SKETCH_MIDPOINT_MISSING_PTS"`)
+* `SketchMidpointMissingPts` (value: `"SKETCH_MIDPOINT_MISSING_PTS"`)
 
-* `GBTErrorStringEnumSketchMidpointNoInternalLine` (value: `"SKETCH_MIDPOINT_NO_INTERNAL_LINE"`)
+* `SketchMidpointNoInternalLine` (value: `"SKETCH_MIDPOINT_NO_INTERNAL_LINE"`)
 
-* `GBTErrorStringEnumSketchMidpointNoCoincident` (value: `"SKETCH_MIDPOINT_NO_COINCIDENT"`)
+* `SketchMidpointNoCoincident` (value: `"SKETCH_MIDPOINT_NO_COINCIDENT"`)
 
-* `GBTErrorStringEnumSketchMidpointFailed` (value: `"SKETCH_MIDPOINT_FAILED"`)
+* `SketchMidpointFailed` (value: `"SKETCH_MIDPOINT_FAILED"`)
 
-* `GBTErrorStringEnumSketchPerpendicularInputError` (value: `"SKETCH_PERPENDICULAR_INPUT_ERROR"`)
+* `SketchPerpendicularInputError` (value: `"SKETCH_PERPENDICULAR_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumSketchPerpendicularFailed` (value: `"SKETCH_PERPENDICULAR_FAILED"`)
+* `SketchPerpendicularFailed` (value: `"SKETCH_PERPENDICULAR_FAILED"`)
 
-* `GBTErrorStringEnumSketchPointLineOnly` (value: `"SKETCH_POINT_LINE_ONLY"`)
+* `SketchPointLineOnly` (value: `"SKETCH_POINT_LINE_ONLY"`)
 
-* `GBTErrorStringEnumSketchProjectionUnknown` (value: `"SKETCH_PROJECTION_UNKNOWN"`)
+* `SketchProjectionUnknown` (value: `"SKETCH_PROJECTION_UNKNOWN"`)
 
-* `GBTErrorStringEnumSketchProjectionFailed` (value: `"SKETCH_PROJECTION_FAILED"`)
+* `SketchProjectionFailed` (value: `"SKETCH_PROJECTION_FAILED"`)
 
-* `GBTErrorStringEnumSketchSilProjectionInputError` (value: `"SKETCH_SIL_PROJECTION_INPUT_ERROR"`)
+* `SketchSilProjectionInputError` (value: `"SKETCH_SIL_PROJECTION_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumSketchSilProjectionMissingPoint` (value: `"SKETCH_SIL_PROJECTION_MISSING_POINT"`)
+* `SketchSilProjectionMissingPoint` (value: `"SKETCH_SIL_PROJECTION_MISSING_POINT"`)
 
-* `GBTErrorStringEnumSketchLengthDimInputError` (value: `"SKETCH_LENGTH_DIM_INPUT_ERROR"`)
+* `SketchLengthDimInputError` (value: `"SKETCH_LENGTH_DIM_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumSketchLengthDimMissingEnds` (value: `"SKETCH_LENGTH_DIM_MISSING_ENDS"`)
+* `SketchLengthDimMissingEnds` (value: `"SKETCH_LENGTH_DIM_MISSING_ENDS"`)
 
-* `GBTErrorStringEnumSketchLengthDimNotFound` (value: `"SKETCH_LENGTH_DIM_NOT_FOUND"`)
+* `SketchLengthDimNotFound` (value: `"SKETCH_LENGTH_DIM_NOT_FOUND"`)
 
-* `GBTErrorStringEnumSketchLengthDimFailed` (value: `"SKETCH_LENGTH_DIM_FAILED"`)
+* `SketchLengthDimFailed` (value: `"SKETCH_LENGTH_DIM_FAILED"`)
 
-* `GBTErrorStringEnumSketchRadiusInputError` (value: `"SKETCH_RADIUS_INPUT_ERROR"`)
+* `SketchRadiusInputError` (value: `"SKETCH_RADIUS_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumSketchRadiusDimFailed` (value: `"SKETCH_RADIUS_DIM_FAILED"`)
+* `SketchRadiusDimFailed` (value: `"SKETCH_RADIUS_DIM_FAILED"`)
 
-* `GBTErrorStringEnumSketchTangentInputError` (value: `"SKETCH_TANGENT_INPUT_ERROR"`)
+* `SketchTangentInputError` (value: `"SKETCH_TANGENT_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumSketchTangentFailed` (value: `"SKETCH_TANGENT_FAILED"`)
+* `SketchTangentFailed` (value: `"SKETCH_TANGENT_FAILED"`)
 
-* `GBTErrorStringEnumPartQueryFailed` (value: `"PART_QUERY_FAILED"`)
+* `PartQueryFailed` (value: `"PART_QUERY_FAILED"`)
 
-* `GBTErrorStringEnumPartQueryMulti` (value: `"PART_QUERY_MULTI"`)
+* `PartQueryMulti` (value: `"PART_QUERY_MULTI"`)
 
-* `GBTErrorStringEnumMateconnectorQueryFailed` (value: `"MATECONNECTOR_QUERY_FAILED"`)
+* `MateconnectorQueryFailed` (value: `"MATECONNECTOR_QUERY_FAILED"`)
 
-* `GBTErrorStringEnumMateconnectorQueryOriginFailed` (value: `"MATECONNECTOR_QUERY_ORIGIN_FAILED"`)
+* `MateconnectorQueryOriginFailed` (value: `"MATECONNECTOR_QUERY_ORIGIN_FAILED"`)
 
-* `GBTErrorStringEnumMateconnectorQueryAxisFailed` (value: `"MATECONNECTOR_QUERY_AXIS_FAILED"`)
+* `MateconnectorQueryAxisFailed` (value: `"MATECONNECTOR_QUERY_AXIS_FAILED"`)
 
-* `GBTErrorStringEnumMateconnectorQueryCsysFailed` (value: `"MATECONNECTOR_QUERY_CSYS_FAILED"`)
+* `MateconnectorQueryCsysFailed` (value: `"MATECONNECTOR_QUERY_CSYS_FAILED"`)
 
-* `GBTErrorStringEnumAssemblyInsertWillCauseCycles` (value: `"ASSEMBLY_INSERT_WILL_CAUSE_CYCLES"`)
+* `AssemblyInsertWillCauseCycles` (value: `"ASSEMBLY_INSERT_WILL_CAUSE_CYCLES"`)
 
-* `GBTErrorStringEnumSketchMirrorNeedValidMirrorLine` (value: `"SKETCH_MIRROR_NEED_VALID_MIRROR_LINE"`)
+* `SketchMirrorNeedValidMirrorLine` (value: `"SKETCH_MIRROR_NEED_VALID_MIRROR_LINE"`)
 
-* `GBTErrorStringEnumSketchMirrorNeedEntitiesToMirror` (value: `"SKETCH_MIRROR_NEED_ENTITIES_TO_MIRROR"`)
+* `SketchMirrorNeedEntitiesToMirror` (value: `"SKETCH_MIRROR_NEED_ENTITIES_TO_MIRROR"`)
 
-* `GBTErrorStringEnumSketchMirrorConstraintFailed` (value: `"SKETCH_MIRROR_CONSTRAINT_FAILED"`)
+* `SketchMirrorConstraintFailed` (value: `"SKETCH_MIRROR_CONSTRAINT_FAILED"`)
 
-* `GBTErrorStringEnumSketchMirrorFailed` (value: `"SKETCH_MIRROR_FAILED"`)
+* `SketchMirrorFailed` (value: `"SKETCH_MIRROR_FAILED"`)
 
-* `GBTErrorStringEnumSelfIntersectingCurveSelected` (value: `"SELF_INTERSECTING_CURVE_SELECTED"`)
+* `SelfIntersectingCurveSelected` (value: `"SELF_INTERSECTING_CURVE_SELECTED"`)
 
-* `GBTErrorStringEnumSweepStartNotOnProfile` (value: `"SWEEP_START_NOT_ON_PROFILE"`)
+* `SweepStartNotOnProfile` (value: `"SWEEP_START_NOT_ON_PROFILE"`)
 
-* `GBTErrorStringEnumPatternDirectionsParallel` (value: `"PATTERN_DIRECTIONS_PARALLEL"`)
+* `PatternDirectionsParallel` (value: `"PATTERN_DIRECTIONS_PARALLEL"`)
 
-* `GBTErrorStringEnumMateOccurrenceNotValid` (value: `"MATE_OCCURRENCE_NOT_VALID"`)
+* `MateOccurrenceNotValid` (value: `"MATE_OCCURRENCE_NOT_VALID"`)
 
-* `GBTErrorStringEnumMateWithinSameGroup` (value: `"MATE_WITHIN_SAME_GROUP"`)
+* `MateWithinSameGroup` (value: `"MATE_WITHIN_SAME_GROUP"`)
 
-* `GBTErrorStringEnumExportAssemblyUnknownNodeType` (value: `"EXPORT_ASSEMBLY_UNKNOWN_NODE_TYPE"`)
+* `ExportAssemblyUnknownNodeType` (value: `"EXPORT_ASSEMBLY_UNKNOWN_NODE_TYPE"`)
 
-* `GBTErrorStringEnumExportAssemblyCreateInstanceFailed` (value: `"EXPORT_ASSEMBLY_CREATE_INSTANCE_FAILED"`)
+* `ExportAssemblyCreateInstanceFailed` (value: `"EXPORT_ASSEMBLY_CREATE_INSTANCE_FAILED"`)
 
-* `GBTErrorStringEnumExportPartsAsXtsNotABody` (value: `"EXPORT_PARTS_AS_XTS_NOT_A_BODY"`)
+* `ExportPartsAsXtsNotABody` (value: `"EXPORT_PARTS_AS_XTS_NOT_A_BODY"`)
 
-* `GBTErrorStringEnumExportPartsAsXtsFailedToWriteXt` (value: `"EXPORT_PARTS_AS_XTS_FAILED_TO_WRITE_XT"`)
+* `ExportPartsAsXtsFailedToWriteXt` (value: `"EXPORT_PARTS_AS_XTS_FAILED_TO_WRITE_XT"`)
 
-* `GBTErrorStringEnumMateconnectorOwnerPartNotResolved` (value: `"MATECONNECTOR_OWNER_PART_NOT_RESOLVED"`)
+* `MateconnectorOwnerPartNotResolved` (value: `"MATECONNECTOR_OWNER_PART_NOT_RESOLVED"`)
 
-* `GBTErrorStringEnumWireCreationPartialFailure` (value: `"WIRE_CREATION_PARTIAL_FAILURE"`)
+* `WireCreationPartialFailure` (value: `"WIRE_CREATION_PARTIAL_FAILURE"`)
 
-* `GBTErrorStringEnumServerIsInInvalidState` (value: `"SERVER_IS_IN_INVALID_STATE"`)
+* `ServerIsInInvalidState` (value: `"SERVER_IS_IN_INVALID_STATE"`)
 
-* `GBTErrorStringEnumSketchExtendFailed` (value: `"SKETCH_EXTEND_FAILED"`)
+* `SketchExtendFailed` (value: `"SKETCH_EXTEND_FAILED"`)
 
-* `GBTErrorStringEnumFollowCycleError` (value: `"FOLLOW_CYCLE_ERROR"`)
+* `FollowCycleError` (value: `"FOLLOW_CYCLE_ERROR"`)
 
-* `GBTErrorStringEnumSketchFilletInvalidRadius` (value: `"SKETCH_FILLET_INVALID_RADIUS"`)
+* `SketchFilletInvalidRadius` (value: `"SKETCH_FILLET_INVALID_RADIUS"`)
 
-* `GBTErrorStringEnumSketchConstraintCoincidentTwoEntities` (value: `"SKETCH_CONSTRAINT_COINCIDENT_TWO_ENTITIES"`)
+* `SketchConstraintCoincidentTwoEntities` (value: `"SKETCH_CONSTRAINT_COINCIDENT_TWO_ENTITIES"`)
 
-* `GBTErrorStringEnumSketchConstraintConcentricTwoEntities` (value: `"SKETCH_CONSTRAINT_CONCENTRIC_TWO_ENTITIES"`)
+* `SketchConstraintConcentricTwoEntities` (value: `"SKETCH_CONSTRAINT_CONCENTRIC_TWO_ENTITIES"`)
 
-* `GBTErrorStringEnumSketchConstraintEqualTwoEntities` (value: `"SKETCH_CONSTRAINT_EQUAL_TWO_ENTITIES"`)
+* `SketchConstraintEqualTwoEntities` (value: `"SKETCH_CONSTRAINT_EQUAL_TWO_ENTITIES"`)
 
-* `GBTErrorStringEnumSketchConstraintMidpointTwoEntities` (value: `"SKETCH_CONSTRAINT_MIDPOINT_TWO_ENTITIES"`)
+* `SketchConstraintMidpointTwoEntities` (value: `"SKETCH_CONSTRAINT_MIDPOINT_TWO_ENTITIES"`)
 
-* `GBTErrorStringEnumExtrudeNoSelectedRegion` (value: `"EXTRUDE_NO_SELECTED_REGION"`)
+* `ExtrudeNoSelectedRegion` (value: `"EXTRUDE_NO_SELECTED_REGION"`)
 
-* `GBTErrorStringEnumExtrudeNoRegionInSketch` (value: `"EXTRUDE_NO_REGION_IN_SKETCH"`)
+* `ExtrudeNoRegionInSketch` (value: `"EXTRUDE_NO_REGION_IN_SKETCH"`)
 
-* `GBTErrorStringEnumDeleteSelectParts` (value: `"DELETE_SELECT_PARTS"`)
+* `DeleteSelectParts` (value: `"DELETE_SELECT_PARTS"`)
 
-* `GBTErrorStringEnumCopySelectParts` (value: `"COPY_SELECT_PARTS"`)
+* `CopySelectParts` (value: `"COPY_SELECT_PARTS"`)
 
-* `GBTErrorStringEnumSplitNoChange` (value: `"SPLIT_NO_CHANGE"`)
+* `SplitNoChange` (value: `"SPLIT_NO_CHANGE"`)
 
-* `GBTErrorStringEnumMirrorNoPlane` (value: `"MIRROR_NO_PLANE"`)
+* `MirrorNoPlane` (value: `"MIRROR_NO_PLANE"`)
 
-* `GBTErrorStringEnumMirrorSelectParts` (value: `"MIRROR_SELECT_PARTS"`)
+* `MirrorSelectParts` (value: `"MIRROR_SELECT_PARTS"`)
 
-* `GBTErrorStringEnumPatternCircularNoAxis` (value: `"PATTERN_CIRCULAR_NO_AXIS"`)
+* `PatternCircularNoAxis` (value: `"PATTERN_CIRCULAR_NO_AXIS"`)
 
-* `GBTErrorStringEnumPatternSelectFaces` (value: `"PATTERN_SELECT_FACES"`)
+* `PatternSelectFaces` (value: `"PATTERN_SELECT_FACES"`)
 
-* `GBTErrorStringEnumPatternSelectParts` (value: `"PATTERN_SELECT_PARTS"`)
+* `PatternSelectParts` (value: `"PATTERN_SELECT_PARTS"`)
 
-* `GBTErrorStringEnumPatternLinearNoDir` (value: `"PATTERN_LINEAR_NO_DIR"`)
+* `PatternLinearNoDir` (value: `"PATTERN_LINEAR_NO_DIR"`)
 
-* `GBTErrorStringEnumShellSelectFaces` (value: `"SHELL_SELECT_FACES"`)
+* `ShellSelectFaces` (value: `"SHELL_SELECT_FACES"`)
 
-* `GBTErrorStringEnumDraftSelectNeutral` (value: `"DRAFT_SELECT_NEUTRAL"`)
+* `DraftSelectNeutral` (value: `"DRAFT_SELECT_NEUTRAL"`)
 
-* `GBTErrorStringEnumDraftSelectFaces` (value: `"DRAFT_SELECT_FACES"`)
+* `DraftSelectFaces` (value: `"DRAFT_SELECT_FACES"`)
 
-* `GBTErrorStringEnumChamferSelectEdges` (value: `"CHAMFER_SELECT_EDGES"`)
+* `ChamferSelectEdges` (value: `"CHAMFER_SELECT_EDGES"`)
 
-* `GBTErrorStringEnumFilletSelectEdges` (value: `"FILLET_SELECT_EDGES"`)
+* `FilletSelectEdges` (value: `"FILLET_SELECT_EDGES"`)
 
-* `GBTErrorStringEnumExtrudeSurfNoCurve` (value: `"EXTRUDE_SURF_NO_CURVE"`)
+* `ExtrudeSurfNoCurve` (value: `"EXTRUDE_SURF_NO_CURVE"`)
 
-* `GBTErrorStringEnumExtrudeSelectTerminatingBody` (value: `"EXTRUDE_SELECT_TERMINATING_BODY"`)
+* `ExtrudeSelectTerminatingBody` (value: `"EXTRUDE_SELECT_TERMINATING_BODY"`)
 
-* `GBTErrorStringEnumExtrudeSelectTerminatingSurface` (value: `"EXTRUDE_SELECT_TERMINATING_SURFACE"`)
+* `ExtrudeSelectTerminatingSurface` (value: `"EXTRUDE_SELECT_TERMINATING_SURFACE"`)
 
-* `GBTErrorStringEnumDirectEditSelectAnchor` (value: `"DIRECT_EDIT_SELECT_ANCHOR"`)
+* `DirectEditSelectAnchor` (value: `"DIRECT_EDIT_SELECT_ANCHOR"`)
 
-* `GBTErrorStringEnumRevolveSurfNoCurve` (value: `"REVOLVE_SURF_NO_CURVE"`)
+* `RevolveSurfNoCurve` (value: `"REVOLVE_SURF_NO_CURVE"`)
 
-* `GBTErrorStringEnumRevolveSelectFaces` (value: `"REVOLVE_SELECT_FACES"`)
+* `RevolveSelectFaces` (value: `"REVOLVE_SELECT_FACES"`)
 
-* `GBTErrorStringEnumRevolveSelectAxis` (value: `"REVOLVE_SELECT_AXIS"`)
+* `RevolveSelectAxis` (value: `"REVOLVE_SELECT_AXIS"`)
 
-* `GBTErrorStringEnumSweepSelectProfile` (value: `"SWEEP_SELECT_PROFILE"`)
+* `SweepSelectProfile` (value: `"SWEEP_SELECT_PROFILE"`)
 
-* `GBTErrorStringEnumSweepSelectPath` (value: `"SWEEP_SELECT_PATH"`)
+* `SweepSelectPath` (value: `"SWEEP_SELECT_PATH"`)
 
-* `GBTErrorStringEnumDirectEditDeleteSelectFaces` (value: `"DIRECT_EDIT_DELETE_SELECT_FACES"`)
+* `DirectEditDeleteSelectFaces` (value: `"DIRECT_EDIT_DELETE_SELECT_FACES"`)
 
-* `GBTErrorStringEnumDirectEditModifyFilletSelect` (value: `"DIRECT_EDIT_MODIFY_FILLET_SELECT"`)
+* `DirectEditModifyFilletSelect` (value: `"DIRECT_EDIT_MODIFY_FILLET_SELECT"`)
 
-* `GBTErrorStringEnumDirectEditModifyFaceSelect` (value: `"DIRECT_EDIT_MODIFY_FACE_SELECT"`)
+* `DirectEditModifyFaceSelect` (value: `"DIRECT_EDIT_MODIFY_FACE_SELECT"`)
 
-* `GBTErrorStringEnumDirectEditReplaceFaceSelect` (value: `"DIRECT_EDIT_REPLACE_FACE_SELECT"`)
+* `DirectEditReplaceFaceSelect` (value: `"DIRECT_EDIT_REPLACE_FACE_SELECT"`)
 
-* `GBTErrorStringEnumDirectEditOffsetFaceSelect` (value: `"DIRECT_EDIT_OFFSET_FACE_SELECT"`)
+* `DirectEditOffsetFaceSelect` (value: `"DIRECT_EDIT_OFFSET_FACE_SELECT"`)
 
-* `GBTErrorStringEnumDirectEditMoveFaceSelect` (value: `"DIRECT_EDIT_MOVE_FACE_SELECT"`)
+* `DirectEditMoveFaceSelect` (value: `"DIRECT_EDIT_MOVE_FACE_SELECT"`)
 
-* `GBTErrorStringEnumSelectMateconnector` (value: `"SELECT_MATECONNECTOR"`)
+* `SelectMateconnector` (value: `"SELECT_MATECONNECTOR"`)
 
-* `GBTErrorStringEnumOverdefinedAssembly` (value: `"OVERDEFINED_ASSEMBLY"`)
+* `OverdefinedAssembly` (value: `"OVERDEFINED_ASSEMBLY"`)
 
-* `GBTErrorStringEnumPartStudioUpgradeSuccessful` (value: `"PART_STUDIO_UPGRADE_SUCCESSFUL"`)
+* `PartStudioUpgradeSuccessful` (value: `"PART_STUDIO_UPGRADE_SUCCESSFUL"`)
 
-* `GBTErrorStringEnumPartStudioUpgradeFailed` (value: `"PART_STUDIO_UPGRADE_FAILED"`)
+* `PartStudioUpgradeFailed` (value: `"PART_STUDIO_UPGRADE_FAILED"`)
 
-* `GBTErrorStringEnumPartStudioUpgradeNone` (value: `"PART_STUDIO_UPGRADE_NONE"`)
+* `PartStudioUpgradeNone` (value: `"PART_STUDIO_UPGRADE_NONE"`)
 
-* `GBTErrorStringEnumMateGroupOccurrencesUnresolved` (value: `"MATE_GROUP_OCCURRENCES_UNRESOLVED"`)
+* `MateGroupOccurrencesUnresolved` (value: `"MATE_GROUP_OCCURRENCES_UNRESOLVED"`)
 
-* `GBTErrorStringEnumSweepSurfNoCurveProfile` (value: `"SWEEP_SURF_NO_CURVE_PROFILE"`)
+* `SweepSurfNoCurveProfile` (value: `"SWEEP_SURF_NO_CURVE_PROFILE"`)
 
-* `GBTErrorStringEnumMateResetHadNoEffect` (value: `"MATE_RESET_HAD_NO_EFFECT"`)
+* `MateResetHadNoEffect` (value: `"MATE_RESET_HAD_NO_EFFECT"`)
 
-* `GBTErrorStringEnumMateconnectorMultipleOccurrences` (value: `"MATECONNECTOR_MULTIPLE_OCCURRENCES"`)
+* `MateconnectorMultipleOccurrences` (value: `"MATECONNECTOR_MULTIPLE_OCCURRENCES"`)
 
-* `GBTErrorStringEnumMateconnectorOccurrenceNotResolved` (value: `"MATECONNECTOR_OCCURRENCE_NOT_RESOLVED"`)
+* `MateconnectorOccurrenceNotResolved` (value: `"MATECONNECTOR_OCCURRENCE_NOT_RESOLVED"`)
 
-* `GBTErrorStringEnumElementReferenceCycleDetected` (value: `"ELEMENT_REFERENCE_CYCLE_DETECTED"`)
+* `ElementReferenceCycleDetected` (value: `"ELEMENT_REFERENCE_CYCLE_DETECTED"`)
 
-* `GBTErrorStringEnumMateOverdefinesAssembly` (value: `"MATE_OVERDEFINES_ASSEMBLY"`)
+* `MateOverdefinesAssembly` (value: `"MATE_OVERDEFINES_ASSEMBLY"`)
 
-* `GBTErrorStringEnumMateCannotResolveConnectors` (value: `"MATE_CANNOT_RESOLVE_CONNECTORS"`)
+* `MateCannotResolveConnectors` (value: `"MATE_CANNOT_RESOLVE_CONNECTORS"`)
 
-* `GBTErrorStringEnumSketchExceedsBounds` (value: `"SKETCH_EXCEEDS_BOUNDS"`)
+* `SketchExceedsBounds` (value: `"SKETCH_EXCEEDS_BOUNDS"`)
 
-* `GBTErrorStringEnumSweepSelfInt` (value: `"SWEEP_SELF_INT"`)
+* `SweepSelfInt` (value: `"SWEEP_SELF_INT"`)
 
-* `GBTErrorStringEnumSketchUnsolvableConstraint` (value: `"SKETCH_UNSOLVABLE_CONSTRAINT"`)
+* `SketchUnsolvableConstraint` (value: `"SKETCH_UNSOLVABLE_CONSTRAINT"`)
 
-* `GBTErrorStringEnumRestructureInvalidSourceOrTarget` (value: `"RESTRUCTURE_INVALID_SOURCE_OR_TARGET"`)
+* `RestructureInvalidSourceOrTarget` (value: `"RESTRUCTURE_INVALID_SOURCE_OR_TARGET"`)
 
-* `GBTErrorStringEnumCplaneInputCurvePoint` (value: `"CPLANE_INPUT_CURVE_POINT"`)
+* `CplaneInputCurvePoint` (value: `"CPLANE_INPUT_CURVE_POINT"`)
 
-* `GBTErrorStringEnumTransformOccurrencesHadNoEffect` (value: `"TRANSFORM_OCCURRENCES_HAD_NO_EFFECT"`)
+* `TransformOccurrencesHadNoEffect` (value: `"TRANSFORM_OCCURRENCES_HAD_NO_EFFECT"`)
 
-* `GBTErrorStringEnumHelixFailed` (value: `"HELIX_FAILED"`)
+* `HelixFailed` (value: `"HELIX_FAILED"`)
 
-* `GBTErrorStringEnumHelixInputCone` (value: `"HELIX_INPUT_CONE"`)
+* `HelixInputCone` (value: `"HELIX_INPUT_CONE"`)
 
-* `GBTErrorStringEnumRendererNotAvailable` (value: `"RENDERER_NOT_AVAILABLE"`)
+* `RendererNotAvailable` (value: `"RENDERER_NOT_AVAILABLE"`)
 
-* `GBTErrorStringEnumRendererFailedToRender` (value: `"RENDERER_FAILED_TO_RENDER"`)
+* `RendererFailedToRender` (value: `"RENDERER_FAILED_TO_RENDER"`)
 
-* `GBTErrorStringEnumExpressionFailedValidation` (value: `"EXPRESSION_FAILED_VALIDATION"`)
+* `ExpressionFailedValidation` (value: `"EXPRESSION_FAILED_VALIDATION"`)
 
-* `GBTErrorStringEnumVersionMismatchError` (value: `"VERSION_MISMATCH_ERROR"`)
+* `VersionMismatchError` (value: `"VERSION_MISMATCH_ERROR"`)
 
-* `GBTErrorStringEnumExtrudeUptoNextNoDivision` (value: `"EXTRUDE_UPTO_NEXT_NO_DIVISION"`)
+* `ExtrudeUptoNextNoDivision` (value: `"EXTRUDE_UPTO_NEXT_NO_DIVISION"`)
 
-* `GBTErrorStringEnumMateBetweenFixedOccurrences` (value: `"MATE_BETWEEN_FIXED_OCCURRENCES"`)
+* `MateBetweenFixedOccurrences` (value: `"MATE_BETWEEN_FIXED_OCCURRENCES"`)
 
-* `GBTErrorStringEnumThickenSelectEntities` (value: `"THICKEN_SELECT_ENTITIES"`)
+* `ThickenSelectEntities` (value: `"THICKEN_SELECT_ENTITIES"`)
 
-* `GBTErrorStringEnumThickenFailed` (value: `"THICKEN_FAILED"`)
+* `ThickenFailed` (value: `"THICKEN_FAILED"`)
 
-* `GBTErrorStringEnumWorkspaceUpgradeSuccessful` (value: `"WORKSPACE_UPGRADE_SUCCESSFUL"`)
+* `WorkspaceUpgradeSuccessful` (value: `"WORKSPACE_UPGRADE_SUCCESSFUL"`)
 
-* `GBTErrorStringEnumWorkspaceUpgradeFailed` (value: `"WORKSPACE_UPGRADE_FAILED"`)
+* `WorkspaceUpgradeFailed` (value: `"WORKSPACE_UPGRADE_FAILED"`)
 
-* `GBTErrorStringEnumWorkspaceUpgradeNone` (value: `"WORKSPACE_UPGRADE_NONE"`)
+* `WorkspaceUpgradeNone` (value: `"WORKSPACE_UPGRADE_NONE"`)
 
-* `GBTErrorStringEnumSketchCircularPatternFailed` (value: `"SKETCH_CIRCULAR_PATTERN_FAILED"`)
+* `SketchCircularPatternFailed` (value: `"SKETCH_CIRCULAR_PATTERN_FAILED"`)
 
-* `GBTErrorStringEnumDirectEditAllFilletFacesSelected` (value: `"DIRECT_EDIT_ALL_FILLET_FACES_SELECTED"`)
+* `DirectEditAllFilletFacesSelected` (value: `"DIRECT_EDIT_ALL_FILLET_FACES_SELECTED"`)
 
-* `GBTErrorStringEnumDirectEditFailedToIdentifyFillets` (value: `"DIRECT_EDIT_FAILED_TO_IDENTIFY_FILLETS"`)
+* `DirectEditFailedToIdentifyFillets` (value: `"DIRECT_EDIT_FAILED_TO_IDENTIFY_FILLETS"`)
 
-* `GBTErrorStringEnumParasolidImportFailed` (value: `"PARASOLID_IMPORT_FAILED"`)
+* `ParasolidImportFailed` (value: `"PARASOLID_IMPORT_FAILED"`)
 
-* `GBTErrorStringEnumFollowLeaderHasNoFunctionalityError` (value: `"FOLLOW_LEADER_HAS_NO_FUNCTIONALITY_ERROR"`)
+* `FollowLeaderHasNoFunctionalityError` (value: `"FOLLOW_LEADER_HAS_NO_FUNCTIONALITY_ERROR"`)
 
-* `GBTErrorStringEnumMirrorSelectFaces` (value: `"MIRROR_SELECT_FACES"`)
+* `MirrorSelectFaces` (value: `"MIRROR_SELECT_FACES"`)
 
-* `GBTErrorStringEnumRelationInvalidRelation` (value: `"RELATION_INVALID_RELATION"`)
+* `RelationInvalidRelation` (value: `"RELATION_INVALID_RELATION"`)
 
-* `GBTErrorStringEnumRelationInvalidMate` (value: `"RELATION_INVALID_MATE"`)
+* `RelationInvalidMate` (value: `"RELATION_INVALID_MATE"`)
 
-* `GBTErrorStringEnumGearRelationInvalidMateTypes` (value: `"GEAR_RELATION_INVALID_MATE_TYPES"`)
+* `GearRelationInvalidMateTypes` (value: `"GEAR_RELATION_INVALID_MATE_TYPES"`)
 
-* `GBTErrorStringEnumScrewRelationInvalidMateTypes` (value: `"SCREW_RELATION_INVALID_MATE_TYPES"`)
+* `ScrewRelationInvalidMateTypes` (value: `"SCREW_RELATION_INVALID_MATE_TYPES"`)
 
-* `GBTErrorStringEnumRackRelationInvalidMateTypes` (value: `"RACK_RELATION_INVALID_MATE_TYPES"`)
+* `RackRelationInvalidMateTypes` (value: `"RACK_RELATION_INVALID_MATE_TYPES"`)
 
-* `GBTErrorStringEnumRollingRelationInvalidMateTypes` (value: `"ROLLING_RELATION_INVALID_MATE_TYPES"`)
+* `RollingRelationInvalidMateTypes` (value: `"ROLLING_RELATION_INVALID_MATE_TYPES"`)
 
-* `GBTErrorStringEnumLinearRelationInvalidMateTypes` (value: `"LINEAR_RELATION_INVALID_MATE_TYPES"`)
+* `LinearRelationInvalidMateTypes` (value: `"LINEAR_RELATION_INVALID_MATE_TYPES"`)
 
-* `GBTErrorStringEnumRelationOverdefined` (value: `"RELATION_OVERDEFINED"`)
+* `RelationOverdefined` (value: `"RELATION_OVERDEFINED"`)
 
-* `GBTErrorStringEnumRelationInconsistent` (value: `"RELATION_INCONSISTENT"`)
+* `RelationInconsistent` (value: `"RELATION_INCONSISTENT"`)
 
-* `GBTErrorStringEnumRelationSameOccurrences` (value: `"RELATION_SAME_OCCURRENCES"`)
+* `RelationSameOccurrences` (value: `"RELATION_SAME_OCCURRENCES"`)
 
-* `GBTErrorStringEnumSketchSplitFailed` (value: `"SKETCH_SPLIT_FAILED"`)
+* `SketchSplitFailed` (value: `"SKETCH_SPLIT_FAILED"`)
 
-* `GBTErrorStringEnumSketchConstraintPierceTwoEntities` (value: `"SKETCH_CONSTRAINT_PIERCE_TWO_ENTITIES"`)
+* `SketchConstraintPierceTwoEntities` (value: `"SKETCH_CONSTRAINT_PIERCE_TWO_ENTITIES"`)
 
-* `GBTErrorStringEnumSketchPierceFailed` (value: `"SKETCH_PIERCE_FAILED"`)
+* `SketchPierceFailed` (value: `"SKETCH_PIERCE_FAILED"`)
 
-* `GBTErrorStringEnumMirrorFaceFailed` (value: `"MIRROR_FACE_FAILED"`)
+* `MirrorFaceFailed` (value: `"MIRROR_FACE_FAILED"`)
 
-* `GBTErrorStringEnumMirrorBodyFailed` (value: `"MIRROR_BODY_FAILED"`)
+* `MirrorBodyFailed` (value: `"MIRROR_BODY_FAILED"`)
 
-* `GBTErrorStringEnumSketchCannotPierceWithPlane` (value: `"SKETCH_CANNOT_PIERCE_WITH_PLANE"`)
+* `SketchCannotPierceWithPlane` (value: `"SKETCH_CANNOT_PIERCE_WITH_PLANE"`)
 
-* `GBTErrorStringEnumWithSupportCode` (value: `"WITH_SUPPORT_CODE"`)
+* `WithSupportCode` (value: `"WITH_SUPPORT_CODE"`)
 
-* `GBTErrorStringEnumFilletFailSmooth` (value: `"FILLET_FAIL_SMOOTH"`)
+* `FilletFailSmooth` (value: `"FILLET_FAIL_SMOOTH"`)
 
-* `GBTErrorStringEnumFilletFailed` (value: `"FILLET_FAILED"`)
+* `FilletFailed` (value: `"FILLET_FAILED"`)
 
-* `GBTErrorStringEnumChamferFailSmooth` (value: `"CHAMFER_FAIL_SMOOTH"`)
+* `ChamferFailSmooth` (value: `"CHAMFER_FAIL_SMOOTH"`)
 
-* `GBTErrorStringEnumChamferFailed` (value: `"CHAMFER_FAILED"`)
+* `ChamferFailed` (value: `"CHAMFER_FAILED"`)
 
-* `GBTErrorStringEnumBooleanOffsetNoFaces` (value: `"BOOLEAN_OFFSET_NO_FACES"`)
+* `BooleanOffsetNoFaces` (value: `"BOOLEAN_OFFSET_NO_FACES"`)
 
-* `GBTErrorStringEnumMateOccurrenceSuppressed` (value: `"MATE_OCCURRENCE_SUPPRESSED"`)
+* `MateOccurrenceSuppressed` (value: `"MATE_OCCURRENCE_SUPPRESSED"`)
 
-* `GBTErrorStringEnumMateconnectorOccurrenceSuppressed` (value: `"MATECONNECTOR_OCCURRENCE_SUPPRESSED"`)
+* `MateconnectorOccurrenceSuppressed` (value: `"MATECONNECTOR_OCCURRENCE_SUPPRESSED"`)
 
-* `GBTErrorStringEnumSketchSplineNewPointsTooClose` (value: `"SKETCH_SPLINE_NEW_POINTS_TOO_CLOSE"`)
+* `SketchSplineNewPointsTooClose` (value: `"SKETCH_SPLINE_NEW_POINTS_TOO_CLOSE"`)
 
-* `GBTErrorStringEnumSketchSplineCannotDeleteEndpoints` (value: `"SKETCH_SPLINE_CANNOT_DELETE_ENDPOINTS"`)
+* `SketchSplineCannotDeleteEndpoints` (value: `"SKETCH_SPLINE_CANNOT_DELETE_ENDPOINTS"`)
 
-* `GBTErrorStringEnumSketchSplinePointToDeleteNotFound` (value: `"SKETCH_SPLINE_POINT_TO_DELETE_NOT_FOUND"`)
+* `SketchSplinePointToDeleteNotFound` (value: `"SKETCH_SPLINE_POINT_TO_DELETE_NOT_FOUND"`)
 
-* `GBTErrorStringEnumAssemblyInsertFailed` (value: `"ASSEMBLY_INSERT_FAILED"`)
+* `AssemblyInsertFailed` (value: `"ASSEMBLY_INSERT_FAILED"`)
 
-* `GBTErrorStringEnumSketchPatternUnknownFailure` (value: `"SKETCH_PATTERN_UNKNOWN_FAILURE"`)
+* `SketchPatternUnknownFailure` (value: `"SKETCH_PATTERN_UNKNOWN_FAILURE"`)
 
-* `GBTErrorStringEnumSketchPatternTooLarge` (value: `"SKETCH_PATTERN_TOO_LARGE"`)
+* `SketchPatternTooLarge` (value: `"SKETCH_PATTERN_TOO_LARGE"`)
 
-* `GBTErrorStringEnumSketchLinearPatternZeroLength` (value: `"SKETCH_LINEAR_PATTERN_ZERO_LENGTH"`)
+* `SketchLinearPatternZeroLength` (value: `"SKETCH_LINEAR_PATTERN_ZERO_LENGTH"`)
 
-* `GBTErrorStringEnumSketchLinearPatternParallelDirections` (value: `"SKETCH_LINEAR_PATTERN_PARALLEL_DIRECTIONS"`)
+* `SketchLinearPatternParallelDirections` (value: `"SKETCH_LINEAR_PATTERN_PARALLEL_DIRECTIONS"`)
 
-* `GBTErrorStringEnumSketchCircularPatternZeroAngle` (value: `"SKETCH_CIRCULAR_PATTERN_ZERO_ANGLE"`)
+* `SketchCircularPatternZeroAngle` (value: `"SKETCH_CIRCULAR_PATTERN_ZERO_ANGLE"`)
 
-* `GBTErrorStringEnumSketchEllipseFailed` (value: `"SKETCH_ELLIPSE_FAILED"`)
+* `SketchEllipseFailed` (value: `"SKETCH_ELLIPSE_FAILED"`)
 
-* `GBTErrorStringEnumSketchEllipseFailedTooSmall` (value: `"SKETCH_ELLIPSE_FAILED_TOO_SMALL"`)
+* `SketchEllipseFailedTooSmall` (value: `"SKETCH_ELLIPSE_FAILED_TOO_SMALL"`)
 
-* `GBTErrorStringEnumDeletePartsFailed` (value: `"DELETE_PARTS_FAILED"`)
+* `DeletePartsFailed` (value: `"DELETE_PARTS_FAILED"`)
 
-* `GBTErrorStringEnumDeletePartsPartial` (value: `"DELETE_PARTS_PARTIAL"`)
+* `DeletePartsPartial` (value: `"DELETE_PARTS_PARTIAL"`)
 
-* `GBTErrorStringEnumSketchEllipseRadiusInputError` (value: `"SKETCH_ELLIPSE_RADIUS_INPUT_ERROR"`)
+* `SketchEllipseRadiusInputError` (value: `"SKETCH_ELLIPSE_RADIUS_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumQuadrantConstraintInput` (value: `"QUADRANT_CONSTRAINT_INPUT"`)
+* `QuadrantConstraintInput` (value: `"QUADRANT_CONSTRAINT_INPUT"`)
 
-* `GBTErrorStringEnumSketchQuadrantFailed` (value: `"SKETCH_QUADRANT_FAILED"`)
+* `SketchQuadrantFailed` (value: `"SKETCH_QUADRANT_FAILED"`)
 
-* `GBTErrorStringEnumSketchSplineTooFewPoints` (value: `"SKETCH_SPLINE_TOO_FEW_POINTS"`)
+* `SketchSplineTooFewPoints` (value: `"SKETCH_SPLINE_TOO_FEW_POINTS"`)
 
-* `GBTErrorStringEnumSketchSplineNotInterpolatedSpline` (value: `"SKETCH_SPLINE_NOT_INTERPOLATED_SPLINE"`)
+* `SketchSplineNotInterpolatedSpline` (value: `"SKETCH_SPLINE_NOT_INTERPOLATED_SPLINE"`)
 
-* `GBTErrorStringEnumSketchSplinePointsNotDeleted` (value: `"SKETCH_SPLINE_POINTS_NOT_DELETED"`)
+* `SketchSplinePointsNotDeleted` (value: `"SKETCH_SPLINE_POINTS_NOT_DELETED"`)
 
-* `GBTErrorStringEnumSketchTextRectangleFailed` (value: `"SKETCH_TEXT_RECTANGLE_FAILED"`)
+* `SketchTextRectangleFailed` (value: `"SKETCH_TEXT_RECTANGLE_FAILED"`)
 
-* `GBTErrorStringEnumImportDerivedNoParts` (value: `"IMPORT_DERIVED_NO_PARTS"`)
+* `ImportDerivedNoParts` (value: `"IMPORT_DERIVED_NO_PARTS"`)
 
-* `GBTErrorStringEnumLoftSelectProfiles` (value: `"LOFT_SELECT_PROFILES"`)
+* `LoftSelectProfiles` (value: `"LOFT_SELECT_PROFILES"`)
 
-* `GBTErrorStringEnumLoftProfileSingleFace` (value: `"LOFT_PROFILE_SINGLE_FACE"`)
+* `LoftProfileSingleFace` (value: `"LOFT_PROFILE_SINGLE_FACE"`)
 
-* `GBTErrorStringEnumLoftProfileSolid` (value: `"LOFT_PROFILE_SOLID"`)
+* `LoftProfileSolid` (value: `"LOFT_PROFILE_SOLID"`)
 
-* `GBTErrorStringEnumLoftProfilePoint` (value: `"LOFT_PROFILE_POINT"`)
+* `LoftProfilePoint` (value: `"LOFT_PROFILE_POINT"`)
 
-* `GBTErrorStringEnumLoftProfileFailed` (value: `"LOFT_PROFILE_FAILED"`)
+* `LoftProfileFailed` (value: `"LOFT_PROFILE_FAILED"`)
 
-* `GBTErrorStringEnumLoftSelectGuides` (value: `"LOFT_SELECT_GUIDES"`)
+* `LoftSelectGuides` (value: `"LOFT_SELECT_GUIDES"`)
 
-* `GBTErrorStringEnumLoftGuideFailed` (value: `"LOFT_GUIDE_FAILED"`)
+* `LoftGuideFailed` (value: `"LOFT_GUIDE_FAILED"`)
 
-* `GBTErrorStringEnumLoftPeriodicError` (value: `"LOFT_PERIODIC_ERROR"`)
+* `LoftPeriodicError` (value: `"LOFT_PERIODIC_ERROR"`)
 
-* `GBTErrorStringEnumLoftGuidePointIntersection` (value: `"LOFT_GUIDE_POINT_INTERSECTION"`)
+* `LoftGuidePointIntersection` (value: `"LOFT_GUIDE_POINT_INTERSECTION"`)
 
-* `GBTErrorStringEnumLoftGuideProfileIntersection` (value: `"LOFT_GUIDE_PROFILE_INTERSECTION"`)
+* `LoftGuideProfileIntersection` (value: `"LOFT_GUIDE_PROFILE_INTERSECTION"`)
 
-* `GBTErrorStringEnumLoftVertexMatching` (value: `"LOFT_VERTEX_MATCHING"`)
+* `LoftVertexMatching` (value: `"LOFT_VERTEX_MATCHING"`)
 
-* `GBTErrorStringEnumLoftDirectionError` (value: `"LOFT_DIRECTION_ERROR"`)
+* `LoftDirectionError` (value: `"LOFT_DIRECTION_ERROR"`)
 
-* `GBTErrorStringEnumLoftProfileAlignment` (value: `"LOFT_PROFILE_ALIGNMENT"`)
+* `LoftProfileAlignment` (value: `"LOFT_PROFILE_ALIGNMENT"`)
 
-* `GBTErrorStringEnumLoftGuideAlignment` (value: `"LOFT_GUIDE_ALIGNMENT"`)
+* `LoftGuideAlignment` (value: `"LOFT_GUIDE_ALIGNMENT"`)
 
-* `GBTErrorStringEnumLoftVertexAdditions` (value: `"LOFT_VERTEX_ADDITIONS"`)
+* `LoftVertexAdditions` (value: `"LOFT_VERTEX_ADDITIONS"`)
 
-* `GBTErrorStringEnumLoftFailed` (value: `"LOFT_FAILED"`)
+* `LoftFailed` (value: `"LOFT_FAILED"`)
 
-* `GBTErrorStringEnumLoftInvalid` (value: `"LOFT_INVALID"`)
+* `LoftInvalid` (value: `"LOFT_INVALID"`)
 
-* `GBTErrorStringEnumLoftAlignmentInfo` (value: `"LOFT_ALIGNMENT_INFO"`)
+* `LoftAlignmentInfo` (value: `"LOFT_ALIGNMENT_INFO"`)
 
-* `GBTErrorStringEnumLoftVertexNotOnProfile` (value: `"LOFT_VERTEX_NOT_ON_PROFILE"`)
+* `LoftVertexNotOnProfile` (value: `"LOFT_VERTEX_NOT_ON_PROFILE"`)
 
-* `GBTErrorStringEnumLoftProfileNoInnerLoops` (value: `"LOFT_PROFILE_NO_INNER_LOOPS"`)
+* `LoftProfileNoInnerLoops` (value: `"LOFT_PROFILE_NO_INNER_LOOPS"`)
 
-* `GBTErrorStringEnumLoftTwoProfiles` (value: `"LOFT_TWO_PROFILES"`)
+* `LoftTwoProfiles` (value: `"LOFT_TWO_PROFILES"`)
 
-* `GBTErrorStringEnumCannotOffsetEllipse` (value: `"CANNOT_OFFSET_ELLIPSE"`)
+* `CannotOffsetEllipse` (value: `"CANNOT_OFFSET_ELLIPSE"`)
 
-* `GBTErrorStringEnumSketchMirrorNeedsLineAndTwoOthers` (value: `"SKETCH_MIRROR_NEEDS_LINE_AND_TWO_OTHERS"`)
+* `SketchMirrorNeedsLineAndTwoOthers` (value: `"SKETCH_MIRROR_NEEDS_LINE_AND_TWO_OTHERS"`)
 
-* `GBTErrorStringEnumSketchPolygonBadSideCount` (value: `"SKETCH_POLYGON_BAD_SIDE_COUNT"`)
+* `SketchPolygonBadSideCount` (value: `"SKETCH_POLYGON_BAD_SIDE_COUNT"`)
 
-* `GBTErrorStringEnumSketchDirectionalGroupInput` (value: `"SKETCH_DIRECTIONAL_GROUP_INPUT"`)
+* `SketchDirectionalGroupInput` (value: `"SKETCH_DIRECTIONAL_GROUP_INPUT"`)
 
-* `GBTErrorStringEnumNamedViewsDuplicateName` (value: `"NAMED_VIEWS_DUPLICATE_NAME"`)
+* `NamedViewsDuplicateName` (value: `"NAMED_VIEWS_DUPLICATE_NAME"`)
 
-* `GBTErrorStringEnumSilhouetteUseFailed` (value: `"SILHOUETTE_USE_FAILED"`)
+* `SilhouetteUseFailed` (value: `"SILHOUETTE_USE_FAILED"`)
 
-* `GBTErrorStringEnumPasteSketchMetricsFailure` (value: `"PASTE_SKETCH_METRICS_FAILURE"`)
+* `PasteSketchMetricsFailure` (value: `"PASTE_SKETCH_METRICS_FAILURE"`)
 
-* `GBTErrorStringEnumPasteSketchLibraryMismatch` (value: `"PASTE_SKETCH_LIBRARY_MISMATCH"`)
+* `PasteSketchLibraryMismatch` (value: `"PASTE_SKETCH_LIBRARY_MISMATCH"`)
 
-* `GBTErrorStringEnumPasteSketchClipboardEmpty` (value: `"PASTE_SKETCH_CLIPBOARD_EMPTY"`)
+* `PasteSketchClipboardEmpty` (value: `"PASTE_SKETCH_CLIPBOARD_EMPTY"`)
 
-* `GBTErrorStringEnumSketchMirrorOffsetSpline` (value: `"SKETCH_MIRROR_OFFSET_SPLINE"`)
+* `SketchMirrorOffsetSpline` (value: `"SKETCH_MIRROR_OFFSET_SPLINE"`)
 
-* `GBTErrorStringEnumSketchMirrorCurvePoint` (value: `"SKETCH_MIRROR_CURVE_POINT"`)
+* `SketchMirrorCurvePoint` (value: `"SKETCH_MIRROR_CURVE_POINT"`)
 
-* `GBTErrorStringEnumLoftPeriodicGuideError` (value: `"LOFT_PERIODIC_GUIDE_ERROR"`)
+* `LoftPeriodicGuideError` (value: `"LOFT_PERIODIC_GUIDE_ERROR"`)
 
-* `GBTErrorStringEnumShellSelectParts` (value: `"SHELL_SELECT_PARTS"`)
+* `ShellSelectParts` (value: `"SHELL_SELECT_PARTS"`)
 
-* `GBTErrorStringEnumRelationMateDoesNotExist` (value: `"RELATION_MATE_DOES_NOT_EXIST"`)
+* `RelationMateDoesNotExist` (value: `"RELATION_MATE_DOES_NOT_EXIST"`)
 
-* `GBTErrorStringEnumRelationMateIsSuppressed` (value: `"RELATION_MATE_IS_SUPPRESSED"`)
+* `RelationMateIsSuppressed` (value: `"RELATION_MATE_IS_SUPPRESSED"`)
 
-* `GBTErrorStringEnumVariableNameInvalid` (value: `"VARIABLE_NAME_INVALID"`)
+* `VariableNameInvalid` (value: `"VARIABLE_NAME_INVALID"`)
 
-* `GBTErrorStringEnumLoftGuideInfo` (value: `"LOFT_GUIDE_INFO"`)
+* `LoftGuideInfo` (value: `"LOFT_GUIDE_INFO"`)
 
-* `GBTErrorStringEnumHoleNoPoints` (value: `"HOLE_NO_POINTS"`)
+* `HoleNoPoints` (value: `"HOLE_NO_POINTS"`)
 
-* `GBTErrorStringEnumHoleFailBbox` (value: `"HOLE_FAIL_BBOX"`)
+* `HoleFailBbox` (value: `"HOLE_FAIL_BBOX"`)
 
-* `GBTErrorStringEnumHoleEmptyScope` (value: `"HOLE_EMPTY_SCOPE"`)
+* `HoleEmptyScope` (value: `"HOLE_EMPTY_SCOPE"`)
 
-* `GBTErrorStringEnumHoleNoHits` (value: `"HOLE_NO_HITS"`)
+* `HoleNoHits` (value: `"HOLE_NO_HITS"`)
 
-* `GBTErrorStringEnumWithExtraData` (value: `"WITH_EXTRA_DATA"`)
+* `WithExtraData` (value: `"WITH_EXTRA_DATA"`)
 
-* `GBTErrorStringEnumHoleDisjoint` (value: `"HOLE_DISJOINT"`)
+* `HoleDisjoint` (value: `"HOLE_DISJOINT"`)
 
-* `GBTErrorStringEnumSketchInsertDwgConversionFailure` (value: `"SKETCH_INSERT_DWG_CONVERSION_FAILURE"`)
+* `SketchInsertDwgConversionFailure` (value: `"SKETCH_INSERT_DWG_CONVERSION_FAILURE"`)
 
-* `GBTErrorStringEnumHoleCboreTooSmall` (value: `"HOLE_CBORE_TOO_SMALL"`)
+* `HoleCboreTooSmall` (value: `"HOLE_CBORE_TOO_SMALL"`)
 
-* `GBTErrorStringEnumHoleCboreTooDeep` (value: `"HOLE_CBORE_TOO_DEEP"`)
+* `HoleCboreTooDeep` (value: `"HOLE_CBORE_TOO_DEEP"`)
 
-* `GBTErrorStringEnumHoleCsinkTooSmall` (value: `"HOLE_CSINK_TOO_SMALL"`)
+* `HoleCsinkTooSmall` (value: `"HOLE_CSINK_TOO_SMALL"`)
 
-* `GBTErrorStringEnumHoleCsinkTooDeep` (value: `"HOLE_CSINK_TOO_DEEP"`)
+* `HoleCsinkTooDeep` (value: `"HOLE_CSINK_TOO_DEEP"`)
 
-* `GBTErrorStringEnumSweepPathNoConstruction` (value: `"SWEEP_PATH_NO_CONSTRUCTION"`)
+* `SweepPathNoConstruction` (value: `"SWEEP_PATH_NO_CONSTRUCTION"`)
 
-* `GBTErrorStringEnumSketchImageRectangleFailed` (value: `"SKETCH_IMAGE_RECTANGLE_FAILED"`)
+* `SketchImageRectangleFailed` (value: `"SKETCH_IMAGE_RECTANGLE_FAILED"`)
 
-* `GBTErrorStringEnumAssemblyReplicateNoValidTarget` (value: `"ASSEMBLY_REPLICATE_NO_VALID_TARGET"`)
+* `AssemblyReplicateNoValidTarget` (value: `"ASSEMBLY_REPLICATE_NO_VALID_TARGET"`)
 
-* `GBTErrorStringEnumAssemblyReplicateNoMatchingTarget` (value: `"ASSEMBLY_REPLICATE_NO_MATCHING_TARGET"`)
+* `AssemblyReplicateNoMatchingTarget` (value: `"ASSEMBLY_REPLICATE_NO_MATCHING_TARGET"`)
 
-* `GBTErrorStringEnumLoftShapeControlFailed` (value: `"LOFT_SHAPE_CONTROL_FAILED"`)
+* `LoftShapeControlFailed` (value: `"LOFT_SHAPE_CONTROL_FAILED"`)
 
-* `GBTErrorStringEnumLoftStartConditionsFailed` (value: `"LOFT_START_CONDITIONS_FAILED"`)
+* `LoftStartConditionsFailed` (value: `"LOFT_START_CONDITIONS_FAILED"`)
 
-* `GBTErrorStringEnumLoftEndConditionsFailed` (value: `"LOFT_END_CONDITIONS_FAILED"`)
+* `LoftEndConditionsFailed` (value: `"LOFT_END_CONDITIONS_FAILED"`)
 
-* `GBTErrorStringEnumLoftNoFaceForStartClamp` (value: `"LOFT_NO_FACE_FOR_START_CLAMP"`)
+* `LoftNoFaceForStartClamp` (value: `"LOFT_NO_FACE_FOR_START_CLAMP"`)
 
-* `GBTErrorStringEnumLoftNoFaceForEndClamp` (value: `"LOFT_NO_FACE_FOR_END_CLAMP"`)
+* `LoftNoFaceForEndClamp` (value: `"LOFT_NO_FACE_FOR_END_CLAMP"`)
 
-* `GBTErrorStringEnumLoftNoPlaneForStartClamp` (value: `"LOFT_NO_PLANE_FOR_START_CLAMP"`)
+* `LoftNoPlaneForStartClamp` (value: `"LOFT_NO_PLANE_FOR_START_CLAMP"`)
 
-* `GBTErrorStringEnumLoftNoPlaneForEndClamp` (value: `"LOFT_NO_PLANE_FOR_END_CLAMP"`)
+* `LoftNoPlaneForEndClamp` (value: `"LOFT_NO_PLANE_FOR_END_CLAMP"`)
 
-* `GBTErrorStringEnumLoftNoClampsOnPointProfile` (value: `"LOFT_NO_CLAMPS_ON_POINT_PROFILE"`)
+* `LoftNoClampsOnPointProfile` (value: `"LOFT_NO_CLAMPS_ON_POINT_PROFILE"`)
 
-* `GBTErrorStringEnumExportNotImplemented` (value: `"EXPORT_NOT_IMPLEMENTED"`)
+* `ExportNotImplemented` (value: `"EXPORT_NOT_IMPLEMENTED"`)
 
-* `GBTErrorStringEnumSketchPolygonZeroRadiusFail` (value: `"SKETCH_POLYGON_ZERO_RADIUS_FAIL"`)
+* `SketchPolygonZeroRadiusFail` (value: `"SKETCH_POLYGON_ZERO_RADIUS_FAIL"`)
 
-* `GBTErrorStringEnumDrawingFailedToResolveViewReference` (value: `"DRAWING_FAILED_TO_RESOLVE_VIEW_REFERENCE"`)
+* `DrawingFailedToResolveViewReference` (value: `"DRAWING_FAILED_TO_RESOLVE_VIEW_REFERENCE"`)
 
-* `GBTErrorStringEnumDrawingPartstudioEmptyAfterSectionCut` (value: `"DRAWING_PARTSTUDIO_EMPTY_AFTER_SECTION_CUT"`)
+* `DrawingPartstudioEmptyAfterSectionCut` (value: `"DRAWING_PARTSTUDIO_EMPTY_AFTER_SECTION_CUT"`)
 
-* `GBTErrorStringEnumDrawingAssemblyDoesNotContainVisibleInstances` (value: `"DRAWING_ASSEMBLY_DOES_NOT_CONTAIN_VISIBLE_INSTANCES"`)
+* `DrawingAssemblyDoesNotContainVisibleInstances` (value: `"DRAWING_ASSEMBLY_DOES_NOT_CONTAIN_VISIBLE_INSTANCES"`)
 
-* `GBTErrorStringEnumDrawingAssemblyEmptyAfterSectionCut` (value: `"DRAWING_ASSEMBLY_EMPTY_AFTER_SECTION_CUT"`)
+* `DrawingAssemblyEmptyAfterSectionCut` (value: `"DRAWING_ASSEMBLY_EMPTY_AFTER_SECTION_CUT"`)
 
-* `GBTErrorStringEnumDrawingViewGenerationFailed` (value: `"DRAWING_VIEW_GENERATION_FAILED"`)
+* `DrawingViewGenerationFailed` (value: `"DRAWING_VIEW_GENERATION_FAILED"`)
 
-* `GBTErrorStringEnumSketchSlotFailure` (value: `"SKETCH_SLOT_FAILURE"`)
+* `SketchSlotFailure` (value: `"SKETCH_SLOT_FAILURE"`)
 
-* `GBTErrorStringEnumSketchSlotPartialFailure` (value: `"SKETCH_SLOT_PARTIAL_FAILURE"`)
+* `SketchSlotPartialFailure` (value: `"SKETCH_SLOT_PARTIAL_FAILURE"`)
 
-* `GBTErrorStringEnumNoUnit` (value: `"NO_UNIT"`)
+* `NoUnit` (value: `"NO_UNIT"`)
 
-* `GBTErrorStringEnumRestructureInvalidSource` (value: `"RESTRUCTURE_INVALID_SOURCE"`)
+* `RestructureInvalidSource` (value: `"RESTRUCTURE_INVALID_SOURCE"`)
 
-* `GBTErrorStringEnumRestructureInvalidTarget` (value: `"RESTRUCTURE_INVALID_TARGET"`)
+* `RestructureInvalidTarget` (value: `"RESTRUCTURE_INVALID_TARGET"`)
 
-* `GBTErrorStringEnumMateMinMaxLimitViolation` (value: `"MATE_MIN_MAX_LIMIT_VIOLATION"`)
+* `MateMinMaxLimitViolation` (value: `"MATE_MIN_MAX_LIMIT_VIOLATION"`)
 
-* `GBTErrorStringEnumRestAssemblyGetDocumentFailed` (value: `"REST_ASSEMBLY_GET_DOCUMENT_FAILED"`)
+* `RestAssemblyGetDocumentFailed` (value: `"REST_ASSEMBLY_GET_DOCUMENT_FAILED"`)
 
-* `GBTErrorStringEnumRestAssemblyUnknownInsertableType` (value: `"REST_ASSEMBLY_UNKNOWN_INSERTABLE_TYPE"`)
+* `RestAssemblyUnknownInsertableType` (value: `"REST_ASSEMBLY_UNKNOWN_INSERTABLE_TYPE"`)
 
-* `GBTErrorStringEnumRestAssemblySetupException` (value: `"REST_ASSEMBLY_SETUP_EXCEPTION"`)
+* `RestAssemblySetupException` (value: `"REST_ASSEMBLY_SETUP_EXCEPTION"`)
 
-* `GBTErrorStringEnumRestAssemblyBeginOperationFailed` (value: `"REST_ASSEMBLY_BEGIN_OPERATION_FAILED"`)
+* `RestAssemblyBeginOperationFailed` (value: `"REST_ASSEMBLY_BEGIN_OPERATION_FAILED"`)
 
-* `GBTErrorStringEnumRestAssemblyInsertInstanceFailed` (value: `"REST_ASSEMBLY_INSERT_INSTANCE_FAILED"`)
+* `RestAssemblyInsertInstanceFailed` (value: `"REST_ASSEMBLY_INSERT_INSTANCE_FAILED"`)
 
-* `GBTErrorStringEnumRestAssemblyCommitOperationFailed` (value: `"REST_ASSEMBLY_COMMIT_OPERATION_FAILED"`)
+* `RestAssemblyCommitOperationFailed` (value: `"REST_ASSEMBLY_COMMIT_OPERATION_FAILED"`)
 
-* `GBTErrorStringEnumRestAssemblyCloseClientFailed` (value: `"REST_ASSEMBLY_CLOSE_CLIENT_FAILED"`)
+* `RestAssemblyCloseClientFailed` (value: `"REST_ASSEMBLY_CLOSE_CLIENT_FAILED"`)
 
-* `GBTErrorStringEnumRestAssemblyNullOccurrences` (value: `"REST_ASSEMBLY_NULL_OCCURRENCES"`)
+* `RestAssemblyNullOccurrences` (value: `"REST_ASSEMBLY_NULL_OCCURRENCES"`)
 
-* `GBTErrorStringEnumRestAssemblyEmptyOccurrence` (value: `"REST_ASSEMBLY_EMPTY_OCCURRENCE"`)
+* `RestAssemblyEmptyOccurrence` (value: `"REST_ASSEMBLY_EMPTY_OCCURRENCE"`)
 
-* `GBTErrorStringEnumRestAssemblyTransformWrongSize` (value: `"REST_ASSEMBLY_TRANSFORM_WRONG_SIZE"`)
+* `RestAssemblyTransformWrongSize` (value: `"REST_ASSEMBLY_TRANSFORM_WRONG_SIZE"`)
 
-* `GBTErrorStringEnumAssemblyEmptyOccurrenceList` (value: `"ASSEMBLY_EMPTY_OCCURRENCE_LIST"`)
+* `AssemblyEmptyOccurrenceList` (value: `"ASSEMBLY_EMPTY_OCCURRENCE_LIST"`)
 
-* `GBTErrorStringEnumAssemblyNullTransform` (value: `"ASSEMBLY_NULL_TRANSFORM"`)
+* `AssemblyNullTransform` (value: `"ASSEMBLY_NULL_TRANSFORM"`)
 
-* `GBTErrorStringEnumAssemblyTransformNotRigid` (value: `"ASSEMBLY_TRANSFORM_NOT_RIGID"`)
+* `AssemblyTransformNotRigid` (value: `"ASSEMBLY_TRANSFORM_NOT_RIGID"`)
 
-* `GBTErrorStringEnumAssemblyCannotTransformFixedOccurrence` (value: `"ASSEMBLY_CANNOT_TRANSFORM_FIXED_OCCURRENCE"`)
+* `AssemblyCannotTransformFixedOccurrence` (value: `"ASSEMBLY_CANNOT_TRANSFORM_FIXED_OCCURRENCE"`)
 
-* `GBTErrorStringEnumAssemblyTransformFailed` (value: `"ASSEMBLY_TRANSFORM_FAILED"`)
+* `AssemblyTransformFailed` (value: `"ASSEMBLY_TRANSFORM_FAILED"`)
 
-* `GBTErrorStringEnumAssemblyOccurrenceNotFound` (value: `"ASSEMBLY_OCCURRENCE_NOT_FOUND"`)
+* `AssemblyOccurrenceNotFound` (value: `"ASSEMBLY_OCCURRENCE_NOT_FOUND"`)
 
-* `GBTErrorStringEnumAssemblyReplicateMultipleValidTarget` (value: `"ASSEMBLY_REPLICATE_MULTIPLE_VALID_TARGET"`)
+* `AssemblyReplicateMultipleValidTarget` (value: `"ASSEMBLY_REPLICATE_MULTIPLE_VALID_TARGET"`)
 
-* `GBTErrorStringEnumAssemblyReplicateNoTargetSelected` (value: `"ASSEMBLY_REPLICATE_NO_TARGET_SELECTED"`)
+* `AssemblyReplicateNoTargetSelected` (value: `"ASSEMBLY_REPLICATE_NO_TARGET_SELECTED"`)
 
-* `GBTErrorStringEnumCplaneInputLineAngle2` (value: `"CPLANE_INPUT_LINE_ANGLE2"`)
+* `CplaneInputLineAngle2` (value: `"CPLANE_INPUT_LINE_ANGLE2"`)
 
-* `GBTErrorStringEnumCplaneDegenerateSelection` (value: `"CPLANE_DEGENERATE_SELECTION"`)
+* `CplaneDegenerateSelection` (value: `"CPLANE_DEGENERATE_SELECTION"`)
 
-* `GBTErrorStringEnumCplaneSelectLineAngleReference` (value: `"CPLANE_SELECT_LINE_ANGLE_REFERENCE"`)
+* `CplaneSelectLineAngleReference` (value: `"CPLANE_SELECT_LINE_ANGLE_REFERENCE"`)
 
-* `GBTErrorStringEnumAssemblyReplicateInvalidSeedInstance` (value: `"ASSEMBLY_REPLICATE_INVALID_SEED_INSTANCE"`)
+* `AssemblyReplicateInvalidSeedInstance` (value: `"ASSEMBLY_REPLICATE_INVALID_SEED_INSTANCE"`)
 
-* `GBTErrorStringEnumCannotUseVariablesInSketchPatterns` (value: `"CANNOT_USE_VARIABLES_IN_SKETCH_PATTERNS"`)
+* `CannotUseVariablesInSketchPatterns` (value: `"CANNOT_USE_VARIABLES_IN_SKETCH_PATTERNS"`)
 
-* `GBTErrorStringEnumSketchMirrorOffsetEllipse` (value: `"SKETCH_MIRROR_OFFSET_ELLIPSE"`)
+* `SketchMirrorOffsetEllipse` (value: `"SKETCH_MIRROR_OFFSET_ELLIPSE"`)
 
-* `GBTErrorStringEnumExternalReferenceFailedToCreate` (value: `"EXTERNAL_REFERENCE_FAILED_TO_CREATE"`)
+* `ExternalReferenceFailedToCreate` (value: `"EXTERNAL_REFERENCE_FAILED_TO_CREATE"`)
 
-* `GBTErrorStringEnumSplitFaceNoChange` (value: `"SPLIT_FACE_NO_CHANGE"`)
+* `SplitFaceNoChange` (value: `"SPLIT_FACE_NO_CHANGE"`)
 
-* `GBTErrorStringEnumSketchIntersectionFailed` (value: `"SKETCH_INTERSECTION_FAILED"`)
+* `SketchIntersectionFailed` (value: `"SKETCH_INTERSECTION_FAILED"`)
 
-* `GBTErrorStringEnumSketchIntersectionMultipleFailed` (value: `"SKETCH_INTERSECTION_MULTIPLE_FAILED"`)
+* `SketchIntersectionMultipleFailed` (value: `"SKETCH_INTERSECTION_MULTIPLE_FAILED"`)
 
-* `GBTErrorStringEnumSketchIntersectionPartialFailed` (value: `"SKETCH_INTERSECTION_PARTIAL_FAILED"`)
+* `SketchIntersectionPartialFailed` (value: `"SKETCH_INTERSECTION_PARTIAL_FAILED"`)
 
-* `GBTErrorStringEnumFeatureIdInPathDoesNotMatchBody` (value: `"FEATURE_ID_IN_PATH_DOES_NOT_MATCH_BODY"`)
+* `FeatureIdInPathDoesNotMatchBody` (value: `"FEATURE_ID_IN_PATH_DOES_NOT_MATCH_BODY"`)
 
-* `GBTErrorStringEnumFeatureNotFound` (value: `"FEATURE_NOT_FOUND"`)
+* `FeatureNotFound` (value: `"FEATURE_NOT_FOUND"`)
 
-* `GBTErrorStringEnumFeatureDoesNotMatch` (value: `"FEATURE_DOES_NOT_MATCH"`)
+* `FeatureDoesNotMatch` (value: `"FEATURE_DOES_NOT_MATCH"`)
 
-* `GBTErrorStringEnumFeatureHasInvalidType` (value: `"FEATURE_HAS_INVALID_TYPE"`)
+* `FeatureHasInvalidType` (value: `"FEATURE_HAS_INVALID_TYPE"`)
 
-* `GBTErrorStringEnumFeatureDoesNotMatchItsFeatureSpec` (value: `"FEATURE_DOES_NOT_MATCH_ITS_FEATURE_SPEC"`)
+* `FeatureDoesNotMatchItsFeatureSpec` (value: `"FEATURE_DOES_NOT_MATCH_ITS_FEATURE_SPEC"`)
 
-* `GBTErrorStringEnumFeatureBadSerializationVersion` (value: `"FEATURE_BAD_SERIALIZATION_VERSION"`)
+* `FeatureBadSerializationVersion` (value: `"FEATURE_BAD_SERIALIZATION_VERSION"`)
 
-* `GBTErrorStringEnumFeatureWrongSerializationVersion` (value: `"FEATURE_WRONG_SERIALIZATION_VERSION"`)
+* `FeatureWrongSerializationVersion` (value: `"FEATURE_WRONG_SERIALIZATION_VERSION"`)
 
-* `GBTErrorStringEnumFeatureInvalidRollbackIndex` (value: `"FEATURE_INVALID_ROLLBACK_INDEX"`)
+* `FeatureInvalidRollbackIndex` (value: `"FEATURE_INVALID_ROLLBACK_INDEX"`)
 
-* `GBTErrorStringEnumFeatureErrorInInput` (value: `"FEATURE_ERROR_IN_INPUT"`)
+* `FeatureErrorInInput` (value: `"FEATURE_ERROR_IN_INPUT"`)
 
-* `GBTErrorStringEnumFeatureConcurrencyError` (value: `"FEATURE_CONCURRENCY_ERROR"`)
+* `FeatureConcurrencyError` (value: `"FEATURE_CONCURRENCY_ERROR"`)
 
-* `GBTErrorStringEnumFeatureChangeBreaksModel` (value: `"FEATURE_CHANGE_BREAKS_MODEL"`)
+* `FeatureChangeBreaksModel` (value: `"FEATURE_CHANGE_BREAKS_MODEL"`)
 
-* `GBTErrorStringEnumFeatureNodeIdsInvalid` (value: `"FEATURE_NODE_IDS_INVALID"`)
+* `FeatureNodeIdsInvalid` (value: `"FEATURE_NODE_IDS_INVALID"`)
 
-* `GBTErrorStringEnumRollbackIndexInvalid` (value: `"ROLLBACK_INDEX_INVALID"`)
+* `RollbackIndexInvalid` (value: `"ROLLBACK_INDEX_INVALID"`)
 
-* `GBTErrorStringEnumFeatureNoSolids` (value: `"FEATURE_NO_SOLIDS"`)
+* `FeatureNoSolids` (value: `"FEATURE_NO_SOLIDS"`)
 
-* `GBTErrorStringEnumSketchExternalGeometryMismatch` (value: `"SKETCH_EXTERNAL_GEOMETRY_MISMATCH"`)
+* `SketchExternalGeometryMismatch` (value: `"SKETCH_EXTERNAL_GEOMETRY_MISMATCH"`)
 
-* `GBTErrorStringEnumHoleExceedsMaxLocations` (value: `"HOLE_EXCEEDS_MAX_LOCATIONS"`)
+* `HoleExceedsMaxLocations` (value: `"HOLE_EXCEEDS_MAX_LOCATIONS"`)
 
-* `GBTErrorStringEnumSketchTextIsEmpty` (value: `"SKETCH_TEXT_IS_EMPTY"`)
+* `SketchTextIsEmpty` (value: `"SKETCH_TEXT_IS_EMPTY"`)
 
-* `GBTErrorStringEnumSketchInsertDwgMaxEntitiesExceeded` (value: `"SKETCH_INSERT_DWG_MAX_ENTITIES_EXCEEDED"`)
+* `SketchInsertDwgMaxEntitiesExceeded` (value: `"SKETCH_INSERT_DWG_MAX_ENTITIES_EXCEEDED"`)
 
-* `GBTErrorStringEnumHoleTapDiaTooLarge` (value: `"HOLE_TAP_DIA_TOO_LARGE"`)
+* `HoleTapDiaTooLarge` (value: `"HOLE_TAP_DIA_TOO_LARGE"`)
 
-* `GBTErrorStringEnumAssemblyEmptyBody` (value: `"ASSEMBLY_EMPTY_BODY"`)
+* `AssemblyEmptyBody` (value: `"ASSEMBLY_EMPTY_BODY"`)
 
-* `GBTErrorStringEnumSimplifyBodyFailed` (value: `"SIMPLIFY_BODY_FAILED"`)
+* `SimplifyBodyFailed` (value: `"SIMPLIFY_BODY_FAILED"`)
 
-* `GBTErrorStringEnumInvalidViewName` (value: `"INVALID_VIEW_NAME"`)
+* `InvalidViewName` (value: `"INVALID_VIEW_NAME"`)
 
-* `GBTErrorStringEnumPatternSelectFeatures` (value: `"PATTERN_SELECT_FEATURES"`)
+* `PatternSelectFeatures` (value: `"PATTERN_SELECT_FEATURES"`)
 
-* `GBTErrorStringEnumMirrorSelectFeatures` (value: `"MIRROR_SELECT_FEATURES"`)
+* `MirrorSelectFeatures` (value: `"MIRROR_SELECT_FEATURES"`)
 
-* `GBTErrorStringEnumPatternFeatureFailed` (value: `"PATTERN_FEATURE_FAILED"`)
+* `PatternFeatureFailed` (value: `"PATTERN_FEATURE_FAILED"`)
 
-* `GBTErrorStringEnumSketchTransformFailed` (value: `"SKETCH_TRANSFORM_FAILED"`)
+* `SketchTransformFailed` (value: `"SKETCH_TRANSFORM_FAILED"`)
 
-* `GBTErrorStringEnumTangentMateTwoEntitiesNeeded` (value: `"TANGENT_MATE_TWO_ENTITIES_NEEDED"`)
+* `TangentMateTwoEntitiesNeeded` (value: `"TANGENT_MATE_TWO_ENTITIES_NEEDED"`)
 
-* `GBTErrorStringEnumHoleCannotDetermineLastBody` (value: `"HOLE_CANNOT_DETERMINE_LAST_BODY"`)
+* `HoleCannotDetermineLastBody` (value: `"HOLE_CANNOT_DETERMINE_LAST_BODY"`)
 
-* `GBTErrorStringEnumRestructureCannotModifySavedVersion` (value: `"RESTRUCTURE_CANNOT_MODIFY_SAVED_VERSION"`)
+* `RestructureCannotModifySavedVersion` (value: `"RESTRUCTURE_CANNOT_MODIFY_SAVED_VERSION"`)
 
-* `GBTErrorStringEnumRestAssemblyExternalReferenceRequiresVersion` (value: `"REST_ASSEMBLY_EXTERNAL_REFERENCE_REQUIRES_VERSION"`)
+* `RestAssemblyExternalReferenceRequiresVersion` (value: `"REST_ASSEMBLY_EXTERNAL_REFERENCE_REQUIRES_VERSION"`)
 
-* `GBTErrorStringEnumRestAssemblyExternalReferenceDisallowsMicroversion` (value: `"REST_ASSEMBLY_EXTERNAL_REFERENCE_DISALLOWS_MICROVERSION"`)
+* `RestAssemblyExternalReferenceDisallowsMicroversion` (value: `"REST_ASSEMBLY_EXTERNAL_REFERENCE_DISALLOWS_MICROVERSION"`)
 
-* `GBTErrorStringEnumRestAssemblyVersionSupportedOnlyForExternalReferences` (value: `"REST_ASSEMBLY_VERSION_SUPPORTED_ONLY_FOR_EXTERNAL_REFERENCES"`)
+* `RestAssemblyVersionSupportedOnlyForExternalReferences` (value: `"REST_ASSEMBLY_VERSION_SUPPORTED_ONLY_FOR_EXTERNAL_REFERENCES"`)
 
-* `GBTErrorStringEnumSweepBadLockFaces` (value: `"SWEEP_BAD_LOCK_FACES"`)
+* `SweepBadLockFaces` (value: `"SWEEP_BAD_LOCK_FACES"`)
 
-* `GBTErrorStringEnumSketchTextCannotBeConstruction` (value: `"SKETCH_TEXT_CANNOT_BE_CONSTRUCTION"`)
+* `SketchTextCannotBeConstruction` (value: `"SKETCH_TEXT_CANNOT_BE_CONSTRUCTION"`)
 
-* `GBTErrorStringEnumCustomError` (value: `"CUSTOM_ERROR"`)
+* `CustomError` (value: `"CUSTOM_ERROR"`)
 
-* `GBTErrorStringEnumBendBadConfiguration` (value: `"BEND_BAD_CONFIGURATION"`)
+* `BendBadConfiguration` (value: `"BEND_BAD_CONFIGURATION"`)
 
-* `GBTErrorStringEnumBendWrongNumberOfEntities` (value: `"BEND_WRONG_NUMBER_OF_ENTITIES"`)
+* `BendWrongNumberOfEntities` (value: `"BEND_WRONG_NUMBER_OF_ENTITIES"`)
 
-* `GBTErrorStringEnumBendBadCurves` (value: `"BEND_BAD_CURVES"`)
+* `BendBadCurves` (value: `"BEND_BAD_CURVES"`)
 
-* `GBTErrorStringEnumBendGeneralError` (value: `"BEND_GENERAL_ERROR"`)
+* `BendGeneralError` (value: `"BEND_GENERAL_ERROR"`)
 
-* `GBTErrorStringEnumBendEdgeNoEdges` (value: `"BEND_EDGE_NO_EDGES"`)
+* `BendEdgeNoEdges` (value: `"BEND_EDGE_NO_EDGES"`)
 
-* `GBTErrorStringEnumBendEdgeNoSeedEntity` (value: `"BEND_EDGE_NO_SEED_ENTITY"`)
+* `BendEdgeNoSeedEntity` (value: `"BEND_EDGE_NO_SEED_ENTITY"`)
 
-* `GBTErrorStringEnumExtendSheetBodyNoBody` (value: `"EXTEND_SHEET_BODY_NO_BODY"`)
+* `ExtendSheetBodyNoBody` (value: `"EXTEND_SHEET_BODY_NO_BODY"`)
 
-* `GBTErrorStringEnumExtractSurfaceNoFaces` (value: `"EXTRACT_SURFACE_NO_FACES"`)
+* `ExtractSurfaceNoFaces` (value: `"EXTRACT_SURFACE_NO_FACES"`)
 
-* `GBTErrorStringEnumFlattenNoEdges` (value: `"FLATTEN_NO_EDGES"`)
+* `FlattenNoEdges` (value: `"FLATTEN_NO_EDGES"`)
 
-* `GBTErrorStringEnumFlattenNoFaces` (value: `"FLATTEN_NO_FACES"`)
+* `FlattenNoFaces` (value: `"FLATTEN_NO_FACES"`)
 
-* `GBTErrorStringEnumFoldNoBodies` (value: `"FOLD_NO_BODIES"`)
+* `FoldNoBodies` (value: `"FOLD_NO_BODIES"`)
 
-* `GBTErrorStringEnumBendPrepNoFaces` (value: `"BEND_PREP_NO_FACES"`)
+* `BendPrepNoFaces` (value: `"BEND_PREP_NO_FACES"`)
 
-* `GBTErrorStringEnumBendPrepNoBodies` (value: `"BEND_PREP_NO_BODIES"`)
+* `BendPrepNoBodies` (value: `"BEND_PREP_NO_BODIES"`)
 
-* `GBTErrorStringEnumBendPrepErrorFindingEdgeLocations` (value: `"BEND_PREP_ERROR_FINDING_EDGE_LOCATIONS"`)
+* `BendPrepErrorFindingEdgeLocations` (value: `"BEND_PREP_ERROR_FINDING_EDGE_LOCATIONS"`)
 
-* `GBTErrorStringEnumBendPrepErrorImprintingEdges` (value: `"BEND_PREP_ERROR_IMPRINTING_EDGES"`)
+* `BendPrepErrorImprintingEdges` (value: `"BEND_PREP_ERROR_IMPRINTING_EDGES"`)
 
-* `GBTErrorStringEnumAssemblyAnimateMateStartAfterEnd` (value: `"ASSEMBLY_ANIMATE_MATE_START_AFTER_END"`)
+* `AssemblyAnimateMateStartAfterEnd` (value: `"ASSEMBLY_ANIMATE_MATE_START_AFTER_END"`)
 
-* `GBTErrorStringEnumAssemblyAnimateNoMate` (value: `"ASSEMBLY_ANIMATE_NO_MATE"`)
+* `AssemblyAnimateNoMate` (value: `"ASSEMBLY_ANIMATE_NO_MATE"`)
 
-* `GBTErrorStringEnumAssemblyAnimateMateSuppressed` (value: `"ASSEMBLY_ANIMATE_MATE_SUPPRESSED"`)
+* `AssemblyAnimateMateSuppressed` (value: `"ASSEMBLY_ANIMATE_MATE_SUPPRESSED"`)
 
-* `GBTErrorStringEnumTangentMateGeometryNotSupported` (value: `"TANGENT_MATE_GEOMETRY_NOT_SUPPORTED"`)
+* `TangentMateGeometryNotSupported` (value: `"TANGENT_MATE_GEOMETRY_NOT_SUPPORTED"`)
 
-* `GBTErrorStringEnumSketchDimensionInfinity` (value: `"SKETCH_DIMENSION_INFINITY"`)
+* `SketchDimensionInfinity` (value: `"SKETCH_DIMENSION_INFINITY"`)
 
-* `GBTErrorStringEnumBoleanInputsNotSolid` (value: `"BOLEAN_INPUTS_NOT_SOLID"`)
+* `BoleanInputsNotSolid` (value: `"BOLEAN_INPUTS_NOT_SOLID"`)
 
-* `GBTErrorStringEnumFaceIsNotRectangle` (value: `"FACE_IS_NOT_RECTANGLE"`)
+* `FaceIsNotRectangle` (value: `"FACE_IS_NOT_RECTANGLE"`)
 
-* `GBTErrorStringEnumHoleDestroySolid` (value: `"HOLE_DESTROY_SOLID"`)
+* `HoleDestroySolid` (value: `"HOLE_DESTROY_SOLID"`)
 
-* `GBTErrorStringEnumHelixInputCircle` (value: `"HELIX_INPUT_CIRCLE"`)
+* `HelixInputCircle` (value: `"HELIX_INPUT_CIRCLE"`)
 
-* `GBTErrorStringEnumImportScalingNonMeshData` (value: `"IMPORT_SCALING_NON_MESH_DATA"`)
+* `ImportScalingNonMeshData` (value: `"IMPORT_SCALING_NON_MESH_DATA"`)
 
-* `GBTErrorStringEnumEvaluateFaceTangentForMeshes` (value: `"EVALUATE_FACE_TANGENT_FOR_MESHES"`)
+* `EvaluateFaceTangentForMeshes` (value: `"EVALUATE_FACE_TANGENT_FOR_MESHES"`)
 
-* `GBTErrorStringEnumCannotComputeCentroid` (value: `"CANNOT_COMPUTE_CENTROID"`)
+* `CannotComputeCentroid` (value: `"CANNOT_COMPUTE_CENTROID"`)
 
-* `GBTErrorStringEnumCannotEvaluateDimension` (value: `"CANNOT_EVALUATE_DIMENSION"`)
+* `CannotEvaluateDimension` (value: `"CANNOT_EVALUATE_DIMENSION"`)
 
-* `GBTErrorStringEnumCannotImportMesh` (value: `"CANNOT_IMPORT_MESH"`)
+* `CannotImportMesh` (value: `"CANNOT_IMPORT_MESH"`)
 
-* `GBTErrorStringEnumSketchEllipseZeroAxis` (value: `"SKETCH_ELLIPSE_ZERO_AXIS"`)
+* `SketchEllipseZeroAxis` (value: `"SKETCH_ELLIPSE_ZERO_AXIS"`)
 
-* `GBTErrorStringEnumTransformScaleUniformly` (value: `"TRANSFORM_SCALE_UNIFORMLY"`)
+* `TransformScaleUniformly` (value: `"TRANSFORM_SCALE_UNIFORMLY"`)
 
-* `GBTErrorStringEnumTransformMateConnectors` (value: `"TRANSFORM_MATE_CONNECTORS"`)
+* `TransformMateConnectors` (value: `"TRANSFORM_MATE_CONNECTORS"`)
 
-* `GBTErrorStringEnumAssemblyWrongElementType` (value: `"ASSEMBLY_WRONG_ELEMENT_TYPE"`)
+* `AssemblyWrongElementType` (value: `"ASSEMBLY_WRONG_ELEMENT_TYPE"`)
 
-* `GBTErrorStringEnumAssemblyElementNotFound` (value: `"ASSEMBLY_ELEMENT_NOT_FOUND"`)
+* `AssemblyElementNotFound` (value: `"ASSEMBLY_ELEMENT_NOT_FOUND"`)
 
-* `GBTErrorStringEnumSheetMetalTableUnknownError` (value: `"SHEET_METAL_TABLE_UNKNOWN_ERROR"`)
+* `SheetMetalTableUnknownError` (value: `"SHEET_METAL_TABLE_UNKNOWN_ERROR"`)
 
-* `GBTErrorStringEnumSheetMetalTableRegenError` (value: `"SHEET_METAL_TABLE_REGEN_ERROR"`)
+* `SheetMetalTableRegenError` (value: `"SHEET_METAL_TABLE_REGEN_ERROR"`)
 
-* `GBTErrorStringEnumSheetMetalTableReadOnly` (value: `"SHEET_METAL_TABLE_READ_ONLY"`)
+* `SheetMetalTableReadOnly` (value: `"SHEET_METAL_TABLE_READ_ONLY"`)
 
-* `GBTErrorStringEnumAssemblyPatternInvalidType` (value: `"ASSEMBLY_PATTERN_INVALID_TYPE"`)
+* `AssemblyPatternInvalidType` (value: `"ASSEMBLY_PATTERN_INVALID_TYPE"`)
 
-* `GBTErrorStringEnumAssemblyPatternDirectionError` (value: `"ASSEMBLY_PATTERN_DIRECTION_ERROR"`)
+* `AssemblyPatternDirectionError` (value: `"ASSEMBLY_PATTERN_DIRECTION_ERROR"`)
 
-* `GBTErrorStringEnumAssemblyPatternNonpositiveLinearDistance` (value: `"ASSEMBLY_PATTERN_NONPOSITIVE_LINEAR_DISTANCE"`)
+* `AssemblyPatternNonpositiveLinearDistance` (value: `"ASSEMBLY_PATTERN_NONPOSITIVE_LINEAR_DISTANCE"`)
 
-* `GBTErrorStringEnumAssemblyPatternNonpositiveAngle` (value: `"ASSEMBLY_PATTERN_NONPOSITIVE_ANGLE"`)
+* `AssemblyPatternNonpositiveAngle` (value: `"ASSEMBLY_PATTERN_NONPOSITIVE_ANGLE"`)
 
-* `GBTErrorStringEnumAssemblyPatternInvalidSeed` (value: `"ASSEMBLY_PATTERN_INVALID_SEED"`)
+* `AssemblyPatternInvalidSeed` (value: `"ASSEMBLY_PATTERN_INVALID_SEED"`)
 
-* `GBTErrorStringEnumAssemblyPatternInvalidReferenceMateConnector` (value: `"ASSEMBLY_PATTERN_INVALID_REFERENCE_MATE_CONNECTOR"`)
+* `AssemblyPatternInvalidReferenceMateConnector` (value: `"ASSEMBLY_PATTERN_INVALID_REFERENCE_MATE_CONNECTOR"`)
 
-* `GBTErrorStringEnumRestoreFeatureFailed` (value: `"RESTORE_FEATURE_FAILED"`)
+* `RestoreFeatureFailed` (value: `"RESTORE_FEATURE_FAILED"`)
 
-* `GBTErrorStringEnumFacesNotOwnedByParts` (value: `"FACES_NOT_OWNED_BY_PARTS"`)
+* `FacesNotOwnedByParts` (value: `"FACES_NOT_OWNED_BY_PARTS"`)
 
-* `GBTErrorStringEnumEdgesNotOwnedByParts` (value: `"EDGES_NOT_OWNED_BY_PARTS"`)
+* `EdgesNotOwnedByParts` (value: `"EDGES_NOT_OWNED_BY_PARTS"`)
 
-* `GBTErrorStringEnumSheetMetalRebuildError` (value: `"SHEET_METAL_REBUILD_ERROR"`)
+* `SheetMetalRebuildError` (value: `"SHEET_METAL_REBUILD_ERROR"`)
 
-* `GBTErrorStringEnumSheetMetalInputBodyShouldNotBeSheetMetal` (value: `"SHEET_METAL_INPUT_BODY_SHOULD_NOT_BE_SHEET_METAL"`)
+* `SheetMetalInputBodyShouldNotBeSheetMetal` (value: `"SHEET_METAL_INPUT_BODY_SHOULD_NOT_BE_SHEET_METAL"`)
 
-* `GBTErrorStringEnumSheetMetalCannotRecognizeParts` (value: `"SHEET_METAL_CANNOT_RECOGNIZE_PARTS"`)
+* `SheetMetalCannotRecognizeParts` (value: `"SHEET_METAL_CANNOT_RECOGNIZE_PARTS"`)
 
-* `GBTErrorStringEnumSheetMetalCannotThicken` (value: `"SHEET_METAL_CANNOT_THICKEN"`)
+* `SheetMetalCannotThicken` (value: `"SHEET_METAL_CANNOT_THICKEN"`)
 
-* `GBTErrorStringEnumSheetMetalConvertPlane` (value: `"SHEET_METAL_CONVERT_PLANE"`)
+* `SheetMetalConvertPlane` (value: `"SHEET_METAL_CONVERT_PLANE"`)
 
-* `GBTErrorStringEnumAssemblyPatternAxisError` (value: `"ASSEMBLY_PATTERN_AXIS_ERROR"`)
+* `AssemblyPatternAxisError` (value: `"ASSEMBLY_PATTERN_AXIS_ERROR"`)
 
-* `GBTErrorStringEnumRibNoProfiles` (value: `"RIB_NO_PROFILES"`)
+* `RibNoProfiles` (value: `"RIB_NO_PROFILES"`)
 
-* `GBTErrorStringEnumRibNoParts` (value: `"RIB_NO_PARTS"`)
+* `RibNoParts` (value: `"RIB_NO_PARTS"`)
 
-* `GBTErrorStringEnumRibProfileFailed` (value: `"RIB_PROFILE_FAILED"`)
+* `RibProfileFailed` (value: `"RIB_PROFILE_FAILED"`)
 
-* `GBTErrorStringEnumRibBodyFailed` (value: `"RIB_BODY_FAILED"`)
+* `RibBodyFailed` (value: `"RIB_BODY_FAILED"`)
 
-* `GBTErrorStringEnumRibNoIntersections` (value: `"RIB_NO_INTERSECTIONS"`)
+* `RibNoIntersections` (value: `"RIB_NO_INTERSECTIONS"`)
 
-* `GBTErrorStringEnumRibMergeFailed` (value: `"RIB_MERGE_FAILED"`)
+* `RibMergeFailed` (value: `"RIB_MERGE_FAILED"`)
 
-* `GBTErrorStringEnumAssemblyNamedPositionsSaveFailed` (value: `"ASSEMBLY_NAMED_POSITIONS_SAVE_FAILED"`)
+* `AssemblyNamedPositionsSaveFailed` (value: `"ASSEMBLY_NAMED_POSITIONS_SAVE_FAILED"`)
 
-* `GBTErrorStringEnumAssemblyNamedPositionsLoadFailed` (value: `"ASSEMBLY_NAMED_POSITIONS_LOAD_FAILED"`)
+* `AssemblyNamedPositionsLoadFailed` (value: `"ASSEMBLY_NAMED_POSITIONS_LOAD_FAILED"`)
 
-* `GBTErrorStringEnumAssemblyNamedPositionsNoMatesToSave` (value: `"ASSEMBLY_NAMED_POSITIONS_NO_MATES_TO_SAVE"`)
+* `AssemblyNamedPositionsNoMatesToSave` (value: `"ASSEMBLY_NAMED_POSITIONS_NO_MATES_TO_SAVE"`)
 
-* `GBTErrorStringEnumAssemblyNamedPositionsPositionNotFound` (value: `"ASSEMBLY_NAMED_POSITIONS_POSITION_NOT_FOUND"`)
+* `AssemblyNamedPositionsPositionNotFound` (value: `"ASSEMBLY_NAMED_POSITIONS_POSITION_NOT_FOUND"`)
 
-* `GBTErrorStringEnumSphereFailed` (value: `"SPHERE_FAILED"`)
+* `SphereFailed` (value: `"SPHERE_FAILED"`)
 
-* `GBTErrorStringEnumAssemblyPatternNotSupported` (value: `"ASSEMBLY_PATTERN_NOT_SUPPORTED"`)
+* `AssemblyPatternNotSupported` (value: `"ASSEMBLY_PATTERN_NOT_SUPPORTED"`)
 
-* `GBTErrorStringEnumAssemblyNamedPositionsPartialLoadFailure` (value: `"ASSEMBLY_NAMED_POSITIONS_PARTIAL_LOAD_FAILURE"`)
+* `AssemblyNamedPositionsPartialLoadFailure` (value: `"ASSEMBLY_NAMED_POSITIONS_PARTIAL_LOAD_FAILURE"`)
 
-* `GBTErrorStringEnumAssemblyNamedPositionsLoadSucceededWithExtraMates` (value: `"ASSEMBLY_NAMED_POSITIONS_LOAD_SUCCEEDED_WITH_EXTRA_MATES"`)
+* `AssemblyNamedPositionsLoadSucceededWithExtraMates` (value: `"ASSEMBLY_NAMED_POSITIONS_LOAD_SUCCEEDED_WITH_EXTRA_MATES"`)
 
-* `GBTErrorStringEnumAssemblyNamedPositionsSavedMateNotFoundOnLoad` (value: `"ASSEMBLY_NAMED_POSITIONS_SAVED_MATE_NOT_FOUND_ON_LOAD"`)
+* `AssemblyNamedPositionsSavedMateNotFoundOnLoad` (value: `"ASSEMBLY_NAMED_POSITIONS_SAVED_MATE_NOT_FOUND_ON_LOAD"`)
 
-* `GBTErrorStringEnumSheetMetalSingleModelNeeded` (value: `"SHEET_METAL_SINGLE_MODEL_NEEDED"`)
+* `SheetMetalSingleModelNeeded` (value: `"SHEET_METAL_SINGLE_MODEL_NEEDED"`)
 
-* `GBTErrorStringEnumSheetMetalActiveJoinNeeded` (value: `"SHEET_METAL_ACTIVE_JOIN_NEEDED"`)
+* `SheetMetalActiveJoinNeeded` (value: `"SHEET_METAL_ACTIVE_JOIN_NEEDED"`)
 
-* `GBTErrorStringEnumInstanceQueryFailed` (value: `"INSTANCE_QUERY_FAILED"`)
+* `InstanceQueryFailed` (value: `"INSTANCE_QUERY_FAILED"`)
 
-* `GBTErrorStringEnumSheetMetalActiveEdgeNeeded` (value: `"SHEET_METAL_ACTIVE_EDGE_NEEDED"`)
+* `SheetMetalActiveEdgeNeeded` (value: `"SHEET_METAL_ACTIVE_EDGE_NEEDED"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeNoEdges` (value: `"SHEET_METAL_FLANGE_NO_EDGES"`)
+* `SheetMetalFlangeNoEdges` (value: `"SHEET_METAL_FLANGE_NO_EDGES"`)
 
-* `GBTErrorStringEnumMeshNotSupported` (value: `"MESH_NOT_SUPPORTED"`)
+* `MeshNotSupported` (value: `"MESH_NOT_SUPPORTED"`)
 
-* `GBTErrorStringEnumSheetMetalPartsProhibited` (value: `"SHEET_METAL_PARTS_PROHIBITED"`)
+* `SheetMetalPartsProhibited` (value: `"SHEET_METAL_PARTS_PROHIBITED"`)
 
-* `GBTErrorStringEnumVariableCannotEvaluate` (value: `"VARIABLE_CANNOT_EVALUATE"`)
+* `VariableCannotEvaluate` (value: `"VARIABLE_CANNOT_EVALUATE"`)
 
-* `GBTErrorStringEnumDrawingAssemblyInvalidSectionCut` (value: `"DRAWING_ASSEMBLY_INVALID_SECTION_CUT"`)
+* `DrawingAssemblyInvalidSectionCut` (value: `"DRAWING_ASSEMBLY_INVALID_SECTION_CUT"`)
 
-* `GBTErrorStringEnumDrawingPartstudioInvalidSectionCut` (value: `"DRAWING_PARTSTUDIO_INVALID_SECTION_CUT"`)
+* `DrawingPartstudioInvalidSectionCut` (value: `"DRAWING_PARTSTUDIO_INVALID_SECTION_CUT"`)
 
-* `GBTErrorStringEnumSheetMetalCouldNotUnfold` (value: `"SHEET_METAL_COULD_NOT_UNFOLD"`)
+* `SheetMetalCouldNotUnfold` (value: `"SHEET_METAL_COULD_NOT_UNFOLD"`)
 
-* `GBTErrorStringEnumParameterOutOfRange` (value: `"PARAMETER_OUT_OF_RANGE"`)
+* `ParameterOutOfRange` (value: `"PARAMETER_OUT_OF_RANGE"`)
 
-* `GBTErrorStringEnumSheetMetalNo0AngleBend` (value: `"SHEET_METAL_NO_0_ANGLE_BEND"`)
+* `SheetMetalNo0AngleBend` (value: `"SHEET_METAL_NO_0_ANGLE_BEND"`)
 
-* `GBTErrorStringEnumSheetMetalFlatRipNoEdit` (value: `"SHEET_METAL_FLAT_RIP_NO_EDIT"`)
+* `SheetMetalFlatRipNoEdit` (value: `"SHEET_METAL_FLAT_RIP_NO_EDIT"`)
 
-* `GBTErrorStringEnumSheetMetalCantChangeToFlat` (value: `"SHEET_METAL_CANT_CHANGE_TO_FLAT"`)
+* `SheetMetalCantChangeToFlat` (value: `"SHEET_METAL_CANT_CHANGE_TO_FLAT"`)
 
-* `GBTErrorStringEnumParameterPreconditionFailed` (value: `"PARAMETER_PRECONDITION_FAILED"`)
+* `ParameterPreconditionFailed` (value: `"PARAMETER_PRECONDITION_FAILED"`)
 
-* `GBTErrorStringEnumParameterSyntaxError` (value: `"PARAMETER_SYNTAX_ERROR"`)
+* `ParameterSyntaxError` (value: `"PARAMETER_SYNTAX_ERROR"`)
 
-* `GBTErrorStringEnumSheetMetalCanOnlyRemove` (value: `"SHEET_METAL_CAN_ONLY_REMOVE"`)
+* `SheetMetalCanOnlyRemove` (value: `"SHEET_METAL_CAN_ONLY_REMOVE"`)
 
-* `GBTErrorStringEnumSheetMetalCanOnlySubtract` (value: `"SHEET_METAL_CAN_ONLY_SUBTRACT"`)
+* `SheetMetalCanOnlySubtract` (value: `"SHEET_METAL_CAN_ONLY_SUBTRACT"`)
 
-* `GBTErrorStringEnumRestAssemblyInvalidFeature` (value: `"REST_ASSEMBLY_INVALID_FEATURE"`)
+* `RestAssemblyInvalidFeature` (value: `"REST_ASSEMBLY_INVALID_FEATURE"`)
 
-* `GBTErrorStringEnumRestAssemblyInvalidBodyType` (value: `"REST_ASSEMBLY_INVALID_BODY_TYPE"`)
+* `RestAssemblyInvalidBodyType` (value: `"REST_ASSEMBLY_INVALID_BODY_TYPE"`)
 
-* `GBTErrorStringEnumPartingOutTargetReadonly` (value: `"PARTING_OUT_TARGET_READONLY"`)
+* `PartingOutTargetReadonly` (value: `"PARTING_OUT_TARGET_READONLY"`)
 
-* `GBTErrorStringEnumSheetMetalMultiSmDefaultRadius` (value: `"SHEET_METAL_MULTI_SM_DEFAULT_RADIUS"`)
+* `SheetMetalMultiSmDefaultRadius` (value: `"SHEET_METAL_MULTI_SM_DEFAULT_RADIUS"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeFailAlignment` (value: `"SHEET_METAL_FLANGE_FAIL_ALIGNMENT"`)
+* `SheetMetalFlangeFailAlignment` (value: `"SHEET_METAL_FLANGE_FAIL_ALIGNMENT"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeFailUpTo` (value: `"SHEET_METAL_FLANGE_FAIL_UP_TO"`)
+* `SheetMetalFlangeFailUpTo` (value: `"SHEET_METAL_FLANGE_FAIL_UP_TO"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeFailUpToEntity` (value: `"SHEET_METAL_FLANGE_FAIL_UP_TO_ENTITY"`)
+* `SheetMetalFlangeFailUpToEntity` (value: `"SHEET_METAL_FLANGE_FAIL_UP_TO_ENTITY"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeFail` (value: `"SHEET_METAL_FLANGE_FAIL"`)
+* `SheetMetalFlangeFail` (value: `"SHEET_METAL_FLANGE_FAIL"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeFailLimitOppFlange` (value: `"SHEET_METAL_FLANGE_FAIL_LIMIT_OPP_FLANGE"`)
+* `SheetMetalFlangeFailLimitOppFlange` (value: `"SHEET_METAL_FLANGE_FAIL_LIMIT_OPP_FLANGE"`)
 
-* `GBTErrorStringEnumCantSplitSheetMetalBendFace` (value: `"CANT_SPLIT_SHEET_METAL_BEND_FACE"`)
+* `CantSplitSheetMetalBendFace` (value: `"CANT_SPLIT_SHEET_METAL_BEND_FACE"`)
 
-* `GBTErrorStringEnumInContextInstanceInvalidTarget` (value: `"IN_CONTEXT_INSTANCE_INVALID_TARGET"`)
+* `InContextInstanceInvalidTarget` (value: `"IN_CONTEXT_INSTANCE_INVALID_TARGET"`)
 
-* `GBTErrorStringEnumSheetMetalSelfIntersectingModel` (value: `"SHEET_METAL_SELF_INTERSECTING_MODEL"`)
+* `SheetMetalSelfIntersectingModel` (value: `"SHEET_METAL_SELF_INTERSECTING_MODEL"`)
 
-* `GBTErrorStringEnumSheetMetalSelfIntersectingFlat` (value: `"SHEET_METAL_SELF_INTERSECTING_FLAT"`)
+* `SheetMetalSelfIntersectingFlat` (value: `"SHEET_METAL_SELF_INTERSECTING_FLAT"`)
 
-* `GBTErrorStringEnumSheetMetalNon90Butt` (value: `"SHEET_METAL_NON_90_BUTT"`)
+* `SheetMetalNon90Butt` (value: `"SHEET_METAL_NON_90_BUTT"`)
 
-* `GBTErrorStringEnumSheetMetalRipStyleError` (value: `"SHEET_METAL_RIP_STYLE_ERROR"`)
+* `SheetMetalRipStyleError` (value: `"SHEET_METAL_RIP_STYLE_ERROR"`)
 
-* `GBTErrorStringEnumCannotUseMateconnectorsInPattern` (value: `"CANNOT_USE_MATECONNECTORS_IN_PATTERN"`)
+* `CannotUseMateconnectorsInPattern` (value: `"CANNOT_USE_MATECONNECTORS_IN_PATTERN"`)
 
-* `GBTErrorStringEnumCannotCopyMateconnectors` (value: `"CANNOT_COPY_MATECONNECTORS"`)
+* `CannotCopyMateconnectors` (value: `"CANNOT_COPY_MATECONNECTORS"`)
 
-* `GBTErrorStringEnumSheetMetalCanOnlyOffset` (value: `"SHEET_METAL_CAN_ONLY_OFFSET"`)
+* `SheetMetalCanOnlyOffset` (value: `"SHEET_METAL_CAN_ONLY_OFFSET"`)
 
-* `GBTErrorStringEnumModifiableEntityOnly` (value: `"MODIFIABLE_ENTITY_ONLY"`)
+* `ModifiableEntityOnly` (value: `"MODIFIABLE_ENTITY_ONLY"`)
 
-* `GBTErrorStringEnumInContextUpdateDeletedAssembly` (value: `"IN_CONTEXT_UPDATE_DELETED_ASSEMBLY"`)
+* `InContextUpdateDeletedAssembly` (value: `"IN_CONTEXT_UPDATE_DELETED_ASSEMBLY"`)
 
-* `GBTErrorStringEnumInContextUpdateEmptyInstance` (value: `"IN_CONTEXT_UPDATE_EMPTY_INSTANCE"`)
+* `InContextUpdateEmptyInstance` (value: `"IN_CONTEXT_UPDATE_EMPTY_INSTANCE"`)
 
-* `GBTErrorStringEnumInContextUpdateInvalidSource` (value: `"IN_CONTEXT_UPDATE_INVALID_SOURCE"`)
+* `InContextUpdateInvalidSource` (value: `"IN_CONTEXT_UPDATE_INVALID_SOURCE"`)
 
-* `GBTErrorStringEnumInContextUpdateInvalidTarget` (value: `"IN_CONTEXT_UPDATE_INVALID_TARGET"`)
+* `InContextUpdateInvalidTarget` (value: `"IN_CONTEXT_UPDATE_INVALID_TARGET"`)
 
-* `GBTErrorStringEnumSheetMetalNoFeaturePattern` (value: `"SHEET_METAL_NO_FEATURE_PATTERN"`)
+* `SheetMetalNoFeaturePattern` (value: `"SHEET_METAL_NO_FEATURE_PATTERN"`)
 
-* `GBTErrorStringEnumCustomFeatureDefinitionNotFound` (value: `"CUSTOM_FEATURE_DEFINITION_NOT_FOUND"`)
+* `CustomFeatureDefinitionNotFound` (value: `"CUSTOM_FEATURE_DEFINITION_NOT_FOUND"`)
 
-* `GBTErrorStringEnumSheetMetalStartSelectBends` (value: `"SHEET_METAL_START_SELECT_BENDS"`)
+* `SheetMetalStartSelectBends` (value: `"SHEET_METAL_START_SELECT_BENDS"`)
 
-* `GBTErrorStringEnumSheetMetalEndDone` (value: `"SHEET_METAL_END_DONE"`)
+* `SheetMetalEndDone` (value: `"SHEET_METAL_END_DONE"`)
 
-* `GBTErrorStringEnumPathEdgesNotContinuous` (value: `"PATH_EDGES_NOT_CONTINUOUS"`)
+* `PathEdgesNotContinuous` (value: `"PATH_EDGES_NOT_CONTINUOUS"`)
 
-* `GBTErrorStringEnumSheetMetalRipFailInternalEdge` (value: `"SHEET_METAL_RIP_FAIL_INTERNAL_EDGE"`)
+* `SheetMetalRipFailInternalEdge` (value: `"SHEET_METAL_RIP_FAIL_INTERNAL_EDGE"`)
 
-* `GBTErrorStringEnumSheetMetalRipFail` (value: `"SHEET_METAL_RIP_FAIL"`)
+* `SheetMetalRipFail` (value: `"SHEET_METAL_RIP_FAIL"`)
 
-* `GBTErrorStringEnumSheetMetalRipMultiBody` (value: `"SHEET_METAL_RIP_MULTI_BODY"`)
+* `SheetMetalRipMultiBody` (value: `"SHEET_METAL_RIP_MULTI_BODY"`)
 
-* `GBTErrorStringEnumSheetMetalRipFailNonPlanar` (value: `"SHEET_METAL_RIP_FAIL_NON_PLANAR"`)
+* `SheetMetalRipFailNonPlanar` (value: `"SHEET_METAL_RIP_FAIL_NON_PLANAR"`)
 
-* `GBTErrorStringEnumPatternCurveNoEdges` (value: `"PATTERN_CURVE_NO_EDGES"`)
+* `PatternCurveNoEdges` (value: `"PATTERN_CURVE_NO_EDGES"`)
 
-* `GBTErrorStringEnumSheetMetalRipNoCorner` (value: `"SHEET_METAL_RIP_NO_CORNER"`)
+* `SheetMetalRipNoCorner` (value: `"SHEET_METAL_RIP_NO_CORNER"`)
 
-* `GBTErrorStringEnumSheetMetalRipEven` (value: `"SHEET_METAL_RIP_EVEN"`)
+* `SheetMetalRipEven` (value: `"SHEET_METAL_RIP_EVEN"`)
 
-* `GBTErrorStringEnumSheetMetalRipWallNotFound` (value: `"SHEET_METAL_RIP_WALL_NOT_FOUND"`)
+* `SheetMetalRipWallNotFound` (value: `"SHEET_METAL_RIP_WALL_NOT_FOUND"`)
 
-* `GBTErrorStringEnumSheetMetalRipSameVertex` (value: `"SHEET_METAL_RIP_SAME_VERTEX"`)
+* `SheetMetalRipSameVertex` (value: `"SHEET_METAL_RIP_SAME_VERTEX"`)
 
-* `GBTErrorStringEnumSheetMetalRipNeedMoreVertices` (value: `"SHEET_METAL_RIP_NEED_MORE_VERTICES"`)
+* `SheetMetalRipNeedMoreVertices` (value: `"SHEET_METAL_RIP_NEED_MORE_VERTICES"`)
 
-* `GBTErrorStringEnumSheetMetalMakeJointFail` (value: `"SHEET_METAL_MAKE_JOINT_FAIL"`)
+* `SheetMetalMakeJointFail` (value: `"SHEET_METAL_MAKE_JOINT_FAIL"`)
 
-* `GBTErrorStringEnumCurvePatternStartOffPath` (value: `"CURVE_PATTERN_START_OFF_PATH"`)
+* `CurvePatternStartOffPath` (value: `"CURVE_PATTERN_START_OFF_PATH"`)
 
-* `GBTErrorStringEnumPartLoadFailed` (value: `"PART_LOAD_FAILED"`)
+* `PartLoadFailed` (value: `"PART_LOAD_FAILED"`)
 
-* `GBTErrorStringEnumSheetMetalMoveNotPlanar` (value: `"SHEET_METAL_MOVE_NOT_PLANAR"`)
+* `SheetMetalMoveNotPlanar` (value: `"SHEET_METAL_MOVE_NOT_PLANAR"`)
 
-* `GBTErrorStringEnumSheetMetalJointFailAdjacentFaces` (value: `"SHEET_METAL_JOINT_FAIL_ADJACENT_FACES"`)
+* `SheetMetalJointFailAdjacentFaces` (value: `"SHEET_METAL_JOINT_FAIL_ADJACENT_FACES"`)
 
-* `GBTErrorStringEnumWrongParasolidVersion` (value: `"WRONG_PARASOLID_VERSION"`)
+* `WrongParasolidVersion` (value: `"WRONG_PARASOLID_VERSION"`)
 
-* `GBTErrorStringEnumSheetMetalSingleModelNeededEdges` (value: `"SHEET_METAL_SINGLE_MODEL_NEEDED_EDGES"`)
+* `SheetMetalSingleModelNeededEdges` (value: `"SHEET_METAL_SINGLE_MODEL_NEEDED_EDGES"`)
 
-* `GBTErrorStringEnumRestAssemblyMissingInstanceDocumentId` (value: `"REST_ASSEMBLY_MISSING_INSTANCE_DOCUMENT_ID"`)
+* `RestAssemblyMissingInstanceDocumentId` (value: `"REST_ASSEMBLY_MISSING_INSTANCE_DOCUMENT_ID"`)
 
-* `GBTErrorStringEnumRestAssemblyMissingInstanceElementId` (value: `"REST_ASSEMBLY_MISSING_INSTANCE_ELEMENT_ID"`)
+* `RestAssemblyMissingInstanceElementId` (value: `"REST_ASSEMBLY_MISSING_INSTANCE_ELEMENT_ID"`)
 
-* `GBTErrorStringEnumFaceClash` (value: `"FACE_CLASH"`)
+* `FaceClash` (value: `"FACE_CLASH"`)
 
-* `GBTErrorStringEnumCurvePatternStartOffClosedPath` (value: `"CURVE_PATTERN_START_OFF_CLOSED_PATH"`)
+* `CurvePatternStartOffClosedPath` (value: `"CURVE_PATTERN_START_OFF_CLOSED_PATH"`)
 
-* `GBTErrorStringEnumSheetMetalCutJoint` (value: `"SHEET_METAL_CUT_JOINT"`)
+* `SheetMetalCutJoint` (value: `"SHEET_METAL_CUT_JOINT"`)
 
-* `GBTErrorStringEnumExportStlNoParts` (value: `"EXPORT_STL_NO_PARTS"`)
+* `ExportStlNoParts` (value: `"EXPORT_STL_NO_PARTS"`)
 
-* `GBTErrorStringEnumInputNameTooLong` (value: `"INPUT_NAME_TOO_LONG"`)
+* `InputNameTooLong` (value: `"INPUT_NAME_TOO_LONG"`)
 
-* `GBTErrorStringEnumImportBodyFailedCheck` (value: `"IMPORT_BODY_FAILED_CHECK"`)
+* `ImportBodyFailedCheck` (value: `"IMPORT_BODY_FAILED_CHECK"`)
 
-* `GBTErrorStringEnumDerivedBodiesHaveFaults` (value: `"DERIVED_BODIES_HAVE_FAULTS"`)
+* `DerivedBodiesHaveFaults` (value: `"DERIVED_BODIES_HAVE_FAULTS"`)
 
-* `GBTErrorStringEnumSheetMetalBlockedPattern` (value: `"SHEET_METAL_BLOCKED_PATTERN"`)
+* `SheetMetalBlockedPattern` (value: `"SHEET_METAL_BLOCKED_PATTERN"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeInternal` (value: `"SHEET_METAL_FLANGE_INTERNAL"`)
+* `SheetMetalFlangeInternal` (value: `"SHEET_METAL_FLANGE_INTERNAL"`)
 
-* `GBTErrorStringEnumSheetMetalTooThick` (value: `"SHEET_METAL_TOO_THICK"`)
+* `SheetMetalTooThick` (value: `"SHEET_METAL_TOO_THICK"`)
 
-* `GBTErrorStringEnumSheetMetalBendEndNotACorner` (value: `"SHEET_METAL_BEND_END_NOT_A_CORNER"`)
+* `SheetMetalBendEndNotACorner` (value: `"SHEET_METAL_BEND_END_NOT_A_CORNER"`)
 
-* `GBTErrorStringEnumSheetMetalNotAClosedCorner` (value: `"SHEET_METAL_NOT_A_CLOSED_CORNER"`)
+* `SheetMetalNotAClosedCorner` (value: `"SHEET_METAL_NOT_A_CLOSED_CORNER"`)
 
-* `GBTErrorStringEnumSheetMetalCornerNotABendEnd` (value: `"SHEET_METAL_CORNER_NOT_A_BEND_END"`)
+* `SheetMetalCornerNotABendEnd` (value: `"SHEET_METAL_CORNER_NOT_A_BEND_END"`)
 
-* `GBTErrorStringEnumRibOnlyOpenProfiles` (value: `"RIB_ONLY_OPEN_PROFILES"`)
+* `RibOnlyOpenProfiles` (value: `"RIB_ONLY_OPEN_PROFILES"`)
 
-* `GBTErrorStringEnumTabNoLongerExists` (value: `"TAB_NO_LONGER_EXISTS"`)
+* `TabNoLongerExists` (value: `"TAB_NO_LONGER_EXISTS"`)
 
-* `GBTErrorStringEnumClineFailed` (value: `"CLINE_FAILED"`)
+* `ClineFailed` (value: `"CLINE_FAILED"`)
 
-* `GBTErrorStringEnumIllegalModification` (value: `"ILLEGAL_MODIFICATION"`)
+* `IllegalModification` (value: `"ILLEGAL_MODIFICATION"`)
 
-* `GBTErrorStringEnumAssemblyMateValueSetFailed` (value: `"ASSEMBLY_MATE_VALUE_SET_FAILED"`)
+* `AssemblyMateValueSetFailed` (value: `"ASSEMBLY_MATE_VALUE_SET_FAILED"`)
 
-* `GBTErrorStringEnumExtrudeOffsetTooDeep` (value: `"EXTRUDE_OFFSET_TOO_DEEP"`)
+* `ExtrudeOffsetTooDeep` (value: `"EXTRUDE_OFFSET_TOO_DEEP"`)
 
-* `GBTErrorStringEnumSheetMetalCannotMoveBendEdge` (value: `"SHEET_METAL_CANNOT_MOVE_BEND_EDGE"`)
+* `SheetMetalCannotMoveBendEdge` (value: `"SHEET_METAL_CANNOT_MOVE_BEND_EDGE"`)
 
-* `GBTErrorStringEnumUpToFaceNotParallel` (value: `"UP_TO_FACE_NOT_PARALLEL"`)
+* `UpToFaceNotParallel` (value: `"UP_TO_FACE_NOT_PARALLEL"`)
 
-* `GBTErrorStringEnumTranslationFaceNotPlanar` (value: `"TRANSLATION_FACE_NOT_PLANAR"`)
+* `TranslationFaceNotPlanar` (value: `"TRANSLATION_FACE_NOT_PLANAR"`)
 
-* `GBTErrorStringEnumMoveFaceNoIntersection` (value: `"MOVE_FACE_NO_INTERSECTION"`)
+* `MoveFaceNoIntersection` (value: `"MOVE_FACE_NO_INTERSECTION"`)
 
-* `GBTErrorStringEnumSweepPathProfileNoIntersection` (value: `"SWEEP_PATH_PROFILE_NO_INTERSECTION"`)
+* `SweepPathProfileNoIntersection` (value: `"SWEEP_PATH_PROFILE_NO_INTERSECTION"`)
 
-* `GBTErrorStringEnumDirectEditMoveFaceCreateSelect` (value: `"DIRECT_EDIT_MOVE_FACE_CREATE_SELECT"`)
+* `DirectEditMoveFaceCreateSelect` (value: `"DIRECT_EDIT_MOVE_FACE_CREATE_SELECT"`)
 
-* `GBTErrorStringEnumSheetMetalThickenInContextInfo` (value: `"SHEET_METAL_THICKEN_IN_CONTEXT_INFO"`)
+* `SheetMetalThickenInContextInfo` (value: `"SHEET_METAL_THICKEN_IN_CONTEXT_INFO"`)
 
-* `GBTErrorStringEnumCannotDeleteRhoDimension` (value: `"CANNOT_DELETE_RHO_DIMENSION"`)
+* `CannotDeleteRhoDimension` (value: `"CANNOT_DELETE_RHO_DIMENSION"`)
 
-* `GBTErrorStringEnumInvalidRho` (value: `"INVALID_RHO"`)
+* `InvalidRho` (value: `"INVALID_RHO"`)
 
-* `GBTErrorStringEnumSketchRhoDimNotFound` (value: `"SKETCH_RHO_DIM_NOT_FOUND"`)
+* `SketchRhoDimNotFound` (value: `"SKETCH_RHO_DIM_NOT_FOUND"`)
 
-* `GBTErrorStringEnumSketchConicFailed` (value: `"SKETCH_CONIC_FAILED"`)
+* `SketchConicFailed` (value: `"SKETCH_CONIC_FAILED"`)
 
-* `GBTErrorStringEnumTabNameTooLong` (value: `"TAB_NAME_TOO_LONG"`)
+* `TabNameTooLong` (value: `"TAB_NAME_TOO_LONG"`)
 
-* `GBTErrorStringEnumDirectEditDeleteFaceAllFaces` (value: `"DIRECT_EDIT_DELETE_FACE_ALL_FACES"`)
+* `DirectEditDeleteFaceAllFaces` (value: `"DIRECT_EDIT_DELETE_FACE_ALL_FACES"`)
 
-* `GBTErrorStringEnumSheetMetalCornerBreakFailed` (value: `"SHEET_METAL_CORNER_BREAK_FAILED"`)
+* `SheetMetalCornerBreakFailed` (value: `"SHEET_METAL_CORNER_BREAK_FAILED"`)
 
-* `GBTErrorStringEnumBooleanNoTargetSurface` (value: `"BOOLEAN_NO_TARGET_SURFACE"`)
+* `BooleanNoTargetSurface` (value: `"BOOLEAN_NO_TARGET_SURFACE"`)
 
-* `GBTErrorStringEnumBadBsplinecurveDefinition` (value: `"BAD_BSPLINECURVE_DEFINITION"`)
+* `BadBsplinecurveDefinition` (value: `"BAD_BSPLINECURVE_DEFINITION"`)
 
-* `GBTErrorStringEnumRequire3DBsplinecurveData` (value: `"REQUIRE_3D_BSPLINECURVE_DATA"`)
+* `Require3DBsplinecurveData` (value: `"REQUIRE_3D_BSPLINECURVE_DATA"`)
 
-* `GBTErrorStringEnumPeriodicBsplinecurveNotClosed` (value: `"PERIODIC_BSPLINECURVE_NOT_CLOSED"`)
+* `PeriodicBsplinecurveNotClosed` (value: `"PERIODIC_BSPLINECURVE_NOT_CLOSED"`)
 
-* `GBTErrorStringEnumPeriodicBsplinecurveNotSmooth` (value: `"PERIODIC_BSPLINECURVE_NOT_SMOOTH"`)
+* `PeriodicBsplinecurveNotSmooth` (value: `"PERIODIC_BSPLINECURVE_NOT_SMOOTH"`)
 
-* `GBTErrorStringEnumRationalBsplinecurveWeightNegative` (value: `"RATIONAL_BSPLINECURVE_WEIGHT_NEGATIVE"`)
+* `RationalBsplinecurveWeightNegative` (value: `"RATIONAL_BSPLINECURVE_WEIGHT_NEGATIVE"`)
 
-* `GBTErrorStringEnumBsplinecurveNotG1` (value: `"BSPLINECURVE_NOT_G1"`)
+* `BsplinecurveNotG1` (value: `"BSPLINECURVE_NOT_G1"`)
 
-* `GBTErrorStringEnumBridgingCurveVertexBothSides` (value: `"BRIDGING_CURVE_VERTEX_BOTH_SIDES"`)
+* `BridgingCurveVertexBothSides` (value: `"BRIDGING_CURVE_VERTEX_BOTH_SIDES"`)
 
-* `GBTErrorStringEnumBridgingCurveOneEdgeEachSide` (value: `"BRIDGING_CURVE_ONE_EDGE_EACH_SIDE"`)
+* `BridgingCurveOneEdgeEachSide` (value: `"BRIDGING_CURVE_ONE_EDGE_EACH_SIDE"`)
 
-* `GBTErrorStringEnumBridgingCurveVertexAtEndOfEdge` (value: `"BRIDGING_CURVE_VERTEX_AT_END_OF_EDGE"`)
+* `BridgingCurveVertexAtEndOfEdge` (value: `"BRIDGING_CURVE_VERTEX_AT_END_OF_EDGE"`)
 
-* `GBTErrorStringEnumProjectCurvesParallelPlanes` (value: `"PROJECT_CURVES_PARALLEL_PLANES"`)
+* `ProjectCurvesParallelPlanes` (value: `"PROJECT_CURVES_PARALLEL_PLANES"`)
 
-* `GBTErrorStringEnumProjectCurvesDifferentSketches` (value: `"PROJECT_CURVES_DIFFERENT_SKETCHES"`)
+* `ProjectCurvesDifferentSketches` (value: `"PROJECT_CURVES_DIFFERENT_SKETCHES"`)
 
-* `GBTErrorStringEnumSheetMetalSelectPart` (value: `"SHEET_METAL_SELECT_PART"`)
+* `SheetMetalSelectPart` (value: `"SHEET_METAL_SELECT_PART"`)
 
-* `GBTErrorStringEnumVariableNotFound` (value: `"VARIABLE_NOT_FOUND"`)
+* `VariableNotFound` (value: `"VARIABLE_NOT_FOUND"`)
 
-* `GBTErrorStringEnumCannotEditFixedConic` (value: `"CANNOT_EDIT_FIXED_CONIC"`)
+* `CannotEditFixedConic` (value: `"CANNOT_EDIT_FIXED_CONIC"`)
 
-* `GBTErrorStringEnumExtractWiresOverlappingEdges` (value: `"EXTRACT_WIRES_OVERLAPPING_EDGES"`)
+* `ExtractWiresOverlappingEdges` (value: `"EXTRACT_WIRES_OVERLAPPING_EDGES"`)
 
-* `GBTErrorStringEnumExtractWiresNonManifold` (value: `"EXTRACT_WIRES_NON_MANIFOLD"`)
+* `ExtractWiresNonManifold` (value: `"EXTRACT_WIRES_NON_MANIFOLD"`)
 
-* `GBTErrorStringEnumExtractWiresNeedsEdges` (value: `"EXTRACT_WIRES_NEEDS_EDGES"`)
+* `ExtractWiresNeedsEdges` (value: `"EXTRACT_WIRES_NEEDS_EDGES"`)
 
-* `GBTErrorStringEnumSplineTwoPoints` (value: `"SPLINE_TWO_POINTS"`)
+* `SplineTwoPoints` (value: `"SPLINE_TWO_POINTS"`)
 
-* `GBTErrorStringEnumClosedSplineThreePoints` (value: `"CLOSED_SPLINE_THREE_POINTS"`)
+* `ClosedSplineThreePoints` (value: `"CLOSED_SPLINE_THREE_POINTS"`)
 
-* `GBTErrorStringEnumTangencyOneEdge` (value: `"TANGENCY_ONE_EDGE"`)
+* `TangencyOneEdge` (value: `"TANGENCY_ONE_EDGE"`)
 
-* `GBTErrorStringEnumFitSplineCannotEvaluateEndCondition` (value: `"FIT_SPLINE_CANNOT_EVALUATE_END_CONDITION"`)
+* `FitSplineCannotEvaluateEndCondition` (value: `"FIT_SPLINE_CANNOT_EVALUATE_END_CONDITION"`)
 
-* `GBTErrorStringEnumFitSplineRepeatedPoint` (value: `"FIT_SPLINE_REPEATED_POINT"`)
+* `FitSplineRepeatedPoint` (value: `"FIT_SPLINE_REPEATED_POINT"`)
 
-* `GBTErrorStringEnumFeatureIdRequired` (value: `"FEATURE_ID_REQUIRED"`)
+* `FeatureIdRequired` (value: `"FEATURE_ID_REQUIRED"`)
 
-* `GBTErrorStringEnumParameterNotFound` (value: `"PARAMETER_NOT_FOUND"`)
+* `ParameterNotFound` (value: `"PARAMETER_NOT_FOUND"`)
 
-* `GBTErrorStringEnumParameterDoesNotMatchItsFeatureSpec` (value: `"PARAMETER_DOES_NOT_MATCH_ITS_FEATURE_SPEC"`)
+* `ParameterDoesNotMatchItsFeatureSpec` (value: `"PARAMETER_DOES_NOT_MATCH_ITS_FEATURE_SPEC"`)
 
-* `GBTErrorStringEnumSheetMetalCornerBreakDisabled` (value: `"SHEET_METAL_CORNER_BREAK_DISABLED"`)
+* `SheetMetalCornerBreakDisabled` (value: `"SHEET_METAL_CORNER_BREAK_DISABLED"`)
 
-* `GBTErrorStringEnumSheetMetalFilletNoConic` (value: `"SHEET_METAL_FILLET_NO_CONIC"`)
+* `SheetMetalFilletNoConic` (value: `"SHEET_METAL_FILLET_NO_CONIC"`)
 
-* `GBTErrorStringEnumSheetMetalChamferNoTwoOffsets` (value: `"SHEET_METAL_CHAMFER_NO_TWO_OFFSETS"`)
+* `SheetMetalChamferNoTwoOffsets` (value: `"SHEET_METAL_CHAMFER_NO_TWO_OFFSETS"`)
 
-* `GBTErrorStringEnumSheetMetalChamferNoOffsetAngle` (value: `"SHEET_METAL_CHAMFER_NO_OFFSET_ANGLE"`)
+* `SheetMetalChamferNoOffsetAngle` (value: `"SHEET_METAL_CHAMFER_NO_OFFSET_ANGLE"`)
 
-* `GBTErrorStringEnumSheetMetalChamferMustBeEqualOffsets` (value: `"SHEET_METAL_CHAMFER_MUST_BE_EQUAL_OFFSETS"`)
+* `SheetMetalChamferMustBeEqualOffsets` (value: `"SHEET_METAL_CHAMFER_MUST_BE_EQUAL_OFFSETS"`)
 
-* `GBTErrorStringEnumSheetMetalActiveEntityNeeded` (value: `"SHEET_METAL_ACTIVE_ENTITY_NEEDED"`)
+* `SheetMetalActiveEntityNeeded` (value: `"SHEET_METAL_ACTIVE_ENTITY_NEEDED"`)
 
-* `GBTErrorStringEnumSheetMetalCornerBreakNotACorner` (value: `"SHEET_METAL_CORNER_BREAK_NOT_A_CORNER"`)
+* `SheetMetalCornerBreakNotACorner` (value: `"SHEET_METAL_CORNER_BREAK_NOT_A_CORNER"`)
 
-* `GBTErrorStringEnumSheetMetalCornerBreakNoWall` (value: `"SHEET_METAL_CORNER_BREAK_NO_WALL"`)
+* `SheetMetalCornerBreakNoWall` (value: `"SHEET_METAL_CORNER_BREAK_NO_WALL"`)
 
-* `GBTErrorStringEnumSheetMetalCornerBreakVertexNotFree` (value: `"SHEET_METAL_CORNER_BREAK_VERTEX_NOT_FREE"`)
+* `SheetMetalCornerBreakVertexNotFree` (value: `"SHEET_METAL_CORNER_BREAK_VERTEX_NOT_FREE"`)
 
-* `GBTErrorStringEnumSheetMetalCornerBreakAttributeExists` (value: `"SHEET_METAL_CORNER_BREAK_ATTRIBUTE_EXISTS"`)
+* `SheetMetalCornerBreakAttributeExists` (value: `"SHEET_METAL_CORNER_BREAK_ATTRIBUTE_EXISTS"`)
 
-* `GBTErrorStringEnumFitSplineZeroStartMagnitude` (value: `"FIT_SPLINE_ZERO_START_MAGNITUDE"`)
+* `FitSplineZeroStartMagnitude` (value: `"FIT_SPLINE_ZERO_START_MAGNITUDE"`)
 
-* `GBTErrorStringEnumFitSplineZeroEndMagnitude` (value: `"FIT_SPLINE_ZERO_END_MAGNITUDE"`)
+* `FitSplineZeroEndMagnitude` (value: `"FIT_SPLINE_ZERO_END_MAGNITUDE"`)
 
-* `GBTErrorStringEnumSheetMetalCornerBreakSelectEntities` (value: `"SHEET_METAL_CORNER_BREAK_SELECT_ENTITIES"`)
+* `SheetMetalCornerBreakSelectEntities` (value: `"SHEET_METAL_CORNER_BREAK_SELECT_ENTITIES"`)
 
-* `GBTErrorStringEnumExtrudeSelectTerminatingVertex` (value: `"EXTRUDE_SELECT_TERMINATING_VERTEX"`)
+* `ExtrudeSelectTerminatingVertex` (value: `"EXTRUDE_SELECT_TERMINATING_VERTEX"`)
 
-* `GBTErrorStringEnumFillSurfaceNoEdges` (value: `"FILL_SURFACE_NO_EDGES"`)
+* `FillSurfaceNoEdges` (value: `"FILL_SURFACE_NO_EDGES"`)
 
-* `GBTErrorStringEnumFillSurfaceDoubleSelection` (value: `"FILL_SURFACE_DOUBLE_SELECTION"`)
+* `FillSurfaceDoubleSelection` (value: `"FILL_SURFACE_DOUBLE_SELECTION"`)
 
-* `GBTErrorStringEnumFillSurfaceMultiLoop` (value: `"FILL_SURFACE_MULTI_LOOP"`)
+* `FillSurfaceMultiLoop` (value: `"FILL_SURFACE_MULTI_LOOP"`)
 
-* `GBTErrorStringEnumFillSurfaceOpenLoop` (value: `"FILL_SURFACE_OPEN_LOOP"`)
+* `FillSurfaceOpenLoop` (value: `"FILL_SURFACE_OPEN_LOOP"`)
 
-* `GBTErrorStringEnumFillSurfaceFail` (value: `"FILL_SURFACE_FAIL"`)
+* `FillSurfaceFail` (value: `"FILL_SURFACE_FAIL"`)
 
-* `GBTErrorStringEnumFillSurfaceAttachFail` (value: `"FILL_SURFACE_ATTACH_FAIL"`)
+* `FillSurfaceAttachFail` (value: `"FILL_SURFACE_ATTACH_FAIL"`)
 
-* `GBTErrorStringEnumFillSurfaceG2Fail` (value: `"FILL_SURFACE_G2_FAIL"`)
+* `FillSurfaceG2Fail` (value: `"FILL_SURFACE_G2_FAIL"`)
 
-* `GBTErrorStringEnumFillSurfaceVertexInterpolationFail` (value: `"FILL_SURFACE_VERTEX_INTERPOLATION_FAIL"`)
+* `FillSurfaceVertexInterpolationFail` (value: `"FILL_SURFACE_VERTEX_INTERPOLATION_FAIL"`)
 
-* `GBTErrorStringEnumLoftSpineDisjointPath` (value: `"LOFT_SPINE_DISJOINT_PATH"`)
+* `LoftSpineDisjointPath` (value: `"LOFT_SPINE_DISJOINT_PATH"`)
 
-* `GBTErrorStringEnumLoftSpineSelfIntersectingPath` (value: `"LOFT_SPINE_SELF_INTERSECTING_PATH"`)
+* `LoftSpineSelfIntersectingPath` (value: `"LOFT_SPINE_SELF_INTERSECTING_PATH"`)
 
-* `GBTErrorStringEnumLoftSpinePathProfileNoIntersection` (value: `"LOFT_SPINE_PATH_PROFILE_NO_INTERSECTION"`)
+* `LoftSpinePathProfileNoIntersection` (value: `"LOFT_SPINE_PATH_PROFILE_NO_INTERSECTION"`)
 
-* `GBTErrorStringEnumLoftSpineFailedXsections` (value: `"LOFT_SPINE_FAILED_XSECTIONS"`)
+* `LoftSpineFailedXsections` (value: `"LOFT_SPINE_FAILED_XSECTIONS"`)
 
-* `GBTErrorStringEnumLoftSpineGuideWithPointProfile` (value: `"LOFT_SPINE_GUIDE_WITH_POINT_PROFILE"`)
+* `LoftSpineGuideWithPointProfile` (value: `"LOFT_SPINE_GUIDE_WITH_POINT_PROFILE"`)
 
-* `GBTErrorStringEnumLoftSpineProfilesNotInOrder` (value: `"LOFT_SPINE_PROFILES_NOT_IN_ORDER"`)
+* `LoftSpineProfilesNotInOrder` (value: `"LOFT_SPINE_PROFILES_NOT_IN_ORDER"`)
 
-* `GBTErrorStringEnumLoftSelectSpine` (value: `"LOFT_SELECT_SPINE"`)
+* `LoftSelectSpine` (value: `"LOFT_SELECT_SPINE"`)
 
-* `GBTErrorStringEnumDocumentNotFound` (value: `"DOCUMENT_NOT_FOUND"`)
+* `DocumentNotFound` (value: `"DOCUMENT_NOT_FOUND"`)
 
-* `GBTErrorStringEnumElementNotFound` (value: `"ELEMENT_NOT_FOUND"`)
+* `ElementNotFound` (value: `"ELEMENT_NOT_FOUND"`)
 
-* `GBTErrorStringEnumEncloseNoRegion` (value: `"ENCLOSE_NO_REGION"`)
+* `EncloseNoRegion` (value: `"ENCLOSE_NO_REGION"`)
 
-* `GBTErrorStringEnumEncloseCannotMergeRegions` (value: `"ENCLOSE_CANNOT_MERGE_REGIONS"`)
+* `EncloseCannotMergeRegions` (value: `"ENCLOSE_CANNOT_MERGE_REGIONS"`)
 
-* `GBTErrorStringEnumEncloseCannotCreateSolid` (value: `"ENCLOSE_CANNOT_CREATE_SOLID"`)
+* `EncloseCannotCreateSolid` (value: `"ENCLOSE_CANNOT_CREATE_SOLID"`)
 
-* `GBTErrorStringEnumEncloseNothingSelected` (value: `"ENCLOSE_NOTHING_SELECTED"`)
+* `EncloseNothingSelected` (value: `"ENCLOSE_NOTHING_SELECTED"`)
 
-* `GBTErrorStringEnumEncloseUnknownError` (value: `"ENCLOSE_UNKNOWN_ERROR"`)
+* `EncloseUnknownError` (value: `"ENCLOSE_UNKNOWN_ERROR"`)
 
-* `GBTErrorStringEnumAccessNotAllowed` (value: `"ACCESS_NOT_ALLOWED"`)
+* `AccessNotAllowed` (value: `"ACCESS_NOT_ALLOWED"`)
 
-* `GBTErrorStringEnumLoftSpineTooManyGuides` (value: `"LOFT_SPINE_TOO_MANY_GUIDES"`)
+* `LoftSpineTooManyGuides` (value: `"LOFT_SPINE_TOO_MANY_GUIDES"`)
 
-* `GBTErrorStringEnumFeatureInvalidNamespace` (value: `"FEATURE_INVALID_NAMESPACE"`)
+* `FeatureInvalidNamespace` (value: `"FEATURE_INVALID_NAMESPACE"`)
 
-* `GBTErrorStringEnumFeatureNullNotAllowed` (value: `"FEATURE_NULL_NOT_ALLOWED"`)
+* `FeatureNullNotAllowed` (value: `"FEATURE_NULL_NOT_ALLOWED"`)
 
-* `GBTErrorStringEnumSketchDimensionLimitError` (value: `"SKETCH_DIMENSION_LIMIT_ERROR"`)
+* `SketchDimensionLimitError` (value: `"SKETCH_DIMENSION_LIMIT_ERROR"`)
 
-* `GBTErrorStringEnumFillSurfaceWireContinuityMismatch` (value: `"FILL_SURFACE_WIRE_CONTINUITY_MISMATCH"`)
+* `FillSurfaceWireContinuityMismatch` (value: `"FILL_SURFACE_WIRE_CONTINUITY_MISMATCH"`)
 
-* `GBTErrorStringEnumFillSurfaceInternalContinuityMismatch` (value: `"FILL_SURFACE_INTERNAL_CONTINUITY_MISMATCH"`)
+* `FillSurfaceInternalContinuityMismatch` (value: `"FILL_SURFACE_INTERNAL_CONTINUITY_MISMATCH"`)
 
-* `GBTErrorStringEnumLoftStartOrEndConditionsFailed` (value: `"LOFT_START_OR_END_CONDITIONS_FAILED"`)
+* `LoftStartOrEndConditionsFailed` (value: `"LOFT_START_OR_END_CONDITIONS_FAILED"`)
 
-* `GBTErrorStringEnumLoftStartOrEndConditionsMagnitudeNoEffect` (value: `"LOFT_START_OR_END_CONDITIONS_MAGNITUDE_NO_EFFECT"`)
+* `LoftStartOrEndConditionsMagnitudeNoEffect` (value: `"LOFT_START_OR_END_CONDITIONS_MAGNITUDE_NO_EFFECT"`)
 
-* `GBTErrorStringEnumFollowLeaderIsInUnfollowableTab` (value: `"FOLLOW_LEADER_IS_IN_UNFOLLOWABLE_TAB"`)
+* `FollowLeaderIsInUnfollowableTab` (value: `"FOLLOW_LEADER_IS_IN_UNFOLLOWABLE_TAB"`)
 
-* `GBTErrorStringEnumLoftStartOrEndConditionsWithGuidesFailed` (value: `"LOFT_START_OR_END_CONDITIONS_WITH_GUIDES_FAILED"`)
+* `LoftStartOrEndConditionsWithGuidesFailed` (value: `"LOFT_START_OR_END_CONDITIONS_WITH_GUIDES_FAILED"`)
 
-* `GBTErrorStringEnumRestAssemblyMissingTransformGroups` (value: `"REST_ASSEMBLY_MISSING_TRANSFORM_GROUPS"`)
+* `RestAssemblyMissingTransformGroups` (value: `"REST_ASSEMBLY_MISSING_TRANSFORM_GROUPS"`)
 
-* `GBTErrorStringEnumRestAssemblyNullTransformGroup` (value: `"REST_ASSEMBLY_NULL_TRANSFORM_GROUP"`)
+* `RestAssemblyNullTransformGroup` (value: `"REST_ASSEMBLY_NULL_TRANSFORM_GROUP"`)
 
-* `GBTErrorStringEnumRestAssemblyNullTransformGroupInstances` (value: `"REST_ASSEMBLY_NULL_TRANSFORM_GROUP_INSTANCES"`)
+* `RestAssemblyNullTransformGroupInstances` (value: `"REST_ASSEMBLY_NULL_TRANSFORM_GROUP_INSTANCES"`)
 
-* `GBTErrorStringEnumRestAssemblyNullTransformGroupInstance` (value: `"REST_ASSEMBLY_NULL_TRANSFORM_GROUP_INSTANCE"`)
+* `RestAssemblyNullTransformGroupInstance` (value: `"REST_ASSEMBLY_NULL_TRANSFORM_GROUP_INSTANCE"`)
 
-* `GBTErrorStringEnumLoftNoFaceForGuideClamp` (value: `"LOFT_NO_FACE_FOR_GUIDE_CLAMP"`)
+* `LoftNoFaceForGuideClamp` (value: `"LOFT_NO_FACE_FOR_GUIDE_CLAMP"`)
 
-* `GBTErrorStringEnumLoftNoContinuityConditionAtInternalGuide` (value: `"LOFT_NO_CONTINUITY_CONDITION_AT_INTERNAL_GUIDE"`)
+* `LoftNoContinuityConditionAtInternalGuide` (value: `"LOFT_NO_CONTINUITY_CONDITION_AT_INTERNAL_GUIDE"`)
 
-* `GBTErrorStringEnumSketchConstraintNotFound` (value: `"SKETCH_CONSTRAINT_NOT_FOUND"`)
+* `SketchConstraintNotFound` (value: `"SKETCH_CONSTRAINT_NOT_FOUND"`)
 
-* `GBTErrorStringEnumSketchConstraintParameterNotFound` (value: `"SKETCH_CONSTRAINT_PARAMETER_NOT_FOUND"`)
+* `SketchConstraintParameterNotFound` (value: `"SKETCH_CONSTRAINT_PARAMETER_NOT_FOUND"`)
 
-* `GBTErrorStringEnumSketchEntityNotFound` (value: `"SKETCH_ENTITY_NOT_FOUND"`)
+* `SketchEntityNotFound` (value: `"SKETCH_ENTITY_NOT_FOUND"`)
 
-* `GBTErrorStringEnumSketchEntityParameterNotFound` (value: `"SKETCH_ENTITY_PARAMETER_NOT_FOUND"`)
+* `SketchEntityParameterNotFound` (value: `"SKETCH_ENTITY_PARAMETER_NOT_FOUND"`)
 
-* `GBTErrorStringEnumFeatureParameterTypeMismatch` (value: `"FEATURE_PARAMETER_TYPE_MISMATCH"`)
+* `FeatureParameterTypeMismatch` (value: `"FEATURE_PARAMETER_TYPE_MISMATCH"`)
 
-* `GBTErrorStringEnumFeatureConfiguredParameterNoValues` (value: `"FEATURE_CONFIGURED_PARAMETER_NO_VALUES"`)
+* `FeatureConfiguredParameterNoValues` (value: `"FEATURE_CONFIGURED_PARAMETER_NO_VALUES"`)
 
-* `GBTErrorStringEnumFeatureConfiguredParameterInconsistentTypes` (value: `"FEATURE_CONFIGURED_PARAMETER_INCONSISTENT_TYPES"`)
+* `FeatureConfiguredParameterInconsistentTypes` (value: `"FEATURE_CONFIGURED_PARAMETER_INCONSISTENT_TYPES"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeFailAutoMiter` (value: `"SHEET_METAL_FLANGE_FAIL_AUTO_MITER"`)
+* `SheetMetalFlangeFailAutoMiter` (value: `"SHEET_METAL_FLANGE_FAIL_AUTO_MITER"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeFailParallelEdge` (value: `"SHEET_METAL_FLANGE_FAIL_PARALLEL_EDGE"`)
+* `SheetMetalFlangeFailParallelEdge` (value: `"SHEET_METAL_FLANGE_FAIL_PARALLEL_EDGE"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeFailParallelPlane` (value: `"SHEET_METAL_FLANGE_FAIL_PARALLEL_PLANE"`)
+* `SheetMetalFlangeFailParallelPlane` (value: `"SHEET_METAL_FLANGE_FAIL_PARALLEL_PLANE"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeFailParallelDirection` (value: `"SHEET_METAL_FLANGE_FAIL_PARALLEL_DIRECTION"`)
+* `SheetMetalFlangeFailParallelDirection` (value: `"SHEET_METAL_FLANGE_FAIL_PARALLEL_DIRECTION"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeFailNoBend` (value: `"SHEET_METAL_FLANGE_FAIL_NO_BEND"`)
+* `SheetMetalFlangeFailNoBend` (value: `"SHEET_METAL_FLANGE_FAIL_NO_BEND"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeNoParallelEntity` (value: `"SHEET_METAL_FLANGE_NO_PARALLEL_ENTITY"`)
+* `SheetMetalFlangeNoParallelEntity` (value: `"SHEET_METAL_FLANGE_NO_PARALLEL_ENTITY"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeNoDirectionEntity` (value: `"SHEET_METAL_FLANGE_NO_DIRECTION_ENTITY"`)
+* `SheetMetalFlangeNoDirectionEntity` (value: `"SHEET_METAL_FLANGE_NO_DIRECTION_ENTITY"`)
 
-* `GBTErrorStringEnumSheetMetalTabNoBend` (value: `"SHEET_METAL_TAB_NO_BEND"`)
+* `SheetMetalTabNoBend` (value: `"SHEET_METAL_TAB_NO_BEND"`)
 
-* `GBTErrorStringEnumBooleanNoSurfaceInMergeScope` (value: `"BOOLEAN_NO_SURFACE_IN_MERGE_SCOPE"`)
+* `BooleanNoSurfaceInMergeScope` (value: `"BOOLEAN_NO_SURFACE_IN_MERGE_SCOPE"`)
 
-* `GBTErrorStringEnumBooleanNoSharedEdgeWithSurfaceInMergeScope` (value: `"BOOLEAN_NO_SHARED_EDGE_WITH_SURFACE_IN_MERGE_SCOPE"`)
+* `BooleanNoSharedEdgeWithSurfaceInMergeScope` (value: `"BOOLEAN_NO_SHARED_EDGE_WITH_SURFACE_IN_MERGE_SCOPE"`)
 
-* `GBTErrorStringEnumSheetMetalBendReliefNoCorner` (value: `"SHEET_METAL_BEND_RELIEF_NO_CORNER"`)
+* `SheetMetalBendReliefNoCorner` (value: `"SHEET_METAL_BEND_RELIEF_NO_CORNER"`)
 
-* `GBTErrorStringEnumSheetMetalCornerSelectEntities` (value: `"SHEET_METAL_CORNER_SELECT_ENTITIES"`)
+* `SheetMetalCornerSelectEntities` (value: `"SHEET_METAL_CORNER_SELECT_ENTITIES"`)
 
-* `GBTErrorStringEnumSheetMetalBendReliefSelectEntities` (value: `"SHEET_METAL_BEND_RELIEF_SELECT_ENTITIES"`)
+* `SheetMetalBendReliefSelectEntities` (value: `"SHEET_METAL_BEND_RELIEF_SELECT_ENTITIES"`)
 
-* `GBTErrorStringEnumVrfilletRadiusRequiredAtVertex` (value: `"VRFILLET_RADIUS_REQUIRED_AT_VERTEX"`)
+* `VrfilletRadiusRequiredAtVertex` (value: `"VRFILLET_RADIUS_REQUIRED_AT_VERTEX"`)
 
-* `GBTErrorStringEnumVrfilletRhoRequiredAtVertex` (value: `"VRFILLET_RHO_REQUIRED_AT_VERTEX"`)
+* `VrfilletRhoRequiredAtVertex` (value: `"VRFILLET_RHO_REQUIRED_AT_VERTEX"`)
 
-* `GBTErrorStringEnumVrfilletMagRequiredAtVertex` (value: `"VRFILLET_MAG_REQUIRED_AT_VERTEX"`)
+* `VrfilletMagRequiredAtVertex` (value: `"VRFILLET_MAG_REQUIRED_AT_VERTEX"`)
 
-* `GBTErrorStringEnumVrfilletSelectVertices` (value: `"VRFILLET_SELECT_VERTICES"`)
+* `VrfilletSelectVertices` (value: `"VRFILLET_SELECT_VERTICES"`)
 
-* `GBTErrorStringEnumVrfilletVertexNotOnChain` (value: `"VRFILLET_VERTEX_NOT_ON_CHAIN"`)
+* `VrfilletVertexNotOnChain` (value: `"VRFILLET_VERTEX_NOT_ON_CHAIN"`)
 
-* `GBTErrorStringEnumVrfilletInvalidChain` (value: `"VRFILLET_INVALID_CHAIN"`)
+* `VrfilletInvalidChain` (value: `"VRFILLET_INVALID_CHAIN"`)
 
-* `GBTErrorStringEnumSheetMetalTabNoMerge` (value: `"SHEET_METAL_TAB_NO_MERGE"`)
+* `SheetMetalTabNoMerge` (value: `"SHEET_METAL_TAB_NO_MERGE"`)
 
-* `GBTErrorStringEnumSheetMetalTabNonplanar` (value: `"SHEET_METAL_TAB_NONPLANAR"`)
+* `SheetMetalTabNonplanar` (value: `"SHEET_METAL_TAB_NONPLANAR"`)
 
-* `GBTErrorStringEnumSheetMetalTabNoWall` (value: `"SHEET_METAL_TAB_NO_WALL"`)
+* `SheetMetalTabNoWall` (value: `"SHEET_METAL_TAB_NO_WALL"`)
 
-* `GBTErrorStringEnumSheetMetalTabNoTab` (value: `"SHEET_METAL_TAB_NO_TAB"`)
+* `SheetMetalTabNoTab` (value: `"SHEET_METAL_TAB_NO_TAB"`)
 
-* `GBTErrorStringEnumVrfilletNoEffect` (value: `"VRFILLET_NO_EFFECT"`)
+* `VrfilletNoEffect` (value: `"VRFILLET_NO_EFFECT"`)
 
-* `GBTErrorStringEnumVrfilletMultiSelection` (value: `"VRFILLET_MULTI_SELECTION"`)
+* `VrfilletMultiSelection` (value: `"VRFILLET_MULTI_SELECTION"`)
 
-* `GBTErrorStringEnumSheetMetalTabNoParallelWall` (value: `"SHEET_METAL_TAB_NO_PARALLEL_WALL"`)
+* `SheetMetalTabNoParallelWall` (value: `"SHEET_METAL_TAB_NO_PARALLEL_WALL"`)
 
-* `GBTErrorStringEnumSheetMetalCornerUnderSized` (value: `"SHEET_METAL_CORNER_UNDER_SIZED"`)
+* `SheetMetalCornerUnderSized` (value: `"SHEET_METAL_CORNER_UNDER_SIZED"`)
 
-* `GBTErrorStringEnumFilletPartialFail` (value: `"FILLET_PARTIAL_FAIL"`)
+* `FilletPartialFail` (value: `"FILLET_PARTIAL_FAIL"`)
 
-* `GBTErrorStringEnumVrfilletInternalZero` (value: `"VRFILLET_INTERNAL_ZERO"`)
+* `VrfilletInternalZero` (value: `"VRFILLET_INTERNAL_ZERO"`)
 
-* `GBTErrorStringEnumSheetMetalTabNoEffect` (value: `"SHEET_METAL_TAB_NO_EFFECT"`)
+* `SheetMetalTabNoEffect` (value: `"SHEET_METAL_TAB_NO_EFFECT"`)
 
-* `GBTErrorStringEnumSheetMetalTabLowClearance` (value: `"SHEET_METAL_TAB_LOW_CLEARANCE"`)
+* `SheetMetalTabLowClearance` (value: `"SHEET_METAL_TAB_LOW_CLEARANCE"`)
 
-* `GBTErrorStringEnumSheetMetalTabFailsMerge` (value: `"SHEET_METAL_TAB_FAILS_MERGE"`)
+* `SheetMetalTabFailsMerge` (value: `"SHEET_METAL_TAB_FAILS_MERGE"`)
 
-* `GBTErrorStringEnumSheetMetalTabCollision` (value: `"SHEET_METAL_TAB_COLLISION"`)
+* `SheetMetalTabCollision` (value: `"SHEET_METAL_TAB_COLLISION"`)
 
-* `GBTErrorStringEnumReplaceFaceFaceCountChanged` (value: `"REPLACE_FACE_FACE_COUNT_CHANGED"`)
+* `ReplaceFaceFaceCountChanged` (value: `"REPLACE_FACE_FACE_COUNT_CHANGED"`)
 
-* `GBTErrorStringEnumFaceOverlap` (value: `"FACE_OVERLAP"`)
+* `FaceOverlap` (value: `"FACE_OVERLAP"`)
 
-* `GBTErrorStringEnumFaceRemoved` (value: `"FACE_REMOVED"`)
+* `FaceRemoved` (value: `"FACE_REMOVED"`)
 
-* `GBTErrorStringEnumIntersectingEdges` (value: `"INTERSECTING_EDGES"`)
+* `IntersectingEdges` (value: `"INTERSECTING_EDGES"`)
 
-* `GBTErrorStringEnumCannotSplitFace` (value: `"CANNOT_SPLIT_FACE"`)
+* `CannotSplitFace` (value: `"CANNOT_SPLIT_FACE"`)
 
-* `GBTErrorStringEnumFillSurfaceBadSupport` (value: `"FILL_SURFACE_BAD_SUPPORT"`)
+* `FillSurfaceBadSupport` (value: `"FILL_SURFACE_BAD_SUPPORT"`)
 
-* `GBTErrorStringEnumFillSurfaceSupportNotOnBoundary` (value: `"FILL_SURFACE_SUPPORT_NOT_ON_BOUNDARY"`)
+* `FillSurfaceSupportNotOnBoundary` (value: `"FILL_SURFACE_SUPPORT_NOT_ON_BOUNDARY"`)
 
-* `GBTErrorStringEnumFillSurfaceSupportNotSmooth` (value: `"FILL_SURFACE_SUPPORT_NOT_SMOOTH"`)
+* `FillSurfaceSupportNotSmooth` (value: `"FILL_SURFACE_SUPPORT_NOT_SMOOTH"`)
 
-* `GBTErrorStringEnumFillCurveOrPointConstraints` (value: `"FILL_CURVE_OR_POINT_CONSTRAINTS"`)
+* `FillCurveOrPointConstraints` (value: `"FILL_CURVE_OR_POINT_CONSTRAINTS"`)
 
-* `GBTErrorStringEnumSheetMetalAddWrongModel` (value: `"SHEET_METAL_ADD_WRONG_MODEL"`)
+* `SheetMetalAddWrongModel` (value: `"SHEET_METAL_ADD_WRONG_MODEL"`)
 
-* `GBTErrorStringEnumSheetMetalPatternDisabledBooleans` (value: `"SHEET_METAL_PATTERN_DISABLED_BOOLEANS"`)
+* `SheetMetalPatternDisabledBooleans` (value: `"SHEET_METAL_PATTERN_DISABLED_BOOLEANS"`)
 
-* `GBTErrorStringEnumDrawingAllInstancesHidden` (value: `"DRAWING_ALL_INSTANCES_HIDDEN"`)
+* `DrawingAllInstancesHidden` (value: `"DRAWING_ALL_INSTANCES_HIDDEN"`)
 
-* `GBTErrorStringEnumFillSupportNotSmoothInternal` (value: `"FILL_SUPPORT_NOT_SMOOTH_INTERNAL"`)
+* `FillSupportNotSmoothInternal` (value: `"FILL_SUPPORT_NOT_SMOOTH_INTERNAL"`)
 
-* `GBTErrorStringEnumSketchConstraintWrongSheetMetalBody` (value: `"SKETCH_CONSTRAINT_WRONG_SHEET_METAL_BODY"`)
+* `SketchConstraintWrongSheetMetalBody` (value: `"SKETCH_CONSTRAINT_WRONG_SHEET_METAL_BODY"`)
 
-* `GBTErrorStringEnumSketchConstraintFlatIn3D` (value: `"SKETCH_CONSTRAINT_FLAT_IN_3D"`)
+* `SketchConstraintFlatIn3D` (value: `"SKETCH_CONSTRAINT_FLAT_IN_3D"`)
 
-* `GBTErrorStringEnumSketchConstraint3DInFlat` (value: `"SKETCH_CONSTRAINT_3D_IN_FLAT"`)
+* `SketchConstraint3DInFlat` (value: `"SKETCH_CONSTRAINT_3D_IN_FLAT"`)
 
-* `GBTErrorStringEnumFitSplineCurvatureFace` (value: `"FIT_SPLINE_CURVATURE_FACE"`)
+* `FitSplineCurvatureFace` (value: `"FIT_SPLINE_CURVATURE_FACE"`)
 
-* `GBTErrorStringEnumFitSplineCannotEvaluateCurvatureEndCondition` (value: `"FIT_SPLINE_CANNOT_EVALUATE_CURVATURE_END_CONDITION"`)
+* `FitSplineCannotEvaluateCurvatureEndCondition` (value: `"FIT_SPLINE_CANNOT_EVALUATE_CURVATURE_END_CONDITION"`)
 
-* `GBTErrorStringEnumFitSplineNeedDirectionForCurvature` (value: `"FIT_SPLINE_NEED_DIRECTION_FOR_CURVATURE"`)
+* `FitSplineNeedDirectionForCurvature` (value: `"FIT_SPLINE_NEED_DIRECTION_FOR_CURVATURE"`)
 
-* `GBTErrorStringEnumConfigurationHasBadParameters` (value: `"CONFIGURATION_HAS_BAD_PARAMETERS"`)
+* `ConfigurationHasBadParameters` (value: `"CONFIGURATION_HAS_BAD_PARAMETERS"`)
 
-* `GBTErrorStringEnumConfigurationHasBadCurrentConfiguration` (value: `"CONFIGURATION_HAS_BAD_CURRENT_CONFIGURATION"`)
+* `ConfigurationHasBadCurrentConfiguration` (value: `"CONFIGURATION_HAS_BAD_CURRENT_CONFIGURATION"`)
 
-* `GBTErrorStringEnumFeatureConfiguredParameterValuesHaveIds` (value: `"FEATURE_CONFIGURED_PARAMETER_VALUES_HAVE_IDS"`)
+* `FeatureConfiguredParameterValuesHaveIds` (value: `"FEATURE_CONFIGURED_PARAMETER_VALUES_HAVE_IDS"`)
 
-* `GBTErrorStringEnumWorkspaceNoLongerExists` (value: `"WORKSPACE_NO_LONGER_EXISTS"`)
+* `WorkspaceNoLongerExists` (value: `"WORKSPACE_NO_LONGER_EXISTS"`)
 
-* `GBTErrorStringEnumContentStackingInvalidMode` (value: `"CONTENT_STACKING_INVALID_MODE"`)
+* `ContentStackingInvalidMode` (value: `"CONTENT_STACKING_INVALID_MODE"`)
 
-* `GBTErrorStringEnumContentStackingInvalidComponents` (value: `"CONTENT_STACKING_INVALID_COMPONENTS"`)
+* `ContentStackingInvalidComponents` (value: `"CONTENT_STACKING_INVALID_COMPONENTS"`)
 
-* `GBTErrorStringEnumContentStackingInvalidTopStack` (value: `"CONTENT_STACKING_INVALID_TOP_STACK"`)
+* `ContentStackingInvalidTopStack` (value: `"CONTENT_STACKING_INVALID_TOP_STACK"`)
 
-* `GBTErrorStringEnumSheetMetalFacePatternNoJoint` (value: `"SHEET_METAL_FACE_PATTERN_NO_JOINT"`)
+* `SheetMetalFacePatternNoJoint` (value: `"SHEET_METAL_FACE_PATTERN_NO_JOINT"`)
 
-* `GBTErrorStringEnumSheetMetalFacePatternFloatingCut` (value: `"SHEET_METAL_FACE_PATTERN_FLOATING_CUT"`)
+* `SheetMetalFacePatternFloatingCut` (value: `"SHEET_METAL_FACE_PATTERN_FLOATING_CUT"`)
 
-* `GBTErrorStringEnumSheetMetalFacePatternFloatingWall` (value: `"SHEET_METAL_FACE_PATTERN_FLOATING_WALL"`)
+* `SheetMetalFacePatternFloatingWall` (value: `"SHEET_METAL_FACE_PATTERN_FLOATING_WALL"`)
 
-* `GBTErrorStringEnumSmFlatOpNoIntersect` (value: `"SM_FLAT_OP_NO_INTERSECT"`)
+* `SmFlatOpNoIntersect` (value: `"SM_FLAT_OP_NO_INTERSECT"`)
 
-* `GBTErrorStringEnumSmFlatOpPartialIntersect` (value: `"SM_FLAT_OP_PARTIAL_INTERSECT"`)
+* `SmFlatOpPartialIntersect` (value: `"SM_FLAT_OP_PARTIAL_INTERSECT"`)
 
-* `GBTErrorStringEnumSmFlatOpAddCrossesEdge` (value: `"SM_FLAT_OP_ADD_CROSSES_EDGE"`)
+* `SmFlatOpAddCrossesEdge` (value: `"SM_FLAT_OP_ADD_CROSSES_EDGE"`)
 
-* `GBTErrorStringEnumSmFlatOpNonPlanarTool` (value: `"SM_FLAT_OP_NON_PLANAR_TOOL"`)
+* `SmFlatOpNonPlanarTool` (value: `"SM_FLAT_OP_NON_PLANAR_TOOL"`)
 
-* `GBTErrorStringEnumSmFlatOpNonPlanarTarget` (value: `"SM_FLAT_OP_NON_PLANAR_TARGET"`)
+* `SmFlatOpNonPlanarTarget` (value: `"SM_FLAT_OP_NON_PLANAR_TARGET"`)
 
-* `GBTErrorStringEnumSmFlatOperationFailed` (value: `"SM_FLAT_OPERATION_FAILED"`)
+* `SmFlatOperationFailed` (value: `"SM_FLAT_OPERATION_FAILED"`)
 
-* `GBTErrorStringEnumSmFlatOpLegacyModel` (value: `"SM_FLAT_OP_LEGACY_MODEL"`)
+* `SmFlatOpLegacyModel` (value: `"SM_FLAT_OP_LEGACY_MODEL"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeNonLinearEdges` (value: `"SHEET_METAL_FLANGE_NON_LINEAR_EDGES"`)
+* `SheetMetalFlangeNonLinearEdges` (value: `"SHEET_METAL_FLANGE_NON_LINEAR_EDGES"`)
 
-* `GBTErrorStringEnumSheetMetalCylinderBend` (value: `"SHEET_METAL_CYLINDER_BEND"`)
+* `SheetMetalCylinderBend` (value: `"SHEET_METAL_CYLINDER_BEND"`)
 
-* `GBTErrorStringEnumSheetMetalInvalidFace` (value: `"SHEET_METAL_INVALID_FACE"`)
+* `SheetMetalInvalidFace` (value: `"SHEET_METAL_INVALID_FACE"`)
 
-* `GBTErrorStringEnumSheetMetalRolledCornerRelif` (value: `"SHEET_METAL_ROLLED_CORNER_RELIF"`)
+* `SheetMetalRolledCornerRelif` (value: `"SHEET_METAL_ROLLED_CORNER_RELIF"`)
 
-* `GBTErrorStringEnumSheetMetalReliefFailures` (value: `"SHEET_METAL_RELIEF_FAILURES"`)
+* `SheetMetalReliefFailures` (value: `"SHEET_METAL_RELIEF_FAILURES"`)
 
-* `GBTErrorStringEnumEdgeChangeFailed` (value: `"EDGE_CHANGE_FAILED"`)
+* `EdgeChangeFailed` (value: `"EDGE_CHANGE_FAILED"`)
 
-* `GBTErrorStringEnumBooleanInputsNotSolid` (value: `"BOOLEAN_INPUTS_NOT_SOLID"`)
+* `BooleanInputsNotSolid` (value: `"BOOLEAN_INPUTS_NOT_SOLID"`)
 
-* `GBTErrorStringEnumTransformScaleSelection` (value: `"TRANSFORM_SCALE_SELECTION"`)
+* `TransformScaleSelection` (value: `"TRANSFORM_SCALE_SELECTION"`)
 
-* `GBTErrorStringEnumSheetMetalSubtractDestroysSheet` (value: `"SHEET_METAL_SUBTRACT_DESTROYS_SHEET"`)
+* `SheetMetalSubtractDestroysSheet` (value: `"SHEET_METAL_SUBTRACT_DESTROYS_SHEET"`)
 
-* `GBTErrorStringEnumSplitKeepToolsWithFace` (value: `"SPLIT_KEEP_TOOLS_WITH_FACE"`)
+* `SplitKeepToolsWithFace` (value: `"SPLIT_KEEP_TOOLS_WITH_FACE"`)
 
-* `GBTErrorStringEnumSplitTrimWithSingleFace` (value: `"SPLIT_TRIM_WITH_SINGLE_FACE"`)
+* `SplitTrimWithSingleFace` (value: `"SPLIT_TRIM_WITH_SINGLE_FACE"`)
 
-* `GBTErrorStringEnumSheetMetalSketchDetachedFace` (value: `"SHEET_METAL_SKETCH_DETACHED_FACE"`)
+* `SheetMetalSketchDetachedFace` (value: `"SHEET_METAL_SKETCH_DETACHED_FACE"`)
 
-* `GBTErrorStringEnumHoleCutFail` (value: `"HOLE_CUT_FAIL"`)
+* `HoleCutFail` (value: `"HOLE_CUT_FAIL"`)
 
-* `GBTErrorStringEnumSheetMetalFlatOpRollFail` (value: `"SHEET_METAL_FLAT_OP_ROLL_FAIL"`)
+* `SheetMetalFlatOpRollFail` (value: `"SHEET_METAL_FLAT_OP_ROLL_FAIL"`)
 
-* `GBTErrorStringEnumPatternEdgeFailed` (value: `"PATTERN_EDGE_FAILED"`)
+* `PatternEdgeFailed` (value: `"PATTERN_EDGE_FAILED"`)
 
-* `GBTErrorStringEnumSheetMetalFacePatternNoVertex` (value: `"SHEET_METAL_FACE_PATTERN_NO_VERTEX"`)
+* `SheetMetalFacePatternNoVertex` (value: `"SHEET_METAL_FACE_PATTERN_NO_VERTEX"`)
 
-* `GBTErrorStringEnumSheetMetalFacePatternPartialFloatingWall` (value: `"SHEET_METAL_FACE_PATTERN_PARTIAL_FLOATING_WALL"`)
+* `SheetMetalFacePatternPartialFloatingWall` (value: `"SHEET_METAL_FACE_PATTERN_PARTIAL_FLOATING_WALL"`)
 
-* `GBTErrorStringEnumExtrude3DAndFlat` (value: `"EXTRUDE_3D_AND_FLAT"`)
+* `Extrude3DAndFlat` (value: `"EXTRUDE_3D_AND_FLAT"`)
 
-* `GBTErrorStringEnumPatternSwitchToPerInstance` (value: `"PATTERN_SWITCH_TO_PER_INSTANCE"`)
+* `PatternSwitchToPerInstance` (value: `"PATTERN_SWITCH_TO_PER_INSTANCE"`)
 
-* `GBTErrorStringEnumPatternNoGeomFromFeatures` (value: `"PATTERN_NO_GEOM_FROM_FEATURES"`)
+* `PatternNoGeomFromFeatures` (value: `"PATTERN_NO_GEOM_FROM_FEATURES"`)
 
-* `GBTErrorStringEnumRmNoLinkPermissionToRevision` (value: `"RM_NO_LINK_PERMISSION_TO_REVISION"`)
+* `RmNoLinkPermissionToRevision` (value: `"RM_NO_LINK_PERMISSION_TO_REVISION"`)
 
-* `GBTErrorStringEnumDraftSelectPartingEdges` (value: `"DRAFT_SELECT_PARTING_EDGES"`)
+* `DraftSelectPartingEdges` (value: `"DRAFT_SELECT_PARTING_EDGES"`)
 
-* `GBTErrorStringEnumDraftConflictingOpposition` (value: `"DRAFT_CONFLICTING_OPPOSITION"`)
+* `DraftConflictingOpposition` (value: `"DRAFT_CONFLICTING_OPPOSITION"`)
 
-* `GBTErrorStringEnumSplitSelectTargets` (value: `"SPLIT_SELECT_TARGETS"`)
+* `SplitSelectTargets` (value: `"SPLIT_SELECT_TARGETS"`)
 
-* `GBTErrorStringEnumSplitSelectTool` (value: `"SPLIT_SELECT_TOOL"`)
+* `SplitSelectTool` (value: `"SPLIT_SELECT_TOOL"`)
 
-* `GBTErrorStringEnumSplitSelectFaceTargets` (value: `"SPLIT_SELECT_FACE_TARGETS"`)
+* `SplitSelectFaceTargets` (value: `"SPLIT_SELECT_FACE_TARGETS"`)
 
-* `GBTErrorStringEnumSplitSelectFaceTools` (value: `"SPLIT_SELECT_FACE_TOOLS"`)
+* `SplitSelectFaceTools` (value: `"SPLIT_SELECT_FACE_TOOLS"`)
 
-* `GBTErrorStringEnumAssemblyPatternExceedMaxInstanceCount` (value: `"ASSEMBLY_PATTERN_EXCEED_MAX_INSTANCE_COUNT"`)
+* `AssemblyPatternExceedMaxInstanceCount` (value: `"ASSEMBLY_PATTERN_EXCEED_MAX_INSTANCE_COUNT"`)
 
-* `GBTErrorStringEnumAssemblyPatternRecursiveSeed` (value: `"ASSEMBLY_PATTERN_RECURSIVE_SEED"`)
+* `AssemblyPatternRecursiveSeed` (value: `"ASSEMBLY_PATTERN_RECURSIVE_SEED"`)
 
-* `GBTErrorStringEnumNoLinkPermissionToThisDocument` (value: `"NO_LINK_PERMISSION_TO_THIS_DOCUMENT"`)
+* `NoLinkPermissionToThisDocument` (value: `"NO_LINK_PERMISSION_TO_THIS_DOCUMENT"`)
 
-* `GBTErrorStringEnumSmFlatOpFacesNotCoplanar` (value: `"SM_FLAT_OP_FACES_NOT_COPLANAR"`)
+* `SmFlatOpFacesNotCoplanar` (value: `"SM_FLAT_OP_FACES_NOT_COPLANAR"`)
 
-* `GBTErrorStringEnumFlattenedSheetMetalSketchProhibited` (value: `"FLATTENED_SHEET_METAL_SKETCH_PROHIBITED"`)
+* `FlattenedSheetMetalSketchProhibited` (value: `"FLATTENED_SHEET_METAL_SKETCH_PROHIBITED"`)
 
-* `GBTErrorStringEnumDraftSelectPullDirectionEntity` (value: `"DRAFT_SELECT_PULL_DIRECTION_ENTITY"`)
+* `DraftSelectPullDirectionEntity` (value: `"DRAFT_SELECT_PULL_DIRECTION_ENTITY"`)
 
-* `GBTErrorStringEnumDraftParallelPartingEdge` (value: `"DRAFT_PARALLEL_PARTING_EDGE"`)
+* `DraftParallelPartingEdge` (value: `"DRAFT_PARALLEL_PARTING_EDGE"`)
 
-* `GBTErrorStringEnumFlattenedSheetMetalSketchOneFace` (value: `"FLATTENED_SHEET_METAL_SKETCH_ONE_FACE"`)
+* `FlattenedSheetMetalSketchOneFace` (value: `"FLATTENED_SHEET_METAL_SKETCH_ONE_FACE"`)
 
-* `GBTErrorStringEnumSketchOffsetChainFail` (value: `"SKETCH_OFFSET_CHAIN_FAIL"`)
+* `SketchOffsetChainFail` (value: `"SKETCH_OFFSET_CHAIN_FAIL"`)
 
-* `GBTErrorStringEnumSketchOffsetBaseCurveConsumed` (value: `"SKETCH_OFFSET_BASE_CURVE_CONSUMED"`)
+* `SketchOffsetBaseCurveConsumed` (value: `"SKETCH_OFFSET_BASE_CURVE_CONSUMED"`)
 
-* `GBTErrorStringEnumSketchOffsetSplineSplit` (value: `"SKETCH_OFFSET_SPLINE_SPLIT"`)
+* `SketchOffsetSplineSplit` (value: `"SKETCH_OFFSET_SPLINE_SPLIT"`)
 
-* `GBTErrorStringEnumSketchOffsetEllipseSplit` (value: `"SKETCH_OFFSET_ELLIPSE_SPLIT"`)
+* `SketchOffsetEllipseSplit` (value: `"SKETCH_OFFSET_ELLIPSE_SPLIT"`)
 
-* `GBTErrorStringEnumCannotFindFlattenedBody` (value: `"CANNOT_FIND_FLATTENED_BODY"`)
+* `CannotFindFlattenedBody` (value: `"CANNOT_FIND_FLATTENED_BODY"`)
 
-* `GBTErrorStringEnumSheetMetalActiveModelRequired` (value: `"SHEET_METAL_ACTIVE_MODEL_REQUIRED"`)
+* `SheetMetalActiveModelRequired` (value: `"SHEET_METAL_ACTIVE_MODEL_REQUIRED"`)
 
-* `GBTErrorStringEnumSketchReferenceWrongFlatPart` (value: `"SKETCH_REFERENCE_WRONG_FLAT_PART"`)
+* `SketchReferenceWrongFlatPart` (value: `"SKETCH_REFERENCE_WRONG_FLAT_PART"`)
 
-* `GBTErrorStringEnumSketchCannotReference3D` (value: `"SKETCH_CANNOT_REFERENCE_3D"`)
+* `SketchCannotReference3D` (value: `"SKETCH_CANNOT_REFERENCE_3D"`)
 
-* `GBTErrorStringEnumSmFlatOpCannotJoinDifferentTransforms` (value: `"SM_FLAT_OP_CANNOT_JOIN_DIFFERENT_TRANSFORMS"`)
+* `SmFlatOpCannotJoinDifferentTransforms` (value: `"SM_FLAT_OP_CANNOT_JOIN_DIFFERENT_TRANSFORMS"`)
 
-* `GBTErrorStringEnumDefinedIn3DCantReferenceSmFlat` (value: `"DEFINED_IN_3D_CANT_REFERENCE_SM_FLAT"`)
+* `DefinedIn3DCantReferenceSmFlat` (value: `"DEFINED_IN_3D_CANT_REFERENCE_SM_FLAT"`)
 
-* `GBTErrorStringEnumDefinedInSmFlatCantReference3D` (value: `"DEFINED_IN_SM_FLAT_CANT_REFERENCE_3D"`)
+* `DefinedInSmFlatCantReference3D` (value: `"DEFINED_IN_SM_FLAT_CANT_REFERENCE_3D"`)
 
-* `GBTErrorStringEnumCannotChangeReferenceToDeletedDocument` (value: `"CANNOT_CHANGE_REFERENCE_TO_DELETED_DOCUMENT"`)
+* `CannotChangeReferenceToDeletedDocument` (value: `"CANNOT_CHANGE_REFERENCE_TO_DELETED_DOCUMENT"`)
 
-* `GBTErrorStringEnumCannotChangeReferenceElementNotFound` (value: `"CANNOT_CHANGE_REFERENCE_ELEMENT_NOT_FOUND"`)
+* `CannotChangeReferenceElementNotFound` (value: `"CANNOT_CHANGE_REFERENCE_ELEMENT_NOT_FOUND"`)
 
-* `GBTErrorStringEnumCopiedSketchNotFound` (value: `"COPIED_SKETCH_NOT_FOUND"`)
+* `CopiedSketchNotFound` (value: `"COPIED_SKETCH_NOT_FOUND"`)
 
-* `GBTErrorStringEnumVariableNameTooLong` (value: `"VARIABLE_NAME_TOO_LONG"`)
+* `VariableNameTooLong` (value: `"VARIABLE_NAME_TOO_LONG"`)
 
-* `GBTErrorStringEnumNoInstanceToReplace` (value: `"NO_INSTANCE_TO_REPLACE"`)
+* `NoInstanceToReplace` (value: `"NO_INSTANCE_TO_REPLACE"`)
 
-* `GBTErrorStringEnumAssemblyReplaceNoReplacer` (value: `"ASSEMBLY_REPLACE_NO_REPLACER"`)
+* `AssemblyReplaceNoReplacer` (value: `"ASSEMBLY_REPLACE_NO_REPLACER"`)
 
-* `GBTErrorStringEnumCannotReplaceInSubassemblies` (value: `"CANNOT_REPLACE_IN_SUBASSEMBLIES"`)
+* `CannotReplaceInSubassemblies` (value: `"CANNOT_REPLACE_IN_SUBASSEMBLIES"`)
 
-* `GBTErrorStringEnumFillSurfaceG1Fail` (value: `"FILL_SURFACE_G1_FAIL"`)
+* `FillSurfaceG1Fail` (value: `"FILL_SURFACE_G1_FAIL"`)
 
-* `GBTErrorStringEnumAllConfigurationParametersNotSpecified` (value: `"ALL_CONFIGURATION_PARAMETERS_NOT_SPECIFIED"`)
+* `AllConfigurationParametersNotSpecified` (value: `"ALL_CONFIGURATION_PARAMETERS_NOT_SPECIFIED"`)
 
-* `GBTErrorStringEnumAssemblyReplaceInvalidSeedInstance` (value: `"ASSEMBLY_REPLACE_INVALID_SEED_INSTANCE"`)
+* `AssemblyReplaceInvalidSeedInstance` (value: `"ASSEMBLY_REPLACE_INVALID_SEED_INSTANCE"`)
 
-* `GBTErrorStringEnumAssemblyReplaceInvalidSeedType` (value: `"ASSEMBLY_REPLACE_INVALID_SEED_TYPE"`)
+* `AssemblyReplaceInvalidSeedType` (value: `"ASSEMBLY_REPLACE_INVALID_SEED_TYPE"`)
 
-* `GBTErrorStringEnumAssemblyReplaceSuppressedForbidden` (value: `"ASSEMBLY_REPLACE_SUPPRESSED_FORBIDDEN"`)
+* `AssemblyReplaceSuppressedForbidden` (value: `"ASSEMBLY_REPLACE_SUPPRESSED_FORBIDDEN"`)
 
-* `GBTErrorStringEnumDisplayStatesInvalidName` (value: `"DISPLAY_STATES_INVALID_NAME"`)
+* `DisplayStatesInvalidName` (value: `"DISPLAY_STATES_INVALID_NAME"`)
 
-* `GBTErrorStringEnumDisplayStatesDuplicateName` (value: `"DISPLAY_STATES_DUPLICATE_NAME"`)
+* `DisplayStatesDuplicateName` (value: `"DISPLAY_STATES_DUPLICATE_NAME"`)
 
-* `GBTErrorStringEnumWorkspaceUpgradeNoneEnableCapability` (value: `"WORKSPACE_UPGRADE_NONE_ENABLE_CAPABILITY"`)
+* `WorkspaceUpgradeNoneEnableCapability` (value: `"WORKSPACE_UPGRADE_NONE_ENABLE_CAPABILITY"`)
 
-* `GBTErrorStringEnumDisplayStatesUpdateHadNoEffect` (value: `"DISPLAY_STATES_UPDATE_HAD_NO_EFFECT"`)
+* `DisplayStatesUpdateHadNoEffect` (value: `"DISPLAY_STATES_UPDATE_HAD_NO_EFFECT"`)
 
-* `GBTErrorStringEnumDisplayStatesApplyHadNoEffect` (value: `"DISPLAY_STATES_APPLY_HAD_NO_EFFECT"`)
+* `DisplayStatesApplyHadNoEffect` (value: `"DISPLAY_STATES_APPLY_HAD_NO_EFFECT"`)
 
-* `GBTErrorStringEnumDisplayStatesDoesNotExist` (value: `"DISPLAY_STATES_DOES_NOT_EXIST"`)
+* `DisplayStatesDoesNotExist` (value: `"DISPLAY_STATES_DOES_NOT_EXIST"`)
 
-* `GBTErrorStringEnumLoftSpineNontangentPath` (value: `"LOFT_SPINE_NONTANGENT_PATH"`)
+* `LoftSpineNontangentPath` (value: `"LOFT_SPINE_NONTANGENT_PATH"`)
 
-* `GBTErrorStringEnumLoftSpineApproximated` (value: `"LOFT_SPINE_APPROXIMATED"`)
+* `LoftSpineApproximated` (value: `"LOFT_SPINE_APPROXIMATED"`)
 
-* `GBTErrorStringEnumRestAssemblyRevisionPartNumberBlank` (value: `"REST_ASSEMBLY_REVISION_PART_NUMBER_BLANK"`)
+* `RestAssemblyRevisionPartNumberBlank` (value: `"REST_ASSEMBLY_REVISION_PART_NUMBER_BLANK"`)
 
-* `GBTErrorStringEnumRestAssemblyRevisionNotFound` (value: `"REST_ASSEMBLY_REVISION_NOT_FOUND"`)
+* `RestAssemblyRevisionNotFound` (value: `"REST_ASSEMBLY_REVISION_NOT_FOUND"`)
 
-* `GBTErrorStringEnumRollFailed` (value: `"ROLL_FAILED"`)
+* `RollFailed` (value: `"ROLL_FAILED"`)
 
-* `GBTErrorStringEnumRollCannotAdjust` (value: `"ROLL_CANNOT_ADJUST"`)
+* `RollCannotAdjust` (value: `"ROLL_CANNOT_ADJUST"`)
 
-* `GBTErrorStringEnumRollMismatchedSource` (value: `"ROLL_MISMATCHED_SOURCE"`)
+* `RollMismatchedSource` (value: `"ROLL_MISMATCHED_SOURCE"`)
 
-* `GBTErrorStringEnumInvalidRollSurface` (value: `"INVALID_ROLL_SURFACE"`)
+* `InvalidRollSurface` (value: `"INVALID_ROLL_SURFACE"`)
 
-* `GBTErrorStringEnumRollNotToOrFromPlane` (value: `"ROLL_NOT_TO_OR_FROM_PLANE"`)
+* `RollNotToOrFromPlane` (value: `"ROLL_NOT_TO_OR_FROM_PLANE"`)
 
-* `GBTErrorStringEnumFailedToFindElementForToState` (value: `"FAILED_TO_FIND_ELEMENT_FOR_TO_STATE"`)
+* `FailedToFindElementForToState` (value: `"FAILED_TO_FIND_ELEMENT_FOR_TO_STATE"`)
 
-* `GBTErrorStringEnumFailedToFindVersionForToState` (value: `"FAILED_TO_FIND_VERSION_FOR_TO_STATE"`)
+* `FailedToFindVersionForToState` (value: `"FAILED_TO_FIND_VERSION_FOR_TO_STATE"`)
 
-* `GBTErrorStringEnumMissingRevisionIdForToState` (value: `"MISSING_REVISION_ID_FOR_TO_STATE"`)
+* `MissingRevisionIdForToState` (value: `"MISSING_REVISION_ID_FOR_TO_STATE"`)
 
-* `GBTErrorStringEnumMissingVersionIdForToState` (value: `"MISSING_VERSION_ID_FOR_TO_STATE"`)
+* `MissingVersionIdForToState` (value: `"MISSING_VERSION_ID_FOR_TO_STATE"`)
 
-* `GBTErrorStringEnumInvalidDocumentIdForToState` (value: `"INVALID_DOCUMENT_ID_FOR_TO_STATE"`)
+* `InvalidDocumentIdForToState` (value: `"INVALID_DOCUMENT_ID_FOR_TO_STATE"`)
 
-* `GBTErrorStringEnumAssemblyContainsMissingPartData` (value: `"ASSEMBLY_CONTAINS_MISSING_PART_DATA"`)
+* `AssemblyContainsMissingPartData` (value: `"ASSEMBLY_CONTAINS_MISSING_PART_DATA"`)
 
-* `GBTErrorStringEnumSheetMetalHemNoEdges` (value: `"SHEET_METAL_HEM_NO_EDGES"`)
+* `SheetMetalHemNoEdges` (value: `"SHEET_METAL_HEM_NO_EDGES"`)
 
-* `GBTErrorStringEnumSheetMetalHemNonLinearEdges` (value: `"SHEET_METAL_HEM_NON_LINEAR_EDGES"`)
+* `SheetMetalHemNonLinearEdges` (value: `"SHEET_METAL_HEM_NON_LINEAR_EDGES"`)
 
-* `GBTErrorStringEnumSheetMetalHemFailAlignment` (value: `"SHEET_METAL_HEM_FAIL_ALIGNMENT"`)
+* `SheetMetalHemFailAlignment` (value: `"SHEET_METAL_HEM_FAIL_ALIGNMENT"`)
 
-* `GBTErrorStringEnumSheetMetalHemTooShort` (value: `"SHEET_METAL_HEM_TOO_SHORT"`)
+* `SheetMetalHemTooShort` (value: `"SHEET_METAL_HEM_TOO_SHORT"`)
 
-* `GBTErrorStringEnumSheetMetalHemTearDropGapTooLarge` (value: `"SHEET_METAL_HEM_TEAR_DROP_GAP_TOO_LARGE"`)
+* `SheetMetalHemTearDropGapTooLarge` (value: `"SHEET_METAL_HEM_TEAR_DROP_GAP_TOO_LARGE"`)
 
-* `GBTErrorStringEnumSheetMetalHemInternal` (value: `"SHEET_METAL_HEM_INTERNAL"`)
+* `SheetMetalHemInternal` (value: `"SHEET_METAL_HEM_INTERNAL"`)
 
-* `GBTErrorStringEnumSheetMetalHemFailed` (value: `"SHEET_METAL_HEM_FAILED"`)
+* `SheetMetalHemFailed` (value: `"SHEET_METAL_HEM_FAILED"`)
 
-* `GBTErrorStringEnumInvalidConfigurationSpecified` (value: `"INVALID_CONFIGURATION_SPECIFIED"`)
+* `InvalidConfigurationSpecified` (value: `"INVALID_CONFIGURATION_SPECIFIED"`)
 
-* `GBTErrorStringEnumEdgeblendPartial` (value: `"EDGEBLEND_PARTIAL"`)
+* `EdgeblendPartial` (value: `"EDGEBLEND_PARTIAL"`)
 
-* `GBTErrorStringEnumChamferPartialFail` (value: `"CHAMFER_PARTIAL_FAIL"`)
+* `ChamferPartialFail` (value: `"CHAMFER_PARTIAL_FAIL"`)
 
-* `GBTErrorStringEnumLoftInconsistentExtent` (value: `"LOFT_INCONSISTENT_EXTENT"`)
+* `LoftInconsistentExtent` (value: `"LOFT_INCONSISTENT_EXTENT"`)
 
-* `GBTErrorStringEnumLoftCantTrimProfilesInfo` (value: `"LOFT_CANT_TRIM_PROFILES_INFO"`)
+* `LoftCantTrimProfilesInfo` (value: `"LOFT_CANT_TRIM_PROFILES_INFO"`)
 
-* `GBTErrorStringEnumLoftCantTrimGuidesInfo` (value: `"LOFT_CANT_TRIM_GUIDES_INFO"`)
+* `LoftCantTrimGuidesInfo` (value: `"LOFT_CANT_TRIM_GUIDES_INFO"`)
 
-* `GBTErrorStringEnumNonGeometricItemInsertionFailed` (value: `"NON_GEOMETRIC_ITEM_INSERTION_FAILED"`)
+* `NonGeometricItemInsertionFailed` (value: `"NON_GEOMETRIC_ITEM_INSERTION_FAILED"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeNextToCylinderBend` (value: `"SHEET_METAL_FLANGE_NEXT_TO_CYLINDER_BEND"`)
+* `SheetMetalFlangeNextToCylinderBend` (value: `"SHEET_METAL_FLANGE_NEXT_TO_CYLINDER_BEND"`)
 
-* `GBTErrorStringEnumSheetMetalHemNextToCylinderBend` (value: `"SHEET_METAL_HEM_NEXT_TO_CYLINDER_BEND"`)
+* `SheetMetalHemNextToCylinderBend` (value: `"SHEET_METAL_HEM_NEXT_TO_CYLINDER_BEND"`)
 
-* `GBTErrorStringEnumSheetMetalMoveFaceNextToCylinderBend` (value: `"SHEET_METAL_MOVE_FACE_NEXT_TO_CYLINDER_BEND"`)
+* `SheetMetalMoveFaceNextToCylinderBend` (value: `"SHEET_METAL_MOVE_FACE_NEXT_TO_CYLINDER_BEND"`)
 
-* `GBTErrorStringEnumAssemblyUnknownSolveError` (value: `"ASSEMBLY_UNKNOWN_SOLVE_ERROR"`)
+* `AssemblyUnknownSolveError` (value: `"ASSEMBLY_UNKNOWN_SOLVE_ERROR"`)
 
-* `GBTErrorStringEnumAssemblyFeatureFailedToResolveAllInstances` (value: `"ASSEMBLY_FEATURE_FAILED_TO_RESOLVE_ALL_INSTANCES"`)
+* `AssemblyFeatureFailedToResolveAllInstances` (value: `"ASSEMBLY_FEATURE_FAILED_TO_RESOLVE_ALL_INSTANCES"`)
 
-* `GBTErrorStringEnumSheetMetalOrphanedBend` (value: `"SHEET_METAL_ORPHANED_BEND"`)
+* `SheetMetalOrphanedBend` (value: `"SHEET_METAL_ORPHANED_BEND"`)
 
-* `GBTErrorStringEnumAssemblyContextInvalidReference` (value: `"ASSEMBLY_CONTEXT_INVALID_REFERENCE"`)
+* `AssemblyContextInvalidReference` (value: `"ASSEMBLY_CONTEXT_INVALID_REFERENCE"`)
 
-* `GBTErrorStringEnumAssemblyFeatureQueryDataMissing` (value: `"ASSEMBLY_FEATURE_QUERY_DATA_MISSING"`)
+* `AssemblyFeatureQueryDataMissing` (value: `"ASSEMBLY_FEATURE_QUERY_DATA_MISSING"`)
 
-* `GBTErrorStringEnumNonGeometricItemsDocumentNotOwnedByCompany` (value: `"NON_GEOMETRIC_ITEMS_DOCUMENT_NOT_OWNED_BY_COMPANY"`)
+* `NonGeometricItemsDocumentNotOwnedByCompany` (value: `"NON_GEOMETRIC_ITEMS_DOCUMENT_NOT_OWNED_BY_COMPANY"`)
 
-* `GBTErrorStringEnumNonGeometricItemNoItemFoundForDocumentOwner` (value: `"NON_GEOMETRIC_ITEM_NO_ITEM_FOUND_FOR_DOCUMENT_OWNER"`)
+* `NonGeometricItemNoItemFoundForDocumentOwner` (value: `"NON_GEOMETRIC_ITEM_NO_ITEM_FOUND_FOR_DOCUMENT_OWNER"`)
 
-* `GBTErrorStringEnumExtendSheetBodyNoTarget` (value: `"EXTEND_SHEET_BODY_NO_TARGET"`)
+* `ExtendSheetBodyNoTarget` (value: `"EXTEND_SHEET_BODY_NO_TARGET"`)
 
-* `GBTErrorStringEnumExtendTargetMissed` (value: `"EXTEND_TARGET_MISSED"`)
+* `ExtendTargetMissed` (value: `"EXTEND_TARGET_MISSED"`)
 
-* `GBTErrorStringEnumExtendSelfIntersection` (value: `"EXTEND_SELF_INTERSECTION"`)
+* `ExtendSelfIntersection` (value: `"EXTEND_SELF_INTERSECTION"`)
 
-* `GBTErrorStringEnumExtendFailed` (value: `"EXTEND_FAILED"`)
+* `ExtendFailed` (value: `"EXTEND_FAILED"`)
 
-* `GBTErrorStringEnumExtendToFaceFailed` (value: `"EXTEND_TO_FACE_FAILED"`)
+* `ExtendToFaceFailed` (value: `"EXTEND_TO_FACE_FAILED"`)
 
-* `GBTErrorStringEnumTrimToMultiFailed` (value: `"TRIM_TO_MULTI_FAILED"`)
+* `TrimToMultiFailed` (value: `"TRIM_TO_MULTI_FAILED"`)
 
-* `GBTErrorStringEnumExtendNonLaminar` (value: `"EXTEND_NON_LAMINAR"`)
+* `ExtendNonLaminar` (value: `"EXTEND_NON_LAMINAR"`)
 
-* `GBTErrorStringEnumExtendToVertexFailed` (value: `"EXTEND_TO_VERTEX_FAILED"`)
+* `ExtendToVertexFailed` (value: `"EXTEND_TO_VERTEX_FAILED"`)
 
-* `GBTErrorStringEnumTrimFailed` (value: `"TRIM_FAILED"`)
+* `TrimFailed` (value: `"TRIM_FAILED"`)
 
-* `GBTErrorStringEnumSketchEqualCurvatureFailed` (value: `"SKETCH_EQUAL_CURVATURE_FAILED"`)
+* `SketchEqualCurvatureFailed` (value: `"SKETCH_EQUAL_CURVATURE_FAILED"`)
 
-* `GBTErrorStringEnumSketchEqualCurvatureInputError` (value: `"SKETCH_EQUAL_CURVATURE_INPUT_ERROR"`)
+* `SketchEqualCurvatureInputError` (value: `"SKETCH_EQUAL_CURVATURE_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumAssemblyExplodeStepDirectionQueryFailed` (value: `"ASSEMBLY_EXPLODE_STEP_DIRECTION_QUERY_FAILED"`)
+* `AssemblyExplodeStepDirectionQueryFailed` (value: `"ASSEMBLY_EXPLODE_STEP_DIRECTION_QUERY_FAILED"`)
 
-* `GBTErrorStringEnumWrapDestinationNoFace` (value: `"WRAP_DESTINATION_NO_FACE"`)
+* `WrapDestinationNoFace` (value: `"WRAP_DESTINATION_NO_FACE"`)
 
-* `GBTErrorStringEnumWrapTrimFailed` (value: `"WRAP_TRIM_FAILED"`)
+* `WrapTrimFailed` (value: `"WRAP_TRIM_FAILED"`)
 
-* `GBTErrorStringEnumWrapTrimNoIntersection` (value: `"WRAP_TRIM_NO_INTERSECTION"`)
+* `WrapTrimNoIntersection` (value: `"WRAP_TRIM_NO_INTERSECTION"`)
 
-* `GBTErrorStringEnumWrapImprintFailed` (value: `"WRAP_IMPRINT_FAILED"`)
+* `WrapImprintFailed` (value: `"WRAP_IMPRINT_FAILED"`)
 
-* `GBTErrorStringEnumWrapNeedsAnchor` (value: `"WRAP_NEEDS_ANCHOR"`)
+* `WrapNeedsAnchor` (value: `"WRAP_NEEDS_ANCHOR"`)
 
-* `GBTErrorStringEnumWrapSelectTools` (value: `"WRAP_SELECT_TOOLS"`)
+* `WrapSelectTools` (value: `"WRAP_SELECT_TOOLS"`)
 
-* `GBTErrorStringEnumWrapSelectTarget` (value: `"WRAP_SELECT_TARGET"`)
+* `WrapSelectTarget` (value: `"WRAP_SELECT_TARGET"`)
 
-* `GBTErrorStringEnumCreateCompositePartFailed` (value: `"CREATE_COMPOSITE_PART_FAILED"`)
+* `CreateCompositePartFailed` (value: `"CREATE_COMPOSITE_PART_FAILED"`)
 
-* `GBTErrorStringEnumNestedCompositeParts` (value: `"NESTED_COMPOSITE_PARTS"`)
+* `NestedCompositeParts` (value: `"NESTED_COMPOSITE_PARTS"`)
 
-* `GBTErrorStringEnumAssemblyExplosionDoesNotExist` (value: `"ASSEMBLY_EXPLOSION_DOES_NOT_EXIST"`)
+* `AssemblyExplosionDoesNotExist` (value: `"ASSEMBLY_EXPLOSION_DOES_NOT_EXIST"`)
 
-* `GBTErrorStringEnumFillSurfaceNoGuides` (value: `"FILL_SURFACE_NO_GUIDES"`)
+* `FillSurfaceNoGuides` (value: `"FILL_SURFACE_NO_GUIDES"`)
 
-* `GBTErrorStringEnumHoleInconsistentTapInfo` (value: `"HOLE_INCONSISTENT_TAP_INFO"`)
+* `HoleInconsistentTapInfo` (value: `"HOLE_INCONSISTENT_TAP_INFO"`)
 
-* `GBTErrorStringEnumWrapSourceDifferingPlanes` (value: `"WRAP_SOURCE_DIFFERING_PLANES"`)
+* `WrapSourceDifferingPlanes` (value: `"WRAP_SOURCE_DIFFERING_PLANES"`)
 
-* `GBTErrorStringEnumWrapImprintSheetMetal` (value: `"WRAP_IMPRINT_SHEET_METAL"`)
+* `WrapImprintSheetMetal` (value: `"WRAP_IMPRINT_SHEET_METAL"`)
 
-* `GBTErrorStringEnumWrapSelectAnchors` (value: `"WRAP_SELECT_ANCHORS"`)
+* `WrapSelectAnchors` (value: `"WRAP_SELECT_ANCHORS"`)
 
-* `GBTErrorStringEnumOperationCancelled` (value: `"OPERATION_CANCELLED"`)
+* `OperationCancelled` (value: `"OPERATION_CANCELLED"`)
 
-* `GBTErrorStringEnumCompositeClosedOverlap` (value: `"COMPOSITE_CLOSED_OVERLAP"`)
+* `CompositeClosedOverlap` (value: `"COMPOSITE_CLOSED_OVERLAP"`)
 
-* `GBTErrorStringEnumCompositeOpenOverlap` (value: `"COMPOSITE_OPEN_OVERLAP"`)
+* `CompositeOpenOverlap` (value: `"COMPOSITE_OPEN_OVERLAP"`)
 
-* `GBTErrorStringEnumCompositeSketch` (value: `"COMPOSITE_SKETCH"`)
+* `CompositeSketch` (value: `"COMPOSITE_SKETCH"`)
 
-* `GBTErrorStringEnumCompositeMateConnector` (value: `"COMPOSITE_MATE_CONNECTOR"`)
+* `CompositeMateConnector` (value: `"COMPOSITE_MATE_CONNECTOR"`)
 
-* `GBTErrorStringEnumCompositePlane` (value: `"COMPOSITE_PLANE"`)
+* `CompositePlane` (value: `"COMPOSITE_PLANE"`)
 
-* `GBTErrorStringEnumCompositeNonModifiable` (value: `"COMPOSITE_NON_MODIFIABLE"`)
+* `CompositeNonModifiable` (value: `"COMPOSITE_NON_MODIFIABLE"`)
 
-* `GBTErrorStringEnumAssemblyReplaceWillCauseCycles` (value: `"ASSEMBLY_REPLACE_WILL_CAUSE_CYCLES"`)
+* `AssemblyReplaceWillCauseCycles` (value: `"ASSEMBLY_REPLACE_WILL_CAUSE_CYCLES"`)
 
-* `GBTErrorStringEnumCreateOutlineTwoOffsetFacesPerBody` (value: `"CREATE_OUTLINE_TWO_OFFSET_FACES_PER_BODY"`)
+* `CreateOutlineTwoOffsetFacesPerBody` (value: `"CREATE_OUTLINE_TWO_OFFSET_FACES_PER_BODY"`)
 
-* `GBTErrorStringEnumSheetMetalToolDoesNotCutThrough` (value: `"SHEET_METAL_TOOL_DOES_NOT_CUT_THROUGH"`)
+* `SheetMetalToolDoesNotCutThrough` (value: `"SHEET_METAL_TOOL_DOES_NOT_CUT_THROUGH"`)
 
-* `GBTErrorStringEnumPeriodicBsplinesurfaceNotClosed` (value: `"PERIODIC_BSPLINESURFACE_NOT_CLOSED"`)
+* `PeriodicBsplinesurfaceNotClosed` (value: `"PERIODIC_BSPLINESURFACE_NOT_CLOSED"`)
 
-* `GBTErrorStringEnumPeriodicBsplinesurfaceNotSmooth` (value: `"PERIODIC_BSPLINESURFACE_NOT_SMOOTH"`)
+* `PeriodicBsplinesurfaceNotSmooth` (value: `"PERIODIC_BSPLINESURFACE_NOT_SMOOTH"`)
 
-* `GBTErrorStringEnumCannotMakeBsplinesurface` (value: `"CANNOT_MAKE_BSPLINESURFACE"`)
+* `CannotMakeBsplinesurface` (value: `"CANNOT_MAKE_BSPLINESURFACE"`)
 
-* `GBTErrorStringEnumBsplinesurfaceNotG1` (value: `"BSPLINESURFACE_NOT_G1"`)
+* `BsplinesurfaceNotG1` (value: `"BSPLINESURFACE_NOT_G1"`)
 
-* `GBTErrorStringEnumBad2DBoundaryBsplinecurveDefinition` (value: `"BAD_2D_BOUNDARY_BSPLINECURVE_DEFINITION"`)
+* `Bad2DBoundaryBsplinecurveDefinition` (value: `"BAD_2D_BOUNDARY_BSPLINECURVE_DEFINITION"`)
 
-* `GBTErrorStringEnumPeriodic2DBoundaryBsplinecurveNotClosed` (value: `"PERIODIC_2D_BOUNDARY_BSPLINECURVE_NOT_CLOSED"`)
+* `Periodic2DBoundaryBsplinecurveNotClosed` (value: `"PERIODIC_2D_BOUNDARY_BSPLINECURVE_NOT_CLOSED"`)
 
-* `GBTErrorStringEnumPeriodic2DBoundaryBsplinecurveNotSmooth` (value: `"PERIODIC_2D_BOUNDARY_BSPLINECURVE_NOT_SMOOTH"`)
+* `Periodic2DBoundaryBsplinecurveNotSmooth` (value: `"PERIODIC_2D_BOUNDARY_BSPLINECURVE_NOT_SMOOTH"`)
 
-* `GBTErrorStringEnumBsplinesurfaceBoundaryNotSingleClosedLoop` (value: `"BSPLINESURFACE_BOUNDARY_NOT_SINGLE_CLOSED_LOOP"`)
+* `BsplinesurfaceBoundaryNotSingleClosedLoop` (value: `"BSPLINESURFACE_BOUNDARY_NOT_SINGLE_CLOSED_LOOP"`)
 
-* `GBTErrorStringEnumBsplinesurfaceFailedToMakeSolid` (value: `"BSPLINESURFACE_FAILED_TO_MAKE_SOLID"`)
+* `BsplinesurfaceFailedToMakeSolid` (value: `"BSPLINESURFACE_FAILED_TO_MAKE_SOLID"`)
 
-* `GBTErrorStringEnumBooleanNoSharedEdgeWithOtherSurface` (value: `"BOOLEAN_NO_SHARED_EDGE_WITH_OTHER_SURFACE"`)
+* `BooleanNoSharedEdgeWithOtherSurface` (value: `"BOOLEAN_NO_SHARED_EDGE_WITH_OTHER_SURFACE"`)
 
-* `GBTErrorStringEnumBooleanNoSurfaceToMergeWith` (value: `"BOOLEAN_NO_SURFACE_TO_MERGE_WITH"`)
+* `BooleanNoSurfaceToMergeWith` (value: `"BOOLEAN_NO_SURFACE_TO_MERGE_WITH"`)
 
-* `GBTErrorStringEnumBooleanInvalidParameterCombination` (value: `"BOOLEAN_INVALID_PARAMETER_COMBINATION"`)
+* `BooleanInvalidParameterCombination` (value: `"BOOLEAN_INVALID_PARAMETER_COMBINATION"`)
 
-* `GBTErrorStringEnumModifyCompositePartFailed` (value: `"MODIFY_COMPOSITE_PART_FAILED"`)
+* `ModifyCompositePartFailed` (value: `"MODIFY_COMPOSITE_PART_FAILED"`)
 
-* `GBTErrorStringEnumInstanceConsumedByClosedComposite` (value: `"INSTANCE_CONSUMED_BY_CLOSED_COMPOSITE"`)
+* `InstanceConsumedByClosedComposite` (value: `"INSTANCE_CONSUMED_BY_CLOSED_COMPOSITE"`)
 
-* `GBTErrorStringEnumExplodeStepInstanceIsSuppressed` (value: `"EXPLODE_STEP_INSTANCE_IS_SUPPRESSED"`)
+* `ExplodeStepInstanceIsSuppressed` (value: `"EXPLODE_STEP_INSTANCE_IS_SUPPRESSED"`)
 
-* `GBTErrorStringEnumNoCompositeForSingleSolid` (value: `"NO_COMPOSITE_FOR_SINGLE_SOLID"`)
+* `NoCompositeForSingleSolid` (value: `"NO_COMPOSITE_FOR_SINGLE_SOLID"`)
 
-* `GBTErrorStringEnumCompositePartAddAndRemoveBody` (value: `"COMPOSITE_PART_ADD_AND_REMOVE_BODY"`)
+* `CompositePartAddAndRemoveBody` (value: `"COMPOSITE_PART_ADD_AND_REMOVE_BODY"`)
 
-* `GBTErrorStringEnumBooleanToolInputsNotSolid` (value: `"BOOLEAN_TOOL_INPUTS_NOT_SOLID"`)
+* `BooleanToolInputsNotSolid` (value: `"BOOLEAN_TOOL_INPUTS_NOT_SOLID"`)
 
-* `GBTErrorStringEnumBooleanCannotMixSolidsAndSurfaces` (value: `"BOOLEAN_CANNOT_MIX_SOLIDS_AND_SURFACES"`)
+* `BooleanCannotMixSolidsAndSurfaces` (value: `"BOOLEAN_CANNOT_MIX_SOLIDS_AND_SURFACES"`)
 
-* `GBTErrorStringEnumBsplinesurfaceControlPointsGridTooLong` (value: `"BSPLINESURFACE_CONTROL_POINTS_GRID_TOO_LONG"`)
+* `BsplinesurfaceControlPointsGridTooLong` (value: `"BSPLINESURFACE_CONTROL_POINTS_GRID_TOO_LONG"`)
 
-* `GBTErrorStringEnumBsplineTooManyControlPoints` (value: `"BSPLINE_TOO_MANY_CONTROL_POINTS"`)
+* `BsplineTooManyControlPoints` (value: `"BSPLINE_TOO_MANY_CONTROL_POINTS"`)
 
-* `GBTErrorStringEnumBsplineDegreeTooHigh` (value: `"BSPLINE_DEGREE_TOO_HIGH"`)
+* `BsplineDegreeTooHigh` (value: `"BSPLINE_DEGREE_TOO_HIGH"`)
 
-* `GBTErrorStringEnumCompositePartSelectEntities` (value: `"COMPOSITE_PART_SELECT_ENTITIES"`)
+* `CompositePartSelectEntities` (value: `"COMPOSITE_PART_SELECT_ENTITIES"`)
 
-* `GBTErrorStringEnumDeleteCompositePartFailed` (value: `"DELETE_COMPOSITE_PART_FAILED"`)
+* `DeleteCompositePartFailed` (value: `"DELETE_COMPOSITE_PART_FAILED"`)
 
-* `GBTErrorStringEnumSurfacesNotSupportedByPatternRemoveAndIntersect` (value: `"SURFACES_NOT_SUPPORTED_BY_PATTERN_REMOVE_AND_INTERSECT"`)
+* `SurfacesNotSupportedByPatternRemoveAndIntersect` (value: `"SURFACES_NOT_SUPPORTED_BY_PATTERN_REMOVE_AND_INTERSECT"`)
 
-* `GBTErrorStringEnumSheetMetalTabMergeAndSubtractSameFlange` (value: `"SHEET_METAL_TAB_MERGE_AND_SUBTRACT_SAME_FLANGE"`)
+* `SheetMetalTabMergeAndSubtractSameFlange` (value: `"SHEET_METAL_TAB_MERGE_AND_SUBTRACT_SAME_FLANGE"`)
 
-* `GBTErrorStringEnumExplodedViewInvalidStartingPosition` (value: `"EXPLODED_VIEW_INVALID_STARTING_POSITION"`)
+* `ExplodedViewInvalidStartingPosition` (value: `"EXPLODED_VIEW_INVALID_STARTING_POSITION"`)
 
-* `GBTErrorStringEnumCannotExplodeSketch` (value: `"CANNOT_EXPLODE_SKETCH"`)
+* `CannotExplodeSketch` (value: `"CANNOT_EXPLODE_SKETCH"`)
 
-* `GBTErrorStringEnumFailedToCreateExplodedView` (value: `"FAILED_TO_CREATE_EXPLODED_VIEW"`)
+* `FailedToCreateExplodedView` (value: `"FAILED_TO_CREATE_EXPLODED_VIEW"`)
 
-* `GBTErrorStringEnumAssemblyNamedPositionsNewInstances` (value: `"ASSEMBLY_NAMED_POSITIONS_NEW_INSTANCES"`)
+* `AssemblyNamedPositionsNewInstances` (value: `"ASSEMBLY_NAMED_POSITIONS_NEW_INSTANCES"`)
 
-* `GBTErrorStringEnumSysFeatureException` (value: `"SYS_FEATURE_EXCEPTION"`)
+* `SysFeatureException` (value: `"SYS_FEATURE_EXCEPTION"`)
 
-* `GBTErrorStringEnumCurvePartialFailed` (value: `"CURVE_PARTIAL_FAILED"`)
+* `CurvePartialFailed` (value: `"CURVE_PARTIAL_FAILED"`)
 
-* `GBTErrorStringEnumCurveFailed` (value: `"CURVE_FAILED"`)
+* `CurveFailed` (value: `"CURVE_FAILED"`)
 
-* `GBTErrorStringEnumSplitKeepPlanesAndMateConnectors` (value: `"SPLIT_KEEP_PLANES_AND_MATE_CONNECTORS"`)
+* `SplitKeepPlanesAndMateConnectors` (value: `"SPLIT_KEEP_PLANES_AND_MATE_CONNECTORS"`)
 
-* `GBTErrorStringEnumExplodeLinesMustSpecifyStartingPoint` (value: `"EXPLODE_LINES_MUST_SPECIFY_STARTING_POINT"`)
+* `ExplodeLinesMustSpecifyStartingPoint` (value: `"EXPLODE_LINES_MUST_SPECIFY_STARTING_POINT"`)
 
-* `GBTErrorStringEnumExplodeLinesFailedToResolveEntity` (value: `"EXPLODE_LINES_FAILED_TO_RESOLVE_ENTITY"`)
+* `ExplodeLinesFailedToResolveEntity` (value: `"EXPLODE_LINES_FAILED_TO_RESOLVE_ENTITY"`)
 
-* `GBTErrorStringEnumSplineThroughEdgesSelectedEdgesDontFormChain` (value: `"SPLINE_THROUGH_EDGES_SELECTED_EDGES_DONT_FORM_CHAIN"`)
+* `SplineThroughEdgesSelectedEdgesDontFormChain` (value: `"SPLINE_THROUGH_EDGES_SELECTED_EDGES_DONT_FORM_CHAIN"`)
 
-* `GBTErrorStringEnumSplineThroughEdgesTangentDiscontinuityAtEdgeEnds` (value: `"SPLINE_THROUGH_EDGES_TANGENT_DISCONTINUITY_AT_EDGE_ENDS"`)
+* `SplineThroughEdgesTangentDiscontinuityAtEdgeEnds` (value: `"SPLINE_THROUGH_EDGES_TANGENT_DISCONTINUITY_AT_EDGE_ENDS"`)
 
-* `GBTErrorStringEnumSplineThroughEdgesCannotFitSpline` (value: `"SPLINE_THROUGH_EDGES_CANNOT_FIT_SPLINE"`)
+* `SplineThroughEdgesCannotFitSpline` (value: `"SPLINE_THROUGH_EDGES_CANNOT_FIT_SPLINE"`)
 
-* `GBTErrorStringEnumSplineThroughEdgesSelectEdges` (value: `"SPLINE_THROUGH_EDGES_SELECT_EDGES"`)
+* `SplineThroughEdgesSelectEdges` (value: `"SPLINE_THROUGH_EDGES_SELECT_EDGES"`)
 
-* `GBTErrorStringEnumSplineThroughEdgesResultedInMoreThanOneEdge` (value: `"SPLINE_THROUGH_EDGES_RESULTED_IN_MORE_THAN_ONE_EDGE"`)
+* `SplineThroughEdgesResultedInMoreThanOneEdge` (value: `"SPLINE_THROUGH_EDGES_RESULTED_IN_MORE_THAN_ONE_EDGE"`)
 
-* `GBTErrorStringEnumSketchCannotDeleteSplineHandles` (value: `"SKETCH_CANNOT_DELETE_SPLINE_HANDLES"`)
+* `SketchCannotDeleteSplineHandles` (value: `"SKETCH_CANNOT_DELETE_SPLINE_HANDLES"`)
 
-* `GBTErrorStringEnumSketchTrimNoSplineHandles` (value: `"SKETCH_TRIM_NO_SPLINE_HANDLES"`)
+* `SketchTrimNoSplineHandles` (value: `"SKETCH_TRIM_NO_SPLINE_HANDLES"`)
 
-* `GBTErrorStringEnumSketchSplitNoSplineHandles` (value: `"SKETCH_SPLIT_NO_SPLINE_HANDLES"`)
+* `SketchSplitNoSplineHandles` (value: `"SKETCH_SPLIT_NO_SPLINE_HANDLES"`)
 
-* `GBTErrorStringEnumSketchExtendNoSplineHandles` (value: `"SKETCH_EXTEND_NO_SPLINE_HANDLES"`)
+* `SketchExtendNoSplineHandles` (value: `"SKETCH_EXTEND_NO_SPLINE_HANDLES"`)
 
-* `GBTErrorStringEnumSketchPatternNoSplineHandles` (value: `"SKETCH_PATTERN_NO_SPLINE_HANDLES"`)
+* `SketchPatternNoSplineHandles` (value: `"SKETCH_PATTERN_NO_SPLINE_HANDLES"`)
 
-* `GBTErrorStringEnumSketchFilletNoSplineHandles` (value: `"SKETCH_FILLET_NO_SPLINE_HANDLES"`)
+* `SketchFilletNoSplineHandles` (value: `"SKETCH_FILLET_NO_SPLINE_HANDLES"`)
 
-* `GBTErrorStringEnumSketchMirrorNoSplineHandles` (value: `"SKETCH_MIRROR_NO_SPLINE_HANDLES"`)
+* `SketchMirrorNoSplineHandles` (value: `"SKETCH_MIRROR_NO_SPLINE_HANDLES"`)
 
-* `GBTErrorStringEnumSketchTransformNoSplineHandles` (value: `"SKETCH_TRANSFORM_NO_SPLINE_HANDLES"`)
+* `SketchTransformNoSplineHandles` (value: `"SKETCH_TRANSFORM_NO_SPLINE_HANDLES"`)
 
-* `GBTErrorStringEnumMateOffsetInvalidRotationType` (value: `"MATE_OFFSET_INVALID_ROTATION_TYPE"`)
+* `MateOffsetInvalidRotationType` (value: `"MATE_OFFSET_INVALID_ROTATION_TYPE"`)
 
-* `GBTErrorStringEnumSketchTangentConstraintSplineAndHandle` (value: `"SKETCH_TANGENT_CONSTRAINT_SPLINE_AND_HANDLE"`)
+* `SketchTangentConstraintSplineAndHandle` (value: `"SKETCH_TANGENT_CONSTRAINT_SPLINE_AND_HANDLE"`)
 
-* `GBTErrorStringEnumSketchCurvatureConstraintSplineAndHandle` (value: `"SKETCH_CURVATURE_CONSTRAINT_SPLINE_AND_HANDLE"`)
+* `SketchCurvatureConstraintSplineAndHandle` (value: `"SKETCH_CURVATURE_CONSTRAINT_SPLINE_AND_HANDLE"`)
 
-* `GBTErrorStringEnumExplodeLineNotOnExplodedInstance` (value: `"EXPLODE_LINE_NOT_ON_EXPLODED_INSTANCE"`)
+* `ExplodeLineNotOnExplodedInstance` (value: `"EXPLODE_LINE_NOT_ON_EXPLODED_INSTANCE"`)
 
-* `GBTErrorStringEnumSweepDisjointProfile` (value: `"SWEEP_DISJOINT_PROFILE"`)
+* `SweepDisjointProfile` (value: `"SWEEP_DISJOINT_PROFILE"`)
 
-* `GBTErrorStringEnumSweepMixedProfile` (value: `"SWEEP_MIXED_PROFILE"`)
+* `SweepMixedProfile` (value: `"SWEEP_MIXED_PROFILE"`)
 
-* `GBTErrorStringEnumMultiProfileSweepNoInnerLoops` (value: `"MULTI_PROFILE_SWEEP_NO_INNER_LOOPS"`)
+* `MultiProfileSweepNoInnerLoops` (value: `"MULTI_PROFILE_SWEEP_NO_INNER_LOOPS"`)
 
-* `GBTErrorStringEnumSweepProfileDimMismatch` (value: `"SWEEP_PROFILE_DIM_MISMATCH"`)
+* `SweepProfileDimMismatch` (value: `"SWEEP_PROFILE_DIM_MISMATCH"`)
 
-* `GBTErrorStringEnumLoftConnectionMatching` (value: `"LOFT_CONNECTION_MATCHING"`)
+* `LoftConnectionMatching` (value: `"LOFT_CONNECTION_MATCHING"`)
 
-* `GBTErrorStringEnumSimulationLoadDirectionQueryFailed` (value: `"SIMULATION_LOAD_DIRECTION_QUERY_FAILED"`)
+* `SimulationLoadDirectionQueryFailed` (value: `"SIMULATION_LOAD_DIRECTION_QUERY_FAILED"`)
 
-* `GBTErrorStringEnumSimulationLoadRegionQueryFailed` (value: `"SIMULATION_LOAD_REGION_QUERY_FAILED"`)
+* `SimulationLoadRegionQueryFailed` (value: `"SIMULATION_LOAD_REGION_QUERY_FAILED"`)
 
-* `GBTErrorStringEnumSimulationLoadRegionQueryEmpty` (value: `"SIMULATION_LOAD_REGION_QUERY_EMPTY"`)
+* `SimulationLoadRegionQueryEmpty` (value: `"SIMULATION_LOAD_REGION_QUERY_EMPTY"`)
 
-* `GBTErrorStringEnumSimulationLoadRegionNotOnLoadInstance` (value: `"SIMULATION_LOAD_REGION_NOT_ON_LOAD_INSTANCE"`)
+* `SimulationLoadRegionNotOnLoadInstance` (value: `"SIMULATION_LOAD_REGION_NOT_ON_LOAD_INSTANCE"`)
 
-* `GBTErrorStringEnumSimulationLoadInstanceNotSpecified` (value: `"SIMULATION_LOAD_INSTANCE_NOT_SPECIFIED"`)
+* `SimulationLoadInstanceNotSpecified` (value: `"SIMULATION_LOAD_INSTANCE_NOT_SPECIFIED"`)
 
-* `GBTErrorStringEnumSimulationLoadDirectionNotSpecified` (value: `"SIMULATION_LOAD_DIRECTION_NOT_SPECIFIED"`)
+* `SimulationLoadDirectionNotSpecified` (value: `"SIMULATION_LOAD_DIRECTION_NOT_SPECIFIED"`)
 
-* `GBTErrorStringEnumSimulationFunctionalConnectionQueryFailed` (value: `"SIMULATION_FUNCTIONAL_CONNECTION_QUERY_FAILED"`)
+* `SimulationFunctionalConnectionQueryFailed` (value: `"SIMULATION_FUNCTIONAL_CONNECTION_QUERY_FAILED"`)
 
-* `GBTErrorStringEnumSimulationFunctionalConnectionQueryEmpty` (value: `"SIMULATION_FUNCTIONAL_CONNECTION_QUERY_EMPTY"`)
+* `SimulationFunctionalConnectionQueryEmpty` (value: `"SIMULATION_FUNCTIONAL_CONNECTION_QUERY_EMPTY"`)
 
-* `GBTErrorStringEnumHoleMatchFailed` (value: `"HOLE_MATCH_FAILED"`)
+* `HoleMatchFailed` (value: `"HOLE_MATCH_FAILED"`)
 
-* `GBTErrorStringEnumRuledSurfaceSelectEdges` (value: `"RULED_SURFACE_SELECT_EDGES"`)
+* `RuledSurfaceSelectEdges` (value: `"RULED_SURFACE_SELECT_EDGES"`)
 
-* `GBTErrorStringEnumRuledSurfaceMiterFailed` (value: `"RULED_SURFACE_MITER_FAILED"`)
+* `RuledSurfaceMiterFailed` (value: `"RULED_SURFACE_MITER_FAILED"`)
 
-* `GBTErrorStringEnumRuledSurfaceNoTangentDir` (value: `"RULED_SURFACE_NO_TANGENT_DIR"`)
+* `RuledSurfaceNoTangentDir` (value: `"RULED_SURFACE_NO_TANGENT_DIR"`)
 
-* `GBTErrorStringEnumRuledSurfaceSelectDirection` (value: `"RULED_SURFACE_SELECT_DIRECTION"`)
+* `RuledSurfaceSelectDirection` (value: `"RULED_SURFACE_SELECT_DIRECTION"`)
 
-* `GBTErrorStringEnumRuledSurfaceZeroLength` (value: `"RULED_SURFACE_ZERO_LENGTH"`)
+* `RuledSurfaceZeroLength` (value: `"RULED_SURFACE_ZERO_LENGTH"`)
 
-* `GBTErrorStringEnumRuledSurfaceSelectUpToEntity` (value: `"RULED_SURFACE_SELECT_UP_TO_ENTITY"`)
+* `RuledSurfaceSelectUpToEntity` (value: `"RULED_SURFACE_SELECT_UP_TO_ENTITY"`)
 
-* `GBTErrorStringEnumRuledSurfaceOverlappingSketchEdges` (value: `"RULED_SURFACE_OVERLAPPING_SKETCH_EDGES"`)
+* `RuledSurfaceOverlappingSketchEdges` (value: `"RULED_SURFACE_OVERLAPPING_SKETCH_EDGES"`)
 
-* `GBTErrorStringEnumRuledSurfaceEdgesNotManifold` (value: `"RULED_SURFACE_EDGES_NOT_MANIFOLD"`)
+* `RuledSurfaceEdgesNotManifold` (value: `"RULED_SURFACE_EDGES_NOT_MANIFOLD"`)
 
-* `GBTErrorStringEnumRuledSurfaceFailed` (value: `"RULED_SURFACE_FAILED"`)
+* `RuledSurfaceFailed` (value: `"RULED_SURFACE_FAILED"`)
 
-* `GBTErrorStringEnumRuledSurfaceNoLockFace` (value: `"RULED_SURFACE_NO_LOCK_FACE"`)
+* `RuledSurfaceNoLockFace` (value: `"RULED_SURFACE_NO_LOCK_FACE"`)
 
-* `GBTErrorStringEnumRuledSurfaceVertexSelectVertex` (value: `"RULED_SURFACE_VERTEX_SELECT_VERTEX"`)
+* `RuledSurfaceVertexSelectVertex` (value: `"RULED_SURFACE_VERTEX_SELECT_VERTEX"`)
 
-* `GBTErrorStringEnumRuledSurfaceMultipleLockFaces` (value: `"RULED_SURFACE_MULTIPLE_LOCK_FACES"`)
+* `RuledSurfaceMultipleLockFaces` (value: `"RULED_SURFACE_MULTIPLE_LOCK_FACES"`)
 
-* `GBTErrorStringEnumRuledSurfaceTopLevelBoundaryEntity` (value: `"RULED_SURFACE_TOP_LEVEL_BOUNDARY_ENTITY"`)
+* `RuledSurfaceTopLevelBoundaryEntity` (value: `"RULED_SURFACE_TOP_LEVEL_BOUNDARY_ENTITY"`)
 
-* `GBTErrorStringEnumRuledSurfaceSplitVertex` (value: `"RULED_SURFACE_SPLIT_VERTEX"`)
+* `RuledSurfaceSplitVertex` (value: `"RULED_SURFACE_SPLIT_VERTEX"`)
 
-* `GBTErrorStringEnumFullRoundSelectFaces` (value: `"FULL_ROUND_SELECT_FACES"`)
+* `FullRoundSelectFaces` (value: `"FULL_ROUND_SELECT_FACES"`)
 
-* `GBTErrorStringEnumFullRoundMinimumVersion` (value: `"FULL_ROUND_MINIMUM_VERSION"`)
+* `FullRoundMinimumVersion` (value: `"FULL_ROUND_MINIMUM_VERSION"`)
 
-* `GBTErrorStringEnumFullRoundAdjacentCenterFaces` (value: `"FULL_ROUND_ADJACENT_CENTER_FACES"`)
+* `FullRoundAdjacentCenterFaces` (value: `"FULL_ROUND_ADJACENT_CENTER_FACES"`)
 
-* `GBTErrorStringEnumFullRoundCommonBody` (value: `"FULL_ROUND_COMMON_BODY"`)
+* `FullRoundCommonBody` (value: `"FULL_ROUND_COMMON_BODY"`)
 
-* `GBTErrorStringEnumFailedToCreateAssemblySimulation` (value: `"FAILED_TO_CREATE_ASSEMBLY_SIMULATION"`)
+* `FailedToCreateAssemblySimulation` (value: `"FAILED_TO_CREATE_ASSEMBLY_SIMULATION"`)
 
-* `GBTErrorStringEnumInContextUpdateDeletedWorkspace` (value: `"IN_CONTEXT_UPDATE_DELETED_WORKSPACE"`)
+* `InContextUpdateDeletedWorkspace` (value: `"IN_CONTEXT_UPDATE_DELETED_WORKSPACE"`)
 
-* `GBTErrorStringEnumHoleToolConstructionFailed` (value: `"HOLE_TOOL_CONSTRUCTION_FAILED"`)
+* `HoleToolConstructionFailed` (value: `"HOLE_TOOL_CONSTRUCTION_FAILED"`)
 
-* `GBTErrorStringEnumHolePartialFailure` (value: `"HOLE_PARTIAL_FAILURE"`)
+* `HolePartialFailure` (value: `"HOLE_PARTIAL_FAILURE"`)
 
-* `GBTErrorStringEnumHoleExceedsMaxLocations500` (value: `"HOLE_EXCEEDS_MAX_LOCATIONS_500"`)
+* `HoleExceedsMaxLocations500` (value: `"HOLE_EXCEEDS_MAX_LOCATIONS_500"`)
 
-* `GBTErrorStringEnumConstructPathEdgesOverlap` (value: `"CONSTRUCT_PATH_EDGES_OVERLAP"`)
+* `ConstructPathEdgesOverlap` (value: `"CONSTRUCT_PATH_EDGES_OVERLAP"`)
 
-* `GBTErrorStringEnumConstructPathNotManifold` (value: `"CONSTRUCT_PATH_NOT_MANIFOLD"`)
+* `ConstructPathNotManifold` (value: `"CONSTRUCT_PATH_NOT_MANIFOLD"`)
 
-* `GBTErrorStringEnumConstructPathFailed` (value: `"CONSTRUCT_PATH_FAILED"`)
+* `ConstructPathFailed` (value: `"CONSTRUCT_PATH_FAILED"`)
 
-* `GBTErrorStringEnumConstructPathFacesOppositeSides` (value: `"CONSTRUCT_PATH_FACES_OPPOSITE_SIDES"`)
+* `ConstructPathFacesOppositeSides` (value: `"CONSTRUCT_PATH_FACES_OPPOSITE_SIDES"`)
 
-* `GBTErrorStringEnumRuledSurfaceReferenceFacesBothSides` (value: `"RULED_SURFACE_REFERENCE_FACES_BOTH_SIDES"`)
+* `RuledSurfaceReferenceFacesBothSides` (value: `"RULED_SURFACE_REFERENCE_FACES_BOTH_SIDES"`)
 
-* `GBTErrorStringEnumHoleTargetsDoNotDiffer` (value: `"HOLE_TARGETS_DO_NOT_DIFFER"`)
+* `HoleTargetsDoNotDiffer` (value: `"HOLE_TARGETS_DO_NOT_DIFFER"`)
 
-* `GBTErrorStringEnumRuledSurfaceOverridesClash` (value: `"RULED_SURFACE_OVERRIDES_CLASH"`)
+* `RuledSurfaceOverridesClash` (value: `"RULED_SURFACE_OVERRIDES_CLASH"`)
 
-* `GBTErrorStringEnumFgsStreamError` (value: `"FGS_STREAM_ERROR"`)
+* `FgsStreamError` (value: `"FGS_STREAM_ERROR"`)
 
-* `GBTErrorStringEnumNoMaterialForMassProperty` (value: `"NO_MATERIAL_FOR_MASS_PROPERTY"`)
+* `NoMaterialForMassProperty` (value: `"NO_MATERIAL_FOR_MASS_PROPERTY"`)
 
-* `GBTErrorStringEnumSpecifiedSimulationDoesNotExist` (value: `"SPECIFIED_SIMULATION_DOES_NOT_EXIST"`)
+* `SpecifiedSimulationDoesNotExist` (value: `"SPECIFIED_SIMULATION_DOES_NOT_EXIST"`)
 
-* `GBTErrorStringEnumMultipleModalSimulationsProhibited` (value: `"MULTIPLE_MODAL_SIMULATIONS_PROHIBITED"`)
+* `MultipleModalSimulationsProhibited` (value: `"MULTIPLE_MODAL_SIMULATIONS_PROHIBITED"`)
 
-* `GBTErrorStringEnumLoftPointProfileNormalToProfileGuide` (value: `"LOFT_POINT_PROFILE_NORMAL_TO_PROFILE_GUIDE"`)
+* `LoftPointProfileNormalToProfileGuide` (value: `"LOFT_POINT_PROFILE_NORMAL_TO_PROFILE_GUIDE"`)
 
-* `GBTErrorStringEnumRuledSurfaceGlobalNormalOverride` (value: `"RULED_SURFACE_GLOBAL_NORMAL_OVERRIDE"`)
+* `RuledSurfaceGlobalNormalOverride` (value: `"RULED_SURFACE_GLOBAL_NORMAL_OVERRIDE"`)
 
-* `GBTErrorStringEnumRuledSurfaceEdgeParallelReference` (value: `"RULED_SURFACE_EDGE_PARALLEL_REFERENCE"`)
+* `RuledSurfaceEdgeParallelReference` (value: `"RULED_SURFACE_EDGE_PARALLEL_REFERENCE"`)
 
-* `GBTErrorStringEnumFixedPartRequiredForSimulation` (value: `"FIXED_PART_REQUIRED_FOR_SIMULATION"`)
+* `FixedPartRequiredForSimulation` (value: `"FIXED_PART_REQUIRED_FOR_SIMULATION"`)
 
-* `GBTErrorStringEnumMaterialAssignmentRequiredForSimulation` (value: `"MATERIAL_ASSIGNMENT_REQUIRED_FOR_SIMULATION"`)
+* `MaterialAssignmentRequiredForSimulation` (value: `"MATERIAL_ASSIGNMENT_REQUIRED_FOR_SIMULATION"`)
 
-* `GBTErrorStringEnumLoadRequiredForLinearStaticSimulation` (value: `"LOAD_REQUIRED_FOR_LINEAR_STATIC_SIMULATION"`)
+* `LoadRequiredForLinearStaticSimulation` (value: `"LOAD_REQUIRED_FOR_LINEAR_STATIC_SIMULATION"`)
 
-* `GBTErrorStringEnumMaterialLacksRequiredPropertyForSimulation` (value: `"MATERIAL_LACKS_REQUIRED_PROPERTY_FOR_SIMULATION"`)
+* `MaterialLacksRequiredPropertyForSimulation` (value: `"MATERIAL_LACKS_REQUIRED_PROPERTY_FOR_SIMULATION"`)
 
-* `GBTErrorStringEnumFilletEdgesNotManifold` (value: `"FILLET_EDGES_NOT_MANIFOLD"`)
+* `FilletEdgesNotManifold` (value: `"FILLET_EDGES_NOT_MANIFOLD"`)
 
-* `GBTErrorStringEnumSheetMetalFilletNoWidth` (value: `"SHEET_METAL_FILLET_NO_WIDTH"`)
+* `SheetMetalFilletNoWidth` (value: `"SHEET_METAL_FILLET_NO_WIDTH"`)
 
-* `GBTErrorStringEnumFrameTagProfileSelectSketch` (value: `"FRAME_TAG_PROFILE_SELECT_SKETCH"`)
+* `FrameTagProfileSelectSketch` (value: `"FRAME_TAG_PROFILE_SELECT_SKETCH"`)
 
-* `GBTErrorStringEnumFrameTagProfileSpecifyColumns` (value: `"FRAME_TAG_PROFILE_SPECIFY_COLUMNS"`)
+* `FrameTagProfileSpecifyColumns` (value: `"FRAME_TAG_PROFILE_SPECIFY_COLUMNS"`)
 
-* `GBTErrorStringEnumFrameTagProfileHeaderEmpty` (value: `"FRAME_TAG_PROFILE_HEADER_EMPTY"`)
+* `FrameTagProfileHeaderEmpty` (value: `"FRAME_TAG_PROFILE_HEADER_EMPTY"`)
 
-* `GBTErrorStringEnumFrameTagProfileValueEmpty` (value: `"FRAME_TAG_PROFILE_VALUE_EMPTY"`)
+* `FrameTagProfileValueEmpty` (value: `"FRAME_TAG_PROFILE_VALUE_EMPTY"`)
 
-* `GBTErrorStringEnumFrameMissingCapFaces` (value: `"FRAME_MISSING_CAP_FACES"`)
+* `FrameMissingCapFaces` (value: `"FRAME_MISSING_CAP_FACES"`)
 
-* `GBTErrorStringEnumFrameMissingSweptEdges` (value: `"FRAME_MISSING_SWEPT_EDGES"`)
+* `FrameMissingSweptEdges` (value: `"FRAME_MISSING_SWEPT_EDGES"`)
 
-* `GBTErrorStringEnumFrameMissingSweptFaces` (value: `"FRAME_MISSING_SWEPT_FACES"`)
+* `FrameMissingSweptFaces` (value: `"FRAME_MISSING_SWEPT_FACES"`)
 
-* `GBTErrorStringEnumFrameCutlistNoEndFaceEdgeGeometryPair` (value: `"FRAME_CUTLIST_NO_END_FACE_EDGE_GEOMETRY_PAIR"`)
+* `FrameCutlistNoEndFaceEdgeGeometryPair` (value: `"FRAME_CUTLIST_NO_END_FACE_EDGE_GEOMETRY_PAIR"`)
 
-* `GBTErrorStringEnumPublicationItemInsertFailed` (value: `"PUBLICATION_ITEM_INSERT_FAILED"`)
+* `PublicationItemInsertFailed` (value: `"PUBLICATION_ITEM_INSERT_FAILED"`)
 
-* `GBTErrorStringEnumPublicationItemInsertFailedNoLinkPermission` (value: `"PUBLICATION_ITEM_INSERT_FAILED_NO_LINK_PERMISSION"`)
+* `PublicationItemInsertFailedNoLinkPermission` (value: `"PUBLICATION_ITEM_INSERT_FAILED_NO_LINK_PERMISSION"`)
 
-* `GBTErrorStringEnumPublicationItemInsertFailedNoDuplicatesAllowed` (value: `"PUBLICATION_ITEM_INSERT_FAILED_NO_DUPLICATES_ALLOWED"`)
+* `PublicationItemInsertFailedNoDuplicatesAllowed` (value: `"PUBLICATION_ITEM_INSERT_FAILED_NO_DUPLICATES_ALLOWED"`)
 
-* `GBTErrorStringEnumPublicationItemUpdateFailedNoDuplicatesAllowed` (value: `"PUBLICATION_ITEM_UPDATE_FAILED_NO_DUPLICATES_ALLOWED"`)
+* `PublicationItemUpdateFailedNoDuplicatesAllowed` (value: `"PUBLICATION_ITEM_UPDATE_FAILED_NO_DUPLICATES_ALLOWED"`)
 
-* `GBTErrorStringEnumPublicationItemUpdateFailed` (value: `"PUBLICATION_ITEM_UPDATE_FAILED"`)
+* `PublicationItemUpdateFailed` (value: `"PUBLICATION_ITEM_UPDATE_FAILED"`)
 
-* `GBTErrorStringEnumVrfilletRadiusRequiredAtPoint` (value: `"VRFILLET_RADIUS_REQUIRED_AT_POINT"`)
+* `VrfilletRadiusRequiredAtPoint` (value: `"VRFILLET_RADIUS_REQUIRED_AT_POINT"`)
 
-* `GBTErrorStringEnumVrfilletParameterRequiredAtPoint` (value: `"VRFILLET_PARAMETER_REQUIRED_AT_POINT"`)
+* `VrfilletParameterRequiredAtPoint` (value: `"VRFILLET_PARAMETER_REQUIRED_AT_POINT"`)
 
-* `GBTErrorStringEnumVrfilletRhoRequiredAtPoint` (value: `"VRFILLET_RHO_REQUIRED_AT_POINT"`)
+* `VrfilletRhoRequiredAtPoint` (value: `"VRFILLET_RHO_REQUIRED_AT_POINT"`)
 
-* `GBTErrorStringEnumVrfilletMagRequiredAtPoint` (value: `"VRFILLET_MAG_REQUIRED_AT_POINT"`)
+* `VrfilletMagRequiredAtPoint` (value: `"VRFILLET_MAG_REQUIRED_AT_POINT"`)
 
-* `GBTErrorStringEnumVrfilletSelectEdges` (value: `"VRFILLET_SELECT_EDGES"`)
+* `VrfilletSelectEdges` (value: `"VRFILLET_SELECT_EDGES"`)
 
-* `GBTErrorStringEnumVrfilletEdgeNotOnChain` (value: `"VRFILLET_EDGE_NOT_ON_CHAIN"`)
+* `VrfilletEdgeNotOnChain` (value: `"VRFILLET_EDGE_NOT_ON_CHAIN"`)
 
-* `GBTErrorStringEnumBridgingCurvePositionsIdentical` (value: `"BRIDGING_CURVE_POSITIONS_IDENTICAL"`)
+* `BridgingCurvePositionsIdentical` (value: `"BRIDGING_CURVE_POSITIONS_IDENTICAL"`)
 
-* `GBTErrorStringEnumSplitFaceMutualImprint` (value: `"SPLIT_FACE_MUTUAL_IMPRINT"`)
+* `SplitFaceMutualImprint` (value: `"SPLIT_FACE_MUTUAL_IMPRINT"`)
 
-* `GBTErrorStringEnumBridgingCurveZeroSpeedScale` (value: `"BRIDGING_CURVE_ZERO_SPEED_SCALE"`)
+* `BridgingCurveZeroSpeedScale` (value: `"BRIDGING_CURVE_ZERO_SPEED_SCALE"`)
 
-* `GBTErrorStringEnumVariableDescriptionTooLong` (value: `"VARIABLE_DESCRIPTION_TOO_LONG"`)
+* `VariableDescriptionTooLong` (value: `"VARIABLE_DESCRIPTION_TOO_LONG"`)
 
-* `GBTErrorStringEnumFrameBadPath` (value: `"FRAME_BAD_PATH"`)
+* `FrameBadPath` (value: `"FRAME_BAD_PATH"`)
 
-* `GBTErrorStringEnumFrameSweepFailed` (value: `"FRAME_SWEEP_FAILED"`)
+* `FrameSweepFailed` (value: `"FRAME_SWEEP_FAILED"`)
 
-* `GBTErrorStringEnumFrameTrimFailed` (value: `"FRAME_TRIM_FAILED"`)
+* `FrameTrimFailed` (value: `"FRAME_TRIM_FAILED"`)
 
-* `GBTErrorStringEnumFrameMalformedBeam` (value: `"FRAME_MALFORMED_BEAM"`)
+* `FrameMalformedBeam` (value: `"FRAME_MALFORMED_BEAM"`)
 
-* `GBTErrorStringEnumFrameBadCornerType` (value: `"FRAME_BAD_CORNER_TYPE"`)
+* `FrameBadCornerType` (value: `"FRAME_BAD_CORNER_TYPE"`)
 
-* `GBTErrorStringEnumFrameSelectProfile` (value: `"FRAME_SELECT_PROFILE"`)
+* `FrameSelectProfile` (value: `"FRAME_SELECT_PROFILE"`)
 
-* `GBTErrorStringEnumFrameProfileRegion` (value: `"FRAME_PROFILE_REGION"`)
+* `FrameProfileRegion` (value: `"FRAME_PROFILE_REGION"`)
 
-* `GBTErrorStringEnumFrameNoInternalTrim` (value: `"FRAME_NO_INTERNAL_TRIM"`)
+* `FrameNoInternalTrim` (value: `"FRAME_NO_INTERNAL_TRIM"`)
 
-* `GBTErrorStringEnumFrameMultipleTrimPlanes` (value: `"FRAME_MULTIPLE_TRIM_PLANES"`)
+* `FrameMultipleTrimPlanes` (value: `"FRAME_MULTIPLE_TRIM_PLANES"`)
 
-* `GBTErrorStringEnumFrameMultipleEqualBeamsAfterSplit` (value: `"FRAME_MULTIPLE_EQUAL_BEAMS_AFTER_SPLIT"`)
+* `FrameMultipleEqualBeamsAfterSplit` (value: `"FRAME_MULTIPLE_EQUAL_BEAMS_AFTER_SPLIT"`)
 
-* `GBTErrorStringEnumFrameTrimGroups` (value: `"FRAME_TRIM_GROUPS"`)
+* `FrameTrimGroups` (value: `"FRAME_TRIM_GROUPS"`)
 
-* `GBTErrorStringEnumFrameDisjointGroups` (value: `"FRAME_DISJOINT_GROUPS"`)
+* `FrameDisjointGroups` (value: `"FRAME_DISJOINT_GROUPS"`)
 
-* `GBTErrorStringEnumFrameCandidateFaces` (value: `"FRAME_CANDIDATE_FACES"`)
+* `FrameCandidateFaces` (value: `"FRAME_CANDIDATE_FACES"`)
 
-* `GBTErrorStringEnumFrameLengthwiseTrim` (value: `"FRAME_LENGTHWISE_TRIM"`)
+* `FrameLengthwiseTrim` (value: `"FRAME_LENGTHWISE_TRIM"`)
 
-* `GBTErrorStringEnumFrameTrimSelectTargets` (value: `"FRAME_TRIM_SELECT_TARGETS"`)
+* `FrameTrimSelectTargets` (value: `"FRAME_TRIM_SELECT_TARGETS"`)
 
-* `GBTErrorStringEnumFrameTrimSelectTool` (value: `"FRAME_TRIM_SELECT_TOOL"`)
+* `FrameTrimSelectTool` (value: `"FRAME_TRIM_SELECT_TOOL"`)
 
-* `GBTErrorStringEnumFrameSelectPath` (value: `"FRAME_SELECT_PATH"`)
+* `FrameSelectPath` (value: `"FRAME_SELECT_PATH"`)
 
-* `GBTErrorStringEnumFrameTagProfileHeaderReserved` (value: `"FRAME_TAG_PROFILE_HEADER_RESERVED"`)
+* `FrameTagProfileHeaderReserved` (value: `"FRAME_TAG_PROFILE_HEADER_RESERVED"`)
 
-* `GBTErrorStringEnumFrameCutlistColumnEmpty` (value: `"FRAME_CUTLIST_COLUMN_EMPTY"`)
+* `FrameCutlistColumnEmpty` (value: `"FRAME_CUTLIST_COLUMN_EMPTY"`)
 
-* `GBTErrorStringEnumFrameTagProfileNoFeaturePattern` (value: `"FRAME_TAG_PROFILE_NO_FEATURE_PATTERN"`)
+* `FrameTagProfileNoFeaturePattern` (value: `"FRAME_TAG_PROFILE_NO_FEATURE_PATTERN"`)
 
-* `GBTErrorStringEnumFrameCutlistNoFeaturePattern` (value: `"FRAME_CUTLIST_NO_FEATURE_PATTERN"`)
+* `FrameCutlistNoFeaturePattern` (value: `"FRAME_CUTLIST_NO_FEATURE_PATTERN"`)
 
-* `GBTErrorStringEnumSplitEdgeSelectEdges` (value: `"SPLIT_EDGE_SELECT_EDGES"`)
+* `SplitEdgeSelectEdges` (value: `"SPLIT_EDGE_SELECT_EDGES"`)
 
-* `GBTErrorStringEnumSplitEdgeSizesMismatch` (value: `"SPLIT_EDGE_SIZES_MISMATCH"`)
+* `SplitEdgeSizesMismatch` (value: `"SPLIT_EDGE_SIZES_MISMATCH"`)
 
-* `GBTErrorStringEnumSplitEdgeParameterBound` (value: `"SPLIT_EDGE_PARAMETER_BOUND"`)
+* `SplitEdgeParameterBound` (value: `"SPLIT_EDGE_PARAMETER_BOUND"`)
 
-* `GBTErrorStringEnumSplitEdgeFailed` (value: `"SPLIT_EDGE_FAILED"`)
+* `SplitEdgeFailed` (value: `"SPLIT_EDGE_FAILED"`)
 
-* `GBTErrorStringEnumSplitClosedEdgeOnePoint` (value: `"SPLIT_CLOSED_EDGE_ONE_POINT"`)
+* `SplitClosedEdgeOnePoint` (value: `"SPLIT_CLOSED_EDGE_ONE_POINT"`)
 
-* `GBTErrorStringEnumSplitEdgeProvideParameters` (value: `"SPLIT_EDGE_PROVIDE_PARAMETERS"`)
+* `SplitEdgeProvideParameters` (value: `"SPLIT_EDGE_PROVIDE_PARAMETERS"`)
 
-* `GBTErrorStringEnumNoMaterialForCompositePartComputedMass` (value: `"NO_MATERIAL_FOR_COMPOSITE_PART_COMPUTED_MASS"`)
+* `NoMaterialForCompositePartComputedMass` (value: `"NO_MATERIAL_FOR_COMPOSITE_PART_COMPUTED_MASS"`)
 
-* `GBTErrorStringEnumFrameMultipleEqualSegmentsAfterSplit` (value: `"FRAME_MULTIPLE_EQUAL_SEGMENTS_AFTER_SPLIT"`)
+* `FrameMultipleEqualSegmentsAfterSplit` (value: `"FRAME_MULTIPLE_EQUAL_SEGMENTS_AFTER_SPLIT"`)
 
-* `GBTErrorStringEnumFrameMalformedSegment` (value: `"FRAME_MALFORMED_SEGMENT"`)
+* `FrameMalformedSegment` (value: `"FRAME_MALFORMED_SEGMENT"`)
 
-* `GBTErrorStringEnumSimulationUnsupportedInstance` (value: `"SIMULATION_UNSUPPORTED_INSTANCE"`)
+* `SimulationUnsupportedInstance` (value: `"SIMULATION_UNSUPPORTED_INSTANCE"`)
 
-* `GBTErrorStringEnumMixedModelLayout` (value: `"MIXED_MODEL_LAYOUT"`)
+* `MixedModelLayout` (value: `"MIXED_MODEL_LAYOUT"`)
 
-* `GBTErrorStringEnumAdjacentMeshFacesForCapOrHeal` (value: `"ADJACENT_MESH_FACES_FOR_CAP_OR_HEAL"`)
+* `AdjacentMeshFacesForCapOrHeal` (value: `"ADJACENT_MESH_FACES_FOR_CAP_OR_HEAL"`)
 
-* `GBTErrorStringEnumNotAllMeshFacesPattern` (value: `"NOT_ALL_MESH_FACES_PATTERN"`)
+* `NotAllMeshFacesPattern` (value: `"NOT_ALL_MESH_FACES_PATTERN"`)
 
-* `GBTErrorStringEnumVolumeAccuracyMustBeHighForRegen` (value: `"VOLUME_ACCURACY_MUST_BE_HIGH_FOR_REGEN"`)
+* `VolumeAccuracyMustBeHighForRegen` (value: `"VOLUME_ACCURACY_MUST_BE_HIGH_FOR_REGEN"`)
 
-* `GBTErrorStringEnumAssemblyReplicateInvalidSeedMate` (value: `"ASSEMBLY_REPLICATE_INVALID_SEED_MATE"`)
+* `AssemblyReplicateInvalidSeedMate` (value: `"ASSEMBLY_REPLICATE_INVALID_SEED_MATE"`)
 
-* `GBTErrorStringEnumAssemblyReplicateMissingSeedMate` (value: `"ASSEMBLY_REPLICATE_MISSING_SEED_MATE"`)
+* `AssemblyReplicateMissingSeedMate` (value: `"ASSEMBLY_REPLICATE_MISSING_SEED_MATE"`)
 
-* `GBTErrorStringEnumDxfUnknownEntity` (value: `"DXF_UNKNOWN_ENTITY"`)
+* `DxfUnknownEntity` (value: `"DXF_UNKNOWN_ENTITY"`)
 
-* `GBTErrorStringEnumDxfNonuniformScaling` (value: `"DXF_NONUNIFORM_SCALING"`)
+* `DxfNonuniformScaling` (value: `"DXF_NONUNIFORM_SCALING"`)
 
-* `GBTErrorStringEnumDxfCouldNotReadFile` (value: `"DXF_COULD_NOT_READ_FILE"`)
+* `DxfCouldNotReadFile` (value: `"DXF_COULD_NOT_READ_FILE"`)
 
-* `GBTErrorStringEnumDxfCouldNotConvertHatch` (value: `"DXF_COULD_NOT_CONVERT_HATCH"`)
+* `DxfCouldNotConvertHatch` (value: `"DXF_COULD_NOT_CONVERT_HATCH"`)
 
-* `GBTErrorStringEnumDxfCouldNotConvertBody` (value: `"DXF_COULD_NOT_CONVERT_BODY"`)
+* `DxfCouldNotConvertBody` (value: `"DXF_COULD_NOT_CONVERT_BODY"`)
 
-* `GBTErrorStringEnumDxfCouldNotConvertRegion` (value: `"DXF_COULD_NOT_CONVERT_REGION"`)
+* `DxfCouldNotConvertRegion` (value: `"DXF_COULD_NOT_CONVERT_REGION"`)
 
-* `GBTErrorStringEnumDxfBadSplineData` (value: `"DXF_BAD_SPLINE_DATA"`)
+* `DxfBadSplineData` (value: `"DXF_BAD_SPLINE_DATA"`)
 
-* `GBTErrorStringEnumSimulationLoadInstanceSuppressed` (value: `"SIMULATION_LOAD_INSTANCE_SUPPRESSED"`)
+* `SimulationLoadInstanceSuppressed` (value: `"SIMULATION_LOAD_INSTANCE_SUPPRESSED"`)
 
-* `GBTErrorStringEnumDiametersMustBeEqual` (value: `"DIAMETERS_MUST_BE_EQUAL"`)
+* `DiametersMustBeEqual` (value: `"DIAMETERS_MUST_BE_EQUAL"`)
 
-* `GBTErrorStringEnumNotConvex` (value: `"NOT_CONVEX"`)
+* `NotConvex` (value: `"NOT_CONVEX"`)
 
-* `GBTErrorStringEnumSelectCylinderEdges` (value: `"SELECT_CYLINDER_EDGES"`)
+* `SelectCylinderEdges` (value: `"SELECT_CYLINDER_EDGES"`)
 
-* `GBTErrorStringEnumNotCylinderOrCone` (value: `"NOT_CYLINDER_OR_CONE"`)
+* `NotCylinderOrCone` (value: `"NOT_CYLINDER_OR_CONE"`)
 
-* `GBTErrorStringEnumUnableToFindThreadBoundary` (value: `"UNABLE_TO_FIND_THREAD_BOUNDARY"`)
+* `UnableToFindThreadBoundary` (value: `"UNABLE_TO_FIND_THREAD_BOUNDARY"`)
 
-* `GBTErrorStringEnumUndercutOffFace` (value: `"UNDERCUT_OFF_FACE"`)
+* `UndercutOffFace` (value: `"UNDERCUT_OFF_FACE"`)
 
-* `GBTErrorStringEnumUndercutTooDeep` (value: `"UNDERCUT_TOO_DEEP"`)
+* `UndercutTooDeep` (value: `"UNDERCUT_TOO_DEEP"`)
 
-* `GBTErrorStringEnumHoleCboreCsinkValuesNonStd` (value: `"HOLE_CBORE_CSINK_VALUES_NON_STD"`)
+* `HoleCboreCsinkValuesNonStd` (value: `"HOLE_CBORE_CSINK_VALUES_NON_STD"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeParameterBound` (value: `"SHEET_METAL_FLANGE_PARAMETER_BOUND"`)
+* `SheetMetalFlangeParameterBound` (value: `"SHEET_METAL_FLANGE_PARAMETER_BOUND"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeZeroWidth` (value: `"SHEET_METAL_FLANGE_ZERO_WIDTH"`)
+* `SheetMetalFlangeZeroWidth` (value: `"SHEET_METAL_FLANGE_ZERO_WIDTH"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeNoBoundingEntity` (value: `"SHEET_METAL_FLANGE_NO_BOUNDING_ENTITY"`)
+* `SheetMetalFlangeNoBoundingEntity` (value: `"SHEET_METAL_FLANGE_NO_BOUNDING_ENTITY"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeBoundingEntityParallel` (value: `"SHEET_METAL_FLANGE_BOUNDING_ENTITY_PARALLEL"`)
+* `SheetMetalFlangeBoundingEntityParallel` (value: `"SHEET_METAL_FLANGE_BOUNDING_ENTITY_PARALLEL"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeBoundingEntityNotSupported` (value: `"SHEET_METAL_FLANGE_BOUNDING_ENTITY_NOT_SUPPORTED"`)
+* `SheetMetalFlangeBoundingEntityNotSupported` (value: `"SHEET_METAL_FLANGE_BOUNDING_ENTITY_NOT_SUPPORTED"`)
 
-* `GBTErrorStringEnumFrameBadCompositeSegment` (value: `"FRAME_BAD_COMPOSITE_SEGMENT"`)
+* `FrameBadCompositeSegment` (value: `"FRAME_BAD_COMPOSITE_SEGMENT"`)
 
-* `GBTErrorStringEnumSketchSplinePointHasHandle` (value: `"SKETCH_SPLINE_POINT_HAS_HANDLE"`)
+* `SketchSplinePointHasHandle` (value: `"SKETCH_SPLINE_POINT_HAS_HANDLE"`)
 
-* `GBTErrorStringEnumSketchTrimNoSplineControlPolygon` (value: `"SKETCH_TRIM_NO_SPLINE_CONTROL_POLYGON"`)
+* `SketchTrimNoSplineControlPolygon` (value: `"SKETCH_TRIM_NO_SPLINE_CONTROL_POLYGON"`)
 
-* `GBTErrorStringEnumSelectedNonMatchingSize` (value: `"SELECTED_NON_MATCHING_SIZE"`)
+* `SelectedNonMatchingSize` (value: `"SELECTED_NON_MATCHING_SIZE"`)
 
-* `GBTErrorStringEnumNearestMatchingThreadSize` (value: `"NEAREST_MATCHING_THREAD_SIZE"`)
+* `NearestMatchingThreadSize` (value: `"NEAREST_MATCHING_THREAD_SIZE"`)
 
-* `GBTErrorStringEnumSketchPatternNoSplineControlPolygon` (value: `"SKETCH_PATTERN_NO_SPLINE_CONTROL_POLYGON"`)
+* `SketchPatternNoSplineControlPolygon` (value: `"SKETCH_PATTERN_NO_SPLINE_CONTROL_POLYGON"`)
 
-* `GBTErrorStringEnumSketchTransformNoSplineControlPolygon` (value: `"SKETCH_TRANSFORM_NO_SPLINE_CONTROL_POLYGON"`)
+* `SketchTransformNoSplineControlPolygon` (value: `"SKETCH_TRANSFORM_NO_SPLINE_CONTROL_POLYGON"`)
 
-* `GBTErrorStringEnumSketchFilletNoSplineControlPolygon` (value: `"SKETCH_FILLET_NO_SPLINE_CONTROL_POLYGON"`)
+* `SketchFilletNoSplineControlPolygon` (value: `"SKETCH_FILLET_NO_SPLINE_CONTROL_POLYGON"`)
 
-* `GBTErrorStringEnumSketchMirrorNoSplineControlPolygon` (value: `"SKETCH_MIRROR_NO_SPLINE_CONTROL_POLYGON"`)
+* `SketchMirrorNoSplineControlPolygon` (value: `"SKETCH_MIRROR_NO_SPLINE_CONTROL_POLYGON"`)
 
-* `GBTErrorStringEnumSketchSplitNoSplineControlPolygon` (value: `"SKETCH_SPLIT_NO_SPLINE_CONTROL_POLYGON"`)
+* `SketchSplitNoSplineControlPolygon` (value: `"SKETCH_SPLIT_NO_SPLINE_CONTROL_POLYGON"`)
 
-* `GBTErrorStringEnumVariableSelectFirstEntity` (value: `"VARIABLE_SELECT_FIRST_ENTITY"`)
+* `VariableSelectFirstEntity` (value: `"VARIABLE_SELECT_FIRST_ENTITY"`)
 
-* `GBTErrorStringEnumVariableSelectSecondEntity` (value: `"VARIABLE_SELECT_SECOND_ENTITY"`)
+* `VariableSelectSecondEntity` (value: `"VARIABLE_SELECT_SECOND_ENTITY"`)
 
-* `GBTErrorStringEnumVariableSelectCustomDirection` (value: `"VARIABLE_SELECT_CUSTOM_DIRECTION"`)
+* `VariableSelectCustomDirection` (value: `"VARIABLE_SELECT_CUSTOM_DIRECTION"`)
 
-* `GBTErrorStringEnumVariableSelectEntitiesToMeasure` (value: `"VARIABLE_SELECT_ENTITIES_TO_MEASURE"`)
+* `VariableSelectEntitiesToMeasure` (value: `"VARIABLE_SELECT_ENTITIES_TO_MEASURE"`)
 
-* `GBTErrorStringEnumVariableSelectEntityToMeasure` (value: `"VARIABLE_SELECT_ENTITY_TO_MEASURE"`)
+* `VariableSelectEntityToMeasure` (value: `"VARIABLE_SELECT_ENTITY_TO_MEASURE"`)
 
-* `GBTErrorStringEnumVariableNoGeometryWithDiameter` (value: `"VARIABLE_NO_GEOMETRY_WITH_DIAMETER"`)
+* `VariableNoGeometryWithDiameter` (value: `"VARIABLE_NO_GEOMETRY_WITH_DIAMETER"`)
 
-* `GBTErrorStringEnumVariableOnlyTwoEntitiesAllowed` (value: `"VARIABLE_ONLY_TWO_ENTITIES_ALLOWED"`)
+* `VariableOnlyTwoEntitiesAllowed` (value: `"VARIABLE_ONLY_TWO_ENTITIES_ALLOWED"`)
 
-* `GBTErrorStringEnumVariableFlattenedEntitiesMustBeSameBody` (value: `"VARIABLE_FLATTENED_ENTITIES_MUST_BE_SAME_BODY"`)
+* `VariableFlattenedEntitiesMustBeSameBody` (value: `"VARIABLE_FLATTENED_ENTITIES_MUST_BE_SAME_BODY"`)
 
-* `GBTErrorStringEnumCurveProjectionFailed` (value: `"CURVE_PROJECTION_FAILED"`)
+* `CurveProjectionFailed` (value: `"CURVE_PROJECTION_FAILED"`)
 
-* `GBTErrorStringEnumFaceIntersectionFailed` (value: `"FACE_INTERSECTION_FAILED"`)
+* `FaceIntersectionFailed` (value: `"FACE_INTERSECTION_FAILED"`)
 
-* `GBTErrorStringEnumFaceIntersectionNoResult` (value: `"FACE_INTERSECTION_NO_RESULT"`)
+* `FaceIntersectionNoResult` (value: `"FACE_INTERSECTION_NO_RESULT"`)
 
-* `GBTErrorStringEnumFaceIntersectionUniqueSelection` (value: `"FACE_INTERSECTION_UNIQUE_SELECTION"`)
+* `FaceIntersectionUniqueSelection` (value: `"FACE_INTERSECTION_UNIQUE_SELECTION"`)
 
-* `GBTErrorStringEnumFaceIntersectionOverlappingSelection` (value: `"FACE_INTERSECTION_OVERLAPPING_SELECTION"`)
+* `FaceIntersectionOverlappingSelection` (value: `"FACE_INTERSECTION_OVERLAPPING_SELECTION"`)
 
-* `GBTErrorStringEnumChamferSizeExceedGussetSize` (value: `"CHAMFER_SIZE_EXCEED_GUSSET_SIZE"`)
+* `ChamferSizeExceedGussetSize` (value: `"CHAMFER_SIZE_EXCEED_GUSSET_SIZE"`)
 
-* `GBTErrorStringEnumEmptyGussetSelection` (value: `"EMPTY_GUSSET_SELECTION"`)
+* `EmptyGussetSelection` (value: `"EMPTY_GUSSET_SELECTION"`)
 
-* `GBTErrorStringEnumCannotFitAGusset` (value: `"CANNOT_FIT_A_GUSSET"`)
+* `CannotFitAGusset` (value: `"CANNOT_FIT_A_GUSSET"`)
 
-* `GBTErrorStringEnumNonFrameEdgeSelected` (value: `"NON_FRAME_EDGE_SELECTED"`)
+* `NonFrameEdgeSelected` (value: `"NON_FRAME_EDGE_SELECTED"`)
 
-* `GBTErrorStringEnumSweptEdgeSelected` (value: `"SWEPT_EDGE_SELECTED"`)
+* `SweptEdgeSelected` (value: `"SWEPT_EDGE_SELECTED"`)
 
-* `GBTErrorStringEnumNoCapFaceSelectedError` (value: `"NO_CAP_FACE_SELECTED_ERROR"`)
+* `NoCapFaceSelectedError` (value: `"NO_CAP_FACE_SELECTED_ERROR"`)
 
-* `GBTErrorStringEnumInvalidCapFaceSelectedError` (value: `"INVALID_CAP_FACE_SELECTED_ERROR"`)
+* `InvalidCapFaceSelectedError` (value: `"INVALID_CAP_FACE_SELECTED_ERROR"`)
 
-* `GBTErrorStringEnumCapMultiFaceSelectedError` (value: `"CAP_MULTI_FACE_SELECTED_ERROR"`)
+* `CapMultiFaceSelectedError` (value: `"CAP_MULTI_FACE_SELECTED_ERROR"`)
 
-* `GBTErrorStringEnumCapMultiLumensSelectedError` (value: `"CAP_MULTI_LUMENS_SELECTED_ERROR"`)
+* `CapMultiLumensSelectedError` (value: `"CAP_MULTI_LUMENS_SELECTED_ERROR"`)
 
-* `GBTErrorStringEnumCapCurvedFrameError` (value: `"CAP_CURVED_FRAME_ERROR"`)
+* `CapCurvedFrameError` (value: `"CAP_CURVED_FRAME_ERROR"`)
 
-* `GBTErrorStringEnumCapFrameAxisError` (value: `"CAP_FRAME_AXIS_ERROR"`)
+* `CapFrameAxisError` (value: `"CAP_FRAME_AXIS_ERROR"`)
 
-* `GBTErrorStringEnumVariableCannotUseMaximumWithInfiniteEntities` (value: `"VARIABLE_CANNOT_USE_MAXIMUM_WITH_INFINITE_ENTITIES"`)
+* `VariableCannotUseMaximumWithInfiniteEntities` (value: `"VARIABLE_CANNOT_USE_MAXIMUM_WITH_INFINITE_ENTITIES"`)
 
-* `GBTErrorStringEnumVariableNoAxisEntities` (value: `"VARIABLE_NO_AXIS_ENTITIES"`)
+* `VariableNoAxisEntities` (value: `"VARIABLE_NO_AXIS_ENTITIES"`)
 
-* `GBTErrorStringEnumCurveProjectionNoResult` (value: `"CURVE_PROJECTION_NO_RESULT"`)
+* `CurveProjectionNoResult` (value: `"CURVE_PROJECTION_NO_RESULT"`)
 
-* `GBTErrorStringEnumBsurfFailed` (value: `"BSURF_FAILED"`)
+* `BsurfFailed` (value: `"BSURF_FAILED"`)
 
-* `GBTErrorStringEnumBsurfProfileFailed` (value: `"BSURF_PROFILE_FAILED"`)
+* `BsurfProfileFailed` (value: `"BSURF_PROFILE_FAILED"`)
 
-* `GBTErrorStringEnumBsurfInconsistentBoundaryConditions` (value: `"BSURF_INCONSISTENT_BOUNDARY_CONDITIONS"`)
+* `BsurfInconsistentBoundaryConditions` (value: `"BSURF_INCONSISTENT_BOUNDARY_CONDITIONS"`)
 
-* `GBTErrorStringEnumFgsSimulationErrorSimulationNonConvergent` (value: `"FGS_SIMULATION_ERROR_SIMULATION_NON_CONVERGENT"`)
+* `FgsSimulationErrorSimulationNonConvergent` (value: `"FGS_SIMULATION_ERROR_SIMULATION_NON_CONVERGENT"`)
 
-* `GBTErrorStringEnumFgsSimulationErrorLateralBearingForce` (value: `"FGS_SIMULATION_ERROR_LATERAL_BEARING_FORCE"`)
+* `FgsSimulationErrorLateralBearingForce` (value: `"FGS_SIMULATION_ERROR_LATERAL_BEARING_FORCE"`)
 
-* `GBTErrorStringEnumFgsSimulationErrorLoadsNone` (value: `"FGS_SIMULATION_ERROR_LOADS_NONE"`)
+* `FgsSimulationErrorLoadsNone` (value: `"FGS_SIMULATION_ERROR_LOADS_NONE"`)
 
-* `GBTErrorStringEnumFgsSimulationErrorConstraintsNone` (value: `"FGS_SIMULATION_ERROR_CONSTRAINTS_NONE"`)
+* `FgsSimulationErrorConstraintsNone` (value: `"FGS_SIMULATION_ERROR_CONSTRAINTS_NONE"`)
 
-* `GBTErrorStringEnumFgsSimulationErrorConstraintsOnlyKinematic` (value: `"FGS_SIMULATION_ERROR_CONSTRAINTS_ONLY_KINEMATIC"`)
+* `FgsSimulationErrorConstraintsOnlyKinematic` (value: `"FGS_SIMULATION_ERROR_CONSTRAINTS_ONLY_KINEMATIC"`)
 
-* `GBTErrorStringEnumFgsSimulationErrorInternalError` (value: `"FGS_SIMULATION_ERROR_INTERNAL_ERROR"`)
+* `FgsSimulationErrorInternalError` (value: `"FGS_SIMULATION_ERROR_INTERNAL_ERROR"`)
 
-* `GBTErrorStringEnumDxfCouldNotConvertText` (value: `"DXF_COULD_NOT_CONVERT_TEXT"`)
+* `DxfCouldNotConvertText` (value: `"DXF_COULD_NOT_CONVERT_TEXT"`)
 
-* `GBTErrorStringEnumFgsSimulationAssemblyTooComplex` (value: `"FGS_SIMULATION_ASSEMBLY_TOO_COMPLEX"`)
+* `FgsSimulationAssemblyTooComplex` (value: `"FGS_SIMULATION_ASSEMBLY_TOO_COMPLEX"`)
 
-* `GBTErrorStringEnumSplitSelectFaceDirection` (value: `"SPLIT_SELECT_FACE_DIRECTION"`)
+* `SplitSelectFaceDirection` (value: `"SPLIT_SELECT_FACE_DIRECTION"`)
 
-* `GBTErrorStringEnumSelectionIsInvalid` (value: `"SELECTION_IS_INVALID"`)
+* `SelectionIsInvalid` (value: `"SELECTION_IS_INVALID"`)
 
-* `GBTErrorStringEnumCannotAddMoreThanOneThreadToUnsplitCylinder` (value: `"CANNOT_ADD_MORE_THAN_ONE_THREAD_TO_UNSPLIT_CYLINDER"`)
+* `CannotAddMoreThanOneThreadToUnsplitCylinder` (value: `"CANNOT_ADD_MORE_THAN_ONE_THREAD_TO_UNSPLIT_CYLINDER"`)
 
-* `GBTErrorStringEnumUndercutTooShallow` (value: `"UNDERCUT_TOO_SHALLOW"`)
+* `UndercutTooShallow` (value: `"UNDERCUT_TOO_SHALLOW"`)
 
-* `GBTErrorStringEnumCapInclinedCutFrameError` (value: `"CAP_INCLINED_CUT_FRAME_ERROR"`)
+* `CapInclinedCutFrameError` (value: `"CAP_INCLINED_CUT_FRAME_ERROR"`)
 
-* `GBTErrorStringEnumSplitOffFace` (value: `"SPLIT_OFF_FACE"`)
+* `SplitOffFace` (value: `"SPLIT_OFF_FACE"`)
 
-* `GBTErrorStringEnumUndercutDiameterTooLarge` (value: `"UNDERCUT_DIAMETER_TOO_LARGE"`)
+* `UndercutDiameterTooLarge` (value: `"UNDERCUT_DIAMETER_TOO_LARGE"`)
 
-* `GBTErrorStringEnumPublicationActionFailedNoPlanAccess` (value: `"PUBLICATION_ACTION_FAILED_NO_PLAN_ACCESS"`)
+* `PublicationActionFailedNoPlanAccess` (value: `"PUBLICATION_ACTION_FAILED_NO_PLAN_ACCESS"`)
 
-* `GBTErrorStringEnumDisplayStatesNoReference` (value: `"DISPLAY_STATES_NO_REFERENCE"`)
+* `DisplayStatesNoReference` (value: `"DISPLAY_STATES_NO_REFERENCE"`)
 
-* `GBTErrorStringEnumInvalidArcLength` (value: `"INVALID_ARC_LENGTH"`)
+* `InvalidArcLength` (value: `"INVALID_ARC_LENGTH"`)
 
-* `GBTErrorStringEnumFilletAdjoiningEdgeNotFilleted` (value: `"FILLET_ADJOINING_EDGE_NOT_FILLETED"`)
+* `FilletAdjoiningEdgeNotFilleted` (value: `"FILLET_ADJOINING_EDGE_NOT_FILLETED"`)
 
-* `GBTErrorStringEnumFilletBoundaryIntersectsEdge` (value: `"FILLET_BOUNDARY_INTERSECTS_EDGE"`)
+* `FilletBoundaryIntersectsEdge` (value: `"FILLET_BOUNDARY_INTERSECTS_EDGE"`)
 
-* `GBTErrorStringEnumFilletBoundaryOverlap` (value: `"FILLET_BOUNDARY_OVERLAP"`)
+* `FilletBoundaryOverlap` (value: `"FILLET_BOUNDARY_OVERLAP"`)
 
-* `GBTErrorStringEnumFilletEdgeOverlappedByFillet` (value: `"FILLET_EDGE_OVERLAPPED_BY_FILLET"`)
+* `FilletEdgeOverlappedByFillet` (value: `"FILLET_EDGE_OVERLAPPED_BY_FILLET"`)
 
-* `GBTErrorStringEnumFilletFaceRangeTooLarge` (value: `"FILLET_FACE_RANGE_TOO_LARGE"`)
+* `FilletFaceRangeTooLarge` (value: `"FILLET_FACE_RANGE_TOO_LARGE"`)
 
-* `GBTErrorStringEnumFilletIllegalEndBoundary` (value: `"FILLET_ILLEGAL_END_BOUNDARY"`)
+* `FilletIllegalEndBoundary` (value: `"FILLET_ILLEGAL_END_BOUNDARY"`)
 
-* `GBTErrorStringEnumFilletOverlap` (value: `"FILLET_OVERLAP"`)
+* `FilletOverlap` (value: `"FILLET_OVERLAP"`)
 
-* `GBTErrorStringEnumFilletOverlapsEdgeLoop` (value: `"FILLET_OVERLAPS_EDGE_LOOP"`)
+* `FilletOverlapsEdgeLoop` (value: `"FILLET_OVERLAPS_EDGE_LOOP"`)
 
-* `GBTErrorStringEnumFilletProducedSelfIntSurface` (value: `"FILLET_PRODUCED_SELF_INT_SURFACE"`)
+* `FilletProducedSelfIntSurface` (value: `"FILLET_PRODUCED_SELF_INT_SURFACE"`)
 
-* `GBTErrorStringEnumFilletRangeInconsistentEdge` (value: `"FILLET_RANGE_INCONSISTENT_EDGE"`)
+* `FilletRangeInconsistentEdge` (value: `"FILLET_RANGE_INCONSISTENT_EDGE"`)
 
-* `GBTErrorStringEnumFilletRequiresSurfaceExtension` (value: `"FILLET_REQUIRES_SURFACE_EXTENSION"`)
+* `FilletRequiresSurfaceExtension` (value: `"FILLET_REQUIRES_SURFACE_EXTENSION"`)
 
-* `GBTErrorStringEnumFilletRhoTooLarge` (value: `"FILLET_RHO_TOO_LARGE"`)
+* `FilletRhoTooLarge` (value: `"FILLET_RHO_TOO_LARGE"`)
 
-* `GBTErrorStringEnumFilletVertexEdgesComplicated` (value: `"FILLET_VERTEX_EDGES_COMPLICATED"`)
+* `FilletVertexEdgesComplicated` (value: `"FILLET_VERTEX_EDGES_COMPLICATED"`)
 
-* `GBTErrorStringEnumChamferAdjoiningEdgeNotChamfered` (value: `"CHAMFER_ADJOINING_EDGE_NOT_CHAMFERED"`)
+* `ChamferAdjoiningEdgeNotChamfered` (value: `"CHAMFER_ADJOINING_EDGE_NOT_CHAMFERED"`)
 
-* `GBTErrorStringEnumChamferBoundaryIntersectsEdge` (value: `"CHAMFER_BOUNDARY_INTERSECTS_EDGE"`)
+* `ChamferBoundaryIntersectsEdge` (value: `"CHAMFER_BOUNDARY_INTERSECTS_EDGE"`)
 
-* `GBTErrorStringEnumChamferBoundaryOverlap` (value: `"CHAMFER_BOUNDARY_OVERLAP"`)
+* `ChamferBoundaryOverlap` (value: `"CHAMFER_BOUNDARY_OVERLAP"`)
 
-* `GBTErrorStringEnumChamferEdgeOverlappedByChamfer` (value: `"CHAMFER_EDGE_OVERLAPPED_BY_CHAMFER"`)
+* `ChamferEdgeOverlappedByChamfer` (value: `"CHAMFER_EDGE_OVERLAPPED_BY_CHAMFER"`)
 
-* `GBTErrorStringEnumChamferFaceRangeTooLarge` (value: `"CHAMFER_FACE_RANGE_TOO_LARGE"`)
+* `ChamferFaceRangeTooLarge` (value: `"CHAMFER_FACE_RANGE_TOO_LARGE"`)
 
-* `GBTErrorStringEnumChamferIllegalEndBoundary` (value: `"CHAMFER_ILLEGAL_END_BOUNDARY"`)
+* `ChamferIllegalEndBoundary` (value: `"CHAMFER_ILLEGAL_END_BOUNDARY"`)
 
-* `GBTErrorStringEnumChamferOverlap` (value: `"CHAMFER_OVERLAP"`)
+* `ChamferOverlap` (value: `"CHAMFER_OVERLAP"`)
 
-* `GBTErrorStringEnumChamferOverlapsEdgeLoop` (value: `"CHAMFER_OVERLAPS_EDGE_LOOP"`)
+* `ChamferOverlapsEdgeLoop` (value: `"CHAMFER_OVERLAPS_EDGE_LOOP"`)
 
-* `GBTErrorStringEnumChamferProducedSelfIntSurface` (value: `"CHAMFER_PRODUCED_SELF_INT_SURFACE"`)
+* `ChamferProducedSelfIntSurface` (value: `"CHAMFER_PRODUCED_SELF_INT_SURFACE"`)
 
-* `GBTErrorStringEnumChamferRangeInconsistentEdge` (value: `"CHAMFER_RANGE_INCONSISTENT_EDGE"`)
+* `ChamferRangeInconsistentEdge` (value: `"CHAMFER_RANGE_INCONSISTENT_EDGE"`)
 
-* `GBTErrorStringEnumChamferRequiresSurfaceExtension` (value: `"CHAMFER_REQUIRES_SURFACE_EXTENSION"`)
+* `ChamferRequiresSurfaceExtension` (value: `"CHAMFER_REQUIRES_SURFACE_EXTENSION"`)
 
-* `GBTErrorStringEnumChamferRhoTooLarge` (value: `"CHAMFER_RHO_TOO_LARGE"`)
+* `ChamferRhoTooLarge` (value: `"CHAMFER_RHO_TOO_LARGE"`)
 
-* `GBTErrorStringEnumChamferVertexEdgesComplicated` (value: `"CHAMFER_VERTEX_EDGES_COMPLICATED"`)
+* `ChamferVertexEdgesComplicated` (value: `"CHAMFER_VERTEX_EDGES_COMPLICATED"`)
 
-* `GBTErrorStringEnumEdgeblendAdjoiningEdgeNotBlended` (value: `"EDGEBLEND_ADJOINING_EDGE_NOT_BLENDED"`)
+* `EdgeblendAdjoiningEdgeNotBlended` (value: `"EDGEBLEND_ADJOINING_EDGE_NOT_BLENDED"`)
 
-* `GBTErrorStringEnumEdgeblendBoundaryIntersectsEdge` (value: `"EDGEBLEND_BOUNDARY_INTERSECTS_EDGE"`)
+* `EdgeblendBoundaryIntersectsEdge` (value: `"EDGEBLEND_BOUNDARY_INTERSECTS_EDGE"`)
 
-* `GBTErrorStringEnumEdgeblendBoundaryOverlap` (value: `"EDGEBLEND_BOUNDARY_OVERLAP"`)
+* `EdgeblendBoundaryOverlap` (value: `"EDGEBLEND_BOUNDARY_OVERLAP"`)
 
-* `GBTErrorStringEnumEdgeblendEdgeOverlappedByBlend` (value: `"EDGEBLEND_EDGE_OVERLAPPED_BY_BLEND"`)
+* `EdgeblendEdgeOverlappedByBlend` (value: `"EDGEBLEND_EDGE_OVERLAPPED_BY_BLEND"`)
 
-* `GBTErrorStringEnumEdgeblendFaceRangeTooLarge` (value: `"EDGEBLEND_FACE_RANGE_TOO_LARGE"`)
+* `EdgeblendFaceRangeTooLarge` (value: `"EDGEBLEND_FACE_RANGE_TOO_LARGE"`)
 
-* `GBTErrorStringEnumEdgeblendIllegalEndBoundary` (value: `"EDGEBLEND_ILLEGAL_END_BOUNDARY"`)
+* `EdgeblendIllegalEndBoundary` (value: `"EDGEBLEND_ILLEGAL_END_BOUNDARY"`)
 
-* `GBTErrorStringEnumEdgeblendOverlap` (value: `"EDGEBLEND_OVERLAP"`)
+* `EdgeblendOverlap` (value: `"EDGEBLEND_OVERLAP"`)
 
-* `GBTErrorStringEnumEdgeblendOverlapsEdgeLoop` (value: `"EDGEBLEND_OVERLAPS_EDGE_LOOP"`)
+* `EdgeblendOverlapsEdgeLoop` (value: `"EDGEBLEND_OVERLAPS_EDGE_LOOP"`)
 
-* `GBTErrorStringEnumEdgeblendProducedSelfIntSurface` (value: `"EDGEBLEND_PRODUCED_SELF_INT_SURFACE"`)
+* `EdgeblendProducedSelfIntSurface` (value: `"EDGEBLEND_PRODUCED_SELF_INT_SURFACE"`)
 
-* `GBTErrorStringEnumEdgeblendRangeInconsistentEdge` (value: `"EDGEBLEND_RANGE_INCONSISTENT_EDGE"`)
+* `EdgeblendRangeInconsistentEdge` (value: `"EDGEBLEND_RANGE_INCONSISTENT_EDGE"`)
 
-* `GBTErrorStringEnumEdgeblendRequiresSurfaceExtension` (value: `"EDGEBLEND_REQUIRES_SURFACE_EXTENSION"`)
+* `EdgeblendRequiresSurfaceExtension` (value: `"EDGEBLEND_REQUIRES_SURFACE_EXTENSION"`)
 
-* `GBTErrorStringEnumEdgeblendRhoTooLarge` (value: `"EDGEBLEND_RHO_TOO_LARGE"`)
+* `EdgeblendRhoTooLarge` (value: `"EDGEBLEND_RHO_TOO_LARGE"`)
 
-* `GBTErrorStringEnumEdgeblendVertexEdgesComplicated` (value: `"EDGEBLEND_VERTEX_EDGES_COMPLICATED"`)
+* `EdgeblendVertexEdgesComplicated` (value: `"EDGEBLEND_VERTEX_EDGES_COMPLICATED"`)
 
-* `GBTErrorStringEnumSimulationLoadOnFixedInstance` (value: `"SIMULATION_LOAD_ON_FIXED_INSTANCE"`)
+* `SimulationLoadOnFixedInstance` (value: `"SIMULATION_LOAD_ON_FIXED_INSTANCE"`)
 
-* `GBTErrorStringEnumFrameCustomAlignmentPointsNotInSketch` (value: `"FRAME_CUSTOM_ALIGNMENT_POINTS_NOT_IN_SKETCH"`)
+* `FrameCustomAlignmentPointsNotInSketch` (value: `"FRAME_CUSTOM_ALIGNMENT_POINTS_NOT_IN_SKETCH"`)
 
-* `GBTErrorStringEnumNonMatchingSizeError` (value: `"NON_MATCHING_SIZE_ERROR"`)
+* `NonMatchingSizeError` (value: `"NON_MATCHING_SIZE_ERROR"`)
 
-* `GBTErrorStringEnumFillCannotMatchEdgeAdjacentFaces` (value: `"FILL_CANNOT_MATCH_EDGE_ADJACENT_FACES"`)
+* `FillCannotMatchEdgeAdjacentFaces` (value: `"FILL_CANNOT_MATCH_EDGE_ADJACENT_FACES"`)
 
-* `GBTErrorStringEnumFillAdjacentFaceBadInput` (value: `"FILL_ADJACENT_FACE_BAD_INPUT"`)
+* `FillAdjacentFaceBadInput` (value: `"FILL_ADJACENT_FACE_BAD_INPUT"`)
 
-* `GBTErrorStringEnumFrameBadOffsetIndex` (value: `"FRAME_BAD_OFFSET_INDEX"`)
+* `FrameBadOffsetIndex` (value: `"FRAME_BAD_OFFSET_INDEX"`)
 
-* `GBTErrorStringEnumExternalThreadsUnsupportedOnSheetMetal` (value: `"EXTERNAL_THREADS_UNSUPPORTED_ON_SHEET_METAL"`)
+* `ExternalThreadsUnsupportedOnSheetMetal` (value: `"EXTERNAL_THREADS_UNSUPPORTED_ON_SHEET_METAL"`)
 
-* `GBTErrorStringEnumThreadDepthBeyondCylinder` (value: `"THREAD_DEPTH_BEYOND_CYLINDER"`)
+* `ThreadDepthBeyondCylinder` (value: `"THREAD_DEPTH_BEYOND_CYLINDER"`)
 
-* `GBTErrorStringEnumVrfilletAsymmetricRadiusRequiredAtVertex` (value: `"VRFILLET_ASYMMETRIC_RADIUS_REQUIRED_AT_VERTEX"`)
+* `VrfilletAsymmetricRadiusRequiredAtVertex` (value: `"VRFILLET_ASYMMETRIC_RADIUS_REQUIRED_AT_VERTEX"`)
 
-* `GBTErrorStringEnumVrfilletAsymmetricRadiusRequiredAtPoint` (value: `"VRFILLET_ASYMMETRIC_RADIUS_REQUIRED_AT_POINT"`)
+* `VrfilletAsymmetricRadiusRequiredAtPoint` (value: `"VRFILLET_ASYMMETRIC_RADIUS_REQUIRED_AT_POINT"`)
 
-* `GBTErrorStringEnumVrfilletBadCoedge` (value: `"VRFILLET_BAD_COEDGE"`)
+* `VrfilletBadCoedge` (value: `"VRFILLET_BAD_COEDGE"`)
 
-* `GBTErrorStringEnumFilletLegacyAsymmetricUnsupported` (value: `"FILLET_LEGACY_ASYMMETRIC_UNSUPPORTED"`)
+* `FilletLegacyAsymmetricUnsupported` (value: `"FILLET_LEGACY_ASYMMETRIC_UNSUPPORTED"`)
 
-* `GBTErrorStringEnumPartialFilletBadInputError` (value: `"PARTIAL_FILLET_BAD_INPUT_ERROR"`)
+* `PartialFilletBadInputError` (value: `"PARTIAL_FILLET_BAD_INPUT_ERROR"`)
 
-* `GBTErrorStringEnumGussetEmptyAlignmentSelection` (value: `"GUSSET_EMPTY_ALIGNMENT_SELECTION"`)
+* `GussetEmptyAlignmentSelection` (value: `"GUSSET_EMPTY_ALIGNMENT_SELECTION"`)
 
-* `GBTErrorStringEnumGussetAlignmentNoIntersection` (value: `"GUSSET_ALIGNMENT_NO_INTERSECTION"`)
+* `GussetAlignmentNoIntersection` (value: `"GUSSET_ALIGNMENT_NO_INTERSECTION"`)
 
-* `GBTErrorStringEnumBridgingCurveVertexOrEdgeOnSide` (value: `"BRIDGING_CURVE_VERTEX_OR_EDGE_ON_SIDE"`)
+* `BridgingCurveVertexOrEdgeOnSide` (value: `"BRIDGING_CURVE_VERTEX_OR_EDGE_ON_SIDE"`)
 
-* `GBTErrorStringEnumCannotUsePartialFilletInSheetMetal` (value: `"CANNOT_USE_PARTIAL_FILLET_IN_SHEET_METAL"`)
+* `CannotUsePartialFilletInSheetMetal` (value: `"CANNOT_USE_PARTIAL_FILLET_IN_SHEET_METAL"`)
 
-* `GBTErrorStringEnumPartialFilletClosedPathError` (value: `"PARTIAL_FILLET_CLOSED_PATH_ERROR"`)
+* `PartialFilletClosedPathError` (value: `"PARTIAL_FILLET_CLOSED_PATH_ERROR"`)
 
-* `GBTErrorStringEnumWrongCylinderEdgeSelected` (value: `"WRONG_CYLINDER_EDGE_SELECTED"`)
+* `WrongCylinderEdgeSelected` (value: `"WRONG_CYLINDER_EDGE_SELECTED"`)
 
-* `GBTErrorStringEnumGussetOffsetNotParallel` (value: `"GUSSET_OFFSET_NOT_PARALLEL"`)
+* `GussetOffsetNotParallel` (value: `"GUSSET_OFFSET_NOT_PARALLEL"`)
 
-* `GBTErrorStringEnumGussetAlignedOffsetNotParallel` (value: `"GUSSET_ALIGNED_OFFSET_NOT_PARALLEL"`)
+* `GussetAlignedOffsetNotParallel` (value: `"GUSSET_ALIGNED_OFFSET_NOT_PARALLEL"`)
 
-* `GBTErrorStringEnumBridgingCurveVertexBelongToFace` (value: `"BRIDGING_CURVE_VERTEX_BELONG_TO_FACE"`)
+* `BridgingCurveVertexBelongToFace` (value: `"BRIDGING_CURVE_VERTEX_BELONG_TO_FACE"`)
 
-* `GBTErrorStringEnumBridgingCurveEdgeBelongToFace` (value: `"BRIDGING_CURVE_EDGE_BELONG_TO_FACE"`)
+* `BridgingCurveEdgeBelongToFace` (value: `"BRIDGING_CURVE_EDGE_BELONG_TO_FACE"`)
 
-* `GBTErrorStringEnumBridgingCurveNoStartSelection` (value: `"BRIDGING_CURVE_NO_START_SELECTION"`)
+* `BridgingCurveNoStartSelection` (value: `"BRIDGING_CURVE_NO_START_SELECTION"`)
 
-* `GBTErrorStringEnumBridgingCurveNoEndSelection` (value: `"BRIDGING_CURVE_NO_END_SELECTION"`)
+* `BridgingCurveNoEndSelection` (value: `"BRIDGING_CURVE_NO_END_SELECTION"`)
 
-* `GBTErrorStringEnumNamedViewInvalid` (value: `"NAMED_VIEW_INVALID"`)
+* `NamedViewInvalid` (value: `"NAMED_VIEW_INVALID"`)
 
-* `GBTErrorStringEnumMutualTrimSameSurfaceUsed` (value: `"MUTUAL_TRIM_SAME_SURFACE_USED"`)
+* `MutualTrimSameSurfaceUsed` (value: `"MUTUAL_TRIM_SAME_SURFACE_USED"`)
 
-* `GBTErrorStringEnumMutualTrimSurfaceNotSelected` (value: `"MUTUAL_TRIM_SURFACE_NOT_SELECTED"`)
+* `MutualTrimSurfaceNotSelected` (value: `"MUTUAL_TRIM_SURFACE_NOT_SELECTED"`)
 
-* `GBTErrorStringEnumMutualTrimGenericError` (value: `"MUTUAL_TRIM_GENERIC_ERROR"`)
+* `MutualTrimGenericError` (value: `"MUTUAL_TRIM_GENERIC_ERROR"`)
 
-* `GBTErrorStringEnumSheetMetalCannotCut` (value: `"SHEET_METAL_CANNOT_CUT"`)
+* `SheetMetalCannotCut` (value: `"SHEET_METAL_CANNOT_CUT"`)
 
-* `GBTErrorStringEnumBsurf2Profiles` (value: `"BSURF_2_PROFILES"`)
+* `Bsurf2Profiles` (value: `"BSURF_2_PROFILES"`)
 
-* `GBTErrorStringEnumBsurfOpenChain` (value: `"BSURF_OPEN_CHAIN"`)
+* `BsurfOpenChain` (value: `"BSURF_OPEN_CHAIN"`)
 
-* `GBTErrorStringEnumBsurfProfileQuality` (value: `"BSURF_PROFILE_QUALITY"`)
+* `BsurfProfileQuality` (value: `"BSURF_PROFILE_QUALITY"`)
 
-* `GBTErrorStringEnumBsurfProfileMismatch` (value: `"BSURF_PROFILE_MISMATCH"`)
+* `BsurfProfileMismatch` (value: `"BSURF_PROFILE_MISMATCH"`)
 
-* `GBTErrorStringEnumBsurfInvalidBoundaryConditions` (value: `"BSURF_INVALID_BOUNDARY_CONDITIONS"`)
+* `BsurfInvalidBoundaryConditions` (value: `"BSURF_INVALID_BOUNDARY_CONDITIONS"`)
 
-* `GBTErrorStringEnumBsurfSolveFails` (value: `"BSURF_SOLVE_FAILS"`)
+* `BsurfSolveFails` (value: `"BSURF_SOLVE_FAILS"`)
 
-* `GBTErrorStringEnumHoleCsinkAngleTooWide` (value: `"HOLE_CSINK_ANGLE_TOO_WIDE"`)
+* `HoleCsinkAngleTooWide` (value: `"HOLE_CSINK_ANGLE_TOO_WIDE"`)
 
-* `GBTErrorStringEnumHoleCsinkAngleTooNarrow` (value: `"HOLE_CSINK_ANGLE_TOO_NARROW"`)
+* `HoleCsinkAngleTooNarrow` (value: `"HOLE_CSINK_ANGLE_TOO_NARROW"`)
 
-* `GBTErrorStringEnumExtrudeStartOffsetBoundNotPlanar` (value: `"EXTRUDE_START_OFFSET_BOUND_NOT_PLANAR"`)
+* `ExtrudeStartOffsetBoundNotPlanar` (value: `"EXTRUDE_START_OFFSET_BOUND_NOT_PLANAR"`)
 
-* `GBTErrorStringEnumExtrudeStartOffsetBoundNotParallelToExtrudedEntities` (value: `"EXTRUDE_START_OFFSET_BOUND_NOT_PARALLEL_TO_EXTRUDED_ENTITIES"`)
+* `ExtrudeStartOffsetBoundNotParallelToExtrudedEntities` (value: `"EXTRUDE_START_OFFSET_BOUND_NOT_PARALLEL_TO_EXTRUDED_ENTITIES"`)
 
-* `GBTErrorStringEnumExtrudeDirectionCoplanar` (value: `"EXTRUDE_DIRECTION_COPLANAR"`)
+* `ExtrudeDirectionCoplanar` (value: `"EXTRUDE_DIRECTION_COPLANAR"`)
 
-* `GBTErrorStringEnumExtrudeDirectionInvalidEntity` (value: `"EXTRUDE_DIRECTION_INVALID_ENTITY"`)
+* `ExtrudeDirectionInvalidEntity` (value: `"EXTRUDE_DIRECTION_INVALID_ENTITY"`)
 
-* `GBTErrorStringEnumBsurfConvergenceCurves` (value: `"BSURF_CONVERGENCE_CURVES"`)
+* `BsurfConvergenceCurves` (value: `"BSURF_CONVERGENCE_CURVES"`)
 
-* `GBTErrorStringEnumBsurfConvergenceTangency` (value: `"BSURF_CONVERGENCE_TANGENCY"`)
+* `BsurfConvergenceTangency` (value: `"BSURF_CONVERGENCE_TANGENCY"`)
 
-* `GBTErrorStringEnumExtrudeSelectDirection` (value: `"EXTRUDE_SELECT_DIRECTION"`)
+* `ExtrudeSelectDirection` (value: `"EXTRUDE_SELECT_DIRECTION"`)
 
-* `GBTErrorStringEnumExtrudeSelectStartOffsetEntity` (value: `"EXTRUDE_SELECT_START_OFFSET_ENTITY"`)
+* `ExtrudeSelectStartOffsetEntity` (value: `"EXTRUDE_SELECT_START_OFFSET_ENTITY"`)
 
-* `GBTErrorStringEnumBsurfInconsistentConditionsError` (value: `"BSURF_INCONSISTENT_CONDITIONS_ERROR"`)
+* `BsurfInconsistentConditionsError` (value: `"BSURF_INCONSISTENT_CONDITIONS_ERROR"`)
 
-* `GBTErrorStringEnumPartialFilletInvalidBoundsError` (value: `"PARTIAL_FILLET_INVALID_BOUNDS_ERROR"`)
+* `PartialFilletInvalidBoundsError` (value: `"PARTIAL_FILLET_INVALID_BOUNDS_ERROR"`)
 
-* `GBTErrorStringEnumDocumentElementNotFound` (value: `"DOCUMENT_ELEMENT_NOT_FOUND"`)
+* `DocumentElementNotFound` (value: `"DOCUMENT_ELEMENT_NOT_FOUND"`)
 
-* `GBTErrorStringEnumBsurfProfileNonG1` (value: `"BSURF_PROFILE_NON_G1"`)
+* `BsurfProfileNonG1` (value: `"BSURF_PROFILE_NON_G1"`)
 
-* `GBTErrorStringEnumSmFlatOpFacesDontMatch` (value: `"SM_FLAT_OP_FACES_DONT_MATCH"`)
+* `SmFlatOpFacesDontMatch` (value: `"SM_FLAT_OP_FACES_DONT_MATCH"`)
 
-* `GBTErrorStringEnumHoleReversedBounds` (value: `"HOLE_REVERSED_BOUNDS"`)
+* `HoleReversedBounds` (value: `"HOLE_REVERSED_BOUNDS"`)
 
-* `GBTErrorStringEnumHelixInputAxis` (value: `"HELIX_INPUT_AXIS"`)
+* `HelixInputAxis` (value: `"HELIX_INPUT_AXIS"`)
 
-* `GBTErrorStringEnumHelixBothRadiiZero` (value: `"HELIX_BOTH_RADII_ZERO"`)
+* `HelixBothRadiiZero` (value: `"HELIX_BOTH_RADII_ZERO"`)
 
-* `GBTErrorStringEnumHelixStartPointMisaligned` (value: `"HELIX_START_POINT_MISALIGNED"`)
+* `HelixStartPointMisaligned` (value: `"HELIX_START_POINT_MISALIGNED"`)
 
-* `GBTErrorStringEnumHelixEndPointMisaligned` (value: `"HELIX_END_POINT_MISALIGNED"`)
+* `HelixEndPointMisaligned` (value: `"HELIX_END_POINT_MISALIGNED"`)
 
-* `GBTErrorStringEnumFaceBlendSelectFaces` (value: `"FACE_BLEND_SELECT_FACES"`)
+* `FaceBlendSelectFaces` (value: `"FACE_BLEND_SELECT_FACES"`)
 
-* `GBTErrorStringEnumFaceBlendFailed` (value: `"FACE_BLEND_FAILED"`)
+* `FaceBlendFailed` (value: `"FACE_BLEND_FAILED"`)
 
-* `GBTErrorStringEnumFaceBlendDimensionTooSmall` (value: `"FACE_BLEND_DIMENSION_TOO_SMALL"`)
+* `FaceBlendDimensionTooSmall` (value: `"FACE_BLEND_DIMENSION_TOO_SMALL"`)
 
-* `GBTErrorStringEnumFaceBlendDimensionTooLarge` (value: `"FACE_BLEND_DIMENSION_TOO_LARGE"`)
+* `FaceBlendDimensionTooLarge` (value: `"FACE_BLEND_DIMENSION_TOO_LARGE"`)
 
-* `GBTErrorStringEnumFaceBlendCannotAttach` (value: `"FACE_BLEND_CANNOT_ATTACH"`)
+* `FaceBlendCannotAttach` (value: `"FACE_BLEND_CANNOT_ATTACH"`)
 
-* `GBTErrorStringEnumFaceBlendWrongLeftWallSense` (value: `"FACE_BLEND_WRONG_LEFT_WALL_SENSE"`)
+* `FaceBlendWrongLeftWallSense` (value: `"FACE_BLEND_WRONG_LEFT_WALL_SENSE"`)
 
-* `GBTErrorStringEnumFaceBlendWrongRightWallSense` (value: `"FACE_BLEND_WRONG_RIGHT_WALL_SENSE"`)
+* `FaceBlendWrongRightWallSense` (value: `"FACE_BLEND_WRONG_RIGHT_WALL_SENSE"`)
 
-* `GBTErrorStringEnumFaceBlendWrongSenses` (value: `"FACE_BLEND_WRONG_SENSES"`)
+* `FaceBlendWrongSenses` (value: `"FACE_BLEND_WRONG_SENSES"`)
 
-* `GBTErrorStringEnumFaceBlendLeftWallMultipleBodies` (value: `"FACE_BLEND_LEFT_WALL_MULTIPLE_BODIES"`)
+* `FaceBlendLeftWallMultipleBodies` (value: `"FACE_BLEND_LEFT_WALL_MULTIPLE_BODIES"`)
 
-* `GBTErrorStringEnumFaceBlendRightWallMultipleBodies` (value: `"FACE_BLEND_RIGHT_WALL_MULTIPLE_BODIES"`)
+* `FaceBlendRightWallMultipleBodies` (value: `"FACE_BLEND_RIGHT_WALL_MULTIPLE_BODIES"`)
 
-* `GBTErrorStringEnumFaceBlendInconsistentData` (value: `"FACE_BLEND_INCONSISTENT_DATA"`)
+* `FaceBlendInconsistentData` (value: `"FACE_BLEND_INCONSISTENT_DATA"`)
 
-* `GBTErrorStringEnumFaceBlendInvalidTangentHoldLine` (value: `"FACE_BLEND_INVALID_TANGENT_HOLD_LINE"`)
+* `FaceBlendInvalidTangentHoldLine` (value: `"FACE_BLEND_INVALID_TANGENT_HOLD_LINE"`)
 
-* `GBTErrorStringEnumFaceBlendInvalidConicHoldLine` (value: `"FACE_BLEND_INVALID_CONIC_HOLD_LINE"`)
+* `FaceBlendInvalidConicHoldLine` (value: `"FACE_BLEND_INVALID_CONIC_HOLD_LINE"`)
 
-* `GBTErrorStringEnumFaceBlendBadSpine` (value: `"FACE_BLEND_BAD_SPINE"`)
+* `FaceBlendBadSpine` (value: `"FACE_BLEND_BAD_SPINE"`)
 
-* `GBTErrorStringEnumFaceBlendRhoTooLarge` (value: `"FACE_BLEND_RHO_TOO_LARGE"`)
+* `FaceBlendRhoTooLarge` (value: `"FACE_BLEND_RHO_TOO_LARGE"`)
 
-* `GBTErrorStringEnumFaceBlendRhoInvalid` (value: `"FACE_BLEND_RHO_INVALID"`)
+* `FaceBlendRhoInvalid` (value: `"FACE_BLEND_RHO_INVALID"`)
 
-* `GBTErrorStringEnumFaceBlendSelfIntersection` (value: `"FACE_BLEND_SELF_INTERSECTION"`)
+* `FaceBlendSelfIntersection` (value: `"FACE_BLEND_SELF_INTERSECTION"`)
 
-* `GBTErrorStringEnumFaceBlendInvalidCap` (value: `"FACE_BLEND_INVALID_CAP"`)
+* `FaceBlendInvalidCap` (value: `"FACE_BLEND_INVALID_CAP"`)
 
-* `GBTErrorStringEnumFaceBlendInvalidLimit` (value: `"FACE_BLEND_INVALID_LIMIT"`)
+* `FaceBlendInvalidLimit` (value: `"FACE_BLEND_INVALID_LIMIT"`)
 
-* `GBTErrorStringEnumFaceBlendInvalidLimitDirection` (value: `"FACE_BLEND_INVALID_LIMIT_DIRECTION"`)
+* `FaceBlendInvalidLimitDirection` (value: `"FACE_BLEND_INVALID_LIMIT_DIRECTION"`)
 
-* `GBTErrorStringEnumFaceBlendSpineZeroAnglePropagation` (value: `"FACE_BLEND_SPINE_ZERO_ANGLE_PROPAGATION"`)
+* `FaceBlendSpineZeroAnglePropagation` (value: `"FACE_BLEND_SPINE_ZERO_ANGLE_PROPAGATION"`)
 
-* `GBTErrorStringEnumFaceBlendSpineTangentPropagation` (value: `"FACE_BLEND_SPINE_TANGENT_PROPAGATION"`)
+* `FaceBlendSpineTangentPropagation` (value: `"FACE_BLEND_SPINE_TANGENT_PROPAGATION"`)
 
-* `GBTErrorStringEnumFaceBlendSelectSpine` (value: `"FACE_BLEND_SELECT_SPINE"`)
+* `FaceBlendSelectSpine` (value: `"FACE_BLEND_SELECT_SPINE"`)
 
-* `GBTErrorStringEnumFaceBlendHoldLineInWalls` (value: `"FACE_BLEND_HOLD_LINE_IN_WALLS"`)
+* `FaceBlendHoldLineInWalls` (value: `"FACE_BLEND_HOLD_LINE_IN_WALLS"`)
 
-* `GBTErrorStringEnumFaceBlendTangentHlAsymmetric` (value: `"FACE_BLEND_TANGENT_HL_ASYMMETRIC"`)
+* `FaceBlendTangentHlAsymmetric` (value: `"FACE_BLEND_TANGENT_HL_ASYMMETRIC"`)
 
-* `GBTErrorStringEnumFaceBlendWidthHoldLines` (value: `"FACE_BLEND_WIDTH_HOLD_LINES"`)
+* `FaceBlendWidthHoldLines` (value: `"FACE_BLEND_WIDTH_HOLD_LINES"`)
 
-* `GBTErrorStringEnumFaceBlendEdgeLimitNeedsSide` (value: `"FACE_BLEND_EDGE_LIMIT_NEEDS_SIDE"`)
+* `FaceBlendEdgeLimitNeedsSide` (value: `"FACE_BLEND_EDGE_LIMIT_NEEDS_SIDE"`)
 
-* `GBTErrorStringEnumFaceBlendInvalidPlaneLimit` (value: `"FACE_BLEND_INVALID_PLANE_LIMIT"`)
+* `FaceBlendInvalidPlaneLimit` (value: `"FACE_BLEND_INVALID_PLANE_LIMIT"`)
 
-* `GBTErrorStringEnumFaceBlendInvalidPropagationAngle` (value: `"FACE_BLEND_INVALID_PROPAGATION_ANGLE"`)
+* `FaceBlendInvalidPropagationAngle` (value: `"FACE_BLEND_INVALID_PROPAGATION_ANGLE"`)
 
-* `GBTErrorStringEnumOffsetWireGenericError` (value: `"OFFSET_WIRE_GENERIC_ERROR"`)
+* `OffsetWireGenericError` (value: `"OFFSET_WIRE_GENERIC_ERROR"`)
 
-* `GBTErrorStringEnumOffsetWireSelectWallPath` (value: `"OFFSET_WIRE_SELECT_WALL_PATH"`)
+* `OffsetWireSelectWallPath` (value: `"OFFSET_WIRE_SELECT_WALL_PATH"`)
 
-* `GBTErrorStringEnumOffsetWireDir1Failed` (value: `"OFFSET_WIRE_DIR1_FAILED"`)
+* `OffsetWireDir1Failed` (value: `"OFFSET_WIRE_DIR1_FAILED"`)
 
-* `GBTErrorStringEnumOffsetWireDir2Failed` (value: `"OFFSET_WIRE_DIR2_FAILED"`)
+* `OffsetWireDir2Failed` (value: `"OFFSET_WIRE_DIR2_FAILED"`)
 
-* `GBTErrorStringEnumFaceBlendSolidLongAttach` (value: `"FACE_BLEND_SOLID_LONG_ATTACH"`)
+* `FaceBlendSolidLongAttach` (value: `"FACE_BLEND_SOLID_LONG_ATTACH"`)
 
-* `GBTErrorStringEnumOffsetWireShapesNonConsistent` (value: `"OFFSET_WIRE_SHAPES_NON_CONSISTENT"`)
+* `OffsetWireShapesNonConsistent` (value: `"OFFSET_WIRE_SHAPES_NON_CONSISTENT"`)
 
-* `GBTErrorStringEnumOffsetWireMultipleShapes` (value: `"OFFSET_WIRE_MULTIPLE_SHAPES"`)
+* `OffsetWireMultipleShapes` (value: `"OFFSET_WIRE_MULTIPLE_SHAPES"`)
 
-* `GBTErrorStringEnumBooleanNonManifoldResult` (value: `"BOOLEAN_NON_MANIFOLD_RESULT"`)
+* `BooleanNonManifoldResult` (value: `"BOOLEAN_NON_MANIFOLD_RESULT"`)
 
-* `GBTErrorStringEnumDrawingAssemblyNonmanifoldSectionCut` (value: `"DRAWING_ASSEMBLY_NONMANIFOLD_SECTION_CUT"`)
+* `DrawingAssemblyNonmanifoldSectionCut` (value: `"DRAWING_ASSEMBLY_NONMANIFOLD_SECTION_CUT"`)
 
-* `GBTErrorStringEnumDrawingPartstudioNonmanifoldSectionCut` (value: `"DRAWING_PARTSTUDIO_NONMANIFOLD_SECTION_CUT"`)
+* `DrawingPartstudioNonmanifoldSectionCut` (value: `"DRAWING_PARTSTUDIO_NONMANIFOLD_SECTION_CUT"`)
 
-* `GBTErrorStringEnumMoveCurveBoundaryFailed` (value: `"MOVE_CURVE_BOUNDARY_FAILED"`)
+* `MoveCurveBoundaryFailed` (value: `"MOVE_CURVE_BOUNDARY_FAILED"`)
 
-* `GBTErrorStringEnumMoveCurveBoundaryExtensionNoIntersection` (value: `"MOVE_CURVE_BOUNDARY_EXTENSION_NO_INTERSECTION"`)
+* `MoveCurveBoundaryExtensionNoIntersection` (value: `"MOVE_CURVE_BOUNDARY_EXTENSION_NO_INTERSECTION"`)
 
-* `GBTErrorStringEnumMoveCurveBoundaryTrimNoIntersection` (value: `"MOVE_CURVE_BOUNDARY_TRIM_NO_INTERSECTION"`)
+* `MoveCurveBoundaryTrimNoIntersection` (value: `"MOVE_CURVE_BOUNDARY_TRIM_NO_INTERSECTION"`)
 
-* `GBTErrorStringEnumMoveCurveBoundarySelectCurve` (value: `"MOVE_CURVE_BOUNDARY_SELECT_CURVE"`)
+* `MoveCurveBoundarySelectCurve` (value: `"MOVE_CURVE_BOUNDARY_SELECT_CURVE"`)
 
-* `GBTErrorStringEnumMoveCurveBoundarySelectTrimBoundary` (value: `"MOVE_CURVE_BOUNDARY_SELECT_TRIM_BOUNDARY"`)
+* `MoveCurveBoundarySelectTrimBoundary` (value: `"MOVE_CURVE_BOUNDARY_SELECT_TRIM_BOUNDARY"`)
 
-* `GBTErrorStringEnumMoveCurveBoundarySelectExtendBoundary` (value: `"MOVE_CURVE_BOUNDARY_SELECT_EXTEND_BOUNDARY"`)
+* `MoveCurveBoundarySelectExtendBoundary` (value: `"MOVE_CURVE_BOUNDARY_SELECT_EXTEND_BOUNDARY"`)
 
-* `GBTErrorStringEnumMoveCurveBoundaryNoSketchEntities` (value: `"MOVE_CURVE_BOUNDARY_NO_SKETCH_ENTITIES"`)
+* `MoveCurveBoundaryNoSketchEntities` (value: `"MOVE_CURVE_BOUNDARY_NO_SKETCH_ENTITIES"`)
 
-* `GBTErrorStringEnumMoveCurveBoundaryOnlyWires` (value: `"MOVE_CURVE_BOUNDARY_ONLY_WIRES"`)
+* `MoveCurveBoundaryOnlyWires` (value: `"MOVE_CURVE_BOUNDARY_ONLY_WIRES"`)
 
-* `GBTErrorStringEnumMoveCurveBoundarySelectHelpPoint` (value: `"MOVE_CURVE_BOUNDARY_SELECT_HELP_POINT"`)
+* `MoveCurveBoundarySelectHelpPoint` (value: `"MOVE_CURVE_BOUNDARY_SELECT_HELP_POINT"`)
 
-* `GBTErrorStringEnumMoveCurveBoundaryExtendRequiresOpenCurve` (value: `"MOVE_CURVE_BOUNDARY_EXTEND_REQUIRES_OPEN_CURVE"`)
+* `MoveCurveBoundaryExtendRequiresOpenCurve` (value: `"MOVE_CURVE_BOUNDARY_EXTEND_REQUIRES_OPEN_CURVE"`)
 
-* `GBTErrorStringEnumMoveCurveBoundarySplitClosedAtTwoPoints` (value: `"MOVE_CURVE_BOUNDARY_SPLIT_CLOSED_AT_TWO_POINTS"`)
+* `MoveCurveBoundarySplitClosedAtTwoPoints` (value: `"MOVE_CURVE_BOUNDARY_SPLIT_CLOSED_AT_TWO_POINTS"`)
 
-* `GBTErrorStringEnumHoleNoEndBounds` (value: `"HOLE_NO_END_BOUNDS"`)
+* `HoleNoEndBounds` (value: `"HOLE_NO_END_BOUNDS"`)
 
-* `GBTErrorStringEnumHoleTapTooDeep` (value: `"HOLE_TAP_TOO_DEEP"`)
+* `HoleTapTooDeep` (value: `"HOLE_TAP_TOO_DEEP"`)
 
-* `GBTErrorStringEnumMoveCurveBoundaryToolIsTarget` (value: `"MOVE_CURVE_BOUNDARY_TOOL_IS_TARGET"`)
+* `MoveCurveBoundaryToolIsTarget` (value: `"MOVE_CURVE_BOUNDARY_TOOL_IS_TARGET"`)
 
-* `GBTErrorStringEnumDrawingIgnoreFaultyParts` (value: `"DRAWING_IGNORE_FAULTY_PARTS"`)
+* `DrawingIgnoreFaultyParts` (value: `"DRAWING_IGNORE_FAULTY_PARTS"`)
 
-* `GBTErrorStringEnumIsoclineNoResult` (value: `"ISOCLINE_NO_RESULT"`)
+* `IsoclineNoResult` (value: `"ISOCLINE_NO_RESULT"`)
 
-* `GBTErrorStringEnumIsoclineSelectFaces` (value: `"ISOCLINE_SELECT_FACES"`)
+* `IsoclineSelectFaces` (value: `"ISOCLINE_SELECT_FACES"`)
 
-* `GBTErrorStringEnumIsoclineSelectDirection` (value: `"ISOCLINE_SELECT_DIRECTION"`)
+* `IsoclineSelectDirection` (value: `"ISOCLINE_SELECT_DIRECTION"`)
 
-* `GBTErrorStringEnumIsoclineFailed` (value: `"ISOCLINE_FAILED"`)
+* `IsoclineFailed` (value: `"ISOCLINE_FAILED"`)
 
-* `GBTErrorStringEnumFgsGenerativeOptMaxIterations` (value: `"FGS_GENERATIVE_OPT_MAX_ITERATIONS"`)
+* `FgsGenerativeOptMaxIterations` (value: `"FGS_GENERATIVE_OPT_MAX_ITERATIONS"`)
 
-* `GBTErrorStringEnumFgsGenerativeTargetVolumeLow` (value: `"FGS_GENERATIVE_TARGET_VOLUME_LOW"`)
+* `FgsGenerativeTargetVolumeLow` (value: `"FGS_GENERATIVE_TARGET_VOLUME_LOW"`)
 
-* `GBTErrorStringEnumFgsGenerativeTargetVolumeLarge` (value: `"FGS_GENERATIVE_TARGET_VOLUME_LARGE"`)
+* `FgsGenerativeTargetVolumeLarge` (value: `"FGS_GENERATIVE_TARGET_VOLUME_LARGE"`)
 
-* `GBTErrorStringEnumFgsGenerativeThinGeneric` (value: `"FGS_GENERATIVE_THIN_GENERIC"`)
+* `FgsGenerativeThinGeneric` (value: `"FGS_GENERATIVE_THIN_GENERIC"`)
 
-* `GBTErrorStringEnumFgsGenerativeSymmetryDefProblem` (value: `"FGS_GENERATIVE_SYMMETRY_DEF_PROBLEM"`)
+* `FgsGenerativeSymmetryDefProblem` (value: `"FGS_GENERATIVE_SYMMETRY_DEF_PROBLEM"`)
 
-* `GBTErrorStringEnumFgsGenerativeMinradiusSmall` (value: `"FGS_GENERATIVE_MINRADIUS_SMALL"`)
+* `FgsGenerativeMinradiusSmall` (value: `"FGS_GENERATIVE_MINRADIUS_SMALL"`)
 
-* `GBTErrorStringEnumFgsGenerativeMinradiusLarge` (value: `"FGS_GENERATIVE_MINRADIUS_LARGE"`)
+* `FgsGenerativeMinradiusLarge` (value: `"FGS_GENERATIVE_MINRADIUS_LARGE"`)
 
-* `GBTErrorStringEnumFgsGenerativeOptInvalidSetup` (value: `"FGS_GENERATIVE_OPT_INVALID_SETUP"`)
+* `FgsGenerativeOptInvalidSetup` (value: `"FGS_GENERATIVE_OPT_INVALID_SETUP"`)
 
-* `GBTErrorStringEnumCurvePatternDistanceTooLarge` (value: `"CURVE_PATTERN_DISTANCE_TOO_LARGE"`)
+* `CurvePatternDistanceTooLarge` (value: `"CURVE_PATTERN_DISTANCE_TOO_LARGE"`)
 
-* `GBTErrorStringEnumBendReplacementHealFailed` (value: `"BEND_REPLACEMENT_HEAL_FAILED"`)
+* `BendReplacementHealFailed` (value: `"BEND_REPLACEMENT_HEAL_FAILED"`)
 
-* `GBTErrorStringEnumCannotCopyConstraints` (value: `"CANNOT_COPY_CONSTRAINTS"`)
+* `CannotCopyConstraints` (value: `"CANNOT_COPY_CONSTRAINTS"`)
 
-* `GBTErrorStringEnumParameterExpressionValidationUnitsMismatch3Args` (value: `"PARAMETER_EXPRESSION_VALIDATION_UNITS_MISMATCH_3ARGS"`)
+* `ParameterExpressionValidationUnitsMismatch3Args` (value: `"PARAMETER_EXPRESSION_VALIDATION_UNITS_MISMATCH_3ARGS"`)
 
-* `GBTErrorStringEnumParameterExpressionValidationSyntaxError0Args` (value: `"PARAMETER_EXPRESSION_VALIDATION_SYNTAX_ERROR_0ARGS"`)
+* `ParameterExpressionValidationSyntaxError0Args` (value: `"PARAMETER_EXPRESSION_VALIDATION_SYNTAX_ERROR_0ARGS"`)
 
-* `GBTErrorStringEnumParameterExpressionValidationReservedId1Arg` (value: `"PARAMETER_EXPRESSION_VALIDATION_RESERVED_ID_1ARG"`)
+* `ParameterExpressionValidationReservedId1Arg` (value: `"PARAMETER_EXPRESSION_VALIDATION_RESERVED_ID_1ARG"`)
 
-* `GBTErrorStringEnumParameterExpressionValidationCannotApplyOpTo1Arg` (value: `"PARAMETER_EXPRESSION_VALIDATION_CANNOT_APPLY_OP_TO_1ARG"`)
+* `ParameterExpressionValidationCannotApplyOpTo1Arg` (value: `"PARAMETER_EXPRESSION_VALIDATION_CANNOT_APPLY_OP_TO_1ARG"`)
 
-* `GBTErrorStringEnumParameterExpressionValidationCannotApplyOpTo2Args` (value: `"PARAMETER_EXPRESSION_VALIDATION_CANNOT_APPLY_OP_TO_2ARGS"`)
+* `ParameterExpressionValidationCannotApplyOpTo2Args` (value: `"PARAMETER_EXPRESSION_VALIDATION_CANNOT_APPLY_OP_TO_2ARGS"`)
 
-* `GBTErrorStringEnumParameterExpressionValidationCannotApplyOpTo3Args` (value: `"PARAMETER_EXPRESSION_VALIDATION_CANNOT_APPLY_OP_TO_3ARGS"`)
+* `ParameterExpressionValidationCannotApplyOpTo3Args` (value: `"PARAMETER_EXPRESSION_VALIDATION_CANNOT_APPLY_OP_TO_3ARGS"`)
 
-* `GBTErrorStringEnumParameterExpressionValidationIncorrectType` (value: `"PARAMETER_EXPRESSION_VALIDATION_INCORRECT_TYPE"`)
+* `ParameterExpressionValidationIncorrectType` (value: `"PARAMETER_EXPRESSION_VALIDATION_INCORRECT_TYPE"`)
 
-* `GBTErrorStringEnumParameterExpressionUnknownFunction` (value: `"PARAMETER_EXPRESSION_UNKNOWN_FUNCTION"`)
+* `ParameterExpressionUnknownFunction` (value: `"PARAMETER_EXPRESSION_UNKNOWN_FUNCTION"`)
 
-* `GBTErrorStringEnumParameterExpressionUnknownVariable` (value: `"PARAMETER_EXPRESSION_UNKNOWN_VARIABLE"`)
+* `ParameterExpressionUnknownVariable` (value: `"PARAMETER_EXPRESSION_UNKNOWN_VARIABLE"`)
 
-* `GBTErrorStringEnumRevolveNotCoplanarWithAxis` (value: `"REVOLVE_NOT_COPLANAR_WITH_AXIS"`)
+* `RevolveNotCoplanarWithAxis` (value: `"REVOLVE_NOT_COPLANAR_WITH_AXIS"`)
 
-* `GBTErrorStringEnumFrameAngleReferenceInvalidEntity` (value: `"FRAME_ANGLE_REFERENCE_INVALID_ENTITY"`)
+* `FrameAngleReferenceInvalidEntity` (value: `"FRAME_ANGLE_REFERENCE_INVALID_ENTITY"`)
 
-* `GBTErrorStringEnumAmbiguousGeometryForGussetDefinition` (value: `"AMBIGUOUS_GEOMETRY_FOR_GUSSET_DEFINITION"`)
+* `AmbiguousGeometryForGussetDefinition` (value: `"AMBIGUOUS_GEOMETRY_FOR_GUSSET_DEFINITION"`)
 
-* `GBTErrorStringEnumHoleStartBoundInvalid` (value: `"HOLE_START_BOUND_INVALID"`)
+* `HoleStartBoundInvalid` (value: `"HOLE_START_BOUND_INVALID"`)
 
-* `GBTErrorStringEnumHoleNoStartBound` (value: `"HOLE_NO_START_BOUND"`)
+* `HoleNoStartBound` (value: `"HOLE_NO_START_BOUND"`)
 
-* `GBTErrorStringEnumBodyDraftFailed` (value: `"BODY_DRAFT_FAILED"`)
+* `BodyDraftFailed` (value: `"BODY_DRAFT_FAILED"`)
 
-* `GBTErrorStringEnumBodyDraftNoReferences` (value: `"BODY_DRAFT_NO_REFERENCES"`)
+* `BodyDraftNoReferences` (value: `"BODY_DRAFT_NO_REFERENCES"`)
 
-* `GBTErrorStringEnumBodyDraftNoAngles` (value: `"BODY_DRAFT_NO_ANGLES"`)
+* `BodyDraftNoAngles` (value: `"BODY_DRAFT_NO_ANGLES"`)
 
-* `GBTErrorStringEnumBodyDraftInvalidAboveAngle` (value: `"BODY_DRAFT_INVALID_ABOVE_ANGLE"`)
+* `BodyDraftInvalidAboveAngle` (value: `"BODY_DRAFT_INVALID_ABOVE_ANGLE"`)
 
-* `GBTErrorStringEnumBodyDraftInvalidBelowAngle` (value: `"BODY_DRAFT_INVALID_BELOW_ANGLE"`)
+* `BodyDraftInvalidBelowAngle` (value: `"BODY_DRAFT_INVALID_BELOW_ANGLE"`)
 
-* `GBTErrorStringEnumBodyDraftInvalidPartingEntity` (value: `"BODY_DRAFT_INVALID_PARTING_ENTITY"`)
+* `BodyDraftInvalidPartingEntity` (value: `"BODY_DRAFT_INVALID_PARTING_ENTITY"`)
 
-* `GBTErrorStringEnumBodyDraftInvalidPullDirection` (value: `"BODY_DRAFT_INVALID_PULL_DIRECTION"`)
+* `BodyDraftInvalidPullDirection` (value: `"BODY_DRAFT_INVALID_PULL_DIRECTION"`)
 
-* `GBTErrorStringEnumBodyDraftMiterNeedBothSides` (value: `"BODY_DRAFT_MITER_NEED_BOTH_SIDES"`)
+* `BodyDraftMiterNeedBothSides` (value: `"BODY_DRAFT_MITER_NEED_BOTH_SIDES"`)
 
-* `GBTErrorStringEnumBodyDraftEdgeSeparationFailed` (value: `"BODY_DRAFT_EDGE_SEPARATION_FAILED"`)
+* `BodyDraftEdgeSeparationFailed` (value: `"BODY_DRAFT_EDGE_SEPARATION_FAILED"`)
 
-* `GBTErrorStringEnumBodyDraftEdgeSplitFailed` (value: `"BODY_DRAFT_EDGE_SPLIT_FAILED"`)
+* `BodyDraftEdgeSplitFailed` (value: `"BODY_DRAFT_EDGE_SPLIT_FAILED"`)
 
-* `GBTErrorStringEnumBodyDraftIsoclineSplitFailed` (value: `"BODY_DRAFT_ISOCLINE_SPLIT_FAILED"`)
+* `BodyDraftIsoclineSplitFailed` (value: `"BODY_DRAFT_ISOCLINE_SPLIT_FAILED"`)
 
-* `GBTErrorStringEnumBodyDraftPartingPlaneSheetError` (value: `"BODY_DRAFT_PARTING_PLANE_SHEET_ERROR"`)
+* `BodyDraftPartingPlaneSheetError` (value: `"BODY_DRAFT_PARTING_PLANE_SHEET_ERROR"`)
 
-* `GBTErrorStringEnumBodyDraftInvalidReference` (value: `"BODY_DRAFT_INVALID_REFERENCE"`)
+* `BodyDraftInvalidReference` (value: `"BODY_DRAFT_INVALID_REFERENCE"`)
 
-* `GBTErrorStringEnumBodyDraftReferenceLoop` (value: `"BODY_DRAFT_REFERENCE_LOOP"`)
+* `BodyDraftReferenceLoop` (value: `"BODY_DRAFT_REFERENCE_LOOP"`)
 
-* `GBTErrorStringEnumBodyDraftTooSteep` (value: `"BODY_DRAFT_TOO_STEEP"`)
+* `BodyDraftTooSteep` (value: `"BODY_DRAFT_TOO_STEEP"`)
 
-* `GBTErrorStringEnumBodyDraftBadPullDirection` (value: `"BODY_DRAFT_BAD_PULL_DIRECTION"`)
+* `BodyDraftBadPullDirection` (value: `"BODY_DRAFT_BAD_PULL_DIRECTION"`)
 
-* `GBTErrorStringEnumBodyDraftMiterFailed` (value: `"BODY_DRAFT_MITER_FAILED"`)
+* `BodyDraftMiterFailed` (value: `"BODY_DRAFT_MITER_FAILED"`)
 
-* `GBTErrorStringEnumDecalHorizontalReferenceInvalidEntity` (value: `"DECAL_HORIZONTAL_REFERENCE_INVALID_ENTITY"`)
+* `DecalHorizontalReferenceInvalidEntity` (value: `"DECAL_HORIZONTAL_REFERENCE_INVALID_ENTITY"`)
 
-* `GBTErrorStringEnumOffsetWireSheetCreationFailed` (value: `"OFFSET_WIRE_SHEET_CREATION_FAILED"`)
+* `OffsetWireSheetCreationFailed` (value: `"OFFSET_WIRE_SHEET_CREATION_FAILED"`)
 
-* `GBTErrorStringEnumReplaceFaceSheetSmall` (value: `"REPLACE_FACE_SHEET_SMALL"`)
+* `ReplaceFaceSheetSmall` (value: `"REPLACE_FACE_SHEET_SMALL"`)
 
-* `GBTErrorStringEnumReplaceFacesNotAdjacent` (value: `"REPLACE_FACES_NOT_ADJACENT"`)
+* `ReplaceFacesNotAdjacent` (value: `"REPLACE_FACES_NOT_ADJACENT"`)
 
-* `GBTErrorStringEnumSheetMetalHoleRebuildFailed` (value: `"SHEET_METAL_HOLE_REBUILD_FAILED"`)
+* `SheetMetalHoleRebuildFailed` (value: `"SHEET_METAL_HOLE_REBUILD_FAILED"`)
 
-* `GBTErrorStringEnumCplaneTangentInput` (value: `"CPLANE_TANGENT_INPUT"`)
+* `CplaneTangentInput` (value: `"CPLANE_TANGENT_INPUT"`)
 
-* `GBTErrorStringEnumCplaneTangentSelectReference` (value: `"CPLANE_TANGENT_SELECT_REFERENCE"`)
+* `CplaneTangentSelectReference` (value: `"CPLANE_TANGENT_SELECT_REFERENCE"`)
 
-* `GBTErrorStringEnumCplaneTangentPlaneInvalid` (value: `"CPLANE_TANGENT_PLANE_INVALID"`)
+* `CplaneTangentPlaneInvalid` (value: `"CPLANE_TANGENT_PLANE_INVALID"`)
 
-* `GBTErrorStringEnumCplaneTangentPointInvalid` (value: `"CPLANE_TANGENT_POINT_INVALID"`)
+* `CplaneTangentPointInvalid` (value: `"CPLANE_TANGENT_POINT_INVALID"`)
 
-* `GBTErrorStringEnumReplaceFacesNotSameBody` (value: `"REPLACE_FACES_NOT_SAME_BODY"`)
+* `ReplaceFacesNotSameBody` (value: `"REPLACE_FACES_NOT_SAME_BODY"`)
 
-* `GBTErrorStringEnumMustUseDefaultRadiusWithFaceBend` (value: `"MUST_USE_DEFAULT_RADIUS_WITH_FACE_BEND"`)
+* `MustUseDefaultRadiusWithFaceBend` (value: `"MUST_USE_DEFAULT_RADIUS_WITH_FACE_BEND"`)
 
-* `GBTErrorStringEnumCannotRipAFaceBend` (value: `"CANNOT_RIP_A_FACE_BEND"`)
+* `CannotRipAFaceBend` (value: `"CANNOT_RIP_A_FACE_BEND"`)
 
-* `GBTErrorStringEnumCannotMakeAFaceBendTangent` (value: `"CANNOT_MAKE_A_FACE_BEND_TANGENT"`)
+* `CannotMakeAFaceBendTangent` (value: `"CANNOT_MAKE_A_FACE_BEND_TANGENT"`)
 
-* `GBTErrorStringEnumSketchHasPatternTooLarge` (value: `"SKETCH_HAS_PATTERN_TOO_LARGE"`)
+* `SketchHasPatternTooLarge` (value: `"SKETCH_HAS_PATTERN_TOO_LARGE"`)
 
-* `GBTErrorStringEnumSketchLinearPatternFailed` (value: `"SKETCH_LINEAR_PATTERN_FAILED"`)
+* `SketchLinearPatternFailed` (value: `"SKETCH_LINEAR_PATTERN_FAILED"`)
 
-* `GBTErrorStringEnumDecalProjectedOffFace` (value: `"DECAL_PROJECTED_OFF_FACE"`)
+* `DecalProjectedOffFace` (value: `"DECAL_PROJECTED_OFF_FACE"`)
 
-* `GBTErrorStringEnumFitToleranceLimitsNotFound` (value: `"FIT_TOLERANCE_LIMITS_NOT_FOUND"`)
+* `FitToleranceLimitsNotFound` (value: `"FIT_TOLERANCE_LIMITS_NOT_FOUND"`)
 
-* `GBTErrorStringEnumFitToleranceSizeTooLargeIso` (value: `"FIT_TOLERANCE_SIZE_TOO_LARGE_ISO"`)
+* `FitToleranceSizeTooLargeIso` (value: `"FIT_TOLERANCE_SIZE_TOO_LARGE_ISO"`)
 
-* `GBTErrorStringEnumFitToleranceSizeTooLargeAnsi` (value: `"FIT_TOLERANCE_SIZE_TOO_LARGE_ANSI"`)
+* `FitToleranceSizeTooLargeAnsi` (value: `"FIT_TOLERANCE_SIZE_TOO_LARGE_ANSI"`)
 
-* `GBTErrorStringEnumDecalNoFaceSelection` (value: `"DECAL_NO_FACE_SELECTION"`)
+* `DecalNoFaceSelection` (value: `"DECAL_NO_FACE_SELECTION"`)
 
-* `GBTErrorStringEnumDecalNoImageSelection` (value: `"DECAL_NO_IMAGE_SELECTION"`)
+* `DecalNoImageSelection` (value: `"DECAL_NO_IMAGE_SELECTION"`)
 
-* `GBTErrorStringEnumDecalImageTooLarge` (value: `"DECAL_IMAGE_TOO_LARGE"`)
+* `DecalImageTooLarge` (value: `"DECAL_IMAGE_TOO_LARGE"`)
 
-* `GBTErrorStringEnumFgsSimulationAssemblyHasNoInstances` (value: `"FGS_SIMULATION_ASSEMBLY_HAS_NO_INSTANCES"`)
+* `FgsSimulationAssemblyHasNoInstances` (value: `"FGS_SIMULATION_ASSEMBLY_HAS_NO_INSTANCES"`)
 
-* `GBTErrorStringEnumFgsSimulationAssemblyHasTooFewInstances` (value: `"FGS_SIMULATION_ASSEMBLY_HAS_TOO_FEW_INSTANCES"`)
+* `FgsSimulationAssemblyHasTooFewInstances` (value: `"FGS_SIMULATION_ASSEMBLY_HAS_TOO_FEW_INSTANCES"`)
 
-* `GBTErrorStringEnumFgsModalSimulationHasAllFixedParts` (value: `"FGS_MODAL_SIMULATION_HAS_ALL_FIXED_PARTS"`)
+* `FgsModalSimulationHasAllFixedParts` (value: `"FGS_MODAL_SIMULATION_HAS_ALL_FIXED_PARTS"`)
 
-* `GBTErrorStringEnumBodyDraftStrayNonmiterEdges` (value: `"BODY_DRAFT_STRAY_NONMITER_EDGES"`)
+* `BodyDraftStrayNonmiterEdges` (value: `"BODY_DRAFT_STRAY_NONMITER_EDGES"`)
 
-* `GBTErrorStringEnumMassPropertyFacesNotCoplanar` (value: `"MASS_PROPERTY_FACES_NOT_COPLANAR"`)
+* `MassPropertyFacesNotCoplanar` (value: `"MASS_PROPERTY_FACES_NOT_COPLANAR"`)
 
-* `GBTErrorStringEnumParameterValueInvalid` (value: `"PARAMETER_VALUE_INVALID"`)
+* `ParameterValueInvalid` (value: `"PARAMETER_VALUE_INVALID"`)
 
-* `GBTErrorStringEnumSheetMetalChamferNoTangentBased` (value: `"SHEET_METAL_CHAMFER_NO_TANGENT_BASED"`)
+* `SheetMetalChamferNoTangentBased` (value: `"SHEET_METAL_CHAMFER_NO_TANGENT_BASED"`)
 
-* `GBTErrorStringEnumChamferDirectionOverrideNoEffect` (value: `"CHAMFER_DIRECTION_OVERRIDE_NO_EFFECT"`)
+* `ChamferDirectionOverrideNoEffect` (value: `"CHAMFER_DIRECTION_OVERRIDE_NO_EFFECT"`)
 
-* `GBTErrorStringEnumFilletChamferUnsupported` (value: `"FILLET_CHAMFER_UNSUPPORTED"`)
+* `FilletChamferUnsupported` (value: `"FILLET_CHAMFER_UNSUPPORTED"`)
 
-* `GBTErrorStringEnumLinearPatternSketchReapplyInfo` (value: `"LINEAR_PATTERN_SKETCH_REAPPLY_INFO"`)
+* `LinearPatternSketchReapplyInfo` (value: `"LINEAR_PATTERN_SKETCH_REAPPLY_INFO"`)
 
-* `GBTErrorStringEnumCircularPatternSketchReapplyInfo` (value: `"CIRCULAR_PATTERN_SKETCH_REAPPLY_INFO"`)
+* `CircularPatternSketchReapplyInfo` (value: `"CIRCULAR_PATTERN_SKETCH_REAPPLY_INFO"`)
 
-* `GBTErrorStringEnumCurvePatternSketchReapplyInfo` (value: `"CURVE_PATTERN_SKETCH_REAPPLY_INFO"`)
+* `CurvePatternSketchReapplyInfo` (value: `"CURVE_PATTERN_SKETCH_REAPPLY_INFO"`)
 
-* `GBTErrorStringEnumMirrorSketchReapplyInfo` (value: `"MIRROR_SKETCH_REAPPLY_INFO"`)
+* `MirrorSketchReapplyInfo` (value: `"MIRROR_SKETCH_REAPPLY_INFO"`)
 
-* `GBTErrorStringEnumChamferHeldBack` (value: `"CHAMFER_HELD_BACK"`)
+* `ChamferHeldBack` (value: `"CHAMFER_HELD_BACK"`)
 
-* `GBTErrorStringEnumSweepBadLockDirection` (value: `"SWEEP_BAD_LOCK_DIRECTION"`)
+* `SweepBadLockDirection` (value: `"SWEEP_BAD_LOCK_DIRECTION"`)
 
-* `GBTErrorStringEnumSheetMetalCounterHoleUnsupported` (value: `"SHEET_METAL_COUNTER_HOLE_UNSUPPORTED"`)
+* `SheetMetalCounterHoleUnsupported` (value: `"SHEET_METAL_COUNTER_HOLE_UNSUPPORTED"`)
 
-* `GBTErrorStringEnumSpecifiedFeatureDoesNotExist` (value: `"SPECIFIED_FEATURE_DOES_NOT_EXIST"`)
+* `SpecifiedFeatureDoesNotExist` (value: `"SPECIFIED_FEATURE_DOES_NOT_EXIST"`)
 
-* `GBTErrorStringEnumSheetMetalBendNoBendLine` (value: `"SHEET_METAL_BEND_NO_BEND_LINE"`)
+* `SheetMetalBendNoBendLine` (value: `"SHEET_METAL_BEND_NO_BEND_LINE"`)
 
-* `GBTErrorStringEnumSheetMetalBendBadBendLine` (value: `"SHEET_METAL_BEND_BAD_BEND_LINE"`)
+* `SheetMetalBendBadBendLine` (value: `"SHEET_METAL_BEND_BAD_BEND_LINE"`)
 
-* `GBTErrorStringEnumSheetMetalBendNoFace` (value: `"SHEET_METAL_BEND_NO_FACE"`)
+* `SheetMetalBendNoFace` (value: `"SHEET_METAL_BEND_NO_FACE"`)
 
-* `GBTErrorStringEnumSheetMetalBendNoParallel` (value: `"SHEET_METAL_BEND_NO_PARALLEL"`)
+* `SheetMetalBendNoParallel` (value: `"SHEET_METAL_BEND_NO_PARALLEL"`)
 
-* `GBTErrorStringEnumSheetMetalBendNoDirection` (value: `"SHEET_METAL_BEND_NO_DIRECTION"`)
+* `SheetMetalBendNoDirection` (value: `"SHEET_METAL_BEND_NO_DIRECTION"`)
 
-* `GBTErrorStringEnumSheetMetalBendBadFace` (value: `"SHEET_METAL_BEND_BAD_FACE"`)
+* `SheetMetalBendBadFace` (value: `"SHEET_METAL_BEND_BAD_FACE"`)
 
-* `GBTErrorStringEnumSheetMetalBendImprintFailed` (value: `"SHEET_METAL_BEND_IMPRINT_FAILED"`)
+* `SheetMetalBendImprintFailed` (value: `"SHEET_METAL_BEND_IMPRINT_FAILED"`)
 
-* `GBTErrorStringEnumSheetMetalBendBadDecomposition` (value: `"SHEET_METAL_BEND_BAD_DECOMPOSITION"`)
+* `SheetMetalBendBadDecomposition` (value: `"SHEET_METAL_BEND_BAD_DECOMPOSITION"`)
 
-* `GBTErrorStringEnumSheetMetalBendLinePerpendicularToFace` (value: `"SHEET_METAL_BEND_LINE_PERPENDICULAR_TO_FACE"`)
+* `SheetMetalBendLinePerpendicularToFace` (value: `"SHEET_METAL_BEND_LINE_PERPENDICULAR_TO_FACE"`)
 
-* `GBTErrorStringEnumSweepSelectDirection` (value: `"SWEEP_SELECT_DIRECTION"`)
+* `SweepSelectDirection` (value: `"SWEEP_SELECT_DIRECTION"`)
 
-* `GBTErrorStringEnumSheetMetalBendRollFailed` (value: `"SHEET_METAL_BEND_ROLL_FAILED"`)
+* `SheetMetalBendRollFailed` (value: `"SHEET_METAL_BEND_ROLL_FAILED"`)
 
-* `GBTErrorStringEnumSheetMetalBothSidesConnected` (value: `"SHEET_METAL_BOTH_SIDES_CONNECTED"`)
+* `SheetMetalBothSidesConnected` (value: `"SHEET_METAL_BOTH_SIDES_CONNECTED"`)
 
-* `GBTErrorStringEnumSheetMetalCannotBendButts` (value: `"SHEET_METAL_CANNOT_BEND_BUTTS"`)
+* `SheetMetalCannotBendButts` (value: `"SHEET_METAL_CANNOT_BEND_BUTTS"`)
 
-* `GBTErrorStringEnumSheetMetalBendCollision` (value: `"SHEET_METAL_BEND_COLLISION"`)
+* `SheetMetalBendCollision` (value: `"SHEET_METAL_BEND_COLLISION"`)
 
-* `GBTErrorStringEnumMissingParameterReference` (value: `"MISSING_PARAMETER_REFERENCE"`)
+* `MissingParameterReference` (value: `"MISSING_PARAMETER_REFERENCE"`)
 
-* `GBTErrorStringEnumMissingImageParameterReference` (value: `"MISSING_IMAGE_PARAMETER_REFERENCE"`)
+* `MissingImageParameterReference` (value: `"MISSING_IMAGE_PARAMETER_REFERENCE"`)
 
-* `GBTErrorStringEnumBodyDraftSelectEdges` (value: `"BODY_DRAFT_SELECT_EDGES"`)
+* `BodyDraftSelectEdges` (value: `"BODY_DRAFT_SELECT_EDGES"`)
 
-* `GBTErrorStringEnumBodyDraftSelectFaces` (value: `"BODY_DRAFT_SELECT_FACES"`)
+* `BodyDraftSelectFaces` (value: `"BODY_DRAFT_SELECT_FACES"`)
 
-* `GBTErrorStringEnumBodyDraftSelectParts` (value: `"BODY_DRAFT_SELECT_PARTS"`)
+* `BodyDraftSelectParts` (value: `"BODY_DRAFT_SELECT_PARTS"`)
 
-* `GBTErrorStringEnumSplitEdgeInvalidSurface` (value: `"SPLIT_EDGE_INVALID_SURFACE"`)
+* `SplitEdgeInvalidSurface` (value: `"SPLIT_EDGE_INVALID_SURFACE"`)
 
-* `GBTErrorStringEnumBodyDraftNoEffect` (value: `"BODY_DRAFT_NO_EFFECT"`)
+* `BodyDraftNoEffect` (value: `"BODY_DRAFT_NO_EFFECT"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceSelectEdges` (value: `"OFFSET_CURVE_ON_FACE_SELECT_EDGES"`)
+* `OffsetCurveOnFaceSelectEdges` (value: `"OFFSET_CURVE_ON_FACE_SELECT_EDGES"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceWireEdges` (value: `"OFFSET_CURVE_ON_FACE_WIRE_EDGES"`)
+* `OffsetCurveOnFaceWireEdges` (value: `"OFFSET_CURVE_ON_FACE_WIRE_EDGES"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceInvalidTargets` (value: `"OFFSET_CURVE_ON_FACE_INVALID_TARGETS"`)
+* `OffsetCurveOnFaceInvalidTargets` (value: `"OFFSET_CURVE_ON_FACE_INVALID_TARGETS"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceInvalidDistance` (value: `"OFFSET_CURVE_ON_FACE_INVALID_DISTANCE"`)
+* `OffsetCurveOnFaceInvalidDistance` (value: `"OFFSET_CURVE_ON_FACE_INVALID_DISTANCE"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceImprintNoExtend` (value: `"OFFSET_CURVE_ON_FACE_IMPRINT_NO_EXTEND"`)
+* `OffsetCurveOnFaceImprintNoExtend` (value: `"OFFSET_CURVE_ON_FACE_IMPRINT_NO_EXTEND"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceFailedToCreateChain` (value: `"OFFSET_CURVE_ON_FACE_FAILED_TO_CREATE_CHAIN"`)
+* `OffsetCurveOnFaceFailedToCreateChain` (value: `"OFFSET_CURVE_ON_FACE_FAILED_TO_CREATE_CHAIN"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceBranchingChain` (value: `"OFFSET_CURVE_ON_FACE_BRANCHING_CHAIN"`)
+* `OffsetCurveOnFaceBranchingChain` (value: `"OFFSET_CURVE_ON_FACE_BRANCHING_CHAIN"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceFailed` (value: `"OFFSET_CURVE_ON_FACE_FAILED"`)
+* `OffsetCurveOnFaceFailed` (value: `"OFFSET_CURVE_ON_FACE_FAILED"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceBadDirection` (value: `"OFFSET_CURVE_ON_FACE_BAD_DIRECTION"`)
+* `OffsetCurveOnFaceBadDirection` (value: `"OFFSET_CURVE_ON_FACE_BAD_DIRECTION"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceGeodesicOutside` (value: `"OFFSET_CURVE_ON_FACE_GEODESIC_OUTSIDE"`)
+* `OffsetCurveOnFaceGeodesicOutside` (value: `"OFFSET_CURVE_ON_FACE_GEODESIC_OUTSIDE"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceExtensionFailed` (value: `"OFFSET_CURVE_ON_FACE_EXTENSION_FAILED"`)
+* `OffsetCurveOnFaceExtensionFailed` (value: `"OFFSET_CURVE_ON_FACE_EXTENSION_FAILED"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceChainYieldedNoResult` (value: `"OFFSET_CURVE_ON_FACE_CHAIN_YIELDED_NO_RESULT"`)
+* `OffsetCurveOnFaceChainYieldedNoResult` (value: `"OFFSET_CURVE_ON_FACE_CHAIN_YIELDED_NO_RESULT"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceNoResult` (value: `"OFFSET_CURVE_ON_FACE_NO_RESULT"`)
+* `OffsetCurveOnFaceNoResult` (value: `"OFFSET_CURVE_ON_FACE_NO_RESULT"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceInputWithNoTargets` (value: `"OFFSET_CURVE_ON_FACE_INPUT_WITH_NO_TARGETS"`)
+* `OffsetCurveOnFaceInputWithNoTargets` (value: `"OFFSET_CURVE_ON_FACE_INPUT_WITH_NO_TARGETS"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceEuclideanSidePickFail` (value: `"OFFSET_CURVE_ON_FACE_EUCLIDEAN_SIDE_PICK_FAIL"`)
+* `OffsetCurveOnFaceEuclideanSidePickFail` (value: `"OFFSET_CURVE_ON_FACE_EUCLIDEAN_SIDE_PICK_FAIL"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceScarEdge` (value: `"OFFSET_CURVE_ON_FACE_SCAR_EDGE"`)
+* `OffsetCurveOnFaceScarEdge` (value: `"OFFSET_CURVE_ON_FACE_SCAR_EDGE"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceClosedCurveNoTrim` (value: `"OFFSET_CURVE_ON_FACE_CLOSED_CURVE_NO_TRIM"`)
+* `OffsetCurveOnFaceClosedCurveNoTrim` (value: `"OFFSET_CURVE_ON_FACE_CLOSED_CURVE_NO_TRIM"`)
 
-* `GBTErrorStringEnumOffsetCurveOnFaceSideDiffFail` (value: `"OFFSET_CURVE_ON_FACE_SIDE_DIFF_FAIL"`)
+* `OffsetCurveOnFaceSideDiffFail` (value: `"OFFSET_CURVE_ON_FACE_SIDE_DIFF_FAIL"`)
 
-* `GBTErrorStringEnumAngleControlParallelToBend` (value: `"ANGLE_CONTROL_PARALLEL_TO_BEND"`)
+* `AngleControlParallelToBend` (value: `"ANGLE_CONTROL_PARALLEL_TO_BEND"`)
 
-* `GBTErrorStringEnumBodyDraftPartingSurfaceSmall` (value: `"BODY_DRAFT_PARTING_SURFACE_SMALL"`)
+* `BodyDraftPartingSurfaceSmall` (value: `"BODY_DRAFT_PARTING_SURFACE_SMALL"`)
 
-* `GBTErrorStringEnumMassPropertyMateConnectorZAxisNotNormal` (value: `"MASS_PROPERTY_MATE_CONNECTOR_Z_AXIS_NOT_NORMAL"`)
+* `MassPropertyMateConnectorZAxisNotNormal` (value: `"MASS_PROPERTY_MATE_CONNECTOR_Z_AXIS_NOT_NORMAL"`)
 
-* `GBTErrorStringEnumDerivedMateConnectorIndexOutOfBounds` (value: `"DERIVED_MATE_CONNECTOR_INDEX_OUT_OF_BOUNDS"`)
+* `DerivedMateConnectorIndexOutOfBounds` (value: `"DERIVED_MATE_CONNECTOR_INDEX_OUT_OF_BOUNDS"`)
 
-* `GBTErrorStringEnumDerivedMateConnectorNoLongerValid` (value: `"DERIVED_MATE_CONNECTOR_NO_LONGER_VALID"`)
+* `DerivedMateConnectorNoLongerValid` (value: `"DERIVED_MATE_CONNECTOR_NO_LONGER_VALID"`)
 
-* `GBTErrorStringEnumDerivedMateConnectorReset` (value: `"DERIVED_MATE_CONNECTOR_RESET"`)
+* `DerivedMateConnectorReset` (value: `"DERIVED_MATE_CONNECTOR_RESET"`)
 
-* `GBTErrorStringEnumDerivedNoMateConnectors` (value: `"DERIVED_NO_MATE_CONNECTORS"`)
+* `DerivedNoMateConnectors` (value: `"DERIVED_NO_MATE_CONNECTORS"`)
 
-* `GBTErrorStringEnumTessellatedLoftError` (value: `"TESSELLATED_LOFT_ERROR"`)
+* `TessellatedLoftError` (value: `"TESSELLATED_LOFT_ERROR"`)
 
-* `GBTErrorStringEnumBodyDraftInvalidFaceReference` (value: `"BODY_DRAFT_INVALID_FACE_REFERENCE"`)
+* `BodyDraftInvalidFaceReference` (value: `"BODY_DRAFT_INVALID_FACE_REFERENCE"`)
 
-* `GBTErrorStringEnumBodyDraftInvalidEdgeReference` (value: `"BODY_DRAFT_INVALID_EDGE_REFERENCE"`)
+* `BodyDraftInvalidEdgeReference` (value: `"BODY_DRAFT_INVALID_EDGE_REFERENCE"`)
 
-* `GBTErrorStringEnumBodyDraftInvalidPartReference` (value: `"BODY_DRAFT_INVALID_PART_REFERENCE"`)
+* `BodyDraftInvalidPartReference` (value: `"BODY_DRAFT_INVALID_PART_REFERENCE"`)
 
-* `GBTErrorStringEnumHoleCannotDetermineTappedBody` (value: `"HOLE_CANNOT_DETERMINE_TAPPED_BODY"`)
+* `HoleCannotDetermineTappedBody` (value: `"HOLE_CANNOT_DETERMINE_TAPPED_BODY"`)
 
-* `GBTErrorStringEnumHoleParamsOverriddenInfo` (value: `"HOLE_PARAMS_OVERRIDDEN_INFO"`)
+* `HoleParamsOverriddenInfo` (value: `"HOLE_PARAMS_OVERRIDDEN_INFO"`)
 
-* `GBTErrorStringEnumHoleTapDiaTooLargeOrEqual` (value: `"HOLE_TAP_DIA_TOO_LARGE_OR_EQUAL"`)
+* `HoleTapDiaTooLargeOrEqual` (value: `"HOLE_TAP_DIA_TOO_LARGE_OR_EQUAL"`)
 
-* `GBTErrorStringEnumSplitAsModificationMultipleResults` (value: `"SPLIT_AS_MODIFICATION_MULTIPLE_RESULTS"`)
+* `SplitAsModificationMultipleResults` (value: `"SPLIT_AS_MODIFICATION_MULTIPLE_RESULTS"`)
 
-* `GBTErrorStringEnumFormedTagFormNoFeaturePattern` (value: `"FORMED_TAG_FORM_NO_FEATURE_PATTERN"`)
+* `FormedTagFormNoFeaturePattern` (value: `"FORMED_TAG_FORM_NO_FEATURE_PATTERN"`)
 
-* `GBTErrorStringEnumFormedTagFormSelectDifferentParts` (value: `"FORMED_TAG_FORM_SELECT_DIFFERENT_PARTS"`)
+* `FormedTagFormSelectDifferentParts` (value: `"FORMED_TAG_FORM_SELECT_DIFFERENT_PARTS"`)
 
-* `GBTErrorStringEnumFormedTagFormSelectSketch` (value: `"FORMED_TAG_FORM_SELECT_SKETCH"`)
+* `FormedTagFormSelectSketch` (value: `"FORMED_TAG_FORM_SELECT_SKETCH"`)
 
-* `GBTErrorStringEnumFormedTagFormSelectSomething` (value: `"FORMED_TAG_FORM_SELECT_SOMETHING"`)
+* `FormedTagFormSelectSomething` (value: `"FORMED_TAG_FORM_SELECT_SOMETHING"`)
 
-* `GBTErrorStringEnumIsoparametricCurveSelectFace` (value: `"ISOPARAMETRIC_CURVE_SELECT_FACE"`)
+* `IsoparametricCurveSelectFace` (value: `"ISOPARAMETRIC_CURVE_SELECT_FACE"`)
 
-* `GBTErrorStringEnumIsoparametricCurveSelectPoint` (value: `"ISOPARAMETRIC_CURVE_SELECT_POINT"`)
+* `IsoparametricCurveSelectPoint` (value: `"ISOPARAMETRIC_CURVE_SELECT_POINT"`)
 
-* `GBTErrorStringEnumIsoparametricCurveSelectPosition` (value: `"ISOPARAMETRIC_CURVE_SELECT_POSITION"`)
+* `IsoparametricCurveSelectPosition` (value: `"ISOPARAMETRIC_CURVE_SELECT_POSITION"`)
 
-* `GBTErrorStringEnumIsoparametricCurvePointNotOnFace` (value: `"ISOPARAMETRIC_CURVE_POINT_NOT_ON_FACE"`)
+* `IsoparametricCurvePointNotOnFace` (value: `"ISOPARAMETRIC_CURVE_POINT_NOT_ON_FACE"`)
 
-* `GBTErrorStringEnumThinSweep3DProfileTrimWarning` (value: `"THIN_SWEEP_3D_PROFILE_TRIM_WARNING"`)
+* `ThinSweep3DProfileTrimWarning` (value: `"THIN_SWEEP_3D_PROFILE_TRIM_WARNING"`)
 
-* `GBTErrorStringEnumThinSweepFailedToFindTrimPlanesWarning` (value: `"THIN_SWEEP_FAILED_TO_FIND_TRIM_PLANES_WARNING"`)
+* `ThinSweepFailedToFindTrimPlanesWarning` (value: `"THIN_SWEEP_FAILED_TO_FIND_TRIM_PLANES_WARNING"`)
 
-* `GBTErrorStringEnumThinSweepTrimFailed` (value: `"THIN_SWEEP_TRIM_FAILED"`)
+* `ThinSweepTrimFailed` (value: `"THIN_SWEEP_TRIM_FAILED"`)
 
-* `GBTErrorStringEnumIsoparametricCurveSelectSingleFace` (value: `"ISOPARAMETRIC_CURVE_SELECT_SINGLE_FACE"`)
+* `IsoparametricCurveSelectSingleFace` (value: `"ISOPARAMETRIC_CURVE_SELECT_SINGLE_FACE"`)
 
-* `GBTErrorStringEnumHoleFastenerFitIsNotApplicable` (value: `"HOLE_FASTENER_FIT_IS_NOT_APPLICABLE"`)
+* `HoleFastenerFitIsNotApplicable` (value: `"HOLE_FASTENER_FIT_IS_NOT_APPLICABLE"`)
 
-* `GBTErrorStringEnumPatternSkippedInstancesSeedIndex` (value: `"PATTERN_SKIPPED_INSTANCES_SEED_INDEX"`)
+* `PatternSkippedInstancesSeedIndex` (value: `"PATTERN_SKIPPED_INSTANCES_SEED_INDEX"`)
 
-* `GBTErrorStringEnumPatternSkippedInstancesOutOfRangeIndex` (value: `"PATTERN_SKIPPED_INSTANCES_OUT_OF_RANGE_INDEX"`)
+* `PatternSkippedInstancesOutOfRangeIndex` (value: `"PATTERN_SKIPPED_INSTANCES_OUT_OF_RANGE_INDEX"`)
 
-* `GBTErrorStringEnumFormedSelectLocation` (value: `"FORMED_SELECT_LOCATION"`)
+* `FormedSelectLocation` (value: `"FORMED_SELECT_LOCATION"`)
 
-* `GBTErrorStringEnumFormedNoPartStudioSelected` (value: `"FORMED_NO_PART_STUDIO_SELECTED"`)
+* `FormedNoPartStudioSelected` (value: `"FORMED_NO_PART_STUDIO_SELECTED"`)
 
-* `GBTErrorStringEnumFormedSelectLocationOnActiveFace` (value: `"FORMED_SELECT_LOCATION_ON_ACTIVE_FACE"`)
+* `FormedSelectLocationOnActiveFace` (value: `"FORMED_SELECT_LOCATION_ON_ACTIVE_FACE"`)
 
-* `GBTErrorStringEnumFormedLocationOnMultipleFaces` (value: `"FORMED_LOCATION_ON_MULTIPLE_FACES"`)
+* `FormedLocationOnMultipleFaces` (value: `"FORMED_LOCATION_ON_MULTIPLE_FACES"`)
 
-* `GBTErrorStringEnumFormedNotOnHoleFormedFace` (value: `"FORMED_NOT_ON_HOLE_FORMED_FACE"`)
+* `FormedNotOnHoleFormedFace` (value: `"FORMED_NOT_ON_HOLE_FORMED_FACE"`)
 
-* `GBTErrorStringEnumThinSweepThickenFailed` (value: `"THIN_SWEEP_THICKEN_FAILED"`)
+* `ThinSweepThickenFailed` (value: `"THIN_SWEEP_THICKEN_FAILED"`)
 
-* `GBTErrorStringEnumDerivedNoParts` (value: `"DERIVED_NO_PARTS"`)
+* `DerivedNoParts` (value: `"DERIVED_NO_PARTS"`)
 
-* `GBTErrorStringEnumDerivedNoInstancing` (value: `"DERIVED_NO_INSTANCING"`)
+* `DerivedNoInstancing` (value: `"DERIVED_NO_INSTANCING"`)
 
-* `GBTErrorStringEnumDerivedNoSameSource` (value: `"DERIVED_NO_SAME_SOURCE"`)
+* `DerivedNoSameSource` (value: `"DERIVED_NO_SAME_SOURCE"`)
 
-* `GBTErrorStringEnumDerivedFullFeaturePattern` (value: `"DERIVED_FULL_FEATURE_PATTERN"`)
+* `DerivedFullFeaturePattern` (value: `"DERIVED_FULL_FEATURE_PATTERN"`)
 
-* `GBTErrorStringEnumThinLoft3DProfileTrimWarning` (value: `"THIN_LOFT_3D_PROFILE_TRIM_WARNING"`)
+* `ThinLoft3DProfileTrimWarning` (value: `"THIN_LOFT_3D_PROFILE_TRIM_WARNING"`)
 
-* `GBTErrorStringEnumThinLoftFailedToFindTrimPlanesWarning` (value: `"THIN_LOFT_FAILED_TO_FIND_TRIM_PLANES_WARNING"`)
+* `ThinLoftFailedToFindTrimPlanesWarning` (value: `"THIN_LOFT_FAILED_TO_FIND_TRIM_PLANES_WARNING"`)
 
-* `GBTErrorStringEnumThinLoftThickenFailed` (value: `"THIN_LOFT_THICKEN_FAILED"`)
+* `ThinLoftThickenFailed` (value: `"THIN_LOFT_THICKEN_FAILED"`)
 
-* `GBTErrorStringEnumFgsModalSimulationMaximumRigidModesReached` (value: `"FGS_MODAL_SIMULATION_MAXIMUM_RIGID_MODES_REACHED"`)
+* `FgsModalSimulationMaximumRigidModesReached` (value: `"FGS_MODAL_SIMULATION_MAXIMUM_RIGID_MODES_REACHED"`)
 
-* `GBTErrorStringEnumAssemblyMirrorPlaneError` (value: `"ASSEMBLY_MIRROR_PLANE_ERROR"`)
+* `AssemblyMirrorPlaneError` (value: `"ASSEMBLY_MIRROR_PLANE_ERROR"`)
 
-* `GBTErrorStringEnumPolylineConsecutiveEqualPoints` (value: `"POLYLINE_CONSECUTIVE_EQUAL_POINTS"`)
+* `PolylineConsecutiveEqualPoints` (value: `"POLYLINE_CONSECUTIVE_EQUAL_POINTS"`)
 
-* `GBTErrorStringEnumPolylineZeroAngle` (value: `"POLYLINE_ZERO_ANGLE"`)
+* `PolylineZeroAngle` (value: `"POLYLINE_ZERO_ANGLE"`)
 
-* `GBTErrorStringEnumPolylineBendRadiiInvalidSize` (value: `"POLYLINE_BEND_RADII_INVALID_SIZE"`)
+* `PolylineBendRadiiInvalidSize` (value: `"POLYLINE_BEND_RADII_INVALID_SIZE"`)
 
-* `GBTErrorStringEnumPolylineInvalidBend` (value: `"POLYLINE_INVALID_BEND"`)
+* `PolylineInvalidBend` (value: `"POLYLINE_INVALID_BEND"`)
 
-* `GBTErrorStringEnumSketchMissingLocalReference` (value: `"SKETCH_MISSING_LOCAL_REFERENCE"`)
+* `SketchMissingLocalReference` (value: `"SKETCH_MISSING_LOCAL_REFERENCE"`)
 
-* `GBTErrorStringEnumSketchDimensionMissingParameter` (value: `"SKETCH_DIMENSION_MISSING_PARAMETER"`)
+* `SketchDimensionMissingParameter` (value: `"SKETCH_DIMENSION_MISSING_PARAMETER"`)
 
-* `GBTErrorStringEnumMateconnectorQuerySecondaryAxisConflict` (value: `"MATECONNECTOR_QUERY_SECONDARY_AXIS_CONFLICT"`)
+* `MateconnectorQuerySecondaryAxisConflict` (value: `"MATECONNECTOR_QUERY_SECONDARY_AXIS_CONFLICT"`)
 
-* `GBTErrorStringEnumMateconnectorNormalResolutionFailed` (value: `"MATECONNECTOR_NORMAL_RESOLUTION_FAILED"`)
+* `MateconnectorNormalResolutionFailed` (value: `"MATECONNECTOR_NORMAL_RESOLUTION_FAILED"`)
 
-* `GBTErrorStringEnumLoftPlanarGuideNotFound` (value: `"LOFT_PLANAR_GUIDE_NOT_FOUND"`)
+* `LoftPlanarGuideNotFound` (value: `"LOFT_PLANAR_GUIDE_NOT_FOUND"`)
 
-* `GBTErrorStringEnumPartStudioDoesNotExistInMoment` (value: `"PART_STUDIO_DOES_NOT_EXIST_IN_MOMENT"`)
+* `PartStudioDoesNotExistInMoment` (value: `"PART_STUDIO_DOES_NOT_EXIST_IN_MOMENT"`)
 
-* `GBTErrorStringEnumSomeBodiesWereRemovedFromExport` (value: `"SOME_BODIES_WERE_REMOVED_FROM_EXPORT"`)
+* `SomeBodiesWereRemovedFromExport` (value: `"SOME_BODIES_WERE_REMOVED_FROM_EXPORT"`)
 
-* `GBTErrorStringEnumAllBodiesWereRemovedFromExport` (value: `"ALL_BODIES_WERE_REMOVED_FROM_EXPORT"`)
+* `AllBodiesWereRemovedFromExport` (value: `"ALL_BODIES_WERE_REMOVED_FROM_EXPORT"`)
 
-* `GBTErrorStringEnumConfigNoParametersFound` (value: `"CONFIG_NO_PARAMETERS_FOUND"`)
+* `ConfigNoParametersFound` (value: `"CONFIG_NO_PARAMETERS_FOUND"`)
 
-* `GBTErrorStringEnumConfigIncorrectParameterType` (value: `"CONFIG_INCORRECT_PARAMETER_TYPE"`)
+* `ConfigIncorrectParameterType` (value: `"CONFIG_INCORRECT_PARAMETER_TYPE"`)
 
-* `GBTErrorStringEnumConfigTooManyParameters` (value: `"CONFIG_TOO_MANY_PARAMETERS"`)
+* `ConfigTooManyParameters` (value: `"CONFIG_TOO_MANY_PARAMETERS"`)
 
-* `GBTErrorStringEnumReferenceRepairMissingConfiguration` (value: `"REFERENCE_REPAIR_MISSING_CONFIGURATION"`)
+* `ReferenceRepairMissingConfiguration` (value: `"REFERENCE_REPAIR_MISSING_CONFIGURATION"`)
 
-* `GBTErrorStringEnumSketchCannotMake2PointsBezier` (value: `"SKETCH_CANNOT_MAKE_2_POINTS_BEZIER"`)
+* `SketchCannotMake2PointsBezier` (value: `"SKETCH_CANNOT_MAKE_2_POINTS_BEZIER"`)
 
-* `GBTErrorStringEnumPartInstanceSelectedInMultipleGenerativeDesigns` (value: `"PART_INSTANCE_SELECTED_IN_MULTIPLE_GENERATIVE_DESIGNS"`)
+* `PartInstanceSelectedInMultipleGenerativeDesigns` (value: `"PART_INSTANCE_SELECTED_IN_MULTIPLE_GENERATIVE_DESIGNS"`)
 
-* `GBTErrorStringEnumCurvePatternLockFacesIntersectionFailed` (value: `"CURVE_PATTERN_LOCK_FACES_INTERSECTION_FAILED"`)
+* `CurvePatternLockFacesIntersectionFailed` (value: `"CURVE_PATTERN_LOCK_FACES_INTERSECTION_FAILED"`)
 
-* `GBTErrorStringEnumSimulationMaterialLacksRequiredPropertyDensity` (value: `"SIMULATION_MATERIAL_LACKS_REQUIRED_PROPERTY_DENSITY"`)
+* `SimulationMaterialLacksRequiredPropertyDensity` (value: `"SIMULATION_MATERIAL_LACKS_REQUIRED_PROPERTY_DENSITY"`)
 
-* `GBTErrorStringEnumSimulationMaterialLacksRequiredPropertyPoissonsRatio` (value: `"SIMULATION_MATERIAL_LACKS_REQUIRED_PROPERTY_POISSONS_RATIO"`)
+* `SimulationMaterialLacksRequiredPropertyPoissonsRatio` (value: `"SIMULATION_MATERIAL_LACKS_REQUIRED_PROPERTY_POISSONS_RATIO"`)
 
-* `GBTErrorStringEnumSimulationMaterialLacksRequiredPropertyYoungsModulus` (value: `"SIMULATION_MATERIAL_LACKS_REQUIRED_PROPERTY_YOUNGS_MODULUS"`)
+* `SimulationMaterialLacksRequiredPropertyYoungsModulus` (value: `"SIMULATION_MATERIAL_LACKS_REQUIRED_PROPERTY_YOUNGS_MODULUS"`)
 
-* `GBTErrorStringEnumSimulationMaterialLacksRequiredPropertyTensileYieldStrength` (value: `"SIMULATION_MATERIAL_LACKS_REQUIRED_PROPERTY_TENSILE_YIELD_STRENGTH"`)
+* `SimulationMaterialLacksRequiredPropertyTensileYieldStrength` (value: `"SIMULATION_MATERIAL_LACKS_REQUIRED_PROPERTY_TENSILE_YIELD_STRENGTH"`)
 
-* `GBTErrorStringEnumSimulationAssemblyHasUnsupportedMates` (value: `"SIMULATION_ASSEMBLY_HAS_UNSUPPORTED_MATES"`)
+* `SimulationAssemblyHasUnsupportedMates` (value: `"SIMULATION_ASSEMBLY_HAS_UNSUPPORTED_MATES"`)
 
-* `GBTErrorStringEnumAssemblyNamedPositionsOutsideMateLimit` (value: `"ASSEMBLY_NAMED_POSITIONS_OUTSIDE_MATE_LIMIT"`)
+* `AssemblyNamedPositionsOutsideMateLimit` (value: `"ASSEMBLY_NAMED_POSITIONS_OUTSIDE_MATE_LIMIT"`)
 
-* `GBTErrorStringEnumAssemblyNamedPositionsSubassemblyOutsideMateLimit` (value: `"ASSEMBLY_NAMED_POSITIONS_SUBASSEMBLY_OUTSIDE_MATE_LIMIT"`)
+* `AssemblyNamedPositionsSubassemblyOutsideMateLimit` (value: `"ASSEMBLY_NAMED_POSITIONS_SUBASSEMBLY_OUTSIDE_MATE_LIMIT"`)
 
-* `GBTErrorStringEnumGenerativeRunWasCanceled` (value: `"GENERATIVE_RUN_WAS_CANCELED"`)
+* `GenerativeRunWasCanceled` (value: `"GENERATIVE_RUN_WAS_CANCELED"`)
 
-* `GBTErrorStringEnumSketchChamferInvalidPoint` (value: `"SKETCH_CHAMFER_INVALID_POINT"`)
+* `SketchChamferInvalidPoint` (value: `"SKETCH_CHAMFER_INVALID_POINT"`)
 
-* `GBTErrorStringEnumSketchChamferParallel` (value: `"SKETCH_CHAMFER_PARALLEL"`)
+* `SketchChamferParallel` (value: `"SKETCH_CHAMFER_PARALLEL"`)
 
-* `GBTErrorStringEnumSketchChamferFail` (value: `"SKETCH_CHAMFER_FAIL"`)
+* `SketchChamferFail` (value: `"SKETCH_CHAMFER_FAIL"`)
 
-* `GBTErrorStringEnumSketchChamferInvalidInputs` (value: `"SKETCH_CHAMFER_INVALID_INPUTS"`)
+* `SketchChamferInvalidInputs` (value: `"SKETCH_CHAMFER_INVALID_INPUTS"`)
 
-* `GBTErrorStringEnumAssemblyFeatureMissingSelection` (value: `"ASSEMBLY_FEATURE_MISSING_SELECTION"`)
+* `AssemblyFeatureMissingSelection` (value: `"ASSEMBLY_FEATURE_MISSING_SELECTION"`)
 
-* `GBTErrorStringEnumAssemblyNamedPositionsLockedSubassemblyFound` (value: `"ASSEMBLY_NAMED_POSITIONS_LOCKED_SUBASSEMBLY_FOUND"`)
+* `AssemblyNamedPositionsLockedSubassemblyFound` (value: `"ASSEMBLY_NAMED_POSITIONS_LOCKED_SUBASSEMBLY_FOUND"`)
 
-* `GBTErrorStringEnumCurvePatternMissingFaceSelection` (value: `"CURVE_PATTERN_MISSING_FACE_SELECTION"`)
+* `CurvePatternMissingFaceSelection` (value: `"CURVE_PATTERN_MISSING_FACE_SELECTION"`)
 
-* `GBTErrorStringEnumTlConnectionOnAllProfiles` (value: `"TL_CONNECTION_ON_ALL_PROFILES"`)
+* `TlConnectionOnAllProfiles` (value: `"TL_CONNECTION_ON_ALL_PROFILES"`)
 
-* `GBTErrorStringEnumTlFailed` (value: `"TL_FAILED"`)
+* `TlFailed` (value: `"TL_FAILED"`)
 
-* `GBTErrorStringEnumTlConnectionsCross` (value: `"TL_CONNECTIONS_CROSS"`)
+* `TlConnectionsCross` (value: `"TL_CONNECTIONS_CROSS"`)
 
-* `GBTErrorStringEnumTlSelectProfiles` (value: `"TL_SELECT_PROFILES"`)
+* `TlSelectProfiles` (value: `"TL_SELECT_PROFILES"`)
 
-* `GBTErrorStringEnumTlTwoProfiles` (value: `"TL_TWO_PROFILES"`)
+* `TlTwoProfiles` (value: `"TL_TWO_PROFILES"`)
 
-* `GBTErrorStringEnumTlConsecutiveAcorns` (value: `"TL_CONSECUTIVE_ACORNS"`)
+* `TlConsecutiveAcorns` (value: `"TL_CONSECUTIVE_ACORNS"`)
 
-* `GBTErrorStringEnumTlMixedProfiles` (value: `"TL_MIXED_PROFILES"`)
+* `TlMixedProfiles` (value: `"TL_MIXED_PROFILES"`)
 
-* `GBTErrorStringEnumTlMixedProfileTopology` (value: `"TL_MIXED_PROFILE_TOPOLOGY"`)
+* `TlMixedProfileTopology` (value: `"TL_MIXED_PROFILE_TOPOLOGY"`)
 
-* `GBTErrorStringEnumTlFailedToCreateProfiles` (value: `"TL_FAILED_TO_CREATE_PROFILES"`)
+* `TlFailedToCreateProfiles` (value: `"TL_FAILED_TO_CREATE_PROFILES"`)
 
-* `GBTErrorStringEnumTlConnectionNotOnProfile` (value: `"TL_CONNECTION_NOT_ON_PROFILE"`)
+* `TlConnectionNotOnProfile` (value: `"TL_CONNECTION_NOT_ON_PROFILE"`)
 
-* `GBTErrorStringEnumSheetMetalFilletNoVariable` (value: `"SHEET_METAL_FILLET_NO_VARIABLE"`)
+* `SheetMetalFilletNoVariable` (value: `"SHEET_METAL_FILLET_NO_VARIABLE"`)
 
-* `GBTErrorStringEnumPartiallyInvalidInput` (value: `"PARTIALLY_INVALID_INPUT"`)
+* `PartiallyInvalidInput` (value: `"PARTIALLY_INVALID_INPUT"`)
 
-* `GBTErrorStringEnumSketchBezierDegreeDimNotFound` (value: `"SKETCH_BEZIER_DEGREE_DIM_NOT_FOUND"`)
+* `SketchBezierDegreeDimNotFound` (value: `"SKETCH_BEZIER_DEGREE_DIM_NOT_FOUND"`)
 
-* `GBTErrorStringEnumInvalidBezierDegree` (value: `"INVALID_BEZIER_DEGREE"`)
+* `InvalidBezierDegree` (value: `"INVALID_BEZIER_DEGREE"`)
 
-* `GBTErrorStringEnumCannotDeleteBezierDegreeDimension` (value: `"CANNOT_DELETE_BEZIER_DEGREE_DIMENSION"`)
+* `CannotDeleteBezierDegreeDimension` (value: `"CANNOT_DELETE_BEZIER_DEGREE_DIMENSION"`)
 
-* `GBTErrorStringEnumDerivedNoInstancingSm` (value: `"DERIVED_NO_INSTANCING_SM"`)
+* `DerivedNoInstancingSm` (value: `"DERIVED_NO_INSTANCING_SM"`)
 
-* `GBTErrorStringEnumDerivedSmAutoInsert` (value: `"DERIVED_SM_AUTO_INSERT"`)
+* `DerivedSmAutoInsert` (value: `"DERIVED_SM_AUTO_INSERT"`)
 
-* `GBTErrorStringEnumAssemblyPatternWrongReferenceWasSelected` (value: `"ASSEMBLY_PATTERN_WRONG_REFERENCE_WAS_SELECTED"`)
+* `AssemblyPatternWrongReferenceWasSelected` (value: `"ASSEMBLY_PATTERN_WRONG_REFERENCE_WAS_SELECTED"`)
 
-* `GBTErrorStringEnumAssemblyPatternReferenceCouldNotBeFound` (value: `"ASSEMBLY_PATTERN_REFERENCE_COULD_NOT_BE_FOUND"`)
+* `AssemblyPatternReferenceCouldNotBeFound` (value: `"ASSEMBLY_PATTERN_REFERENCE_COULD_NOT_BE_FOUND"`)
 
-* `GBTErrorStringEnumDerivedNoActiveSmComposite` (value: `"DERIVED_NO_ACTIVE_SM_COMPOSITE"`)
+* `DerivedNoActiveSmComposite` (value: `"DERIVED_NO_ACTIVE_SM_COMPOSITE"`)
 
-* `GBTErrorStringEnumPartialFilletInvalidBoundEntity` (value: `"PARTIAL_FILLET_INVALID_BOUND_ENTITY"`)
+* `PartialFilletInvalidBoundEntity` (value: `"PARTIAL_FILLET_INVALID_BOUND_ENTITY"`)
 
-* `GBTErrorStringEnumFgsThicknessUnclosedInput` (value: `"FGS_THICKNESS_UNCLOSED_INPUT"`)
+* `FgsThicknessUnclosedInput` (value: `"FGS_THICKNESS_UNCLOSED_INPUT"`)
 
-* `GBTErrorStringEnumFgsThicknessInternalError` (value: `"FGS_THICKNESS_INTERNAL_ERROR"`)
+* `FgsThicknessInternalError` (value: `"FGS_THICKNESS_INTERNAL_ERROR"`)
 
-* `GBTErrorStringEnumSketchSplitNoBezier` (value: `"SKETCH_SPLIT_NO_BEZIER"`)
+* `SketchSplitNoBezier` (value: `"SKETCH_SPLIT_NO_BEZIER"`)
 
-* `GBTErrorStringEnumSketchTrimNoBezier` (value: `"SKETCH_TRIM_NO_BEZIER"`)
+* `SketchTrimNoBezier` (value: `"SKETCH_TRIM_NO_BEZIER"`)
 
-* `GBTErrorStringEnumExportNoParts` (value: `"EXPORT_NO_PARTS"`)
+* `ExportNoParts` (value: `"EXPORT_NO_PARTS"`)
 
-* `GBTErrorStringEnumSheetMetalFilletOptionsUseCornerBreak` (value: `"SHEET_METAL_FILLET_OPTIONS_USE_CORNER_BREAK"`)
+* `SheetMetalFilletOptionsUseCornerBreak` (value: `"SHEET_METAL_FILLET_OPTIONS_USE_CORNER_BREAK"`)
 
-* `GBTErrorStringEnumSheetMetalChamferOptionsUseCornerBreak` (value: `"SHEET_METAL_CHAMFER_OPTIONS_USE_CORNER_BREAK"`)
+* `SheetMetalChamferOptionsUseCornerBreak` (value: `"SHEET_METAL_CHAMFER_OPTIONS_USE_CORNER_BREAK"`)
 
-* `GBTErrorStringEnumSheetMetalAttributeCornerBreakUnsupportedSelection` (value: `"SHEET_METAL_ATTRIBUTE_CORNER_BREAK_UNSUPPORTED_SELECTION"`)
+* `SheetMetalAttributeCornerBreakUnsupportedSelection` (value: `"SHEET_METAL_ATTRIBUTE_CORNER_BREAK_UNSUPPORTED_SELECTION"`)
 
-* `GBTErrorStringEnumSheetMetalUseCornerBreakInfo` (value: `"SHEET_METAL_USE_CORNER_BREAK_INFO"`)
+* `SheetMetalUseCornerBreakInfo` (value: `"SHEET_METAL_USE_CORNER_BREAK_INFO"`)
 
-* `GBTErrorStringEnumDrawingViewCorrespondenceFailed` (value: `"DRAWING_VIEW_CORRESPONDENCE_FAILED"`)
+* `DrawingViewCorrespondenceFailed` (value: `"DRAWING_VIEW_CORRESPONDENCE_FAILED"`)
 
-* `GBTErrorStringEnumEditCurveSelectPlane` (value: `"EDIT_CURVE_SELECT_PLANE"`)
+* `EditCurveSelectPlane` (value: `"EDIT_CURVE_SELECT_PLANE"`)
 
-* `GBTErrorStringEnumEditCurveSelectWire` (value: `"EDIT_CURVE_SELECT_WIRE"`)
+* `EditCurveSelectWire` (value: `"EDIT_CURVE_SELECT_WIRE"`)
 
-* `GBTErrorStringEnumEditCurveMultipleEdges` (value: `"EDIT_CURVE_MULTIPLE_EDGES"`)
+* `EditCurveMultipleEdges` (value: `"EDIT_CURVE_MULTIPLE_EDGES"`)
 
-* `GBTErrorStringEnumEditCurveDegreeTooHigh` (value: `"EDIT_CURVE_DEGREE_TOO_HIGH"`)
+* `EditCurveDegreeTooHigh` (value: `"EDIT_CURVE_DEGREE_TOO_HIGH"`)
 
-* `GBTErrorStringEnumEditCurveIndexTooLarge` (value: `"EDIT_CURVE_INDEX_TOO_LARGE"`)
+* `EditCurveIndexTooLarge` (value: `"EDIT_CURVE_INDEX_TOO_LARGE"`)
 
-* `GBTErrorStringEnumEditCurvePeriodicityChange` (value: `"EDIT_CURVE_PERIODICITY_CHANGE"`)
+* `EditCurvePeriodicityChange` (value: `"EDIT_CURVE_PERIODICITY_CHANGE"`)
 
-* `GBTErrorStringEnumEditCurveFailed` (value: `"EDIT_CURVE_FAILED"`)
+* `EditCurveFailed` (value: `"EDIT_CURVE_FAILED"`)
 
-* `GBTErrorStringEnumEditCurveNotWire` (value: `"EDIT_CURVE_NOT_WIRE"`)
+* `EditCurveNotWire` (value: `"EDIT_CURVE_NOT_WIRE"`)
 
-* `GBTErrorStringEnumEditCurveCannotEditSketchWire` (value: `"EDIT_CURVE_CANNOT_EDIT_SKETCH_WIRE"`)
+* `EditCurveCannotEditSketchWire` (value: `"EDIT_CURVE_CANNOT_EDIT_SKETCH_WIRE"`)
 
-* `GBTErrorStringEnumEditCurveLockEndsPeriodic` (value: `"EDIT_CURVE_LOCK_ENDS_PERIODIC"`)
+* `EditCurveLockEndsPeriodic` (value: `"EDIT_CURVE_LOCK_ENDS_PERIODIC"`)
 
-* `GBTErrorStringEnumEditCurveNoBestFit` (value: `"EDIT_CURVE_NO_BEST_FIT"`)
+* `EditCurveNoBestFit` (value: `"EDIT_CURVE_NO_BEST_FIT"`)
 
-* `GBTErrorStringEnumPartialFilletOffsetBoundaryTooLarge` (value: `"PARTIAL_FILLET_OFFSET_BOUNDARY_TOO_LARGE"`)
+* `PartialFilletOffsetBoundaryTooLarge` (value: `"PARTIAL_FILLET_OFFSET_BOUNDARY_TOO_LARGE"`)
 
-* `GBTErrorStringEnumAssemblyMirrorInvalidSeed` (value: `"ASSEMBLY_MIRROR_INVALID_SEED"`)
+* `AssemblyMirrorInvalidSeed` (value: `"ASSEMBLY_MIRROR_INVALID_SEED"`)
 
-* `GBTErrorStringEnumFlattenCouldNotFlatten` (value: `"FLATTEN_COULD_NOT_FLATTEN"`)
+* `FlattenCouldNotFlatten` (value: `"FLATTEN_COULD_NOT_FLATTEN"`)
 
-* `GBTErrorStringEnumFlattenSelectContiguousRegion` (value: `"FLATTEN_SELECT_CONTIGUOUS_REGION"`)
+* `FlattenSelectContiguousRegion` (value: `"FLATTEN_SELECT_CONTIGUOUS_REGION"`)
 
-* `GBTErrorStringEnumRuledSurfaceBadVertex` (value: `"RULED_SURFACE_BAD_VERTEX"`)
+* `RuledSurfaceBadVertex` (value: `"RULED_SURFACE_BAD_VERTEX"`)
 
-* `GBTErrorStringEnumEditCurveTooManyControlPoints` (value: `"EDIT_CURVE_TOO_MANY_CONTROL_POINTS"`)
+* `EditCurveTooManyControlPoints` (value: `"EDIT_CURVE_TOO_MANY_CONTROL_POINTS"`)
 
-* `GBTErrorStringEnumEditCurveNoEndOverlap` (value: `"EDIT_CURVE_NO_END_OVERLAP"`)
+* `EditCurveNoEndOverlap` (value: `"EDIT_CURVE_NO_END_OVERLAP"`)
 
-* `GBTErrorStringEnumEditCurveApproximationDegreeTooSmall` (value: `"EDIT_CURVE_APPROXIMATION_DEGREE_TOO_SMALL"`)
+* `EditCurveApproximationDegreeTooSmall` (value: `"EDIT_CURVE_APPROXIMATION_DEGREE_TOO_SMALL"`)
 
-* `GBTErrorStringEnumEditCurveClosedApproximationNoDerivative` (value: `"EDIT_CURVE_CLOSED_APPROXIMATION_NO_DERIVATIVE"`)
+* `EditCurveClosedApproximationNoDerivative` (value: `"EDIT_CURVE_CLOSED_APPROXIMATION_NO_DERIVATIVE"`)
 
-* `GBTErrorStringEnumConfigurationParameterHasBadVisibilityCondition` (value: `"CONFIGURATION_PARAMETER_HAS_BAD_VISIBILITY_CONDITION"`)
+* `ConfigurationParameterHasBadVisibilityCondition` (value: `"CONFIGURATION_PARAMETER_HAS_BAD_VISIBILITY_CONDITION"`)
 
-* `GBTErrorStringEnumSheetMetalFormedRebuildFailed` (value: `"SHEET_METAL_FORMED_REBUILD_FAILED"`)
+* `SheetMetalFormedRebuildFailed` (value: `"SHEET_METAL_FORMED_REBUILD_FAILED"`)
 
-* `GBTErrorStringEnumSketchProfileAnalysisFailed` (value: `"SKETCH_PROFILE_ANALYSIS_FAILED"`)
+* `SketchProfileAnalysisFailed` (value: `"SKETCH_PROFILE_ANALYSIS_FAILED"`)
 
-* `GBTErrorStringEnumFormedSplitPart` (value: `"FORMED_SPLIT_PART"`)
+* `FormedSplitPart` (value: `"FORMED_SPLIT_PART"`)
 
-* `GBTErrorStringEnumLoftNoDirectionForStart` (value: `"LOFT_NO_DIRECTION_FOR_START"`)
+* `LoftNoDirectionForStart` (value: `"LOFT_NO_DIRECTION_FOR_START"`)
 
-* `GBTErrorStringEnumLoftNoDirectionForEnd` (value: `"LOFT_NO_DIRECTION_FOR_END"`)
+* `LoftNoDirectionForEnd` (value: `"LOFT_NO_DIRECTION_FOR_END"`)
 
-* `GBTErrorStringEnumTooManySamples` (value: `"TOO_MANY_SAMPLES"`)
+* `TooManySamples` (value: `"TOO_MANY_SAMPLES"`)
 
-* `GBTErrorStringEnumFormedToolNotNormalToFace` (value: `"FORMED_TOOL_NOT_NORMAL_TO_FACE"`)
+* `FormedToolNotNormalToFace` (value: `"FORMED_TOOL_NOT_NORMAL_TO_FACE"`)
 
-* `GBTErrorStringEnumSheetMetalActiveModelNeeded` (value: `"SHEET_METAL_ACTIVE_MODEL_NEEDED"`)
+* `SheetMetalActiveModelNeeded` (value: `"SHEET_METAL_ACTIVE_MODEL_NEEDED"`)
 
-* `GBTErrorStringEnumSheetMetalSelectParts` (value: `"SHEET_METAL_SELECT_PARTS"`)
+* `SheetMetalSelectParts` (value: `"SHEET_METAL_SELECT_PARTS"`)
 
-* `GBTErrorStringEnumSheetMetalInactiveModelSelected` (value: `"SHEET_METAL_INACTIVE_MODEL_SELECTED"`)
+* `SheetMetalInactiveModelSelected` (value: `"SHEET_METAL_INACTIVE_MODEL_SELECTED"`)
 
-* `GBTErrorStringEnumFormedNotSameLocation` (value: `"FORMED_NOT_SAME_LOCATION"`)
+* `FormedNotSameLocation` (value: `"FORMED_NOT_SAME_LOCATION"`)
 
-* `GBTErrorStringEnumSimulationMassOverrideWillBeIgnored` (value: `"SIMULATION_MASS_OVERRIDE_WILL_BE_IGNORED"`)
+* `SimulationMassOverrideWillBeIgnored` (value: `"SIMULATION_MASS_OVERRIDE_WILL_BE_IGNORED"`)
 
-* `GBTErrorStringEnumSimulationMassOverrideAreIgnored` (value: `"SIMULATION_MASS_OVERRIDE_ARE_IGNORED"`)
+* `SimulationMassOverrideAreIgnored` (value: `"SIMULATION_MASS_OVERRIDE_ARE_IGNORED"`)
 
-* `GBTErrorStringEnumFormedTagFormSelectSketchWithWirePoint` (value: `"FORMED_TAG_FORM_SELECT_SKETCH_WITH_WIRE_POINT"`)
+* `FormedTagFormSelectSketchWithWirePoint` (value: `"FORMED_TAG_FORM_SELECT_SKETCH_WITH_WIRE_POINT"`)
 
-* `GBTErrorStringEnumFormedTagFormBodiesAlreadyTagged` (value: `"FORMED_TAG_FORM_BODIES_ALREADY_TAGGED"`)
+* `FormedTagFormBodiesAlreadyTagged` (value: `"FORMED_TAG_FORM_BODIES_ALREADY_TAGGED"`)
 
-* `GBTErrorStringEnumFormedTagFormPositivePartNotSolid` (value: `"FORMED_TAG_FORM_POSITIVE_PART_NOT_SOLID"`)
+* `FormedTagFormPositivePartNotSolid` (value: `"FORMED_TAG_FORM_POSITIVE_PART_NOT_SOLID"`)
 
-* `GBTErrorStringEnumFormedTagFormNegativePartNotSolid` (value: `"FORMED_TAG_FORM_NEGATIVE_PART_NOT_SOLID"`)
+* `FormedTagFormNegativePartNotSolid` (value: `"FORMED_TAG_FORM_NEGATIVE_PART_NOT_SOLID"`)
 
-* `GBTErrorStringEnumFormedTagFormPositivePartConsumed` (value: `"FORMED_TAG_FORM_POSITIVE_PART_CONSUMED"`)
+* `FormedTagFormPositivePartConsumed` (value: `"FORMED_TAG_FORM_POSITIVE_PART_CONSUMED"`)
 
-* `GBTErrorStringEnumFormedTagFormNegativePartConsumed` (value: `"FORMED_TAG_FORM_NEGATIVE_PART_CONSUMED"`)
+* `FormedTagFormNegativePartConsumed` (value: `"FORMED_TAG_FORM_NEGATIVE_PART_CONSUMED"`)
 
-* `GBTErrorStringEnumFormedBooleanUnionNoOp` (value: `"FORMED_BOOLEAN_UNION_NO_OP"`)
+* `FormedBooleanUnionNoOp` (value: `"FORMED_BOOLEAN_UNION_NO_OP"`)
 
-* `GBTErrorStringEnumFormedBooleanSubtractNoOp` (value: `"FORMED_BOOLEAN_SUBTRACT_NO_OP"`)
+* `FormedBooleanSubtractNoOp` (value: `"FORMED_BOOLEAN_SUBTRACT_NO_OP"`)
 
-* `GBTErrorStringEnumFormedFailedToDerive` (value: `"FORMED_FAILED_TO_DERIVE"`)
+* `FormedFailedToDerive` (value: `"FORMED_FAILED_TO_DERIVE"`)
 
-* `GBTErrorStringEnumTwoWidthMateconnectorsNeeded` (value: `"TWO_WIDTH_MATECONNECTORS_NEEDED"`)
+* `TwoWidthMateconnectorsNeeded` (value: `"TWO_WIDTH_MATECONNECTORS_NEEDED"`)
 
-* `GBTErrorStringEnumOneTabMateconnectorNeeded` (value: `"ONE_TAB_MATECONNECTOR_NEEDED"`)
+* `OneTabMateconnectorNeeded` (value: `"ONE_TAB_MATECONNECTOR_NEEDED"`)
 
-* `GBTErrorStringEnumTwoTabMateconnectorsNeeded` (value: `"TWO_TAB_MATECONNECTORS_NEEDED"`)
+* `TwoTabMateconnectorsNeeded` (value: `"TWO_TAB_MATECONNECTORS_NEEDED"`)
 
-* `GBTErrorStringEnumFormedTagFormOriginOutsideToolsBbox` (value: `"FORMED_TAG_FORM_ORIGIN_OUTSIDE_TOOLS_BBOX"`)
+* `FormedTagFormOriginOutsideToolsBbox` (value: `"FORMED_TAG_FORM_ORIGIN_OUTSIDE_TOOLS_BBOX"`)
 
-* `GBTErrorStringEnumFormedToolsIntersectCannotCut` (value: `"FORMED_TOOLS_INTERSECT_CANNOT_CUT"`)
+* `FormedToolsIntersectCannotCut` (value: `"FORMED_TOOLS_INTERSECT_CANNOT_CUT"`)
 
-* `GBTErrorStringEnumRoutingCurveAtLeastTwoDistinctPoints` (value: `"ROUTING_CURVE_AT_LEAST_TWO_DISTINCT_POINTS"`)
+* `RoutingCurveAtLeastTwoDistinctPoints` (value: `"ROUTING_CURVE_AT_LEAST_TWO_DISTINCT_POINTS"`)
 
-* `GBTErrorStringEnumRoutingCurveOrthoPathAlreadyAxisAligned` (value: `"ROUTING_CURVE_ORTHO_PATH_ALREADY_AXIS_ALIGNED"`)
+* `RoutingCurveOrthoPathAlreadyAxisAligned` (value: `"ROUTING_CURVE_ORTHO_PATH_ALREADY_AXIS_ALIGNED"`)
 
-* `GBTErrorStringEnumRoutingCurveInvalidPath` (value: `"ROUTING_CURVE_INVALID_PATH"`)
+* `RoutingCurveInvalidPath` (value: `"ROUTING_CURVE_INVALID_PATH"`)
 
-* `GBTErrorStringEnumRoutingCurveCsvInvalidData` (value: `"ROUTING_CURVE_CSV_INVALID_DATA"`)
+* `RoutingCurveCsvInvalidData` (value: `"ROUTING_CURVE_CSV_INVALID_DATA"`)
 
-* `GBTErrorStringEnumRoutingCurveCsvNotEnoughColumns` (value: `"ROUTING_CURVE_CSV_NOT_ENOUGH_COLUMNS"`)
+* `RoutingCurveCsvNotEnoughColumns` (value: `"ROUTING_CURVE_CSV_NOT_ENOUGH_COLUMNS"`)
 
-* `GBTErrorStringEnumExtendToPartFailed` (value: `"EXTEND_TO_PART_FAILED"`)
+* `ExtendToPartFailed` (value: `"EXTEND_TO_PART_FAILED"`)
 
-* `GBTErrorStringEnumExtendOffsetFailed` (value: `"EXTEND_OFFSET_FAILED"`)
+* `ExtendOffsetFailed` (value: `"EXTEND_OFFSET_FAILED"`)
 
-* `GBTErrorStringEnumSketchPatternNeedsSeed` (value: `"SKETCH_PATTERN_NEEDS_SEED"`)
+* `SketchPatternNeedsSeed` (value: `"SKETCH_PATTERN_NEEDS_SEED"`)
 
-* `GBTErrorStringEnumWrapNeedsDifferentAnchor` (value: `"WRAP_NEEDS_DIFFERENT_ANCHOR"`)
+* `WrapNeedsDifferentAnchor` (value: `"WRAP_NEEDS_DIFFERENT_ANCHOR"`)
 
-* `GBTErrorStringEnumCannotResolvePartStudio` (value: `"CANNOT_RESOLVE_PART_STUDIO"`)
+* `CannotResolvePartStudio` (value: `"CANNOT_RESOLVE_PART_STUDIO"`)
 
-* `GBTErrorStringEnumCannotResolveAssembly` (value: `"CANNOT_RESOLVE_ASSEMBLY"`)
+* `CannotResolveAssembly` (value: `"CANNOT_RESOLVE_ASSEMBLY"`)
 
-* `GBTErrorStringEnumNoMeshFound` (value: `"NO_MESH_FOUND"`)
+* `NoMeshFound` (value: `"NO_MESH_FOUND"`)
 
-* `GBTErrorStringEnumConstrainedSurfaceTooFewPoints` (value: `"CONSTRAINED_SURFACE_TOO_FEW_POINTS"`)
+* `ConstrainedSurfaceTooFewPoints` (value: `"CONSTRAINED_SURFACE_TOO_FEW_POINTS"`)
 
-* `GBTErrorStringEnumConstrainedSurfaceBadTolerance` (value: `"CONSTRAINED_SURFACE_BAD_TOLERANCE"`)
+* `ConstrainedSurfaceBadTolerance` (value: `"CONSTRAINED_SURFACE_BAD_TOLERANCE"`)
 
-* `GBTErrorStringEnumConstrainedSurfaceBadPosition` (value: `"CONSTRAINED_SURFACE_BAD_POSITION"`)
+* `ConstrainedSurfaceBadPosition` (value: `"CONSTRAINED_SURFACE_BAD_POSITION"`)
 
-* `GBTErrorStringEnumConstrainedSurfaceFailedTolerance` (value: `"CONSTRAINED_SURFACE_FAILED_TOLERANCE"`)
+* `ConstrainedSurfaceFailedTolerance` (value: `"CONSTRAINED_SURFACE_FAILED_TOLERANCE"`)
 
-* `GBTErrorStringEnumConstrainedSurfaceFailed` (value: `"CONSTRAINED_SURFACE_FAILED"`)
+* `ConstrainedSurfaceFailed` (value: `"CONSTRAINED_SURFACE_FAILED"`)
 
-* `GBTErrorStringEnumConstrainedSurfaceSelectMesh` (value: `"CONSTRAINED_SURFACE_SELECT_MESH"`)
+* `ConstrainedSurfaceSelectMesh` (value: `"CONSTRAINED_SURFACE_SELECT_MESH"`)
 
-* `GBTErrorStringEnumRoutingCurveSelectCurve` (value: `"ROUTING_CURVE_SELECT_CURVE"`)
+* `RoutingCurveSelectCurve` (value: `"ROUTING_CURVE_SELECT_CURVE"`)
 
-* `GBTErrorStringEnumRoutingCurveAtLeastThreeDistinctPoints` (value: `"ROUTING_CURVE_AT_LEAST_THREE_DISTINCT_POINTS"`)
+* `RoutingCurveAtLeastThreeDistinctPoints` (value: `"ROUTING_CURVE_AT_LEAST_THREE_DISTINCT_POINTS"`)
 
-* `GBTErrorStringEnumAssemblyMirrorHasReferenceErrors` (value: `"ASSEMBLY_MIRROR_HAS_REFERENCE_ERRORS"`)
+* `AssemblyMirrorHasReferenceErrors` (value: `"ASSEMBLY_MIRROR_HAS_REFERENCE_ERRORS"`)
 
-* `GBTErrorStringEnumAssemblyMirrorHasNoReferenceErrors` (value: `"ASSEMBLY_MIRROR_HAS_NO_REFERENCE_ERRORS"`)
+* `AssemblyMirrorHasNoReferenceErrors` (value: `"ASSEMBLY_MIRROR_HAS_NO_REFERENCE_ERRORS"`)
 
-* `GBTErrorStringEnumFeatureNotProvided` (value: `"FEATURE_NOT_PROVIDED"`)
+* `FeatureNotProvided` (value: `"FEATURE_NOT_PROVIDED"`)
 
-* `GBTErrorStringEnumTolerantOffsetEndConsumed` (value: `"TOLERANT_OFFSET_END_CONSUMED"`)
+* `TolerantOffsetEndConsumed` (value: `"TOLERANT_OFFSET_END_CONSUMED"`)
 
-* `GBTErrorStringEnumTolerantOffsetNotToFace` (value: `"TOLERANT_OFFSET_NOT_TO_FACE"`)
+* `TolerantOffsetNotToFace` (value: `"TOLERANT_OFFSET_NOT_TO_FACE"`)
 
-* `GBTErrorStringEnumTolerantDepthNoSecond` (value: `"TOLERANT_DEPTH_NO_SECOND"`)
+* `TolerantDepthNoSecond` (value: `"TOLERANT_DEPTH_NO_SECOND"`)
 
-* `GBTErrorStringEnumTolerantDepthEndConsumed` (value: `"TOLERANT_DEPTH_END_CONSUMED"`)
+* `TolerantDepthEndConsumed` (value: `"TOLERANT_DEPTH_END_CONSUMED"`)
 
-* `GBTErrorStringEnumMixedThicknessTolerance` (value: `"MIXED_THICKNESS_TOLERANCE"`)
+* `MixedThicknessTolerance` (value: `"MIXED_THICKNESS_TOLERANCE"`)
 
-* `GBTErrorStringEnumDoubleThicknessTolerance` (value: `"DOUBLE_THICKNESS_TOLERANCE"`)
+* `DoubleThicknessTolerance` (value: `"DOUBLE_THICKNESS_TOLERANCE"`)
 
-* `GBTErrorStringEnumTolerantAngleNoSecond` (value: `"TOLERANT_ANGLE_NO_SECOND"`)
+* `TolerantAngleNoSecond` (value: `"TOLERANT_ANGLE_NO_SECOND"`)
 
-* `GBTErrorStringEnumTolerantAngleEndConsumed` (value: `"TOLERANT_ANGLE_END_CONSUMED"`)
+* `TolerantAngleEndConsumed` (value: `"TOLERANT_ANGLE_END_CONSUMED"`)
 
-* `GBTErrorStringEnumTolerantThicknessNeedsPlane` (value: `"TOLERANT_THICKNESS_NEEDS_PLANE"`)
+* `TolerantThicknessNeedsPlane` (value: `"TOLERANT_THICKNESS_NEEDS_PLANE"`)
 
-* `GBTErrorStringEnumTolerantSolidOnly` (value: `"TOLERANT_SOLID_ONLY"`)
+* `TolerantSolidOnly` (value: `"TOLERANT_SOLID_ONLY"`)
 
-* `GBTErrorStringEnumTolerantInvalidOffsetTarget` (value: `"TOLERANT_INVALID_OFFSET_TARGET"`)
+* `TolerantInvalidOffsetTarget` (value: `"TOLERANT_INVALID_OFFSET_TARGET"`)
 
-* `GBTErrorStringEnumSheetMetalHemAdjacentCone` (value: `"SHEET_METAL_HEM_ADJACENT_CONE"`)
+* `SheetMetalHemAdjacentCone` (value: `"SHEET_METAL_HEM_ADJACENT_CONE"`)
 
-* `GBTErrorStringEnumSheetMetalFlangeAdjacentCone` (value: `"SHEET_METAL_FLANGE_ADJACENT_CONE"`)
+* `SheetMetalFlangeAdjacentCone` (value: `"SHEET_METAL_FLANGE_ADJACENT_CONE"`)
 
-* `GBTErrorStringEnumSheetMetalBendReliefCone` (value: `"SHEET_METAL_BEND_RELIEF_CONE"`)
+* `SheetMetalBendReliefCone` (value: `"SHEET_METAL_BEND_RELIEF_CONE"`)
 
-* `GBTErrorStringEnumSheetMetalActiveModelCannotOffset` (value: `"SHEET_METAL_ACTIVE_MODEL_CANNOT_OFFSET"`)
+* `SheetMetalActiveModelCannotOffset` (value: `"SHEET_METAL_ACTIVE_MODEL_CANNOT_OFFSET"`)
 
-* `GBTErrorStringEnumTrimToMultiFailedForUptoBody` (value: `"TRIM_TO_MULTI_FAILED_FOR_UPTO_BODY"`)
+* `TrimToMultiFailedForUptoBody` (value: `"TRIM_TO_MULTI_FAILED_FOR_UPTO_BODY"`)
 
-* `GBTErrorStringEnumLoftConnectionEdgeParameterMismatch` (value: `"LOFT_CONNECTION_EDGE_PARAMETER_MISMATCH"`)
+* `LoftConnectionEdgeParameterMismatch` (value: `"LOFT_CONNECTION_EDGE_PARAMETER_MISMATCH"`)
 
-* `GBTErrorStringEnumSheetMetalNoConeApex` (value: `"SHEET_METAL_NO_CONE_APEX"`)
+* `SheetMetalNoConeApex` (value: `"SHEET_METAL_NO_CONE_APEX"`)
 
-* `GBTErrorStringEnumSimulationMaterialPropertyOutsideRequiredBounds` (value: `"SIMULATION_MATERIAL_PROPERTY_OUTSIDE_REQUIRED_BOUNDS"`)
+* `SimulationMaterialPropertyOutsideRequiredBounds` (value: `"SIMULATION_MATERIAL_PROPERTY_OUTSIDE_REQUIRED_BOUNDS"`)
 
-* `GBTErrorStringEnumFgsConnectionsAssemblyTooComplex` (value: `"FGS_CONNECTIONS_ASSEMBLY_TOO_COMPLEX"`)
+* `FgsConnectionsAssemblyTooComplex` (value: `"FGS_CONNECTIONS_ASSEMBLY_TOO_COMPLEX"`)
 
-* `GBTErrorStringEnumThinExtrudeNotParallelPlanes` (value: `"THIN_EXTRUDE_NOT_PARALLEL_PLANES"`)
+* `ThinExtrudeNotParallelPlanes` (value: `"THIN_EXTRUDE_NOT_PARALLEL_PLANES"`)
 
-* `GBTErrorStringEnumWidthAndTabMateconnectorsOnSameOccurrence` (value: `"WIDTH_AND_TAB_MATECONNECTORS_ON_SAME_OCCURRENCE"`)
+* `WidthAndTabMateconnectorsOnSameOccurrence` (value: `"WIDTH_AND_TAB_MATECONNECTORS_ON_SAME_OCCURRENCE"`)
 
-* `GBTErrorStringEnumMirrorInvalidSeedAssembly` (value: `"MIRROR_INVALID_SEED_ASSEMBLY"`)
+* `MirrorInvalidSeedAssembly` (value: `"MIRROR_INVALID_SEED_ASSEMBLY"`)
 
-* `GBTErrorStringEnumCannotComputeMaxDeviation` (value: `"CANNOT_COMPUTE_MAX_DEVIATION"`)
+* `CannotComputeMaxDeviation` (value: `"CANNOT_COMPUTE_MAX_DEVIATION"`)
 
-* `GBTErrorStringEnumCannotComputeMinDeviation` (value: `"CANNOT_COMPUTE_MIN_DEVIATION"`)
+* `CannotComputeMinDeviation` (value: `"CANNOT_COMPUTE_MIN_DEVIATION"`)
 
-* `GBTErrorStringEnumAssemblyMirrorInvolvesFixedOccurrences` (value: `"ASSEMBLY_MIRROR_INVOLVES_FIXED_OCCURRENCES"`)
+* `AssemblyMirrorInvolvesFixedOccurrences` (value: `"ASSEMBLY_MIRROR_INVOLVES_FIXED_OCCURRENCES"`)
 
-* `GBTErrorStringEnumQueryVariableEmptyName` (value: `"QUERY_VARIABLE_EMPTY_NAME"`)
+* `QueryVariableEmptyName` (value: `"QUERY_VARIABLE_EMPTY_NAME"`)
 
-* `GBTErrorStringEnumFeaturesWithCyclicDependencyDetected` (value: `"FEATURES_WITH_CYCLIC_DEPENDENCY_DETECTED"`)
+* `FeaturesWithCyclicDependencyDetected` (value: `"FEATURES_WITH_CYCLIC_DEPENDENCY_DETECTED"`)
 
-* `GBTErrorStringEnumAssemblyMirrorRecursiveSeed` (value: `"ASSEMBLY_MIRROR_RECURSIVE_SEED"`)
+* `AssemblyMirrorRecursiveSeed` (value: `"ASSEMBLY_MIRROR_RECURSIVE_SEED"`)
 
-* `GBTErrorStringEnumQueryVariableNameAlreadyUsedInNonQueryVariable` (value: `"QUERY_VARIABLE_NAME_ALREADY_USED_IN_NON_QUERY_VARIABLE"`)
+* `QueryVariableNameAlreadyUsedInNonQueryVariable` (value: `"QUERY_VARIABLE_NAME_ALREADY_USED_IN_NON_QUERY_VARIABLE"`)
 
-* `GBTErrorStringEnumQueryVariableEmptySelection` (value: `"QUERY_VARIABLE_EMPTY_SELECTION"`)
+* `QueryVariableEmptySelection` (value: `"QUERY_VARIABLE_EMPTY_SELECTION"`)
 
-* `GBTErrorStringEnumQueryVariableNameCannotStartWithPound` (value: `"QUERY_VARIABLE_NAME_CANNOT_START_WITH_POUND"`)
+* `QueryVariableNameCannotStartWithPound` (value: `"QUERY_VARIABLE_NAME_CANNOT_START_WITH_POUND"`)
 
-* `GBTErrorStringEnumVariableNameAlreadyUsedInQueryVariable` (value: `"VARIABLE_NAME_ALREADY_USED_IN_QUERY_VARIABLE"`)
+* `VariableNameAlreadyUsedInQueryVariable` (value: `"VARIABLE_NAME_ALREADY_USED_IN_QUERY_VARIABLE"`)
 
-* `GBTErrorStringEnumAssemblyMirrorTargetPartMissing` (value: `"ASSEMBLY_MIRROR_TARGET_PART_MISSING"`)
+* `AssemblyMirrorTargetPartMissing` (value: `"ASSEMBLY_MIRROR_TARGET_PART_MISSING"`)
 
-* `GBTErrorStringEnumAssemblyMirrorTargetFeatureMissing` (value: `"ASSEMBLY_MIRROR_TARGET_FEATURE_MISSING"`)
+* `AssemblyMirrorTargetFeatureMissing` (value: `"ASSEMBLY_MIRROR_TARGET_FEATURE_MISSING"`)
 
-* `GBTErrorStringEnumAssemblyMirrorTargetElementMissing` (value: `"ASSEMBLY_MIRROR_TARGET_ELEMENT_MISSING"`)
+* `AssemblyMirrorTargetElementMissing` (value: `"ASSEMBLY_MIRROR_TARGET_ELEMENT_MISSING"`)
 
-* `GBTErrorStringEnumAssemblyMirrorDerivedElementConfigurationsInvalid` (value: `"ASSEMBLY_MIRROR_DERIVED_ELEMENT_CONFIGURATIONS_INVALID"`)
+* `AssemblyMirrorDerivedElementConfigurationsInvalid` (value: `"ASSEMBLY_MIRROR_DERIVED_ELEMENT_CONFIGURATIONS_INVALID"`)
 
-* `GBTErrorStringEnumAssemblyDerivedMirrorReferenceMissing` (value: `"ASSEMBLY_DERIVED_MIRROR_REFERENCE_MISSING"`)
+* `AssemblyDerivedMirrorReferenceMissing` (value: `"ASSEMBLY_DERIVED_MIRROR_REFERENCE_MISSING"`)
 
-* `GBTErrorStringEnumInvalidSuppressionExpression` (value: `"INVALID_SUPPRESSION_EXPRESSION"`)
+* `InvalidSuppressionExpression` (value: `"INVALID_SUPPRESSION_EXPRESSION"`)
 
-* `GBTErrorStringEnumAssemblyMirrorChildHasReferenceError` (value: `"ASSEMBLY_MIRROR_CHILD_HAS_REFERENCE_ERROR"`)
+* `AssemblyMirrorChildHasReferenceError` (value: `"ASSEMBLY_MIRROR_CHILD_HAS_REFERENCE_ERROR"`)
 
-* `GBTErrorStringEnumThicknessNoClosedComposites` (value: `"THICKNESS_NO_CLOSED_COMPOSITES"`)
+* `ThicknessNoClosedComposites` (value: `"THICKNESS_NO_CLOSED_COMPOSITES"`)
 
-* `GBTErrorStringEnumValueWithUnitsError` (value: `"VALUE_WITH_UNITS_ERROR"`)
+* `ValueWithUnitsError` (value: `"VALUE_WITH_UNITS_ERROR"`)
 
-* `GBTErrorStringEnumRowIndexRangeError` (value: `"ROW_INDEX_RANGE_ERROR"`)
+* `RowIndexRangeError` (value: `"ROW_INDEX_RANGE_ERROR"`)
 
-* `GBTErrorStringEnumRowIndexMinError` (value: `"ROW_INDEX_MIN_ERROR"`)
+* `RowIndexMinError` (value: `"ROW_INDEX_MIN_ERROR"`)
 
-* `GBTErrorStringEnumRowIndexMaxError` (value: `"ROW_INDEX_MAX_ERROR"`)
+* `RowIndexMaxError` (value: `"ROW_INDEX_MAX_ERROR"`)
 
-* `GBTErrorStringEnumRowIndexError` (value: `"ROW_INDEX_ERROR"`)
+* `RowIndexError` (value: `"ROW_INDEX_ERROR"`)
 
-* `GBTErrorStringEnumRowLabelIndexError` (value: `"ROW_LABEL_INDEX_ERROR"`)
+* `RowLabelIndexError` (value: `"ROW_LABEL_INDEX_ERROR"`)
 
-* `GBTErrorStringEnumColIndexRangeError` (value: `"COL_INDEX_RANGE_ERROR"`)
+* `ColIndexRangeError` (value: `"COL_INDEX_RANGE_ERROR"`)
 
-* `GBTErrorStringEnumColIndexMinError` (value: `"COL_INDEX_MIN_ERROR"`)
+* `ColIndexMinError` (value: `"COL_INDEX_MIN_ERROR"`)
 
-* `GBTErrorStringEnumColIndexMaxError` (value: `"COL_INDEX_MAX_ERROR"`)
+* `ColIndexMaxError` (value: `"COL_INDEX_MAX_ERROR"`)
 
-* `GBTErrorStringEnumColIndexError` (value: `"COL_INDEX_ERROR"`)
+* `ColIndexError` (value: `"COL_INDEX_ERROR"`)
 
-* `GBTErrorStringEnumColLabelIndexError` (value: `"COL_LABEL_INDEX_ERROR"`)
+* `ColLabelIndexError` (value: `"COL_LABEL_INDEX_ERROR"`)
 
-* `GBTErrorStringEnumQueryVariableNameCannotContainQuote` (value: `"QUERY_VARIABLE_NAME_CANNOT_CONTAIN_QUOTE"`)
+* `QueryVariableNameCannotContainQuote` (value: `"QUERY_VARIABLE_NAME_CANNOT_CONTAIN_QUOTE"`)
 
-* `GBTErrorStringEnumDrawingEmptySectionTargetBody` (value: `"DRAWING_EMPTY_SECTION_TARGET_BODY"`)
+* `DrawingEmptySectionTargetBody` (value: `"DRAWING_EMPTY_SECTION_TARGET_BODY"`)
 
-* `GBTErrorStringEnumSketchCannotEvaluatePatternParameter` (value: `"SKETCH_CANNOT_EVALUATE_PATTERN_PARAMETER"`)
+* `SketchCannotEvaluatePatternParameter` (value: `"SKETCH_CANNOT_EVALUATE_PATTERN_PARAMETER"`)
 
-* `GBTErrorStringEnumTlSelfIntersectingBody` (value: `"TL_SELF_INTERSECTING_BODY"`)
+* `TlSelfIntersectingBody` (value: `"TL_SELF_INTERSECTING_BODY"`)
 
-* `GBTErrorStringEnumSketchPatternMissingParameter` (value: `"SKETCH_PATTERN_MISSING_PARAMETER"`)
+* `SketchPatternMissingParameter` (value: `"SKETCH_PATTERN_MISSING_PARAMETER"`)
 
-* `GBTErrorStringEnumSketchPatternInvalidValue` (value: `"SKETCH_PATTERN_INVALID_VALUE"`)
+* `SketchPatternInvalidValue` (value: `"SKETCH_PATTERN_INVALID_VALUE"`)
 
-* `GBTErrorStringEnumTlProfilesTransformed` (value: `"TL_PROFILES_TRANSFORMED"`)
+* `TlProfilesTransformed` (value: `"TL_PROFILES_TRANSFORMED"`)
 
-* `GBTErrorStringEnumTolerantRadiusNoVariableRadius` (value: `"TOLERANT_RADIUS_NO_VARIABLE_RADIUS"`)
+* `TolerantRadiusNoVariableRadius` (value: `"TOLERANT_RADIUS_NO_VARIABLE_RADIUS"`)
 
-* `GBTErrorStringEnumTolerantRadiusNoAsymmetry` (value: `"TOLERANT_RADIUS_NO_ASYMMETRY"`)
+* `TolerantRadiusNoAsymmetry` (value: `"TOLERANT_RADIUS_NO_ASYMMETRY"`)
 
-* `GBTErrorStringEnumTlConeNeedsTangentPolylines` (value: `"TL_CONE_NEEDS_TANGENT_POLYLINES"`)
+* `TlConeNeedsTangentPolylines` (value: `"TL_CONE_NEEDS_TANGENT_POLYLINES"`)
 
-* `GBTErrorStringEnumAssemblyMirrorTargetFeatureSuppressed` (value: `"ASSEMBLY_MIRROR_TARGET_FEATURE_SUPPRESSED"`)
+* `AssemblyMirrorTargetFeatureSuppressed` (value: `"ASSEMBLY_MIRROR_TARGET_FEATURE_SUPPRESSED"`)
 
-* `GBTErrorStringEnumRevolveUpToFailed` (value: `"REVOLVE_UP_TO_FAILED"`)
+* `RevolveUpToFailed` (value: `"REVOLVE_UP_TO_FAILED"`)
 
-* `GBTErrorStringEnumRevolveUpToNextFailed` (value: `"REVOLVE_UP_TO_NEXT_FAILED"`)
+* `RevolveUpToNextFailed` (value: `"REVOLVE_UP_TO_NEXT_FAILED"`)
 
-* `GBTErrorStringEnumRevolveUpToThinFailed` (value: `"REVOLVE_UP_TO_THIN_FAILED"`)
+* `RevolveUpToThinFailed` (value: `"REVOLVE_UP_TO_THIN_FAILED"`)
 
-* `GBTErrorStringEnumRevolveUpToNextNoTarget` (value: `"REVOLVE_UP_TO_NEXT_NO_TARGET"`)
+* `RevolveUpToNextNoTarget` (value: `"REVOLVE_UP_TO_NEXT_NO_TARGET"`)
 
-* `GBTErrorStringEnumDeviationAnalysisFailed` (value: `"DEVIATION_ANALYSIS_FAILED"`)
+* `DeviationAnalysisFailed` (value: `"DEVIATION_ANALYSIS_FAILED"`)
 
-* `GBTErrorStringEnumRevolveSelectTerminatingBody` (value: `"REVOLVE_SELECT_TERMINATING_BODY"`)
+* `RevolveSelectTerminatingBody` (value: `"REVOLVE_SELECT_TERMINATING_BODY"`)
 
-* `GBTErrorStringEnumRevolveSelectTerminatingSurface` (value: `"REVOLVE_SELECT_TERMINATING_SURFACE"`)
+* `RevolveSelectTerminatingSurface` (value: `"REVOLVE_SELECT_TERMINATING_SURFACE"`)
 
-* `GBTErrorStringEnumRevolveSelectTerminatingVertex` (value: `"REVOLVE_SELECT_TERMINATING_VERTEX"`)
+* `RevolveSelectTerminatingVertex` (value: `"REVOLVE_SELECT_TERMINATING_VERTEX"`)
 
-* `GBTErrorStringEnumFgsGenerativeSewSegmentsFailed` (value: `"FGS_GENERATIVE_SEW_SEGMENTS_FAILED"`)
+* `FgsGenerativeSewSegmentsFailed` (value: `"FGS_GENERATIVE_SEW_SEGMENTS_FAILED"`)
 
-* `GBTErrorStringEnumFgsGenerativeBuildMixedBodyFailed` (value: `"FGS_GENERATIVE_BUILD_MIXED_BODY_FAILED"`)
+* `FgsGenerativeBuildMixedBodyFailed` (value: `"FGS_GENERATIVE_BUILD_MIXED_BODY_FAILED"`)
 
-* `GBTErrorStringEnumFgsGenerativeBuildBodyFailed` (value: `"FGS_GENERATIVE_BUILD_BODY_FAILED"`)
+* `FgsGenerativeBuildBodyFailed` (value: `"FGS_GENERATIVE_BUILD_BODY_FAILED"`)
 
-* `GBTErrorStringEnumFgsGenerativeReplaceWithFaceFailed` (value: `"FGS_GENERATIVE_REPLACE_WITH_FACE_FAILED"`)
+* `FgsGenerativeReplaceWithFaceFailed` (value: `"FGS_GENERATIVE_REPLACE_WITH_FACE_FAILED"`)
 
-* `GBTErrorStringEnumTlNoIntersectingProfiles` (value: `"TL_NO_INTERSECTING_PROFILES"`)
+* `TlNoIntersectingProfiles` (value: `"TL_NO_INTERSECTING_PROFILES"`)
 
-* `GBTErrorStringEnumSheetMetalLoftProfilesTouch` (value: `"SHEET_METAL_LOFT_PROFILES_TOUCH"`)
+* `SheetMetalLoftProfilesTouch` (value: `"SHEET_METAL_LOFT_PROFILES_TOUCH"`)
 
-* `GBTErrorStringEnumSheetMetalLoftOrthogonalProfile` (value: `"SHEET_METAL_LOFT_ORTHOGONAL_PROFILE"`)
+* `SheetMetalLoftOrthogonalProfile` (value: `"SHEET_METAL_LOFT_ORTHOGONAL_PROFILE"`)
 
-* `GBTErrorStringEnumSheetMetalLoftDisjointResult` (value: `"SHEET_METAL_LOFT_DISJOINT_RESULT"`)
+* `SheetMetalLoftDisjointResult` (value: `"SHEET_METAL_LOFT_DISJOINT_RESULT"`)
 
-* `GBTErrorStringEnumAssemblyMirrorNoActiveSmComposite` (value: `"ASSEMBLY_MIRROR_NO_ACTIVE_SM_COMPOSITE"`)
+* `AssemblyMirrorNoActiveSmComposite` (value: `"ASSEMBLY_MIRROR_NO_ACTIVE_SM_COMPOSITE"`)
 
-* `GBTErrorStringEnumCannotFindRow` (value: `"CANNOT_FIND_ROW"`)
+* `CannotFindRow` (value: `"CANNOT_FIND_ROW"`)
 
-* `GBTErrorStringEnumCannotFindColumn` (value: `"CANNOT_FIND_COLUMN"`)
+* `CannotFindColumn` (value: `"CANNOT_FIND_COLUMN"`)
 
-* `GBTErrorStringEnumSelectCsvData` (value: `"SELECT_CSV_DATA"`)
+* `SelectCsvData` (value: `"SELECT_CSV_DATA"`)
 
-* `GBTErrorStringEnumInvalidRowRegex` (value: `"INVALID_ROW_REGEX"`)
+* `InvalidRowRegex` (value: `"INVALID_ROW_REGEX"`)
 
-* `GBTErrorStringEnumInvalidColumnRegex` (value: `"INVALID_COLUMN_REGEX"`)
+* `InvalidColumnRegex` (value: `"INVALID_COLUMN_REGEX"`)
 
-* `GBTErrorStringEnumSheetMetalLoftMergeScopeShift` (value: `"SHEET_METAL_LOFT_MERGE_SCOPE_SHIFT"`)
+* `SheetMetalLoftMergeScopeShift` (value: `"SHEET_METAL_LOFT_MERGE_SCOPE_SHIFT"`)
 
-* `GBTErrorStringEnumUnknown` (value: `"UNKNOWN"`)
+* `LoftGuideNotSmooth` (value: `"LOFT_GUIDE_NOT_SMOOTH"`)
+
+* `DerivedNoClosedCompositeWithSmWarning` (value: `"DERIVED_NO_CLOSED_COMPOSITE_WITH_SM_WARNING"`)
+
+* `DerivedNoClosedCompositeWithSmError` (value: `"DERIVED_NO_CLOSED_COMPOSITE_WITH_SM_ERROR"`)
+
+* `SweepTwistRequireTangentPath` (value: `"SWEEP_TWIST_REQUIRE_TANGENT_PATH"`)
+
+* `SweepScaleRequireTangentPath` (value: `"SWEEP_SCALE_REQUIRE_TANGENT_PATH"`)
+
+* `SweepTwistScaleRequireTangentPath` (value: `"SWEEP_TWIST_SCALE_REQUIRE_TANGENT_PATH"`)
+
+* `SweepMultiprofileScaleNotAllowed` (value: `"SWEEP_MULTIPROFILE_SCALE_NOT_ALLOWED"`)
+
+* `SweepTwistAngleExceedsLimits` (value: `"SWEEP_TWIST_ANGLE_EXCEEDS_LIMITS"`)
+
+* `SweepTwistPitchExceedsLimits` (value: `"SWEEP_TWIST_PITCH_EXCEEDS_LIMITS"`)
+
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

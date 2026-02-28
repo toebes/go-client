@@ -20,21 +20,21 @@ type GBTWeldType string
 
 // List of GBTWeldType
 const (
-	GBTWeldTypeNone                     GBTWeldType = "NONE"
-	GBTWeldTypeSquareGroove             GBTWeldType = "SQUARE_GROOVE"
-	GBTWeldTypeVGroove                  GBTWeldType = "V_GROOVE"
-	GBTWeldTypeUGroove                  GBTWeldType = "U_GROOVE"
-	GBTWeldTypeJGroove                  GBTWeldType = "J_GROOVE"
-	GBTWeldTypeBevelGroove              GBTWeldType = "BEVEL_GROOVE"
-	GBTWeldTypeSingleBevelButtBroadRoot GBTWeldType = "SINGLE_BEVEL_BUTT_BROAD_ROOT"
-	GBTWeldTypeVFlareGroove             GBTWeldType = "V_FLARE_GROOVE"
-	GBTWeldTypeBevelFlareGroove         GBTWeldType = "BEVEL_FLARE_GROOVE"
-	GBTWeldTypeBeadJoint                GBTWeldType = "BEAD_JOINT"
-	GBTWeldTypeFilletJoint              GBTWeldType = "FILLET_JOINT"
-	GBTWeldTypePlugOrSlotJoint          GBTWeldType = "PLUG_OR_SLOT_JOINT"
-	GBTWeldTypeSeamJoint                GBTWeldType = "SEAM_JOINT"
-	GBTWeldTypeSpotJoint                GBTWeldType = "SPOT_JOINT"
-	GBTWeldTypeUnknown                  GBTWeldType = "UNKNOWN"
+	None                     GBTWeldType = "NONE"
+	SquareGroove             GBTWeldType = "SQUARE_GROOVE"
+	VGroove                  GBTWeldType = "V_GROOVE"
+	UGroove                  GBTWeldType = "U_GROOVE"
+	JGroove                  GBTWeldType = "J_GROOVE"
+	BevelGroove              GBTWeldType = "BEVEL_GROOVE"
+	SingleBevelButtBroadRoot GBTWeldType = "SINGLE_BEVEL_BUTT_BROAD_ROOT"
+	VFlareGroove             GBTWeldType = "V_FLARE_GROOVE"
+	BevelFlareGroove         GBTWeldType = "BEVEL_FLARE_GROOVE"
+	BeadJoint                GBTWeldType = "BEAD_JOINT"
+	FilletJoint              GBTWeldType = "FILLET_JOINT"
+	PlugOrSlotJoint          GBTWeldType = "PLUG_OR_SLOT_JOINT"
+	SeamJoint                GBTWeldType = "SEAM_JOINT"
+	SpotJoint                GBTWeldType = "SPOT_JOINT"
+	Unknown                  GBTWeldType = "UNKNOWN"
 )
 
 // All allowed values of GBTWeldType enum

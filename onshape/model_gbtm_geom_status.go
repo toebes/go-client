@@ -20,12 +20,12 @@ type GBTMGeomStatus string
 
 // List of GBTMGeomStatus
 const (
-	GBTMGeomStatusUnknown       GBTMGeomStatus = "UNKNOWN"
-	GBTMGeomStatusUnderDefined  GBTMGeomStatus = "UNDER_DEFINED"
-	GBTMGeomStatusWellDefined   GBTMGeomStatus = "WELL_DEFINED"
-	GBTMGeomStatusFixed         GBTMGeomStatus = "FIXED"
-	GBTMGeomStatusOverDefined   GBTMGeomStatus = "OVER_DEFINED"
-	GBTMGeomStatusNotConsistent GBTMGeomStatus = "NOT_CONSISTENT"
+	Unknown       GBTMGeomStatus = "UNKNOWN"
+	UnderDefined  GBTMGeomStatus = "UNDER_DEFINED"
+	WellDefined   GBTMGeomStatus = "WELL_DEFINED"
+	Fixed         GBTMGeomStatus = "FIXED"
+	OverDefined   GBTMGeomStatus = "OVER_DEFINED"
+	NotConsistent GBTMGeomStatus = "NOT_CONSISTENT"
 )
 
 // All allowed values of GBTMGeomStatus enum

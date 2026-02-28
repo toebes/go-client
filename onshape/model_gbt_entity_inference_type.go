@@ -20,20 +20,20 @@ type GBTEntityInferenceType string
 
 // List of GBTEntityInferenceType
 const (
-	GBTEntityInferenceTypePartOrigin      GBTEntityInferenceType = "PART_ORIGIN"
-	GBTEntityInferenceTypePoint           GBTEntityInferenceType = "POINT"
-	GBTEntityInferenceTypeCentroid        GBTEntityInferenceType = "CENTROID"
-	GBTEntityInferenceTypeCenter          GBTEntityInferenceType = "CENTER"
-	GBTEntityInferenceTypeMidPoint        GBTEntityInferenceType = "MID_POINT"
-	GBTEntityInferenceTypeTopAxisPoint    GBTEntityInferenceType = "TOP_AXIS_POINT"
-	GBTEntityInferenceTypeMidAxisPoint    GBTEntityInferenceType = "MID_AXIS_POINT"
-	GBTEntityInferenceTypeBottomAxisPoint GBTEntityInferenceType = "BOTTOM_AXIS_POINT"
-	GBTEntityInferenceTypeOriginX         GBTEntityInferenceType = "ORIGIN_X"
-	GBTEntityInferenceTypeOriginY         GBTEntityInferenceType = "ORIGIN_Y"
-	GBTEntityInferenceTypeOriginZ         GBTEntityInferenceType = "ORIGIN_Z"
-	GBTEntityInferenceTypeLoopCenter      GBTEntityInferenceType = "LOOP_CENTER"
-	GBTEntityInferenceTypeVirtualSharp    GBTEntityInferenceType = "VIRTUAL_SHARP"
-	GBTEntityInferenceTypeUnknown         GBTEntityInferenceType = "UNKNOWN"
+	PartOrigin      GBTEntityInferenceType = "PART_ORIGIN"
+	Point           GBTEntityInferenceType = "POINT"
+	Centroid        GBTEntityInferenceType = "CENTROID"
+	Center          GBTEntityInferenceType = "CENTER"
+	MidPoint        GBTEntityInferenceType = "MID_POINT"
+	TopAxisPoint    GBTEntityInferenceType = "TOP_AXIS_POINT"
+	MidAxisPoint    GBTEntityInferenceType = "MID_AXIS_POINT"
+	BottomAxisPoint GBTEntityInferenceType = "BOTTOM_AXIS_POINT"
+	OriginX         GBTEntityInferenceType = "ORIGIN_X"
+	OriginY         GBTEntityInferenceType = "ORIGIN_Y"
+	OriginZ         GBTEntityInferenceType = "ORIGIN_Z"
+	LoopCenter      GBTEntityInferenceType = "LOOP_CENTER"
+	VirtualSharp    GBTEntityInferenceType = "VIRTUAL_SHARP"
+	Unknown         GBTEntityInferenceType = "UNKNOWN"
 )
 
 // All allowed values of GBTEntityInferenceType enum

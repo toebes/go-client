@@ -1,21 +1,21 @@
-# \PartApi
+# \PartAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ExportPS**](PartApi.md#ExportPS) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/parasolid | Synchronously export a part to a Parasolid file.
-[**ExportPartGltf**](PartApi.md#ExportPartGltf) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/gltf | Synchronously export a part to a glTF file.
-[**ExportStl**](PartApi.md#ExportStl) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/stl | Synchronously export a part to an STL file.
-[**GetBendTable**](PartApi.md#GetBendTable) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/sheetmetal/bendtable | Get a part&#39;s sheet metal bend table.
-[**GetBodyDetails**](PartApi.md#GetBodyDetails) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/bodydetails | Get a part&#39;s body details.
-[**GetBoundingBoxes**](PartApi.md#GetBoundingBoxes) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/boundingboxes | Get a part&#39;s bounding box details.
-[**GetEdges**](PartApi.md#GetEdges) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/tessellatededges | Get a list of a part&#39;s tessellation edges.
-[**GetFaces1**](PartApi.md#GetFaces1) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/tessellatedfaces | Get a list of a part&#39;s tessellation faces.
-[**GetMassProperties**](PartApi.md#GetMassProperties) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/massproperties | Get a part&#39;s mass properties.
-[**GetPartShadedViews**](PartApi.md#GetPartShadedViews) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/shadedviews | Get a part&#39;s shaded views.
-[**GetPartsWMV**](PartApi.md#GetPartsWMV) | **Get** /parts/d/{did}/{wvm}/{wvmid} | Get all parts in a workspace, version, or microversion.
-[**GetPartsWMVE**](PartApi.md#GetPartsWMVE) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid} | Get all parts in an element.
+[**ExportPS**](PartAPI.md#ExportPS) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/parasolid | Synchronously export a part to a Parasolid file.
+[**ExportPartGltf**](PartAPI.md#ExportPartGltf) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/gltf | Synchronously export a part to a glTF file.
+[**ExportStl**](PartAPI.md#ExportStl) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/stl | Synchronously export a part to an STL file.
+[**GetBendTable**](PartAPI.md#GetBendTable) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/sheetmetal/bendtable | Get a part&#39;s sheet metal bend table.
+[**GetBodyDetails**](PartAPI.md#GetBodyDetails) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/bodydetails | Get a part&#39;s body details.
+[**GetBoundingBoxes**](PartAPI.md#GetBoundingBoxes) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/boundingboxes | Get a part&#39;s bounding box details.
+[**GetEdges**](PartAPI.md#GetEdges) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/tessellatededges | Get a list of a part&#39;s tessellation edges.
+[**GetFaces1**](PartAPI.md#GetFaces1) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/tessellatedfaces | Get a list of a part&#39;s tessellation faces.
+[**GetMassProperties**](PartAPI.md#GetMassProperties) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/massproperties | Get a part&#39;s mass properties.
+[**GetPartShadedViews**](PartAPI.md#GetPartShadedViews) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid}/partid/{partid}/shadedviews | Get a part&#39;s shaded views.
+[**GetPartsWMV**](PartAPI.md#GetPartsWMV) | **Get** /parts/d/{did}/{wvm}/{wvmid} | Get all parts in a workspace, version, or microversion.
+[**GetPartsWMVE**](PartAPI.md#GetPartsWMVE) | **Get** /parts/d/{did}/{wvm}/{wvmid}/e/{eid} | Get all parts in an element.
 
 
 
@@ -51,9 +51,9 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartApi.ExportPS(context.Background(), did, wvm, wvmid, eid, partid).Version(version).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.PartAPI.ExportPS(context.Background(), did, wvm, wvmid, eid, partid).Version(version).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartApi.ExportPS``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartAPI.ExportPS``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
 }
@@ -145,13 +145,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartApi.ExportPartGltf(context.Background(), did, wvm, wvmid, eid, partid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).PrecomputedLevelOfDetail(precomputedLevelOfDetail).OutputSeparateFaceNodes(outputSeparateFaceNodes).FaceId(faceId).OutputFaceAppearances(outputFaceAppearances).MaxFacetWidth(maxFacetWidth).Execute()
+    resp, r, err := apiClient.PartAPI.ExportPartGltf(context.Background(), did, wvm, wvmid, eid, partid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).PrecomputedLevelOfDetail(precomputedLevelOfDetail).OutputSeparateFaceNodes(outputSeparateFaceNodes).FaceId(faceId).OutputFaceAppearances(outputFaceAppearances).MaxFacetWidth(maxFacetWidth).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartApi.ExportPartGltf``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartAPI.ExportPartGltf``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `ExportPartGltf`: GlTF
-    fmt.Fprintf(os.Stdout, "Response from `PartApi.ExportPartGltf`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartAPI.ExportPartGltf`: %v\n", resp)
 }
 ```
 
@@ -248,13 +248,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartApi.ExportStl(context.Background(), did, wvm, wvmid, eid, partid).Mode(mode).Grouping(grouping).Scale(scale).Units(units).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).MaxFacetWidth(maxFacetWidth).MinFacetWidth(minFacetWidth).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.PartAPI.ExportStl(context.Background(), did, wvm, wvmid, eid, partid).Mode(mode).Grouping(grouping).Scale(scale).Units(units).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).MaxFacetWidth(maxFacetWidth).MinFacetWidth(minFacetWidth).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartApi.ExportStl``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartAPI.ExportStl``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `ExportStl`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `PartApi.ExportStl`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartAPI.ExportStl`: %v\n", resp)
 }
 ```
 
@@ -339,13 +339,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartApi.GetBendTable(context.Background(), did, wvm, wvmid, eid, partid).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.PartAPI.GetBendTable(context.Background(), did, wvm, wvmid, eid, partid).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartApi.GetBendTable``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartAPI.GetBendTable``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetBendTable`: BTTableResponse1546
-    fmt.Fprintf(os.Stdout, "Response from `PartApi.GetBendTable`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartAPI.GetBendTable`: %v\n", resp)
 }
 ```
 
@@ -427,13 +427,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartApi.GetBodyDetails(context.Background(), did, wvm, wvmid, eid, partid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).IncludeGeometricData(includeGeometricData).Execute()
+    resp, r, err := apiClient.PartAPI.GetBodyDetails(context.Background(), did, wvm, wvmid, eid, partid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).IncludeGeometricData(includeGeometricData).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartApi.GetBodyDetails``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartAPI.GetBodyDetails``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetBodyDetails`: BTExportModelBodiesResponse734
-    fmt.Fprintf(os.Stdout, "Response from `PartApi.GetBodyDetails`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartAPI.GetBodyDetails`: %v\n", resp)
 }
 ```
 
@@ -515,13 +515,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartApi.GetBoundingBoxes(context.Background(), did, wvm, wvmid, eid, partid).IncludeHidden(includeHidden).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.PartAPI.GetBoundingBoxes(context.Background(), did, wvm, wvmid, eid, partid).IncludeHidden(includeHidden).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartApi.GetBoundingBoxes``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartAPI.GetBoundingBoxes``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetBoundingBoxes`: BTBoundingBoxInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartApi.GetBoundingBoxes`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartAPI.GetBoundingBoxes`: %v\n", resp)
 }
 ```
 
@@ -608,13 +608,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartApi.GetEdges(context.Background(), did, wvm, wvmid, eid, partid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).PrecomputedLevelOfDetail(precomputedLevelOfDetail).EdgeId(edgeId).Execute()
+    resp, r, err := apiClient.PartAPI.GetEdges(context.Background(), did, wvm, wvmid, eid, partid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).PrecomputedLevelOfDetail(precomputedLevelOfDetail).EdgeId(edgeId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartApi.GetEdges``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartAPI.GetEdges``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetEdges`: BTExportTessellatedEdgesResponse327
-    fmt.Fprintf(os.Stdout, "Response from `PartApi.GetEdges`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartAPI.GetEdges`: %v\n", resp)
 }
 ```
 
@@ -714,13 +714,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartApi.GetFaces1(context.Background(), did, wvm, wvmid, eid, partid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).PrecomputedLevelOfDetail(precomputedLevelOfDetail).FaceId(faceId).OutputFaceAppearances(outputFaceAppearances).MaxFacetWidth(maxFacetWidth).OutputVertexNormals(outputVertexNormals).OutputFacetNormals(outputFacetNormals).OutputTextureCoordinates(outputTextureCoordinates).OutputIndexTable(outputIndexTable).OutputErrorFaces(outputErrorFaces).CombineCompositePartConstituents(combineCompositePartConstituents).Execute()
+    resp, r, err := apiClient.PartAPI.GetFaces1(context.Background(), did, wvm, wvmid, eid, partid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).AngleTolerance(angleTolerance).ChordTolerance(chordTolerance).PrecomputedLevelOfDetail(precomputedLevelOfDetail).FaceId(faceId).OutputFaceAppearances(outputFaceAppearances).MaxFacetWidth(maxFacetWidth).OutputVertexNormals(outputVertexNormals).OutputFacetNormals(outputFacetNormals).OutputTextureCoordinates(outputTextureCoordinates).OutputIndexTable(outputIndexTable).OutputErrorFaces(outputErrorFaces).CombineCompositePartConstituents(combineCompositePartConstituents).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartApi.GetFaces1``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartAPI.GetFaces1``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetFaces1`: BTExportTessellatedFacesResponse898
-    fmt.Fprintf(os.Stdout, "Response from `PartApi.GetFaces1`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartAPI.GetFaces1`: %v\n", resp)
 }
 ```
 
@@ -818,13 +818,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartApi.GetMassProperties(context.Background(), did, wvm, wvmid, eid, partid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).InferMetadataOwner(inferMetadataOwner).UseMassPropertyOverrides(useMassPropertyOverrides).Execute()
+    resp, r, err := apiClient.PartAPI.GetMassProperties(context.Background(), did, wvm, wvmid, eid, partid).LinkDocumentId(linkDocumentId).Configuration(configuration).RollbackBarIndex(rollbackBarIndex).ElementMicroversionId(elementMicroversionId).InferMetadataOwner(inferMetadataOwner).UseMassPropertyOverrides(useMassPropertyOverrides).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartApi.GetMassProperties``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartAPI.GetMassProperties``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetMassProperties`: BTMassPropertiesBulkInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartApi.GetMassProperties`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartAPI.GetMassProperties`: %v\n", resp)
 }
 ```
 
@@ -912,13 +912,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartApi.GetPartShadedViews(context.Background(), did, wvm, wvmid, eid, partid).ViewMatrix(viewMatrix).OutputHeight(outputHeight).OutputWidth(outputWidth).PixelSize(pixelSize).Edges(edges).UseAntiAliasing(useAntiAliasing).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.PartAPI.GetPartShadedViews(context.Background(), did, wvm, wvmid, eid, partid).ViewMatrix(viewMatrix).OutputHeight(outputHeight).OutputWidth(outputWidth).PixelSize(pixelSize).Edges(edges).UseAntiAliasing(useAntiAliasing).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartApi.GetPartShadedViews``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartAPI.GetPartShadedViews``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPartShadedViews`: BTShadedViewsInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartApi.GetPartShadedViews`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartAPI.GetPartShadedViews`: %v\n", resp)
 }
 ```
 
@@ -1004,13 +1004,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartApi.GetPartsWMV(context.Background(), did, wvm, wvmid).ElementId(elementId).LinkDocumentId(linkDocumentId).Configuration(configuration).WithThumbnails(withThumbnails).IncludePropertyDefaults(includePropertyDefaults).IncludeFlatParts(includeFlatParts).Execute()
+    resp, r, err := apiClient.PartAPI.GetPartsWMV(context.Background(), did, wvm, wvmid).ElementId(elementId).LinkDocumentId(linkDocumentId).Configuration(configuration).WithThumbnails(withThumbnails).IncludePropertyDefaults(includePropertyDefaults).IncludeFlatParts(includeFlatParts).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartApi.GetPartsWMV``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartAPI.GetPartsWMV``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPartsWMV`: []BTPartMetadataInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartApi.GetPartsWMV`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartAPI.GetPartsWMV`: %v\n", resp)
 }
 ```
 
@@ -1090,13 +1090,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.PartApi.GetPartsWMVE(context.Background(), did, wvm, wvmid, eid).WithThumbnails(withThumbnails).IncludePropertyDefaults(includePropertyDefaults).IncludeFlatParts(includeFlatParts).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.PartAPI.GetPartsWMVE(context.Background(), did, wvm, wvmid, eid).WithThumbnails(withThumbnails).IncludePropertyDefaults(includePropertyDefaults).IncludeFlatParts(includeFlatParts).Configuration(configuration).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `PartApi.GetPartsWMVE``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `PartAPI.GetPartsWMVE``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetPartsWMVE`: []BTPartMetadataInfo
-    fmt.Fprintf(os.Stdout, "Response from `PartApi.GetPartsWMVE`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `PartAPI.GetPartsWMVE`: %v\n", resp)
 }
 ```
 

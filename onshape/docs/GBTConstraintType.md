@@ -3,73 +3,73 @@
 ## Enum
 
 
-* `GBTConstraintTypeNone` (value: `"NONE"`)
+* `None` (value: `"NONE"`)
 
-* `GBTConstraintTypeCoincident` (value: `"COINCIDENT"`)
+* `Coincident` (value: `"COINCIDENT"`)
 
-* `GBTConstraintTypeParallel` (value: `"PARALLEL"`)
+* `Parallel` (value: `"PARALLEL"`)
 
-* `GBTConstraintTypeVertical` (value: `"VERTICAL"`)
+* `Vertical` (value: `"VERTICAL"`)
 
-* `GBTConstraintTypeHorizontal` (value: `"HORIZONTAL"`)
+* `Horizontal` (value: `"HORIZONTAL"`)
 
-* `GBTConstraintTypePerpendicular` (value: `"PERPENDICULAR"`)
+* `Perpendicular` (value: `"PERPENDICULAR"`)
 
-* `GBTConstraintTypeConcentric` (value: `"CONCENTRIC"`)
+* `Concentric` (value: `"CONCENTRIC"`)
 
-* `GBTConstraintTypeMirror` (value: `"MIRROR"`)
+* `Mirror` (value: `"MIRROR"`)
 
-* `GBTConstraintTypeMidpoint` (value: `"MIDPOINT"`)
+* `Midpoint` (value: `"MIDPOINT"`)
 
-* `GBTConstraintTypeTangent` (value: `"TANGENT"`)
+* `Tangent` (value: `"TANGENT"`)
 
-* `GBTConstraintTypeEqual` (value: `"EQUAL"`)
+* `Equal` (value: `"EQUAL"`)
 
-* `GBTConstraintTypeLength` (value: `"LENGTH"`)
+* `Length` (value: `"LENGTH"`)
 
-* `GBTConstraintTypeDistance` (value: `"DISTANCE"`)
+* `Distance` (value: `"DISTANCE"`)
 
-* `GBTConstraintTypeAngle` (value: `"ANGLE"`)
+* `Angle` (value: `"ANGLE"`)
 
-* `GBTConstraintTypeRadius` (value: `"RADIUS"`)
+* `Radius` (value: `"RADIUS"`)
 
-* `GBTConstraintTypeNormal` (value: `"NORMAL"`)
+* `Normal` (value: `"NORMAL"`)
 
-* `GBTConstraintTypeFix` (value: `"FIX"`)
+* `Fix` (value: `"FIX"`)
 
-* `GBTConstraintTypeProjected` (value: `"PROJECTED"`)
+* `Projected` (value: `"PROJECTED"`)
 
-* `GBTConstraintTypeOffset` (value: `"OFFSET"`)
+* `Offset` (value: `"OFFSET"`)
 
-* `GBTConstraintTypeCircularPattern` (value: `"CIRCULAR_PATTERN"`)
+* `CircularPattern` (value: `"CIRCULAR_PATTERN"`)
 
-* `GBTConstraintTypePierce` (value: `"PIERCE"`)
+* `Pierce` (value: `"PIERCE"`)
 
-* `GBTConstraintTypeLinearPattern` (value: `"LINEAR_PATTERN"`)
+* `LinearPattern` (value: `"LINEAR_PATTERN"`)
 
-* `GBTConstraintTypeMajorDiameter` (value: `"MAJOR_DIAMETER"`)
+* `MajorDiameter` (value: `"MAJOR_DIAMETER"`)
 
-* `GBTConstraintTypeMinorDiameter` (value: `"MINOR_DIAMETER"`)
+* `MinorDiameter` (value: `"MINOR_DIAMETER"`)
 
-* `GBTConstraintTypeQuadrant` (value: `"QUADRANT"`)
+* `Quadrant` (value: `"QUADRANT"`)
 
-* `GBTConstraintTypeDiameter` (value: `"DIAMETER"`)
+* `Diameter` (value: `"DIAMETER"`)
 
-* `GBTConstraintTypeSilhouetted` (value: `"SILHOUETTED"`)
+* `Silhouetted` (value: `"SILHOUETTED"`)
 
-* `GBTConstraintTypeCenterlineDimension` (value: `"CENTERLINE_DIMENSION"`)
+* `CenterlineDimension` (value: `"CENTERLINE_DIMENSION"`)
 
-* `GBTConstraintTypeIntersected` (value: `"INTERSECTED"`)
+* `Intersected` (value: `"INTERSECTED"`)
 
-* `GBTConstraintTypeRho` (value: `"RHO"`)
+* `Rho` (value: `"RHO"`)
 
-* `GBTConstraintTypeEqualCurvature` (value: `"EQUAL_CURVATURE"`)
+* `EqualCurvature` (value: `"EQUAL_CURVATURE"`)
 
-* `GBTConstraintTypeBezierDegree` (value: `"BEZIER_DEGREE"`)
+* `BezierDegree` (value: `"BEZIER_DEGREE"`)
 
-* `GBTConstraintTypeFreeze` (value: `"FREEZE"`)
+* `Freeze` (value: `"FREEZE"`)
 
-* `GBTConstraintTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

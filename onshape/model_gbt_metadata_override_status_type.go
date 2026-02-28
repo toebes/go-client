@@ -20,12 +20,12 @@ type GBTMetadataOverrideStatusType string
 
 // List of GBTMetadataOverrideStatusType
 const (
-	GBTMetadataOverrideStatusTypeUnknown                          GBTMetadataOverrideStatusType = "UNKNOWN"
-	GBTMetadataOverrideStatusTypePropertyNotComputed              GBTMetadataOverrideStatusType = "PROPERTY_NOT_COMPUTED"
-	GBTMetadataOverrideStatusTypeComputedWithNoOverrides          GBTMetadataOverrideStatusType = "COMPUTED_WITH_NO_OVERRIDES"
-	GBTMetadataOverrideStatusTypeComputedWithOverrides            GBTMetadataOverrideStatusType = "COMPUTED_WITH_OVERRIDES"
-	GBTMetadataOverrideStatusTypeComputedWithSubassemblyOverrides GBTMetadataOverrideStatusType = "COMPUTED_WITH_SUBASSEMBLY_OVERRIDES"
-	GBTMetadataOverrideStatusTypeOverridden                       GBTMetadataOverrideStatusType = "OVERRIDDEN"
+	Unknown                          GBTMetadataOverrideStatusType = "UNKNOWN"
+	PropertyNotComputed              GBTMetadataOverrideStatusType = "PROPERTY_NOT_COMPUTED"
+	ComputedWithNoOverrides          GBTMetadataOverrideStatusType = "COMPUTED_WITH_NO_OVERRIDES"
+	ComputedWithOverrides            GBTMetadataOverrideStatusType = "COMPUTED_WITH_OVERRIDES"
+	ComputedWithSubassemblyOverrides GBTMetadataOverrideStatusType = "COMPUTED_WITH_SUBASSEMBLY_OVERRIDES"
+	Overridden                       GBTMetadataOverrideStatusType = "OVERRIDDEN"
 )
 
 // All allowed values of GBTMetadataOverrideStatusType enum

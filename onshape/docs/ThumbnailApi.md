@@ -1,20 +1,20 @@
-# \ThumbnailApi
+# \ThumbnailAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteApplicationThumbnails**](ThumbnailApi.md#DeleteApplicationThumbnails) | **Delete** /thumbnails/d/{did}/{wv}/{wvid}/e/{eid} | Delete an element&#39;s thumbnail.
-[**GetDocumentThumbnail**](ThumbnailApi.md#GetDocumentThumbnail) | **Get** /thumbnails/d/{did}/w/{wid} | Get the thumbnail info for a workspace.
-[**GetDocumentThumbnailWithSize**](ThumbnailApi.md#GetDocumentThumbnailWithSize) | **Get** /thumbnails/d/{did}/w/{wid}/s/{sz} | Get the thumbnail image with the given size for a document.
-[**GetElementThumbnail**](ThumbnailApi.md#GetElementThumbnail) | **Get** /thumbnails/d/{did}/{wv}/{wvid}/e/{eid} | Get the thumbnail info structure for an element.
-[**GetElementThumbnailWithApiConfiguration**](ThumbnailApi.md#GetElementThumbnailWithApiConfiguration) | **Get** /thumbnails/d/{did}/w/{wid}/e/{eid}/ac/{cid}/s/{sz} | Get the thumbnail image with the given configuration for an element.
-[**GetElementThumbnailWithSize**](ThumbnailApi.md#GetElementThumbnailWithSize) | **Get** /thumbnails/d/{did}/{wv}/{wvid}/e/{eid}/s/{sz} | Get the thumbnail image with the given size for an element.
-[**GetThumbnailForDocument**](ThumbnailApi.md#GetThumbnailForDocument) | **Get** /thumbnails/d/{did} | Get the thumbnail info for a document in the default workspace.
-[**GetThumbnailForDocumentAndVersion**](ThumbnailApi.md#GetThumbnailForDocumentAndVersion) | **Get** /thumbnails/d/{did}/v/{vid} | Get the thumbnail info for a version of a document.
-[**GetThumbnailForDocumentAndVersionOld**](ThumbnailApi.md#GetThumbnailForDocumentAndVersionOld) | **Get** /thumbnails/document/{did}/version/{vid} | This endpoint will be deprecated soon. Use &#x60;getThumbnailForDocumentAndVersion&#x60; instead.
-[**GetThumbnailForDocumentOld**](ThumbnailApi.md#GetThumbnailForDocumentOld) | **Get** /thumbnails/document/{did} | This endpoint will be deprecated soon. Use &#x60;getThumbnailForDocument&#x60; instead.
-[**SetApplicationElementThumbnail**](ThumbnailApi.md#SetApplicationElementThumbnail) | **Post** /thumbnails/d/{did}/{wv}/{wvid}/e/{eid} | Set the thumbnail image for an application element.
+[**DeleteApplicationThumbnails**](ThumbnailAPI.md#DeleteApplicationThumbnails) | **Delete** /thumbnails/d/{did}/{wv}/{wvid}/e/{eid} | Delete an element&#39;s thumbnail.
+[**GetDocumentThumbnail**](ThumbnailAPI.md#GetDocumentThumbnail) | **Get** /thumbnails/d/{did}/w/{wid} | Get the thumbnail info for a workspace.
+[**GetDocumentThumbnailWithSize**](ThumbnailAPI.md#GetDocumentThumbnailWithSize) | **Get** /thumbnails/d/{did}/w/{wid}/s/{sz} | Get the thumbnail image with the given size for a document.
+[**GetElementThumbnail**](ThumbnailAPI.md#GetElementThumbnail) | **Get** /thumbnails/d/{did}/{wv}/{wvid}/e/{eid} | Get the thumbnail info structure for an element.
+[**GetElementThumbnailWithApiConfiguration**](ThumbnailAPI.md#GetElementThumbnailWithApiConfiguration) | **Get** /thumbnails/d/{did}/w/{wid}/e/{eid}/ac/{cid}/s/{sz} | Get the thumbnail image with the given configuration for an element.
+[**GetElementThumbnailWithSize**](ThumbnailAPI.md#GetElementThumbnailWithSize) | **Get** /thumbnails/d/{did}/{wv}/{wvid}/e/{eid}/s/{sz} | Get the thumbnail image with the given size for an element.
+[**GetThumbnailForDocument**](ThumbnailAPI.md#GetThumbnailForDocument) | **Get** /thumbnails/d/{did} | Get the thumbnail info for a document in the default workspace.
+[**GetThumbnailForDocumentAndVersion**](ThumbnailAPI.md#GetThumbnailForDocumentAndVersion) | **Get** /thumbnails/d/{did}/v/{vid} | Get the thumbnail info for a version of a document.
+[**GetThumbnailForDocumentAndVersionOld**](ThumbnailAPI.md#GetThumbnailForDocumentAndVersionOld) | **Get** /thumbnails/document/{did}/version/{vid} | This endpoint will be deprecated soon. Use &#x60;getThumbnailForDocumentAndVersion&#x60; instead.
+[**GetThumbnailForDocumentOld**](ThumbnailAPI.md#GetThumbnailForDocumentOld) | **Get** /thumbnails/document/{did} | This endpoint will be deprecated soon. Use &#x60;getThumbnailForDocument&#x60; instead.
+[**SetApplicationElementThumbnail**](ThumbnailAPI.md#SetApplicationElementThumbnail) | **Post** /thumbnails/d/{did}/{wv}/{wvid}/e/{eid} | Set the thumbnail image for an application element.
 
 
 
@@ -47,13 +47,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ThumbnailApi.DeleteApplicationThumbnails(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.ThumbnailAPI.DeleteApplicationThumbnails(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailApi.DeleteApplicationThumbnails``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailAPI.DeleteApplicationThumbnails``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteApplicationThumbnails`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `ThumbnailApi.DeleteApplicationThumbnails`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailAPI.DeleteApplicationThumbnails`: %v\n", resp)
 }
 ```
 
@@ -125,13 +125,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ThumbnailApi.GetDocumentThumbnail(context.Background(), did, wid).Execute()
+    resp, r, err := apiClient.ThumbnailAPI.GetDocumentThumbnail(context.Background(), did, wid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailApi.GetDocumentThumbnail``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailAPI.GetDocumentThumbnail``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDocumentThumbnail`: BTThumbnailInfo
-    fmt.Fprintf(os.Stdout, "Response from `ThumbnailApi.GetDocumentThumbnail`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailAPI.GetDocumentThumbnail`: %v\n", resp)
 }
 ```
 
@@ -201,13 +201,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ThumbnailApi.GetDocumentThumbnailWithSize(context.Background(), did, wid, sz).T(t).SkipDefaultImage(skipDefaultImage).Execute()
+    resp, r, err := apiClient.ThumbnailAPI.GetDocumentThumbnailWithSize(context.Background(), did, wid, sz).T(t).SkipDefaultImage(skipDefaultImage).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailApi.GetDocumentThumbnailWithSize``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailAPI.GetDocumentThumbnailWithSize``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetDocumentThumbnailWithSize`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `ThumbnailApi.GetDocumentThumbnailWithSize`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailAPI.GetDocumentThumbnailWithSize`: %v\n", resp)
 }
 ```
 
@@ -281,13 +281,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ThumbnailApi.GetElementThumbnail(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.ThumbnailAPI.GetElementThumbnail(context.Background(), did, wv, wvid, eid).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailApi.GetElementThumbnail``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailAPI.GetElementThumbnail``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetElementThumbnail`: BTThumbnailInfo
-    fmt.Fprintf(os.Stdout, "Response from `ThumbnailApi.GetElementThumbnail`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailAPI.GetElementThumbnail`: %v\n", resp)
 }
 ```
 
@@ -367,13 +367,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ThumbnailApi.GetElementThumbnailWithApiConfiguration(context.Background(), did, wid, eid, cid, sz).LinkDocumentId(linkDocumentId).T(t).SkipDefaultImage(skipDefaultImage).RejectEmpty(rejectEmpty).RequireConfigMatch(requireConfigMatch).Execute()
+    resp, r, err := apiClient.ThumbnailAPI.GetElementThumbnailWithApiConfiguration(context.Background(), did, wid, eid, cid, sz).LinkDocumentId(linkDocumentId).T(t).SkipDefaultImage(skipDefaultImage).RejectEmpty(rejectEmpty).RequireConfigMatch(requireConfigMatch).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailApi.GetElementThumbnailWithApiConfiguration``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailAPI.GetElementThumbnailWithApiConfiguration``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetElementThumbnailWithApiConfiguration`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `ThumbnailApi.GetElementThumbnailWithApiConfiguration`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailAPI.GetElementThumbnailWithApiConfiguration`: %v\n", resp)
 }
 ```
 
@@ -456,13 +456,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ThumbnailApi.GetElementThumbnailWithSize(context.Background(), did, wv, wvid, eid, sz).LinkDocumentId(linkDocumentId).T(t).SkipDefaultImage(skipDefaultImage).RejectEmpty(rejectEmpty).Execute()
+    resp, r, err := apiClient.ThumbnailAPI.GetElementThumbnailWithSize(context.Background(), did, wv, wvid, eid, sz).LinkDocumentId(linkDocumentId).T(t).SkipDefaultImage(skipDefaultImage).RejectEmpty(rejectEmpty).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailApi.GetElementThumbnailWithSize``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailAPI.GetElementThumbnailWithSize``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetElementThumbnailWithSize`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `ThumbnailApi.GetElementThumbnailWithSize`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailAPI.GetElementThumbnailWithSize`: %v\n", resp)
 }
 ```
 
@@ -538,13 +538,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ThumbnailApi.GetThumbnailForDocument(context.Background(), did).Execute()
+    resp, r, err := apiClient.ThumbnailAPI.GetThumbnailForDocument(context.Background(), did).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailApi.GetThumbnailForDocument``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailAPI.GetThumbnailForDocument``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetThumbnailForDocument`: BTThumbnailInfo
-    fmt.Fprintf(os.Stdout, "Response from `ThumbnailApi.GetThumbnailForDocument`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailAPI.GetThumbnailForDocument`: %v\n", resp)
 }
 ```
 
@@ -610,13 +610,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ThumbnailApi.GetThumbnailForDocumentAndVersion(context.Background(), did, vid).LinkDocumentId(linkDocumentId).Execute()
+    resp, r, err := apiClient.ThumbnailAPI.GetThumbnailForDocumentAndVersion(context.Background(), did, vid).LinkDocumentId(linkDocumentId).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailApi.GetThumbnailForDocumentAndVersion``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailAPI.GetThumbnailForDocumentAndVersion``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetThumbnailForDocumentAndVersion`: BTThumbnailInfo
-    fmt.Fprintf(os.Stdout, "Response from `ThumbnailApi.GetThumbnailForDocumentAndVersion`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailAPI.GetThumbnailForDocumentAndVersion`: %v\n", resp)
 }
 ```
 
@@ -684,13 +684,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ThumbnailApi.GetThumbnailForDocumentAndVersionOld(context.Background(), did, vid).Execute()
+    resp, r, err := apiClient.ThumbnailAPI.GetThumbnailForDocumentAndVersionOld(context.Background(), did, vid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailApi.GetThumbnailForDocumentAndVersionOld``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailAPI.GetThumbnailForDocumentAndVersionOld``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetThumbnailForDocumentAndVersionOld`: BTThumbnailInfo
-    fmt.Fprintf(os.Stdout, "Response from `ThumbnailApi.GetThumbnailForDocumentAndVersionOld`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailAPI.GetThumbnailForDocumentAndVersionOld`: %v\n", resp)
 }
 ```
 
@@ -756,13 +756,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ThumbnailApi.GetThumbnailForDocumentOld(context.Background(), did).Execute()
+    resp, r, err := apiClient.ThumbnailAPI.GetThumbnailForDocumentOld(context.Background(), did).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailApi.GetThumbnailForDocumentOld``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailAPI.GetThumbnailForDocumentOld``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetThumbnailForDocumentOld`: BTThumbnailInfo
-    fmt.Fprintf(os.Stdout, "Response from `ThumbnailApi.GetThumbnailForDocumentOld`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailAPI.GetThumbnailForDocumentOld`: %v\n", resp)
 }
 ```
 
@@ -832,13 +832,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.ThumbnailApi.SetApplicationElementThumbnail(context.Background(), did, wv, wvid, eid).BTApplicationElementThumbnailParamsArray(bTApplicationElementThumbnailParamsArray).LinkDocumentId(linkDocumentId).Overwrite(overwrite).Execute()
+    resp, r, err := apiClient.ThumbnailAPI.SetApplicationElementThumbnail(context.Background(), did, wv, wvid, eid).BTApplicationElementThumbnailParamsArray(bTApplicationElementThumbnailParamsArray).LinkDocumentId(linkDocumentId).Overwrite(overwrite).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailApi.SetApplicationElementThumbnail``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `ThumbnailAPI.SetApplicationElementThumbnail``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `SetApplicationElementThumbnail`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `ThumbnailApi.SetApplicationElementThumbnail`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `ThumbnailAPI.SetApplicationElementThumbnail`: %v\n", resp)
 }
 ```
 

@@ -20,10 +20,10 @@ type StyleEnum string
 
 // List of StyleEnum
 const (
-	StyleEnumForm           StyleEnum = "FORM"
-	StyleEnumSpaceDelimited StyleEnum = "SPACE_DELIMITED"
-	StyleEnumPipeDelimited  StyleEnum = "PIPE_DELIMITED"
-	StyleEnumDeepObject     StyleEnum = "DEEP_OBJECT"
+	Form           StyleEnum = "FORM"
+	SpaceDelimited StyleEnum = "SPACE_DELIMITED"
+	PipeDelimited  StyleEnum = "PIPE_DELIMITED"
+	DeepObject     StyleEnum = "DEEP_OBJECT"
 )
 
 // All allowed values of StyleEnum enum

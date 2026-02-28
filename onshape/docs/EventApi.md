@@ -1,10 +1,10 @@
-# \EventApi
+# \EventAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**FireEvent**](EventApi.md#FireEvent) | **Post** /events | Fire an asynchronous event.
+[**FireEvent**](EventAPI.md#FireEvent) | **Post** /events | Fire an asynchronous event.
 
 
 
@@ -31,13 +31,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.EventApi.FireEvent(context.Background()).BTEventParams(bTEventParams).Execute()
+    resp, r, err := apiClient.EventAPI.FireEvent(context.Background()).BTEventParams(bTEventParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `EventApi.FireEvent``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `EventAPI.FireEvent``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `FireEvent`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `EventApi.FireEvent`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `EventAPI.FireEvent`: %v\n", resp)
 }
 ```
 

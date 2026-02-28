@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 **AngularTolerance** | Pointer to **float64** | Determines the maximum angular deviation, between the analytical surface and its triangulation. Lower values result in a finer geometry and higher values result in coarser geometry. | [optional] [default to 0.001]
 **DistanceTolerance** | Pointer to **float64** | Determines the maximum distance deviation, between the analytical surface and its triangulation. Lower values result in a finer geometry and higher values result in coarser geometry. | [optional] [default to 0.001]
 **MaximumChordLength** | Pointer to **float64** | Determines the maximum of a triangle edge length. Lower values result in a finer geometry and higher values result in coarser geometry. | [optional] [default to 0.01]
-**Resolution** | Pointer to [**GBTExportResolution**](GBTExportResolution.md) |  | [optional] [default to GBTExportResolutionFine]
-**Unit** | Pointer to [**GBTExportUnit**](GBTExportUnit.md) |  | [optional] [default to GBTExportUnitMeter]
+**Resolution** | Pointer to [**GBTExportResolution**](GBTExportResolution.md) |  | [optional] [default to FINE]
+**Unit** | Pointer to [**GBTExportUnit**](GBTExportUnit.md) |  | [optional] [default to METER]
 
 ## Methods
 

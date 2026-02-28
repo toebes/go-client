@@ -20,9 +20,9 @@ type GBTPartColorCycleVersion string
 
 // List of GBTPartColorCycleVersion
 const (
-	GBTPartColorCycleVersionColorCycle0 GBTPartColorCycleVersion = "COLOR_CYCLE_0"
-	GBTPartColorCycleVersionColorCycle1 GBTPartColorCycleVersion = "COLOR_CYCLE_1"
-	GBTPartColorCycleVersionUnknown     GBTPartColorCycleVersion = "UNKNOWN"
+	ColorCycle0 GBTPartColorCycleVersion = "COLOR_CYCLE_0"
+	ColorCycle1 GBTPartColorCycleVersion = "COLOR_CYCLE_1"
+	Unknown     GBTPartColorCycleVersion = "UNKNOWN"
 )
 
 // All allowed values of GBTPartColorCycleVersion enum

@@ -20,9 +20,9 @@ type GBTParasolidEncodingType string
 
 // List of GBTParasolidEncodingType
 const (
-	GBTParasolidEncodingTypeText    GBTParasolidEncodingType = "TEXT"
-	GBTParasolidEncodingTypeBinary  GBTParasolidEncodingType = "BINARY"
-	GBTParasolidEncodingTypeUnknown GBTParasolidEncodingType = "UNKNOWN"
+	Text    GBTParasolidEncodingType = "TEXT"
+	Binary  GBTParasolidEncodingType = "BINARY"
+	Unknown GBTParasolidEncodingType = "UNKNOWN"
 )
 
 // All allowed values of GBTParasolidEncodingType enum

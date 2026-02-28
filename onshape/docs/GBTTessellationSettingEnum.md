@@ -3,19 +3,19 @@
 ## Enum
 
 
-* `GBTTessellationSettingEnumAuto` (value: `"AUTO"`)
+* `Auto` (value: `"AUTO"`)
 
-* `GBTTessellationSettingEnumCoarse` (value: `"COARSE"`)
+* `Coarse` (value: `"COARSE"`)
 
-* `GBTTessellationSettingEnumMedium` (value: `"MEDIUM"`)
+* `Medium` (value: `"MEDIUM"`)
 
-* `GBTTessellationSettingEnumFine` (value: `"FINE"`)
+* `Fine` (value: `"FINE"`)
 
-* `GBTTessellationSettingEnumVeryFine` (value: `"VERY_FINE"`)
+* `VeryFine` (value: `"VERY_FINE"`)
 
-* `GBTTessellationSettingEnumCurvatureVisualization` (value: `"CURVATURE_VISUALIZATION"`)
+* `CurvatureVisualization` (value: `"CURVATURE_VISUALIZATION"`)
 
-* `GBTTessellationSettingEnumUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

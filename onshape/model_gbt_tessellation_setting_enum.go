@@ -20,13 +20,13 @@ type GBTTessellationSettingEnum string
 
 // List of GBTTessellationSettingEnum
 const (
-	GBTTessellationSettingEnumAuto                   GBTTessellationSettingEnum = "AUTO"
-	GBTTessellationSettingEnumCoarse                 GBTTessellationSettingEnum = "COARSE"
-	GBTTessellationSettingEnumMedium                 GBTTessellationSettingEnum = "MEDIUM"
-	GBTTessellationSettingEnumFine                   GBTTessellationSettingEnum = "FINE"
-	GBTTessellationSettingEnumVeryFine               GBTTessellationSettingEnum = "VERY_FINE"
-	GBTTessellationSettingEnumCurvatureVisualization GBTTessellationSettingEnum = "CURVATURE_VISUALIZATION"
-	GBTTessellationSettingEnumUnknown                GBTTessellationSettingEnum = "UNKNOWN"
+	Auto                   GBTTessellationSettingEnum = "AUTO"
+	Coarse                 GBTTessellationSettingEnum = "COARSE"
+	Medium                 GBTTessellationSettingEnum = "MEDIUM"
+	Fine                   GBTTessellationSettingEnum = "FINE"
+	VeryFine               GBTTessellationSettingEnum = "VERY_FINE"
+	CurvatureVisualization GBTTessellationSettingEnum = "CURVATURE_VISUALIZATION"
+	Unknown                GBTTessellationSettingEnum = "UNKNOWN"
 )
 
 // All allowed values of GBTTessellationSettingEnum enum

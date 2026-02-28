@@ -3,15 +3,15 @@
 ## Enum
 
 
-* `GBTNoticeLevelInternal` (value: `"INTERNAL"`)
+* `Internal` (value: `"INTERNAL"`)
 
-* `GBTNoticeLevelError` (value: `"ERROR"`)
+* `Error` (value: `"ERROR"`)
 
-* `GBTNoticeLevelWarning` (value: `"WARNING"`)
+* `Warning` (value: `"WARNING"`)
 
-* `GBTNoticeLevelInfo` (value: `"INFO"`)
+* `Info` (value: `"INFO"`)
 
-* `GBTNoticeLevelUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

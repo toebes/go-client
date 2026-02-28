@@ -1,15 +1,15 @@
-# \AliasApi
+# \AliasAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateAlias**](AliasApi.md#CreateAlias) | **Post** /aliases | Create an alias in your enterprise.
-[**DeleteAlias**](AliasApi.md#DeleteAlias) | **Delete** /aliases/{aid} | Delete an alias from your enterprise.
-[**GetAlias**](AliasApi.md#GetAlias) | **Get** /aliases/{aid} | Get an alias by ID.
-[**GetAliasMembers**](AliasApi.md#GetAliasMembers) | **Get** /aliases/{aid}/members | Get all users and teams assigned to an alias.
-[**GetAliasesInCompany**](AliasApi.md#GetAliasesInCompany) | **Get** /aliases | Get a list of all aliases that exist for your enterprise.
-[**UpdateAlias**](AliasApi.md#UpdateAlias) | **Post** /aliases/{aid} | Add, remove, replace, or rename entries in an alias list.
+[**CreateAlias**](AliasAPI.md#CreateAlias) | **Post** /aliases | Create an alias in your enterprise.
+[**DeleteAlias**](AliasAPI.md#DeleteAlias) | **Delete** /aliases/{aid} | Delete an alias from your enterprise.
+[**GetAlias**](AliasAPI.md#GetAlias) | **Get** /aliases/{aid} | Get an alias by ID.
+[**GetAliasMembers**](AliasAPI.md#GetAliasMembers) | **Get** /aliases/{aid}/members | Get all users and teams assigned to an alias.
+[**GetAliasesInCompany**](AliasAPI.md#GetAliasesInCompany) | **Get** /aliases | Get a list of all aliases that exist for your enterprise.
+[**UpdateAlias**](AliasAPI.md#UpdateAlias) | **Post** /aliases/{aid} | Add, remove, replace, or rename entries in an alias list.
 
 
 
@@ -38,13 +38,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AliasApi.CreateAlias(context.Background()).BTAliasParams(bTAliasParams).Execute()
+    resp, r, err := apiClient.AliasAPI.CreateAlias(context.Background()).BTAliasParams(bTAliasParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AliasApi.CreateAlias``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AliasAPI.CreateAlias``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `CreateAlias`: BTAliasInfo
-    fmt.Fprintf(os.Stdout, "Response from `AliasApi.CreateAlias`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AliasAPI.CreateAlias`: %v\n", resp)
 }
 ```
 
@@ -104,13 +104,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AliasApi.DeleteAlias(context.Background(), aid).Execute()
+    resp, r, err := apiClient.AliasAPI.DeleteAlias(context.Background(), aid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AliasApi.DeleteAlias``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AliasAPI.DeleteAlias``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `DeleteAlias`: map[string]interface{}
-    fmt.Fprintf(os.Stdout, "Response from `AliasApi.DeleteAlias`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AliasAPI.DeleteAlias`: %v\n", resp)
 }
 ```
 
@@ -174,13 +174,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AliasApi.GetAlias(context.Background(), aid).Execute()
+    resp, r, err := apiClient.AliasAPI.GetAlias(context.Background(), aid).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AliasApi.GetAlias``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AliasAPI.GetAlias``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAlias`: BTAliasInfo
-    fmt.Fprintf(os.Stdout, "Response from `AliasApi.GetAlias`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AliasAPI.GetAlias`: %v\n", resp)
 }
 ```
 
@@ -249,13 +249,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AliasApi.GetAliasMembers(context.Background(), aid).Prefix(prefix).SortColumn(sortColumn).SortOrder(sortOrder).Offset(offset).Limit(limit).Execute()
+    resp, r, err := apiClient.AliasAPI.GetAliasMembers(context.Background(), aid).Prefix(prefix).SortColumn(sortColumn).SortOrder(sortOrder).Offset(offset).Limit(limit).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AliasApi.GetAliasMembers``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AliasAPI.GetAliasMembers``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAliasMembers`: BTListResponseBTAliasEntryInfo
-    fmt.Fprintf(os.Stdout, "Response from `AliasApi.GetAliasMembers`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AliasAPI.GetAliasMembers`: %v\n", resp)
 }
 ```
 
@@ -326,13 +326,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AliasApi.GetAliasesInCompany(context.Background()).Prefix(prefix).SortColumn(sortColumn).SortOrder(sortOrder).Offset(offset).Limit(limit).Execute()
+    resp, r, err := apiClient.AliasAPI.GetAliasesInCompany(context.Background()).Prefix(prefix).SortColumn(sortColumn).SortOrder(sortOrder).Offset(offset).Limit(limit).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AliasApi.GetAliasesInCompany``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AliasAPI.GetAliasesInCompany``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetAliasesInCompany`: BTListResponseBTAliasInfo
-    fmt.Fprintf(os.Stdout, "Response from `AliasApi.GetAliasesInCompany`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AliasAPI.GetAliasesInCompany`: %v\n", resp)
 }
 ```
 
@@ -397,13 +397,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.AliasApi.UpdateAlias(context.Background(), aid).BTAliasParams(bTAliasParams).Execute()
+    resp, r, err := apiClient.AliasAPI.UpdateAlias(context.Background(), aid).BTAliasParams(bTAliasParams).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `AliasApi.UpdateAlias``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `AliasAPI.UpdateAlias``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `UpdateAlias`: BTAliasInfo
-    fmt.Fprintf(os.Stdout, "Response from `AliasApi.UpdateAlias`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `AliasAPI.UpdateAlias`: %v\n", resp)
 }
 ```
 

@@ -20,13 +20,13 @@ type ElementType string
 
 // List of ElementType
 const (
-	ElementTypeScalar ElementType = "SCALAR"
-	ElementTypeVec2   ElementType = "VEC2"
-	ElementTypeVec3   ElementType = "VEC3"
-	ElementTypeVec4   ElementType = "VEC4"
-	ElementTypeMat2   ElementType = "MAT2"
-	ElementTypeMat3   ElementType = "MAT3"
-	ElementTypeMat4   ElementType = "MAT4"
+	Scalar ElementType = "SCALAR"
+	Vec2   ElementType = "VEC2"
+	Vec3   ElementType = "VEC3"
+	Vec4   ElementType = "VEC4"
+	Mat2   ElementType = "MAT2"
+	Mat3   ElementType = "MAT3"
+	Mat4   ElementType = "MAT4"
 )
 
 // All allowed values of ElementType enum

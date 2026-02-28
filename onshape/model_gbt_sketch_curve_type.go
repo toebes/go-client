@@ -20,10 +20,10 @@ type GBTSketchCurveType string
 
 // List of GBTSketchCurveType
 const (
-	GBTSketchCurveTypeUnset              GBTSketchCurveType = "UNSET"
-	GBTSketchCurveTypeInterpolatedSpline GBTSketchCurveType = "INTERPOLATED_SPLINE"
-	GBTSketchCurveTypeBezierCurve        GBTSketchCurveType = "BEZIER_CURVE"
-	GBTSketchCurveTypeUnknown            GBTSketchCurveType = "UNKNOWN"
+	Unset              GBTSketchCurveType = "UNSET"
+	InterpolatedSpline GBTSketchCurveType = "INTERPOLATED_SPLINE"
+	BezierCurve        GBTSketchCurveType = "BEZIER_CURVE"
+	Unknown            GBTSketchCurveType = "UNKNOWN"
 )
 
 // All allowed values of GBTSketchCurveType enum

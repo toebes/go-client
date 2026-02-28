@@ -3,13 +3,13 @@
 ## Enum
 
 
-* `BTWorkflowObserverEntryTypeUser` (value: `"USER"`)
+* `User` (value: `"USER"`)
 
-* `BTWorkflowObserverEntryTypeTeam` (value: `"TEAM"`)
+* `Team` (value: `"TEAM"`)
 
-* `BTWorkflowObserverEntryTypeRole` (value: `"ROLE"`)
+* `Role` (value: `"ROLE"`)
 
-* `BTWorkflowObserverEntryTypeAlias` (value: `"ALIAS"`)
+* `Alias` (value: `"ALIAS"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

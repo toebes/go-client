@@ -20,16 +20,16 @@ type GBTPType string
 
 // List of GBTPType
 const (
-	GBTPTypeUndefined GBTPType = "UNDEFINED"
-	GBTPTypeBoolean   GBTPType = "BOOLEAN"
-	GBTPTypeNumber    GBTPType = "NUMBER"
-	GBTPTypeString    GBTPType = "STRING"
-	GBTPTypeArray     GBTPType = "ARRAY"
-	GBTPTypeMap       GBTPType = "MAP"
-	GBTPTypeBox       GBTPType = "BOX"
-	GBTPTypeBuiltin   GBTPType = "BUILTIN"
-	GBTPTypeFunction  GBTPType = "FUNCTION"
-	GBTPTypeUnknown   GBTPType = "UNKNOWN"
+	Undefined GBTPType = "UNDEFINED"
+	Boolean   GBTPType = "BOOLEAN"
+	Number    GBTPType = "NUMBER"
+	String    GBTPType = "STRING"
+	Array     GBTPType = "ARRAY"
+	Map       GBTPType = "MAP"
+	Box       GBTPType = "BOX"
+	Builtin   GBTPType = "BUILTIN"
+	Function  GBTPType = "FUNCTION"
+	Unknown   GBTPType = "UNKNOWN"
 )
 
 // All allowed values of GBTPType enum

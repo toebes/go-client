@@ -19,12 +19,12 @@ import (
 	"strings"
 )
 
-// AssemblyApiService AssemblyApi service
-type AssemblyApiService service
+// AssemblyAPIService AssemblyAPI service
+type AssemblyAPIService service
 
 type ApiAddFeatureRequest struct {
 	ctx                         context.Context
-	ApiService                  *AssemblyApiService
+	ApiService                  *AssemblyAPIService
 	did                         string
 	wvm                         string
 	wvmid                       string
@@ -51,7 +51,7 @@ AddFeature Add a feature to the assembly feature list.
 	@param eid
 	@return ApiAddFeatureRequest
 */
-func (a *AssemblyApiService) AddFeature(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiAddFeatureRequest {
+func (a *AssemblyAPIService) AddFeature(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiAddFeatureRequest {
 	return ApiAddFeatureRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -65,7 +65,7 @@ func (a *AssemblyApiService) AddFeature(ctx context.Context, did string, wvm str
 // Execute executes the request
 //
 //	@return BTFeatureDefinitionResponse1617
-func (a *AssemblyApiService) AddFeatureExecute(r ApiAddFeatureRequest) (*BTFeatureDefinitionResponse1617, *http.Response, error) {
+func (a *AssemblyAPIService) AddFeatureExecute(r ApiAddFeatureRequest) (*BTFeatureDefinitionResponse1617, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -73,7 +73,7 @@ func (a *AssemblyApiService) AddFeatureExecute(r ApiAddFeatureRequest) (*BTFeatu
 		localVarReturnValue *BTFeatureDefinitionResponse1617
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.AddFeature")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.AddFeature")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -153,7 +153,7 @@ func (a *AssemblyApiService) AddFeatureExecute(r ApiAddFeatureRequest) (*BTFeatu
 
 type ApiCreateAssemblyRequest struct {
 	ctx                  context.Context
-	ApiService           *AssemblyApiService
+	ApiService           *AssemblyAPIService
 	did                  string
 	wid                  string
 	bTModelElementParams *BTModelElementParams
@@ -176,7 +176,7 @@ CreateAssembly Create a new assembly tab in the document.
 	@param wid
 	@return ApiCreateAssemblyRequest
 */
-func (a *AssemblyApiService) CreateAssembly(ctx context.Context, did string, wid string) ApiCreateAssemblyRequest {
+func (a *AssemblyAPIService) CreateAssembly(ctx context.Context, did string, wid string) ApiCreateAssemblyRequest {
 	return ApiCreateAssemblyRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -188,7 +188,7 @@ func (a *AssemblyApiService) CreateAssembly(ctx context.Context, did string, wid
 // Execute executes the request
 //
 //	@return BTDocumentElementInfo
-func (a *AssemblyApiService) CreateAssemblyExecute(r ApiCreateAssemblyRequest) (*BTDocumentElementInfo, *http.Response, error) {
+func (a *AssemblyAPIService) CreateAssemblyExecute(r ApiCreateAssemblyRequest) (*BTDocumentElementInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -196,7 +196,7 @@ func (a *AssemblyApiService) CreateAssemblyExecute(r ApiCreateAssemblyRequest) (
 		localVarReturnValue *BTDocumentElementInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.CreateAssembly")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.CreateAssembly")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -277,7 +277,7 @@ func (a *AssemblyApiService) CreateAssemblyExecute(r ApiCreateAssemblyRequest) (
 
 type ApiCreateAssemblyExportGltfRequest struct {
 	ctx                 context.Context
-	ApiService          *AssemblyApiService
+	ApiService          *AssemblyAPIService
 	did                 string
 	wv                  string
 	wvid                string
@@ -306,7 +306,7 @@ Creates an asynchronous export of the assembly. See [API Guide: Import & Export]
 	@param eid Element ID.
 	@return ApiCreateAssemblyExportGltfRequest
 */
-func (a *AssemblyApiService) CreateAssemblyExportGltf(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreateAssemblyExportGltfRequest {
+func (a *AssemblyAPIService) CreateAssemblyExportGltf(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreateAssemblyExportGltfRequest {
 	return ApiCreateAssemblyExportGltfRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -320,7 +320,7 @@ func (a *AssemblyApiService) CreateAssemblyExportGltf(ctx context.Context, did s
 // Execute executes the request
 //
 //	@return BTTranslationRequestInfo
-func (a *AssemblyApiService) CreateAssemblyExportGltfExecute(r ApiCreateAssemblyExportGltfRequest) (*BTTranslationRequestInfo, *http.Response, error) {
+func (a *AssemblyAPIService) CreateAssemblyExportGltfExecute(r ApiCreateAssemblyExportGltfRequest) (*BTTranslationRequestInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -328,7 +328,7 @@ func (a *AssemblyApiService) CreateAssemblyExportGltfExecute(r ApiCreateAssembly
 		localVarReturnValue *BTTranslationRequestInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.CreateAssemblyExportGltf")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.CreateAssemblyExportGltf")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -411,7 +411,7 @@ func (a *AssemblyApiService) CreateAssemblyExportGltfExecute(r ApiCreateAssembly
 
 type ApiCreateAssemblyExportObjRequest struct {
 	ctx                context.Context
-	ApiService         *AssemblyApiService
+	ApiService         *AssemblyAPIService
 	did                string
 	wv                 string
 	wvid               string
@@ -440,7 +440,7 @@ Creates an asynchronous export of the assembly. See [API Guide: Import & Export]
 	@param eid Element ID.
 	@return ApiCreateAssemblyExportObjRequest
 */
-func (a *AssemblyApiService) CreateAssemblyExportObj(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreateAssemblyExportObjRequest {
+func (a *AssemblyAPIService) CreateAssemblyExportObj(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreateAssemblyExportObjRequest {
 	return ApiCreateAssemblyExportObjRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -454,7 +454,7 @@ func (a *AssemblyApiService) CreateAssemblyExportObj(ctx context.Context, did st
 // Execute executes the request
 //
 //	@return BTTranslationRequestInfo
-func (a *AssemblyApiService) CreateAssemblyExportObjExecute(r ApiCreateAssemblyExportObjRequest) (*BTTranslationRequestInfo, *http.Response, error) {
+func (a *AssemblyAPIService) CreateAssemblyExportObjExecute(r ApiCreateAssemblyExportObjRequest) (*BTTranslationRequestInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -462,7 +462,7 @@ func (a *AssemblyApiService) CreateAssemblyExportObjExecute(r ApiCreateAssemblyE
 		localVarReturnValue *BTTranslationRequestInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.CreateAssemblyExportObj")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.CreateAssemblyExportObj")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -545,7 +545,7 @@ func (a *AssemblyApiService) CreateAssemblyExportObjExecute(r ApiCreateAssemblyE
 
 type ApiCreateAssemblyExportSolidworksRequest struct {
 	ctx                       context.Context
-	ApiService                *AssemblyApiService
+	ApiService                *AssemblyAPIService
 	did                       string
 	wv                        string
 	wvid                      string
@@ -574,7 +574,7 @@ Creates an asynchronous export of the assembly. See [API Guide: Import & Export]
 	@param eid Element ID.
 	@return ApiCreateAssemblyExportSolidworksRequest
 */
-func (a *AssemblyApiService) CreateAssemblyExportSolidworks(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreateAssemblyExportSolidworksRequest {
+func (a *AssemblyAPIService) CreateAssemblyExportSolidworks(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreateAssemblyExportSolidworksRequest {
 	return ApiCreateAssemblyExportSolidworksRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -588,7 +588,7 @@ func (a *AssemblyApiService) CreateAssemblyExportSolidworks(ctx context.Context,
 // Execute executes the request
 //
 //	@return BTTranslationRequestInfo
-func (a *AssemblyApiService) CreateAssemblyExportSolidworksExecute(r ApiCreateAssemblyExportSolidworksRequest) (*BTTranslationRequestInfo, *http.Response, error) {
+func (a *AssemblyAPIService) CreateAssemblyExportSolidworksExecute(r ApiCreateAssemblyExportSolidworksRequest) (*BTTranslationRequestInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -596,7 +596,7 @@ func (a *AssemblyApiService) CreateAssemblyExportSolidworksExecute(r ApiCreateAs
 		localVarReturnValue *BTTranslationRequestInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.CreateAssemblyExportSolidworks")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.CreateAssemblyExportSolidworks")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -679,7 +679,7 @@ func (a *AssemblyApiService) CreateAssemblyExportSolidworksExecute(r ApiCreateAs
 
 type ApiCreateAssemblyExportStepRequest struct {
 	ctx                 context.Context
-	ApiService          *AssemblyApiService
+	ApiService          *AssemblyAPIService
 	did                 string
 	wv                  string
 	wvid                string
@@ -708,7 +708,7 @@ Creates an asynchronous export of the assembly. See [API Guide: Import & Export]
 	@param eid Element ID.
 	@return ApiCreateAssemblyExportStepRequest
 */
-func (a *AssemblyApiService) CreateAssemblyExportStep(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreateAssemblyExportStepRequest {
+func (a *AssemblyAPIService) CreateAssemblyExportStep(ctx context.Context, did string, wv string, wvid string, eid string) ApiCreateAssemblyExportStepRequest {
 	return ApiCreateAssemblyExportStepRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -722,7 +722,7 @@ func (a *AssemblyApiService) CreateAssemblyExportStep(ctx context.Context, did s
 // Execute executes the request
 //
 //	@return BTTranslationRequestInfo
-func (a *AssemblyApiService) CreateAssemblyExportStepExecute(r ApiCreateAssemblyExportStepRequest) (*BTTranslationRequestInfo, *http.Response, error) {
+func (a *AssemblyAPIService) CreateAssemblyExportStepExecute(r ApiCreateAssemblyExportStepRequest) (*BTTranslationRequestInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -730,7 +730,7 @@ func (a *AssemblyApiService) CreateAssemblyExportStepExecute(r ApiCreateAssembly
 		localVarReturnValue *BTTranslationRequestInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.CreateAssemblyExportStep")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.CreateAssemblyExportStep")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -813,7 +813,7 @@ func (a *AssemblyApiService) CreateAssemblyExportStepExecute(r ApiCreateAssembly
 
 type ApiCreateInstanceRequest struct {
 	ctx                                context.Context
-	ApiService                         *AssemblyApiService
+	ApiService                         *AssemblyAPIService
 	did                                string
 	wid                                string
 	eid                                string
@@ -840,7 +840,7 @@ Part Studio instances may include multiple parts.
 	@param eid
 	@return ApiCreateInstanceRequest
 */
-func (a *AssemblyApiService) CreateInstance(ctx context.Context, did string, wid string, eid string) ApiCreateInstanceRequest {
+func (a *AssemblyAPIService) CreateInstance(ctx context.Context, did string, wid string, eid string) ApiCreateInstanceRequest {
 	return ApiCreateInstanceRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -853,7 +853,7 @@ func (a *AssemblyApiService) CreateInstance(ctx context.Context, did string, wid
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *AssemblyApiService) CreateInstanceExecute(r ApiCreateInstanceRequest) (map[string]interface{}, *http.Response, error) {
+func (a *AssemblyAPIService) CreateInstanceExecute(r ApiCreateInstanceRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -861,7 +861,7 @@ func (a *AssemblyApiService) CreateInstanceExecute(r ApiCreateInstanceRequest) (
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.CreateInstance")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.CreateInstance")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -940,7 +940,7 @@ func (a *AssemblyApiService) CreateInstanceExecute(r ApiCreateInstanceRequest) (
 
 type ApiDeleteFeatureRequest struct {
 	ctx        context.Context
-	ApiService *AssemblyApiService
+	ApiService *AssemblyAPIService
 	did        string
 	wid        string
 	eid        string
@@ -961,7 +961,7 @@ DeleteFeature Delete a feature from an assembly.
 	@param fid
 	@return ApiDeleteFeatureRequest
 */
-func (a *AssemblyApiService) DeleteFeature(ctx context.Context, did string, wid string, eid string, fid string) ApiDeleteFeatureRequest {
+func (a *AssemblyAPIService) DeleteFeature(ctx context.Context, did string, wid string, eid string, fid string) ApiDeleteFeatureRequest {
 	return ApiDeleteFeatureRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -975,7 +975,7 @@ func (a *AssemblyApiService) DeleteFeature(ctx context.Context, did string, wid 
 // Execute executes the request
 //
 //	@return BTFeatureApiBase1430
-func (a *AssemblyApiService) DeleteFeatureExecute(r ApiDeleteFeatureRequest) (*BTFeatureApiBase1430, *http.Response, error) {
+func (a *AssemblyAPIService) DeleteFeatureExecute(r ApiDeleteFeatureRequest) (*BTFeatureApiBase1430, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodDelete
 		localVarPostBody    interface{}
@@ -983,7 +983,7 @@ func (a *AssemblyApiService) DeleteFeatureExecute(r ApiDeleteFeatureRequest) (*B
 		localVarReturnValue *BTFeatureApiBase1430
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.DeleteFeature")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.DeleteFeature")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1054,7 +1054,7 @@ func (a *AssemblyApiService) DeleteFeatureExecute(r ApiDeleteFeatureRequest) (*B
 
 type ApiDeleteInstanceRequest struct {
 	ctx        context.Context
-	ApiService *AssemblyApiService
+	ApiService *AssemblyAPIService
 	did        string
 	eid        string
 	wid        string
@@ -1075,7 +1075,7 @@ DeleteInstance Delete an instance of an assembly.
 	@param nid
 	@return ApiDeleteInstanceRequest
 */
-func (a *AssemblyApiService) DeleteInstance(ctx context.Context, did string, eid string, wid string, nid string) ApiDeleteInstanceRequest {
+func (a *AssemblyAPIService) DeleteInstance(ctx context.Context, did string, eid string, wid string, nid string) ApiDeleteInstanceRequest {
 	return ApiDeleteInstanceRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1089,7 +1089,7 @@ func (a *AssemblyApiService) DeleteInstance(ctx context.Context, did string, eid
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *AssemblyApiService) DeleteInstanceExecute(r ApiDeleteInstanceRequest) (map[string]interface{}, *http.Response, error) {
+func (a *AssemblyAPIService) DeleteInstanceExecute(r ApiDeleteInstanceRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodDelete
 		localVarPostBody    interface{}
@@ -1097,7 +1097,7 @@ func (a *AssemblyApiService) DeleteInstanceExecute(r ApiDeleteInstanceRequest) (
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.DeleteInstance")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.DeleteInstance")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1175,7 +1175,7 @@ func (a *AssemblyApiService) DeleteInstanceExecute(r ApiDeleteInstanceRequest) (
 
 type ApiGetAssemblyBoundingBoxesRequest struct {
 	ctx             context.Context
-	ApiService      *AssemblyApiService
+	ApiService      *AssemblyAPIService
 	did             string
 	wvm             string
 	wvmid           string
@@ -1241,7 +1241,7 @@ GetAssemblyBoundingBoxes Get bounding box information for the specified assembly
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetAssemblyBoundingBoxesRequest
 */
-func (a *AssemblyApiService) GetAssemblyBoundingBoxes(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetAssemblyBoundingBoxesRequest {
+func (a *AssemblyAPIService) GetAssemblyBoundingBoxes(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetAssemblyBoundingBoxesRequest {
 	return ApiGetAssemblyBoundingBoxesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1255,7 +1255,7 @@ func (a *AssemblyApiService) GetAssemblyBoundingBoxes(ctx context.Context, did s
 // Execute executes the request
 //
 //	@return BTBoundingBoxInfo
-func (a *AssemblyApiService) GetAssemblyBoundingBoxesExecute(r ApiGetAssemblyBoundingBoxesRequest) (*BTBoundingBoxInfo, *http.Response, error) {
+func (a *AssemblyAPIService) GetAssemblyBoundingBoxesExecute(r ApiGetAssemblyBoundingBoxesRequest) (*BTBoundingBoxInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1263,7 +1263,7 @@ func (a *AssemblyApiService) GetAssemblyBoundingBoxesExecute(r ApiGetAssemblyBou
 		localVarReturnValue *BTBoundingBoxInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.GetAssemblyBoundingBoxes")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.GetAssemblyBoundingBoxes")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1362,7 +1362,7 @@ func (a *AssemblyApiService) GetAssemblyBoundingBoxesExecute(r ApiGetAssemblyBou
 
 type ApiGetAssemblyDefinitionRequest struct {
 	ctx                   context.Context
-	ApiService            *AssemblyApiService
+	ApiService            *AssemblyAPIService
 	did                   string
 	wvm                   string
 	wvmid                 string
@@ -1430,7 +1430,7 @@ All coordinates and translation matrix components are in meters (m).
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetAssemblyDefinitionRequest
 */
-func (a *AssemblyApiService) GetAssemblyDefinition(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetAssemblyDefinitionRequest {
+func (a *AssemblyAPIService) GetAssemblyDefinition(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetAssemblyDefinitionRequest {
 	return ApiGetAssemblyDefinitionRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1444,7 +1444,7 @@ func (a *AssemblyApiService) GetAssemblyDefinition(ctx context.Context, did stri
 // Execute executes the request
 //
 //	@return BTAssemblyDefinitionInfo
-func (a *AssemblyApiService) GetAssemblyDefinitionExecute(r ApiGetAssemblyDefinitionRequest) (*BTAssemblyDefinitionInfo, *http.Response, error) {
+func (a *AssemblyAPIService) GetAssemblyDefinitionExecute(r ApiGetAssemblyDefinitionRequest) (*BTAssemblyDefinitionInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1452,7 +1452,7 @@ func (a *AssemblyApiService) GetAssemblyDefinitionExecute(r ApiGetAssemblyDefini
 		localVarReturnValue *BTAssemblyDefinitionInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.GetAssemblyDefinition")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.GetAssemblyDefinition")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1551,7 +1551,7 @@ func (a *AssemblyApiService) GetAssemblyDefinitionExecute(r ApiGetAssemblyDefini
 
 type ApiGetAssemblyMassPropertiesRequest struct {
 	ctx            context.Context
-	ApiService     *AssemblyApiService
+	ApiService     *AssemblyAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -1595,7 +1595,7 @@ When three values are returned:
     @param eid The id of the element in which to perform the operation.
     @return ApiGetAssemblyMassPropertiesRequest
 */
-func (a *AssemblyApiService) GetAssemblyMassProperties(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetAssemblyMassPropertiesRequest {
+func (a *AssemblyAPIService) GetAssemblyMassProperties(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetAssemblyMassPropertiesRequest {
 	return ApiGetAssemblyMassPropertiesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1609,7 +1609,7 @@ func (a *AssemblyApiService) GetAssemblyMassProperties(ctx context.Context, did 
 // Execute executes the request
 //
 //	@return BTMassPropertiesInfo
-func (a *AssemblyApiService) GetAssemblyMassPropertiesExecute(r ApiGetAssemblyMassPropertiesRequest) (*BTMassPropertiesInfo, *http.Response, error) {
+func (a *AssemblyAPIService) GetAssemblyMassPropertiesExecute(r ApiGetAssemblyMassPropertiesRequest) (*BTMassPropertiesInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1617,7 +1617,7 @@ func (a *AssemblyApiService) GetAssemblyMassPropertiesExecute(r ApiGetAssemblyMa
 		localVarReturnValue *BTMassPropertiesInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.GetAssemblyMassProperties")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.GetAssemblyMassProperties")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1701,7 +1701,7 @@ func (a *AssemblyApiService) GetAssemblyMassPropertiesExecute(r ApiGetAssemblyMa
 
 type ApiGetAssemblyShadedViewsRequest struct {
 	ctx             context.Context
-	ApiService      *AssemblyApiService
+	ApiService      *AssemblyAPIService
 	did             string
 	wvm             string
 	wvmid           string
@@ -1809,7 +1809,7 @@ GetAssemblyShadedViews Get an array of shaded view images for the document.
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetAssemblyShadedViewsRequest
 */
-func (a *AssemblyApiService) GetAssemblyShadedViews(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetAssemblyShadedViewsRequest {
+func (a *AssemblyAPIService) GetAssemblyShadedViews(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetAssemblyShadedViewsRequest {
 	return ApiGetAssemblyShadedViewsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -1823,7 +1823,7 @@ func (a *AssemblyApiService) GetAssemblyShadedViews(ctx context.Context, did str
 // Execute executes the request
 //
 //	@return BTShadedViewsInfo
-func (a *AssemblyApiService) GetAssemblyShadedViewsExecute(r ApiGetAssemblyShadedViewsRequest) (*BTShadedViewsInfo, *http.Response, error) {
+func (a *AssemblyAPIService) GetAssemblyShadedViewsExecute(r ApiGetAssemblyShadedViewsRequest) (*BTShadedViewsInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -1831,7 +1831,7 @@ func (a *AssemblyApiService) GetAssemblyShadedViewsExecute(r ApiGetAssemblyShade
 		localVarReturnValue *BTShadedViewsInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.GetAssemblyShadedViews")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.GetAssemblyShadedViews")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -1951,7 +1951,7 @@ func (a *AssemblyApiService) GetAssemblyShadedViewsExecute(r ApiGetAssemblyShade
 
 type ApiGetBillOfMaterialsRequest struct {
 	ctx                           context.Context
-	ApiService                    *AssemblyApiService
+	ApiService                    *AssemblyAPIService
 	did                           string
 	wvm                           string
 	wvmid                         string
@@ -2072,7 +2072,7 @@ Returns the BOM in JSON in the Onshape BOM Standard format.
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetBillOfMaterialsRequest
 */
-func (a *AssemblyApiService) GetBillOfMaterials(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetBillOfMaterialsRequest {
+func (a *AssemblyAPIService) GetBillOfMaterials(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetBillOfMaterialsRequest {
 	return ApiGetBillOfMaterialsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2086,7 +2086,7 @@ func (a *AssemblyApiService) GetBillOfMaterials(ctx context.Context, did string,
 // Execute executes the request
 //
 //	@return BTBillOfMaterialsInfo
-func (a *AssemblyApiService) GetBillOfMaterialsExecute(r ApiGetBillOfMaterialsRequest) (*BTBillOfMaterialsInfo, *http.Response, error) {
+func (a *AssemblyAPIService) GetBillOfMaterialsExecute(r ApiGetBillOfMaterialsRequest) (*BTBillOfMaterialsInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2094,7 +2094,7 @@ func (a *AssemblyApiService) GetBillOfMaterialsExecute(r ApiGetBillOfMaterialsRe
 		localVarReturnValue *BTBillOfMaterialsInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.GetBillOfMaterials")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.GetBillOfMaterials")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2222,7 +2222,7 @@ func (a *AssemblyApiService) GetBillOfMaterialsExecute(r ApiGetBillOfMaterialsRe
 
 type ApiGetDisplayStatesRequest struct {
 	ctx            context.Context
-	ApiService     *AssemblyApiService
+	ApiService     *AssemblyAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -2250,7 +2250,7 @@ GetDisplayStates Get a list of display states for the specified assembly.
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetDisplayStatesRequest
 */
-func (a *AssemblyApiService) GetDisplayStates(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetDisplayStatesRequest {
+func (a *AssemblyAPIService) GetDisplayStates(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetDisplayStatesRequest {
 	return ApiGetDisplayStatesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2264,7 +2264,7 @@ func (a *AssemblyApiService) GetDisplayStates(ctx context.Context, did string, w
 // Execute executes the request
 //
 //	@return []BTDisplayStateInfo
-func (a *AssemblyApiService) GetDisplayStatesExecute(r ApiGetDisplayStatesRequest) ([]BTDisplayStateInfo, *http.Response, error) {
+func (a *AssemblyAPIService) GetDisplayStatesExecute(r ApiGetDisplayStatesRequest) ([]BTDisplayStateInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2272,7 +2272,7 @@ func (a *AssemblyApiService) GetDisplayStatesExecute(r ApiGetDisplayStatesReques
 		localVarReturnValue []BTDisplayStateInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.GetDisplayStates")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.GetDisplayStates")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2346,7 +2346,7 @@ func (a *AssemblyApiService) GetDisplayStatesExecute(r ApiGetDisplayStatesReques
 
 type ApiGetExplodedViewsRequest struct {
 	ctx            context.Context
-	ApiService     *AssemblyApiService
+	ApiService     *AssemblyAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -2387,7 +2387,7 @@ GetExplodedViews Get a list of exploded views for the specified assembly.
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetExplodedViewsRequest
 */
-func (a *AssemblyApiService) GetExplodedViews(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetExplodedViewsRequest {
+func (a *AssemblyAPIService) GetExplodedViews(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetExplodedViewsRequest {
 	return ApiGetExplodedViewsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2401,7 +2401,7 @@ func (a *AssemblyApiService) GetExplodedViews(ctx context.Context, did string, w
 // Execute executes the request
 //
 //	@return []BTViewFeatureBaseInfo
-func (a *AssemblyApiService) GetExplodedViewsExecute(r ApiGetExplodedViewsRequest) ([]BTViewFeatureBaseInfo, *http.Response, error) {
+func (a *AssemblyAPIService) GetExplodedViewsExecute(r ApiGetExplodedViewsRequest) ([]BTViewFeatureBaseInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2409,7 +2409,7 @@ func (a *AssemblyApiService) GetExplodedViewsExecute(r ApiGetExplodedViewsReques
 		localVarReturnValue []BTViewFeatureBaseInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.GetExplodedViews")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.GetExplodedViews")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2496,7 +2496,7 @@ func (a *AssemblyApiService) GetExplodedViewsExecute(r ApiGetExplodedViewsReques
 
 type ApiGetFeatureSpecsRequest struct {
 	ctx        context.Context
-	ApiService *AssemblyApiService
+	ApiService *AssemblyAPIService
 	did        string
 	wvm        string
 	wvmid      string
@@ -2517,7 +2517,7 @@ GetFeatureSpecs Get the feature spec definitions for an assembly.
 	@param eid
 	@return ApiGetFeatureSpecsRequest
 */
-func (a *AssemblyApiService) GetFeatureSpecs(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetFeatureSpecsRequest {
+func (a *AssemblyAPIService) GetFeatureSpecs(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetFeatureSpecsRequest {
 	return ApiGetFeatureSpecsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2531,7 +2531,7 @@ func (a *AssemblyApiService) GetFeatureSpecs(ctx context.Context, did string, wv
 // Execute executes the request
 //
 //	@return BTFeatureSpecsResponse664
-func (a *AssemblyApiService) GetFeatureSpecsExecute(r ApiGetFeatureSpecsRequest) (*BTFeatureSpecsResponse664, *http.Response, error) {
+func (a *AssemblyAPIService) GetFeatureSpecsExecute(r ApiGetFeatureSpecsRequest) (*BTFeatureSpecsResponse664, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2539,7 +2539,7 @@ func (a *AssemblyApiService) GetFeatureSpecsExecute(r ApiGetFeatureSpecsRequest)
 		localVarReturnValue *BTFeatureSpecsResponse664
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.GetFeatureSpecs")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.GetFeatureSpecs")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2617,7 +2617,7 @@ func (a *AssemblyApiService) GetFeatureSpecsExecute(r ApiGetFeatureSpecsRequest)
 
 type ApiGetFeaturesRequest struct {
 	ctx            context.Context
-	ApiService     *AssemblyApiService
+	ApiService     *AssemblyAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -2664,7 +2664,7 @@ GetFeatures Get the definitions of the specified features in an assembly.
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetFeaturesRequest
 */
-func (a *AssemblyApiService) GetFeatures(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetFeaturesRequest {
+func (a *AssemblyAPIService) GetFeatures(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetFeaturesRequest {
 	return ApiGetFeaturesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2678,7 +2678,7 @@ func (a *AssemblyApiService) GetFeatures(ctx context.Context, did string, wvm st
 // Execute executes the request
 //
 //	@return BTAssemblyFeatureListResponse1174
-func (a *AssemblyApiService) GetFeaturesExecute(r ApiGetFeaturesRequest) (*BTAssemblyFeatureListResponse1174, *http.Response, error) {
+func (a *AssemblyAPIService) GetFeaturesExecute(r ApiGetFeaturesRequest) (*BTAssemblyFeatureListResponse1174, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2686,7 +2686,7 @@ func (a *AssemblyApiService) GetFeaturesExecute(r ApiGetFeaturesRequest) (*BTAss
 		localVarReturnValue *BTAssemblyFeatureListResponse1174
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.GetFeatures")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.GetFeatures")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2777,7 +2777,7 @@ func (a *AssemblyApiService) GetFeaturesExecute(r ApiGetFeaturesRequest) (*BTAss
 
 type ApiGetMateValuesRequest struct {
 	ctx        context.Context
-	ApiService *AssemblyApiService
+	ApiService *AssemblyAPIService
 	did        string
 	wv         string
 	wvid       string
@@ -2800,7 +2800,7 @@ Describes the relative position of the first mate connector with respect to the 
 	@param eid
 	@return ApiGetMateValuesRequest
 */
-func (a *AssemblyApiService) GetMateValues(ctx context.Context, did string, wv string, wvid string, eid string) ApiGetMateValuesRequest {
+func (a *AssemblyAPIService) GetMateValues(ctx context.Context, did string, wv string, wvid string, eid string) ApiGetMateValuesRequest {
 	return ApiGetMateValuesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2814,7 +2814,7 @@ func (a *AssemblyApiService) GetMateValues(ctx context.Context, did string, wv s
 // Execute executes the request
 //
 //	@return BTAssemblyMateValuesInfo
-func (a *AssemblyApiService) GetMateValuesExecute(r ApiGetMateValuesRequest) (*BTAssemblyMateValuesInfo, *http.Response, error) {
+func (a *AssemblyAPIService) GetMateValuesExecute(r ApiGetMateValuesRequest) (*BTAssemblyMateValuesInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2822,7 +2822,7 @@ func (a *AssemblyApiService) GetMateValuesExecute(r ApiGetMateValuesRequest) (*B
 		localVarReturnValue *BTAssemblyMateValuesInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.GetMateValues")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.GetMateValues")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -2900,7 +2900,7 @@ func (a *AssemblyApiService) GetMateValuesExecute(r ApiGetMateValuesRequest) (*B
 
 type ApiGetNamedPositionsRequest struct {
 	ctx            context.Context
-	ApiService     *AssemblyApiService
+	ApiService     *AssemblyAPIService
 	did            string
 	wvm            string
 	wvmid          string
@@ -2941,7 +2941,7 @@ GetNamedPositions Get a list of all named positions for the assembly.
 	@param eid The id of the element in which to perform the operation.
 	@return ApiGetNamedPositionsRequest
 */
-func (a *AssemblyApiService) GetNamedPositions(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetNamedPositionsRequest {
+func (a *AssemblyAPIService) GetNamedPositions(ctx context.Context, did string, wvm string, wvmid string, eid string) ApiGetNamedPositionsRequest {
 	return ApiGetNamedPositionsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -2955,7 +2955,7 @@ func (a *AssemblyApiService) GetNamedPositions(ctx context.Context, did string, 
 // Execute executes the request
 //
 //	@return []BTViewFeatureBaseInfo
-func (a *AssemblyApiService) GetNamedPositionsExecute(r ApiGetNamedPositionsRequest) ([]BTViewFeatureBaseInfo, *http.Response, error) {
+func (a *AssemblyAPIService) GetNamedPositionsExecute(r ApiGetNamedPositionsRequest) ([]BTViewFeatureBaseInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -2963,7 +2963,7 @@ func (a *AssemblyApiService) GetNamedPositionsExecute(r ApiGetNamedPositionsRequ
 		localVarReturnValue []BTViewFeatureBaseInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.GetNamedPositions")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.GetNamedPositions")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3050,7 +3050,7 @@ func (a *AssemblyApiService) GetNamedPositionsExecute(r ApiGetNamedPositionsRequ
 
 type ApiGetNamedViewsRequest struct {
 	ctx                    context.Context
-	ApiService             *AssemblyApiService
+	ApiService             *AssemblyAPIService
 	did                    string
 	eid                    string
 	linkDocumentId         *string
@@ -3086,7 +3086,7 @@ GetNamedViews Get the view data for all named views for the specified element.
 	@param eid
 	@return ApiGetNamedViewsRequest
 */
-func (a *AssemblyApiService) GetNamedViews(ctx context.Context, did string, eid string) ApiGetNamedViewsRequest {
+func (a *AssemblyAPIService) GetNamedViews(ctx context.Context, did string, eid string) ApiGetNamedViewsRequest {
 	return ApiGetNamedViewsRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3098,7 +3098,7 @@ func (a *AssemblyApiService) GetNamedViews(ctx context.Context, did string, eid 
 // Execute executes the request
 //
 //	@return BTNamedViewsInfo
-func (a *AssemblyApiService) GetNamedViewsExecute(r ApiGetNamedViewsRequest) (*BTNamedViewsInfo, *http.Response, error) {
+func (a *AssemblyAPIService) GetNamedViewsExecute(r ApiGetNamedViewsRequest) (*BTNamedViewsInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
@@ -3106,7 +3106,7 @@ func (a *AssemblyApiService) GetNamedViewsExecute(r ApiGetNamedViewsRequest) (*B
 		localVarReturnValue *BTNamedViewsInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.GetNamedViews")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.GetNamedViews")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3191,7 +3191,7 @@ func (a *AssemblyApiService) GetNamedViewsExecute(r ApiGetNamedViewsRequest) (*B
 
 type ApiGetOrCreateBillOfMaterialsElementRequest struct {
 	ctx        context.Context
-	ApiService *AssemblyApiService
+	ApiService *AssemblyAPIService
 	did        string
 	wid        string
 	eid        string
@@ -3210,7 +3210,7 @@ GetOrCreateBillOfMaterialsElement Gets the Bill Of Materials (BOM) for the speci
 	@param eid
 	@return ApiGetOrCreateBillOfMaterialsElementRequest
 */
-func (a *AssemblyApiService) GetOrCreateBillOfMaterialsElement(ctx context.Context, did string, wid string, eid string) ApiGetOrCreateBillOfMaterialsElementRequest {
+func (a *AssemblyAPIService) GetOrCreateBillOfMaterialsElement(ctx context.Context, did string, wid string, eid string) ApiGetOrCreateBillOfMaterialsElementRequest {
 	return ApiGetOrCreateBillOfMaterialsElementRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3223,7 +3223,7 @@ func (a *AssemblyApiService) GetOrCreateBillOfMaterialsElement(ctx context.Conte
 // Execute executes the request
 //
 //	@return BTDocumentElementInfo
-func (a *AssemblyApiService) GetOrCreateBillOfMaterialsElementExecute(r ApiGetOrCreateBillOfMaterialsElementRequest) (*BTDocumentElementInfo, *http.Response, error) {
+func (a *AssemblyAPIService) GetOrCreateBillOfMaterialsElementExecute(r ApiGetOrCreateBillOfMaterialsElementRequest) (*BTDocumentElementInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -3231,7 +3231,7 @@ func (a *AssemblyApiService) GetOrCreateBillOfMaterialsElementExecute(r ApiGetOr
 		localVarReturnValue *BTDocumentElementInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.GetOrCreateBillOfMaterialsElement")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.GetOrCreateBillOfMaterialsElement")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3308,7 +3308,7 @@ func (a *AssemblyApiService) GetOrCreateBillOfMaterialsElementExecute(r ApiGetOr
 
 type ApiInsertTransformedInstancesRequest struct {
 	ctx                                            context.Context
-	ApiService                                     *AssemblyApiService
+	ApiService                                     *AssemblyAPIService
 	did                                            string
 	eid                                            string
 	wid                                            string
@@ -3333,7 +3333,7 @@ InsertTransformedInstances Create new instances with transformation.
 	@param wid
 	@return ApiInsertTransformedInstancesRequest
 */
-func (a *AssemblyApiService) InsertTransformedInstances(ctx context.Context, did string, eid string, wid string) ApiInsertTransformedInstancesRequest {
+func (a *AssemblyAPIService) InsertTransformedInstances(ctx context.Context, did string, eid string, wid string) ApiInsertTransformedInstancesRequest {
 	return ApiInsertTransformedInstancesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3346,7 +3346,7 @@ func (a *AssemblyApiService) InsertTransformedInstances(ctx context.Context, did
 // Execute executes the request
 //
 //	@return BTAssemblyInsertTransformedInstancesResponse
-func (a *AssemblyApiService) InsertTransformedInstancesExecute(r ApiInsertTransformedInstancesRequest) (*BTAssemblyInsertTransformedInstancesResponse, *http.Response, error) {
+func (a *AssemblyAPIService) InsertTransformedInstancesExecute(r ApiInsertTransformedInstancesRequest) (*BTAssemblyInsertTransformedInstancesResponse, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -3354,7 +3354,7 @@ func (a *AssemblyApiService) InsertTransformedInstancesExecute(r ApiInsertTransf
 		localVarReturnValue *BTAssemblyInsertTransformedInstancesResponse
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.InsertTransformedInstances")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.InsertTransformedInstances")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3436,7 +3436,7 @@ func (a *AssemblyApiService) InsertTransformedInstancesExecute(r ApiInsertTransf
 
 type ApiModifyRequest struct {
 	ctx                          context.Context
-	ApiService                   *AssemblyApiService
+	ApiService                   *AssemblyAPIService
 	did                          string
 	wid                          string
 	eid                          string
@@ -3470,7 +3470,7 @@ This endpoint can include multiple modifications to an assembly with one change.
 	@param eid The id of the element in which to perform the operation.
 	@return ApiModifyRequest
 */
-func (a *AssemblyApiService) Modify(ctx context.Context, did string, wid string, eid string) ApiModifyRequest {
+func (a *AssemblyAPIService) Modify(ctx context.Context, did string, wid string, eid string) ApiModifyRequest {
 	return ApiModifyRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3483,7 +3483,7 @@ func (a *AssemblyApiService) Modify(ctx context.Context, did string, wid string,
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *AssemblyApiService) ModifyExecute(r ApiModifyRequest) (map[string]interface{}, *http.Response, error) {
+func (a *AssemblyAPIService) ModifyExecute(r ApiModifyRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -3491,7 +3491,7 @@ func (a *AssemblyApiService) ModifyExecute(r ApiModifyRequest) (map[string]inter
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.Modify")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.Modify")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3573,7 +3573,7 @@ func (a *AssemblyApiService) ModifyExecute(r ApiModifyRequest) (map[string]inter
 
 type ApiTransformOccurrencesRequest struct {
 	ctx                                 context.Context
-	ApiService                          *AssemblyApiService
+	ApiService                          *AssemblyAPIService
 	did                                 string
 	eid                                 string
 	wid                                 string
@@ -3598,7 +3598,7 @@ TransformOccurrences Transform a list of assembly occurrences.
 	@param wid
 	@return ApiTransformOccurrencesRequest
 */
-func (a *AssemblyApiService) TransformOccurrences(ctx context.Context, did string, eid string, wid string) ApiTransformOccurrencesRequest {
+func (a *AssemblyAPIService) TransformOccurrences(ctx context.Context, did string, eid string, wid string) ApiTransformOccurrencesRequest {
 	return ApiTransformOccurrencesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3611,7 +3611,7 @@ func (a *AssemblyApiService) TransformOccurrences(ctx context.Context, did strin
 // Execute executes the request
 //
 //	@return map[string]interface{}
-func (a *AssemblyApiService) TransformOccurrencesExecute(r ApiTransformOccurrencesRequest) (map[string]interface{}, *http.Response, error) {
+func (a *AssemblyAPIService) TransformOccurrencesExecute(r ApiTransformOccurrencesRequest) (map[string]interface{}, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -3619,7 +3619,7 @@ func (a *AssemblyApiService) TransformOccurrencesExecute(r ApiTransformOccurrenc
 		localVarReturnValue map[string]interface{}
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.TransformOccurrences")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.TransformOccurrences")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3698,7 +3698,7 @@ func (a *AssemblyApiService) TransformOccurrencesExecute(r ApiTransformOccurrenc
 
 type ApiTranslateFormatRequest struct {
 	ctx                     context.Context
-	ApiService              *AssemblyApiService
+	ApiService              *AssemblyAPIService
 	did                     string
 	wv                      string
 	wvid                    string
@@ -3730,7 +3730,7 @@ Creates an asynchronous export. Use format-specific export endpoints where avail
 	@param eid
 	@return ApiTranslateFormatRequest
 */
-func (a *AssemblyApiService) TranslateFormat(ctx context.Context, did string, wv string, wvid string, eid string) ApiTranslateFormatRequest {
+func (a *AssemblyAPIService) TranslateFormat(ctx context.Context, did string, wv string, wvid string, eid string) ApiTranslateFormatRequest {
 	return ApiTranslateFormatRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3744,7 +3744,7 @@ func (a *AssemblyApiService) TranslateFormat(ctx context.Context, did string, wv
 // Execute executes the request
 //
 //	@return BTTranslationRequestInfo
-func (a *AssemblyApiService) TranslateFormatExecute(r ApiTranslateFormatRequest) (*BTTranslationRequestInfo, *http.Response, error) {
+func (a *AssemblyAPIService) TranslateFormatExecute(r ApiTranslateFormatRequest) (*BTTranslationRequestInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -3752,7 +3752,7 @@ func (a *AssemblyApiService) TranslateFormatExecute(r ApiTranslateFormatRequest)
 		localVarReturnValue *BTTranslationRequestInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.TranslateFormat")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.TranslateFormat")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3835,7 +3835,7 @@ func (a *AssemblyApiService) TranslateFormatExecute(r ApiTranslateFormatRequest)
 
 type ApiUpdateFeatureRequest struct {
 	ctx                         context.Context
-	ApiService                  *AssemblyApiService
+	ApiService                  *AssemblyAPIService
 	did                         string
 	wid                         string
 	eid                         string
@@ -3862,7 +3862,7 @@ UpdateFeature Update an existing feature for an Assembly.
 	@param fid
 	@return ApiUpdateFeatureRequest
 */
-func (a *AssemblyApiService) UpdateFeature(ctx context.Context, did string, wid string, eid string, fid string) ApiUpdateFeatureRequest {
+func (a *AssemblyAPIService) UpdateFeature(ctx context.Context, did string, wid string, eid string, fid string) ApiUpdateFeatureRequest {
 	return ApiUpdateFeatureRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -3876,7 +3876,7 @@ func (a *AssemblyApiService) UpdateFeature(ctx context.Context, did string, wid 
 // Execute executes the request
 //
 //	@return BTFeatureDefinitionResponse1617
-func (a *AssemblyApiService) UpdateFeatureExecute(r ApiUpdateFeatureRequest) (*BTFeatureDefinitionResponse1617, *http.Response, error) {
+func (a *AssemblyAPIService) UpdateFeatureExecute(r ApiUpdateFeatureRequest) (*BTFeatureDefinitionResponse1617, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -3884,7 +3884,7 @@ func (a *AssemblyApiService) UpdateFeatureExecute(r ApiUpdateFeatureRequest) (*B
 		localVarReturnValue *BTFeatureDefinitionResponse1617
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.UpdateFeature")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.UpdateFeature")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}
@@ -3964,7 +3964,7 @@ func (a *AssemblyApiService) UpdateFeatureExecute(r ApiUpdateFeatureRequest) (*B
 
 type ApiUpdateMateValuesRequest struct {
 	ctx                      context.Context
-	ApiService               *AssemblyApiService
+	ApiService               *AssemblyAPIService
 	did                      string
 	wid                      string
 	eid                      string
@@ -3993,7 +3993,7 @@ UpdateMateValues Update mate values for the given mates in the specified assembl
 	@param eid
 	@return ApiUpdateMateValuesRequest
 */
-func (a *AssemblyApiService) UpdateMateValues(ctx context.Context, did string, wid string, eid string) ApiUpdateMateValuesRequest {
+func (a *AssemblyAPIService) UpdateMateValues(ctx context.Context, did string, wid string, eid string) ApiUpdateMateValuesRequest {
 	return ApiUpdateMateValuesRequest{
 		ApiService: a,
 		ctx:        ctx,
@@ -4006,7 +4006,7 @@ func (a *AssemblyApiService) UpdateMateValues(ctx context.Context, did string, w
 // Execute executes the request
 //
 //	@return BTAssemblyMateValuesInfo
-func (a *AssemblyApiService) UpdateMateValuesExecute(r ApiUpdateMateValuesRequest) (*BTAssemblyMateValuesInfo, *http.Response, error) {
+func (a *AssemblyAPIService) UpdateMateValuesExecute(r ApiUpdateMateValuesRequest) (*BTAssemblyMateValuesInfo, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
@@ -4014,7 +4014,7 @@ func (a *AssemblyApiService) UpdateMateValuesExecute(r ApiUpdateMateValuesReques
 		localVarReturnValue *BTAssemblyMateValuesInfo
 	)
 
-	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyApiService.UpdateMateValues")
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "AssemblyAPIService.UpdateMateValues")
 	if err != nil {
 		return localVarReturnValue, nil, &GenericOpenAPIError{error: err.Error()}
 	}

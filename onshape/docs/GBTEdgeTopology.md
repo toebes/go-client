@@ -3,15 +3,15 @@
 ## Enum
 
 
-* `GBTEdgeTopologyWire` (value: `"WIRE"`)
+* `Wire` (value: `"WIRE"`)
 
-* `GBTEdgeTopologyOneSided` (value: `"ONE_SIDED"`)
+* `OneSided` (value: `"ONE_SIDED"`)
 
-* `GBTEdgeTopologyTwoSided` (value: `"TWO_SIDED"`)
+* `TwoSided` (value: `"TWO_SIDED"`)
 
-* `GBTEdgeTopologyLaminar` (value: `"LAMINAR"`)
+* `Laminar` (value: `"LAMINAR"`)
 
-* `GBTEdgeTopologyUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

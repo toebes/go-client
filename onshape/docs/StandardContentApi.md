@@ -1,12 +1,12 @@
-# \StandardContentApi
+# \StandardContentAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetParameterValuesForId**](StandardContentApi.md#GetParameterValuesForId) | **Get** /standardcontent/d/{did}/parametervalues | Gets all possible values for each of the standard content parameters.
-[**GetStandardContentList**](StandardContentApi.md#GetStandardContentList) | **Get** /standardcontent/list | List all standard content.
-[**SetCustomParameters**](StandardContentApi.md#SetCustomParameters) | **Post** /standardcontent/d/{did}/customparameters | Sets the part number and description for a standard content component.
+[**GetParameterValuesForId**](StandardContentAPI.md#GetParameterValuesForId) | **Get** /standardcontent/d/{did}/parametervalues | Gets all possible values for each of the standard content parameters.
+[**GetStandardContentList**](StandardContentAPI.md#GetStandardContentList) | **Get** /standardcontent/list | List all standard content.
+[**SetCustomParameters**](StandardContentAPI.md#SetCustomParameters) | **Post** /standardcontent/d/{did}/customparameters | Sets the part number and description for a standard content component.
 
 
 
@@ -33,13 +33,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.StandardContentApi.GetParameterValuesForId(context.Background(), did).Execute()
+    resp, r, err := apiClient.StandardContentAPI.GetParameterValuesForId(context.Background(), did).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `StandardContentApi.GetParameterValuesForId``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `StandardContentAPI.GetParameterValuesForId``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetParameterValuesForId`: []BTStandardContentParameterDescriptor
-    fmt.Fprintf(os.Stdout, "Response from `StandardContentApi.GetParameterValuesForId`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `StandardContentAPI.GetParameterValuesForId`: %v\n", resp)
 }
 ```
 
@@ -101,13 +101,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.StandardContentApi.GetStandardContentList(context.Background()).Standard(standard).Execute()
+    resp, r, err := apiClient.StandardContentAPI.GetStandardContentList(context.Background()).Standard(standard).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `StandardContentApi.GetStandardContentList``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `StandardContentAPI.GetStandardContentList``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetStandardContentList`: []BTStandardContentHierarchyItem
-    fmt.Fprintf(os.Stdout, "Response from `StandardContentApi.GetStandardContentList`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `StandardContentAPI.GetStandardContentList`: %v\n", resp)
 }
 ```
 
@@ -167,13 +167,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.StandardContentApi.SetCustomParameters(context.Background(), did).CompanyId(companyId).BTStandardContentSetCustomParametersBatchRequest(bTStandardContentSetCustomParametersBatchRequest).Execute()
+    resp, r, err := apiClient.StandardContentAPI.SetCustomParameters(context.Background(), did).CompanyId(companyId).BTStandardContentSetCustomParametersBatchRequest(bTStandardContentSetCustomParametersBatchRequest).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `StandardContentApi.SetCustomParameters``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `StandardContentAPI.SetCustomParameters``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `SetCustomParameters`: BTStandardContentSetCustomParametersBatchResponse
-    fmt.Fprintf(os.Stdout, "Response from `StandardContentApi.SetCustomParameters`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `StandardContentAPI.SetCustomParameters`: %v\n", resp)
 }
 ```
 

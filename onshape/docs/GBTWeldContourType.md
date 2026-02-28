@@ -3,15 +3,15 @@
 ## Enum
 
 
-* `GBTWeldContourTypeNone` (value: `"NONE"`)
+* `None` (value: `"NONE"`)
 
-* `GBTWeldContourTypeFlat` (value: `"FLAT"`)
+* `Flat` (value: `"FLAT"`)
 
-* `GBTWeldContourTypeConvex` (value: `"CONVEX"`)
+* `Convex` (value: `"CONVEX"`)
 
-* `GBTWeldContourTypeConcave` (value: `"CONCAVE"`)
+* `Concave` (value: `"CONCAVE"`)
 
-* `GBTWeldContourTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

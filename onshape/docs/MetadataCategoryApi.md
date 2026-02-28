@@ -1,10 +1,10 @@
-# \MetadataCategoryApi
+# \MetadataCategoryAPI
 
-All URIs are relative to *https://cad.onshape.com/api/v13*
+All URIs are relative to *https://cad.onshape.com/api/v14*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetCategoryProperties**](MetadataCategoryApi.md#GetCategoryProperties) | **Get** /metadatacategory/categoryproperties | Get properties associated with the specified metadata categories.
+[**GetCategoryProperties**](MetadataCategoryAPI.md#GetCategoryProperties) | **Get** /metadatacategory/categoryproperties | Get properties associated with the specified metadata categories.
 
 
 
@@ -43,13 +43,13 @@ func main() {
 
     apiConfiguration := openapiclient.NewAPIConfiguration()
     apiClient := openapiclient.NewAPIClient(apiConfiguration)
-    resp, r, err := apiClient.MetadataCategoryApi.GetCategoryProperties(context.Background()).OwnerId(ownerId).OwnerType(ownerType).DocumentId(documentId).CategoryIds(categoryIds).ObjectType(objectType).Strict(strict).IncludeObjectTypeDefaults(includeObjectTypeDefaults).IncludeComputedProperties(includeComputedProperties).IncludePartPropertiesTableOnlyProperties(includePartPropertiesTableOnlyProperties).OnlyActive(onlyActive).OnlyObjectTypeDefaults(onlyObjectTypeDefaults).Execute()
+    resp, r, err := apiClient.MetadataCategoryAPI.GetCategoryProperties(context.Background()).OwnerId(ownerId).OwnerType(ownerType).DocumentId(documentId).CategoryIds(categoryIds).ObjectType(objectType).Strict(strict).IncludeObjectTypeDefaults(includeObjectTypeDefaults).IncludeComputedProperties(includeComputedProperties).IncludePartPropertiesTableOnlyProperties(includePartPropertiesTableOnlyProperties).OnlyActive(onlyActive).OnlyObjectTypeDefaults(onlyObjectTypeDefaults).Execute()
     if err != nil {
-        fmt.Fprintf(os.Stderr, "Error when calling `MetadataCategoryApi.GetCategoryProperties``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Error when calling `MetadataCategoryAPI.GetCategoryProperties``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
     }
     // response from `GetCategoryProperties`: BTListResponseBTCategoryPropertyInfo
-    fmt.Fprintf(os.Stdout, "Response from `MetadataCategoryApi.GetCategoryProperties`: %v\n", resp)
+    fmt.Fprintf(os.Stdout, "Response from `MetadataCategoryAPI.GetCategoryProperties`: %v\n", resp)
 }
 ```
 

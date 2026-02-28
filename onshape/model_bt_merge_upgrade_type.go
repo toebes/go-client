@@ -20,9 +20,9 @@ type BTMergeUpgradeType string
 
 // List of BTMergeUpgradeType
 const (
-	BTMergeUpgradeTypeSource          BTMergeUpgradeType = "SOURCE"
-	BTMergeUpgradeTypeTarget          BTMergeUpgradeType = "TARGET"
-	BTMergeUpgradeTypeSourceAndTarget BTMergeUpgradeType = "SOURCE_AND_TARGET"
+	Source          BTMergeUpgradeType = "SOURCE"
+	Target          BTMergeUpgradeType = "TARGET"
+	SourceAndTarget BTMergeUpgradeType = "SOURCE_AND_TARGET"
 )
 
 // All allowed values of BTMergeUpgradeType enum

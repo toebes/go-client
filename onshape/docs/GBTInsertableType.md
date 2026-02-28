@@ -3,23 +3,23 @@
 ## Enum
 
 
-* `GBTInsertableTypeParts` (value: `"PARTS"`)
+* `Parts` (value: `"PARTS"`)
 
-* `GBTInsertableTypeSketches` (value: `"SKETCHES"`)
+* `Sketches` (value: `"SKETCHES"`)
 
-* `GBTInsertableTypeSurfaces` (value: `"SURFACES"`)
+* `Surfaces` (value: `"SURFACES"`)
 
-* `GBTInsertableTypeFlattenedParts` (value: `"FLATTENED_PARTS"`)
+* `FlattenedParts` (value: `"FLATTENED_PARTS"`)
 
-* `GBTInsertableTypeCompositeParts` (value: `"COMPOSITE_PARTS"`)
+* `CompositeParts` (value: `"COMPOSITE_PARTS"`)
 
-* `GBTInsertableTypePartStudios` (value: `"PART_STUDIOS"`)
+* `PartStudios` (value: `"PART_STUDIOS"`)
 
-* `GBTInsertableTypeWires` (value: `"WIRES"`)
+* `Wires` (value: `"WIRES"`)
 
-* `GBTInsertableTypeParametricPartStudios` (value: `"PARAMETRIC_PART_STUDIOS"`)
+* `ParametricPartStudios` (value: `"PARAMETRIC_PART_STUDIOS"`)
 
-* `GBTInsertableTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

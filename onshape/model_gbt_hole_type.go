@@ -20,10 +20,10 @@ type GBTHoleType string
 
 // List of GBTHoleType
 const (
-	GBTHoleTypeSimple  GBTHoleType = "SIMPLE"
-	GBTHoleTypeCBore   GBTHoleType = "C_BORE"
-	GBTHoleTypeCSink   GBTHoleType = "C_SINK"
-	GBTHoleTypeUnknown GBTHoleType = "UNKNOWN"
+	Simple  GBTHoleType = "SIMPLE"
+	CBore   GBTHoleType = "C_BORE"
+	CSink   GBTHoleType = "C_SINK"
+	Unknown GBTHoleType = "UNKNOWN"
 )
 
 // All allowed values of GBTHoleType enum

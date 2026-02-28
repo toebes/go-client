@@ -20,9 +20,9 @@ type JobType string
 
 // List of JobType
 const (
-	JobTypeSyncItem             JobType = "SYNC_ITEM"
-	JobTypeSyncBom              JobType = "SYNC_BOM"
-	JobTypeSyncReleaseCandidate JobType = "SYNC_RELEASE_CANDIDATE"
+	SyncItem             JobType = "SYNC_ITEM"
+	SyncBom              JobType = "SYNC_BOM"
+	SyncReleaseCandidate JobType = "SYNC_RELEASE_CANDIDATE"
 )
 
 // All allowed values of JobType enum

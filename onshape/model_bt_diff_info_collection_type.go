@@ -20,13 +20,13 @@ type BTDiffInfoCollectionType string
 
 // List of BTDiffInfoCollectionType
 const (
-	BTDiffInfoCollectionTypeParts          BTDiffInfoCollectionType = "parts"
-	BTDiffInfoCollectionTypeSketches       BTDiffInfoCollectionType = "sketches"
-	BTDiffInfoCollectionTypePoints         BTDiffInfoCollectionType = "points"
-	BTDiffInfoCollectionTypeMateConnectors BTDiffInfoCollectionType = "mateConnectors"
-	BTDiffInfoCollectionTypePlanes         BTDiffInfoCollectionType = "planes"
-	BTDiffInfoCollectionTypeCurves         BTDiffInfoCollectionType = "curves"
-	BTDiffInfoCollectionTypeSurfaces       BTDiffInfoCollectionType = "surfaces"
+	Parts          BTDiffInfoCollectionType = "parts"
+	Sketches       BTDiffInfoCollectionType = "sketches"
+	Points         BTDiffInfoCollectionType = "points"
+	MateConnectors BTDiffInfoCollectionType = "mateConnectors"
+	Planes         BTDiffInfoCollectionType = "planes"
+	Curves         BTDiffInfoCollectionType = "curves"
+	Surfaces       BTDiffInfoCollectionType = "surfaces"
 )
 
 // All allowed values of BTDiffInfoCollectionType enum

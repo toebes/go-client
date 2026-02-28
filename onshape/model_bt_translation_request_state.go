@@ -20,9 +20,9 @@ type BTTranslationRequestState string
 
 // List of BTTranslationRequestState
 const (
-	BTTranslationRequestStateActive BTTranslationRequestState = "ACTIVE"
-	BTTranslationRequestStateDone   BTTranslationRequestState = "DONE"
-	BTTranslationRequestStateFailed BTTranslationRequestState = "FAILED"
+	Active BTTranslationRequestState = "ACTIVE"
+	Done   BTTranslationRequestState = "DONE"
+	Failed BTTranslationRequestState = "FAILED"
 )
 
 // All allowed values of BTTranslationRequestState enum

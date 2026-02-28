@@ -20,9 +20,9 @@ type BTESVersionWorkspaceChoice string
 
 // List of BTESVersionWorkspaceChoice
 const (
-	BTESVersionWorkspaceChoiceAll        BTESVersionWorkspaceChoice = "ALL"
-	BTESVersionWorkspaceChoiceWorkspaces BTESVersionWorkspaceChoice = "WORKSPACES"
-	BTESVersionWorkspaceChoiceVersions   BTESVersionWorkspaceChoice = "VERSIONS"
+	All        BTESVersionWorkspaceChoice = "ALL"
+	Workspaces BTESVersionWorkspaceChoice = "WORKSPACES"
+	Versions   BTESVersionWorkspaceChoice = "VERSIONS"
 )
 
 // All allowed values of BTESVersionWorkspaceChoice enum

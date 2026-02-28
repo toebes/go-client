@@ -3,27 +3,27 @@
 ## Enum
 
 
-* `GBTSurfaceTypePlane` (value: `"PLANE"`)
+* `Plane` (value: `"PLANE"`)
 
-* `GBTSurfaceTypeCylinder` (value: `"CYLINDER"`)
+* `Cylinder` (value: `"CYLINDER"`)
 
-* `GBTSurfaceTypeCone` (value: `"CONE"`)
+* `Cone` (value: `"CONE"`)
 
-* `GBTSurfaceTypeSphere` (value: `"SPHERE"`)
+* `Sphere` (value: `"SPHERE"`)
 
-* `GBTSurfaceTypeTorus` (value: `"TORUS"`)
+* `Torus` (value: `"TORUS"`)
 
-* `GBTSurfaceTypeOther` (value: `"OTHER"`)
+* `Other` (value: `"OTHER"`)
 
-* `GBTSurfaceTypeRevolved` (value: `"REVOLVED"`)
+* `Revolved` (value: `"REVOLVED"`)
 
-* `GBTSurfaceTypeExtruded` (value: `"EXTRUDED"`)
+* `Extruded` (value: `"EXTRUDED"`)
 
-* `GBTSurfaceTypeMesh` (value: `"MESH"`)
+* `Mesh` (value: `"MESH"`)
 
-* `GBTSurfaceTypeSpline` (value: `"SPLINE"`)
+* `Spline` (value: `"SPLINE"`)
 
-* `GBTSurfaceTypeUnknown` (value: `"UNKNOWN"`)
+* `Unknown` (value: `"UNKNOWN"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
